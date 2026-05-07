@@ -5,8 +5,9 @@ import Home from './pages/Home'
 import WhyMonarchs from './pages/WhyMonarchs'
 import PlantMilkweed from './pages/PlantMilkweed'
 import TheMigration from './pages/TheMigration'
+import TakeAction from './pages/TakeAction'
 
-export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration'
+export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -16,6 +17,7 @@ function App() {
       case 'why-monarchs':   return <WhyMonarchs onNavigate={setPage} />
       case 'plant-milkweed': return <PlantMilkweed onNavigate={setPage} />
       case 'the-migration':  return <TheMigration onNavigate={setPage} />
+      case 'take-action':    return <TakeAction onNavigate={setPage} />
       default:               return <Home onNavigate={setPage} />
     }
   }
