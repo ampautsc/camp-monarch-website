@@ -10,6 +10,7 @@ const links: { id: Page; label: string }[] = [
   { id: 'why-monarchs',  label: 'Why Monarchs' },
   { id: 'plant-milkweed', label: 'Plant Milkweed' },
   { id: 'the-migration', label: 'The Migration' },
+  { id: 'take-action',   label: 'Take Action' },
 ]
 
 export default function Nav({ current, onNavigate }: NavProps) {
