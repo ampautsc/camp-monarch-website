@@ -1,0 +1,81 @@
+name: Deploy Camp Monarch Website to Vercel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout camp-monarch-website
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build for Vercel (base path = /)
+        run: npx vite build --base /
+
+      - name: Verify build output
+        run: |
+          echo "=== dist/ contents ==="
+          ls -la dist/
+          echo "=== index.html snippet ==="
+          head -8 dist/index.html
+
+      - name: Deploy to Vercel
+        id: deploy
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          echo "Deploying to Vercel (scope: ampautscs-projects)..."
+          DEPLOY_OUTPUT=$(npx vercel@latest dist --prod \
+            --token "$VERCEL_TOKEN" \
+            --yes \
+            --scope ampautscs-projects \
+            2>&1)
+          echo "=== Vercel CLI output ==="
+          echo "$DEPLOY_OUTPUT"
+          DEPLOY_URL=$(echo "$DEPLOY_OUTPUT" | grep 'Aliased:' | grep -oE 'https://[^[:space:]]+' | head -1)
+          if [ -z "$DEPLOY_URL" ]; then
+            DEPLOY_URL=$(echo "$DEPLOY_OUTPUT" | grep 'Production:' | grep -oE 'https://[^[:space:]]+' | head -1)
+          fi
+          if [ -z "$DEPLOY_URL" ]; then
+            echo "❌ Could not extract deployment URL from CLI output"
+            exit 1
+          fi
+          echo "url=$DEPLOY_URL" >> "$GITHUB_OUTPUT"
+          echo "✅ Deployed to: $DEPLOY_URL"
+
+      - name: Validate deployment (retry up to 5x)
+        run: |
+          URL="${{ steps.deploy.outputs.url }}"
+          echo "Validating: $URL"
+          for i in 1 2 3 4 5; do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
+            echo "Attempt $i: HTTP $STATUS"
+            if [ "$STATUS" = "200" ]; then
+              echo "✅ Deployment live and validated — $URL"
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "❌ Deployment validation failed after 5 attempts"
+          exit 1
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Camp Monarch Website Deployment" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Item | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          echo "| Project | camp-monarch-website |" >> $GITHUB_STEP_SUMMARY
+          echo "| Team | ampautscs-projects |" >> $GITHUB_STEP_SUMMARY
+          echo "| URL | ${{ steps.deploy.outputs.url }} |" >> $GITHUB_STEP_SUMMARY
