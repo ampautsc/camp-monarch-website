@@ -6,12 +6,13 @@ interface NavProps {
 }
 
 const links: { id: Page; label: string }[] = [
-  { id: 'home',          label: 'Home' },
-  { id: 'why-monarchs',  label: 'Why Monarchs' },
-  { id: 'plant-milkweed', label: 'Plant Milkweed' },
-  { id: 'choose-a-plant', label: 'Choose a Plant' },
-  { id: 'the-migration', label: 'The Migration' },
-  { id: 'take-action',   label: 'Take Action' },
+  { id: 'home',                 label: 'Home' },
+  { id: 'why-monarchs',        label: 'Why Monarchs' },
+  { id: 'plant-milkweed',      label: 'Plant Milkweed' },
+  { id: 'native-plant-near-me', label: 'Find Plants Near Me' },
+  { id: 'choose-a-plant',      label: 'Choose a Plant' },
+  { id: 'the-migration',       label: 'The Migration' },
+  { id: 'take-action',         label: 'Take Action' },
 ]
 
 export default function Nav({ current, onNavigate }: NavProps) {
