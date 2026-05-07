@@ -131,6 +131,12 @@ export default function PlantMilkweed({ onNavigate }: PlantMilkweedProps) {
             <a href="https://xerces.org/milkweed" target="_blank" rel="noreferrer"> xerces.org/milkweed</a>.
           </li>
         </ul>
+        <button
+          onClick={() => onNavigate('native-plant-near-me')}
+          style={{ background: 'none', border: '2px solid var(--monarch-green)', color: 'var(--monarch-green)', padding: '0.55rem 1.2rem', borderRadius: '6px', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 'bold', fontSize: '0.95rem', marginTop: '0.75rem' }}
+        >
+          Find nurseries by region →
+        </button>
       </section>
 
       {/* First season expectations — www-012: one idea per paragraph, 15-20 words */}
