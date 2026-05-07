@@ -1,8 +1,10 @@
 name: Deploy Camp Monarch Website to Vercel
 
+# NOTE: VERCEL_TOKEN is only available in sis-cloud secrets, not this repo.
+# Deployment is triggered from sis-cloud via deploy-camp-monarch-website.yml.
+# This workflow is available as workflow_dispatch for manual triggering if the
+# VERCEL_TOKEN secret is later added to this repo's settings.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
