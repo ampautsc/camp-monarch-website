@@ -9,6 +9,13 @@ export default function Footer({ onNavigate }: FooterProps) {
     <footer className="site-footer">
       <p>
         <button
+          onClick={() => onNavigate('take-action')}
+          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
+        >
+          Take action
+        </button>
+        {' · '}
+        <button
           onClick={() => onNavigate('plant-milkweed')}
           style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
         >
