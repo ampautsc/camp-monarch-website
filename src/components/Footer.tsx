@@ -16,6 +16,13 @@ export default function Footer({ onNavigate }: FooterProps) {
         </button>
         {' · '}
         <button
+          onClick={() => onNavigate('native-plant-near-me')}
+          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
+        >
+          Find plants near me
+        </button>
+        {' · '}
+        <button
           onClick={() => onNavigate('choose-a-plant')}
           style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
         >
