@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import FeedbackWidget from './components/FeedbackWidget'
 import Home from './pages/Home'
 import WhyMonarchs from './pages/WhyMonarchs'
 import PlantMilkweed from './pages/PlantMilkweed'
@@ -27,6 +28,7 @@ function App() {
       <Nav current={page} onNavigate={setPage} />
       <main>{renderPage()}</main>
       <Footer onNavigate={setPage} />
+      <FeedbackWidget page={page} />
     </>
   )
 }
