@@ -1,0 +1,37 @@
+import type { Page } from '../App'
+
+interface FooterProps {
+  onNavigate: (page: Page) => void
+}
+
+export default function Footer({ onNavigate }: FooterProps) {
+  return (
+    <footer className="site-footer">
+      <p>
+        <button
+          onClick={() => onNavigate('plant-milkweed')}
+          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
+        >
+          Plant milkweed
+        </button>
+        {' · '}
+        <button
+          onClick={() => onNavigate('the-migration')}
+          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
+        >
+          Track the migration
+        </button>
+        {' · '}
+        <button
+          onClick={() => onNavigate('why-monarchs')}
+          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
+        >
+          Why it matters
+        </button>
+      </p>
+      <p style={{ marginTop: '0.75rem', opacity: 0.6 }}>
+        Camp Monarch — connecting people with the natural world, one patch of milkweed at a time.
+      </p>
+    </footer>
+  )
+}
