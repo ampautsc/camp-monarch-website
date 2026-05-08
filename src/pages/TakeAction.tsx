@@ -169,14 +169,6 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
             >
               Log on iNaturalist →
             </a>
-            <a
-              href="https://ampautsc.github.io/sis-hello-world/"
-              target="_blank"
-              rel="noreferrer"
-              style={{ display: 'inline-block', padding: '0.6rem 1.2rem', border: '2px solid var(--monarch-green)', borderRadius: '6px', fontWeight: 'bold', color: 'var(--monarch-green)', textDecoration: 'none', fontFamily: 'inherit' }}
-            >
-              Camp Monarch App →
-            </a>
           </div>
         </div>
 
