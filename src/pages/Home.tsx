@@ -44,7 +44,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
         </section>
 
-        {/* iNaturalist Monarch count widget — start */}
+                {/* iNaturalist Monarch count widget — start */}
         <div
           className="action-panel"
           style={{
@@ -55,7 +55,7 @@ export default function Home({ onNavigate }: HomeProps) {
         >
           <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
           <p>
-            <strong style={{ color: 'var(--monarch-orange)' }}>430 Monarch sightings</strong>{' '}
+            <strong style={{ color: 'var(--monarch-orange)' }}>551 Monarch sightings</strong>{' '}
             have been logged on iNaturalist in the United States this month.
             Each sighting becomes open data that researchers can use to track the migration.
           </p>
@@ -69,7 +69,7 @@ export default function Home({ onNavigate }: HomeProps) {
             className="hero__cta"
             style={{ display: 'inline-block' }}
           >
-            See May's sightings on iNaturalist →
+            See this month's sightings on iNaturalist →
           </a>
         </div>
         {/* iNaturalist Monarch count widget — end */}
