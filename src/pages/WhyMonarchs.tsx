@@ -10,7 +10,7 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
       <header className="page-header">
         <div className="page-header__eyebrow">Why It Matters</div>
         {/* www-010: headline works out of context */}
-        <h1>Monarchs are a signal species.<br />Their decline is an early warning.</h1>
+        <h1>Monarchs are an indicator species.<br />Their decline is an early warning.</h1>
         {/* www-004: conclusion first */}
         <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '65ch' }}>
           When Monarchs disappear from a region, native milkweed is gone, flowering meadows are gone,
@@ -58,7 +58,7 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
           having laid the eggs of the generation that will reach Illinois and Michigan in June.
         </p>
         <div className="callout callout--green">
-          <h3 style={{ marginTop: 0, color: 'var(--monarch-green)' }}>The inherited map</h3>
+          <h3 style={{ marginTop: 0, color: 'var(--monarch-green)' }}>How they navigate</h3>
           <p style={{ marginBottom: 0 }}>
             No individual Monarch completes the full round trip.
             The migration is carried by a relay of short-lived generations —
