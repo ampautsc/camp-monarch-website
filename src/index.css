@@ -446,6 +446,106 @@ a.hero__cta:visited {
   color: var(--monarch-orange);
 }
 
+/* ── FAQ accordion ── */
+
+.faq-category {
+  margin-bottom: 2.5rem;
+}
+
+.faq-category__heading {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--monarch-orange);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item__question {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 1.1rem 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  line-height: 1.5;
+  transition: background 0.15s;
+}
+
+.faq-item__question:hover {
+  background: var(--monarch-light);
+}
+
+.faq-item--open .faq-item__question {
+  background: var(--monarch-light);
+  font-weight: bold;
+  color: var(--monarch-green);
+}
+
+.faq-item__question-text {
+  flex: 1;
+}
+
+.faq-item__chevron {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  padding-top: 0.25rem;
+}
+
+.faq-item__answer {
+  background: var(--monarch-cream);
+  border-top: 1px solid var(--border);
+}
+
+.faq-item__answer-inner {
+  padding: 1.25rem 1.5rem 1.5rem;
+  max-width: 72ch;
+}
+
+.faq-item__answer-inner p {
+  margin-bottom: 0.75rem;
+}
+
+.faq-item__answer-inner ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.faq-item__answer-inner li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.faq-item__answer-inner .callout {
+  font-size: 0.95rem;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 600px) {
@@ -453,4 +553,6 @@ a.hero__cta:visited {
   .hero h1 { font-size: 1.9rem; }
   .fact-card__number { font-size: 1.8rem; }
   .action-panel { padding: 1.5rem; }
+  .faq-item__question { padding: 1rem 1.1rem; }
+  .faq-item__answer-inner { padding: 1rem 1.1rem 1.25rem; }
 }

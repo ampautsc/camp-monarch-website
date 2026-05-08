@@ -18,6 +18,7 @@ export type AnalyticsEventType =
   | 'feedback_open'
   | 'tool_interaction'
   | 'plant_detail_view'
+  | 'faq_open'
 
 /**
  * Fire-and-forget analytics event. Never awaited. Never blocks UI.

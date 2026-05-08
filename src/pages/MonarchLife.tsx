@@ -100,7 +100,7 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
             Here is the cycle, stage by stage, with what to look for if you have milkweed.
           </p>
 
-          {stages.map((stage, i) => (
+          {stages.map((stage) => (
             <div key={stage.id} className="callout callout--orange" style={{ marginBottom: '1.5rem' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
                 <span style={{ fontSize: '1.5rem' }}>{stage.emoji}</span>

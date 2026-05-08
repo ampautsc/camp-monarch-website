@@ -12,9 +12,10 @@ import TakeAction from './pages/TakeAction'
 import ChooseAPlant from './pages/ChooseAPlant'
 import NativePlantNearMe from './pages/NativePlantNearMe'
 import MonarchLife from './pages/MonarchLife'
+import FAQ from './pages/FAQ'
 import { trackEvent } from './lib/analytics'
 
-export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life'
+export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'faq'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -33,6 +34,7 @@ function App() {
       case 'choose-a-plant':      return <ChooseAPlant onNavigate={setPage} />
       case 'native-plant-near-me': return <NativePlantNearMe onNavigate={setPage} />
       case 'monarch-life':        return <MonarchLife onNavigate={setPage} />
+      case 'faq':                  return <FAQ onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }
