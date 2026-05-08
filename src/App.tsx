@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import FeedbackWidget from './components/FeedbackWidget'
@@ -14,6 +14,10 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
 
 function App() {
   const [page, setPage] = useState<Page>('home')
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [page])
 
   const renderPage = () => {
     switch (page) {
