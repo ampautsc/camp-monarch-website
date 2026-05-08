@@ -1,0 +1,58 @@
+{
+  "id": "lupinus-nootkatensis",
+  "commonName": "Lupine",
+  "scientificName": "Lupinus nootkatensis OR Lupinus arcticus",
+  "description": "Blue to purple pea-like flowers in dense spikes. Palmately compound leaves. Nitrogen-fixing plant important for soil improvement. Cold hardy northern species. Important food source for bumblebees and butterflies.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Alaska"
+    ],
+    "hardinessZones": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/lupinus-nootkatensis/lupinus-nootkatensis-2025-10-17T01-13-43-328Z.jpg",
+  "thumbnailUrl": "/images/plants/lupinus-nootkatensis/lupinus-nootkatensis-2025-10-17T01-13-43-328Z-thumb.jpg",
+  "usdaPlantId": "LUNON",
+  "distribution": {
+    "fipsCodes": [],
+    "statesFips": [
+      "02",
+      "53"
+    ]
+  }
+}

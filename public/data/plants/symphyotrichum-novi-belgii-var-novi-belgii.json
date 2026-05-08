@@ -1,0 +1,78 @@
+{
+  "id": "symphyotrichum-novi-belgii-var-novi-belgii",
+  "commonName": "New York Aster",
+  "scientificName": "Symphyotrichum novi-belgii var. novi-belgii",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "moist",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 48,
+    "width": 36,
+    "bloomColor": [
+      "blue",
+      "purple"
+    ],
+    "bloomTime": [
+      "late summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "amphibians",
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/symphyotrichum-novi-belgii-var-novi-belgii/symphyotrichum-novi-belgii-var-novi-belgii-2025-10-23T01-26-14-070Z.jpg",
+  "thumbnailUrl": "/images/plants/symphyotrichum-novi-belgii-var-novi-belgii/symphyotrichum-novi-belgii-var-novi-belgii-2025-10-23T01-26-14-070Z-thumb.jpg",
+  "usdaPlantId": "SYNOV",
+  "distribution": {
+    "fipsCodes": [
+      "25003",
+      "25005",
+      "25009",
+      "25011",
+      "25015",
+      "25017",
+      "25021",
+      "25023",
+      "25025",
+      "25027"
+    ],
+    "statesFips": [
+      "09",
+      "23",
+      "25",
+      "33",
+      "34",
+      "36",
+      "42",
+      "50"
+    ]
+  }
+}

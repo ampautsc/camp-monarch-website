@@ -1,0 +1,90 @@
+{
+  "id": "cassiope-mertensiana",
+  "commonName": "Western Moss Heather",
+  "scientificName": "Cassiope mertensiana",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/cassiope-mertensiana/cassiope-mertensiana-2025-10-23T01-25-54-132Z.jpg",
+  "thumbnailUrl": "/images/plants/cassiope-mertensiana/cassiope-mertensiana-2025-10-23T01-25-54-132Z-thumb.jpg",
+  "usdaPlantId": "CAMEM",
+  "distribution": {
+    "fipsCodes": [
+      "02110",
+      "02130",
+      "02220",
+      "06003",
+      "06017",
+      "06019",
+      "06027",
+      "06035",
+      "06039",
+      "06051",
+      "06057",
+      "06061",
+      "06063",
+      "06089",
+      "06093",
+      "06105",
+      "06109",
+      "16017",
+      "41017",
+      "41027",
+      "41031",
+      "41039",
+      "41043",
+      "41047",
+      "53007",
+      "53009",
+      "53033",
+      "53037",
+      "53047",
+      "53073"
+    ],
+    "statesFips": [
+      "02",
+      "06",
+      "16",
+      "41",
+      "53"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "vernonia-gigantea",
+  "commonName": "Giant ironweed",
+  "scientificName": "Vernonia gigantea",
+  "description": "Large fluffy purple flower clusters atop tall stems. Blooms in late summer to fall. Prefers moist soils. Attracts many butterflies including monarchs. Forms impressive clumps over time. Seeds provide food for birds.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Alabama",
+      "Arkansas",
+      "Florida",
+      "Georgia",
+      "Kentucky",
+      "Louisiana",
+      "Mississippi",
+      "North Carolina",
+      "South Carolina",
+      "Tennessee",
+      "Virginia",
+      "Connecticut",
+      "Delaware",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "New Hampshire",
+      "New Jersey",
+      "New York",
+      "Pennsylvania",
+      "Rhode Island",
+      "Vermont",
+      "West Virginia"
+    ],
+    "hardinessZones": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/vernonia-gigantea/vernonia-gigantea-2025-10-17T01-14-28-241Z.jpg",
+  "thumbnailUrl": "/images/plants/vernonia-gigantea/vernonia-gigantea-2025-10-17T01-14-28-241Z-thumb.jpg",
+  "usdaPlantId": "VEGIO",
+  "distribution": {
+    "fipsCodes": [],
+    "statesFips": [
+      "12",
+      "13"
+    ]
+  }
+}

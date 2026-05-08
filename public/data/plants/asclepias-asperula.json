@@ -1,0 +1,157 @@
+{
+  "id": "asclepias-asperula",
+  "commonName": "Antelopehorn milkweed",
+  "scientificName": "Asclepias asperula",
+  "description": "Spider-shaped greenish-white flowers with a hint of purple. Host plant for monarch and queen butterflies. Extremely drought tolerant with a deep taproot. Unique among milkweeds for its tolerance of very dry conditions.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "dry",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "pink",
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Michigan",
+      "Minnesota",
+      "Missouri",
+      "Nebraska",
+      "North Dakota",
+      "Ohio",
+      "South Dakota",
+      "Wisconsin",
+      "Connecticut",
+      "Delaware",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "New Hampshire",
+      "New Jersey",
+      "New York",
+      "Pennsylvania",
+      "Rhode Island",
+      "Vermont",
+      "West Virginia",
+      "Colorado",
+      "Montana",
+      "Wyoming"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [
+      "Monarch butterfly"
+    ],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden",
+      "monarch conservation"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/asclepias-asperula/asclepias-asperula-2025-10-17T01-14-53-294Z.jpg",
+  "thumbnailUrl": "/images/plants/asclepias-asperula/asclepias-asperula-2025-10-17T01-14-53-294Z-thumb.jpg",
+  "usdaPlantId": "ASASC",
+  "distribution": {
+    "fipsCodes": [
+      "04009",
+      "20007",
+      "20015",
+      "20025",
+      "20033",
+      "20035",
+      "20051",
+      "20053",
+      "20057",
+      "20089",
+      "20095",
+      "20097",
+      "20119",
+      "20123",
+      "20135",
+      "20141",
+      "20151",
+      "20155",
+      "20163",
+      "20165",
+      "20167",
+      "20183",
+      "20191",
+      "20205",
+      "35009",
+      "35021",
+      "40007",
+      "40009",
+      "40011",
+      "40013",
+      "40015",
+      "40019",
+      "40025",
+      "40027",
+      "40031",
+      "40039",
+      "40045",
+      "40047",
+      "40051",
+      "40055",
+      "40057",
+      "40065",
+      "40069",
+      "40071",
+      "40073",
+      "40075",
+      "40087",
+      "40089",
+      "40099",
+      "40109",
+      "40119",
+      "40125",
+      "40129",
+      "40137",
+      "40139",
+      "40151",
+      "40153"
+    ],
+    "statesFips": [
+      "04",
+      "20",
+      "31",
+      "35",
+      "40",
+      "48"
+    ]
+  }
+}

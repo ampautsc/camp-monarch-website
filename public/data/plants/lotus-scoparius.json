@@ -1,0 +1,94 @@
+{
+  "id": "lotus-scoparius",
+  "commonName": "Common Deerweed",
+  "scientificName": "Lotus scoparius",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/lotus-scoparius/lotus-scoparius-2025-10-23T01-26-50-472Z.jpg",
+  "thumbnailUrl": "/images/plants/lotus-scoparius/lotus-scoparius-2025-10-23T01-26-50-472Z-thumb.jpg",
+  "usdaPlantId": "LOSCS2",
+  "distribution": {
+    "fipsCodes": [
+      "06001",
+      "06005",
+      "06007",
+      "06009",
+      "06013",
+      "06019",
+      "06023",
+      "06029",
+      "06033",
+      "06037",
+      "06039",
+      "06041",
+      "06043",
+      "06045",
+      "06047",
+      "06053",
+      "06055",
+      "06059",
+      "06061",
+      "06063",
+      "06067",
+      "06069",
+      "06073",
+      "06075",
+      "06079",
+      "06081",
+      "06083",
+      "06085",
+      "06087",
+      "06095",
+      "06097",
+      "06099",
+      "06101",
+      "06107",
+      "06111",
+      "06113"
+    ],
+    "statesFips": [
+      "06"
+    ]
+  }
+}

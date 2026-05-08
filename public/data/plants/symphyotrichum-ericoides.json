@@ -1,0 +1,56 @@
+{
+  "id": "symphyotrichum-ericoides",
+  "commonName": "White heath aster",
+  "scientificName": "Symphyotrichum ericoides",
+  "description": "Masses of small white daisy-like flowers cover the plant in fall. Tiny heath-like leaves. Forms dense mounds. Important late-season nectar source for butterflies and bees. Tolerates poor, dry soils.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Colorado",
+      "Montana",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/symphyotrichum-ericoides/symphyotrichum-ericoides-2025-10-17T01-15-25-695Z.jpg",
+  "thumbnailUrl": "/images/plants/symphyotrichum-ericoides/symphyotrichum-ericoides-2025-10-17T01-15-25-695Z-thumb.jpg",
+  "usdaPlantId": "SYERS"
+}

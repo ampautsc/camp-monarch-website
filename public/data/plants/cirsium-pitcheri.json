@@ -1,0 +1,95 @@
+{
+  "id": "cirsium-pitcheri",
+  "commonName": "Sand Dune Thistle",
+  "scientificName": "Cirsium pitcheri",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/cirsium-pitcheri/cirsium-pitcheri-2025-10-23T01-26-16-632Z.jpg",
+  "thumbnailUrl": "/images/plants/cirsium-pitcheri/cirsium-pitcheri-2025-10-23T01-26-16-632Z-thumb.jpg",
+  "usdaPlantId": "CIPI",
+  "distribution": {
+    "fipsCodes": [
+      "17031",
+      "17097",
+      "18089",
+      "18127",
+      "26001",
+      "26003",
+      "26005",
+      "26007",
+      "26009",
+      "26011",
+      "26019",
+      "26021",
+      "26029",
+      "26031",
+      "26033",
+      "26041",
+      "26047",
+      "26055",
+      "26063",
+      "26069",
+      "26089",
+      "26097",
+      "26101",
+      "26105",
+      "26121",
+      "26127",
+      "26139",
+      "26141",
+      "26153",
+      "26159",
+      "55029",
+      "55031",
+      "55071",
+      "55117"
+    ],
+    "statesFips": [
+      "17",
+      "18",
+      "26",
+      "55"
+    ]
+  }
+}

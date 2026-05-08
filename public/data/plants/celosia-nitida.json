@@ -1,0 +1,78 @@
+{
+  "id": "celosia-nitida",
+  "commonName": "West Indian Cock's Comb",
+  "scientificName": "Celosia nitida",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/celosia-nitida/celosia-nitida-2025-10-23T01-26-48-510Z.jpg",
+  "thumbnailUrl": "/images/plants/celosia-nitida/celosia-nitida-2025-10-23T01-26-48-510Z-thumb.jpg",
+  "usdaPlantId": "CENI",
+  "distribution": {
+    "fipsCodes": [
+      "12069",
+      "12071",
+      "12086",
+      "12087",
+      "12111",
+      "48029",
+      "48057",
+      "48061",
+      "48091",
+      "48175",
+      "48209",
+      "48215",
+      "48239",
+      "48261",
+      "48271",
+      "48273",
+      "48427",
+      "48453",
+      "48479"
+    ],
+    "statesFips": [
+      "12",
+      "48",
+      "72",
+      "78"
+    ]
+  }
+}

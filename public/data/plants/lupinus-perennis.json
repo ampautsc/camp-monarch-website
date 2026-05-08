@@ -1,0 +1,105 @@
+{
+  "id": "lupinus-perennis",
+  "commonName": "Wild lupine",
+  "scientificName": "Lupinus perennis",
+  "description": "Spikes of blue to purple pea-like flowers in late spring. Palmately compound leaves. Nitrogen-fixing plant that improves soil. Essential host plant for Karner blue butterfly. Self-seeds readily. Forms attractive clumps.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Connecticut",
+      "Delaware",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "New Hampshire",
+      "New Jersey",
+      "New York",
+      "Pennsylvania",
+      "Rhode Island",
+      "Vermont",
+      "West Virginia"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/lupinus-perennis/lupinus-perennis-2025-10-17T01-15-04-062Z.jpg",
+  "thumbnailUrl": "/images/plants/lupinus-perennis/lupinus-perennis-2025-10-17T01-15-04-062Z-thumb.jpg",
+  "usdaPlantId": "LUPEP3",
+  "distribution": {
+    "fipsCodes": [
+      "10001",
+      "10003",
+      "10005",
+      "11001",
+      "21203",
+      "23003",
+      "23017",
+      "44003",
+      "44007",
+      "44009",
+      "55001",
+      "55021",
+      "55053",
+      "55083"
+    ],
+    "statesFips": [
+      "09",
+      "10",
+      "11",
+      "13",
+      "21",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "33",
+      "34",
+      "36",
+      "37",
+      "39",
+      "42",
+      "44",
+      "45",
+      "50",
+      "51",
+      "54",
+      "55"
+    ]
+  }
+}

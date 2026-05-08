@@ -1,0 +1,52 @@
+{
+  "id": "penstemon",
+  "commonName": "Beardtongue",
+  "scientificName": "Penstemon spp.",
+  "description": "Tubular flowers in shades of blue, purple, pink, or red. Forms basal rosette with upright flowering stems. Attracts hummingbirds and native bees. Drought tolerant once established. Long blooming period. Evergreen in mild climates.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "California",
+      "Nevada",
+      "Utah",
+      "Arizona"
+    ],
+    "hardinessZones": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/penstemon/penstemon-2025-10-17T06-25-23-220Z.jpg",
+  "thumbnailUrl": "/images/plants/penstemon/penstemon-2025-10-17T06-25-23-220Z-thumb.jpg"
+}

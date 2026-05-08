@@ -1,0 +1,102 @@
+{
+  "id": "callirhoe-involucrata",
+  "commonName": "Purple poppymallow",
+  "scientificName": "Callirhoe involucrata",
+  "description": "Cup-shaped magenta-purple flowers on trailing stems. Deeply dissected leaves. Blooms prolifically all summer. Deep taproot makes it very drought tolerant. Excellent groundcover for hot, dry slopes.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Michigan",
+      "Minnesota",
+      "Missouri",
+      "Nebraska",
+      "North Dakota",
+      "Ohio",
+      "South Dakota",
+      "Wisconsin",
+      "Connecticut",
+      "Delaware",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "New Hampshire",
+      "New Jersey",
+      "New York",
+      "Pennsylvania",
+      "Rhode Island",
+      "Vermont",
+      "West Virginia",
+      "Colorado",
+      "Montana",
+      "Wyoming"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/callirhoe-involucrata/callirhoe-involucrata-2025-10-17T01-15-37-053Z.jpg",
+  "thumbnailUrl": "/images/plants/callirhoe-involucrata/callirhoe-involucrata-2025-10-17T01-15-37-053Z-thumb.jpg",
+  "usdaPlantId": "CAINL",
+  "distribution": {
+    "fipsCodes": [
+      "12057",
+      "20129",
+      "48041",
+      "48313",
+      "48383",
+      "48461",
+      "48491"
+    ],
+    "statesFips": [
+      "08",
+      "12",
+      "20",
+      "35",
+      "40",
+      "48"
+    ]
+  }
+}

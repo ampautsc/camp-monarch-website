@@ -1,0 +1,87 @@
+.seed-share-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.badge-item {
+  background: rgba(120, 182, 78, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  font-weight: 600;
+  animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.badge-item.offer-badge {
+  background: #78B64E;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: 2px solid #C5E0B4;
+}
+
+.badge-item.request-badge {
+  background: #00B0F0;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: 2px solid #DEEBF7;
+}
+
+.badge-icon {
+  font-size: 16px;
+}
+
+.badge-count {
+  font-weight: 700;
+}
+
+/* User Status Bar - shown at bottom of plant card */
+.user-status-bar {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.user-status-bar.status-offered {
+  background: rgba(120, 182, 78, 0.2);
+  color: #78B64E;
+  border: 1px solid #78B64E;
+}
+
+.user-status-bar.status-requested {
+  background: rgba(0, 176, 240, 0.2);
+  color: #00B0F0;
+  border: 1px solid #00B0F0;
+}
+
+.user-status-bar.status-matched {
+  background: rgba(255, 193, 7, 0.2);
+  color: #FFC107;
+  border: 1px solid #FFC107;
+}
+
+.status-text {
+  display: inline-block;
+}

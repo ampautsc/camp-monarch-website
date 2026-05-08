@@ -1,0 +1,88 @@
+{
+  "id": "eriogonum-umbellatum",
+  "commonName": "Sulphur buckwheat",
+  "scientificName": "Eriogonum umbellatum",
+  "description": "Bright yellow flower clusters age to orange and rust. Low-growing mat-forming plant with woolly gray-green leaves. Extremely drought tolerant. Important food source for butterflies and native bees. Excellent for rock gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Washington",
+      "Oregon",
+      "Idaho",
+      "Montana",
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Colorado",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska",
+      "Alaska",
+      "California",
+      "Nevada",
+      "Utah"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/eriogonum-umbellatum/eriogonum-umbellatum-2025-10-17T01-15-09-154Z.jpg",
+  "thumbnailUrl": "/images/plants/eriogonum-umbellatum/eriogonum-umbellatum-2025-10-17T01-15-09-154Z-thumb.jpg",
+  "usdaPlantId": "ERUMV2",
+  "distribution": {
+    "fipsCodes": [
+      "06027",
+      "06051",
+      "06071",
+      "32003",
+      "32011",
+      "32017",
+      "32023"
+    ],
+    "statesFips": [
+      "06",
+      "32"
+    ]
+  }
+}

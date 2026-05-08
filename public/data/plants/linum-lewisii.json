@@ -1,0 +1,84 @@
+{
+  "id": "linum-lewisii",
+  "commonName": "Prairie flax",
+  "scientificName": "Linum lewisii",
+  "description": "Delicate blue five-petaled flowers that last only one day but appear in succession. Narrow grass-like leaves on wiry stems. Forms airy clumps. Extremely drought tolerant once established. Blooms over extended period.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Michigan",
+      "Minnesota",
+      "Missouri",
+      "Nebraska",
+      "North Dakota",
+      "Ohio",
+      "South Dakota",
+      "Wisconsin",
+      "Connecticut",
+      "Delaware",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "New Hampshire",
+      "New Jersey",
+      "New York",
+      "Pennsylvania",
+      "Rhode Island",
+      "Vermont",
+      "West Virginia",
+      "Colorado",
+      "Montana",
+      "Wyoming"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/linum-lewisii/linum-lewisii-2025-10-17T01-13-45-892Z.jpg",
+  "thumbnailUrl": "/images/plants/linum-lewisii/linum-lewisii-2025-10-17T01-13-45-892Z-thumb.jpg",
+  "usdaPlantId": "LILEL4"
+}

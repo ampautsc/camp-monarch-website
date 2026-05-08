@@ -1,0 +1,126 @@
+{
+  "id": "solidago-rugosa",
+  "commonName": "Wrinkleleaf goldenrod",
+  "scientificName": "Solidago rugosa",
+  "description": "Arching clusters of golden-yellow flowers with a distinctive zig-zag pattern. Wrinkled leaves give it the common name. Spreads by rhizomes. Prefers moist soils. Important late-season food source for pollinators.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "yellow"
+    ],
+    "bloomTime": [
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Connecticut",
+      "Delaware",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "New Hampshire",
+      "New Jersey",
+      "New York",
+      "Pennsylvania",
+      "Rhode Island",
+      "Vermont",
+      "West Virginia"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/solidago-rugosa/solidago-rugosa-2025-10-17T01-14-07-000Z.jpg",
+  "thumbnailUrl": "/images/plants/solidago-rugosa/solidago-rugosa-2025-10-17T01-14-07-000Z-thumb.jpg",
+  "usdaPlantId": "SORUV",
+  "distribution": {
+    "fipsCodes": [
+      "18087",
+      "25003",
+      "25021",
+      "25025",
+      "25027",
+      "42003",
+      "42015",
+      "42017",
+      "42019",
+      "42021",
+      "42025",
+      "42027",
+      "42029",
+      "42031",
+      "42033",
+      "42035",
+      "42037",
+      "42043",
+      "42045",
+      "42047",
+      "42049",
+      "42055",
+      "42061",
+      "42065",
+      "42071",
+      "42075",
+      "42079",
+      "42081",
+      "42083",
+      "42089",
+      "42091",
+      "42103",
+      "42105",
+      "42107",
+      "42111",
+      "42113",
+      "42115",
+      "42117",
+      "42121",
+      "42123",
+      "42127",
+      "42129",
+      "42133",
+      "54083"
+    ],
+    "statesFips": [
+      "09",
+      "18",
+      "23",
+      "24",
+      "25",
+      "26",
+      "33",
+      "36",
+      "39",
+      "42",
+      "44",
+      "50",
+      "51",
+      "54",
+      "55"
+    ]
+  }
+}

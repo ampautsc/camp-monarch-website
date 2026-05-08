@@ -1,0 +1,89 @@
+{
+  "id": "sphaeralcea-munroana",
+  "commonName": "Munro's globemallow",
+  "scientificName": "Sphaeralcea munroana",
+  "description": "Orange to coral cupped flowers all summer long. Gray-green maple-like leaves. Extremely drought tolerant once established. Important food source for desert bees. Deep taproot allows survival in harsh conditions.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Washington",
+      "Oregon",
+      "Idaho",
+      "Montana",
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Colorado",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska",
+      "Alaska",
+      "California",
+      "Nevada",
+      "Utah"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/sphaeralcea-munroana/sphaeralcea-munroana-2025-10-17T01-14-33-499Z.jpg",
+  "thumbnailUrl": "/images/plants/sphaeralcea-munroana/sphaeralcea-munroana-2025-10-17T01-14-33-499Z-thumb.jpg",
+  "usdaPlantId": "SPMUS2",
+  "distribution": {
+    "fipsCodes": [
+      "41023",
+      "49003",
+      "49023",
+      "49043",
+      "49049",
+      "49051"
+    ],
+    "statesFips": [
+      "16",
+      "41",
+      "49",
+      "56"
+    ]
+  }
+}

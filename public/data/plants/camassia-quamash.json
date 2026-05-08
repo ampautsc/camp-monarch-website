@@ -1,0 +1,86 @@
+{
+  "id": "camassia-quamash",
+  "commonName": "Common camas",
+  "scientificName": "Camassia quamash",
+  "description": "Star-shaped blue to purple flowers on tall spikes. Bulbous plant that forms impressive displays when naturalized. Bulbs were an important food source for Native Americans. Prefers moist spring conditions but tolerates summer dryness.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Washington",
+      "Oregon",
+      "Idaho",
+      "Montana",
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Colorado",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska",
+      "Alaska",
+      "California",
+      "Nevada",
+      "Utah"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/camassia-quamash/camassia-quamash-2025-10-17T01-13-35-634Z.jpg",
+  "thumbnailUrl": "/images/plants/camassia-quamash/camassia-quamash-2025-10-17T01-13-35-634Z-thumb.jpg",
+  "usdaPlantId": "CAQUW",
+  "distribution": {
+    "fipsCodes": [
+      "41025",
+      "41029",
+      "41033",
+      "41035",
+      "41037"
+    ],
+    "statesFips": [
+      "41"
+    ]
+  }
+}

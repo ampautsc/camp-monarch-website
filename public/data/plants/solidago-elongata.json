@@ -1,0 +1,72 @@
+{
+  "id": "solidago-elongata",
+  "commonName": "West Coast goldenrod",
+  "scientificName": "Solidago elongata",
+  "description": "Slender wand-like clusters of small yellow flowers. Blooms in late summer to fall. Prefers coastal conditions and moist soils. Important late-season nectar source. Less aggressive than some goldenrods.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "yellow"
+    ],
+    "bloomTime": [
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Washington",
+      "Oregon",
+      "Idaho",
+      "Montana",
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Colorado",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska",
+      "Alaska",
+      "California",
+      "Nevada",
+      "Utah"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/solidago-elongata/solidago-elongata-2025-10-17T01-14-48-545Z.jpg",
+  "thumbnailUrl": "/images/plants/solidago-elongata/solidago-elongata-2025-10-17T01-14-48-545Z-thumb.jpg",
+  "usdaPlantId": "SOCAS"
+}

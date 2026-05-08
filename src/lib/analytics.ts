@@ -14,8 +14,10 @@ export type AnalyticsEventType =
   | 'page_view'
   | 'cta_click'
   | 'outbound_link'
+  | 'external_link'
   | 'feedback_open'
   | 'tool_interaction'
+  | 'plant_detail_view'
 
 /**
  * Fire-and-forget analytics event. Never awaited. Never blocks UI.

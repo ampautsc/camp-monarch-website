@@ -1,0 +1,113 @@
+{
+  "id": "monardella-odoratissima",
+  "commonName": "Mountain monardella",
+  "scientificName": "Monardella odoratissima",
+  "description": "Dense heads of tubular lavender to pink flowers. Strongly aromatic minty foliage. Low-growing subshrub. Extremely drought tolerant. Important food source for native bees and butterflies. Leaves can be used for tea.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Washington",
+      "Oregon",
+      "Idaho",
+      "Montana",
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Colorado",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska",
+      "Alaska",
+      "California",
+      "Nevada",
+      "Utah"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/monardella-odoratissima/monardella-odoratissima-2025-10-17T01-13-33-656Z.jpg",
+  "thumbnailUrl": "/images/plants/monardella-odoratissima/monardella-odoratissima-2025-10-17T01-13-33-656Z-thumb.jpg",
+  "usdaPlantId": "MOODP",
+  "distribution": {
+    "fipsCodes": [
+      "06003",
+      "06005",
+      "06007",
+      "06009",
+      "06011",
+      "06017",
+      "06019",
+      "06021",
+      "06023",
+      "06027",
+      "06029",
+      "06033",
+      "06035",
+      "06039",
+      "06043",
+      "06045",
+      "06051",
+      "06057",
+      "06061",
+      "06063",
+      "06089",
+      "06091",
+      "06093",
+      "06103",
+      "06105",
+      "06107",
+      "06109",
+      "32009",
+      "32021",
+      "32031",
+      "32510"
+    ],
+    "statesFips": [
+      "06",
+      "32",
+      "41"
+    ]
+  }
+}

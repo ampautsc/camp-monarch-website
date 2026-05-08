@@ -1,0 +1,95 @@
+{
+  "id": "monardella-villosa",
+  "commonName": "Coyote mint",
+  "scientificName": "Monardella villosa",
+  "description": "Purple to pink flowers in dense terminal heads. Hairy aromatic foliage. Low-growing plant forms mats. Drought tolerant once established. Attracts hummingbirds and butterflies. Native to California and Oregon.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "California",
+      "Nevada",
+      "Utah",
+      "Arizona"
+    ],
+    "hardinessZones": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/monardella-villosa/monardella-villosa-2025-10-17T01-13-35-106Z.jpg",
+  "thumbnailUrl": "/images/plants/monardella-villosa/monardella-villosa-2025-10-17T01-13-35-106Z-thumb.jpg",
+  "usdaPlantId": "MOVIV",
+  "distribution": {
+    "fipsCodes": [
+      "06001",
+      "06005",
+      "06007",
+      "06009",
+      "06011",
+      "06013",
+      "06017",
+      "06021",
+      "06023",
+      "06033",
+      "06041",
+      "06043",
+      "06045",
+      "06053",
+      "06055",
+      "06057",
+      "06063",
+      "06069",
+      "06075",
+      "06079",
+      "06081",
+      "06083",
+      "06085",
+      "06087",
+      "06089",
+      "06095",
+      "06097",
+      "06099",
+      "06103",
+      "06107",
+      "06109",
+      "41019",
+      "41029",
+      "41033"
+    ],
+    "statesFips": [
+      "06",
+      "41"
+    ]
+  }
+}

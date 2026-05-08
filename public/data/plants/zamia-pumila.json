@@ -1,0 +1,55 @@
+{
+  "id": "zamia-pumila",
+  "commonName": "Coontie",
+  "scientificName": "Zamia pumila",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "partial-shade",
+    "moisture": "dry",
+    "soil": "sandy"
+  },
+  "characteristics": {
+    "height": 36,
+    "width": 48,
+    "bloomColor": [
+      "green"
+    ],
+    "bloomTime": [
+      "spring"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [
+      "Atala butterfly"
+    ],
+    "foodFor": [
+      "butterflies"
+    ],
+    "usefulFor": [
+      "native garden",
+      "wildlife habitat"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/zamia-pumila/zamia-pumila-2025-10-23T01-27-47-745Z.jpg",
+  "thumbnailUrl": "/images/plants/zamia-pumila/zamia-pumila-2025-10-23T01-27-47-745Z-thumb.jpg",
+  "usdaPlantId": "ZAPUP2",
+  "distribution": {
+    "fipsCodes": [],
+    "statesFips": [
+      "72"
+    ]
+  }
+}

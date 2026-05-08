@@ -1,0 +1,63 @@
+{
+  "id": "chilopsis-linearis",
+  "commonName": "Desert willow",
+  "scientificName": "Chilopsis linearis",
+  "description": "Showy orchid-like pink to purple flowers with ruffled petals. Deciduous shrub or small tree with willow-like leaves. Extremely drought and heat tolerant. Long bean-like seed pods. Hummingbirds love the tubular flowers.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "California",
+      "Nevada",
+      "Utah",
+      "Arizona"
+    ],
+    "hardinessZones": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/chilopsis-linearis/chilopsis-linearis-2025-10-17T03-22-59-894Z.jpg",
+  "thumbnailUrl": "/images/plants/chilopsis-linearis/chilopsis-linearis-2025-10-17T03-22-59-894Z-thumb.jpg",
+  "usdaPlantId": "CHLIL2",
+  "distribution": {
+    "fipsCodes": [
+      "35051"
+    ],
+    "statesFips": [
+      "20",
+      "35",
+      "40",
+      "48"
+    ]
+  }
+}

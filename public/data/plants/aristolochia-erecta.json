@@ -1,0 +1,80 @@
+{
+  "id": "aristolochia-erecta",
+  "commonName": "Swanflower",
+  "scientificName": "Aristolochia erecta",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/aristolochia-erecta/aristolochia-erecta-2025-10-23T01-27-47-005Z.jpg",
+  "thumbnailUrl": "/images/plants/aristolochia-erecta/aristolochia-erecta-2025-10-23T01-27-47-005Z-thumb.jpg",
+  "usdaPlantId": "ARER",
+  "distribution": {
+    "fipsCodes": [
+      "48013",
+      "48021",
+      "48029",
+      "48047",
+      "48055",
+      "48057",
+      "48123",
+      "48131",
+      "48171",
+      "48175",
+      "48177",
+      "48215",
+      "48247",
+      "48273",
+      "48287",
+      "48297",
+      "48299",
+      "48339",
+      "48427",
+      "48453",
+      "48477",
+      "48479",
+      "48493",
+      "48505"
+    ],
+    "statesFips": [
+      "48"
+    ]
+  }
+}

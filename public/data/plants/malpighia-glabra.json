@@ -1,0 +1,70 @@
+{
+  "id": "malpighia-glabra",
+  "commonName": "Barbados Cherry",
+  "scientificName": "Malpighia glabra",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/malpighia-glabra/malpighia-glabra-2025-10-23T01-27-26-470Z.jpg",
+  "thumbnailUrl": "/images/plants/malpighia-glabra/malpighia-glabra-2025-10-23T01-27-26-470Z-thumb.jpg",
+  "usdaPlantId": "MAGL6",
+  "distribution": {
+    "fipsCodes": [
+      "48061",
+      "48121",
+      "48201",
+      "48215",
+      "48249",
+      "48261",
+      "48273",
+      "48355",
+      "48427",
+      "48453",
+      "48479"
+    ],
+    "statesFips": [
+      "48",
+      "78"
+    ]
+  }
+}

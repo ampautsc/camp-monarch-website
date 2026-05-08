@@ -1,0 +1,79 @@
+{
+  "id": "salvia-dorrii",
+  "commonName": "Desert sage",
+  "scientificName": "Salvia dorrii",
+  "description": "Lavender-blue flowers with prominent dark blue calyxes. Low shrubby plant with aromatic gray-green foliage. Extremely drought tolerant. Important food source for native bees and hummingbirds. Tolerates alkaline soils.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "California",
+      "Nevada",
+      "Utah",
+      "Arizona"
+    ],
+    "hardinessZones": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/salvia-dorrii/salvia-dorrii-2025-10-17T01-13-23-654Z.jpg",
+  "thumbnailUrl": "/images/plants/salvia-dorrii/salvia-dorrii-2025-10-17T01-13-23-654Z-thumb.jpg",
+  "usdaPlantId": "SADOP",
+  "distribution": {
+    "fipsCodes": [
+      "04005",
+      "04015",
+      "04025",
+      "06027",
+      "06029",
+      "06037",
+      "06051",
+      "06063",
+      "06071",
+      "06073",
+      "06111",
+      "32003",
+      "32013",
+      "32017",
+      "32023",
+      "32031"
+    ],
+    "statesFips": [
+      "04",
+      "06",
+      "32"
+    ]
+  }
+}

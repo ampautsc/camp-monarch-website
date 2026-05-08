@@ -1,0 +1,74 @@
+{
+  "id": "saxifraga-bronchialis",
+  "commonName": "Yellowdot Saxifrage",
+  "scientificName": "Saxifraga bronchialis",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "spring"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/saxifraga-bronchialis/saxifraga-bronchialis-2025-10-23T01-26-56-569Z.jpg",
+  "thumbnailUrl": "/images/plants/saxifraga-bronchialis/saxifraga-bronchialis-2025-10-23T01-26-56-569Z-thumb.jpg",
+  "usdaPlantId": "SABRV2",
+  "distribution": {
+    "fipsCodes": [
+      "41005",
+      "41007",
+      "41019",
+      "41027",
+      "41039",
+      "41043",
+      "41047",
+      "41051",
+      "41057",
+      "53027",
+      "53041",
+      "53049",
+      "53053",
+      "53059",
+      "53077"
+    ],
+    "statesFips": [
+      "02",
+      "41",
+      "53"
+    ]
+  }
+}

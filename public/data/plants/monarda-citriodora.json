@@ -1,0 +1,92 @@
+{
+  "id": "monarda-citriodora",
+  "commonName": "Lemon beebalm",
+  "scientificName": "Monarda citriodora",
+  "description": "Whorled clusters of pink to purple tubular flowers. Lemon-scented foliage. Annual that self-seeds readily. Attracts hummingbirds and butterflies. Tolerates heat and drought. Used in herbal teas.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Michigan",
+      "Minnesota",
+      "Missouri",
+      "Nebraska",
+      "North Dakota",
+      "Ohio",
+      "South Dakota",
+      "Wisconsin",
+      "Connecticut",
+      "Delaware",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "New Hampshire",
+      "New Jersey",
+      "New York",
+      "Pennsylvania",
+      "Rhode Island",
+      "Vermont",
+      "West Virginia",
+      "Colorado",
+      "Montana",
+      "Wyoming"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/monarda-citriodora/monarda-citriodora-2025-10-17T01-13-28-831Z.jpg",
+  "thumbnailUrl": "/images/plants/monarda-citriodora/monarda-citriodora-2025-10-17T01-13-28-831Z-thumb.jpg",
+  "usdaPlantId": "MOCIP2",
+  "distribution": {
+    "fipsCodes": [
+      "48057"
+    ],
+    "statesFips": [
+      "48"
+    ]
+  }
+}

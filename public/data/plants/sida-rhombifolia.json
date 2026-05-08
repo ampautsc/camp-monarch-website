@@ -1,0 +1,70 @@
+{
+  "id": "sida-rhombifolia",
+  "commonName": "Cuban Jute",
+  "scientificName": "Sida rhombifolia",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "spring"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/sida-rhombifolia/sida-rhombifolia-2025-10-23T01-25-46-599Z.jpg",
+  "thumbnailUrl": "/images/plants/sida-rhombifolia/sida-rhombifolia-2025-10-23T01-25-46-599Z-thumb.jpg",
+  "usdaPlantId": "SIRHR",
+  "distribution": {
+    "fipsCodes": [
+      "70002",
+      "70004",
+      "70010",
+      "70150",
+      "70212",
+      "70214",
+      "70218",
+      "70222",
+      "70224",
+      "70226",
+      "70227",
+      "70228"
+    ],
+    "statesFips": [
+      "66",
+      "70"
+    ]
+  }
+}

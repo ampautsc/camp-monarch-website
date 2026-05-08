@@ -1,0 +1,57 @@
+{
+  "id": "condalia-hookeri",
+  "commonName": "Bluewood Condalia",
+  "scientificName": "Condalia hookeri",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/condalia-hookeri/condalia-hookeri-2025-10-23T01-26-19-508Z.jpg",
+  "thumbnailUrl": "/images/plants/condalia-hookeri/condalia-hookeri-2025-10-23T01-26-19-508Z-thumb.jpg",
+  "usdaPlantId": "COHOH",
+  "distribution": {
+    "fipsCodes": [],
+    "statesFips": [
+      "48"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "oenothera-caespitosa",
+  "commonName": "Tufted evening primrose",
+  "scientificName": "Oenothera caespitosa",
+  "description": "Large white flowers that open in evening and close by noon. Fragrant blooms attract sphinx moths. Low-growing rosette with large papery petals. Extremely drought tolerant with deep taproot. Flowers age to pink.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "pink"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Washington",
+      "Oregon",
+      "Idaho",
+      "Montana",
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Colorado",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska",
+      "Alaska",
+      "California",
+      "Nevada",
+      "Utah"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/oenothera-caespitosa/oenothera-caespitosa-2025-10-17T03-23-07-558Z.jpg",
+  "thumbnailUrl": "/images/plants/oenothera-caespitosa/oenothera-caespitosa-2025-10-17T03-23-07-558Z-thumb.jpg",
+  "usdaPlantId": "OECAN",
+  "distribution": {
+    "fipsCodes": [
+      "04001",
+      "04005",
+      "04017",
+      "35031",
+      "35039",
+      "35043",
+      "35045",
+      "49007",
+      "49009",
+      "49013",
+      "49015",
+      "49017",
+      "49019",
+      "49025",
+      "49037",
+      "49039",
+      "49041",
+      "49047",
+      "49051",
+      "49053",
+      "49055"
+    ],
+    "statesFips": [
+      "04",
+      "08",
+      "35",
+      "49"
+    ]
+  }
+}

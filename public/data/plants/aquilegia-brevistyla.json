@@ -1,0 +1,74 @@
+{
+  "id": "aquilegia-brevistyla",
+  "commonName": "Smallflower Columbine",
+  "scientificName": "Aquilegia brevistyla",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/aquilegia-brevistyla/aquilegia-brevistyla-2025-10-23T01-26-47-958Z.jpg",
+  "thumbnailUrl": "/images/plants/aquilegia-brevistyla/aquilegia-brevistyla-2025-10-23T01-26-47-958Z-thumb.jpg",
+  "usdaPlantId": "AQBR",
+  "distribution": {
+    "fipsCodes": [
+      "02020",
+      "02063",
+      "02066",
+      "02090",
+      "02170",
+      "02240",
+      "02290",
+      "27027",
+      "30045",
+      "46033",
+      "46081",
+      "46103",
+      "56029",
+      "56045"
+    ],
+    "statesFips": [
+      "02",
+      "27",
+      "30",
+      "46",
+      "56"
+    ]
+  }
+}

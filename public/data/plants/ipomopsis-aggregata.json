@@ -1,0 +1,86 @@
+{
+  "id": "ipomopsis-aggregata",
+  "commonName": "Scarlet gilia",
+  "scientificName": "Ipomopsis aggregata",
+  "description": "Brilliant red tubular flowers arranged in tall spikes. Hummingbird magnet with its bright color and nectar. Finely divided fernlike foliage. Biennial that forms rosette first year. Self-seeds readily in appropriate conditions.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "red"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Washington",
+      "Oregon",
+      "Idaho",
+      "Montana",
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Colorado",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska",
+      "Alaska",
+      "California",
+      "Nevada",
+      "Utah"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/ipomopsis-aggregata/ipomopsis-aggregata-2025-10-17T01-15-33-141Z.jpg",
+  "thumbnailUrl": "/images/plants/ipomopsis-aggregata/ipomopsis-aggregata-2025-10-17T01-15-33-141Z-thumb.jpg",
+  "usdaPlantId": "IPAGW",
+  "distribution": {
+    "fipsCodes": [
+      "08049",
+      "08057",
+      "08069",
+      "08107"
+    ],
+    "statesFips": [
+      "08",
+      "16",
+      "56"
+    ]
+  }
+}

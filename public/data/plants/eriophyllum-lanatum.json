@@ -1,0 +1,84 @@
+{
+  "id": "eriophyllum-lanatum",
+  "commonName": "Common woolly sunflower",
+  "scientificName": "Eriophyllum lanatum",
+  "description": "Bright yellow daisy-like flowers with woolly gray-green foliage. Forms low mounds that spread slowly. Extremely drought tolerant once established. Blooms prolifically in spring and summer. Excellent for dry sunny slopes and rock gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "yellow"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Washington",
+      "Oregon",
+      "Idaho",
+      "Montana",
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Colorado",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska",
+      "Alaska",
+      "California",
+      "Nevada",
+      "Utah"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/eriophyllum-lanatum/eriophyllum-lanatum-2025-10-17T01-13-29-748Z.jpg",
+  "thumbnailUrl": "/images/plants/eriophyllum-lanatum/eriophyllum-lanatum-2025-10-17T01-13-29-748Z-thumb.jpg",
+  "usdaPlantId": "ERLAO",
+  "distribution": {
+    "fipsCodes": [
+      "06019",
+      "06029",
+      "06071",
+      "06107"
+    ],
+    "statesFips": [
+      "06"
+    ]
+  }
+}

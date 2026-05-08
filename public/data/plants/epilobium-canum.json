@@ -1,0 +1,113 @@
+{
+  "id": "epilobium-canum",
+  "commonName": "California fuchsia",
+  "scientificName": "Epilobium canum",
+  "description": "Brilliant scarlet-red tubular flowers beloved by hummingbirds. Blooms late summer to fall when few other plants flower. Drought tolerant subshrub. Gray-green narrow leaves. Spreads by underground stems to form colonies.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "California",
+      "Nevada",
+      "Utah",
+      "Arizona"
+    ],
+    "hardinessZones": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/epilobium-canum/epilobium-canum-2025-10-17T01-13-25-306Z.jpg",
+  "thumbnailUrl": "/images/plants/epilobium-canum/epilobium-canum-2025-10-17T01-13-25-306Z-thumb.jpg",
+  "usdaPlantId": "EPCAL",
+  "distribution": {
+    "fipsCodes": [
+      "04003",
+      "04005",
+      "04007",
+      "04009",
+      "04011",
+      "04013",
+      "04015",
+      "04019",
+      "04023",
+      "04025",
+      "06003",
+      "06005",
+      "06007",
+      "06009",
+      "06011",
+      "06015",
+      "06017",
+      "06019",
+      "06021",
+      "06023",
+      "06027",
+      "06029",
+      "06033",
+      "06035",
+      "06037",
+      "06039",
+      "06043",
+      "06045",
+      "06051",
+      "06057",
+      "06061",
+      "06063",
+      "06065",
+      "06071",
+      "06073",
+      "06083",
+      "06091",
+      "06099",
+      "06105",
+      "06107",
+      "06109",
+      "06111",
+      "32031",
+      "35017",
+      "35023",
+      "41015",
+      "41029",
+      "41033",
+      "41035"
+    ],
+    "statesFips": [
+      "04",
+      "06",
+      "32",
+      "35",
+      "41"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "hedysarum-boreale",
+  "commonName": "Northern sweetvetch",
+  "scientificName": "Hedysarum boreale ssp. Mackenzeii",
+  "description": "Magenta pea-like flowers in elongated clusters. Compound leaves typical of legume family. Nitrogen-fixing plant that improves soil. Prefers well-drained soils. Deep taproot makes it drought tolerant. Attracts bees and butterflies.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Alaska"
+    ],
+    "hardinessZones": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/hedysarum-boreale/hedysarum-boreale-2025-10-17T06-26-55-769Z.jpg",
+  "thumbnailUrl": "/images/plants/hedysarum-boreale/hedysarum-boreale-2025-10-17T06-26-55-769Z-thumb.jpg",
+  "usdaPlantId": "HEBOM",
+  "distribution": {
+    "fipsCodes": [
+      "02050",
+      "02063",
+      "02066",
+      "02068",
+      "02090",
+      "02100",
+      "02170",
+      "02180",
+      "02185",
+      "02188",
+      "02240",
+      "02282",
+      "02290",
+      "41061",
+      "41063",
+      "53047"
+    ],
+    "statesFips": [
+      "02",
+      "41",
+      "53"
+    ]
+  }
+}

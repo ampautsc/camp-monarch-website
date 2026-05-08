@@ -1,0 +1,64 @@
+{
+  "id": "coursetia-glandulosa",
+  "commonName": "Rosary Babybonnets",
+  "scientificName": "Coursetia glandulosa",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/coursetia-glandulosa/coursetia-glandulosa-2025-10-23T01-27-51-024Z.jpg",
+  "thumbnailUrl": "/images/plants/coursetia-glandulosa/coursetia-glandulosa-2025-10-23T01-27-51-024Z-thumb.jpg",
+  "usdaPlantId": "COGL8",
+  "distribution": {
+    "fipsCodes": [
+      "04007",
+      "04013",
+      "04019",
+      "04021",
+      "04025",
+      "04027"
+    ],
+    "statesFips": [
+      "04"
+    ]
+  }
+}

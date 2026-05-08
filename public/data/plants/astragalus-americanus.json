@@ -1,0 +1,84 @@
+{
+  "id": "astragalus-americanus",
+  "commonName": "American milkvetch",
+  "scientificName": "Astragalus americanus",
+  "description": "Small white to cream pea-like flowers in loose clusters. Nitrogen-fixing plant that improves soil. Compound leaves with many small leaflets. Prefers moist meadows and streambanks. Member of the legume family.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Alaska"
+    ],
+    "hardinessZones": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/astragalus-americanus/astragalus-americanus-2025-10-17T03-22-50-495Z.jpg",
+  "thumbnailUrl": "/images/plants/astragalus-americanus/astragalus-americanus-2025-10-17T03-22-50-495Z-thumb.jpg",
+  "usdaPlantId": "ASAM3",
+  "distribution": {
+    "fipsCodes": [
+      "02063",
+      "02066",
+      "02170",
+      "02240",
+      "30013",
+      "30027",
+      "30029",
+      "30031",
+      "30043",
+      "30057",
+      "30067",
+      "30071",
+      "30085",
+      "30095",
+      "46081",
+      "46103",
+      "56003",
+      "56019",
+      "56029",
+      "56033",
+      "56043"
+    ],
+    "statesFips": [
+      "02",
+      "08",
+      "30",
+      "46",
+      "56"
+    ]
+  }
+}

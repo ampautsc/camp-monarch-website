@@ -1,0 +1,100 @@
+{
+  "id": "ceanothus-cordulatus",
+  "commonName": "Whitethorn Ceanothus",
+  "scientificName": "Ceanothus cordulatus",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/ceanothus-cordulatus/ceanothus-cordulatus-2025-10-23T01-27-40-916Z.jpg",
+  "thumbnailUrl": "/images/plants/ceanothus-cordulatus/ceanothus-cordulatus-2025-10-23T01-27-40-916Z-thumb.jpg",
+  "usdaPlantId": "CECO",
+  "distribution": {
+    "fipsCodes": [
+      "06003",
+      "06005",
+      "06007",
+      "06009",
+      "06011",
+      "06017",
+      "06019",
+      "06021",
+      "06023",
+      "06027",
+      "06029",
+      "06033",
+      "06035",
+      "06037",
+      "06043",
+      "06045",
+      "06051",
+      "06057",
+      "06061",
+      "06063",
+      "06065",
+      "06071",
+      "06083",
+      "06089",
+      "06091",
+      "06093",
+      "06103",
+      "06105",
+      "06107",
+      "06109",
+      "06111",
+      "06115",
+      "32005",
+      "32023",
+      "32031",
+      "32510",
+      "41011",
+      "41015",
+      "41019",
+      "41029",
+      "41033",
+      "41035"
+    ],
+    "statesFips": [
+      "06",
+      "32",
+      "41"
+    ]
+  }
+}

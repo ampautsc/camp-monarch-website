@@ -1,0 +1,50 @@
+{
+  "id": "primula-pauciflora",
+  "commonName": "Shootingstar",
+  "scientificName": "Primula pauciflora",
+  "description": "Small purple to pink flowers on short stems. Low-growing alpine plant. Prefers moist, cool conditions. Very cold hardy. Early spring bloomer. Forms small rosettes of leaves.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Alaska"
+    ],
+    "hardinessZones": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/primula-pauciflora/primula-pauciflora-2025-10-17T01-14-11-497Z.jpg",
+  "thumbnailUrl": "/images/plants/primula-pauciflora/primula-pauciflora-2025-10-17T01-14-11-497Z-thumb.jpg"
+}

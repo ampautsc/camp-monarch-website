@@ -1,0 +1,60 @@
+{
+  "id": "achillea-millefolium",
+  "commonName": "Yarrow",
+  "scientificName": "Achillea millefolium",
+  "description": "Clusters of small white to pinkish flowers in flat-topped umbels. Ferny, aromatic foliage and spreading habit make it excellent for naturalizing. Very hardy and drought tolerant once established. Attracts many pollinators and has been used medicinally for centuries.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Alaska"
+    ],
+    "hardinessZones": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/achillea-millefolium/achillea-millefolium-2025-10-17T01-13-20-697Z.jpg",
+  "thumbnailUrl": "/images/plants/achillea-millefolium/achillea-millefolium-2025-10-17T01-13-20-697Z-thumb.jpg",
+  "usdaPlantId": "ACMIP2",
+  "distribution": {
+    "fipsCodes": [
+      "06013",
+      "06041",
+      "06095"
+    ],
+    "statesFips": [
+      "06"
+    ]
+  }
+}

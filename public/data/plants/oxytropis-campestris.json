@@ -1,0 +1,60 @@
+{
+  "id": "oxytropis-campestris",
+  "commonName": "Northern yellow locoweed",
+  "scientificName": "Oxytropis campestris",
+  "description": "White to cream pea-like flowers tinged with purple. Pinnately compound leaves with many small leaflets. Low-growing alpine plant. Nitrogen-fixing legume. Prefers well-drained rocky soils. Very cold hardy.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "yellow"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Alaska"
+    ],
+    "hardinessZones": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/oxytropis-campestris/oxytropis-campestris-2025-10-17T01-14-24-888Z.jpg",
+  "thumbnailUrl": "/images/plants/oxytropis-campestris/oxytropis-campestris-2025-10-17T01-14-24-888Z-thumb.jpg",
+  "usdaPlantId": "OXCAW",
+  "distribution": {
+    "fipsCodes": [
+      "53025"
+    ],
+    "statesFips": [
+      "53"
+    ]
+  }
+}

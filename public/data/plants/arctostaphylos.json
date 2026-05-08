@@ -1,0 +1,53 @@
+{
+  "id": "arctostaphylos",
+  "commonName": "Manzanita",
+  "scientificName": "Arctostaphylos spp.",
+  "description": "Evergreen shrub with smooth red bark that peels attractively. Small pink urn-shaped flowers followed by red berries. Extremely drought tolerant with leathery leaves. Important food source for birds and wildlife in dry western landscapes.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "California",
+      "Nevada",
+      "Utah",
+      "Arizona"
+    ],
+    "hardinessZones": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/arctostaphylos/arctostaphylos-2025-10-17T01-14-05-320Z.jpg",
+  "thumbnailUrl": "/images/plants/arctostaphylos/arctostaphylos-2025-10-17T01-14-05-320Z-thumb.jpg"
+}

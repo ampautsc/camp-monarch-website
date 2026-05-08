@@ -1,0 +1,73 @@
+{
+  "id": "agave-lechuguilla",
+  "commonName": "Lechuguilla",
+  "scientificName": "Agave lechuguilla",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "white"
+    ],
+    "bloomTime": [
+      "summer"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/agave-lechuguilla/agave-lechuguilla-2025-10-23T01-27-38-048Z.jpg",
+  "thumbnailUrl": "/images/plants/agave-lechuguilla/agave-lechuguilla-2025-10-23T01-27-38-048Z-thumb.jpg",
+  "usdaPlantId": "AGLE",
+  "distribution": {
+    "fipsCodes": [
+      "35013",
+      "35015",
+      "48043",
+      "48103",
+      "48105",
+      "48109",
+      "48141",
+      "48229",
+      "48243",
+      "48319",
+      "48371",
+      "48377",
+      "48443",
+      "48461",
+      "48463",
+      "48465"
+    ],
+    "statesFips": [
+      "35",
+      "48"
+    ]
+  }
+}

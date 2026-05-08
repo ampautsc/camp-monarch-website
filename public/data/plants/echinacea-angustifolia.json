@@ -1,0 +1,90 @@
+{
+  "id": "echinacea-angustifolia",
+  "commonName": "Narrow-leaved coneflower",
+  "scientificName": "Echinacea angustifolia",
+  "description": "Purple-pink ray flowers droop around prominent cone center. Narrow leaves unlike other coneflowers. Deep taproot makes it extremely drought tolerant. Important medicinal plant used in herbal remedies. Attracts butterflies and provides seeds for birds.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "yellow",
+      "orange"
+    ],
+    "bloomTime": [
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Colorado",
+      "Montana",
+      "North Dakota",
+      "South Dakota",
+      "Wyoming",
+      "Kansas",
+      "Nebraska"
+    ],
+    "hardinessZones": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/echinacea-angustifolia/echinacea-angustifolia-2025-10-17T01-14-44-820Z.jpg",
+  "thumbnailUrl": "/images/plants/echinacea-angustifolia/echinacea-angustifolia-2025-10-17T01-14-44-820Z-thumb.jpg",
+  "usdaPlantId": "ECANS",
+  "distribution": {
+    "fipsCodes": [
+      "20015",
+      "20079",
+      "20191",
+      "40011",
+      "40013",
+      "40027",
+      "40039",
+      "40051",
+      "40053",
+      "40059",
+      "40073",
+      "40079",
+      "40083",
+      "40087",
+      "40099",
+      "40109",
+      "40119",
+      "40129",
+      "40133",
+      "40137",
+      "40149",
+      "40151"
+    ],
+    "statesFips": [
+      "20",
+      "22",
+      "40",
+      "48"
+    ]
+  }
+}

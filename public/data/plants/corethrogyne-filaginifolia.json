@@ -1,0 +1,84 @@
+{
+  "id": "corethrogyne-filaginifolia",
+  "commonName": "California aster",
+  "scientificName": "Corethrogyne filaginifolia",
+  "description": "Delicate lavender to white daisy-like flowers. Low-growing plant with narrow gray-green leaves. Tolerates coastal conditions and drought. Important late-season nectar source for butterflies. Reseeds readily.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple",
+      "blue"
+    ],
+    "bloomTime": [
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "California",
+      "Nevada",
+      "Utah",
+      "Arizona"
+    ],
+    "hardinessZones": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/corethrogyne-filaginifolia/corethrogyne-filaginifolia-2025-10-17T03-22-22-916Z.jpg",
+  "thumbnailUrl": "/images/plants/corethrogyne-filaginifolia/corethrogyne-filaginifolia-2025-10-17T03-22-22-916Z-thumb.jpg",
+  "usdaPlantId": "COFIF",
+  "distribution": {
+    "fipsCodes": [
+      "06001",
+      "06019",
+      "06027",
+      "06029",
+      "06037",
+      "06039",
+      "06043",
+      "06047",
+      "06053",
+      "06059",
+      "06065",
+      "06069",
+      "06071",
+      "06073",
+      "06075",
+      "06077",
+      "06079",
+      "06081",
+      "06083",
+      "06085",
+      "06087",
+      "06107",
+      "06109",
+      "06111"
+    ],
+    "statesFips": [
+      "06"
+    ]
+  }
+}

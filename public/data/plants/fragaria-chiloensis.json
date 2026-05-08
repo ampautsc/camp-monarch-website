@@ -1,0 +1,61 @@
+{
+  "id": "fragaria-chiloensis",
+  "commonName": "Beach strawberry",
+  "scientificName": "Fragaria chiloensis",
+  "description": "White flowers followed by small sweet strawberries. Glossy dark green leaves turn reddish in winter. Spreads by runners to form groundcover. Tolerates coastal conditions and some drought. Parent of cultivated strawberries.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Alaska"
+    ],
+    "hardinessZones": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/fragaria-chiloensis/fragaria-chiloensis-2025-10-17T01-14-40-971Z.jpg",
+  "thumbnailUrl": "/images/plants/fragaria-chiloensis/fragaria-chiloensis-2025-10-17T01-14-40-971Z-thumb.jpg",
+  "usdaPlantId": "FRCHS2",
+  "distribution": {
+    "fipsCodes": [
+      "15001",
+      "15009"
+    ],
+    "statesFips": [
+      "15"
+    ]
+  }
+}

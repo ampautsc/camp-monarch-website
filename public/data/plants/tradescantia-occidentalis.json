@@ -1,0 +1,123 @@
+{
+  "id": "tradescantia-occidentalis",
+  "commonName": "Prairie spiderwort",
+  "scientificName": "Tradescantia occidentalis",
+  "description": "Three-petaled blue to purple flowers emerge from boat-shaped bracts. Grass-like foliage. Each flower lasts only one day but many buds provide succession of bloom. Prefers well-drained prairie soils. Forms clumps.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "medium",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 24,
+    "width": 18,
+    "bloomColor": [
+      "purple"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "Arizona",
+      "New Mexico",
+      "Texas",
+      "Oklahoma",
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Michigan",
+      "Minnesota",
+      "Missouri",
+      "Nebraska",
+      "North Dakota",
+      "Ohio",
+      "South Dakota",
+      "Wisconsin",
+      "Connecticut",
+      "Delaware",
+      "Maine",
+      "Maryland",
+      "Massachusetts",
+      "New Hampshire",
+      "New Jersey",
+      "New York",
+      "Pennsylvania",
+      "Rhode Island",
+      "Vermont",
+      "West Virginia",
+      "Colorado",
+      "Montana",
+      "Wyoming"
+    ],
+    "hardinessZones": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "3",
+      "4"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "bees",
+      "native bees"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "ground-nesting birds"
+    ]
+  },
+  "imageUrl": "/images/plants/tradescantia-occidentalis/tradescantia-occidentalis-2025-10-17T01-14-13-582Z.jpg",
+  "thumbnailUrl": "/images/plants/tradescantia-occidentalis/tradescantia-occidentalis-2025-10-17T01-14-13-582Z-thumb.jpg",
+  "usdaPlantId": "TROCS",
+  "distribution": {
+    "fipsCodes": [
+      "04001",
+      "04003",
+      "04007",
+      "04009",
+      "04013",
+      "04017",
+      "04019",
+      "04021",
+      "08009",
+      "08011",
+      "08013",
+      "08017",
+      "08031",
+      "08035",
+      "08039",
+      "08041",
+      "08043",
+      "08059",
+      "08069",
+      "08071",
+      "08073",
+      "08075",
+      "08087",
+      "08115",
+      "08121",
+      "08123",
+      "08125",
+      "35031",
+      "35039"
+    ],
+    "statesFips": [
+      "04",
+      "08",
+      "35",
+      "49"
+    ]
+  }
+}

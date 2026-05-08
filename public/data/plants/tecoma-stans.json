@@ -1,0 +1,100 @@
+{
+  "id": "tecoma-stans",
+  "commonName": "Yellow Bells",
+  "scientificName": "Tecoma stans",
+  "description": "A native plant species. This plant adds natural beauty to native gardens.",
+  "requirements": {
+    "sun": "full-sun",
+    "moisture": "dry",
+    "soil": "loam"
+  },
+  "characteristics": {
+    "height": 120,
+    "width": 96,
+    "bloomColor": [
+      "yellow"
+    ],
+    "bloomTime": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "perennial": true,
+    "nativeRange": [
+      "United States"
+    ],
+    "hardinessZones": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ]
+  },
+  "relationships": {
+    "hostPlantTo": [],
+    "foodFor": [
+      "butterflies",
+      "hummingbirds"
+    ],
+    "usefulFor": [
+      "pollinator garden",
+      "native garden"
+    ],
+    "shelterFor": [
+      "songbirds"
+    ]
+  },
+  "imageUrl": "/images/plants/tecoma-stans/tecoma-stans-2025-10-23T01-27-30-170Z.jpg",
+  "thumbnailUrl": "/images/plants/tecoma-stans/tecoma-stans-2025-10-23T01-27-30-170Z-thumb.jpg",
+  "usdaPlantId": "TEST",
+  "distribution": {
+    "fipsCodes": [
+      "04003",
+      "04007",
+      "04009",
+      "04019",
+      "04021",
+      "04023",
+      "12009",
+      "12021",
+      "12071",
+      "12086",
+      "12087",
+      "15001",
+      "15003",
+      "15009",
+      "35013",
+      "48029",
+      "48043",
+      "48061",
+      "48109",
+      "48141",
+      "48175",
+      "48209",
+      "48215",
+      "48229",
+      "48243",
+      "48249",
+      "48371",
+      "48373",
+      "48377",
+      "48443",
+      "48469",
+      "48479",
+      "48493",
+      "48505",
+      "70150"
+    ],
+    "statesFips": [
+      "04",
+      "12",
+      "15",
+      "35",
+      "48",
+      "66",
+      "70",
+      "72",
+      "78"
+    ]
+  }
+}
