@@ -31,11 +31,11 @@ const actions = [
   {
     number: 3,
     title: 'Log a Monarch sighting when you see one.',
-    detail: 'Your observation joins the national count that researchers use to track population trends. It takes 90 seconds. The count only works if people in your county participate.',
+    detail: 'Your observation joins the national count that researchers use to track population trends. It takes 90 seconds. iNaturalist is the trusted citizen science platform researchers rely on — your sighting becomes open data.',
     link: null,
     linkLabel: null,
-    external: 'https://ampautsc.github.io/sis-hello-world/',
-    externalLabel: 'Log a sighting →',
+    external: 'https://www.inaturalist.org/taxa/48662-Danaus-plexippus',
+    externalLabel: 'Log on iNaturalist →',
     page: null,
     pageLabel: null,
   },
@@ -70,6 +70,7 @@ const resources = [
   { label: 'USDA Plant Hardiness Zone Map', url: 'https://planthardiness.ars.usda.gov/', org: 'USDA' },
   { label: 'Monarch Waystation registry', url: 'https://www.monarchwatch.org/waystations/', org: 'Monarch Watch' },
   { label: 'Journey North — track the migration', url: 'https://journeynorth.org/monarchs', org: 'Journey North' },
+  { label: 'Log a Monarch sighting — open citizen science data', url: 'https://www.inaturalist.org/taxa/48662-Danaus-plexippus', org: 'iNaturalist' },
   { label: 'Log a sighting (Camp Monarch app)', url: 'https://ampautsc.github.io/sis-hello-world/', org: 'Camp Monarch' },
 ]
 
@@ -154,19 +155,29 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
         <div className="action-panel" style={{ marginTop: '2.5rem' }}>
           <h2 style={{ marginTop: 0 }}>Track what you see</h2>
           <p>
-            Your observations are data. When you log a sighting, you are contributing to the count that researchers use to track the migration.
-            The Camp Monarch app logs species, location, date, and behavior.
+            Your observations are data. When you log a Monarch sighting, you are contributing to the count that researchers use to track the migration.
+            iNaturalist is the citizen science platform that researchers rely on — every observation you submit becomes open data that conservation scientists can access.
             It takes 90 seconds and your data is real.
           </p>
-          <a
-            href="https://ampautsc.github.io/sis-hello-world/"
-            target="_blank"
-            rel="noreferrer"
-            className="hero__cta"
-            style={{ display: 'inline-block', marginTop: '0.5rem' }}
-          >
-            Open the Camp Monarch App →
-          </a>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '0.75rem' }}>
+            <a
+              href="https://www.inaturalist.org/taxa/48662-Danaus-plexippus"
+              target="_blank"
+              rel="noreferrer"
+              className="hero__cta"
+              style={{ display: 'inline-block' }}
+            >
+              Log on iNaturalist →
+            </a>
+            <a
+              href="https://ampautsc.github.io/sis-hello-world/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ display: 'inline-block', padding: '0.6rem 1.2rem', border: '2px solid var(--monarch-green)', borderRadius: '6px', fontWeight: 'bold', color: 'var(--monarch-green)', textDecoration: 'none', fontFamily: 'inherit' }}
+            >
+              Camp Monarch App →
+            </a>
+          </div>
         </div>
 
         {/* Resources — low friction, specific sources (www-013, bta-004) */}
