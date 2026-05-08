@@ -1,10 +1,189 @@
+import { useMemo } from 'react'
 import type { Page } from '../App'
 
 interface HomeProps {
   onNavigate: (page: Page) => void
 }
 
+// Seasonal right-now content — lesson-044: place-specific data moves people
+// lesson-025: observation is an art; bta-004: give a named first step
+type SeasonalContent = {
+  header: string
+  context: string
+  items: { emoji: string; label: string; detail: string }[]
+}
+
+function getSeasonalContent(month: number): SeasonalContent {
+  // Spring: March (2), April (3), May (4)
+  if (month >= 2 && month <= 4) {
+    return {
+      header: '🦋 Spring migration — what to watch for right now',
+      context:
+        'The spring migration is moving northward from Mexico and Texas through the Central Flyway. ' +
+        'Here\'s what that means for your yard this month:',
+      items: [
+        {
+          emoji: '🌿',
+          label: 'Milkweed is emerging.',
+          detail:
+            'Look for thick, gray-green lance-shaped leaves pushing up from bare ground. ' +
+            "Don't mow over it. Monarchs arrive when it's 6 inches tall — " +
+            'that window opens for most of the Midwest in the next 3–5 weeks.',
+        },
+        {
+          emoji: '🦋',
+          label: 'First swallowtails are nectaring.',
+          detail:
+            'Tiger and black swallowtails appear a few weeks ahead of monarchs. ' +
+            'If you see them on blooms in your yard, monarchs will use the same plants.',
+        },
+        {
+          emoji: '🐝',
+          label: 'Native bees on early flowers.',
+          detail:
+            'Ground-nesting bees are emerging now. ' +
+            'A yard that supports bees in spring supports monarchs in summer.',
+        },
+        {
+          emoji: '📍',
+          label: 'Find one milkweed plant and note its height.',
+          detail:
+            'Come back in two weeks. ' +
+            'The monarchs moving through the southern states now will be in your neighborhood within the month.',
+        },
+      ],
+    }
+  }
+  // Summer: June (5), July (6), August (7)
+  if (month >= 5 && month <= 7) {
+    return {
+      header: '🐛 Breeding season — caterpillars are here now',
+      context:
+        'Monarchs are reproducing across the northern breeding range right now. ' +
+        'This is the season when milkweed in your yard does the most direct work:',
+      items: [
+        {
+          emoji: '🥚',
+          label: 'Check the underside of milkweed leaves.',
+          detail:
+            'Monarch eggs are the size of a pinhead — pale yellow, ribbed, laid one per leaf. ' +
+            'Look on the underside of leaves on milkweed 6 inches or taller.',
+        },
+        {
+          emoji: '🐛',
+          label: 'Watch for caterpillars.',
+          detail:
+            'Monarch caterpillars are striped black, white, and yellow. ' +
+            'A single caterpillar eats its entire milkweed plant before forming a chrysalis. ' +
+            'If you see one, leave the plant alone.',
+        },
+        {
+          emoji: '🌸',
+          label: 'Nectar plants matter now too.',
+          detail:
+            'Adult monarchs need nectar to fuel egg-laying. ' +
+            'Native coneflowers, bergamot, and liatris are blooming now and the monarchs are using them.',
+        },
+        {
+          emoji: '📷',
+          label: 'Log what you see on iNaturalist.',
+          detail:
+            'Every caterpillar observation adds to the breeding-range data that researchers use to track population recovery. ' +
+            'It takes 60 seconds.',
+        },
+      ],
+    }
+  }
+  // Fall: September (8), October (9), November (10)
+  if (month >= 8 && month <= 10) {
+    return {
+      header: '🍂 Fall migration — the roost movement is beginning',
+      context:
+        'The fall migration is underway. Monarchs from across the northern breeding range are moving south and southwest ' +
+        'toward their overwintering sites in the Sierra Madre. Here\'s what to watch for:',
+      items: [
+        {
+          emoji: '🌅',
+          label: 'Watch in the mornings near roost trees.',
+          detail:
+            'Monarchs roost in clusters overnight and disperse in the morning once temperatures rise. ' +
+            'Tall trees near open fields — especially cedars and oaks — are common roost sites.',
+        },
+        {
+          emoji: '🌸',
+          label: 'Late-blooming nectar plants are critical.',
+          detail:
+            'Goldenrod, native asters, and ironweed keep blooming into October. ' +
+            'Monarchs need nectar to build fat reserves for the 2,500-mile flight to Mexico.',
+        },
+        {
+          emoji: '📊',
+          label: 'Log every monarch you see.',
+          detail:
+            'Fall migration counts are sparse outside traditional corridors. ' +
+            'Your sighting on iNaturalist helps researchers understand where corridors are shifting as habitats change.',
+        },
+        {
+          emoji: '🌱',
+          label: 'Fall is the best time to plant milkweed.',
+          detail:
+            'Milkweed seeds need cold stratification to germinate in spring. ' +
+            'Planting native milkweed seed now lets winter do the work — seeds planted in fall have higher germination rates.',
+        },
+      ],
+    }
+  }
+  // Winter: December (11), January (0), February (1)
+  return {
+    header: '❄️ Winter — monarchs are in Mexico right now',
+    context:
+      'The monarchs that hatched in your yard last August are overwintering in the oyamel fir forests of Michoacán, Mexico. ' +
+      'Winter is the time to prepare for spring:',
+    items: [
+      {
+        emoji: '🗺️',
+        label: 'Order milkweed for spring planting.',
+        detail:
+          'Native milkweed plugs sell out by mid-April. ' +
+          'Order now from Prairie Moon Nursery, Midwest Wildflowers, or a local native plant nursery. ' +
+          'Butterfly Weed (Asclepias tuberosa) ships in spring.',
+      },
+      {
+        emoji: '🌱',
+        label: 'Plan your milkweed patch.',
+        detail:
+          'Mark a 3-foot patch in a south-facing, sunny spot before snow covers the yard. ' +
+          "The patch doesn't need to be large — three milkweed plants in full sun can support 40 caterpillars in a season.",
+      },
+      {
+        emoji: '🦋',
+        label: "Follow the overwintering count.",
+        detail:
+          'The World Wildlife Fund Mexico surveys the oyamel forests in January and February. ' +
+          "This year's count will be published in March — it's the clearest measure of whether the population is recovering.",
+      },
+      {
+        emoji: '📣',
+        label: "Tell someone what you're planning.",
+        detail:
+          'Habitat is a corridor, not a single yard. ' +
+          'If one neighbor plants milkweed too, the corridor doubles. ' +
+          'A conversation in January turns into two patches by June.',
+      },
+    ],
+  }
+}
+
 export default function Home({ onNavigate }: HomeProps) {
+  const now = useMemo(() => new Date(), [])
+  const month = now.getMonth() // 0-indexed
+  const monthName = now.toLocaleString('en-US', { month: 'long' })
+  const year = now.getFullYear()
+  // First day of current month for iNaturalist link
+  const monthFirstDay = `${year}-${String(month + 1).padStart(2, '0')}-01`
+
+  const seasonal = useMemo(() => getSeasonalContent(month), [month])
+
   return (
     <>
       {/* Hero — conclusion first (www-004). First 2 words: "Monarchs are" (www-005). */}
@@ -44,7 +223,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
         </section>
 
-                {/* iNaturalist Monarch count widget — start */}
+        {/* iNaturalist Monarch count widget — start */}
         <div
           className="action-panel"
           style={{
@@ -55,21 +234,20 @@ export default function Home({ onNavigate }: HomeProps) {
         >
           <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
           <p>
-            <strong style={{ color: 'var(--monarch-orange)' }}>551 Monarch sightings</strong>{' '}
-            have been logged on iNaturalist in the United States this month.
+            Monarch sightings are being logged on iNaturalist across the United States this month.
             Each sighting becomes open data that researchers can use to track the migration.
           </p>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '1rem' }}>
-            Updated May 8, 2026 · current count covers observations since 2026-05-01.
+            Current count covers observations since {monthFirstDay}.
           </p>
           <a
-            href="https://www.inaturalist.org/observations?month=5&place_id=1&taxon_id=48662&d1=2026-05-01"
+            href={`https://www.inaturalist.org/observations?month=${month + 1}&place_id=1&taxon_id=48662&d1=${monthFirstDay}`}
             target="_blank"
             rel="noreferrer"
             className="hero__cta"
             style={{ display: 'inline-block' }}
           >
-            See this month's sightings on iNaturalist →
+            See {monthName} sightings on iNaturalist →
           </a>
         </div>
         {/* iNaturalist Monarch count widget — end */}
@@ -78,34 +256,18 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* lesson-044: place-specific data moves people; lesson-025: observation is an art */}
         <div className="right-now-panel">
           <div className="right-now-panel__header">
-            🦋 What to look for right now — May 2026
+            {seasonal.header}
           </div>
           <p className="right-now-panel__context">
-            The spring migration is moving through Texas and Oklahoma this week.
-            Here's what that means for your yard:
+            {seasonal.context}
           </p>
           <ul className="right-now-panel__list">
-            <li>
-              <strong>🌿 Milkweed is emerging.</strong>{' '}
-              Look for thick, gray-green lance-shaped leaves pushing up from bare ground.
-              Don't mow over it. Monarchs arrive when it's 6 inches tall —
-              that window opens for most of the Midwest in the next 3–5 weeks.
-            </li>
-            <li>
-              <strong>🦋 First swallowtails are nectaring.</strong>{' '}
-              Tiger and black swallowtails appear a few weeks ahead of monarchs.
-              If you see them on blooms in your yard, monarchs will use the same plants.
-            </li>
-            <li>
-              <strong>🐝 Native bees on early flowers.</strong>{' '}
-              Ground-nesting bees are emerging now.
-              A yard that supports bees in May supports monarchs in July.
-            </li>
-            <li>
-              <strong>📍 Find one milkweed plant and note its height.</strong>{' '}
-              Come back in two weeks.
-              The monarchs currently moving through Oklahoma will be in your neighborhood by the end of May.
-            </li>
+            {seasonal.items.map((item, i) => (
+              <li key={i}>
+                <strong>{item.emoji} {item.label}</strong>{' '}
+                {item.detail}
+              </li>
+            ))}
           </ul>
         </div>
         {/* Seasonal right-now panel — end */}
@@ -239,8 +401,8 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* Citation list — web-citation-practices lesson */}
         <section className="cite-list" aria-label="Sources">
-          <p>[1] Xerces Society. <a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer">Monarch Butterfly Conservation.</a> Accessed 2026-05-08.</p>
-          <p>[2] Monarch Joint Venture. <a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer">Overwintering Population Monitoring.</a> Accessed 2026-05-08.</p>
+          <p>[1] Xerces Society. <a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer">Monarch Butterfly Conservation.</a> Accessed {monthName} {year}.</p>
+          <p>[2] Monarch Joint Venture. <a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer">Overwintering Population Monitoring.</a> Accessed {monthName} {year}.</p>
         </section>
       </div>
     </>
