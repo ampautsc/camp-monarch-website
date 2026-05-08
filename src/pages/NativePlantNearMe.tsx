@@ -1,4 +1,10 @@
 import type { Page } from '../App'
+import { trackEvent } from '../lib/analytics'
+
+// Derive a stable feature key from a URL hostname
+function hostFeature(url: string): string {
+  try { return new URL(url).hostname.replace(/^www\./, '') } catch { return 'unknown' }
+}
 
 interface NativePlantNearMeProps {
   onNavigate: (page: Page) => void
@@ -174,7 +180,7 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
           is not motivation — it is not knowing where to buy a native plant locally.
           This page answers that question for your region.
         </p>
-        <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
+        <button className="hero__cta" onClick={() => { trackEvent('cta_click', 'native-plant-near-me', 'hero-plant-milkweed'); onNavigate('plant-milkweed') }}>
           Which Milkweed for My Yard? →
         </button>
       </section>
@@ -195,6 +201,7 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
                 target="_blank"
                 rel="noreferrer"
                 style={{ display: 'inline-block', marginTop: '0.5rem', fontWeight: 'bold', color: 'var(--monarch-orange)' }}
+                onClick={() => trackEvent('outbound_link', 'native-plant-near-me', 'nwf-native-plant-finder')}
               >
                 nwf.org/NativePlantFinder →
               </a>
@@ -209,6 +216,7 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
                 target="_blank"
                 rel="noreferrer"
                 style={{ display: 'inline-block', marginTop: '0.5rem', fontWeight: 'bold', color: 'var(--monarch-orange)' }}
+                onClick={() => trackEvent('outbound_link', 'native-plant-near-me', 'xerces-milkweed-suppliers')}
               >
                 xerces.org/milkweed →
               </a>
@@ -239,6 +247,7 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
                     target="_blank"
                     rel="noreferrer"
                     style={{ color: 'var(--monarch-green)', textDecoration: 'none' }}
+                    onClick={() => trackEvent('outbound_link', 'native-plant-near-me', hostFeature(r.url))}
                   >
                     {r.name}
                   </a>
@@ -272,6 +281,7 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
                       target="_blank"
                       rel="noreferrer"
                       style={{ fontWeight: 'bold', fontSize: '1rem' }}
+                      onClick={() => trackEvent('outbound_link', 'native-plant-near-me', hostFeature(p.url))}
                     >
                       {p.name}
                     </a>
@@ -339,6 +349,7 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
               target="_blank"
               rel="noreferrer"
               style={{ color: 'var(--monarch-orange)' }}
+              onClick={() => trackEvent('outbound_link', 'native-plant-near-me', 'monarchwatch-shop')}
             >
               Order from Monarch Watch →
             </a>
@@ -353,13 +364,13 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1rem' }}>
             <button
-              onClick={() => onNavigate('plant-milkweed')}
+              onClick={() => { trackEvent('cta_click', 'native-plant-near-me', 'plant-milkweed-species-guide'); onNavigate('plant-milkweed') }}
               className="hero__cta"
             >
               Milkweed species guide →
             </button>
             <button
-              onClick={() => onNavigate('choose-a-plant')}
+              onClick={() => { trackEvent('cta_click', 'native-plant-near-me', 'choose-a-plant'); onNavigate('choose-a-plant') }}
               style={{
                 background: 'none',
                 border: '2px solid var(--monarch-orange)',

@@ -9,6 +9,7 @@ import TheMigration from './pages/TheMigration'
 import TakeAction from './pages/TakeAction'
 import ChooseAPlant from './pages/ChooseAPlant'
 import NativePlantNearMe from './pages/NativePlantNearMe'
+import { trackEvent } from './lib/analytics'
 
 export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me'
 
@@ -17,6 +18,7 @@ function App() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' })
+    trackEvent('page_view', page)
   }, [page])
 
   const renderPage = () => {

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { trackEvent } from '../lib/analytics'
 
 // Supabase project for camp-monarch-website
 // The anon key is intentionally public — client-side only, insert-restricted by RLS
@@ -19,7 +20,10 @@ export default function FeedbackWidget({ page }: FeedbackWidgetProps) {
   const [state, setState] = useState<WidgetState>('closed')
   const [message, setMessage] = useState('')
 
-  const open = () => setState('open')
+  const open = () => {
+    setState('open')
+    trackEvent('feedback_open', page)
+  }
   const close = () => {
     setState('closed')
     setMessage('')

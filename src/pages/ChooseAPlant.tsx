@@ -1,4 +1,5 @@
 import type { Page } from '../App'
+import { trackEvent } from '../lib/analytics'
 
 interface ChooseAPlantProps {
   onNavigate: (page: Page) => void
@@ -108,7 +109,7 @@ export default function ChooseAPlant({ onNavigate }: ChooseAPlantProps) {
           If you do not know your zone, look it up before going to the nursery — it takes 30 seconds.
         </p>
         <p>
-          <a href="https://planthardiness.ars.usda.gov/" target="_blank" rel="noreferrer" style={{ fontWeight: 'bold', color: 'var(--monarch-green)' }}>
+          <a href="https://planthardiness.ars.usda.gov/" target="_blank" rel="noreferrer" style={{ fontWeight: 'bold', color: 'var(--monarch-green)' }} onClick={() => trackEvent('outbound_link', 'choose-a-plant', 'usda-hardiness-zone')}>
             Find your USDA Hardiness Zone →
           </a>
           {' '}(enter your zip code)
@@ -159,9 +160,9 @@ export default function ChooseAPlant({ onNavigate }: ChooseAPlantProps) {
         </div>
         <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', marginTop: '0.75rem' }}>
           Source:{' '}
-          <a href="https://xerces.org/milkweed" target="_blank" rel="noreferrer">Xerces Society Milkweed Guide</a>
+          <a href="https://xerces.org/milkweed" target="_blank" rel="noreferrer" onClick={() => trackEvent('outbound_link', 'choose-a-plant', 'xerces-milkweed-guide')}>Xerces Society Milkweed Guide</a>
           {' · '}
-          <a href="https://plants.usda.gov/" target="_blank" rel="noreferrer">USDA Plants Database</a>
+          <a href="https://plants.usda.gov/" target="_blank" rel="noreferrer" onClick={() => trackEvent('outbound_link', 'choose-a-plant', 'usda-plants-database')}>USDA Plants Database</a>
         </p>
       </section>
 
@@ -207,7 +208,7 @@ export default function ChooseAPlant({ onNavigate }: ChooseAPlantProps) {
               Order milkweed online from the Xerces supplier directory for next season.
             </p>
             <p style={{ margin: 0 }}>
-              <a href="https://xerces.org/milkweed" target="_blank" rel="noreferrer" style={{ fontWeight: 'bold', color: 'var(--monarch-green)' }}>
+              <a href="https://xerces.org/milkweed" target="_blank" rel="noreferrer" style={{ fontWeight: 'bold', color: 'var(--monarch-green)' }} onClick={() => trackEvent('outbound_link', 'choose-a-plant', 'xerces-milkweed-suppliers')}>
                 Find milkweed suppliers near you → xerces.org/milkweed
               </a>
             </p>
@@ -248,7 +249,7 @@ export default function ChooseAPlant({ onNavigate }: ChooseAPlantProps) {
         </p>
         <button
           className="hero__cta"
-          onClick={() => onNavigate('plant-milkweed')}
+          onClick={() => { trackEvent('cta_click', 'choose-a-plant', 'how-to-grow-milkweed'); onNavigate('plant-milkweed') }}
           style={{ marginTop: '0.5rem' }}
         >
           How to grow milkweed →
@@ -260,13 +261,13 @@ export default function ChooseAPlant({ onNavigate }: ChooseAPlantProps) {
         <h2 id="next-heading">More ways to help</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '0.5rem' }}>
           <button
-            onClick={() => onNavigate('take-action')}
+            onClick={() => { trackEvent('cta_click', 'choose-a-plant', 'learn-more-take-action'); onNavigate('take-action') }}
             style={{ background: 'none', border: '2px solid var(--monarch-green)', color: 'var(--monarch-green)', padding: '0.55rem 1.1rem', borderRadius: '6px', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 'bold', fontSize: '0.95rem' }}
           >
             Five actions to take this week →
           </button>
           <button
-            onClick={() => onNavigate('the-migration')}
+            onClick={() => { trackEvent('cta_click', 'choose-a-plant', 'learn-more-the-migration'); onNavigate('the-migration') }}
             style={{ background: 'none', border: '2px solid var(--monarch-orange)', color: 'var(--monarch-orange)', padding: '0.55rem 1.1rem', borderRadius: '6px', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 'bold', fontSize: '0.95rem' }}
           >
             Track the migration →

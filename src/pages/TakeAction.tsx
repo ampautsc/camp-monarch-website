@@ -1,4 +1,5 @@
 import type { Page } from '../App'
+import { trackEvent } from '../lib/analytics'
 
 interface TakeActionProps {
   onNavigate: (page: Page) => void
@@ -85,7 +86,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
           Milkweed in your yard — even a small patch — feeds the next generation of butterflies.
           These five steps are specific enough to start this week.
         </p>
-        <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
+        <button className="hero__cta" onClick={() => { trackEvent('cta_click', 'take-action', 'hero-find-milkweed'); onNavigate('plant-milkweed') }}>
           Find Your Milkweed Species
         </button>
       </section>
@@ -119,7 +120,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
                   <button
                     className="hero__cta"
                     style={{ fontSize: '0.9rem', padding: '0.5rem 1.1rem', marginTop: '0.25rem' }}
-                    onClick={() => onNavigate(a.page!)}
+                    onClick={() => { trackEvent('cta_click', 'take-action', `action-${a.number}-internal`); onNavigate(a.page!) }}
                   >
                     {a.pageLabel}
                   </button>
@@ -130,6 +131,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
                     target="_blank"
                     rel="noreferrer"
                     style={{ display: 'inline-block', marginTop: '0.25rem', fontWeight: 'bold', color: 'var(--monarch-green)' }}
+                    onClick={() => trackEvent('outbound_link', 'take-action', `action-${a.number}-external`)}
                   >
                     {a.externalLabel}
                   </a>
@@ -165,6 +167,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
               rel="noreferrer"
               className="hero__cta"
               style={{ display: 'inline-block' }}
+              onClick={() => trackEvent('outbound_link', 'take-action', 'inaturalist-log')}
             >
               Log on iNaturalist →
             </a>
@@ -181,7 +184,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
           <ul>
             {resources.map(r => (
               <li key={r.url} style={{ marginBottom: '0.6rem' }}>
-                <a href={r.url} target="_blank" rel="noreferrer"><strong>{r.label}</strong></a>
+                <a href={r.url} target="_blank" rel="noreferrer" onClick={() => trackEvent('outbound_link', 'take-action', r.org.toLowerCase().replace(/\s+/g, '-'))}><strong>{r.label}</strong></a>
                 {' '}— {r.org}
               </li>
             ))}
@@ -209,19 +212,19 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
           <h2 id="learn-heading">Learn more</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '0.5rem' }}>
             <button
-              onClick={() => onNavigate('why-monarchs')}
+              onClick={() => { trackEvent('cta_click', 'take-action', 'learn-more-why-monarchs'); onNavigate('why-monarchs') }}
               style={{ background: 'none', border: '2px solid var(--monarch-green)', color: 'var(--monarch-green)', padding: '0.55rem 1.1rem', borderRadius: '6px', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 'bold', fontSize: '0.95rem' }}
             >
               Why Monarchs matter →
             </button>
             <button
-              onClick={() => onNavigate('the-migration')}
+              onClick={() => { trackEvent('cta_click', 'take-action', 'learn-more-the-migration'); onNavigate('the-migration') }}
               style={{ background: 'none', border: '2px solid var(--monarch-orange)', color: 'var(--monarch-orange)', padding: '0.55rem 1.1rem', borderRadius: '6px', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 'bold', fontSize: '0.95rem' }}
             >
               Track the migration →
             </button>
             <button
-              onClick={() => onNavigate('plant-milkweed')}
+              onClick={() => { trackEvent('cta_click', 'take-action', 'learn-more-plant-milkweed'); onNavigate('plant-milkweed') }}
               style={{ background: 'none', border: '2px solid var(--monarch-green)', color: 'var(--monarch-green)', padding: '0.55rem 1.1rem', borderRadius: '6px', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 'bold', fontSize: '0.95rem' }}
             >
               Choose your milkweed →
