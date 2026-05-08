@@ -74,6 +74,42 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
         {/* iNaturalist Monarch count widget — end */}
 
+        {/* Seasonal right-now panel — start */}
+        {/* lesson-044: place-specific data moves people; lesson-025: observation is an art */}
+        <div className="right-now-panel">
+          <div className="right-now-panel__header">
+            🦋 What to look for right now — May 2026
+          </div>
+          <p className="right-now-panel__context">
+            The spring migration is moving through Texas and Oklahoma this week.
+            Here's what that means for your yard:
+          </p>
+          <ul className="right-now-panel__list">
+            <li>
+              <strong>🌿 Milkweed is emerging.</strong>{' '}
+              Look for thick, gray-green lance-shaped leaves pushing up from bare ground.
+              Don't mow over it. Monarchs arrive when it's 6 inches tall —
+              that window opens for most of the Midwest in the next 3–5 weeks.
+            </li>
+            <li>
+              <strong>🦋 First swallowtails are nectaring.</strong>{' '}
+              Tiger and black swallowtails appear a few weeks ahead of monarchs.
+              If you see them on blooms in your yard, monarchs will use the same plants.
+            </li>
+            <li>
+              <strong>🐝 Native bees on early flowers.</strong>{' '}
+              Ground-nesting bees are emerging now.
+              A yard that supports bees in May supports monarchs in July.
+            </li>
+            <li>
+              <strong>📍 Find one milkweed plant and note its height.</strong>{' '}
+              Come back in two weeks.
+              The monarchs currently moving through Oklahoma will be in your neighborhood by the end of May.
+            </li>
+          </ul>
+        </div>
+        {/* Seasonal right-now panel — end */}
+
         {/* What we do — clear, not clever (www-009). Communicate, don't market (www-014). */}
         <section aria-labelledby="what-heading">
           <h2 id="what-heading">What Camp Monarch does</h2>
