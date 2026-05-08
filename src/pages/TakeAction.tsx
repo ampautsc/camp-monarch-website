@@ -71,7 +71,6 @@ const resources = [
   { label: 'Monarch Waystation registry', url: 'https://www.monarchwatch.org/waystations/', org: 'Monarch Watch' },
   { label: 'Journey North — track the migration', url: 'https://journeynorth.org/monarchs', org: 'Journey North' },
   { label: 'Log a Monarch sighting — open citizen science data', url: 'https://www.inaturalist.org/taxa/48662-Danaus-plexippus', org: 'iNaturalist' },
-  { label: 'Log a sighting (Camp Monarch app)', url: 'https://ampautsc.github.io/sis-hello-world/', org: 'Camp Monarch' },
 ]
 
 export default function TakeAction({ onNavigate }: TakeActionProps) {
