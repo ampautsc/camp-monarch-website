@@ -47,6 +47,54 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
         </p>
       </section>
 
+      {/* Normalization breaker — lesson-054: once people accept collapse as normal, change stops */}
+      {/* Comparison encounter — lesson-055: abundance described sensorially triggers 'why not here?' */}
+      <section aria-labelledby="abundance-heading">
+        <h2 id="abundance-heading">What you may not know you have forgotten</h2>
+        <p>
+          If you grew up after the 1990s, you may never have seen Monarch abundance.
+          The depleted landscape is all you have known.
+          That is not normal — it is the result of 30 years of habitat loss, and it is reversible.
+        </p>
+
+        <div className="callout callout--orange">
+          <h3 style={{ marginTop: 0 }}>What abundance looked like</h3>
+          <p>
+            In a yard with milkweed in a healthy corridor in the early 1990s,
+            a September morning might mean stepping outside and counting 30 or 40 Monarchs
+            moving south through your yard before breakfast.
+            Not in a meadow reserve — in a suburban backyard.
+            They moved in streams along fence lines, nectared on the late goldenrod,
+            rested in the oaks overnight.
+          </p>
+          <p>
+            Common Milkweed in bloom in July smells like vanilla mixed with cut grass.
+            It hums.
+            On a warm morning, a single plant in flower can host eight species of native bee
+            working simultaneously — bumblebees, sweat bees, digger wasps, skippers.
+            You hear it before you see it.
+          </p>
+          <p style={{ marginBottom: 0 }}>
+            Most yards today have none of this. Not because it stopped being possible —
+            because the milkweed was removed.
+            The butterflies did not decide to stop coming.
+            The food source was taken away.
+          </p>
+        </div>
+
+        <p style={{ marginTop: '1.5rem' }}>
+          The people who remember this abundance are still alive.
+          Farmers in their 60s and 70s recall milkweed at every field edge.
+          Older homeowners remember September mornings with dozens of Monarchs in passage.
+          This is not ancient history — it is one human lifetime ago.
+        </p>
+        <p>
+          <strong>The current state is the anomaly. The original baseline is the target.</strong>{' '}
+          That target is achievable because the ecological knowledge is intact, the species still exists,
+          and the milkweed can grow back within one season.
+        </p>
+      </section>
+
       {/* Individual story — www-011 dual audience, www-003 no marketese */}
       <section aria-labelledby="journey-heading">
         <h2 id="journey-heading">A Monarch's year, month by month</h2>
