@@ -6,18 +6,19 @@ interface WhyMonarchsProps {
 
 export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
   return (
-    <div className="page">
-      <header className="page-header">
-        <div className="page-header__eyebrow">Why It Matters</div>
+    <>
+      <section className="hero">
+        <div className="hero__eyebrow">Why It Matters</div>
         {/* www-010: headline works out of context */}
         <h1>Monarchs are an indicator species.<br />Their decline is an early warning.</h1>
         {/* www-004: conclusion first */}
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '65ch' }}>
+        <p className="hero__lead">
           When Monarchs disappear from a region, native milkweed is gone, flowering meadows are gone,
           and the web of insects that pollinates crops and wildflowers is fraying.
           Bringing Monarchs back means restoring that web — not just protecting one species.
         </p>
-      </header>
+      </section>
+      <div className="page">
 
       {/* www-007: specific numbers, named sources */}
       <section aria-labelledby="numbers-heading">
@@ -120,5 +121,6 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
       </div>
 
     </div>
+    </>
   )
 }

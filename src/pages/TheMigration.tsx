@@ -46,17 +46,18 @@ const monthlyPhase = [
 
 export default function TheMigration({ onNavigate }: TheMigrationProps) {
   return (
-    <div className="page">
-      <header className="page-header">
-        <div className="page-header__eyebrow">The Migration</div>
+    <>
+      <section className="hero">
+        <div className="hero__eyebrow">The Migration</div>
         {/* www-010: headline works out of context */}
         <h1>3,000 miles on an inherited map.<br />No one teaches the route.</h1>
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '65ch' }}>
+        <p className="hero__lead">
           The Eastern Monarch migration is the longest known insect migration in the world.
           It spans four generations, three countries, and the full length of North America.
           Every fall, it passes through your county.
         </p>
-      </header>
+      </section>
+      <div className="page">
 
       {/* Monthly phenology calendar — scannable (www-001), specific (www-013) */}
       <section aria-labelledby="calendar-heading">
@@ -190,5 +191,6 @@ export default function TheMigration({ onNavigate }: TheMigrationProps) {
       </div>
 
     </div>
+    </>
   )
 }

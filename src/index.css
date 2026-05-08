@@ -150,6 +150,14 @@ li { margin-bottom: 0.4rem; max-width: 68ch; }
   transform: translateY(-1px);
 }
 
+/* Ensure anchor tags using hero__cta always show white text regardless of link state */
+a.hero__cta,
+a.hero__cta:link,
+a.hero__cta:visited {
+  color: white;
+  text-decoration: none;
+}
+
 /* ── Page layout ── */
 
 .page {

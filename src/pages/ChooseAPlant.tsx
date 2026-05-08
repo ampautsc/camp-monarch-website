@@ -88,16 +88,17 @@ const companionPlants = [
 
 export default function ChooseAPlant({ onNavigate }: ChooseAPlantProps) {
   return (
-    <div className="page">
-      <header className="page-header">
-        <div className="page-header__eyebrow">Plant Milkweed</div>
+    <>
+      <section className="hero">
+        <div className="hero__eyebrow">Choose a Plant</div>
         <h1>Choose a plant.<br />Walk into the nursery knowing exactly what to ask for.</h1>
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '65ch' }}>
+        <p className="hero__lead">
           Five native milkweed species cover every US climate zone.
           Three companion plants support the migration when milkweed is unavailable.
           Below: a selection table, a container guide, and the three-sentence nursery script.
         </p>
-      </header>
+      </section>
+      <div className="page">
 
       {/* Zone reference */}
       <section aria-labelledby="zone-heading">
@@ -274,5 +275,6 @@ export default function ChooseAPlant({ onNavigate }: ChooseAPlantProps) {
       </section>
 
     </div>
+    </>
   )
 }

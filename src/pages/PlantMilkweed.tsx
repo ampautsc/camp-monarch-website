@@ -58,18 +58,19 @@ const species = [
 
 export default function PlantMilkweed({ onNavigate }: PlantMilkweedProps) {
   return (
-    <div className="page">
-      <header className="page-header">
-        <div className="page-header__eyebrow">Take Action</div>
+    <>
+      <section className="hero">
+        <div className="hero__eyebrow">Plant Milkweed</div>
         {/* www-005: first 2 words = "Plant Milkweed" — maximum meaning */}
         <h1>Plant Milkweed.<br />It is the single most useful thing you can do.</h1>
         {/* www-004: conclusion first */}
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', maxWidth: '65ch' }}>
+        <p className="hero__lead">
           Monarchs cannot reproduce without milkweed. No other plant works.
           Six native milkweed species cover every US climate zone.
           Find yours below, then order or source locally this spring.
         </p>
-      </header>
+      </section>
+      <div className="page">
 
       {/* Why native matters — www-003 no marketese, www-007 specific */}
       <section aria-labelledby="native-heading">
@@ -190,5 +191,6 @@ export default function PlantMilkweed({ onNavigate }: PlantMilkweedProps) {
       </div>
 
     </div>
+    </>
   )
 }
