@@ -10,6 +10,17 @@
   --text-primary:   #1a1a1a;
   --text-secondary: #4a4a4a;
   --border:         #e2d5c3;
+
+  /* Aliases used by PlantDetailView */
+  --modal-background:  #ffffff;
+  --background-color:  var(--monarch-cream);
+  --card-background:   #ffffff;
+  --panel-background:  var(--monarch-light);
+  --hover-background:  var(--monarch-light);
+  --border-color:      var(--border);
+  --text-color:        var(--text-primary);
+  --primary-color:     var(--monarch-green);
+  --secondary-color:   var(--text-secondary);
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 18px;
   line-height: 1.6;

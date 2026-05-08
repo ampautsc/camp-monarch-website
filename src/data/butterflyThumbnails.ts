@@ -1,13 +1,6 @@
-/**
- * Butterfly thumbnail mapping for host plant display
- * This file provides a mapping of butterfly/moth names to their thumbnail images
- * for display in plant detail views.
- *
- * NOTE: Images are hosted at the PlantFinder Azure Static Web App.
- * The getButterflyThumbnail() getter prefixes all relative paths with PLANT_FINDER_BASE.
- */
-
-const PLANT_FINDER_BASE = 'https://yellow-mushroom-03d98f710.azurestaticapps.net';
+// Butterfly thumbnails are served locally from /images/animals/butterflies/
+// (same public/ directory as plant thumbnails).
+const PLANT_FINDER_BASE = '';
 
 interface ButterflyThumbnail {
   id: string;
