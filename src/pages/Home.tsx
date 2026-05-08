@@ -14,7 +14,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <p className="hero__lead">
           One Monarch weighs less than a paper clip.
           It navigates 3,000 miles to a mountain it has never seen —
-          guided only by sun angles and inherited memory.
+          guided by the sun as a compass and, researchers believe, magnetic fields.
           Since 1996, their population has fallen by 80%.
           Planting milkweed helps. Here's how.
         </p>
