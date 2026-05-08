@@ -145,11 +145,17 @@ export default function Home({ onNavigate }: HomeProps) {
             The difference is mostly milkweed — habitat lost to agriculture and development.
           </p>
           <div className="callout callout--orange">
-            <p style={{ marginBottom: 0 }}>
+            <p style={{ marginBottom: '0.75rem' }}>
               <strong>The milkweed connection is direct:</strong> every Monarch egg is laid on a milkweed plant.
               Without milkweed, there is no reproduction. No reproduction, no migration.
               More milkweed in yards and roadsides between Illinois and Texas means more Monarchs survive the return trip in spring.
             </p>
+            <button
+              onClick={() => onNavigate('monarch-life')}
+              style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', padding: 0, cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.95rem', fontWeight: 'bold', textDecoration: 'underline' }}
+            >
+              The full lifecycle: egg, caterpillar, chrysalis, and the generation that flies 9 months →
+            </button>
           </div>
         </section>
 
