@@ -82,9 +82,9 @@ function PlantDetailView({ plant, onClose }: PlantDetailViewProps) {
             <h1 className="detail-common-name">{plant.commonName}</h1>
             <p className="detail-scientific-name">{plant.scientificName}</p>
           </div>
-          {plant.imageUrl ? (
+          {(plant.thumbnailUrl || plant.imageUrl) ? (
             <div className="detail-hero-image">
-              <img src={plant.imageUrl} alt={plant.commonName} />
+              <img src={plant.thumbnailUrl || plant.imageUrl} alt={plant.commonName} />
             </div>
           ) : (
             <div className="detail-hero-placeholder">
