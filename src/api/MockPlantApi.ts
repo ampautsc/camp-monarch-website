@@ -5,6 +5,7 @@ import {
   calculatePlantPriorityScore,
   getHostedSpeciesCount,
   getFoodOrShelterGroupsCount,
+  getCampMonarchCurationBonus,
 } from '../config/plantPrioritization';
 import { stateNamesToFips } from '../utils/fipsUtils';
 
@@ -165,7 +166,8 @@ export class MockPlantApi implements IPlantApi {
   private calculatePlantScore(plant: Plant): number {
     const hostedSpecies = getHostedSpeciesCount(plant);
     const foodShelterGroups = getFoodOrShelterGroupsCount(plant);
-    return calculatePlantPriorityScore(hostedSpecies, foodShelterGroups, 0, 0);
+    const curationBonus = getCampMonarchCurationBonus(plant.id);
+    return calculatePlantPriorityScore(hostedSpecies, foodShelterGroups, 0, 0) + curationBonus;
   }
 
   async getFilterOptions(): Promise<{

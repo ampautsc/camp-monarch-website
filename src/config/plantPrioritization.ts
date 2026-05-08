@@ -102,3 +102,45 @@ export function getFoodOrShelterGroupsCount(plant: {
   
   return plant.relationships.foodFor.length;
 }
+
+// ─── Camp Monarch curated plant sets ─────────────────────────────────────────
+//
+// Tier 1 — Milkweed: the ONLY caterpillar host plants for Monarch butterflies.
+// These must always rank first regardless of wildlife score.
+//
+// Tier 2 — Season Long Nectar Collection: Camp Monarch's curated nectar plants.
+// Critical for fueling monarchs through spring, summer, and fall migration.
+// Sourced from campmonarch.org/programs/habitat-hero/seed-collections
+
+const CAMP_MONARCH_MILKWEED_IDS = new Set([
+  'asclepias-syriaca',       // Common Milkweed     — most important eastern host
+  'asclepias-tuberosa',      // Butterfly Weed      — drought-tolerant, beginner-friendly
+  'asclepias-incarnata',     // Swamp Milkweed      — moist-soil, garden-adaptable
+  'asclepias-verticillata',  // Whorled Milkweed    — late-season, dry/rocky sites
+]);
+
+const CAMP_MONARCH_NECTAR_IDS = new Set([
+  'zizia-aurea',               // Golden Alexander    — spring gap-filler Apr–Jun
+  'coreopsis-lanceolata',      // Lance-Leaved Coreopsis — May–Jul, drought-tolerant
+  'rudbeckia-hirta',           // Black-Eyed Susan    — easy entry-level nectar
+  'monarda-fistulosa',         // Wild Bergamot       — Jul–Sep midsummer magnet
+  'liatris-aspera',            // Rough Blazing Star  — midsummer monarch magnet
+  'symphyotrichum-laeve',      // Smooth Blue Aster   — Aug–Oct, blooms through frost
+  'helianthus-grosseserratus', // Sawtooth Sunflower  — Aug–Nov fall migration fuel
+  'solidago-speciosa',         // Showy Goldenrod     — most important fall nectar
+]);
+
+/**
+ * Returns a curation bonus for Camp Monarch's highest-priority monarch plants.
+ *
+ * Tier 1 (milkweed) → +200: Monarch caterpillar host plants, always rank first.
+ * Tier 2 (nectar)   → +100: Curated nectar collection, rank after milkweed.
+ * All others        →   +0: Ranked by wildlife score only.
+ *
+ * The 200/100 gap ensures tier separation even when raw wildlife scores vary.
+ */
+export function getCampMonarchCurationBonus(plantId: string): number {
+  if (CAMP_MONARCH_MILKWEED_IDS.has(plantId)) return 200;
+  if (CAMP_MONARCH_NECTAR_IDS.has(plantId)) return 100;
+  return 0;
+}
