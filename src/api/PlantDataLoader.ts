@@ -12,9 +12,9 @@ import { Plant } from '../types/Plant';
  * - Better browser caching (plant data cached separately from JS)
  * - Easy migration to backend API (just change BASE_URL)
  */
-// Plant images are hosted on the PlantFinder Azure Static Web App.
-// When this app is served from a different origin, image paths are prefixed with this base URL.
-const PLANT_FINDER_IMAGE_BASE = 'https://yellow-mushroom-03d98f710.azurestaticapps.net';
+// Plant images are served locally from /images/plants/ (thumbnails only).
+// Full-size images are not deployed; cards use thumbnails.
+const PLANT_FINDER_IMAGE_BASE = '';
 
 export class PlantDataLoader {
   private static BASE_URL = '/data/plants';

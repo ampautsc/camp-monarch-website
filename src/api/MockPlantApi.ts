@@ -175,30 +175,10 @@ export class MockPlantApi implements IPlantApi {
     foodFor: string[];
     shelterFor: string[];
   }> {
-    if (!this.plantsCache) {
-      this.plantsCache = await PlantDataLoader.getAllPlants();
+    const response = await fetch('/data/filter-options.json');
+    if (!response.ok) {
+      throw new Error(`Failed to fetch filter options: ${response.statusText}`);
     }
-
-    const bloomColors = new Set<string>();
-    const bloomTimes = new Set<string>();
-    const hostPlantTo = new Set<string>();
-    const foodFor = new Set<string>();
-    const shelterFor = new Set<string>();
-
-    this.plantsCache.forEach(plant => {
-      plant.characteristics?.bloomColor?.forEach(c => bloomColors.add(c));
-      plant.characteristics?.bloomTime?.forEach(t => bloomTimes.add(t));
-      plant.relationships?.hostPlantTo?.forEach(h => hostPlantTo.add(h));
-      plant.relationships?.foodFor?.forEach(f => foodFor.add(f));
-      plant.relationships?.shelterFor?.forEach(s => shelterFor.add(s));
-    });
-
-    return {
-      bloomColors: Array.from(bloomColors).sort(),
-      bloomTimes: Array.from(bloomTimes).sort(),
-      hostPlantTo: Array.from(hostPlantTo).sort(),
-      foodFor: Array.from(foodFor).sort(),
-      shelterFor: Array.from(shelterFor).sort(),
-    };
+    return response.json();
   }
 }
