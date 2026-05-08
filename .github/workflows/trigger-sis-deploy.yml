@@ -1,0 +1,24 @@
+name: Trigger Sis Cloud Deploy
+
+# Fires whenever main is updated — tells sis-cloud to rebuild and deploy to Vercel.
+# Requires SIS_MODELS_TOKEN secret in this repo (copy from sis-cloud secrets).
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch deploy event to sis-cloud
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.SIS_MODELS_TOKEN }}
+          script: |
+            await github.rest.repos.createDispatchEvent({
+              owner: 'ampautsc',
+              repo: 'sis-cloud',
+              event_type: 'deploy_camp_monarch_website',
+              client_payload: { sha: context.sha, ref: context.ref }
+            });
+            core.info('Dispatch sent to sis-cloud: deploy_camp_monarch_website');
