@@ -15,7 +15,7 @@ export default function Home({ onNavigate }: HomeProps) {
           One Monarch weighs less than a paper clip.
           It navigates 3,000 miles to a mountain it has never seen —
           guided by the sun as a compass and, researchers believe, magnetic fields.
-          Since 1996, their population has fallen by 80%.
+          Since 1996, their population has fallen by 80%.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
           Planting milkweed helps. Here's how.
         </p>
         <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
@@ -105,7 +105,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </p>
           <p>
             In 1996, around 1 billion Monarchs made that journey.
-            In 2024, researchers counted 60 million.
+            In 2024, researchers counted 60 million.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
             The difference is mostly milkweed — habitat lost to agriculture and development.
           </p>
           <div className="callout callout--orange">
@@ -160,6 +160,11 @@ export default function Home({ onNavigate }: HomeProps) {
           </button>
         </div>
 
+        {/* Citation list — web-citation-practices lesson */}
+        <section className="cite-list" aria-label="Sources">
+          <p>[1] Xerces Society. <a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer">Monarch Butterfly Conservation.</a> Accessed 2026-05-08.</p>
+          <p>[2] Monarch Joint Venture. <a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer">Overwintering Population Monitoring.</a> Accessed 2026-05-08.</p>
+        </section>
       </div>
     </>
   )
