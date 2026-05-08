@@ -103,44 +103,100 @@ export function getFoodOrShelterGroupsCount(plant: {
   return plant.relationships.foodFor.length;
 }
 
-// ─── Camp Monarch curated plant sets ─────────────────────────────────────────
+// ─── Monarch Relevance Ranking ────────────────────────────────────────────────
 //
-// Tier 1 — Milkweed: the ONLY caterpillar host plants for Monarch butterflies.
-// These must always rank first regardless of wildlife score.
+// Plants are ranked in four tiers based on research from Monarch Watch, the
+// Monarch Joint Venture, the Xerces Society, the Pollinator Partnership, and
+// Camp Monarch's own seed collections (campmonarch.org/programs/habitat-hero).
 //
-// Tier 2 — Season Long Nectar Collection: Camp Monarch's curated nectar plants.
-// Critical for fueling monarchs through spring, summer, and fall migration.
-// Sourced from campmonarch.org/programs/habitat-hero/seed-collections
-
-const CAMP_MONARCH_MILKWEED_IDS = new Set([
-  'asclepias-syriaca',       // Common Milkweed     — most important eastern host
-  'asclepias-tuberosa',      // Butterfly Weed      — drought-tolerant, beginner-friendly
-  'asclepias-incarnata',     // Swamp Milkweed      — moist-soil, garden-adaptable
-  'asclepias-verticillata',  // Whorled Milkweed    — late-season, dry/rocky sites
-]);
-
-const CAMP_MONARCH_NECTAR_IDS = new Set([
-  'zizia-aurea',               // Golden Alexander    — spring gap-filler Apr–Jun
-  'coreopsis-lanceolata',      // Lance-Leaved Coreopsis — May–Jul, drought-tolerant
-  'rudbeckia-hirta',           // Black-Eyed Susan    — easy entry-level nectar
-  'monarda-fistulosa',         // Wild Bergamot       — Jul–Sep midsummer magnet
-  'liatris-aspera',            // Rough Blazing Star  — midsummer monarch magnet
-  'symphyotrichum-laeve',      // Smooth Blue Aster   — Aug–Oct, blooms through frost
-  'helianthus-grosseserratus', // Sawtooth Sunflower  — Aug–Nov fall migration fuel
-  'solidago-speciosa',         // Showy Goldenrod     — most important fall nectar
-]);
+// Tier separation is designed so no wildlife score can bridge a tier boundary.
+// Database max wildlife score = 17 pts (5 host species × 3 + 2 food groups × 1).
+// Tier gaps are 40–50 pts — safely above 17.
+//
+// ── TIER 1 · +200 · Milkweed (Asclepias spp.) ───────────────────────────────
+// Milkweed is the ONLY plant monarch caterpillars can eat. No milkweed = no
+// monarchs. Female monarchs lay their eggs exclusively on Asclepias species.
+// All 10 Asclepias species in this database qualify.
+// Sources: Monarch Watch, MJV, Pollinator Partnership, Camp Monarch.
+//
+// ── TIER 2 · +120 · Critical Fall Migration Nectar ──────────────────────────
+// Fall-migrating monarchs must double their body weight in fat before reaching
+// Mexico. Goldenrods (Solidago) and native asters (Symphyotrichum) are the
+// single most important fall fueling plants across every major authority.
+// They bloom late August–November, perfectly aligned with the fall migration.
+// Sources: Monarch Watch Waystation Program, Xerces Society, MJV, Camp Monarch.
+//
+// ── TIER 3 · +80 · High-Value Summer/Fall Monarch Nectar ────────────────────
+// Joe-Pye Weed & boneset (Eutrochium/Eupatorium): peak Aug–Sep, major nectar
+//   source as monarchs begin southward movement.
+// Sunflowers (Helianthus): bloom Aug–Oct, documented monarch fueling stations
+//   along the Texas migration corridor.
+// Blazing Stars (Liatris): mid-summer bloom, strong monarch magnet confirmed
+//   by Xerces and MJV.
+// Ironweed (Vernonia): late summer, highly attractive to fall migrants.
+// Blue Mistflower (Conoclinium): critical Texas corridor fall nectar plant.
+// Sources: Monarch Watch, Xerces Society, Pollinator Partnership, MJV.
+//
+// ── TIER 4 · +50 · Confirmed Monarch Nectar Plants ──────────────────────────
+// Excellent nectar plants visited by monarchs throughout the breeding season
+// and during migration. Less migration-critical than Tier 3 but well documented.
+// Echinacea/Rudbeckia (coneflowers): summer bloom, widely confirmed nectar.
+// Monarda (wild bergamot): Jul–Sep, attracts monarchs and other pollinators.
+// Coreopsis: long-blooming, spring–summer nectar bridge.
+// Verbena (vervain): summer–fall, documented monarch nectar plant.
+// Zizia aurea (golden alexander): spring gap-filler, critical early-season nectar.
+// Phyla nodiflora (frogfruit): key Texas migration corridor ground cover.
+// Sources: Camp Monarch seed collection, Monarch Watch, Pollinator Partnership.
 
 /**
- * Returns a curation bonus for Camp Monarch's highest-priority monarch plants.
+ * Returns a monarch-relevance bonus based on plant genus (via ID prefix).
  *
- * Tier 1 (milkweed) → +200: Monarch caterpillar host plants, always rank first.
- * Tier 2 (nectar)   → +100: Curated nectar collection, rank after milkweed.
- * All others        →   +0: Ranked by wildlife score only.
+ * Uses genus-level prefix matching so all species and variety IDs within a
+ * genus receive the correct tier automatically (e.g., symphyotrichum-laeve and
+ * symphyotrichum-laeve-var-laeve both start with 'symphyotrichum-').
  *
- * The 200/100 gap ensures tier separation even when raw wildlife scores vary.
+ * Tier gaps (40–50 pts) exceed the database's maximum wildlife score (17 pts),
+ * guaranteeing tier order is preserved regardless of individual wildlife data.
  */
 export function getCampMonarchCurationBonus(plantId: string): number {
-  if (CAMP_MONARCH_MILKWEED_IDS.has(plantId)) return 200;
-  if (CAMP_MONARCH_NECTAR_IDS.has(plantId)) return 100;
+  // ── Tier 1 · +200 · ALL Milkweed ─────────────────────────────────────────
+  // Asclepias: monarch caterpillar's exclusive food source
+  if (plantId.startsWith('asclepias-')) return 200;
+
+  // ── Tier 2 · +120 · Critical Fall Migration Nectar ───────────────────────
+  // Solidago (goldenrods) — most important fall migration fuel, coast to coast
+  // Symphyotrichum (native asters) — bloom through frost, fuels final push to Mexico
+  if (plantId.startsWith('solidago-') ||
+      plantId.startsWith('symphyotrichum-')) return 120;
+
+  // ── Tier 3 · +80 · High-Value Summer/Fall Monarch Nectar ─────────────────
+  // Eutrochium/Eupatorium (Joe-Pye Weed, boneset) — peak Aug–Sep nectar source
+  // Helianthus (sunflowers) — Aug–Oct, critical Texas corridor migration fuel
+  // Liatris (blazing stars) — mid-summer monarch magnet
+  // Vernonia (ironweed) — late summer, highly attractive to fall migrants
+  // Conoclinium (blue mistflower) — key fall nectar in Texas migration corridor
+  if (plantId.startsWith('eutrochium-') ||
+      plantId.startsWith('eupatorium-') ||
+      plantId.startsWith('helianthus-') ||
+      plantId.startsWith('liatris-') ||
+      plantId.startsWith('vernonia-') ||
+      plantId === 'conoclinium-coelestinum') return 80;
+
+  // ── Tier 4 · +50 · Confirmed Monarch Nectar Plants ───────────────────────
+  // Echinacea (purple coneflower) — summer nectar, Camp Monarch recommended
+  // Rudbeckia (black-eyed Susan, coneflowers) — summer nectar bridge
+  // Monarda (wild bergamot, beebalm) — Jul–Sep midsummer magnet
+  // Coreopsis (tickseed) — spring–summer bloom, nectar bridge
+  // Verbena (vervain) — summer–fall documented monarch nectar
+  // Zizia aurea (golden alexander) — spring gap-filler, early-season nectar
+  // Phyla nodiflora (frogfruit) — Texas corridor ground-level migration nectar
+  if (plantId.startsWith('echinacea-') ||
+      plantId.startsWith('rudbeckia-') ||
+      plantId.startsWith('monarda-') ||
+      plantId.startsWith('coreopsis-') ||
+      plantId.startsWith('verbena-') ||
+      plantId === 'zizia-aurea' ||
+      plantId === 'phyla-nodiflora') return 50;
+
   return 0;
 }
