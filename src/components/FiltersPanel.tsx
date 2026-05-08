@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { useTranslation } from 'react-i18next';
 import { PlantFilters } from '../types/Plant';
+import './FiltersPanel.css';
 import { FIPS_TO_STATE } from '../utils/fipsUtils';
 import { getCountiesForState, County } from '../utils/countyData';
 
