@@ -8,6 +8,7 @@ interface NavProps {
 const links: { id: Page; label: string }[] = [
   { id: 'home',                 label: 'Home' },
   { id: 'why-monarchs',        label: 'Why Monarchs' },
+  { id: 'monarch-life',        label: 'The Monarch\'s Life' },
   { id: 'plant-milkweed',      label: 'Plant Milkweed' },
   { id: 'native-plant-near-me', label: 'Find Plants Near Me' },
   { id: 'choose-a-plant',      label: 'Choose a Plant' },
