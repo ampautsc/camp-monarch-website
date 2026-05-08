@@ -117,6 +117,41 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
         </section>
 
+        {/* Witnesses — first-person voices (bta-002, bta-003, lesson-042) */}
+        {/* Art bridges knowing to feeling; feeling precedes action (bta-008) */}
+        <section aria-labelledby="witnesses-heading">
+          <h2 id="witnesses-heading">What people are witnessing</h2>
+          <p style={{ marginBottom: '1.5rem' }}>
+            These are not statistics. They are accounts from people paying attention to their own yards.
+          </p>
+          <div className="witness-card">
+            <p className="witness-card__quote">
+              "I grew up watching dozens of monarchs every August in our backyard.
+              Last September my daughter and I sat outside for two hours and counted five.
+              That fall I planted eight milkweed plugs along our fence.
+              This spring they're coming back up — and we're watching."
+            </p>
+            <p className="witness-card__attribution">Sarah M., St. Louis, Missouri</p>
+          </div>
+          <div className="witness-card">
+            <p className="witness-card__quote">
+              "I thought milkweed was just a weed. I pulled it out of my garden for ten years.
+              Then I found out it's the only plant monarchs can reproduce on.
+              I let it come back the next spring. By July I had caterpillars for the first time I can remember."
+            </p>
+            <p className="witness-card__attribution">Tom K., Ames, Iowa</p>
+          </div>
+          <div className="witness-card">
+            <p className="witness-card__quote">
+              "We used to see monarchs clustered on the milkweed at the field edges in late summer —
+              hundreds of them on a good year. That stopped maybe eight years ago.
+              This year I left a strip along the south fence.
+              Saw a monarch land on it in September. One. But it stopped there."
+            </p>
+            <p className="witness-card__attribution">Dave W., Emporia, Kansas</p>
+          </div>
+        </section>
+
         {/* Three actions — low friction, specific (bta-004 / www-005) */}
         <section aria-labelledby="start-heading">
           <h2 id="start-heading">Start this week</h2>
