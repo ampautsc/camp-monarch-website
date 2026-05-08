@@ -37,8 +37,12 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
           </div>
         </div>
         <p>
-          Source: US Fish & Wildlife Service Eastern Monarch Butterfly Population Status (2024);
-          USDA Economic Research Service, neonicotinoid herbicide adoption data 1992–2022.
+          Sources:{' '}
+          <a href="https://www.fws.gov/species/monarch-butterfly-danaus-plexippus" target="_blank" rel="noreferrer">US Fish &amp; Wildlife Service, Monarch Butterfly</a>
+          {' · '}
+          <a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer">Monarch Joint Venture, Overwintering Population Monitoring</a>
+          {' · '}
+          <a href="https://monarchjointventure.org/mjvprograms/habitat/milkweed" target="_blank" rel="noreferrer">Monarch Joint Venture, Milkweed Habitat</a>
         </p>
       </section>
 
@@ -89,9 +93,11 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
           including the bees that pollinate 35% of the US food supply.
         </p>
         <ul>
-          <li><strong>Milkweed supports 457 native insect species</strong> beyond Monarchs (USDA Forest Service, 2019).</li>
+          <li><a href="https://www.fs.usda.gov/wildflowers/pollinators/Monarch_Butterfly/index.shtml" target="_blank" rel="noreferrer"><strong>Milkweed supports 457 native insect species</strong></a> beyond Monarchs (USDA Forest Service, 2019).</li>
           <li><strong>Monarch habitat overlaps with key pollinator corridors</strong> across the Central Flyway.</li>
-          <li><strong>Native plants in suburban yards</strong> can carry 10–50x more caterpillars than ornamental plantings of the same area (Tallamy, 2020).</li>
+          <li><strong>Native plants in suburban yards</strong> can carry{' '}
+            <a href="https://homegrownnationalpark.org" target="_blank" rel="noreferrer">10–50x more caterpillars</a>
+            {' '}than ornamental plantings of the same area (Tallamy, 2020).</li>
         </ul>
       </section>
 
