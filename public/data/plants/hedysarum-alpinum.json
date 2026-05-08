@@ -1,103 +1,106 @@
-{
-  "id": "hedysarum-alpinum",
-  "commonName": "Alpine sweetvetch",
-  "scientificName": "Hedysarum alpinum",
-  "description": "Rose-purple pea-like flowers in showy spikes. Compound leaves with many leaflets. Nitrogen-fixing plant. Roots are edible and were used as food source. Prefers moist mountain meadows. Important food for wildlife.",
-  "requirements": {
-    "sun": "full-sun",
-    "moisture": "medium",
-    "soil": "loam"
-  },
-  "characteristics": {
-    "height": 24,
-    "width": 18,
-    "bloomColor": [
-      "purple"
-    ],
-    "bloomTime": [
-      "summer",
-      "fall"
-    ],
-    "perennial": true,
-    "nativeRange": [
-      "Alaska"
-    ],
-    "hardinessZones": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ]
-  },
-  "relationships": {
-    "hostPlantTo": [],
-    "foodFor": [
-      "butterflies",
-      "bees",
-      "native bees"
-    ],
-    "usefulFor": [
-      "pollinator garden",
-      "native garden"
-    ],
-    "shelterFor": [
-      "ground-nesting birds"
-    ]
-  },
-  "imageUrl": "/images/plants/hedysarum-alpinum/hedysarum-alpinum-2025-10-17T01-14-00-166Z.png",
-  "usdaPlantId": "HEAL",
-  "distribution": {
-    "fipsCodes": [
-      "02016",
-      "02020",
-      "02050",
-      "02063",
-      "02066",
-      "02068",
-      "02090",
-      "02100",
-      "02122",
-      "02164",
-      "02170",
-      "02180",
-      "02185",
-      "02188",
-      "02240",
-      "02282",
-      "02290",
-      "23003",
-      "26041",
-      "30035",
-      "30071",
-      "33007",
-      "46033",
-      "46081",
-      "46103",
-      "50015",
-      "50019",
-      "56001",
-      "56011",
-      "56013",
-      "56019",
-      "56025",
-      "56029",
-      "56033",
-      "56039",
-      "56045"
-    ],
-    "statesFips": [
-      "02",
-      "23",
-      "26",
-      "30",
-      "31",
-      "33",
-      "38",
-      "44",
-      "46",
-      "50",
-      "56"
-    ]
-  }
+﻿{
+    "id":  "hedysarum-alpinum",
+    "commonName":  "Alpine sweetvetch",
+    "scientificName":  "Hedysarum alpinum",
+    "description":  "Rose-purple pea-like flowers in showy spikes. Compound leaves with many leaflets. Nitrogen-fixing plant. Roots are edible and were used as food source. Prefers moist mountain meadows. Important food for wildlife.",
+    "requirements":  {
+                         "sun":  "full-sun",
+                         "moisture":  "medium",
+                         "soil":  "loam"
+                     },
+    "characteristics":  {
+                            "height":  24,
+                            "width":  18,
+                            "bloomColor":  [
+                                               "purple"
+                                           ],
+                            "bloomTime":  [
+                                              "summer",
+                                              "fall"
+                                          ],
+                            "perennial":  true,
+                            "nativeRange":  [
+                                                "Alaska"
+                                            ],
+                            "hardinessZones":  [
+                                                   "1",
+                                                   "2",
+                                                   "3",
+                                                   "4",
+                                                   "5"
+                                               ]
+                        },
+    "relationships":  {
+                          "hostPlantTo":  [
+
+                                          ],
+                          "foodFor":  [
+                                          "butterflies",
+                                          "bees",
+                                          "native bees"
+                                      ],
+                          "usefulFor":  [
+                                            "pollinator garden",
+                                            "native garden"
+                                        ],
+                          "shelterFor":  [
+                                             "ground-nesting birds"
+                                         ]
+                      },
+    "imageUrl":  "/images/plants/hedysarum-alpinum/hedysarum-alpinum-2025-10-17T01-14-00-166Z.png",
+    "usdaPlantId":  "HEAL",
+    "distribution":  {
+                         "fipsCodes":  [
+                                           "02016",
+                                           "02020",
+                                           "02050",
+                                           "02063",
+                                           "02066",
+                                           "02068",
+                                           "02090",
+                                           "02100",
+                                           "02122",
+                                           "02164",
+                                           "02170",
+                                           "02180",
+                                           "02185",
+                                           "02188",
+                                           "02240",
+                                           "02282",
+                                           "02290",
+                                           "23003",
+                                           "26041",
+                                           "30035",
+                                           "30071",
+                                           "33007",
+                                           "46033",
+                                           "46081",
+                                           "46103",
+                                           "50015",
+                                           "50019",
+                                           "56001",
+                                           "56011",
+                                           "56013",
+                                           "56019",
+                                           "56025",
+                                           "56029",
+                                           "56033",
+                                           "56039",
+                                           "56045"
+                                       ],
+                         "statesFips":  [
+                                            "02",
+                                            "23",
+                                            "26",
+                                            "30",
+                                            "31",
+                                            "33",
+                                            "38",
+                                            "44",
+                                            "46",
+                                            "50",
+                                            "56"
+                                        ]
+                     },
+    "thumbnailUrl":  "/images/plants/hedysarum-alpinum/hedysarum-alpinum-2025-10-17T01-14-00-166Z-thumb.jpg"
 }
