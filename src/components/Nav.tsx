@@ -13,6 +13,7 @@ const links: { id: Page; label: string }[] = [
   { id: 'native-plant-near-me', label: 'Find Plants Near Me' },
   { id: 'choose-a-plant',      label: 'Choose a Plant' },
   { id: 'the-migration',       label: 'The Migration' },
+  { id: 'raise-a-monarch',     label: 'Raise a Monarch' },
   { id: 'take-action',         label: 'Take Action' },
   { id: 'faq',                 label: 'FAQ' },
 ]
