@@ -1,7 +1,9 @@
 name: Trigger Sis Cloud Deploy
 
 # Fires whenever main is updated — tells sis-cloud to rebuild and deploy to Vercel.
-# Requires SIS_MODELS_TOKEN secret in this repo (copy from sis-cloud secrets).
+# Requires SIS_MODELS_TOKEN secret in this repo.
+# If the secret is absent the step is skipped gracefully; sis-cloud
+# still triggers deploys directly whenever Sis pushes changes here.
 on:
   push:
     branches: [main]
@@ -11,14 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch deploy event to sis-cloud
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.SIS_MODELS_TOKEN }}
-          script: |
-            await github.rest.repos.createDispatchEvent({
-              owner: 'ampautsc',
-              repo: 'sis-cloud',
-              event_type: 'deploy_camp_monarch_website',
-              client_payload: { sha: context.sha, ref: context.ref }
-            });
-            core.info('Dispatch sent to sis-cloud: deploy_camp_monarch_website');
+        env:
+          SIS_MODELS_TOKEN: ${{ secrets.SIS_MODELS_TOKEN }}
+        run: |
+          if [ -z "$SIS_MODELS_TOKEN" ]; then
+            echo "SIS_MODELS_TOKEN not configured in this repo — skipping cross-repo dispatch."
+            echo "Deploys are still triggered from sis-cloud when Sis pushes changes."
+            exit 0
+          fi
+          curl -s -X POST \
+            -H "Authorization: Bearer $SIS_MODELS_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Content-Type: application/json" \
+            https://api.github.com/repos/ampautsc/sis-cloud/dispatches \
+            -d "{\"event_type\":\"deploy_camp_monarch_website\",\"client_payload\":{\"sha\":\"$GITHUB_SHA\",\"ref\":\"$GITHUB_REF\"}}"
+          echo "Dispatch sent to sis-cloud: deploy_camp_monarch_website"
