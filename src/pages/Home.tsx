@@ -179,8 +179,6 @@ export default function Home({ onNavigate }: HomeProps) {
   const month = now.getMonth() // 0-indexed
   const monthName = now.toLocaleString('en-US', { month: 'long' })
   const year = now.getFullYear()
-  // First day of current month for iNaturalist link
-  const monthFirstDay = `${year}-${String(month + 1).padStart(2, '0')}-01`
 
   const seasonal = useMemo(() => getSeasonalContent(month), [month])
 

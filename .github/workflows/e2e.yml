@@ -1,0 +1,85 @@
+name: E2E Tests
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 8:00 AM UTC (3:00 AM CST) and 8:00 PM UTC (3:00 PM CST)
+    - cron: '0 8,20 * * *'
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: 'URL to test against (default: live Vercel deployment)'
+        required: false
+        default: 'https://dist-phi-ebon-52.vercel.app'
+
+concurrency:
+  group: e2e-${{ github.ref }}
+  cancel-in-progress: false   # Never cancel scheduled health checks mid-run
+
+jobs:
+  e2e:
+    name: Playwright E2E
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium --with-deps
+
+      - name: Run E2E tests
+        run: npx playwright test
+        env:
+          BASE_URL: ${{ github.event.inputs.base_url || 'https://dist-phi-ebon-52.vercel.app' }}
+          CI: 'true'
+
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ github.run_number }}
+          path: playwright-report/
+          retention-days: 30
+
+      - name: Write job summary
+        if: always()
+        run: |
+          echo "## E2E Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Run:** #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**URL:** ${{ github.event.inputs.base_url || 'https://dist-phi-ebon-52.vercel.app' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f playwright-report/results.json ]; then
+            PASSED=$(python3 -c "import json; r=json.load(open('playwright-report/results.json')); print(r.get('stats', {}).get('expected', 0))" 2>/dev/null || echo "?")
+            FAILED=$(python3 -c "import json; r=json.load(open('playwright-report/results.json')); print(r.get('stats', {}).get('unexpected', 0))" 2>/dev/null || echo "?")
+            SKIPPED=$(python3 -c "import json; r=json.load(open('playwright-report/results.json')); print(r.get('stats', {}).get('skipped', 0))" 2>/dev/null || echo "?")
+            echo "| Result | Count |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| ✅ Passed | $PASSED |" >> $GITHUB_STEP_SUMMARY
+            echo "| ❌ Failed | $FAILED |" >> $GITHUB_STEP_SUMMARY
+            echo "| ⏭ Skipped | $SKIPPED |" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "_Results JSON not found — check test runner output above._" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📊 Full HTML report available in workflow artifacts." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Cloud Sis:** To check this run from wake, use:" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "gh run list --workflow=e2e.yml --repo ampautsc/camp-monarch-website --limit 3" >> $GITHUB_STEP_SUMMARY
+          echo "gh run view <run-id> --log-failed" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
