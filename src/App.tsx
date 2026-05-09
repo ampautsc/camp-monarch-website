@@ -16,9 +16,10 @@ import RaiseAMonarch from './pages/RaiseAMonarch'
 import TheFirstYear from './pages/TheFirstYear'
 import FAQ from './pages/FAQ'
 import LogASighting from './pages/LogASighting'
+import WaystationGuide from './pages/WaystationGuide'
 import { trackEvent } from './lib/analytics'
 
-export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting'
+export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -41,6 +42,7 @@ function App() {
       case 'the-first-year':      return <TheFirstYear onNavigate={setPage} />
       case 'faq':                  return <FAQ onNavigate={setPage} />
       case 'log-a-sighting':      return <LogASighting onNavigate={setPage} />
+      case 'waystation-guide':    return <WaystationGuide onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }
