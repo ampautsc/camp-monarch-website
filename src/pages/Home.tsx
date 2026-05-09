@@ -265,19 +265,19 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
               <CardPhoto
                 src={CARD_PHOTOS.trackMigration}
-                alt="Monarch butterflies overwintering at Angangueo, Mexico"
+                alt="Monarchs overwintering at their refuge in Angangueo, Mexico — the destination every butterfly is flying toward"
               />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Track the migration</h3>
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Talk about it</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                The migration passes through your county every fall. Weekly corridor updates, October through November.
-                The butterfly on your roof in September depends on milkweed 500 miles north in May.
+                Most people don't know the population has dropped 80%. Habitat works at neighborhood
+                scale — a conversation that leads to milkweed in a neighbor's yard matters as much as what's in yours.
               </p>
               <button
                 className="hero__cta"
                 style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
-                onClick={() => onNavigate('the-migration')}
+                onClick={() => onNavigate('talking-points')}
               >
-                See the migration →
+                Talking points →
               </button>
             </div>
 
