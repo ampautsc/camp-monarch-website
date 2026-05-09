@@ -16,6 +16,7 @@ const links: { id: Page; label: string }[] = [
   { id: 'log-a-sighting',      label: 'Log a Sighting' },
   { id: 'raise-a-monarch',     label: 'Raise a Monarch' },
   { id: 'the-first-year',      label: 'The First Year' },
+  { id: 'waystation-guide',    label: 'Waystation Guide' },
   { id: 'take-action',         label: 'Take Action' },
   { id: 'faq',                 label: 'FAQ' },
 ]
