@@ -19,6 +19,7 @@ const links: { id: Page; label: string }[] = [
   { id: 'waystation-guide',    label: 'Waystation Guide' },
   { id: 'fireflies',           label: 'Fireflies' },
   { id: 'box-turtles',         label: 'Box Turtles' },
+  { id: 'native-bees',         label: 'Native Bees' },
   { id: 'take-action',         label: 'Take Action' },
   { id: 'faq',                 label: 'FAQ' },
 ]
