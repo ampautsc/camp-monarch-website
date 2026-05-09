@@ -9,7 +9,6 @@ interface NavProps {
 interface NavGroup {
   id: string
   label: string
-  // If page is set, clicking the label navigates directly (no dropdown)
   page?: Page
   children?: { id: Page; label: string }[]
 }
@@ -21,42 +20,41 @@ const groups: NavGroup[] = [
     page: 'home',
   },
   {
-    id: 'why',
+    id: 'matters',
     label: 'Why It Matters',
+    page: 'why-monarchs',
+  },
+  {
+    id: 'neighbors',
+    label: 'Meet Your Neighbors',
     children: [
-      { id: 'why-monarchs',  label: 'Why Monarchs?' },
-      { id: 'the-migration', label: 'The Migration' },
-      { id: 'monarch-life',  label: "The Monarch's Life" },
+      { id: 'why-monarchs', label: 'Monarch Butterfly' },
+      { id: 'fireflies', label: 'Fireflies' },
+      { id: 'box-turtles', label: 'Box Turtles' },
+      { id: 'native-bees', label: 'Native Bees' },
     ],
   },
   {
     id: 'do',
     label: 'What To Do',
     children: [
-      { id: 'plant-milkweed',       label: 'Plant Milkweed' },
-      { id: 'choose-a-plant',       label: 'Choose a Plant' },
+      { id: 'plant-milkweed', label: 'Plant Milkweed' },
+      { id: 'choose-a-plant', label: 'Choose a Plant' },
       { id: 'native-plant-near-me', label: 'Find Plants Near Me' },
-      { id: 'waystation-guide',     label: 'Waystation Guide' },
-      { id: 'the-first-year',       label: 'The First Year' },
-      { id: 'raise-a-monarch',      label: 'Raise a Monarch' },
-    ],
-  },
-  {
-    id: 'yard',
-    label: 'In Your Yard',
-    children: [
-      { id: 'fireflies',   label: 'Fireflies' },
-      { id: 'box-turtles', label: 'Box Turtles' },
-      { id: 'native-bees', label: 'Native Bees' },
+      { id: 'waystation-guide', label: 'Waystation Guide' },
+      { id: 'raise-a-monarch', label: 'Raise a Monarch' },
       { id: 'log-a-sighting', label: 'Log a Sighting' },
+      { id: 'take-action', label: 'Take Action' },
+      { id: 'the-first-year', label: 'The First Year' },
     ],
   },
   {
-    id: 'start',
-    label: 'Get Started',
+    id: 'learn',
+    label: 'Learn',
     children: [
-      { id: 'take-action', label: 'Take Action' },
-      { id: 'faq',         label: 'FAQ' },
+      { id: 'the-migration', label: 'The Migration' },
+      { id: 'monarch-life', label: "The Monarch's Life" },
+      { id: 'faq', label: 'FAQ' },
     ],
   },
 ]
@@ -70,7 +68,6 @@ export default function Nav({ current, onNavigate }: NavProps) {
   const [open, setOpen] = useState<string | null>(null)
   const navRef = useRef<HTMLElement>(null)
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
@@ -81,7 +78,6 @@ export default function Nav({ current, onNavigate }: NavProps) {
     return () => document.removeEventListener('mousedown', handleClick)
   }, [])
 
-  // Close on Escape
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
       if (e.key === 'Escape') setOpen(null)
@@ -113,7 +109,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
         tabIndex={0}
         onKeyDown={e => e.key === 'Enter' && onNavigate('home')}
       >
-        🦋 Camp Monarch
+        Camp Monarch
       </div>
 
       <div className="site-nav__links">
