@@ -20,9 +20,10 @@ import WaystationGuide from './pages/WaystationGuide'
 import Fireflies from './pages/Fireflies'
 import BoxTurtles from './pages/BoxTurtles'
 import NativeBees from './pages/NativeBees'
+import TalkingPoints from './pages/TalkingPoints'
 import { trackEvent } from './lib/analytics'
 
-export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees'
+export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -49,6 +50,7 @@ function App() {
       case 'fireflies':           return <Fireflies onNavigate={setPage} />
       case 'box-turtles':         return <BoxTurtles onNavigate={setPage} />
       case 'native-bees':         return <NativeBees onNavigate={setPage} />
+      case 'talking-points':      return <TalkingPoints onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }
