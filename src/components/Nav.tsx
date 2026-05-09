@@ -14,6 +14,7 @@ const links: { id: Page; label: string }[] = [
   { id: 'choose-a-plant',      label: 'Choose a Plant' },
   { id: 'the-migration',       label: 'The Migration' },
   { id: 'raise-a-monarch',     label: 'Raise a Monarch' },
+  { id: 'the-first-year',      label: 'The First Year' },
   { id: 'take-action',         label: 'Take Action' },
   { id: 'faq',                 label: 'FAQ' },
 ]
