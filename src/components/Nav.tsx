@@ -14,38 +14,30 @@ interface NavGroup {
 }
 
 const groups: NavGroup[] = [
-  {
-    id: 'home',
-    label: 'Home',
-    page: 'home',
-  },
-  {
-    id: 'matters',
-    label: 'Why It Matters',
-    page: 'why-monarchs',
-  },
+  { id: 'home', label: 'Home', page: 'home' },
+  { id: 'matters', label: 'Why It Matters', page: 'why-monarchs' },
   {
     id: 'neighbors',
     label: 'Meet Your Neighbors',
     children: [
-      { id: 'why-monarchs', label: 'Monarch Butterfly' },
-      { id: 'fireflies', label: 'Fireflies' },
-      { id: 'box-turtles', label: 'Box Turtles' },
-      { id: 'native-bees', label: 'Native Bees' },
+      { id: 'monarch-life',  label: 'Monarch Butterfly' },
+      { id: 'fireflies',     label: 'Fireflies' },
+      { id: 'box-turtles',   label: 'Box Turtles' },
+      { id: 'native-bees',   label: 'Native Bees' },
     ],
   },
   {
     id: 'do',
     label: 'What To Do',
     children: [
-      { id: 'plant-milkweed', label: 'Plant Milkweed' },
-      { id: 'choose-a-plant', label: 'Choose a Plant' },
+      { id: 'plant-milkweed',       label: 'Plant Milkweed' },
+      { id: 'choose-a-plant',       label: 'Choose a Plant' },
       { id: 'native-plant-near-me', label: 'Find Plants Near Me' },
-      { id: 'waystation-guide', label: 'Waystation Guide' },
-      { id: 'raise-a-monarch', label: 'Raise a Monarch' },
-      { id: 'log-a-sighting', label: 'Log a Sighting' },
-      { id: 'take-action', label: 'Take Action' },
-      { id: 'the-first-year', label: 'The First Year' },
+      { id: 'waystation-guide',     label: 'Waystation Guide' },
+      { id: 'raise-a-monarch',      label: 'Raise a Monarch' },
+      { id: 'log-a-sighting',       label: 'Log a Sighting' },
+      { id: 'take-action',          label: 'Take Action' },
+      { id: 'the-first-year',       label: 'The First Year' },
     ],
   },
   {
@@ -53,8 +45,8 @@ const groups: NavGroup[] = [
     label: 'Learn',
     children: [
       { id: 'the-migration', label: 'The Migration' },
-      { id: 'monarch-life', label: "The Monarch's Life" },
-      { id: 'faq', label: 'FAQ' },
+      { id: 'why-monarchs',  label: 'Why It Matters' },
+      { id: 'faq',           label: 'FAQ' },
     ],
   },
 ]
