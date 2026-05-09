@@ -18,6 +18,7 @@ const links: { id: Page; label: string }[] = [
   { id: 'the-first-year',      label: 'The First Year' },
   { id: 'waystation-guide',    label: 'Waystation Guide' },
   { id: 'fireflies',           label: 'Fireflies' },
+  { id: 'box-turtles',         label: 'Box Turtles' },
   { id: 'take-action',         label: 'Take Action' },
   { id: 'faq',                 label: 'FAQ' },
 ]
