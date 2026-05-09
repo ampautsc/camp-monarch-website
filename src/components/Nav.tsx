@@ -113,7 +113,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
         tabIndex={0}
         onKeyDown={e => e.key === 'Enter' && onNavigate('home')}
       >
-        ðŸ¦‹ Camp Monarch
+        🦋 Camp Monarch
       </div>
 
       <div className="site-nav__links">
@@ -124,16 +124,13 @@ export default function Nav({ current, onNavigate }: NavProps) {
           return (
             <div key={group.id} className="site-nav__group">
               <button
-                className={`site-nav__link${active ? ' active' : ''}`}
+                className={`site-nav__link${active ? ' active' : ''}${group.children ? ' site-nav__link--has-dropdown' : ''}${group.children && isOpen ? ' open' : ''}`}
                 onClick={() => handleGroupClick(group)}
                 aria-expanded={group.children ? isOpen : undefined}
                 aria-haspopup={group.children ? 'true' : undefined}
                 aria-current={active && group.page ? 'page' : undefined}
               >
                 {group.label}
-                {group.children && (
-                  <span className={`site-nav__chevron${isOpen ? ' open' : ''}`} aria-hidden="true">â–¾</span>
-                )}
               </button>
 
               {group.children && isOpen && (
