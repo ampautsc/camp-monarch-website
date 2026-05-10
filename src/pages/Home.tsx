@@ -31,10 +31,10 @@ function getSeasonalContent(month: number): SeasonalContent {
             "Monarchs arrive when it's 6 inches tall. That window opens in most of the Midwest in the next 3–5 weeks.",
         },
         {
-          label: 'Find one milkweed plant and note its height.',
+          label: 'Log any monarch you see on iNaturalist.',
           detail:
-            'Come back in two weeks. ' +
-            'The monarchs moving through Texas right now will be in your neighborhood within the month.',
+            'The spring migration has no organized reporting network. ' +
+            'Your observation tells researchers which corridors the population is using this year. It takes 60 seconds.',
         },
       ],
     }
@@ -138,8 +138,8 @@ export default function Home({ onNavigate }: HomeProps) {
         <p className="hero__lead">
           In the 1990s, more than a billion eastern monarchs reached Mexico each fall.
           Last winter, 60 million did.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
-          They can only lay eggs on milkweed.
-          Roundup-resistant corn replaced it.
+          Their caterpillars can only eat milkweed.
+          As farmland and neighborhoods expanded, milkweed lost its ground.
         </p>
         <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
           Find Your Milkweed Species
@@ -150,13 +150,10 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
-          <h2 id="lever-heading">Milkweed disappeared. You can put it back.</h2>
-          <p>
-            Monarchs lay their eggs on milkweed. It is the only plant their caterpillars can eat.
-          </p>
+          <h2 id="lever-heading">Milkweed is disappearing. You can put it back.</h2>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
-            Since 1990, an estimated 850 million stems have disappeared, replaced by herbicide-tolerant crops and development.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
+            Since 1990, an estimated 850 million stems have been lost to expanding agriculture and development.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
             The monarchs followed.
           </p>
           <p>
@@ -196,7 +193,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="witness-card">
             <p className="witness-card__quote">
               "I thought milkweed was just a weed. I pulled it out of my garden for ten years.
-              Then I found out it's the only plant monarchs can reproduce on.
+              Then I found out it's the only plant their caterpillars can eat.
               I let it come back the next spring. By July I had caterpillars for the first time I can remember."
             </p>
             <p className="witness-card__attribution">Tom K., Ames, Iowa</p>
