@@ -200,7 +200,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE ASK — one primary action, specifically named. Answers "how do I start?" */}
         <section aria-labelledby="help-heading" style={{ marginTop: '2.5rem' }}>
-          <h2 id="help-heading">Start here</h2>
+          <h2 id="help-heading">How You Can Help</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '1rem' }}>
 
             <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
