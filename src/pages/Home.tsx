@@ -172,7 +172,7 @@ export default function Home({ onNavigate }: HomeProps) {
               textDecoration: 'underline',
             }}
           >
-            The full lifecycle: how a monarch in Illinois becomes one in Mexico →
+            Learn more about Monarch Butterflies →
           </button>
         </section>
 
