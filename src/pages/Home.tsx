@@ -139,7 +139,6 @@ export default function Home({ onNavigate }: HomeProps) {
           In the 1990s, more than a billion eastern monarchs reached Mexico each fall.
           Last winter, 60 million did.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
           Their caterpillars can only eat milkweed.
-          As farmland and neighborhoods expanded, milkweed lost its ground.
         </p>
         <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
           Find Your Milkweed Species
