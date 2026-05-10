@@ -131,7 +131,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
   return (
     <>
-      {/* Hero — conclusion first (www-004). First 2 words: "Monarchs are" (www-005). */}
+      {/* HOOK — wonder first, then stakes. No explanation yet. (arch-page-as-argument-001) */}
       <section className="hero">
         <div className="hero__eyebrow">Camp Monarch</div>
         <h1>Monarchs are disappearing.<br />You can change that.</h1>
@@ -139,7 +139,6 @@ export default function Home({ onNavigate }: HomeProps) {
           One Monarch weighs less than a paper clip.
           It navigates 3,000 miles to a mountain it has never seen, using the sun as a compass and Earth's magnetic field as a map.
           Since 1996, 80% of the eastern population has gone.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
-          It breeds on one plant: milkweed.
         </p>
         <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
           Find Your Milkweed Species
@@ -148,42 +147,21 @@ export default function Home({ onNavigate }: HomeProps) {
 
       <div className="page">
 
-        {/* Key facts — scannable (www-001), specific numbers (www-013) */}
-        <section aria-label="Key facts" style={{ margin: '0 0 2rem' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '1rem' }}>
-            <div className="fact-card">
-              <div className="fact-card__number">3,000</div>
-              <div className="fact-card__label">miles per migration</div>
-            </div>
-            <div className="fact-card">
-              <div className="fact-card__number">80%</div>
-              <div className="fact-card__label">population lost since 1996</div>
-            </div>
-            <div className="fact-card">
-              <div className="fact-card__number">1</div>
-              <div className="fact-card__label">milkweed plant changes things</div>
-            </div>
-          </div>
-        </section>
-
-        {/* Story — individual over species. Section 2 so visitors reach it (www-011). */}
-        <section aria-labelledby="story-heading">
-          <h2 id="story-heading">One butterfly's journey</h2>
+        {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
+        <section aria-labelledby="lever-heading">
+          <h2 id="lever-heading">One plant. Your yard. Here is how it works.</h2>
           <p>
-            In late August, a Monarch emerges in Illinois. It has never migrated before.
-            Its parents died on the northward journey in May.
-            No one taught it the route.
+            Monarchs can only reproduce on milkweed.
+            Not near milkweed. On it. It is the only plant their caterpillars can eat.
           </p>
           <p>
-            Over the next six weeks it flies south and southwest.
-            It crosses the Rio Grande.
-            It climbs into the Sierra Madre and roosts in the same oyamel fir forest its great-grandparents reached three generations earlier.
+            A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
+            Since 1990, an estimated 850 million stems have disappeared, replaced by herbicide-tolerant crops and development.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
+            The monarchs followed.
           </p>
           <p>
-            In 1996, around 1 billion monarchs made that journey.
-            In 2024, researchers counted 60 million.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
-            Most of that loss comes down to milkweed.
-            The breeding habitat between Illinois and Texas was erased by agriculture and development, field by field.
+            One patch in a sunny yard supports dozens of caterpillars through a summer.
+            That is not a metaphor for hope. That is the mechanism.
           </p>
           <button
             onClick={() => onNavigate('monarch-life')}
@@ -199,90 +177,11 @@ export default function Home({ onNavigate }: HomeProps) {
               textDecoration: 'underline',
             }}
           >
-            Meet your neighbor: the full lifecycle →
+            The full lifecycle: how a monarch in Illinois becomes one in Mexico →
           </button>
         </section>
 
-        {/* Seasonal right-now panel — 2 items, no emoji decoration (vis-001, bta-004) */}
-        <div className="right-now-panel" style={{ marginTop: '2.5rem' }}>
-          <div className="right-now-panel__header">
-            {seasonal.header}
-          </div>
-          <ul className="right-now-panel__list">
-            {seasonal.items.map((item, i) => (
-              <li key={i}>
-                <strong>{item.label}</strong>{' '}
-                {item.detail}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Three ways to help — photo strips replace emoji anchors (vis-001, vis-002, vis-003) */}
-        <section aria-labelledby="help-heading" style={{ marginTop: '2.5rem' }}>
-          <h2 id="help-heading">Three ways to help</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '1rem' }}>
-
-            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
-              <CardPhoto
-                src={CARD_PHOTOS.plantMilkweed}
-                alt="Monarch butterfly feeding on butterfly weed (Asclepias tuberosa)"
-              />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Plant milkweed</h3>
-              <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                The only plant Monarchs can reproduce on. One patch in a sunny yard supports dozens of caterpillars.
-                Native species selected for your region, with sources and timing.
-              </p>
-              <button
-                className="hero__cta"
-                style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
-                onClick={() => onNavigate('plant-milkweed')}
-              >
-                Find your species →
-              </button>
-            </div>
-
-            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
-              <CardPhoto
-                src={CARD_PHOTOS.logSighting}
-                alt="Monarch butterfly caterpillar on milkweed"
-              />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Log a sighting</h3>
-              <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                Every observation you log on iNaturalist becomes open data for migration researchers.
-                One sighting in 60 seconds. The data gap is real.
-              </p>
-              <button
-                className="hero__cta"
-                style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
-                onClick={() => onNavigate('log-a-sighting')}
-              >
-                Log a sighting →
-              </button>
-            </div>
-
-            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
-              <CardPhoto
-                src={CARD_PHOTOS.trackMigration}
-                alt="Monarchs overwintering in the oyamel fir forest at Angangueo, Mexico"
-              />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Talk about it</h3>
-              <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                Most people don't know the population has dropped 80%. Habitat works at neighborhood scale. A conversation that leads to milkweed in a neighbor's yard matters as much as what's in yours.
-              </p>
-              <button
-                className="hero__cta"
-                style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
-                onClick={() => onNavigate('talking-points')}
-              >
-                Talking points →
-              </button>
-            </div>
-
-          </div>
-        </section>
-
-        {/* Witnesses — first-person voices (bta-002, bta-003). 2 cards. */}
+        {/* PROOF — witnesses BEFORE the ask. Answers "does it work?" (arch-proof-before-ask-001) */}
         <section aria-labelledby="witnesses-heading" style={{ marginTop: '2.5rem' }}>
           <h2 id="witnesses-heading">What people are witnessing</h2>
           <div className="witness-card">
@@ -304,16 +203,91 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
         </section>
 
+        {/* THE ASK — one primary action, specifically named. Answers "how do I start?" */}
+        <section aria-labelledby="help-heading" style={{ marginTop: '2.5rem' }}>
+          <h2 id="help-heading">Start here</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '1rem' }}>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.plantMilkweed}
+                alt="Monarch butterfly on butterfly weed (Asclepias tuberosa)"
+              />
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Plant milkweed</h3>
+              <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
+                Native species for your region. What to plant, where to get it, and when.
+              </p>
+              <button
+                className="hero__cta"
+                style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
+                onClick={() => onNavigate('plant-milkweed')}
+              >
+                Find your species →
+              </button>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.logSighting}
+                alt="Monarch caterpillar on milkweed"
+              />
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Log a sighting</h3>
+              <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
+                Every observation on iNaturalist becomes open data for migration researchers. 60 seconds.
+              </p>
+              <button
+                className="hero__cta"
+                style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
+                onClick={() => onNavigate('log-a-sighting')}
+              >
+                Log a sighting →
+              </button>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.trackMigration}
+                alt="Monarchs overwintering in the oyamel fir forest in Mexico"
+              />
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Talk about it</h3>
+              <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
+                Most people don't know the population has dropped 80%. Habitat is a corridor. A conversation with a neighbor matters.
+              </p>
+              <button
+                className="hero__cta"
+                style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
+                onClick={() => onNavigate('talking-points')}
+              >
+                Talking points →
+              </button>
+            </div>
+
+          </div>
+        </section>
+
+        {/* RIGHT NOW — what to do this week. Answers "what do I do this month?" */}
+        <div className="right-now-panel" style={{ marginTop: '2.5rem' }}>
+          <div className="right-now-panel__header">
+            {seasonal.header}
+          </div>
+          <ul className="right-now-panel__list">
+            {seasonal.items.map((item, i) => (
+              <li key={i}>
+                <strong>{item.label}</strong>{' '}
+                {item.detail}
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Citation list */}
         <section className="cite-list" aria-label="Sources">
           <p>[1] Xerces Society. <a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer">Monarch Butterfly Conservation.</a> Accessed {monthName} {year}.</p>
           <p>[2] Monarch Joint Venture. <a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer">Overwintering Population Monitoring.</a> Accessed {monthName} {year}.</p>
           <p style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-            Photos: Wikimedia Commons (CC BY-SA). 
-            <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noreferrer">Butterfly weed</a>. 
-            <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noreferrer">Caterpillar</a>. 
-            <a href="https://commons.wikimedia.org/wiki/File:Monarchs_overwintering_Angangueo_site_in_Mexico.jpg" target="_blank" rel="noreferrer">Overwintering colony</a>.
-          </p>
+            Photos: Wikimedia Commons (CC BY-SA).
+            <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noreferrer">Butterfly weed</a>.
+            <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noreferrer">Caterpillar</a>.
         </section>
 
       </div>
