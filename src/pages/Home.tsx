@@ -150,7 +150,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
-          <h2 id="lever-heading">One plant. Your yard.</h2>
+          <h2 id="lever-heading">Milkweed disappeared. You can put it back.</h2>
           <p>
             Monarchs lay their eggs on milkweed. It is the only plant their caterpillars can eat.
           </p>
