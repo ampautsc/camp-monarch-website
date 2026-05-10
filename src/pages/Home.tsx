@@ -136,7 +136,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="hero__eyebrow">Camp Monarch</div>
         <h1>Monarchs are disappearing.<br />You can change that.</h1>
         <p className="hero__lead">
-          In the 1990s, more than a billion eastern monarchs reached Mexico each fall.
+          In the 1990s, more than a billion monarchs reached Mexico each fall.<br />
           Last winter, 60 million did.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
         </p>
       </section>
@@ -145,7 +145,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
-          <h2 id="lever-heading">Monarch caterpillars can only eat milkweed, and it's disappearing. You can help bring it back.</h2>
+          <h2 id="lever-heading">Monarch caterpillars eat only milkweed, and it's disappearing. You can help bring it back.</h2>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
             Since 1990, an estimated 850 million stems have been lost to expanding agriculture and development.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
