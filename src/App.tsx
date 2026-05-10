@@ -23,9 +23,10 @@ import NativeBees from './pages/NativeBees'
 import TalkingPoints from './pages/TalkingPoints'
 import GrayTreeFrogs from './pages/GrayTreeFrogs'
 import DownyWoodpecker from './pages/DownyWoodpecker'
+import BaltimoreOriole from './pages/BaltimoreOriole'
 import { trackEvent } from './lib/analytics'
 
-export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker'
+export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -55,6 +56,7 @@ function App() {
       case 'talking-points':      return <TalkingPoints onNavigate={setPage} />
       case 'gray-tree-frogs':     return <GrayTreeFrogs onNavigate={setPage} />
       case 'downy-woodpecker':    return <DownyWoodpecker onNavigate={setPage} />
+      case 'baltimore-oriole':    return <BaltimoreOriole onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }
