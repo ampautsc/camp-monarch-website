@@ -27,6 +27,7 @@ const groups: NavGroup[] = [
       { id: 'gray-tree-frogs',   label: 'Gray Tree Frogs' },
       { id: 'downy-woodpecker',  label: 'Downy Woodpecker' },
       { id: 'baltimore-oriole',  label: 'Baltimore Oriole' },
+      { id: 'northern-cardinal', label: 'Northern Cardinal' },
     ],
   },
   {
