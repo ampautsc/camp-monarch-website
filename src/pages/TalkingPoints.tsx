@@ -114,6 +114,123 @@ export default function TalkingPoints({ onNavigate }: TalkingPointsProps) {
         </div>
       </section>
 
+      {/* Objection handling */}
+      <section aria-labelledby="objections-heading" style={{ marginTop: '2.5rem' }}>
+        <h2 id="objections-heading" style={{ marginBottom: '0.75rem' }}>When they push back</h2>
+        <p style={{ fontSize: '0.95rem', marginBottom: '1.5rem', maxWidth: '660px' }}>
+          Most hesitation comes from one of three places. Here's what's actually true.
+        </p>
+
+        <div style={{
+          background: 'white',
+          border: '1px solid var(--border)',
+          borderRadius: '10px',
+          overflow: 'hidden',
+          marginBottom: '1rem',
+        }}>
+          <div style={{
+            background: 'var(--monarch-light)',
+            borderBottom: '1px solid var(--border)',
+            padding: '0.9rem 1.25rem',
+          }}>
+            <p style={{
+              margin: 0,
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              color: 'var(--monarch-dark)',
+            }}>
+              "Will one yard really make a difference?"
+            </p>
+          </div>
+          <div style={{ padding: '1.1rem 1.25rem' }}>
+            <p style={{ margin: '0 0 0.75rem', fontSize: '0.95rem', lineHeight: 1.65 }}>
+              One yard alone is a stepping stone. Three or four yards within a few blocks become a
+              corridor — a connected chain of habitat a monarch can actually move through. Research on
+              native plant gardening suggests there are threshold effects: benefits for birds and insects
+              don't appear until enough neighboring households are participating.<sup><a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8360073/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: 'var(--monarch-orange)', textDecoration: 'none' }}
+              >[3]</a></sup>
+            </p>
+            <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.65 }}>
+              The question isn't whether your neighbor's yard matters — it's whether enough yards join
+              to cross the threshold. Yours matters most if it helps bring others along.
+            </p>
+          </div>
+        </div>
+
+        <div style={{
+          background: 'white',
+          border: '1px solid var(--border)',
+          borderRadius: '10px',
+          overflow: 'hidden',
+          marginBottom: '1rem',
+        }}>
+          <div style={{
+            background: 'var(--monarch-light)',
+            borderBottom: '1px solid var(--border)',
+            padding: '0.9rem 1.25rem',
+          }}>
+            <p style={{
+              margin: 0,
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              color: 'var(--monarch-dark)',
+            }}>
+              "I don't have the right yard."
+            </p>
+          </div>
+          <div style={{ padding: '1.1rem 1.25rem' }}>
+            <p style={{ margin: '0 0 0.75rem', fontSize: '0.95rem', lineHeight: 1.65 }}>
+              Three milkweed plants in a 4×4 patch that gets six hours of sun can support 20–30
+              caterpillars in a single season. That's a strip along a driveway, a corner of a patio
+              bed, or a few pots on a sunny deck.
+            </p>
+            <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.65 }}>
+              If there really is no sunny ground, common milkweed grows well in a large container.
+              The bar is genuinely low — monarchs are looking for the plant, not a landscape.
+            </p>
+          </div>
+        </div>
+
+        <div style={{
+          background: 'white',
+          border: '1px solid var(--border)',
+          borderRadius: '10px',
+          overflow: 'hidden',
+          marginBottom: '1rem',
+        }}>
+          <div style={{
+            background: 'var(--monarch-light)',
+            borderBottom: '1px solid var(--border)',
+            padding: '0.9rem 1.25rem',
+          }}>
+            <p style={{
+              margin: 0,
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              color: 'var(--monarch-dark)',
+            }}>
+              "Won't it look like a weed patch?"
+            </p>
+          </div>
+          <div style={{ padding: '1.1rem 1.25rem' }}>
+            <p style={{ margin: '0 0 0.75rem', fontSize: '0.95rem', lineHeight: 1.65 }}>
+              Milkweed is a flowering plant — common milkweed has clusters of pink-purple blooms in
+              summer; butterflyweed is a deep orange. Neither looks like a weed patch. A
+              well-placed 3×3 patch with a small stake or sign is usually accepted, and sometimes
+              admired, by neighbors.
+            </p>
+            <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: 1.65 }}>
+              Once established, native plants also need far less maintenance than turf grass — no
+              weekly mowing, no fertilizer, and in most cases no watering after the first season.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section aria-labelledby="next-heading" style={{ marginTop: '2.5rem' }}>
         <h2 id="next-heading" style={{ marginBottom: '0.75rem' }}>When they ask what to plant</h2>
