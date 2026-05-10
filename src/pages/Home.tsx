@@ -138,11 +138,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <p className="hero__lead">
           In the 1990s, more than a billion eastern monarchs reached Mexico each fall.
           Last winter, 60 million did.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
-          Their caterpillars can only eat milkweed.
         </p>
-        <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
-          Find Your Milkweed Species
-        </button>
       </section>
 
       <div className="page">
@@ -150,6 +146,7 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
           <h2 id="lever-heading">Milkweed is disappearing. You can put it back.</h2>
+          <p>Their caterpillars can only eat milkweed.</p>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
             Since 1990, an estimated 850 million stems have been lost to expanding agriculture and development.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
@@ -159,6 +156,9 @@ export default function Home({ onNavigate }: HomeProps) {
             One patch in a sunny yard supports dozens of caterpillars through a summer.
             That is not a metaphor for hope. That is the mechanism.
           </p>
+          <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
+            Find Your Milkweed Species
+          </button>
           <button
             onClick={() => onNavigate('monarch-life')}
             style={{
