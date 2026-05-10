@@ -153,6 +153,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </p>
           <p>
             One patch in a sunny yard supports dozens of caterpillars through a summer.
+            Dozens of milkweed species grow natively across different regions of the US.
           </p>
           <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
             Find Your Milkweed Species
