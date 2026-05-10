@@ -137,7 +137,8 @@ export default function Home({ onNavigate }: HomeProps) {
         <h1>Monarchs are disappearing.<br />You can change that.</h1>
         <p className="hero__lead">
           One Monarch weighs less than a paper clip.
-          It navigates 3,000 miles to a mountain it has never seen, using the sun as a compass and Earth's magnetic field as a map.
+          It navigates 3,000 miles to a mountain it has never seen.
+          During the day it steers by the sun. After dark, it reads the Earth's magnetic field.
           Since 1996, 80% of the eastern population has gone.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
         </p>
         <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
@@ -149,7 +150,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
-          <h2 id="lever-heading">One plant. Your yard. Here is how it works.</h2>
+          <h2 id="lever-heading">One plant. Your yard.</h2>
           <p>
             Monarchs can only reproduce on milkweed.
             Not near milkweed. On it. It is the only plant their caterpillars can eat.
@@ -215,7 +216,7 @@ export default function Home({ onNavigate }: HomeProps) {
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Plant milkweed</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                Native species for your region. What to plant, where to get it, and when.
+                Asclepias tuberosa thrives in Ohio. It struggles in the Pacific Northwest. The right species depends on your county. This page finds it.
               </p>
               <button
                 className="hero__cta"
