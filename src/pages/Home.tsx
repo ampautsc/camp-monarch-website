@@ -137,10 +137,10 @@ export default function Home({ onNavigate }: HomeProps) {
         <h1>Monarchs are disappearing.<br />You can change that.</h1>
         <p className="hero__lead">
           One Monarch weighs less than a paper clip.
-          It navigates 3,000 miles to a mountain it has never seen —
-          guided by the sun as a compass and, researchers believe, magnetic fields.
-          Since 1996, their population has fallen by 80%.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
-          Planting milkweed helps. Here's how.
+          It makes its way to a mountain it has never seen, crossing the Rio Grande on a magnetic compass it was born with.
+          Since 1996, 80% of the eastern population has gone.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
+          Monarchs can only lay eggs on milkweed.
+          No milkweed, no eggs.
         </p>
         <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
           Find Your Milkweed Species
@@ -176,15 +176,15 @@ export default function Home({ onNavigate }: HomeProps) {
             No one taught it the route.
           </p>
           <p>
-            Over the next six weeks it will fly south and southwest —
-            following the sun's angle, adjusting for the time of day,
-            crossing the Rio Grande, and climbing into the Sierra Madre.
-            It will roost in the same oyamel fir forest where its great-grandparents overwintered.
+            Over the next six weeks it flies south and southwest.
+            It crosses the Rio Grande.
+            It climbs into the Sierra Madre and roosts in the same oyamel fir forest its great-grandparents reached three generations earlier.
           </p>
           <p>
-            In 1996, around 1 billion Monarchs made that journey.
+            In 1996, around 1 billion monarchs made that journey.
             In 2024, researchers counted 60 million.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
-            The difference is mostly milkweed — habitat lost to agriculture and development.
+            Most of that loss comes down to milkweed.
+            The breeding habitat between Illinois and Texas was erased by agriculture and development, field by field.
           </p>
           <button
             onClick={() => onNavigate('monarch-life')}
@@ -287,9 +287,6 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* Witnesses — first-person voices (bta-002, bta-003). 2 cards. */}
         <section aria-labelledby="witnesses-heading" style={{ marginTop: '2.5rem' }}>
           <h2 id="witnesses-heading">What people are witnessing</h2>
-          <p style={{ marginBottom: '1.5rem' }}>
-            These are not statistics. They are accounts from people paying attention to their own yards.
-          </p>
           <div className="witness-card">
             <p className="witness-card__quote">
               "I grew up watching dozens of monarchs every August in our backyard.
