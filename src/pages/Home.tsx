@@ -137,10 +137,9 @@ export default function Home({ onNavigate }: HomeProps) {
         <h1>Monarchs are disappearing.<br />You can change that.</h1>
         <p className="hero__lead">
           One Monarch weighs less than a paper clip.
-          It makes its way to a mountain it has never seen, crossing the Rio Grande on a magnetic compass it was born with.
+          It navigates 3,000 miles to a mountain it has never seen, using the sun as a compass and Earth's magnetic field as a map.
           Since 1996, 80% of the eastern population has gone.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
-          Monarchs can only lay eggs on milkweed.
-          No milkweed, no eggs.
+          It breeds on one plant: milkweed.
         </p>
         <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
           Find Your Milkweed Species
