@@ -136,10 +136,10 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="hero__eyebrow">Camp Monarch</div>
         <h1>Monarchs are disappearing.<br />You can change that.</h1>
         <p className="hero__lead">
-          One Monarch weighs less than a paper clip.
-          It navigates 3,000 miles to a mountain it has never seen.
-          During the day it steers by the sun. After dark, it reads the Earth's magnetic field.
-          Since 1996, 80% of the eastern population has gone.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
+          In the 1990s, more than a billion eastern monarchs reached Mexico each fall.
+          Last winter, 60 million did.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
+          They can only lay eggs on milkweed.
+          Roundup-resistant corn replaced it.
         </p>
         <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
           Find Your Milkweed Species
@@ -152,8 +152,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <section aria-labelledby="lever-heading">
           <h2 id="lever-heading">One plant. Your yard.</h2>
           <p>
-            Monarchs can only reproduce on milkweed.
-            Not near milkweed. On it. It is the only plant their caterpillars can eat.
+            Monarchs lay their eggs on milkweed. It is the only plant their caterpillars can eat.
           </p>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
