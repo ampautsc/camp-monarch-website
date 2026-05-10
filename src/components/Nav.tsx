@@ -20,11 +20,12 @@ const groups: NavGroup[] = [
     id: 'neighbors',
     label: 'Meet Your Neighbors',
     children: [
-      { id: 'monarch-life',   label: 'Monarch Butterfly' },
-      { id: 'fireflies',      label: 'Fireflies' },
-      { id: 'box-turtles',    label: 'Box Turtles' },
-      { id: 'native-bees',    label: 'Native Bees' },
-      { id: 'gray-tree-frogs', label: 'Gray Tree Frogs' },
+      { id: 'monarch-life',      label: 'Monarch Butterfly' },
+      { id: 'fireflies',         label: 'Fireflies' },
+      { id: 'box-turtles',       label: 'Box Turtles' },
+      { id: 'native-bees',       label: 'Native Bees' },
+      { id: 'gray-tree-frogs',   label: 'Gray Tree Frogs' },
+      { id: 'downy-woodpecker',  label: 'Downy Woodpecker' },
     ],
   },
   {
