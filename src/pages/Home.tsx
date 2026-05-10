@@ -145,8 +145,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
-          <h2 id="lever-heading">Milkweed is disappearing. You can put it back.</h2>
-          <p>Their caterpillars can only eat milkweed.</p>
+          <h2 id="lever-heading">Monarch caterpillars can only eat milkweed, and it's disappearing. You can put it back.</h2>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
             Since 1990, an estimated 850 million stems have been lost to expanding agriculture and development.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
