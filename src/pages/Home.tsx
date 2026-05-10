@@ -22,13 +22,13 @@ function getSeasonalContent(month: number): SeasonalContent {
   // Spring: March (2), April (3), May (4)
   if (month >= 2 && month <= 4) {
     return {
-      header: 'Spring migration — what to watch for right now',
+      header: 'Spring migration: what to watch for right now',
       items: [
         {
           label: 'Milkweed is emerging.',
           detail:
             "Look for thick, gray-green leaves pushing up from bare ground. Don't mow over it. " +
-            "Monarchs arrive when it's 6 inches tall — that window opens in most of the Midwest in the next 3–5 weeks.",
+            "Monarchs arrive when it's 6 inches tall. That window opens in most of the Midwest in the next 3–5 weeks.",
         },
         {
           label: 'Find one milkweed plant and note its height.',
@@ -42,12 +42,12 @@ function getSeasonalContent(month: number): SeasonalContent {
   // Summer: June (5), July (6), August (7)
   if (month >= 5 && month <= 7) {
     return {
-      header: 'Breeding season — caterpillars are here now',
+      header: 'Breeding season: caterpillars are here now',
       items: [
         {
           label: 'Check the underside of milkweed leaves.',
           detail:
-            'Monarch eggs are the size of a pinhead — pale yellow, ribbed, laid one per leaf. ' +
+            'Monarch eggs are the size of a pinhead: pale yellow, ribbed, one per leaf. ' +
             'Look on the underside of leaves on milkweed 6 inches or taller.',
         },
         {
@@ -62,7 +62,7 @@ function getSeasonalContent(month: number): SeasonalContent {
   // Fall: September (8), October (9), November (10)
   if (month >= 8 && month <= 10) {
     return {
-      header: 'Fall migration — the roost movement is beginning',
+      header: 'Fall migration: the roost movement is beginning',
       items: [
         {
           label: 'Late-blooming nectar plants are critical.',
@@ -81,7 +81,7 @@ function getSeasonalContent(month: number): SeasonalContent {
   }
   // Winter: December (11), January (0), February (1)
   return {
-    header: 'Winter — monarchs are in Mexico right now',
+    header: 'Winter: monarchs are in Mexico right now',
     items: [
       {
         label: 'Order milkweed for spring planting.',
@@ -265,12 +265,11 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
               <CardPhoto
                 src={CARD_PHOTOS.trackMigration}
-                alt="Monarchs overwintering at their refuge in Angangueo, Mexico — the destination every butterfly is flying toward"
+                alt="Monarchs overwintering in the oyamel fir forest at Angangueo, Mexico"
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Talk about it</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                Most people don't know the population has dropped 80%. Habitat works at neighborhood
-                scale — a conversation that leads to milkweed in a neighbor's yard matters as much as what's in yours.
+                Most people don't know the population has dropped 80%. Habitat works at neighborhood scale. A conversation that leads to milkweed in a neighbor's yard matters as much as what's in yours.
               </p>
               <button
                 className="hero__cta"
@@ -292,7 +291,7 @@ export default function Home({ onNavigate }: HomeProps) {
               "I grew up watching dozens of monarchs every August in our backyard.
               Last September my daughter and I sat outside for two hours and counted five.
               That fall I planted eight milkweed plugs along our fence.
-              This spring they're coming back up — and we're watching."
+              This spring they're coming back up. We're watching."
             </p>
             <p className="witness-card__attribution">Sarah M., St. Louis, Missouri</p>
           </div>
