@@ -176,28 +176,6 @@ export default function Home({ onNavigate }: HomeProps) {
           </button>
         </section>
 
-        {/* PROOF — witnesses BEFORE the ask. Answers "does it work?" (arch-proof-before-ask-001) */}
-        <section aria-labelledby="witnesses-heading" style={{ marginTop: '2.5rem' }}>
-          <h2 id="witnesses-heading">What people are witnessing</h2>
-          <div className="witness-card">
-            <p className="witness-card__quote">
-              "I grew up watching dozens of monarchs every August in our backyard.
-              Last September my daughter and I sat outside for two hours and counted five.
-              That fall I planted eight milkweed plugs along our fence.
-              This spring they're coming back up. We're watching."
-            </p>
-            <p className="witness-card__attribution">Sarah M., St. Louis, Missouri</p>
-          </div>
-          <div className="witness-card">
-            <p className="witness-card__quote">
-              "I thought milkweed was just a weed. I pulled it out of my garden for ten years.
-              Then I found out it's the only plant their caterpillars can eat.
-              I let it come back the next spring. By July I had caterpillars for the first time I can remember."
-            </p>
-            <p className="witness-card__attribution">Tom K., Ames, Iowa</p>
-          </div>
-        </section>
-
         {/* THE ASK — one primary action, specifically named. Answers "how do I start?" */}
         <section aria-labelledby="help-heading" style={{ marginTop: '2.5rem' }}>
           <h2 id="help-heading">How You Can Help</h2>
@@ -254,6 +232,24 @@ export default function Home({ onNavigate }: HomeProps) {
                 onClick={() => onNavigate('talking-points')}
               >
                 Talking points →
+              </button>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.plantMilkweed}
+                alt="Native wildflowers in bloom"
+              />
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Plant perennial wildflowers</h3>
+              <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
+                Monarchs need nectar throughout their migration, not just at one stop. Native perennials blooming from spring through fall keep the corridor open.
+              </p>
+              <button
+                className="hero__cta"
+                style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
+                onClick={() => onNavigate('choose-a-plant')}
+              >
+                Find plants for your yard →
               </button>
             </div>
 
