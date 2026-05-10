@@ -289,6 +289,7 @@ export default function Home({ onNavigate }: HomeProps) {
             Photos: Wikimedia Commons (CC BY-SA).
             <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noreferrer">Butterfly weed</a>.
             <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noreferrer">Caterpillar</a>.
+          </p>
         </section>
 
       </div>
