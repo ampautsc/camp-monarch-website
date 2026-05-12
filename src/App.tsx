@@ -29,10 +29,28 @@ import EasternBluebird from './pages/EasternBluebird'
 import BlackCappedChickadee from './pages/BlackCappedChickadee'
 import RubyThroatedHummingbird from './pages/RubyThroatedHummingbird'
 import AmericanGoldfinch from './pages/AmericanGoldfinch'
+import AmericanRobin from './pages/AmericanRobin'
+import IndigoBunting from './pages/IndigoBunting'
+import TigerSwallowtail from './pages/TigerSwallowtail'
+import GreenDarner from './pages/GreenDarner'
+import GarterSnake from './pages/GarterSnake'
+import DarkEyedJunco from './pages/DarkEyedJunco'
+import EasternChipmunk from './pages/EasternChipmunk'
+import SpringPeeper from './pages/SpringPeeper'
+import AmericanToad from './pages/AmericanToad'
 import { trackEvent } from './lib/analytics'
 
 export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird' | 'black-capped-chickadee' | 'ruby-throated-hummingbird'
   | 'american-goldfinch'
+  | 'american-robin'
+  | 'indigo-bunting'
+  | 'tiger-swallowtail'
+  | 'green-darner'
+  | 'garter-snake'
+  | 'dark-eyed-junco'
+  | 'eastern-chipmunk'
+  | 'spring-peeper'
+  | 'toad'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -68,6 +86,15 @@ function App() {
       case 'black-capped-chickadee': return <BlackCappedChickadee onNavigate={setPage} />
       case 'ruby-throated-hummingbird': return <RubyThroatedHummingbird onNavigate={setPage} />
       case 'american-goldfinch': return <AmericanGoldfinch onNavigate={setPage} />
+      case 'american-robin': return <AmericanRobin onNavigate={setPage} />
+      case 'indigo-bunting': return <IndigoBunting onNavigate={setPage} />
+      case 'tiger-swallowtail': return <TigerSwallowtail onNavigate={setPage} />
+      case 'green-darner': return <GreenDarner onNavigate={setPage} />
+      case 'garter-snake': return <GarterSnake onNavigate={setPage} />
+      case 'dark-eyed-junco': return <DarkEyedJunco onNavigate={setPage} />
+      case 'eastern-chipmunk': return <EasternChipmunk onNavigate={setPage} />
+      case 'spring-peeper': return <SpringPeeper onNavigate={setPage} />
+      case 'toad': return <AmericanToad onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }
