@@ -31,6 +31,7 @@ const groups: NavGroup[] = [
       { id: 'eastern-bluebird',       label: 'Eastern Bluebird' },
       { id: 'black-capped-chickadee', label: 'Black-capped Chickadee' },
       { id: 'ruby-throated-hummingbird', label: 'Ruby-Throated Hummingbird' },
+      { id: 'american-goldfinch', label: 'American Goldfinch' },
     ],
   },
   {
