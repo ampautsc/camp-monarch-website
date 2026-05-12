@@ -27,9 +27,10 @@ import BaltimoreOriole from './pages/BaltimoreOriole'
 import NorthernCardinal from './pages/NorthernCardinal'
 import EasternBluebird from './pages/EasternBluebird'
 import BlackCappedChickadee from './pages/BlackCappedChickadee'
+import RubyThroatedHummingbird from './pages/RubyThroatedHummingbird'
 import { trackEvent } from './lib/analytics'
 
-export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird' | 'black-capped-chickadee'
+export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird' | 'black-capped-chickadee' | 'ruby-throated-hummingbird'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -63,6 +64,7 @@ function App() {
       case 'northern-cardinal':   return <NorthernCardinal onNavigate={setPage} />
       case 'eastern-bluebird':    return <EasternBluebird onNavigate={setPage} />
       case 'black-capped-chickadee': return <BlackCappedChickadee onNavigate={setPage} />
+      case 'ruby-throated-hummingbird': return <RubyThroatedHummingbird onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }
