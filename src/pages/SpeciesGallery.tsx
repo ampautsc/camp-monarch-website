@@ -55,9 +55,9 @@ const SPECIES: {
     page: 'downy-woodpecker',
     name: 'Downy Woodpecker',
     tagline: 'Smallest woodpecker in North America. Drills insects from dead branches.',
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Downy_Woodpecker_on_a_winter_day_in_Central_Park_%2816126%29.jpg/960px-Downy_Woodpecker_on_a_winter_day_in_Central_Park_%2816126%29.jpg',
-    alt: 'Downy Woodpecker perched on a snowy branch in winter',
-    attr: 'Rhododendrites / Wikimedia Commons / CC BY-SA 4.0',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/177108982/medium.jpeg',
+    alt: 'Downy Woodpecker clinging to a tree trunk',
+    attr: 'Alexis Williams / iNaturalist / CC BY',
   },
   {
     page: 'baltimore-oriole',
