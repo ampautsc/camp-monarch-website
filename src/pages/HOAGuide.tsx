@@ -135,7 +135,7 @@ export default function HOAGuide({ onNavigate }: HOAGuideProps) {
               {
                 n: 3,
                 title: 'Install a certified wildlife habitat marker',
-                body: 'The National Wildlife Federation\\'s Certified Wildlife Habitat program costs $20 and provides a metal garden sign. HOA boards respond differently to a sign that cites a national nonprofit than to an unexplained pile of native plants. You can register at nwf.org/garden-for-wildlife. Camp Monarch\\'s Waystation certification is another option specifically for monarch habitat.',
+                body: 'The National Wildlife Federation\'s Certified Wildlife Habitat program costs $20 and provides a metal garden sign. HOA boards respond differently to a sign that cites a national nonprofit than to an unexplained pile of native plants. You can register at nwf.org/garden-for-wildlife. Camp Monarch\'s Waystation certification is another option specifically for monarch habitat.',
               },
               {
                 n: 4,
