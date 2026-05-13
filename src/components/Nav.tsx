@@ -56,6 +56,8 @@ const groups: NavGroup[] = [
       { id: 'log-a-sighting',       label: 'Log a Sighting' },
       { id: 'take-action',          label: 'Take Action' },
       { id: 'the-first-year',       label: 'The First Year' },
+      { id: 'habitat-transformation', label: 'From Lawn to Habitat' },
+      { id: 'hoa-guide',             label: 'Navigating HOA Rules' },
     ],
   },
   {
