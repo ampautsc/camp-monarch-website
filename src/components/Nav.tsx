@@ -58,6 +58,7 @@ const groups: NavGroup[] = [
       { id: 'the-first-year',       label: 'The First Year' },
       { id: 'habitat-transformation', label: 'From Lawn to Habitat' },
       { id: 'hoa-guide',             label: 'Navigating HOA Rules' },
+      { id: 'habitat-score',         label: 'Yard Check' },
     ],
   },
   {
