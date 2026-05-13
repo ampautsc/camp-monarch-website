@@ -41,6 +41,7 @@ import AmericanToad from './pages/AmericanToad'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
 import HOAGuide from './pages/HOAGuide'
+import HabitatScore from './pages/HabitatScore'
 import { trackEvent } from './lib/analytics'
 
 export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird' | 'black-capped-chickadee' | 'ruby-throated-hummingbird'
@@ -57,6 +58,7 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
   | 'species-gallery'
   | 'habitat-transformation'
   | 'hoa-guide'
+  | 'habitat-score'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -104,6 +106,7 @@ function App() {
       case 'species-gallery': return <SpeciesGallery onNavigate={setPage} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={setPage} />
       case 'hoa-guide': return <HOAGuide onNavigate={setPage} />
+      case 'habitat-score':        return <HabitatScore onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }
