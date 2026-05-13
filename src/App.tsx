@@ -39,7 +39,6 @@ import EasternChipmunk from './pages/EasternChipmunk'
 import SpringPeeper from './pages/SpringPeeper'
 import AmericanToad from './pages/AmericanToad'
 import SpeciesGallery from './pages/SpeciesGallery'
-import SpeciesGallery from './pages/SpeciesGallery'
 import { trackEvent } from './lib/analytics'
 
 export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird' | 'black-capped-chickadee' | 'ruby-throated-hummingbird'
@@ -53,7 +52,6 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
   | 'eastern-chipmunk'
   | 'spring-peeper'
   | 'toad'
-  | 'species-gallery'
   | 'species-gallery'
 
 function App() {
@@ -99,7 +97,6 @@ function App() {
       case 'eastern-chipmunk': return <EasternChipmunk onNavigate={setPage} />
       case 'spring-peeper': return <SpringPeeper onNavigate={setPage} />
       case 'toad': return <AmericanToad onNavigate={setPage} />
-      case 'species-gallery': return <SpeciesGallery onNavigate={setPage} />
       case 'species-gallery': return <SpeciesGallery onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
