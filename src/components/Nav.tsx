@@ -21,7 +21,6 @@ const groups: NavGroup[] = [
     label: 'Meet Your Neighbors',
     children: [
       { id: 'species-gallery',   label: 'All Species — Photo Gallery' },
-      { id: 'species-gallery',   label: 'All Species — Photo Gallery' },
       { id: 'monarch-life',      label: 'Monarch Butterfly' },
       { id: 'fireflies',         label: 'Fireflies' },
       { id: 'box-turtles',       label: 'Box Turtles' },
