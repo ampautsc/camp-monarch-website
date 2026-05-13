@@ -145,7 +145,7 @@ export default function HOAGuide({ onNavigate }: HOAGuideProps) {
               {
                 n: 5,
                 title: 'Propose a pilot in a back corner',
-                body: 'If a front-yard native planting meets resistance, start where there\\'s less scrutiny: a side strip, a back fence line, the area under a tree where grass won\\'t grow. One established, beautiful native patch is your best argument for the next request. Let the results speak before you argue.',
+                body: 'If a front-yard native planting meets resistance, start where there\'s less scrutiny: a side strip, a back fence line, the area under a tree where grass won\'t grow. One established, beautiful native patch is your best argument for the next request. Let the results speak before you argue.',
               },
             ].map(({ n, title, body }) => (
               <div key={n} className="step-item" style={{ display: 'flex', gap: '1.25rem', marginBottom: '1.75rem' }}>
