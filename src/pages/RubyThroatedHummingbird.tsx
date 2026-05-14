@@ -102,6 +102,18 @@ export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHumm
             placed on a downward-sloping branch, typically four to twenty feet above the
             ground, and almost always invisible from below.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/09/Ruby_Throated_Hummingbird.jpg"
+                  alt="Ruby-throated Hummingbird hovering — wings beating 53 times per second, capable of flight in any direction including backwards"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The ruby-throat's bill and the native trumpet vine's flower tube co-evolved over millions of years — the bill length matches the tube depth exactly, the flower produces nectar in exchange for pollen transport. Substitute a red plastic feeder for native flowers and the bird survives, but the ecological relationship does not.
+                  <span className="photo-credit"> Photo: Len Benzi · <a href="https://commons.wikimedia.org/wiki/File:Ruby_Throated_Hummingbird.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Females incubate two eggs for fourteen to sixteen days and raise the young
             alone for another two to three weeks. The male&apos;s involvement in nesting
