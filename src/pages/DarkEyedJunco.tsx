@@ -7,6 +7,22 @@ interface DarkEyedJuncoProps {
 export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/55/Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Dark-eyed Junco foraging in snow, showing slate-gray hood and white outer tail feathers — winter's most common feeder bird"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          Photo: Cephas&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Dark-eyed Junco</h1>
@@ -18,20 +34,7 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/55/Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Dark-eyed Junco foraging in snow, showing slate-gray hood and white outer tail feathers — winter's most common feeder bird"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Cephas ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 3.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="abundance-heading">
