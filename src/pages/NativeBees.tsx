@@ -7,6 +7,22 @@ interface NativeBeesProps {
 export default function NativeBees({ onNavigate }: NativeBeesProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Native bumblebee covered in pollen foraging on a purple coneflower — one of 4,000 native bee species that existed before the honeybee arrived in North America"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Ivar Leidus · <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: Ivar Leidus&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Native bees</h1>
@@ -18,20 +34,7 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Native bumblebee covered in pollen foraging on a purple coneflower — one of 4,000 native bee species that existed before the honeybee arrived in North America"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Ivar Leidus ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 4.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="nb-who-heading">
