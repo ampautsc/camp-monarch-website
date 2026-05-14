@@ -7,6 +7,22 @@ interface PolyphemusMothProps {
 export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyphemus_Moth_Antheraea_polyphemus.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Polyphemus Moth with wings spread revealing large eyespot on hindwings — a 6-inch wingspan predator-deterrent evolved over millions of years"
+          className="species-hero-image"
+          style={{ objectPosition: 'center center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: [User:Kadoka1]Template:Stephen Lody Photography · <a href="https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_Antheraea_polyphemus.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          Photo: [User:Kadoka1]Template:Stephen Lody Photography&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_Antheraea_polyphemus.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Polyphemus Moth</h1>
@@ -18,20 +34,7 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyphemus_Moth_Antheraea_polyphemus.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Polyphemus Moth with wings spread revealing large eyespot on hindwings — a 6-inch wingspan predator-deterrent evolved over millions of years"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: [User:Kadoka1]Template:Stephen Lody Photography ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_Antheraea_polyphemus.JPG" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 3.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
