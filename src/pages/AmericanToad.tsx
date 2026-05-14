@@ -18,6 +18,21 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Bufo_americanus_PJC1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="American Toad resting in garden leaf litter, warty brown skin providing natural camouflage among fallen leaves"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Cephas ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC1.jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 3.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="indicator-heading">
           <h2 id="indicator-heading">A two-system health check you can hear after dark</h2>
