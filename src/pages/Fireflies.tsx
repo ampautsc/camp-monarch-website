@@ -87,6 +87,18 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
             removes two years of breeding output. Recovery from population collapse takes a decade
             even when conditions improve.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/81/Photinus_pyralis_Firefly_2.jpg"
+                  alt="Photinus pyralis firefly resting on a leaf — the most common backyard species in eastern North America"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The flashing adult firefly is the brief, visible moment in a two-year life. The larva lives in leaf litter and moist soil for one to two years, hunting snails, slugs, and earthworms. Raking leaves in autumn and treating lawns with pesticides destroys the stage that accounts for 95% of a firefly's life.
+                  <span className="photo-credit"> Photo: art farmer · <a href="https://commons.wikimedia.org/wiki/File:Photinus_pyralis_Firefly_2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             They are most sensitive to three things: light pollution, lawn pesticides,
             and the removal of leaf litter. All three are decisions made inside the property line.
