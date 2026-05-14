@@ -151,6 +151,14 @@ const SPECIES: {
     attr: "Wikimedia Commons / CC BY-SA",
   },
   {
+    page: 'common-nighthawk',
+    name: "Common Nighthawk",
+    tagline: "Not a hawk. Down 61% since 1966. Its courtship dive ends in a boom heard a quarter mile away.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Common_nighthawk_in_flight_%2814408563218%29.jpg/960px-Common_nighthawk_in_flight_%2814408563218%29.jpg',
+    alt: "Common Nighthawk in flight showing white wing patches and mottled brown plumage",
+    attr: "US Fish & Wildlife Service / Wikimedia Commons / CC BY 2.0",
+  },
+  {
     page: 'green-darner',
     name: "Green Darner",
     tagline: "A dragonfly that migrates with Monarchs and eats 100 mosquitoes a day.",
