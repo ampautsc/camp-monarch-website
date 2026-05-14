@@ -20,6 +20,21 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male Northern Cardinal in brilliant red plumage at a snow-dusted native shrub, crested head turned to look directly at viewer"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Rhododendrites ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Male_northern_cardinal_in_Central_Park_(52612).jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 4.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="familiar-heading">
           <h2 id="familiar-heading">The most familiar bird — and what it asks of you</h2>
