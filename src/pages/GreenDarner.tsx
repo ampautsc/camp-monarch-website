@@ -7,6 +7,22 @@ interface GreenDarnerProps {
 export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Anax_junius.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+          alt="Common Green Darner dragonfly perched at a backyard pond, iridescent green thorax and blue abdomen visible — a migratory species that travels thousands of miles like the monarch"
+          className="species-hero-image"
+          style={{ objectPosition: 'center center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Bruce Marlin · <a href="https://commons.wikimedia.org/wiki/File:Anax_junius.JPG" target="_blank" rel="noopener noreferrer">CC BY 3.0</a> via Wikimedia Commons */}
+          Photo: Bruce Marlin&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Anax_junius.JPG" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Common Green Darner</h1>
@@ -18,20 +34,7 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Anax_junius.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-          alt="Common Green Darner dragonfly perched at a backyard pond, iridescent green thorax and blue abdomen visible — a migratory species that travels thousands of miles like the monarch"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Bruce Marlin ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Anax_junius.JPG" target="_blank" rel="noopener noreferrer">
-            CC BY 3.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="migration-heading">
