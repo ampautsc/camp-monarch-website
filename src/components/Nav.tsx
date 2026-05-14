@@ -65,8 +65,10 @@ const groups: NavGroup[] = [
     id: 'learn',
     label: 'Learn',
     children: [
+      { id: 'seasonal-calendar', label: 'Seasonal Calendar' },
       { id: 'the-migration', label: 'The Migration' },
       { id: 'why-monarchs',  label: 'Why It Matters' },
+      { id: 'talking-points', label: 'Talking Points' },
       { id: 'faq',           label: 'FAQ' },
     ],
   },
