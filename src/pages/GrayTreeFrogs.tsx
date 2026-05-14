@@ -7,6 +7,22 @@ interface GrayTreeFrogsProps {
 export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Gray Tree Frog clinging to a rain-wet window with adhesive toe pads, camouflage skin matching bark texture"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Randidawn · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: Randidawn&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Gray Tree Frogs</h1>
@@ -18,20 +34,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Gray Tree Frog clinging to a rain-wet window with adhesive toe pads, camouflage skin matching bark texture"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Randidawn ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 4.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="indicator-heading">
