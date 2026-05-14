@@ -66,6 +66,18 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
             ice crystals. A peeper may freeze solid, stop breathing, and have no
             heartbeat for weeks, then thaw and resume normal activity in spring.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Spring_Peeper.jpg"
+                  alt="Spring Peeper on a twig, showing the distinctive X-pattern on its back and the small toe pads for gripping smooth surfaces"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Each male Spring Peeper inflates its vocal sac to produce a call audible 1,000 feet away — extraordinary for an animal smaller than a quarter. The chorus of dozens of males creates the rising wall of sound that marks the genuine arrival of spring. The first night above 50°F in late February or March triggers the chorus.
+                  <span className="photo-credit"> Photo: Wildreturn · <a href="https://commons.wikimedia.org/wiki/File:Spring_Peeper.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             They overwinter under leaf litter, bark, and logs near breeding
             ponds. Raking away that leaf layer in fall or spring removes the
