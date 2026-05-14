@@ -80,6 +80,18 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
             papery cocoon, often secured to a twig or wrapped in a leaf that falls
             to the ground in autumn.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Antheraea_polyphemus.jpg"
+                  alt="Polyphemus Moth wings fully spread, showing the large hindwing eyespots that mimic the eyes of a much larger animal"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The Polyphemus Moth keeps its eyespots hidden beneath its forewings at rest. When a predator disturbs it, it drops the forewings suddenly — the flash of two large "eyes" startles most birds long enough for escape. The adult has no functional mouth and lives only long enough to find a mate. Its caterpillar feeds exclusively on native oaks, maples, and birches.
+                  <span className="photo-credit"> Photo: Mike Boone · <a href="https://commons.wikimedia.org/wiki/File:Antheraea_polyphemus.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             The connection to native trees is not incidental. Polyphemus caterpillars,
             like most Saturniid silk moths, cannot complete development on non-native
