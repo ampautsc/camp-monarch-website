@@ -70,6 +70,18 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
             suburbia and a climate-sensitive breeder in some of North America's
             most threatened habitats.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/03/Dark-eyed_junco_%28Junco_hyemalis%29_nest_and_eggs_%2853006127360%29.jpg"
+                  alt="Dark-eyed Junco nest built on the ground, tucked at the base of dense vegetation, with four pale spotted eggs"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Juncos nest on the ground, usually concealed against a rock, log, or the base of a dense shrub — a tight cup of grass lined with animal hair. Ground nesting means every outdoor cat, every cleared brush pile, every manicured edge costs breeding pairs directly.
+                  <span className="photo-credit"> Photo: YellowstoneNPS · <a href="https://commons.wikimedia.org/wiki/File:Dark-eyed_junco_(Junco_hyemalis)_nest_and_eggs_(53006127360).jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             As ground foragers, juncos scratch through leaf litter and soil
             for weed seeds, grass seeds, and small invertebrates. Intact,
