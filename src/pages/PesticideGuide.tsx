@@ -186,6 +186,24 @@ export default function PesticideGuide({ onNavigate }: PesticideGuideProps) {
             This page covers all three — what they are, what they kill, and
             what you can do instead.
           </p>
+          <div
+            style={{
+              background: 'var(--surface-soft, #f7faf7)',
+              border: '1px solid var(--border-light, #d8e4d8)',
+              borderRadius: '8px',
+              padding: '1rem 1.25rem',
+              marginTop: '1rem',
+            }}
+          >
+            <h3 style={{ marginTop: 0, marginBottom: '0.6rem', fontSize: '1rem' }}>
+              Label check before you buy
+            </h3>
+            <ul style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.6 }}>
+              <li>Skip plants labeled “insect protected,” “systemic,” or “long-lasting pest control.”</li>
+              <li>Ask the nursery one direct question: “Were these treated with neonicotinoids?”</li>
+              <li>Choose untreated native plants or seed-grown stock when treatment history is unclear.</li>
+            </ul>
+          </div>
         </section>
 
         {/* ── Three Threats ── */}
