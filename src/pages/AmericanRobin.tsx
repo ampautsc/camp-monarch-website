@@ -7,6 +7,22 @@ interface AmericanRobinProps {
 export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="American Robin on a lawn, rust-orange breast visible, head tilted listening for earthworms beneath the surface"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: Rhododendrites&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>American Robin</h1>
@@ -18,20 +34,7 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="American Robin on a lawn, rust-orange breast visible, head tilted listening for earthworms beneath the surface"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Rhododendrites ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 4.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="indicator-heading">
