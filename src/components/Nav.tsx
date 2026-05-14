@@ -43,6 +43,7 @@ const groups: NavGroup[] = [
       { id: 'spring-peeper', label: 'Spring Peeper' },
       { id: 'toad', label: 'American Toad' },
       { id: 'little-brown-bat', label: 'Little Brown Bat' },
+      { id: 'wood-thrush', label: 'Wood Thrush' },
     ],
   },
   {
