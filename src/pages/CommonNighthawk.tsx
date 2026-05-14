@@ -84,6 +84,18 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
             bird is tracking insect emergence events, not searching for scattered
             prey.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Common_nighthawk_at_Seedskadee_National_Wildlife_Refuge_Wyoming_%2852155592586%29.jpg"
+                  alt="Common Nighthawk resting on gravel, cryptic pattern blending with the substrate — the typical daytime roost position"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Nighthawks do not build nests. The female lays two eggs directly on gravel — flat rooftops, open fields, railroad ballast — relying on cryptic coloration for camouflage. The shift from gravel to rubberized roofing membranes eliminated most urban nesting habitat in a single decade.
+                  <span className="photo-credit"> Photo: USFWS Mountain Prairie · <a href="https://commons.wikimedia.org/wiki/File:Common_nighthawk_at_Seedskadee_National_Wildlife_Refuge_Wyoming_(52155592586).jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             The consequence is an energy budget with no flexibility. A nighthawk
             cannot substitute seeds, berries, or plant material when insects are
