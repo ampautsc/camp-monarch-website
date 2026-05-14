@@ -18,6 +18,21 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Screech_Owl.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Eastern Screech-Owl in gray-phase plumage roosting in a tree cavity, bark-like camouflage nearly invisible against oak"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Wolfgang Wander ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech_Owl.jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 3.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="biology-heading">
           <h2 id="biology-heading">A ghost in the suburbs</h2>
