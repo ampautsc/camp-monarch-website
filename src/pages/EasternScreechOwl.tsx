@@ -7,6 +7,22 @@ interface EasternScreechOwlProps {
 export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Screech_Owl.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Eastern Screech-Owl in gray-phase plumage roosting in a tree cavity, bark-like camouflage nearly invisible against oak"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Wolfgang Wander · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech_Owl.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          Photo: Wolfgang Wander&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech_Owl.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Eastern Screech Owl</h1>
@@ -18,20 +34,7 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Screech_Owl.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Eastern Screech-Owl in gray-phase plumage roosting in a tree cavity, bark-like camouflage nearly invisible against oak"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Wolfgang Wander ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech_Owl.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 3.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
