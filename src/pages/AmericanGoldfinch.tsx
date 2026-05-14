@@ -18,6 +18,21 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male American Goldfinch in brilliant breeding plumage — canary yellow body, black cap and wings — perched on a native coneflower seed head"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Rodney Campbell ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg" target="_blank" rel="noopener noreferrer">
+            CC BY 2.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="biology-heading">
           <h2 id="biology-heading">A seed specialist with visible nutrition</h2>
