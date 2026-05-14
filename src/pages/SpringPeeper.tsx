@@ -7,6 +7,22 @@ interface SpringPeeperProps {
 export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/ad/H_crucifer_USGS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Spring Peeper frog showing distinctive X marking on back — this dime-sized frog's call is the first sure sign that winter has ended"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: USGS · <a href="https://commons.wikimedia.org/wiki/File:H_crucifer_USGS.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons */}
+          Photo: USGS&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:H_crucifer_USGS.jpg" target="_blank" rel="noopener noreferrer">Public domain</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Spring Peeper</h1>
@@ -18,20 +34,7 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/ad/H_crucifer_USGS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Spring Peeper frog showing distinctive X marking on back — this dime-sized frog's call is the first sure sign that winter has ended"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: USGS ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:H_crucifer_USGS.jpg" target="_blank" rel="noopener noreferrer">
-            Public domain
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="phenology-heading">
