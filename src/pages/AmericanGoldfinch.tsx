@@ -66,6 +66,18 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
             plant down. Females line nests with fibers and down from plants such as milkweed
             and thistle.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/7b/American_Goldfinch-27527-2.jpg"
+                  alt="American Goldfinch perched on a coneflower seed head, extracting seeds with its specialized bill"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Goldfinches are specialist seed-eaters — they delay nesting until late summer so caterpillar-fed nestlings can transition directly to ripe thistle and coneflower seeds. A garden with native composites still standing in August is exactly what triggers breeding.
+                  <span className="photo-credit"> Photo: Ken Thomas · <a href="https://commons.wikimedia.org/wiki/File:American_Goldfinch-27527-2.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             This creates a clear yard-management signal: if milkweed and other seed plants are
             cut before they mature, both food and nesting material disappear. Letting plants
