@@ -135,6 +135,14 @@ const SPECIES: {
     attr: "Wikimedia Commons / CC BY-SA",
   },
   {
+    page: 'polyphemus-moth',
+    name: "Polyphemus Moth",
+    tagline: "Six-inch wingspan, four enormous eyespots, one week to live. Named for the Cyclops.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Antheraea_polyphemus_sjh.jpg/960px-Antheraea_polyphemus_sjh.jpg',
+    alt: "Polyphemus Moth with wings spread showing large eyespots on hindwings",
+    attr: "Wikimedia Commons / CC BY-SA",
+  },
+  {
     page: 'green-darner',
     name: "Green Darner",
     tagline: "A dragonfly that migrates with Monarchs and eats 100 mosquitoes a day.",
