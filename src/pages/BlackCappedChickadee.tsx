@@ -7,6 +7,22 @@ interface BlackCappedChickadeeProps {
 export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickadeeProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Black-capped Chickadee with its distinctive black cap and bib, clinging to a branch in a suburban woodland edge"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: No machine-readable author provided. Mdf assumed (based on copyright claims). · <a href="https://commons.wikimedia.org/wiki/File:Poecile-atricapilla-001.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          Photo: No machine-readable author provided. Mdf assumed (based on copyright claims).&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Poecile-atricapilla-001.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Black-capped Chickadee</h1>
@@ -20,20 +36,7 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Black-capped Chickadee with its distinctive black cap and bib, clinging to a branch in a suburban woodland edge"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: No machine-readable author provided. Mdf assumed (based on copyright claims). ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Poecile-atricapilla-001.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 3.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
