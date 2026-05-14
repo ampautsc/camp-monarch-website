@@ -89,6 +89,18 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
             When box turtles disappear from a neighborhood, it usually means the landscape fragmented
             before anyone was paying attention.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Eastern_Box_Turtle_8679.jpg"
+                  alt="Eastern Box Turtle on the forest floor, high-domed shell and hinged plastron visible"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The box turtle's hinged lower shell can seal so completely that a blade of grass cannot be inserted between the two halves. This defense evolved against biting predators over 200 million years. It offers zero protection against a lawn mower traveling at three miles per hour.
+                  <span className="photo-credit"> Photo: Jarek Tuszyński · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle_8679.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Their slow reproduction means that even a recovering habitat takes 20 to 30 years
             to show up as a stable population. The best thing most people can do
