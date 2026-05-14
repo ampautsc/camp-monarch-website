@@ -44,6 +44,7 @@ const groups: NavGroup[] = [
       { id: 'toad', label: 'American Toad' },
       { id: 'little-brown-bat', label: 'Little Brown Bat' },
       { id: 'wood-thrush', label: 'Wood Thrush' },
+      { id: 'eastern-screech-owl', label: 'Eastern Screech Owl' },
     ],
   },
   {
