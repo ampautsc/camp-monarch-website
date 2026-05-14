@@ -67,6 +67,18 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
             During breeding season they depend heavily on worms, beetles, and caterpillars.
             In fall and winter, berries from native shrubs and trees become essential.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6f/American_Robin.jpg"
+                  alt="American Robin on a lawn, alert posture, head cocked — the classic earthworm-hunting stance"
+                  loading="lazy"
+                />
+                <figcaption>
+                  In summer, robins hunt earthworms by sight and sound in short turf. In winter, they abandon earthworms entirely and rely on berries — serviceberry, holly, dogwood, and native crabapple sustain entire flocks through January and February. A yard with no fruiting native shrubs is a food desert for half the year.
+                  <span className="photo-credit"> Photo: Alan Vernon · <a href="https://commons.wikimedia.org/wiki/File:American_Robin.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             A yard that only supports one side of that equation is incomplete habitat.
             Chemical-free soil without berry plants leaves winter gaps. Berry shrubs without
