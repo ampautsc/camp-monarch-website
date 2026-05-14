@@ -73,6 +73,18 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
             systemic insecticides may attempt to nest repeatedly and raise few young, because
             the insects that nestlings require are gone.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/Northern_Cardinal_Pair-27527.jpg"
+                  alt="Male and female Northern Cardinals together — brilliant red male and warm brown female, showing the pair bond that persists through the breeding season"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Cardinal pairs remain bonded through the breeding season — sometimes year-round. During courtship, the male feeds the female beak-to-beak, a behavior that evaluates both his foraging ability and his commitment. A yard without dense native shrubs for nesting privacy disrupts the sequence that follows.
+                  <span className="photo-credit"> Photo: Ken Thomas · <a href="https://commons.wikimedia.org/wiki/File:Northern_Cardinal_Pair-27527.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Neonicotinoid pesticides — the most widely used insecticides in North America —
             are taken up systemically by plants and persist in plant tissue, pollen, and
