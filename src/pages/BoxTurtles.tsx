@@ -6,6 +6,22 @@ interface BoxTurtlesProps {}
 export default function BoxTurtles({}: BoxTurtlesProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Eastern Box Turtle on forest floor showing high-domed shell with orange and yellow patterning on dark background"
+          className="species-hero-image"
+          style={{ objectPosition: 'center center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: (c) Joshua Liverman, some rights reserved (CC BY) · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> via Wikimedia Commons */}
+          Photo: (c) Joshua Liverman, some rights reserved (CC BY)&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Box turtles</h1>
@@ -18,20 +34,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Eastern Box Turtle on forest floor showing high-domed shell with orange and yellow patterning on dark background"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: (c) Joshua Liverman, some rights reserved (CC BY) ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noopener noreferrer">
-            CC BY 4.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="bt-life-heading">
