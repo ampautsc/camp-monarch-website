@@ -38,6 +38,7 @@ const groups: NavGroup[] = [
       { id: 'tiger-swallowtail', label: 'Tiger Swallowtail' },
       { id: 'polyphemus-moth', label: 'Polyphemus Moth' },
       { id: 'luna-moth', label: 'Luna Moth' },
+      { id: 'common-nighthawk', label: 'Common Nighthawk' },
       { id: 'green-darner', label: 'Green Darner' },
       { id: 'garter-snake', label: 'Garter Snake' },
       { id: 'dark-eyed-junco', label: 'Dark-eyed Junco' },
