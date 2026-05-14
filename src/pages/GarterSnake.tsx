@@ -19,6 +19,21 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Thamnophis_sirtalis_sirtalis_Wooster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Common Garter Snake emerging from leaf litter showing yellow dorsal stripe — a beneficial predator of garden pests and slug populations"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Wilson44691 ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_sirtalis_Wooster.jpg" target="_blank" rel="noopener noreferrer">
+            Public domain
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="pest-control-heading">
           <h2 id="pest-control-heading">Free, targeted pest control — no chemicals required</h2>
