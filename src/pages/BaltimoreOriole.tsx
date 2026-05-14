@@ -80,6 +80,18 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
             (<em>Ulmus americana</em>) were ideal for this — long, flexible, providing
             exactly the branch architecture the nest requires.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Baltimore_oriole_nest_%2864055%29.jpg"
+                  alt="Baltimore Oriole pendant nest — a woven fiber pouch suspended from a drooping branch tip, four to five inches deep"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The pendant nest is engineered over several days by the female alone — plant fibers, bark strips, and grapevine strands woven into a hanging pouch that stretches as nestlings grow. The drooping tips of American elms provided ideal anchors for this architecture. Dutch elm disease removed those anchors from most suburbs in a single generation.
+                  <span className="photo-credit"> Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Baltimore_oriole_nest_(64055).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Dutch elm disease eliminated an estimated 100 million American elms from eastern
             North America between 1950 and 2000. The oriole&apos;s preferred nest tree
