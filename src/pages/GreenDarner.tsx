@@ -60,6 +60,18 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
             breeding depends on clean, pesticide-free water with emergent
             native vegetation.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Anax_junius.JPG"
+                  alt="Male Green Darner dragonfly perched, showing brilliant green thorax and blue abdomen — North America's largest common dragonfly"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The Green Darner is one of the few dragonflies that migrates — traveling in loose swarms along the same Atlantic flyways as monarch butterflies each September and October. Like monarchs, the migration is multigenerational: the darners that leave in fall are not the same individuals that return in spring.
+                  <span className="photo-credit"> Photo: Bruce Marlin · <a href="https://commons.wikimedia.org/wiki/File:Anax_junius.JPG" target="_blank" rel="noopener noreferrer">CC BY 3.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             A fish-free backyard pond with native plants can support this full
             aquatic stage. When naiads are present, they provide visible
