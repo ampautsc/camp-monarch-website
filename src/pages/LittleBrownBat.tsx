@@ -7,6 +7,22 @@ interface LittleBrownBatProps {
 export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/88/Little_Brown_Myotis_%28cropped%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Little Brown Bat in flight over still water at dusk, mouth open in mid-echolocation — consuming up to 1,000 mosquito-sized insects per hour"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: SMBishop · <a href="https://commons.wikimedia.org/wiki/File:Little_Brown_Myotis_(cropped).JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          Photo: SMBishop&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Little_Brown_Myotis_(cropped).JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Little Brown Bat</h1>
@@ -19,20 +35,7 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/8/88/Little_Brown_Myotis_%28cropped%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Little Brown Bat in flight over still water at dusk, mouth open in mid-echolocation — consuming up to 1,000 mosquito-sized insects per hour"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: SMBishop ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Little_Brown_Myotis_(cropped).JPG" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 3.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="numbers-heading">
