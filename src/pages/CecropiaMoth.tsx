@@ -89,6 +89,18 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
             persist in suburban landscapes — but only if those landscapes still
             contain some native canopy or shrub layer.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/91/Hyalophora_cecropia_caterpillar.jpg"
+                  alt="Cecropia Moth caterpillar — a large green caterpillar with blue, yellow, and red tubercles, one of North America's largest"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The caterpillar that becomes a Cecropia Moth grows to four inches — one of the largest in North America. It feeds on cherry, maple, birch, and apple. The adult that emerges has no functional mouth and will not eat again. Its entire adult life — seven to ten days — is devoted to finding a mate.
+                  <span className="photo-credit"> Photo: Michael Hodge · <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_caterpillar.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Wild black cherry is the highest-value Cecropia host tree in the
             eastern United States. It is also one of the most ecologically
