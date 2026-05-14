@@ -17,6 +17,21 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Common_Nighthawk_%2814428313550%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Common Nighthawk in flight at dusk showing distinctive white wing bar patches and erratic moth-like flight pattern"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Andy Reago &amp; Chrissy McClarren ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Common_Nighthawk_(14428313550).jpg" target="_blank" rel="noopener noreferrer">
+            CC BY 2.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="biology-heading">
           <h2 id="biology-heading">Named wrong, built right</h2>
