@@ -20,6 +20,21 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/1/13/Dryobates_pubescens_UL_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Downy Woodpecker clinging to a dead tree snag, probing bark with chisel bill to extract beetle larvae"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Cephas ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Dryobates_pubescens_UL_03.jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 4.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="indicator-heading">
           <h2 id="indicator-heading">What the drumming means</h2>
