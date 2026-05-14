@@ -21,6 +21,21 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Baltimore_Oriole-_dorsum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male Baltimore Oriole, vivid flame-orange and black plumage, hanging from a native tree branch"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: TonyCastro ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Oriole-_dorsum.jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 4.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="indicator-heading">
           <h2 id="indicator-heading">What the orange means</h2>
