@@ -68,6 +68,18 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
             throughout their entire lives, correcting course across hundreds of miles
             using a map they assembled as chicks.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/f0/IndigoBunting.jpg"
+                  alt="Male Indigo Bunting in full breeding plumage — iridescent blue that is structural, not pigment"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The male Indigo Bunting contains no blue pigment. The feathers have microstructures that refract and scatter light, producing vivid blue only in direct sun. In shadow, the male appears brown — identical to the female whose plain coloration evolved to keep her invisible on the nest.
+                  <span className="photo-credit"> Photo: Trisha Shears · <a href="https://commons.wikimedia.org/wiki/File:IndigoBunting.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Every spring, a bunting weighing less than half an ounce crosses the
             Gulf of Mexico in a single overnight flight — 500 to 600 miles of
