@@ -38,6 +38,7 @@ import DarkEyedJunco from './pages/DarkEyedJunco'
 import EasternChipmunk from './pages/EasternChipmunk'
 import SpringPeeper from './pages/SpringPeeper'
 import AmericanToad from './pages/AmericanToad'
+import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
 import HOAGuide from './pages/HOAGuide'
@@ -56,6 +57,7 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
   | 'eastern-chipmunk'
   | 'spring-peeper'
   | 'toad'
+  | 'seasonal-calendar'
   | 'species-gallery'
   | 'habitat-transformation'
   | 'hoa-guide'
@@ -105,6 +107,7 @@ function App() {
       case 'eastern-chipmunk': return <EasternChipmunk onNavigate={setPage} />
       case 'spring-peeper': return <SpringPeeper onNavigate={setPage} />
       case 'toad': return <AmericanToad onNavigate={setPage} />
+      case 'seasonal-calendar': return <SeasonalCalendar onNavigate={setPage} />
       case 'species-gallery': return <SpeciesGallery onNavigate={setPage} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={setPage} />
       case 'hoa-guide': return <HOAGuide onNavigate={setPage} />
