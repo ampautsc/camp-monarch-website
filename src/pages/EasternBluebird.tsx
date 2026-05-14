@@ -86,6 +86,18 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
             and pesticide use eliminated the insect populations that nestlings depend on
             for protein during the first weeks of life.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/47/Eastern_bluebird_at_nest_box.jpg"
+                  alt="Eastern Bluebird male perched at the entrance hole of a nest box, about to enter with food for nestlings"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Bluebirds lost most of their natural tree-hole nesting sites to European Starlings after 1890. The nest box trail programs of the 1970s reversed the population collapse — bluebirds went from regional rarity to common within two decades. The box is not decoration. It is a replacement for the dead trees we removed.
+                  <span className="photo-credit"> Photo: William H. Majoros · <a href="https://commons.wikimedia.org/wiki/File:Eastern_bluebird_at_nest_box.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             The recovery since the 1970s is one of conservation&apos;s genuine success
             stories — and it was built almost entirely by volunteers putting up and monitoring
