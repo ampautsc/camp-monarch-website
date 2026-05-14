@@ -62,6 +62,18 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
             Poor mast years and simplified yards with little native nut and seed
             production can reduce winter survival.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eastern_chipmunk_%28Tamias_striatus%29_-_Kennebunk%2C_Maine%2C_USA.png"
+                  alt="Eastern Chipmunk with cheek pouches bulging with acorns and seeds — a single trip can carry nine large nuts"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Chipmunks cache hundreds of separate seed stores through late summer and autumn. They forget some of them. Those forgotten caches germinate in spring. The chipmunk is an involuntary tree-planter — a dispersal mechanism for oaks, hickories, and beeches that cannot disperse their own heavy seeds by wind.
+                  <span className="photo-credit"> Photo: Chuck Homler, Focus On Wildlife · <a href="https://commons.wikimedia.org/wiki/File:Eastern_chipmunk_(Tamias_striatus)_-_Kennebunk,_Maine,_USA.png" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Their burrow systems and leaf-litter foraging zones also make them
             sensitive to chemical contamination. Rodenticides used for other
