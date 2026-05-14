@@ -18,6 +18,21 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/55/Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Dark-eyed Junco foraging in snow, showing slate-gray hood and white outer tail feathers — winter's most common feeder bird"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Cephas ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 3.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="abundance-heading">
           <h2 id="abundance-heading">One of North America's most abundant birds — and a climate canary</h2>
