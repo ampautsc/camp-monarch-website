@@ -73,6 +73,18 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
             and do not migrate. The one you see in January is the same individual that nested
             in your neighborhood last spring.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Downy_Woodpecker.jpg"
+                  alt="Downy Woodpecker clinging to a dead branch, foraging for insects hidden beneath the bark"
+                  loading="lazy"
+                />
+                <figcaption>
+                  A Downy Woodpecker working a dead branch is listening for beetle larvae moving inside the wood. It drills precisely where the vibration originates and extracts the larva with a barbed tongue longer than its bill. Dead trees removed from the yard remove both the food source and the cavity-nesting site the next generation will need.
+                  <span className="photo-credit"> Photo: Ltshears · <a href="https://commons.wikimedia.org/wiki/File:Downy_Woodpecker.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             They drum — rapid mechanical strikes on resonant dead wood or hollow branches —
             to defend territory and attract mates. Drumming is not foraging: it is
