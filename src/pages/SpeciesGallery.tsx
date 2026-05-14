@@ -190,6 +190,14 @@ const SPECIES: {
     alt: "Little brown bat roosting, showing brown fur and folded wings",
     attr: "Ann Froschauer / USFWS / Public Domain",
   },
+  {
+    page: 'wood-thrush',
+    name: "Wood Thrush",
+    tagline: "Two voices, one throat. Down 62% since 1966. Still foraging in your leaf litter.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hylocichla_mustelina_-_Wood_thrush.jpg/960px-Hylocichla_mustelina_-_Wood_thrush.jpg',
+    alt: "Wood Thrush on forest floor showing spotted white breast and rusty-brown back",
+    attr: "U.S. Fish & Wildlife Service / Wikimedia Commons / Public Domain",
+  },
 ]
 
 interface SpeciesGalleryProps {
