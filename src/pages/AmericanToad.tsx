@@ -7,6 +7,22 @@ interface AmericanToadProps {
 export default function AmericanToad({ onNavigate }: AmericanToadProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Bufo_americanus_PJC1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="American Toad resting in garden leaf litter, warty brown skin providing natural camouflage among fallen leaves"
+          className="species-hero-image"
+          style={{ objectPosition: 'center center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          Photo: Cephas&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>American Toad</h1>
@@ -18,20 +34,7 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Bufo_americanus_PJC1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="American Toad resting in garden leaf litter, warty brown skin providing natural camouflage among fallen leaves"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Cephas ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC1.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 3.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="indicator-heading">
