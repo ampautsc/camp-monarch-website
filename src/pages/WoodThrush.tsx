@@ -79,6 +79,18 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
             the baseline has shifted so dramatically that most Americans have no
             reference point for what &ldquo;common&rdquo; once meant.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Wood_Thrush.jpg"
+                  alt="Wood Thrush perched in forest understory — spotted breast and russet back visible, the quintessential deep-woods songbird"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The Wood Thrush nests in forest interior — not edge, not suburb, not a yard with scattered trees. A breeding pair requires roughly two acres of continuous canopy. Forest fragmentation forces pairs into edge habitat where Brown-headed Cowbirds parasitize their nests at rates approaching 80% in fragmented landscapes.
+                  <span className="photo-credit"> Photo: Wildreturn · <a href="https://commons.wikimedia.org/wiki/File:Wood_Thrush.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Three forces drive the decline.
           </p>
