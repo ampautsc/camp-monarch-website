@@ -151,6 +151,14 @@ const SPECIES: {
     attr: "Wikimedia Commons / CC BY-SA",
   },
   {
+    page: 'cecropia-moth',
+    name: "Cecropia Moth",
+    tagline: "North America's largest native moth. Seven-inch wingspan, no mouth, two weeks to find a mate.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Hyalophora_cecropia.jpg/960px-Hyalophora_cecropia.jpg',
+    alt: "Cecropia Moth with wings spread showing red, white, and brown wing pattern and banded abdomen",
+    attr: "Wikimedia Commons / CC BY-SA",
+  },
+  {
     page: 'common-nighthawk',
     name: "Common Nighthawk",
     tagline: "Not a hawk. Down 61% since 1966. Its courtship dive ends in a boom heard a quarter mile away.",
