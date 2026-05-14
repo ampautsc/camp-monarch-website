@@ -104,6 +104,18 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
             The number is large enough to make feeder supplementation irrelevant to breeding outcomes.
             Seeds do not substitute for caterpillars when nestlings are in the nest.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Black-capped_chickadee_4-13.jpg"
+                  alt="Black-capped Chickadee clinging to a branch, hunting insects in the bark crevices"
+                  loading="lazy"
+                />
+                <figcaption>
+                  A single chickadee brood requires an estimated 6,000 to 9,000 caterpillars between hatching and fledging. That number is not met by visiting one or two plants — it requires a landscape with enough native tree canopy to sustain a functioning caterpillar population through May and June.
+                  <span className="photo-credit"> Photo: Owebb44 · <a href="https://commons.wikimedia.org/wiki/File:Black-capped_chickadee_4-13.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             The source of those caterpillars is native trees. A native oak (<em>Quercus</em> spp.)
             supports 557 species of caterpillars. The most common non-native ornamental trees —
