@@ -18,6 +18,21 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Chipmunk_with_stuffed_cheeks_in_Prospect_Park_%2805980%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Eastern Chipmunk with cheek pouches stuffed full of seeds, collecting food beneath a native oak tree"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Rhododendrites ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Chipmunk_with_stuffed_cheeks_in_Prospect_Park_(05980).jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 4.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="seed-dispersal-heading">
           <h2 id="seed-dispersal-heading">A tiny mammal that helps plant tomorrow's forest</h2>
