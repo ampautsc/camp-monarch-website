@@ -17,6 +17,21 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/52/Photuris_lucicrescens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Firefly resting on a leaf at dusk, bioluminescent lantern organ visible on abdomen — threatened by lawn chemicals and light pollution"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Bruce Marlin ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Photuris_lucicrescens.jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 2.5
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="flash-heading">
           <h2 id="flash-heading">What you are watching</h2>
