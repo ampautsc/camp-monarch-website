@@ -7,6 +7,22 @@ interface LunaMothProps {
 export default function LunaMoth({ onNavigate }: LunaMothProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Actias_luna-male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Luna Moth resting on tree bark with pale green wings fully spread, long elegant tails trailing — wings are a single night of adult life"
+          className="species-hero-image"
+          style={{ objectPosition: 'center center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: David notMD · <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: David notMD&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Luna Moth</h1>
@@ -18,20 +34,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Actias_luna-male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Luna Moth resting on tree bark with pale green wings fully spread, long elegant tails trailing — wings are a single night of adult life"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: David notMD ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 4.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
