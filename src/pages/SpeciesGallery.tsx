@@ -198,6 +198,14 @@ const SPECIES: {
     alt: "Wood Thrush on forest floor showing spotted white breast and rusty-brown back",
     attr: "U.S. Fish & Wildlife Service / Wikimedia Commons / Public Domain",
   },
+  {
+    page: 'eastern-screech-owl',
+    name: "Eastern Screech Owl",
+    tagline: "Lives in your neighborhood trees. Down 38% since 1970. Most people who share a yard with one have never seen it.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Megascops_asio_in_hole.jpg/960px-Megascops_asio_in_hole.jpg',
+    alt: "Eastern Screech Owl peering from a tree cavity, showing cryptic bark-like camouflage",
+    attr: "Ltshears / Wikimedia Commons / CC BY-SA 3.0",
+  },
 ]
 
 interface SpeciesGalleryProps {
