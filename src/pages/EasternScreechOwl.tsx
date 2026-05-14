@@ -81,6 +81,18 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
             across most of the species' range. A bird that was common in 1970 is
             measurably less common today — and it is not recovering.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Eastern_Screech-Owl.jpg"
+                  alt="Eastern Screech Owl perched in a tree cavity entrance, bark-colored plumage rendering it nearly invisible in daylight"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The Screech Owl's bark-patterned plumage is camouflage so effective that the owl can roost in a tree cavity opening in broad daylight and go unnoticed. It uses the same cavity for roosting, storing cached prey, and nesting. Remove the dead tree with a cavity and you remove its pantry, bedroom, and nursery simultaneously.
+                  <span className="photo-credit"> Photo: Derek Bakken · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech-Owl.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             The causes are familiar: habitat loss, fragmentation, and pesticides.
             Screech Owls depend on tree cavities for nesting — natural cavities
