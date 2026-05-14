@@ -19,6 +19,21 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Hyalophora_cecropia_adult_female_sjh.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Cecropia Moth at rest with wings fully spread, revealing dinner-plate wingspan with red-banded body and eye spots — North America's largest native moth"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: No machine-readable author provided. Kugamazog~commonswiki assumed (based on cop ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_adult_female_sjh.JPG" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 2.5
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="biology-heading">
           <h2 id="biology-heading">The largest moth in North America</h2>
