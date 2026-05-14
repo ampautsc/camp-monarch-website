@@ -7,6 +7,22 @@ interface CommonNighthawkProps {
 export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Common_Nighthawk_%2814428313550%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Common Nighthawk in flight at dusk showing distinctive white wing bar patches and erratic moth-like flight pattern"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Andy Reago &amp; Chrissy McClarren · <a href="https://commons.wikimedia.org/wiki/File:Common_Nighthawk_(14428313550).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
+          Photo: Andy Reago &amp; Chrissy McClarren&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Common_Nighthawk_(14428313550).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Common Nighthawk</h1>
@@ -17,20 +33,7 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Common_Nighthawk_%2814428313550%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Common Nighthawk in flight at dusk showing distinctive white wing bar patches and erratic moth-like flight pattern"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Andy Reago &amp; Chrissy McClarren ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Common_Nighthawk_(14428313550).jpg" target="_blank" rel="noopener noreferrer">
-            CC BY 2.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
