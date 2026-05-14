@@ -44,6 +44,7 @@ import HabitatTransformation from './pages/HabitatTransformation'
 import HOAGuide from './pages/HOAGuide'
 import HabitatScore from './pages/HabitatScore'
 import SpringChecklist from './pages/SpringChecklist'
+import PesticideGuide from './pages/PesticideGuide'
 import { trackEvent } from './lib/analytics'
 
 export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird' | 'black-capped-chickadee' | 'ruby-throated-hummingbird'
@@ -63,6 +64,7 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
   | 'hoa-guide'
   | 'habitat-score'
   | 'spring-checklist'
+  | 'pesticide-guide'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -113,6 +115,7 @@ function App() {
       case 'hoa-guide': return <HOAGuide onNavigate={setPage} />
       case 'habitat-score':        return <HabitatScore onNavigate={setPage} />
       case 'spring-checklist':    return <SpringChecklist onNavigate={setPage} />
+      case 'pesticide-guide':     return <PesticideGuide onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }
