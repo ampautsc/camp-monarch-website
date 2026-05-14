@@ -66,6 +66,18 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
             at close range. The bright yellow-orange flash of color on their inner thighs,
             visible only when they leap, is thought to startle predators mid-flight.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Gray_tree_frog.jpg"
+                  alt="Gray Tree Frog clinging to a branch, showing the bright yellow-orange coloring on the inner thighs — a flash display used to startle predators"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The gray tree frog hides its brightest colors on the inside of its thighs, invisible at rest. When threatened, it flashes those vivid patches as it leaps — a brief burst of yellow-orange that startles the predator and allows escape. A yard that can't hold standing water through June has no frogs calling in July.
+                  <span className="photo-credit"> Photo: Robert A. Coggeshall · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             They are also freeze-tolerant in a way almost no other vertebrate is.
             In autumn, they produce glycerol as a cryoprotectant, allowing ice to form in
