@@ -7,6 +7,22 @@ interface WoodThrushProps {
 export default function WoodThrush({ onNavigate }: WoodThrushProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Wood_thrush_%28Hylocichla_mustelina%29_Peten.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Wood Thrush singing from a shaded forest interior, chest spots visible — its flute-like song is an indicator of forest health"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Wood_thrush_(Hylocichla_mustelina)_Peten.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: Charles J. Sharp&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Wood_thrush_(Hylocichla_mustelina)_Peten.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Wood Thrush</h1>
@@ -19,20 +35,7 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Wood_thrush_%28Hylocichla_mustelina%29_Peten.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Wood Thrush singing from a shaded forest interior, chest spots visible — its flute-like song is an indicator of forest health"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Charles J. Sharp ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Wood_thrush_(Hylocichla_mustelina)_Peten.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 4.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="song-heading">
