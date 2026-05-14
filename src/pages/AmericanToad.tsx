@@ -66,6 +66,18 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
             safe forever. The lesson is that stable species need protection
             before the pressures that erased others reach them too.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Bufo_americanus_PJC2.jpg"
+                  alt="American Toad showing the prominent parotoid glands behind its eyes — the toxic defense glands"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The bulging glands behind a toad's eyes are parotoid glands — they secrete bufadienolides, compounds toxic to most predators. This is why toads can sit in garden beds during daylight. Lawn pesticides absorbed through their permeable skin bypass this chemical armor entirely.
+                  <span className="photo-credit"> Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Chytrid fungus has already driven catastrophic amphibian declines
             worldwide. American Toads are more resistant than many frog
