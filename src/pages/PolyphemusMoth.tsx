@@ -18,6 +18,21 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyphemus_Moth_Antheraea_polyphemus.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Polyphemus Moth with wings spread revealing large eyespot on hindwings — a 6-inch wingspan predator-deterrent evolved over millions of years"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: [User:Kadoka1]Template:Stephen Lody Photography ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_Antheraea_polyphemus.JPG" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 3.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="biology-heading">
           <h2 id="biology-heading">Named for the Cyclops</h2>
