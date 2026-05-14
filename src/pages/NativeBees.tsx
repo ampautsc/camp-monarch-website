@@ -46,6 +46,18 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
             A two-inch layer of mulch — standard in most maintained gardens — destroys these nesting sites
             as completely as paving them over.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Xylocopa_virginica.jpg"
+                  alt="Eastern Carpenter Bee hovering near a wooden structure — this species bores nest tunnels in soft wood, not paper or hives"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The Eastern Carpenter Bee is not a honeybee — it lives alone, bores nest galleries in soft wood, and raises a small brood without workers or a queen. Seventy percent of North America's 4,000 native bee species are solitary ground-nesters or wood-nesters. A yard covered entirely in turf or landscape fabric provides no habitat for the majority of native pollinators.
+                  <span className="photo-credit"> Photo: Polinizador · <a href="https://commons.wikimedia.org/wiki/File:Xylocopa_virginica.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Many native bees are specialists. A sweat bee that evolved to collect goldenrod pollen
             cannot raise its young on coneflower pollen. When a plant species disappears from a neighborhood,
