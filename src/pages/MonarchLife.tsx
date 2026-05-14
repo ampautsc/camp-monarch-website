@@ -76,6 +76,18 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
             Instead it stores fat, delays sexual maturity, and flies 3,000 miles
             to the oyamel fir forests of Michoacan, Mexico.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/97/Danaus_plexippus_emerging_from_chrysalis_04.jpg"
+                  alt="Monarch butterfly emerging from its jade-green chrysalis — wings crumpled and soft, moments before their first unfurling"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Inside the chrysalis, the caterpillar's tissues dissolve almost entirely — most of its cells break down into an undifferentiated biological broth. Imaginal cells dormant since the egg then organize that material into a butterfly. The monarch that emerges will navigate 2,500 miles to a Mexican mountain it has never visited, using a sun compass calibrated to time of day.
+                  <span className="photo-credit"> Photo: Captain-tucker · <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_emerging_from_chrysalis_04.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             It overwinters there in clusters so dense that tree branches bend under the weight.
             In February it begins the return — and dies somewhere in Texas or northern Mexico,
