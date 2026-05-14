@@ -44,6 +44,7 @@ import EasternScreechOwl from './pages/EasternScreechOwl'
 import PolyphemusMoth from './pages/PolyphemusMoth'
 import LunaMoth from './pages/LunaMoth'
 import CommonNighthawk from './pages/CommonNighthawk'
+import CecropiaMoth from './pages/CecropiaMoth'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -73,6 +74,7 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
   | 'polyphemus-moth'
   | 'luna-moth'
   | 'common-nighthawk'
+  | 'cecropia-moth'
   | 'seasonal-calendar'
   | 'species-gallery'
   | 'habitat-transformation'
@@ -133,6 +135,7 @@ function App() {
       case 'polyphemus-moth': return <PolyphemusMoth onNavigate={setPage} />
       case 'luna-moth': return <LunaMoth onNavigate={setPage} />
       case 'common-nighthawk': return <CommonNighthawk onNavigate={setPage} />
+      case 'cecropia-moth': return <CecropiaMoth onNavigate={setPage} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={setPage} />
       case 'species-gallery': return <SpeciesGallery onNavigate={setPage} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={setPage} />
