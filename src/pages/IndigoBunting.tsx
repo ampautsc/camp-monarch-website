@@ -7,6 +7,22 @@ interface IndigoBuntingProps {
 export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/62/Indigo_Bunting_by_Dan_Pancamo_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male Indigo Bunting in full breeding plumage — intense cerulean blue from bill to tail — perched on a wild grass seed head"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Dan Pancamo · <a href="https://commons.wikimedia.org/wiki/File:Indigo_Bunting_by_Dan_Pancamo_4.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons */}
+          Photo: Dan Pancamo&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Indigo_Bunting_by_Dan_Pancamo_4.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Indigo Bunting</h1>
@@ -19,20 +35,7 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/62/Indigo_Bunting_by_Dan_Pancamo_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Male Indigo Bunting in full breeding plumage — intense cerulean blue from bill to tail — perched on a wild grass seed head"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Dan Pancamo ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Indigo_Bunting_by_Dan_Pancamo_4.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY-SA 2.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
