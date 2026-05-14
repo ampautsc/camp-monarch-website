@@ -80,6 +80,18 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
             reserves mid-winter. They wake repeatedly, fly outside in
             February, and die of starvation.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/26/Little_brown_bat.jpg"
+                  alt="Little Brown Bat at rest, wings folded against its body — the typical daytime roosting posture in a crevice or hollow tree"
+                  loading="lazy"
+                />
+                <figcaption>
+                  A bat's wing is a modified hand — the membrane stretches between five elongated finger bones. Using echolocation calls at frequencies above human hearing, a little brown bat can locate and intercept a moth or gnat in complete darkness. White-nose syndrome, a fungal disease spreading since 2006, has killed over 90% of some hibernating colonies in a decade.
+                  <span className="photo-credit"> Photo: U.S. Fish and Wildlife Service · <a href="https://commons.wikimedia.org/wiki/File:Little_brown_bat.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             By 2024, Pd had spread to 39 states, eight Canadian provinces,
             and continues to expand westward. The USGS estimates that more
