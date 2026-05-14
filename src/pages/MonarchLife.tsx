@@ -18,6 +18,21 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Monarch_butterfly_US_migration.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Monarch Butterfly nectaring on native milkweed flower, showing vivid orange and black wing pattern — a species whose population has dropped 85%"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: MonarchWanderungKlein.gif: Harald Süpfle derivative work: B kimmel ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Monarch_butterfly_US_migration.png" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 3.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="watch-heading">
           <h2 id="watch-heading">What to look for in your yard</h2>
