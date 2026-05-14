@@ -58,6 +58,7 @@ const groups: NavGroup[] = [
       { id: 'the-first-year',       label: 'The First Year' },
       { id: 'habitat-transformation', label: 'From Lawn to Habitat' },
       { id: 'water-for-wildlife',   label: 'Water for Wildlife' },
+      { id: 'leave-the-leaves',     label: 'Leave the Leaves' },
       { id: 'hoa-guide',             label: 'Navigating HOA Rules' },
       { id: 'pesticide-guide',       label: 'Pesticides & Your Habitat' },
       { id: 'spring-checklist',     label: 'Spring Checklist' },
