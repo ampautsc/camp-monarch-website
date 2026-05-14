@@ -7,6 +7,22 @@ interface EasternBluebirdProps {
 export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male Eastern Bluebird with sky-blue back and rust-orange breast perched on a wooden nest box in a pesticide-free meadow"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Sandysphotos2009 · <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
+          Photo: Sandysphotos2009&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Eastern Bluebird</h1>
@@ -24,20 +40,7 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Male Eastern Bluebird with sky-blue back and rust-orange breast perched on a wooden nest box in a pesticide-free meadow"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: Sandysphotos2009 ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY 2.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
