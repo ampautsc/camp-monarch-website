@@ -65,6 +65,18 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
             wildlife in North America. Every individual lost removes a keystone
             predator from the local food web.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Thamnophis_sirtalis_parietalis.jpg"
+                  alt="Eastern Garter Snake in typical foraging posture — tongue flicking to sample chemical traces in the air"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The garter snake finds prey entirely by chemosensory detection — its flickering tongue collects scent molecules and delivers them to a sensory organ in the roof of its mouth. An average adult consumes dozens of slugs, earthworms, and small rodents per season. It is one of the garden's most effective pest-control agents.
+                  <span className="photo-credit"> Photo: National Park Service · <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_parietalis.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Rodenticide compounds the problem silently: garter snakes eating
             earthworms that have absorbed rodenticide from treated soil, or
