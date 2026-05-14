@@ -18,6 +18,21 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="American Robin on a lawn, rust-orange breast visible, head tilted listening for earthworms beneath the surface"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: Rhododendrites ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 4.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="indicator-heading">
           <h2 id="indicator-heading">A familiar bird that reveals hidden conditions</h2>
