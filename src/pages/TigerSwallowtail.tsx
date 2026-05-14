@@ -64,6 +64,18 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
             Without these host trees, adults may visit flowers but cannot
             complete the life cycle in your neighborhood.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Papilio_glaucus_larva_1.jpg"
+                  alt="Eastern Tiger Swallowtail caterpillar on a leaf — large green body with false eyespots near the head end"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The young tiger swallowtail caterpillar looks exactly like a bird dropping — a defense so convincing that predators ignore it. Later instars develop false eyespots near the head and an osmeterium, a forked orange scent organ that deploys when touched. Host trees include tulip poplar, wild cherry, and native magnolia.
+                  <span className="photo-credit"> Photo: Jacy Lucier · <a href="https://commons.wikimedia.org/wiki/File:Papilio_glaucus_larva_1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Females are dimorphic: some are yellow like males, while dark-form
             females are nearly black and mimic toxic Pipevine Swallowtails.
