@@ -18,6 +18,22 @@ interface RubyThroatedHummingbirdProps {
 export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHummingbirdProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Archilochus_colubris_-flying_-male-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male Ruby-throated Hummingbird hovering at a red native tubular flower, iridescent ruby throat gorget blazing in sunlight"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: jeffreyw · <a href="https://commons.wikimedia.org/wiki/File:Archilochus_colubris_-flying_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
+          Photo: jeffreyw&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Archilochus_colubris_-flying_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Ruby-Throated Hummingbird</h1>
@@ -32,20 +48,7 @@ export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHumm
         </p>
       </section>
 
-      <figure className="species-hero-photo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Archilochus_colubris_-flying_-male-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Male Ruby-throated Hummingbird hovering at a red native tubular flower, iridescent ruby throat gorget blazing in sunlight"
-          loading="lazy"
-        />
-        <figcaption>
-          Photo: jeffreyw ·{' '}
-          <a href="https://commons.wikimedia.org/wiki/File:Archilochus_colubris_-flying_-male-8.jpg" target="_blank" rel="noopener noreferrer">
-            CC BY 2.0
-          </a>{' '}
-          via Wikimedia Commons
-        </figcaption>
-      </figure>
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
