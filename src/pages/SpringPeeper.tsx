@@ -18,6 +18,21 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/ad/H_crucifer_USGS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Spring Peeper frog showing distinctive X marking on back — this dime-sized frog's call is the first sure sign that winter has ended"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: USGS ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:H_crucifer_USGS.jpg" target="_blank" rel="noopener noreferrer">
+            Public domain
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="phenology-heading">
           <h2 id="phenology-heading">The frog that tells you spring has arrived</h2>
