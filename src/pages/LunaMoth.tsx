@@ -83,6 +83,18 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
             leaves from late spring through summer before spinning a thin,
             papery cocoon among fallen leaves on the ground.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Actias_luna_4th_instar_sjh.JPG"
+                  alt="Luna Moth caterpillar in its fourth instar — bright green with yellow-tipped spines, preparing to spin a papery cocoon in leaf litter"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The caterpillar feeds on walnut, sweet gum, persimmon, birch, and hickory for several weeks, then spins a papery cocoon in the leaf litter on the forest floor. When it emerges as an adult, it has no functional mouth. The adult lives, on average, seven days. Its only purpose is reproduction.
+                  <span className="photo-credit"> Photo: Kugamazog · <a href="https://commons.wikimedia.org/wiki/File:Actias_luna_4th_instar_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             The dependency on native hardwoods is absolute. Like other Saturniid
             silk moths, Luna caterpillars cannot complete development on
