@@ -39,6 +39,7 @@ import EasternChipmunk from './pages/EasternChipmunk'
 import SpringPeeper from './pages/SpringPeeper'
 import AmericanToad from './pages/AmericanToad'
 import LittleBrownBat from './pages/LittleBrownBat'
+import WoodThrush from './pages/WoodThrush'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -63,6 +64,7 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
   | 'spring-peeper'
   | 'toad'
   | 'little-brown-bat'
+  | 'wood-thrush'
   | 'seasonal-calendar'
   | 'species-gallery'
   | 'habitat-transformation'
@@ -118,6 +120,7 @@ function App() {
       case 'spring-peeper': return <SpringPeeper onNavigate={setPage} />
       case 'toad': return <AmericanToad onNavigate={setPage} />
       case 'little-brown-bat': return <LittleBrownBat onNavigate={setPage} />
+      case 'wood-thrush': return <WoodThrush onNavigate={setPage} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={setPage} />
       case 'species-gallery': return <SpeciesGallery onNavigate={setPage} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={setPage} />
