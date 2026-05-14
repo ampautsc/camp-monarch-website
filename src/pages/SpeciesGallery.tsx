@@ -143,6 +143,14 @@ const SPECIES: {
     attr: "Wikimedia Commons / CC BY-SA",
   },
   {
+    page: 'luna-moth',
+    name: "Luna Moth",
+    tagline: "Pale green wings, sweeping tails, no mouth. Seven days to find a mate in the dark.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Actias_luna.jpg/960px-Actias_luna.jpg',
+    alt: "Luna Moth with wings spread showing pale green wings and long hindwing tails",
+    attr: "Wikimedia Commons / CC BY-SA",
+  },
+  {
     page: 'green-darner',
     name: "Green Darner",
     tagline: "A dragonfly that migrates with Monarchs and eats 100 mosquitoes a day.",
