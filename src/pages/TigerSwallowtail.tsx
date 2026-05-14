@@ -19,6 +19,21 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
         </p>
       </section>
 
+      <figure className="species-hero-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/90/Pristine_Eastern_Tiger_Swallowtail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Eastern Tiger Swallowtail butterfly on native joe-pye weed, yellow and black striped wings spread, sipping nectar alongside a monarch butterfly"
+          loading="lazy"
+        />
+        <figcaption>
+          Photo: HaarFager at English Wikipedia ·{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Pristine_Eastern_Tiger_Swallowtail.jpg" target="_blank" rel="noopener noreferrer">
+            CC BY-SA 3.0
+          </a>{' '}
+          via Wikimedia Commons
+        </figcaption>
+      </figure>
+
       <div className="page">
         <section aria-labelledby="recognition-heading">
           <h2 id="recognition-heading">A familiar butterfly with uncommon ecological value</h2>
