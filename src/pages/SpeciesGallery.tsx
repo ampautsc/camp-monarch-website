@@ -182,6 +182,14 @@ const SPECIES: {
     alt: "American toad on forest floor showing brown warty skin",
     attr: "Patrick J. Campbell / Wikimedia Commons / CC BY-SA 3.0",
   },
+  {
+    page: 'little-brown-bat',
+    name: "Little Brown Bat",
+    tagline: "Eats 1,200 insects per hour. White-nose syndrome has killed 6.7 million of them.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Little_brown_bat_mm.jpg/960px-Little_brown_bat_mm.jpg',
+    alt: "Little brown bat roosting, showing brown fur and folded wings",
+    attr: "Ann Froschauer / USFWS / Public Domain",
+  },
 ]
 
 interface SpeciesGalleryProps {
