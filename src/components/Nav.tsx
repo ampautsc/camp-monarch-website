@@ -129,8 +129,8 @@ const groups: NavGroup[] = [
 ]
 
 const megaDropdownStyle = {
-  width: 'min(640px, calc(100vw - 1rem))',
-  maxWidth: 'calc(100vw - 1rem)',
+  width: 'min(640px, calc(100vw - 2.5rem))',
+  maxWidth: 'calc(100vw - 2.5rem)',
   overflowX: 'hidden',
 } as const
 
