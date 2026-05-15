@@ -3,6 +3,7 @@
  * All navigation is SPA-based (client-side React state) — no URL changes.
  */
 import { type Page } from '@playwright/test'
+import { ALL_PAGE_SLUGS, PAGE_LABEL_OVERRIDES } from '../src/config/sitePages'
 
 /** Click a nav link by its visible label and wait for the hero eyebrow to appear. */
 export async function navigateTo(page: Page, navLabel: string, eyebrow: string) {
@@ -40,55 +41,20 @@ export const PAGES = [
   { navLabel: 'FAQ',                eyebrow: 'Frequently Asked Questions',id: 'faq' },
 ] as const
 
+/** Convert a URL slug to a human-readable label, e.g. 'american-goldfinch' → 'American Goldfinch'. */
+function slugToLabel(slug: string): string {
+  const override = PAGE_LABEL_OVERRIDES[slug as keyof typeof PAGE_LABEL_OVERRIDES]
+  if (override) return override
+  return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+}
+
 /**
- * Sub-pages accessible by direct URL but not listed in the top-level PAGES nav array.
- * Each id corresponds to the URL slug (e.g. id 'fireflies' → path '/fireflies').
+ * Sub-pages: every page slug from the canonical list that is not already
+ * covered by the main-nav PAGES array.  Computed dynamically so that adding
+ * a new slug to src/config/sitePages.ts automatically includes it here —
+ * no manual update to the test package is required.
  */
-export const SUBPAGES = [
-  { id: 'log-a-sighting',             label: 'Log a Sighting' },
-  { id: 'waystation-guide',           label: 'Waystation Guide' },
-  { id: 'fireflies',                  label: 'Fireflies' },
-  { id: 'box-turtles',                label: 'Box Turtles' },
-  { id: 'native-bees',                label: 'Native Bees' },
-  { id: 'talking-points',             label: 'Talking Points' },
-  { id: 'gray-tree-frogs',            label: 'Gray Tree Frogs' },
-  { id: 'downy-woodpecker',           label: 'Downy Woodpecker' },
-  { id: 'baltimore-oriole',           label: 'Baltimore Oriole' },
-  { id: 'northern-cardinal',          label: 'Northern Cardinal' },
-  { id: 'eastern-bluebird',           label: 'Eastern Bluebird' },
-  { id: 'black-capped-chickadee',     label: 'Black-capped Chickadee' },
-  { id: 'ruby-throated-hummingbird',  label: 'Ruby-throated Hummingbird' },
-  { id: 'american-goldfinch',         label: 'American Goldfinch' },
-  { id: 'american-robin',             label: 'American Robin' },
-  { id: 'indigo-bunting',             label: 'Indigo Bunting' },
-  { id: 'tiger-swallowtail',          label: 'Tiger Swallowtail' },
-  { id: 'green-darner',               label: 'Green Darner' },
-  { id: 'garter-snake',               label: 'Garter Snake' },
-  { id: 'dark-eyed-junco',            label: 'Dark-eyed Junco' },
-  { id: 'eastern-chipmunk',           label: 'Eastern Chipmunk' },
-  { id: 'spring-peeper',              label: 'Spring Peeper' },
-  { id: 'toad',                       label: 'American Toad' },
-  { id: 'little-brown-bat',           label: 'Little Brown Bat' },
-  { id: 'wood-thrush',                label: 'Wood Thrush' },
-  { id: 'eastern-screech-owl',        label: 'Eastern Screech Owl' },
-  { id: 'polyphemus-moth',            label: 'Polyphemus Moth' },
-  { id: 'luna-moth',                  label: 'Luna Moth' },
-  { id: 'common-nighthawk',           label: 'Common Nighthawk' },
-  { id: 'cecropia-moth',              label: 'Cecropia Moth' },
-  { id: 'virginia-opossum',           label: 'Virginia Opossum' },
-  { id: 'american-bumble-bee',        label: 'American Bumble Bee' },
-  { id: 'chimney-swift',              label: 'Chimney Swift' },
-  { id: 'purple-martin',              label: 'Purple Martin' },
-  { id: 'red-tailed-hawk',            label: 'Red-tailed Hawk' },
-  { id: 'eastern-meadowlark',         label: 'Eastern Meadowlark' },
-  { id: 'seasonal-calendar',          label: 'Seasonal Calendar' },
-  { id: 'species-gallery',            label: 'Species Gallery' },
-  { id: 'habitat-transformation',     label: 'From Lawn to Habitat' },
-  { id: 'hoa-guide',                  label: 'Navigating HOA Rules' },
-  { id: 'habitat-score',              label: 'Yard Check' },
-  { id: 'spring-checklist',           label: 'Spring Checklist' },
-  { id: 'pesticide-guide',            label: 'Pesticides & Your Habitat' },
-  { id: 'water-for-wildlife',         label: 'Water for Wildlife' },
-  { id: 'leave-the-leaves',           label: 'Leave the Leaves' },
-  { id: 'invasive-plants',            label: 'Remove Invasive Plants' },
-] as const
+const _mainPageIds = new Set(PAGES.map(p => p.id as string))
+export const SUBPAGES = ALL_PAGE_SLUGS
+  .filter(slug => !_mainPageIds.has(slug))
+  .map(slug => ({ id: slug, label: slugToLabel(slug) }))

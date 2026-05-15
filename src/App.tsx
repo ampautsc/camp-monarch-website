@@ -62,59 +62,11 @@ import WaterForWildlife from './pages/WaterForWildlife'
 import LeaveTheLeaves from './pages/LeaveTheLeaves'
 import InvasivePlants from './pages/InvasivePlants'
 import { trackEvent } from './lib/analytics'
+import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
-export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird' | 'black-capped-chickadee' | 'ruby-throated-hummingbird'
-  | 'american-goldfinch'
-  | 'american-robin'
-  | 'indigo-bunting'
-  | 'tiger-swallowtail'
-  | 'green-darner'
-  | 'garter-snake'
-  | 'dark-eyed-junco'
-  | 'eastern-chipmunk'
-  | 'spring-peeper'
-  | 'toad'
-  | 'little-brown-bat'
-  | 'wood-thrush'
-  | 'eastern-screech-owl'
-  | 'polyphemus-moth'
-  | 'luna-moth'
-  | 'common-nighthawk'
-  | 'cecropia-moth'
-  | 'virginia-opossum'
-  | 'american-bumble-bee'
-  | 'chimney-swift'
-  | 'purple-martin'
-  | 'red-tailed-hawk'
-  | 'eastern-meadowlark'
-  | 'seasonal-calendar'
-  | 'species-gallery'
-  | 'habitat-transformation'
-  | 'hoa-guide'
-  | 'habitat-score'
-  | 'spring-checklist'
-  | 'pesticide-guide'
-  | 'water-for-wildlife'
-  | 'leave-the-leaves'
-  | 'invasive-plants'
+export type Page = PageSlug
 
-
-const VALID_PAGES = new Set<Page>([
-  'home', 'why-monarchs', 'plant-milkweed', 'the-migration', 'take-action',
-  'choose-a-plant', 'native-plant-near-me', 'monarch-life', 'raise-a-monarch',
-  'the-first-year', 'faq', 'log-a-sighting', 'waystation-guide', 'fireflies',
-  'box-turtles', 'native-bees', 'talking-points', 'gray-tree-frogs',
-  'downy-woodpecker', 'baltimore-oriole', 'northern-cardinal', 'eastern-bluebird',
-  'black-capped-chickadee', 'ruby-throated-hummingbird', 'american-goldfinch',
-  'american-robin', 'indigo-bunting', 'tiger-swallowtail', 'green-darner',
-  'garter-snake', 'dark-eyed-junco', 'eastern-chipmunk', 'spring-peeper',
-  'toad', 'little-brown-bat', 'wood-thrush', 'eastern-screech-owl',
-  'polyphemus-moth', 'luna-moth', 'common-nighthawk', 'cecropia-moth',
-  'virginia-opossum', 'american-bumble-bee', 'chimney-swift', 'purple-martin',
-  'red-tailed-hawk', 'eastern-meadowlark', 'seasonal-calendar', 'species-gallery',
-  'habitat-transformation', 'hoa-guide', 'habitat-score', 'spring-checklist',
-  'pesticide-guide', 'water-for-wildlife', 'leave-the-leaves', 'invasive-plants',
-])
+const VALID_PAGES = new Set<Page>(ALL_PAGE_SLUGS)
 
 function pageFromPath(path: string): Page {
   const slug = path.replace(/^\//, '').replace(/\/$/, '')
