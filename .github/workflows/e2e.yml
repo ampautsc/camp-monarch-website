@@ -4,14 +4,19 @@ on:
   push:
     branches: [main]
   schedule:
-    # 8:00 AM UTC (3:00 AM CST) and 8:00 PM UTC (3:00 PM CST)
-    - cron: '0 8,20 * * *'
+    # 4:00 PM CDT (UTC-5) = 21:00 UTC  ← exact during spring/summer (camp season)
+    # In winter (CST, UTC-6) this fires at 3:00 PM CST; change to 22:00 for year-round 4 PM exact
+    - cron: '0 21 * * *'
   workflow_dispatch:
     inputs:
       base_url:
         description: 'URL to test against (default: live Vercel deployment)'
         required: false
         default: 'https://dist-phi-ebon-52.vercel.app'
+
+permissions:
+  contents: read
+  issues: write
 
 concurrency:
   group: e2e-${{ github.ref }}
@@ -21,7 +26,7 @@ jobs:
   e2e:
     name: Playwright E2E
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
@@ -83,3 +88,96 @@ jobs:
           echo "gh run list --workflow=e2e.yml --repo ampautsc/camp-monarch-website --limit 3" >> $GITHUB_STEP_SUMMARY
           echo "gh run view <run-id> --log-failed" >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+
+      - name: Create or update GitHub issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Parse failed test names from the Playwright JSON report
+            const failedTests = [];
+            try {
+              const results = JSON.parse(fs.readFileSync('playwright-report/results.json', 'utf8'));
+              function walk(suites, prefix) {
+                for (const suite of (suites || [])) {
+                  const title = [prefix, suite.title].filter(Boolean).join(' › ');
+                  for (const spec of (suite.specs || [])) {
+                    for (const t of (spec.tests || [])) {
+                      if (t.status !== 'expected' && t.status !== 'skipped') {
+                        failedTests.push(`${title} › ${spec.title}`);
+                      }
+                    }
+                  }
+                  walk(suite.suites, title);
+                }
+              }
+              walk(results.suites, '');
+            } catch (e) {
+              failedTests.push(`(could not parse results.json: ${e.message})`);
+            }
+
+            const date = new Date().toISOString().split('T')[0];
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const testedUrl = `${{ github.event.inputs.base_url || 'https://dist-phi-ebon-52.vercel.app' }}`;
+            const failList = failedTests.length > 0
+              ? failedTests.map(t => `- [ ] ${t}`).join('\n')
+              : '- (see workflow run for details)';
+
+            const body = [
+              `## 🚨 E2E Test Failures Detected`,
+              ``,
+              `**Date:** ${date}`,
+              `**Workflow run:** [#${{ github.run_number }}](${runUrl})`,
+              `**Triggered by:** ${{ github.event_name }}`,
+              `**URL tested:** ${testedUrl}`,
+              ``,
+              `### Failed Tests`,
+              failList,
+              ``,
+              `### How to investigate`,
+              `1. Open the [workflow run](${runUrl})`,
+              `2. Download the **playwright-report-${{ github.run_number }}** artifact for the full HTML report with screenshots`,
+              `3. Fix the identified issues and re-run the workflow to confirm`,
+              `4. Close this issue once all tests pass`,
+            ].join('\n');
+
+            // Ensure the label exists (idempotent)
+            try {
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: 'e2e-failure',
+                color: 'd73a4a',
+                description: 'Automated E2E health-check test failure',
+              });
+            } catch (_) { /* label already exists */ }
+
+            // If there is already an open e2e-failure issue, comment on it instead of opening a duplicate
+            const { data: openIssues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'e2e-failure',
+              per_page: 1,
+            });
+
+            if (openIssues.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: openIssues[0].number,
+                body,
+              });
+              core.notice(`Commented on existing issue #${openIssues[0].number}`);
+            } else {
+              const { data: issue } = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🚨 E2E Test Failures Detected — ${date}`,
+                body,
+                labels: ['e2e-failure'],
+              });
+              core.notice(`Created issue #${issue.number}: ${issue.html_url}`);
+            }

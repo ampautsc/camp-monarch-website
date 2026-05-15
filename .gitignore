@@ -3,6 +3,9 @@ dist/
 .env
 .env.local
 
+# TypeScript build artifacts
+*.tsbuildinfo
+
 # Playwright
 playwright-report/
 playwright-report/test-results/

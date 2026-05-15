@@ -3,6 +3,7 @@
  * All navigation is SPA-based (client-side React state) — no URL changes.
  */
 import { type Page } from '@playwright/test'
+import { ALL_PAGE_SLUGS, PAGE_LABEL_OVERRIDES } from '../src/config/sitePages'
 
 /** Click a nav link by its visible label and wait for the hero eyebrow to appear. */
 export async function navigateTo(page: Page, navLabel: string, eyebrow: string) {
@@ -39,3 +40,21 @@ export const PAGES = [
   { navLabel: 'Take Action',        eyebrow: 'Take Action',               id: 'take-action' },
   { navLabel: 'FAQ',                eyebrow: 'Frequently Asked Questions',id: 'faq' },
 ] as const
+
+/** Convert a URL slug to a human-readable label, e.g. 'american-goldfinch' → 'American Goldfinch'. */
+function slugToLabel(slug: string): string {
+  const override = PAGE_LABEL_OVERRIDES[slug as keyof typeof PAGE_LABEL_OVERRIDES]
+  if (override) return override
+  return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+}
+
+/**
+ * Sub-pages: every page slug from the canonical list that is not already
+ * covered by the main-nav PAGES array.  Computed dynamically so that adding
+ * a new slug to src/config/sitePages.ts automatically includes it here —
+ * no manual update to the test package is required.
+ */
+const _mainPageIds = new Set(PAGES.map(p => p.id as string))
+export const SUBPAGES = ALL_PAGE_SLUGS
+  .filter(slug => !_mainPageIds.has(slug))
+  .map(slug => ({ id: slug, label: slugToLabel(slug) }))
