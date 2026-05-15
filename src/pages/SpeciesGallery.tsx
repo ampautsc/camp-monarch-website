@@ -276,6 +276,14 @@ const SPECIES: Species[] = [
     alt: "Male purple martin perched on a gourd rack showing entirely iridescent blue-black plumage",
     attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
   },
+  {
+    page: 'red-tailed-hawk',
+    name: "Red-tailed Hawk",
+    tagline: "North America's most common hawk. Over 90% test positive for rodenticide — from bait stations in suburban yards.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Red-tailed_Hawk_ad.jpg/960px-Red-tailed_Hawk_ad.jpg',
+    alt: "Adult red-tailed hawk perched, showing the brick-red tail that names the species",
+    attr: "USFWS / Public Domain / Wikimedia Commons",
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
