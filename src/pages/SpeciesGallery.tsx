@@ -20,6 +20,17 @@ function buildRetryPhotoUrl(photo: string): string | null {
   }
 }
 
+function buildUnavailablePhotoFallback(label: string): string {
+  return `data:image/svg+xml;utf8,${encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+      <rect width="960" height="540" fill="#d4e9d0" />
+      <rect x="28" y="28" width="904" height="484" rx="24" fill="#f7ede0" stroke="#2d5a27" stroke-width="6" />
+      <text x="50%" y="46%" dominant-baseline="middle" text-anchor="middle" font-size="46" font-family="Georgia, serif" fill="#1a2e1a">${label}</text>
+      <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="26" font-family="Arial, sans-serif" fill="#4a4a4a">Photo temporarily unavailable</text>
+    </svg>`
+  )}`
+}
+
 interface Species {
   page: string
   name: string
@@ -302,7 +313,7 @@ const SPECIES: Species[] = [
     page: 'eastern-meadowlark',
     name: "Eastern Meadowlark",
     tagline: "The voice of the American suburb — 75% gone since 1966. Grassland loss silenced it neighborhood by neighborhood.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sturnella_magna1.jpg/960px-Sturnella_magna1.jpg',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Eastern_meadowlark_%28Sturnella_magna_mexicana%29_Orange_Walk.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
     alt: "Eastern meadowlark perched on a fence post showing brilliant yellow breast with bold black V-collar",
     attr: "USFWS / Public Domain / Wikimedia Commons",
   },
@@ -323,6 +334,7 @@ export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
       <div className="species-grid">
         {SPECIES.map(species => {
           const retryPhotoUrl = buildRetryPhotoUrl(species.photo)
+          const photoFallback = buildUnavailablePhotoFallback(species.name)
 
           return (
             <button
@@ -343,7 +355,7 @@ export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
                       image.src = retryPhotoUrl
                       return
                     }
-                    image.src = PHOTO_FALLBACK
+                    image.src = photoFallback
                   }}
                 />
               </div>
