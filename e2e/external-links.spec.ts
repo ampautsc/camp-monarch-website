@@ -1,19 +1,29 @@
 /**
  * external-links.spec.ts
  *
- * Verifies that all external links (<a target="_blank">) on every page
- * have a non-empty, well-formed href. Does NOT follow links (would be slow
- * and rate-limit external sites). Catches copy-paste errors and broken
- * hrefs introduced during editing.
+ * Verifies that all external links (<a target="_blank">) on every main-nav
+ * page have a non-empty, well-formed href AND that each linked URL actually
+ * responds with an acceptable HTTP status code.
  *
- * Cloud Sis: if a link shows as having an empty href after you add content,
- * add a targeted test here with the expected URL pattern.
+ * Acceptable statuses (server is reachable, access intentionally gated):
+ *   2xx / 3xx — success or redirect
+ *   401       — authentication required
+ *   403       — forbidden (server is up)
+ *   405       — method not allowed (server is up)
+ *   429       — rate-limited (server is up)
+ *
+ * URLs are deduplicated per page to avoid redundant requests.
+ *
+ * Sub-pages are covered by subpages.spec.ts.
  */
 import { test, expect } from '@playwright/test'
 import { navigateTo, PAGES } from './helpers'
 
+/** HTTP status codes that mean "server is up, request intentionally gated". */
+const ACCEPTABLE_STATUSES = new Set([401, 403, 405, 429])
+
 for (const p of PAGES) {
-  test(`all external links have valid href on "${p.navLabel}"`, async ({ page }) => {
+  test(`all external links are valid and reachable on "${p.navLabel}"`, async ({ page }) => {
     await page.goto('/')
     if (p.id !== 'home') {
       await navigateTo(page, p.navLabel, p.eyebrow)
@@ -21,6 +31,7 @@ for (const p of PAGES) {
 
     const links = await page.locator('a[target="_blank"]').all()
     const issues: string[] = []
+    const checked = new Set<string>()
 
     for (const link of links) {
       const href = await link.getAttribute('href')
@@ -32,6 +43,20 @@ for (const p of PAGES) {
       }
       if (!href.startsWith('http://') && !href.startsWith('https://')) {
         issues.push(`Non-absolute href "${href}" on link: "${text}"`)
+        continue
+      }
+
+      if (checked.has(href)) continue
+      checked.add(href)
+
+      try {
+        const res = await page.request.get(href, { timeout: 15_000 })
+        const status = res.status()
+        if (status >= 400 && !ACCEPTABLE_STATUSES.has(status)) {
+          issues.push(`${href} → HTTP ${status} (link: "${text}")`)
+        }
+      } catch {
+        issues.push(`${href} → fetch failed (link: "${text}")`)
       }
     }
 
