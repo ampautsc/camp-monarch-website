@@ -9,7 +9,7 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Chipmunk_with_stuffed_cheeks_in_Prospect_Park_%2805980%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Chipmunk_with_stuffed_cheeks_in_Prospect_Park_%2805980%29.jpg/960px-Chipmunk_with_stuffed_cheeks_in_Prospect_Park_%2805980%29.jpg"
           alt="Eastern Chipmunk with cheek pouches stuffed full of seeds, collecting food beneath a native oak tree"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
@@ -64,7 +64,7 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
           </p>
               <figure className="species-content-photo species-content-photo--right">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eastern_chipmunk_%28Tamias_striatus%29_-_Kennebunk%2C_Maine%2C_USA.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Eastern_chipmunk_%28Tamias_striatus%29_-_Kennebunk%2C_Maine%2C_USA.png/960px-Eastern_chipmunk_%28Tamias_striatus%29_-_Kennebunk%2C_Maine%2C_USA.png"
                   alt="Eastern Chipmunk with cheek pouches bulging with acorns and seeds — a single trip can carry nine large nuts"
                   loading="lazy"
                 />
@@ -85,8 +85,8 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three actions that support Eastern Chipmunks</h2>
 
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves on the ground near vegetation" loading="lazy" />
+          <figure className="species-content-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Fallen_leaves.jpg/960px-Fallen_leaves.jpg" alt="Autumn leaves on the ground near vegetation" loading="lazy" />
             <figcaption>
               Chipmunks tunnel beneath leaf litter and root systems, using the thermal mass to cache food and shelter young. Brush piles and unmanaged corners create the cover structure that makes a yard chipmunk-viable — not just a transit corridor.
               <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
