@@ -104,12 +104,7 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three actions that help Tiger Swallowtails now</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Plant a native host tree.</strong>{' '}
-              Add tulip poplar, wild cherry, river birch, or sweet bay magnolia
-              to provide caterpillar habitat.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed in bloom, attracting pollinators" loading="lazy" />
             <figcaption>
@@ -117,6 +112,12 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Plant a native host tree.</strong>{' '}
+              Add tulip poplar, wild cherry, river birch, or sweet bay magnolia
+              to provide caterpillar habitat.
+            </li>
             <li>
               <strong>Build a shared nectar corridor.</strong>{' '}
               Grow milkweed, joe-pye weed, ironweed, and native phlox so monarchs
