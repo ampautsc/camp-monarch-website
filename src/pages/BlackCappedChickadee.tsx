@@ -147,6 +147,14 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that support chickadee breeding</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Nest_box.jpg" alt="Wooden bird nest box mounted on a post" loading="lazy" />
+            <figcaption>
+              A nest box with a 1⅛-inch entrance hole, placed 5–15 feet up on a tree or post, provides a cavity that chickadees can claim before the season opens. Pair it with a nearby native oak and the breeding territory completes itself.
+              <span className="photo-credit"> Photo: Svdmolen&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by/2.5" target="_blank" rel="noopener noreferrer">CC BY 2.5</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Plant a native tree that hosts caterpillars.</strong>{' '}
@@ -157,13 +165,6 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
               Replacing one Norway maple or Bradford pear with any of these is not a small decision
               for chickadees. It is a change in whether they can reproduce in your neighborhood.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Nest_box.jpg" alt="Wooden bird nest box mounted on a post" loading="lazy" />
-            <figcaption>
-              A nest box with a 1⅛-inch entrance hole, placed 5–15 feet up on a tree or post, provides a cavity that chickadees can claim before the season opens. Pair it with a nearby native oak and the breeding territory completes itself.
-              <span className="photo-credit"> Photo: Svdmolen&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by/2.5" target="_blank" rel="noopener noreferrer">CC BY 2.5</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Install a nest box with a 1.125-inch entrance hole.</strong>{' '}
               That precise diameter matters: it admits chickadees and excludes House Sparrows.
