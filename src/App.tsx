@@ -50,6 +50,7 @@ import AmericanBumbleBee from './pages/AmericanBumbleBee'
 import ChimneySwift from './pages/ChimneySwift'
 import PurpleMartin from './pages/PurpleMartin'
 import RedTailedHawk from './pages/RedTailedHawk'
+import EasternMeadowlark from './pages/EasternMeadowlark'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -85,6 +86,7 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
   | 'chimney-swift'
   | 'purple-martin'
   | 'red-tailed-hawk'
+  | 'eastern-meadowlark'
   | 'seasonal-calendar'
   | 'species-gallery'
   | 'habitat-transformation'
@@ -109,9 +111,9 @@ const VALID_PAGES = new Set<Page>([
   'toad', 'little-brown-bat', 'wood-thrush', 'eastern-screech-owl',
   'polyphemus-moth', 'luna-moth', 'common-nighthawk', 'cecropia-moth',
   'virginia-opossum', 'american-bumble-bee', 'chimney-swift', 'purple-martin',
-  'red-tailed-hawk', 'seasonal-calendar', 'species-gallery', 'habitat-transformation',
-  'hoa-guide', 'habitat-score', 'spring-checklist', 'pesticide-guide',
-  'water-for-wildlife', 'leave-the-leaves', 'invasive-plants',
+  'red-tailed-hawk', 'eastern-meadowlark', 'seasonal-calendar', 'species-gallery',
+  'habitat-transformation', 'hoa-guide', 'habitat-score', 'spring-checklist',
+  'pesticide-guide', 'water-for-wildlife', 'leave-the-leaves', 'invasive-plants',
 ])
 
 function pageFromPath(path: string): Page {
@@ -187,6 +189,7 @@ function App() {
       case 'chimney-swift': return <ChimneySwift onNavigate={navigateTo} />
       case 'purple-martin': return <PurpleMartin onNavigate={navigateTo} />
       case 'red-tailed-hawk': return <RedTailedHawk onNavigate={navigateTo} />
+      case 'eastern-meadowlark': return <EasternMeadowlark onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
