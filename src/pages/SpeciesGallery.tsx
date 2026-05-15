@@ -260,6 +260,14 @@ const SPECIES: Species[] = [
     alt: "Common nighthawk perched on branch showing cryptic brown and white patterned plumage",
     attr: "US Fish and Wildlife Service / Public Domain",
   },
+  {
+    page: 'chimney-swift',
+    name: "Chimney Swift",
+    tagline: "Eats 1,000 insects per day — entirely in the air. Down 65% since 1966. Lives in your chimney.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Chaetura_pelagica%2C_by_Lake_Erie%2C_Cleveland%2C_Ohio%2C_USA_339593191.jpg',
+    alt: "Chimney swift in flight over Lake Erie showing cigar-shaped body and long swept-back wings",
+    attr: "Adam Jackson / CC0 / iNaturalist via Wikimedia Commons",
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
