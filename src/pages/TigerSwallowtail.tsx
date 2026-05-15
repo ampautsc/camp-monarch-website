@@ -110,6 +110,13 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               Add tulip poplar, wild cherry, river birch, or sweet bay magnolia
               to provide caterpillar habitat.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed in bloom, attracting pollinators" loading="lazy" />
+            <figcaption>
+              Tiger swallowtails puddle for minerals at moist soil, nectar from native flowers, and pupate in leaf litter beneath their host trees. A yard with native plantings, undisturbed soil edges, and an unraked layer provides three of the four things they need — the fourth is the tree you may already have.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Build a shared nectar corridor.</strong>{' '}
               Grow milkweed, joe-pye weed, ironweed, and native phlox so monarchs
