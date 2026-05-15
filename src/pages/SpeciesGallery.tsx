@@ -268,6 +268,14 @@ const SPECIES: Species[] = [
     alt: "Chimney swift in flight over Lake Erie showing cigar-shaped body and long swept-back wings",
     attr: "Adam Jackson / CC0 / iNaturalist via Wikimedia Commons",
   },
+  {
+    page: 'purple-martin',
+    name: "Purple Martin",
+    tagline: "North America's largest swallow. Down 40% since 1966. Entirely dependent on human-provided housing in eastern North America.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Purple_Martin_%28Progne_subis%29_%287885320572%29.jpg/960px-Purple_Martin_%28Progne_subis%29_%287885320572%29.jpg',
+    alt: "Male purple martin perched on a gourd rack showing entirely iridescent blue-black plumage",
+    attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
