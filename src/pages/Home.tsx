@@ -136,7 +136,7 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* HOOK — wonder first, then stakes. No explanation yet. (arch-page-as-argument-001) */}
       <section className="hero" style={{ background: `linear-gradient(rgba(26,46,26,0.72), rgba(26,46,26,0.72)), url('${HERO_PHOTO_URL}') center/cover no-repeat` }}>
         <div className="hero__eyebrow">Camp Monarch</div>
-        <h1>Monarchs are disappearing.<br />You can change that.</h1>
+        <h1>Monarchs are disappearing.<br />You can help.</h1>
         <p className="hero__lead">
           In the 1990s, hundreds of millions of monarchs reached Mexico each fall.<sup><a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer" className="cite">[1]</a></sup><br />
           Last winter, about 60 million did.<sup><a href="https://xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
@@ -147,7 +147,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
-          <h2 id="lever-heading">Monarch caterpillars eat only milkweed, and it's disappearing. You can help bring it back.</h2>
+          <h2 id="lever-heading">Monarch caterpillars can only eat milkweed, and it's been pushed out of too many places. You can plant it at home and help bring it back.</h2>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
             Between 1999 and 2010, an estimated 850 million stems were lost to expanding agriculture and development.<sup><a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer" className="cite">[3]</a></sup>
