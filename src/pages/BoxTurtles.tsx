@@ -67,6 +67,13 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
               This is when turtles cross most frequently. At 35 mph, a turtle is survivable.
               At 55 mph, swerving is dangerous and braking is not enough. Slow down.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground" loading="lazy" />
+            <figcaption>
+              Box turtles overwinter beneath leaf litter, emerging in spring only when soil temperatures hold. A leaf pile left in a corner all winter is not yard neglect — it is the thermal insulation an animal with no other option depends on.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>If a turtle is crossing a road, help it to the side it was heading toward.</strong>{' '}
               Do not take it home. Do not move it to a pond or park. Move it 10 feet in the direction
