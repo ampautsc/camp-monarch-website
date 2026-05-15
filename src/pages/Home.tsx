@@ -14,6 +14,8 @@ const CARD_PHOTOS = {
   trackMigration: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Monarchs_overwintering_Angangueo_site_in_Mexico.jpg',
 }
 
+const HERO_PHOTO_URL = 'https://upload.wikimedia.org/wikipedia/commons/2/23/Angangueo_monarchs.jpg'
+
 // Seasonal right-now content — 2 items max on homepage (bta-004, bta-005)
 type SeasonalItem = { label: string; detail: string }
 type SeasonalContent = { header: string; items: [SeasonalItem, SeasonalItem] }
@@ -132,7 +134,7 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <>
       {/* HOOK — wonder first, then stakes. No explanation yet. (arch-page-as-argument-001) */}
-      <section className="hero">
+      <section className="hero" style={{ background: `linear-gradient(rgba(26,46,26,0.72), rgba(26,46,26,0.72)), url('${HERO_PHOTO_URL}') center/cover no-repeat` }}>
         <div className="hero__eyebrow">Camp Monarch</div>
         <h1>Monarchs are disappearing.<br />You can change that.</h1>
         <p className="hero__lead">
@@ -305,9 +307,10 @@ export default function Home({ onNavigate }: HomeProps) {
           <p>[1] Xerces Society. <a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer">Monarch Butterfly Conservation.</a> Accessed {monthName} {year}.</p>
           <p>[2] Monarch Joint Venture. <a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer">Overwintering Population Monitoring.</a> Accessed {monthName} {year}.</p>
           <p style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-            Photos: Wikimedia Commons (CC BY-SA).
+            Photos: Wikimedia Commons.
             <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noreferrer">Butterfly weed</a>.
             <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noreferrer">Caterpillar</a>.
+            Hero photo: <a href="https://commons.wikimedia.org/wiki/File:Angangueo_monarchs.jpg" target="_blank" rel="noreferrer">Angangueo monarchs</a> (Bfpage, CC BY 3.0).
           </p>
         </section>
 
