@@ -91,6 +91,13 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
               These plants provide food that can be cached through winter and
               dispersed across the neighborhood.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves on the ground near vegetation" loading="lazy" />
+            <figcaption>
+              Chipmunks tunnel beneath leaf litter and root systems, using the thermal mass to cache food and shelter young. Brush piles and unmanaged corners create the cover structure that makes a yard chipmunk-viable — not just a transit corridor.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Eliminate rodenticide use entirely.</strong>{' '}
               Use exclusion and sealing for indoor rodent issues instead of
