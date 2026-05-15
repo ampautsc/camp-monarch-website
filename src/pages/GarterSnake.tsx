@@ -102,6 +102,13 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
               and add a brush pile adjacent to any hedgerow. These create the
               thermal shelter garter snakes need to bask, forage, and overwinter.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves and garden debris on the ground" loading="lazy" />
+            <figcaption>
+              Garter snakes use rock piles, leaf accumulations, and compost borders as thermal refugia — warming up in morning sun and retreating when temperatures spike. A yard with a few structured corners provides a hunting territory; a bare lawn offers nothing but transit.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Eliminate all rodenticide.</strong>{' '}
               Remove every bait station from the yard. Rodenticide kills garter
