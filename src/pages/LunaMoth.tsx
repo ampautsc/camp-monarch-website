@@ -157,6 +157,14 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that support Luna Moths</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves lying on garden ground" loading="lazy" />
+            <figcaption>
+              Luna moth cocoons spin onto twigs above the leaf litter, and the pupae overwinter inside. Removing autumn leaves removes the insulating layer those pupae depend on to survive below-zero nights. The simplest intervention is also the most complete: don't rake here.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Plant native hardwood host trees.</strong>{' '}
@@ -169,13 +177,6 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
               tree, a native walnut or hickory is among the highest-impact
               choices you can make.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves lying on garden ground" loading="lazy" />
-            <figcaption>
-              Luna moth cocoons spin onto twigs above the leaf litter, and the pupae overwinter inside. Removing autumn leaves removes the insulating layer those pupae depend on to survive below-zero nights. The simplest intervention is also the most complete: don't rake here.
-              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Reduce outdoor lighting during May and June.</strong>{' '}
               April through July is the primary Luna Moth adult flight window
