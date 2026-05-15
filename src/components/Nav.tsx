@@ -80,6 +80,7 @@ const groups: NavGroup[] = [
           { id: 'indigo-bunting',             label: 'Indigo Bunting' },
           { id: 'dark-eyed-junco',            label: 'Dark-eyed Junco' },
           { id: 'common-nighthawk',           label: 'Common Nighthawk' },
+          { id: 'chimney-swift',              label: 'Chimney Swift' },
           { id: 'wood-thrush',                label: 'Wood Thrush' },
           { id: 'eastern-screech-owl',        label: 'Eastern Screech Owl' },
         ],
