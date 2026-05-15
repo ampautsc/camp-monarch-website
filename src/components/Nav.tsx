@@ -136,6 +136,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
         tabIndex={0}
         onKeyDown={e => e.key === 'Enter' && onNavigate('home')}
       >
+        <img src="/logo.png" alt="" aria-hidden="true" style={{ height: '2rem', width: 'auto', display: 'block' }} />
         Camp Monarch
       </div>
 
