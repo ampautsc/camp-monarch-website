@@ -99,6 +99,13 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
               <strong>Stop using lawn pesticides and herbicides.</strong>{' '}
               Keep the soil food web alive so robins can find worms, beetles, and other prey.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Stone bird bath in a garden setting" loading="lazy" />
+            <figcaption>
+              A ground-level water source earns daily visits from robins foraging nearby. Refresh it every two or three days to disrupt mosquito breeding and maintain what draws them back.
+              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Add native berry-producing shrubs and trees.</strong>{' '}
               Plant serviceberry, native dogwood, winterberry holly, hawthorn, or viburnums
