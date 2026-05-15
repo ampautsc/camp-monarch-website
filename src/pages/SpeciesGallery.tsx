@@ -284,6 +284,14 @@ const SPECIES: Species[] = [
     alt: "Adult red-tailed hawk perched, showing the brick-red tail that names the species",
     attr: "USFWS / Public Domain / Wikimedia Commons",
   },
+  {
+    page: 'eastern-meadowlark',
+    name: "Eastern Meadowlark",
+    tagline: "The voice of the American suburb — 75% gone since 1966. Grassland loss silenced it neighborhood by neighborhood.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sturnella_magna1.jpg/960px-Sturnella_magna1.jpg',
+    alt: "Eastern meadowlark perched on a fence post showing brilliant yellow breast with bold black V-collar",
+    attr: "USFWS / Public Domain / Wikimedia Commons",
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
