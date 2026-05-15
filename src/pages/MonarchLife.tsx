@@ -55,6 +55,13 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
                 When you see one on milkweed, leave the plant alone.
                 The caterpillar will eat the whole thing before forming a chrysalis.
               </p>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Butterfly weed (Asclepias tuberosa) in full bloom" loading="lazy" />
+            <figcaption>
+              Butterfly weed — a native milkweed — thrives in poor soil, tolerates drought, and attracts monarchs reliably. It is the one plant whose presence in a yard has a direct, documented effect on whether the monarch migration continues to function.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             </div>
             <div className="callout callout--green" style={{ margin: 0 }}>
               <h3 style={{ marginTop: 0, color: 'var(--monarch-green)' }}>Adults (Apr-Nov)</h3>
