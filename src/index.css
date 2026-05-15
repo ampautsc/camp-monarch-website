@@ -48,7 +48,7 @@
   text-underline-offset: 2px;
 }
 
-/* ── In-content species photos ──────────────────────�����────────────────────── */
+/* ── In-content species photos ──────────────────────────────────────────── */
 /* Placed inside .page sections to illustrate biology, behavior, or action.   */
 .species-content-photo {
   margin: 1.5rem 0 2rem;
@@ -104,3 +104,74 @@
   }
 }
 
+/* ── Nav: right-aligned dropdown (for items near right edge) ─────────────── */
+/* Applies right: 0 so the dropdown opens leftward instead of off-screen.     */
+.site-nav__dropdown--right {
+  left: auto;
+  right: 0;
+}
+
+/* ── Nav: mega dropdown for sectioned species menu ───────────────────────── */
+.site-nav__dropdown--mega {
+  display: block;
+  min-width: 440px;
+  max-width: 640px;
+  max-height: calc(90vh - 70px);
+  overflow-y: auto;
+}
+
+/* Featured "All Species" link at top of mega dropdown */
+.site-nav__dropdown-item--all {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.65rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.95);
+}
+
+.site-nav__dropdown-item--all:hover,
+.site-nav__dropdown-item--all.active {
+  background: var(--monarch-orange);
+  color: var(--monarch-dark);
+}
+
+/* Two-column species grid using CSS columns for natural flow */
+.site-nav__mega-grid {
+  columns: 2;
+  column-gap: 0;
+}
+
+/* Each section stays together — never split across columns */
+.site-nav__dropdown-section {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Section category label (Birds, Butterflies & Moths, etc.) */
+.site-nav__section-head {
+  display: block;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--monarch-orange);
+  padding: 0.55rem 0.9rem 0.15rem;
+  margin-top: 0.2rem;
+  opacity: 0.9;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 680px) {
+  .site-nav__dropdown--mega {
+    min-width: min(440px, calc(100vw - 1rem));
+    max-width: calc(100vw - 1rem);
+  }
+  .site-nav__mega-grid {
+    columns: 1;
+  }
+}
