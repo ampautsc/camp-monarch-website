@@ -96,12 +96,7 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three actions that help Green Darners now</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Create or protect a fish-free pond.</strong>{' '}
-              Keep water pesticide-free and include native emergent plants so
-              naiads can develop and adults can emerge.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Garden water feature with shallow open water" loading="lazy" />
             <figcaption>
@@ -109,6 +104,12 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
               <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Create or protect a fish-free pond.</strong>{' '}
+              Keep water pesticide-free and include native emergent plants so
+              naiads can develop and adults can emerge.
+            </li>
             <li>
               <strong>Skip mosquito sprays near water.</strong>{' '}
               Use habitat-first mosquito management so dragonfly predators can
