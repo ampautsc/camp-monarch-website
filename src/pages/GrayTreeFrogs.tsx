@@ -107,6 +107,14 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that bring Gray Tree Frogs back</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow stone water feature in a garden" loading="lazy" />
+            <figcaption>
+              Gray tree frogs breed in any standing fresh water — a garden pond, a rain barrel, even a large container. A single season of breeding success in a yard-scale water feature can produce hundreds of juveniles that disperse into the surrounding neighborhood.
+              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Add a small fishless water feature.</strong>{' '}
@@ -116,13 +124,6 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
               cattail, pickerelweed, blue flag iris — add tadpole cover and are
               well-suited to wet edges throughout eastern North America.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow stone water feature in a garden" loading="lazy" />
-            <figcaption>
-              Gray tree frogs breed in any standing fresh water — a garden pond, a rain barrel, even a large container. A single season of breeding success in a yard-scale water feature can produce hundreds of juveniles that disperse into the surrounding neighborhood.
-              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Keep a 50-foot pesticide-free buffer around any water.</strong>{' '}
               Atrazine and glyphosate travel in runoff. Applications on a lawn uphill
