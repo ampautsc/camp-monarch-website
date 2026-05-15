@@ -47,7 +47,7 @@
   text-underline-offset: 2px;
 }
 
-/* ── In-content species photos ───────────────────────────────────────────── */
+/* ── In-content species photos ──────────────────────���────────────────────── */
 /* Placed inside .page sections to illustrate biology, behavior, or action.   */
 .species-content-photo {
   margin: 1.5rem 0 2rem;
@@ -89,7 +89,9 @@
 
   /* Clear floats so next section starts fresh */
   .species-content-photo--right + p,
-  .species-content-photo--left + p {
+  .species-content-photo--left + p,
+  .species-content-photo--right + ol,
+  .species-content-photo--left + ol {
     overflow: hidden;
   }
 }
