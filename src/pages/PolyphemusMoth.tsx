@@ -147,6 +147,14 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that support Polyphemus Moths</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering ground beneath trees" loading="lazy" />
+            <figcaption>
+              Polyphemus cocoons fall to the ground in autumn and overwinter in the leaf layer beneath their host oaks and maples. A single unraked section beneath a mature tree is enough. The insulating depth that keeps them viable through winter is built from what you choose not to remove.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Plant native oaks and maples.</strong>{' '}
@@ -158,13 +166,6 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
               the investment pays dividends in insects, birds, and moths for
               decades.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering ground beneath trees" loading="lazy" />
-            <figcaption>
-              Polyphemus cocoons fall to the ground in autumn and overwinter in the leaf layer beneath their host oaks and maples. A single unraked section beneath a mature tree is enough. The insulating depth that keeps them viable through winter is built from what you choose not to remove.
-              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Turn off or redirect outdoor lights during moth season.</strong>{' '}
               June through August is peak Polyphemus emergence in most of eastern
