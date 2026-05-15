@@ -95,13 +95,7 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three actions that help garter snakes now</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Build a rock pile and brush pile.</strong>{' '}
-              Stack flat fieldstones in a south-facing pile 12–18 inches tall
-              and add a brush pile adjacent to any hedgerow. These create the
-              thermal shelter garter snakes need to bask, forage, and overwinter.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves and garden debris on the ground" loading="lazy" />
             <figcaption>
@@ -109,6 +103,13 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
               <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Build a rock pile and brush pile.</strong>{' '}
+              Stack flat fieldstones in a south-facing pile 12–18 inches tall
+              and add a brush pile adjacent to any hedgerow. These create the
+              thermal shelter garter snakes need to bask, forage, and overwinter.
+            </li>
             <li>
               <strong>Eliminate all rodenticide.</strong>{' '}
               Remove every bait station from the yard. Rodenticide kills garter
