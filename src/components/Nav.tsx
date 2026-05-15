@@ -42,9 +42,10 @@ const groups: NavGroup[] = [
       {
         label: 'Insects',
         items: [
-          { id: 'fireflies',    label: 'Fireflies' },
-          { id: 'native-bees',  label: 'Native Bees' },
-          { id: 'green-darner', label: 'Green Darner' },
+          { id: 'fireflies',            label: 'Fireflies' },
+          { id: 'native-bees',          label: 'Native Bees' },
+          { id: 'american-bumble-bee',  label: 'American Bumble Bee' },
+          { id: 'green-darner',         label: 'Green Darner' },
         ],
       },
       {
