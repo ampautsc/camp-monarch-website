@@ -84,13 +84,7 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three actions that support Eastern Chipmunks</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Plant native nut- and berry-producing shrubs.</strong>{' '}
-              Prioritize American hazelnut, native viburnums, and serviceberry.
-              These plants provide food that can be cached through winter and
-              dispersed across the neighborhood.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves on the ground near vegetation" loading="lazy" />
             <figcaption>
@@ -98,6 +92,13 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
               <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Plant native nut- and berry-producing shrubs.</strong>{' '}
+              Prioritize American hazelnut, native viburnums, and serviceberry.
+              These plants provide food that can be cached through winter and
+              dispersed across the neighborhood.
+            </li>
             <li>
               <strong>Eliminate rodenticide use entirely.</strong>{' '}
               Use exclusion and sealing for indoor rodent issues instead of
