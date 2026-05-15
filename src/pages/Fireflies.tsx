@@ -63,6 +63,13 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
               in a radius of 50 feet. Motion-sensor lights that stay off when nothing is moving
               are a reasonable compromise.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering garden ground" loading="lazy" />
+            <figcaption>
+              Firefly larvae overwinter as predators in moist leaf litter and loose soil. The gesture of leaving an unraked layer — even in just one corner of the yard — provides the thermal and moisture conditions that make the following summer's display possible.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Leave the leaves through winter.</strong>{' '}
               Rake paths and lawn if needed, but let a layer remain in garden beds and under trees.
