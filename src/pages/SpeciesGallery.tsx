@@ -6,6 +6,20 @@ import type { Page } from '../App'
 const PHOTO_FALLBACK =
   'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540"><rect width="100%" height="100%" fill="%23d4e9d0"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="48" fill="%23555">🦋</text></svg>'
 
+function buildRetryPhotoUrl(photo: string): string | null {
+  try {
+    const url = new URL(photo)
+    if (url.hostname !== 'upload.wikimedia.org') return null
+
+    const fileName = decodeURIComponent(url.pathname.split('/').filter(Boolean).pop() ?? '').replace(/^\d+px-/, '')
+    if (!fileName) return null
+
+    return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileName)}?width=960`
+  } catch {
+    return null
+  }
+}
+
 interface Species {
   page: string
   name: string
@@ -307,29 +321,40 @@ export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
       </section>
 
       <div className="species-grid">
-        {SPECIES.map(species => (
-          <button
-            key={species.page}
-            className="species-card"
-            onClick={() => onNavigate(species.page)}
-            aria-label={`View ${species.name} page`}
-          >
-            <div className="species-card__photo-wrap">
-              <img
-                src={species.photo}
-                alt={species.alt}
-                className="species-card__photo"
-                loading="lazy"
-                onError={e => { (e.target as HTMLImageElement).src = PHOTO_FALLBACK }}
-              />
-            </div>
-            <div className="species-card__body">
-              <div className="species-card__name">{species.name}</div>
-              <div className="species-card__tagline">{species.tagline}</div>
-              <div className="species-card__attr">{species.attr}</div>
-            </div>
-          </button>
-        ))}
+        {SPECIES.map(species => {
+          const retryPhotoUrl = buildRetryPhotoUrl(species.photo)
+
+          return (
+            <button
+              key={species.page}
+              className="species-card"
+              onClick={() => onNavigate(species.page)}
+              aria-label={`View ${species.name} page`}
+            >
+              <div className="species-card__photo-wrap">
+                <img
+                  src={species.photo}
+                  alt={species.alt}
+                  className="species-card__photo"
+                  loading="lazy"
+                  onError={e => {
+                    const image = e.currentTarget
+                    if (retryPhotoUrl && image.currentSrc !== retryPhotoUrl && image.src !== retryPhotoUrl) {
+                      image.src = retryPhotoUrl
+                      return
+                    }
+                    image.src = PHOTO_FALLBACK
+                  }}
+                />
+              </div>
+              <div className="species-card__body">
+                <div className="species-card__name">{species.name}</div>
+                <div className="species-card__tagline">{species.tagline}</div>
+                <div className="species-card__attr">{species.attr}</div>
+              </div>
+            </button>
+          )
+        })}
       </div>
 
       <section aria-labelledby="attribution-heading" style={{ marginTop: '3rem' }}>
