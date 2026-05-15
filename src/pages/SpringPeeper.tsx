@@ -115,6 +115,13 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
               needed; that is acceptable to peepers and eliminates fish naturally.
               Surround it with native shrubs and leaf litter for adult cover.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow water feature suitable for amphibian breeding" loading="lazy" />
+            <figcaption>
+              Spring peepers breed in shallow, fish-free water — any still fresh water will do. A garden pond, a half-barrel, or an excavated depression that holds spring rain long enough for tadpole development can function as a breeding site. Even one successful breeding season matters.
+              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Preserve leaf litter year-round.</strong>{' '}
               Leave a 3–4 inch leaf layer under shrubs and at yard edges through
