@@ -104,6 +104,14 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that bring Downy Woodpeckers back</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Snag_at_the_Wildlife_Garden_%2842263673541%29.jpg" alt="Standing dead tree in a garden with exposed dead wood" loading="lazy" />
+            <figcaption>
+              Downy woodpeckers excavate cavities in standing dead wood, and then often abandon those cavities to smaller birds. One snag left upright can function as a nursery column — providing first a woodpecker nest, then a chickadee nest, then a screech-owl roost, across years.
+              <span className="photo-credit"> Photo: Ross Dunn&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Leave dead branches standing on otherwise healthy trees.</strong>{' '}
@@ -112,13 +120,6 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
               poses no safety risk, leave it. A dead branch on a live tree is one of the
               most productive wildlife features a suburban yard can have.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Snag_at_the_Wildlife_Garden_%2842263673541%29.jpg" alt="Standing dead tree in a garden with exposed dead wood" loading="lazy" />
-            <figcaption>
-              Downy woodpeckers excavate cavities in standing dead wood, and then often abandon those cavities to smaller birds. One snag left upright can function as a nursery column — providing first a woodpecker nest, then a chickadee nest, then a screech-owl roost, across years.
-              <span className="photo-credit"> Photo: Ross Dunn&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Offer suet in a wire-mesh feeder through the winter.</strong>{' '}
               Suet — rendered fat, sometimes mixed with seeds or dried insects — is the most
