@@ -164,6 +164,13 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
               are ground-feeders by instinct; a low platform feeder works as well as any
               hanging tube.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native wildflowers providing seeds and structure in a yard" loading="lazy" />
+            <figcaption>
+              Cardinals forage at ground level through native plant structure — picking seeds, gleaning insects from stems, and nesting low in dense shrubs. A native planting that looks informal by conventional standards is precisely the habitat structure they require.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Plant native fruiting shrubs for summer food and nesting cover.</strong>{' '}
               Native viburnums (<em>Viburnum</em> spp.), native dogwoods (<em>Cornus</em>{' '}
