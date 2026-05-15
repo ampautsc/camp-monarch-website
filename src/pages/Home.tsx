@@ -138,8 +138,8 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="hero__eyebrow">Camp Monarch</div>
         <h1>Monarchs are disappearing.<br />You can change that.</h1>
         <p className="hero__lead">
-          In the 1990s, more than a billion monarchs reached Mexico each fall.<br />
-          Last winter, 60 million did.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
+          In the 1990s, hundreds of millions of monarchs reached Mexico each fall.<sup><a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer" className="cite">[1]</a></sup><br />
+          Last winter, about 60 million did.<sup><a href="https://xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
         </p>
       </section>
 
@@ -150,7 +150,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <h2 id="lever-heading">Monarch caterpillars eat only milkweed, and it's disappearing. You can help bring it back.</h2>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
-            Since 1990, an estimated 850 million stems have been lost to expanding agriculture and development.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
+            Between 1999 and 2010, an estimated 850 million stems were lost to expanding agriculture and development.<sup><a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer" className="cite">[3]</a></sup>
             The monarchs followed.
           </p>
           <p>
@@ -304,8 +304,9 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* Citation list */}
         <section className="cite-list" aria-label="Sources">
-          <p>[1] Xerces Society. <a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer">Monarch Butterfly Conservation.</a> Accessed {monthName} {year}.</p>
-          <p>[2] Monarch Joint Venture. <a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer">Overwintering Population Monitoring.</a> Accessed {monthName} {year}.</p>
+          <p>[1] Xerces Society. <a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer">Eastern Monarch Conservation.</a> Accessed {monthName} {year}.</p>
+          <p>[2] Xerces Society / WWF-Mexico. <a href="https://xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noreferrer">Eastern Monarch Butterfly Numbers Increase, but Remain Below Historic Levels.</a> March 17, 2026.</p>
+          <p>[3] Pleasants JM, Oberhauser KS. Milkweed loss in agricultural fields because of herbicide use: effect on the monarch butterfly population. <a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer">Insect Conservation and Diversity 6(2):135–144.</a> 2013.</p>
           <p style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
             Photos: Wikimedia Commons.
             <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noreferrer">Butterfly weed</a>.
