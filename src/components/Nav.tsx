@@ -27,6 +27,7 @@ const groups: NavGroup[] = [
   {
     id: 'neighbors',
     label: 'Meet Your Neighbors',
+    alignRight: true,
     featuredItem: { id: 'species-gallery', label: 'All Species — Photo Gallery' },
     sections: [
       {
