@@ -74,13 +74,7 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three changes that open your yard to native bees</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Leave one unmulched, sunny patch of ground.</strong>{' '}
-              South-facing exposure is ideal. Even a square foot of bare soil in the right location
-              will be claimed by a ground-nesting bee within a season.
-              Sand or loam is ideal; clay works. Shade does not — bees need solar warmth to regulate nest temperature.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed flowers providing nectar resources" loading="lazy" />
             <figcaption>
@@ -88,6 +82,13 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
               <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Leave one unmulched, sunny patch of ground.</strong>{' '}
+              South-facing exposure is ideal. Even a square foot of bare soil in the right location
+              will be claimed by a ground-nesting bee within a season.
+              Sand or loam is ideal; clay works. Shade does not — bees need solar warmth to regulate nest temperature.
+            </li>
             <li>
               <strong>Plant natives that bloom spring through fall.</strong>{' '}
               Early-spring bees need early flowers. Fall bees need late flowers.
