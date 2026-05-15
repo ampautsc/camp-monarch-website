@@ -60,8 +60,9 @@ const groups: NavGroup[] = [
       {
         label: 'Mammals',
         items: [
-          { id: 'eastern-chipmunk', label: 'Eastern Chipmunk' },
-          { id: 'little-brown-bat', label: 'Little Brown Bat' },
+          { id: 'eastern-chipmunk',  label: 'Eastern Chipmunk' },
+          { id: 'little-brown-bat',  label: 'Little Brown Bat' },
+          { id: 'virginia-opossum',  label: 'Virginia Opossum' },
         ],
       },
       {
