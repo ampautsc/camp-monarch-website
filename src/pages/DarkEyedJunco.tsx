@@ -101,6 +101,13 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
               2–3 days. During cold snaps, scatter on top of snow or use a low
               platform feeder 6–12 inches off the ground.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground in a natural setting" loading="lazy" />
+            <figcaption>
+              Juncos forage by scratching through surface leaf litter for seeds and invertebrates. A mulched border or an unraked patch under shrubs supports a ground layer that functions as a year-round food source rather than decoration.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Leave leaf litter under shrubs all winter.</strong>{' '}
               Do not rake or remove leaf litter from under shrubs or at yard
