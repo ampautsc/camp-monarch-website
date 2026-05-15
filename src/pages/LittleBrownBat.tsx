@@ -144,6 +144,14 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that support Little Brown Bats</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Bat_boxes_-_geograph.org.uk_-_1149465.jpg" alt="Multiple bat boxes mounted on a wooden structure" loading="lazy" />
+            <figcaption>
+              Bat boxes mounted in clusters — south-facing, 12–20 feet above ground, away from tree canopy — create the heat-retaining maternity roosts that nursing females need. A colony of 20 bats can consume 20,000 mosquitoes in a single night.
+              <span className="photo-credit"> Photo: Morley Sewell&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Install a bat house.</strong>{' '}
@@ -156,13 +164,6 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
               quarter mile of water are colonized far more reliably than those
               in dry upland sites.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Bat_boxes_-_geograph.org.uk_-_1149465.jpg" alt="Multiple bat boxes mounted on a wooden structure" loading="lazy" />
-            <figcaption>
-              Bat boxes mounted in clusters — south-facing, 12–20 feet above ground, away from tree canopy — create the heat-retaining maternity roosts that nursing females need. A colony of 20 bats can consume 20,000 mosquitoes in a single night.
-              <span className="photo-credit"> Photo: Morley Sewell&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Provide open water near foraging habitat.</strong>{' '}
               Little Brown Bats drink on the wing, skimming the surface of
