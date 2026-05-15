@@ -171,6 +171,14 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that support Cecropia Moths</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves on the ground" loading="lazy" />
+            <figcaption>
+              Cecropia cocoons spin onto branches just above the leaf litter and overwinter there until spring. Raking and removing autumn leaves removes the thermal layer those cocoons depend on. Leaving the leaves — just here — is the whole intervention.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Plant wild cherry or native elderberry.</strong>{' '}
@@ -186,13 +194,6 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
               </button>
               .
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves on the ground" loading="lazy" />
-            <figcaption>
-              Cecropia cocoons spin onto branches just above the leaf litter and overwinter there until spring. Raking and removing autumn leaves removes the thermal layer those cocoons depend on. Leaving the leaves — just here — is the whole intervention.
-              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Turn off outdoor lights during May and June.</strong>{' '}
               Cecropia adults fly from late April through June in the northern
