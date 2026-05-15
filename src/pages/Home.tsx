@@ -282,7 +282,7 @@ export default function Home({ onNavigate }: HomeProps) {
           }}
         >
           <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
-          <p>
+          <p style={{ color: 'var(--text-primary)' }}>
             <strong style={{ color: 'var(--monarch-orange)' }}>1,218 Monarch sightings</strong>{' '}
             have been logged on iNaturalist in the United States this month.
             Each sighting becomes open data that researchers can use to track the migration.
