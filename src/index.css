@@ -15,12 +15,13 @@
   max-height: 640px;
   overflow: hidden;
   display: block;
+  background: var(--monarch-dark);
 }
 
 .species-hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   /* Default: override per species via inline style={{ objectPosition }} */
   object-position: center center;
   display: block;
@@ -47,7 +48,7 @@
   text-underline-offset: 2px;
 }
 
-/* ── In-content species photos ──────────────────────���────────────────────── */
+/* ── In-content species photos ──────────────────────�����────────────────────── */
 /* Placed inside .page sections to illustrate biology, behavior, or action.   */
 .species-content-photo {
   margin: 1.5rem 0 2rem;
