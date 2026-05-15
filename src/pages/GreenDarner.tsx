@@ -102,6 +102,13 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
               Keep water pesticide-free and include native emergent plants so
               naiads can develop and adults can emerge.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Garden water feature with shallow open water" loading="lazy" />
+            <figcaption>
+              Green darner nymphs require open, unpolluted water for one to three years before emergence. A garden pond without fish — even a half-barrel — can complete their development. The adult that emerges from your yard may migrate hundreds of miles.
+              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Skip mosquito sprays near water.</strong>{' '}
               Use habitat-first mosquito management so dragonfly predators can
