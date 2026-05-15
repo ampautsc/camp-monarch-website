@@ -56,13 +56,7 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that bring fireflies back</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Turn outdoor lights off after 10pm in June and July.</strong>{' '}
-              Peak flash season is roughly 8-11pm. Even one porch light can suppress mating activity
-              in a radius of 50 feet. Motion-sensor lights that stay off when nothing is moving
-              are a reasonable compromise.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering garden ground" loading="lazy" />
             <figcaption>
@@ -70,6 +64,13 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
               <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Turn outdoor lights off after 10pm in June and July.</strong>{' '}
+              Peak flash season is roughly 8-11pm. Even one porch light can suppress mating activity
+              in a radius of 50 feet. Motion-sensor lights that stay off when nothing is moving
+              are a reasonable compromise.
+            </li>
             <li>
               <strong>Leave the leaves through winter.</strong>{' '}
               Rake paths and lawn if needed, but let a layer remain in garden beds and under trees.
