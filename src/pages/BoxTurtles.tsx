@@ -61,12 +61,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that protect box turtles</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Drive slowly on country roads in May and June.</strong>{' '}
-              This is when turtles cross most frequently. At 35 mph, a turtle is survivable.
-              At 55 mph, swerving is dangerous and braking is not enough. Slow down.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground" loading="lazy" />
             <figcaption>
@@ -74,6 +69,12 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
               <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Drive slowly on country roads in May and June.</strong>{' '}
+              This is when turtles cross most frequently. At 35 mph, a turtle is survivable.
+              At 55 mph, swerving is dangerous and braking is not enough. Slow down.
+            </li>
             <li>
               <strong>If a turtle is crossing a road, help it to the side it was heading toward.</strong>{' '}
               Do not take it home. Do not move it to a pond or park. Move it 10 feet in the direction
