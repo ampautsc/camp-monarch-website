@@ -167,6 +167,14 @@ export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHumm
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>How to support hummingbirds in your yard</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed with tubular orange flowers" loading="lazy" />
+            <figcaption>
+              Butterfly weed and other native tubular flowers provide nectar that hummingbirds return to reliably — not just once in passing. A planted patch that re-blooms over a 6-week window keeps them territorialized, which means spider silk and plant down collected nearby for nest-building.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Plant native tubular flowers with staggered bloom times.</strong>{' '}
@@ -179,13 +187,6 @@ export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHumm
               still coming. Together they cover the mid-summer gap. Add columbine
               (<em>Aquilegia canadensis</em>) for early spring arrival fuel.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed with tubular orange flowers" loading="lazy" />
-            <figcaption>
-              Butterfly weed and other native tubular flowers provide nectar that hummingbirds return to reliably — not just once in passing. A planted patch that re-blooms over a 6-week window keeps them territorialized, which means spider silk and plant down collected nearby for nest-building.
-              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Stop pesticide use in the area around nesting habitat.</strong>{' '}
               Hummingbird nestlings are fed insects ΓÇö gnats, aphids, spiders ΓÇö for the first
