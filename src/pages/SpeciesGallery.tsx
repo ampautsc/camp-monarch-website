@@ -53,6 +53,14 @@ const SPECIES: Species[] = [
     attr: "Muhammad Mahdi Karim / CC BY-SA 3.0 / Wikimedia Commons",
   },
   {
+    page: 'american-bumble-bee',
+    name: "American Bumble Bee",
+    tagline: "Federally threatened since 2025. 89% population decline. A colony that starts from one queen.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Bombus_pensylvanicus_male_on_rough_blazingstar_Ellison_Creek-7907.jpg',
+    alt: "American bumble bee foraging on rough blazingstar, a native prairie wildflower",
+    attr: "Angella Moorehouse / CC BY-SA 4.0 / Wikimedia Commons",
+  },
+  {
     page: 'box-turtles',
     name: "Box Turtle",
     tagline: "Home range under 2 acres. Lives 50+ years. Cannot escape roads — or lawn mowers.",
