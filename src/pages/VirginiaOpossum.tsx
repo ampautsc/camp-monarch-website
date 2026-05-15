@@ -9,7 +9,7 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Opossum_2.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Opossum_2.jpg/960px-Opossum_2.jpg"
           alt="Virginia opossum facing the camera, showing its white face, pink nose, and alert dark eyes — North America's only marsupial"
           className="species-hero-image"
           loading="eager"
@@ -55,7 +55,7 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
           </p>
           <figure className="species-content-photo species-content-photo--right">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Didelphis_virginiana_with_young.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Didelphis_virginiana_with_young.jpg/960px-Didelphis_virginiana_with_young.jpg"
               alt="Virginia opossum mother with several young opossums clinging to her back — a common sight in late summer as juveniles prepare to disperse"
               loading="lazy"
             />
@@ -162,7 +162,7 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
           <h2 style={{ marginTop: 0 }}>Four things that support Virginia Opossums</h2>
           <figure className="species-content-photo species-content-photo--left">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Leaf_litter_Scot%27s_Pine_Forest.jpg/1280px-Leaf_litter_Scot%27s_Pine_Forest.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Leaf_litter_Scot%27s_Pine_Forest.jpg/960px-Leaf_litter_Scot%27s_Pine_Forest.jpg"
               alt="Deep layer of fallen leaves on a forest floor — the insulation, shelter, and invertebrate food source that opossums depend on through the cold months"
               loading="lazy"
             />
