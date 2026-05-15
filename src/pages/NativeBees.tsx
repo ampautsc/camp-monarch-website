@@ -81,6 +81,13 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
               will be claimed by a ground-nesting bee within a season.
               Sand or loam is ideal; clay works. Shade does not — bees need solar warmth to regulate nest temperature.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed flowers providing nectar resources" loading="lazy" />
+            <figcaption>
+              Native milkweeds provide pollen and nectar on a schedule that aligns with native bee emergence — weeks ahead of most garden imports. A single native milkweed patch can support dozens of solitary bee species that non-native ornamentals never attract.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Plant natives that bloom spring through fall.</strong>{' '}
               Early-spring bees need early flowers. Fall bees need late flowers.
