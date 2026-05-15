@@ -186,6 +186,13 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
               </button>
               {' '}for specific substitutions.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Snag_at_the_Wildlife_Garden_%2842263673541%29.jpg" alt="Standing dead tree (snag) in a wildlife garden" loading="lazy" />
+            <figcaption>
+              Common nighthawks perch lengthwise on bare branches and logs, relying on open sightlines to spot insects at dusk. Leaving a dead limb or snag standing rather than cutting it removes nothing from your yard and adds a perch that functions as hunting infrastructure.
+              <span className="photo-credit"> Photo: Ross Dunn&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Reduce outdoor lighting at dusk.</strong>{' '}
               The 30 to 60 minutes after sunset is when nighthawks do their
