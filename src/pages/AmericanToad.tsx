@@ -114,6 +114,13 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
               Toads shelter under cover by day and burrow below the frost line to
               overwinter. A tidy, exposed yard removes the places they need most.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow garden water feature in a landscaped yard" loading="lazy" />
+            <figcaption>
+              A shallow water feature or garden pond — even a half-buried container — can become a breeding site. Toads need standing water in spring and dry shelter the rest of the year. Providing both is the whole job.
+              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Eliminate glyphosate, insecticides, and other lawn chemicals.</strong>{' '}
               Toad skin is permeable. Chemicals in soil, water, and vegetation
