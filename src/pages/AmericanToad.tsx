@@ -108,12 +108,7 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three actions that support American Toads</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Leave the leaves, brush piles, and loose soil in place.</strong>{' '}
-              Toads shelter under cover by day and burrow below the frost line to
-              overwinter. A tidy, exposed yard removes the places they need most.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow garden water feature in a landscaped yard" loading="lazy" />
             <figcaption>
@@ -121,6 +116,12 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
               <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Leave the leaves, brush piles, and loose soil in place.</strong>{' '}
+              Toads shelter under cover by day and burrow below the frost line to
+              overwinter. A tidy, exposed yard removes the places they need most.
+            </li>
             <li>
               <strong>Eliminate glyphosate, insecticides, and other lawn chemicals.</strong>{' '}
               Toad skin is permeable. Chemicals in soil, water, and vegetation
