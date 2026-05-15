@@ -61,7 +61,7 @@ export default function RedTailedHawk({ onNavigate }: RedTailedHawkProps) {
             America is the one sitting on the fence post at the edge of every rural highway.
           </p>
 
-          <figure className="species-content-photo species-content-photo--right">
+          <figure className="species-content-photo">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Red-tailed_hawk_in_flight_edit.jpg/960px-Red-tailed_hawk_in_flight_edit.jpg"
               alt="Red-tailed hawk soaring overhead showing the brick-red upper tail surface and white underparts with dark belly band — the field marks that distinguish adults from the eight other buteo species that share the North American range"
@@ -150,7 +150,7 @@ export default function RedTailedHawk({ onNavigate }: RedTailedHawkProps) {
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that help red-tailed hawks</h2>
 
-          <figure className="species-content-photo species-content-photo--left">
+          <figure className="species-content-photo">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Red-tailed_hawk_nest.jpg/960px-Red-tailed_hawk_nest.jpg"
               alt="Red-tailed hawk nest in the fork of a large deciduous tree — a large stick structure typically three feet wide that the same pair returns to and adds material to each spring, requiring a mature canopy tree to support both the weight and the commanding view the hawk requires"
