@@ -151,6 +151,14 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that support Eastern Screech Owls</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Nest_box.jpg" alt="Wooden nest box with entrance hole mounted on a post" loading="lazy" />
+            <figcaption>
+              A screech-owl box — entrance hole 3 inches across, floor 8×8 inches, mounted 10–30 feet up on a tree — provides the cavity these owls rarely find on their own in managed neighborhoods. Once claimed, a pair will return to the same box for years.
+              <span className="photo-credit"> Photo: Svdmolen&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by/2.5" target="_blank" rel="noopener noreferrer">CC BY 2.5</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Install a nest box.</strong>{' '}
@@ -163,13 +171,6 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
               on a tree or post — not a building wall in direct sun, which
               overheats the interior.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Nest_box.jpg" alt="Wooden nest box with entrance hole mounted on a post" loading="lazy" />
-            <figcaption>
-              A screech-owl box — entrance hole 3 inches across, floor 8×8 inches, mounted 10–30 feet up on a tree — provides the cavity these owls rarely find on their own in managed neighborhoods. Once claimed, a pair will return to the same box for years.
-              <span className="photo-credit"> Photo: Svdmolen&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by/2.5" target="_blank" rel="noopener noreferrer">CC BY 2.5</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Stop using rodenticides.</strong>{' '}
               Anticoagulant rodent poisons kill the predators that control
