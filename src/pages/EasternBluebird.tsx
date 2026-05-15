@@ -130,6 +130,14 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>How to bring bluebirds back to your yard</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Male_and_Female_Eastern_Bluebirds_at_a_nesting_box.jpg" alt="Male and female Eastern Bluebirds perched at a mounted nest box" loading="lazy" />
+            <figcaption>
+              A bluebird box mounted on a smooth metal pole — with a predator baffle — is one of the highest-return wildlife investments available to a suburban yard. Bluebirds claim nest boxes quickly when open habitat exists nearby. This pair is already evaluating theirs.
+              <span className="photo-credit"> Photo: Wcedmisten&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Install a nest box with the correct dimensions.</strong>{' '}
@@ -148,13 +156,6 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
               </a>{' '}
               provides free box plans.
             </li>
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Male_and_Female_Eastern_Bluebirds_at_a_nesting_box.jpg" alt="Male and female Eastern Bluebirds perched at a mounted nest box" loading="lazy" />
-            <figcaption>
-              A bluebird box mounted on a smooth metal pole — with a predator baffle — is one of the highest-return wildlife investments available to a suburban yard. Bluebirds claim nest boxes quickly when open habitat exists nearby. This pair is already evaluating theirs.
-              <span className="photo-credit"> Photo: Wcedmisten&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
             <li>
               <strong>Monitor the box weekly during nesting season.</strong>{' '}
               Monitoring is what separates a decoration from a functional nest box.
