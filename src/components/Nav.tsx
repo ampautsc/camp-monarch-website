@@ -128,6 +128,18 @@ const groups: NavGroup[] = [
   },
 ]
 
+const megaDropdownStyle = {
+  width: 'min(640px, calc(100vw - 1rem))',
+  maxWidth: 'calc(100vw - 1rem)',
+  overflowX: 'hidden',
+} as const
+
+const megaDropdownItemStyle = {
+  whiteSpace: 'normal',
+  overflowWrap: 'anywhere',
+  lineHeight: 1.4,
+} as const
+
 function isGroupActive(group: NavGroup, current: Page): boolean {
   if (group.page) return group.page === current
   if (group.featuredItem?.id === current) return true
@@ -231,6 +243,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
                   <div
                     className={`site-nav__dropdown site-nav__dropdown--mega${alignClass}`}
                     role="menu"
+                    style={megaDropdownStyle}
                   >
                     {featured && (
                       <button
@@ -238,6 +251,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
                         onClick={() => handleChildClick(featured.id)}
                         role="menuitem"
                         aria-current={current === featured.id ? 'page' : undefined}
+                        style={megaDropdownItemStyle}
                       >
                         {featured.label}
                       </button>
@@ -253,6 +267,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
                               onClick={() => handleChildClick(item.id)}
                               role="menuitem"
                               aria-current={current === item.id ? 'page' : undefined}
+                              style={megaDropdownItemStyle}
                             >
                               {item.label}
                             </button>
