@@ -119,6 +119,13 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
               habitat structure. Leave brushy unmowed areas through July to protect
               active nests.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Butterfly weed in bloom with orange flower clusters" loading="lazy" />
+            <figcaption>
+              Indigo buntings follow native seed plants through late summer and autumn. Native milkweeds, coneflowers, and grasses carrying seeds into October provide the stopover fuel that sustains a migration moving by star-navigation from Minnesota to Mexico.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Offer white millet during spring and fall migration.</strong>{' '}
               Scatter white millet on the ground or on a low platform feeder starting
