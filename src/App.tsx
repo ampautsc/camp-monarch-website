@@ -45,6 +45,7 @@ import PolyphemusMoth from './pages/PolyphemusMoth'
 import LunaMoth from './pages/LunaMoth'
 import CommonNighthawk from './pages/CommonNighthawk'
 import CecropiaMoth from './pages/CecropiaMoth'
+import VirginiaOpossum from './pages/VirginiaOpossum'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -75,6 +76,7 @@ export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' 
   | 'luna-moth'
   | 'common-nighthawk'
   | 'cecropia-moth'
+  | 'virginia-opossum'
   | 'seasonal-calendar'
   | 'species-gallery'
   | 'habitat-transformation'
@@ -98,6 +100,7 @@ const VALID_PAGES = new Set<Page>([
   'garter-snake', 'dark-eyed-junco', 'eastern-chipmunk', 'spring-peeper',
   'toad', 'little-brown-bat', 'wood-thrush', 'eastern-screech-owl',
   'polyphemus-moth', 'luna-moth', 'common-nighthawk', 'cecropia-moth',
+  'virginia-opossum',
   'seasonal-calendar', 'species-gallery', 'habitat-transformation', 'hoa-guide',
   'habitat-score', 'spring-checklist', 'pesticide-guide', 'water-for-wildlife',
   'leave-the-leaves', 'invasive-plants',
@@ -171,6 +174,7 @@ function App() {
       case 'luna-moth': return <LunaMoth onNavigate={navigateTo} />
       case 'common-nighthawk': return <CommonNighthawk onNavigate={navigateTo} />
       case 'cecropia-moth': return <CecropiaMoth onNavigate={navigateTo} />
+      case 'virginia-opossum': return <VirginiaOpossum onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
