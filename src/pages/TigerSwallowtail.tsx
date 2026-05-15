@@ -9,7 +9,7 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/9/90/Pristine_Eastern_Tiger_Swallowtail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Pristine_Eastern_Tiger_Swallowtail.jpg/960px-Pristine_Eastern_Tiger_Swallowtail.jpg"
           alt="Eastern Tiger Swallowtail butterfly on native joe-pye weed, yellow and black striped wings spread, sipping nectar alongside a monarch butterfly"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
@@ -34,8 +34,6 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
           are nearby.
         </p>
       </section>
-
-      
 
       <div className="page">
         <section aria-labelledby="recognition-heading">
@@ -64,7 +62,7 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
             Without these host trees, adults may visit flowers but cannot
             complete the life cycle in your neighborhood.
           </p>
-              <figure className="species-content-photo species-content-photo--right">
+              <figure className="species-content-photo">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Papilio_glaucus_larva_1.jpg"
                   alt="Eastern Tiger Swallowtail caterpillar on a leaf — large green body with false eyespots near the head end"
@@ -105,7 +103,7 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three actions that help Tiger Swallowtails now</h2>
 
-          <figure className="species-content-photo species-content-photo--left">
+          <figure className="species-content-photo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed in bloom, attracting pollinators" loading="lazy" />
             <figcaption>
               Tiger swallowtails puddle for minerals at moist soil, nectar from native flowers, and pupate in leaf litter beneath their host trees. A yard with native plantings, undisturbed soil edges, and an unraked layer provides three of the four things they need — the fourth is the tree you may already have.
