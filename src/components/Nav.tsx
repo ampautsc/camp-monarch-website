@@ -109,6 +109,7 @@ const groups: NavGroup[] = [
   {
     id: 'learn',
     label: 'Learn',
+    // Last item — open right-aligned so it doesn't clip past the viewport edge
     alignRight: true,
     children: [
       { id: 'seasonal-calendar', label: 'Seasonal Calendar' },
@@ -182,6 +183,7 @@ export default function Nav({ current, onNavigate }: NavProps) {
           const active = isGroupActive(group, current)
           const isOpen = open === group.id
           const hasDropdown = !!(group.children || group.sections)
+          const alignClass = group.alignRight ? ' site-nav__dropdown--right' : ''
 
           return (
             <div key={group.id} className="site-nav__group">
@@ -195,9 +197,10 @@ export default function Nav({ current, onNavigate }: NavProps) {
                 {group.label}
               </button>
 
+              {/* Standard flat dropdown (e.g. What To Do, Learn) */}
               {group.children && isOpen && (
                 <div
-                  className={`site-nav__dropdown${group.alignRight ? ' site-nav__dropdown--right' : ''}`}
+                  className={`site-nav__dropdown${alignClass}`}
                   role="menu"
                 >
                   {group.children.map(child => (
@@ -214,41 +217,45 @@ export default function Nav({ current, onNavigate }: NavProps) {
                 </div>
               )}
 
-              {group.sections && isOpen && (
-                <div
-                  className={`site-nav__dropdown site-nav__dropdown--mega${group.alignRight ? ' site-nav__dropdown--right' : ''}`}
-                  role="menu"
-                >
-                  {group.featuredItem && (
-                    <button
-                      className={`site-nav__dropdown-item site-nav__dropdown-item--all${current === group.featuredItem.id ? ' active' : ''}`}
-                      onClick={() => handleChildClick(group.featuredItem.id)}
-                      role="menuitem"
-                      aria-current={current === group.featuredItem.id ? 'page' : undefined}
-                    >
-                      {group.featuredItem.label}
-                    </button>
-                  )}
-                  <div className="site-nav__mega-grid">
-                    {group.sections.map(section => (
-                      <div key={section.label} className="site-nav__dropdown-section">
-                        <span className="site-nav__section-head">{section.label}</span>
-                        {section.items.map(item => (
-                          <button
-                            key={item.id}
-                            className={`site-nav__dropdown-item${current === item.id ? ' active' : ''}`}
-                            onClick={() => handleChildClick(item.id)}
-                            role="menuitem"
-                            aria-current={current === item.id ? 'page' : undefined}
-                          >
-                            {item.label}
-                          </button>
-                        ))}
-                      </div>
-                    ))}
+              {/* Categorized scrollable dropdown (Meet Your Neighbors) */}
+              {group.sections && isOpen && (() => {
+                const featured = group.featuredItem
+                return (
+                  <div
+                    className={`site-nav__dropdown site-nav__dropdown--mega${alignClass}`}
+                    role="menu"
+                  >
+                    {featured && (
+                      <button
+                        className={`site-nav__dropdown-item site-nav__dropdown-item--all${current === featured.id ? ' active' : ''}`}
+                        onClick={() => handleChildClick(featured.id)}
+                        role="menuitem"
+                        aria-current={current === featured.id ? 'page' : undefined}
+                      >
+                        {featured.label}
+                      </button>
+                    )}
+                    <div className="site-nav__mega-grid">
+                      {group.sections.map(section => (
+                        <div key={section.label} className="site-nav__dropdown-section">
+                          <span className="site-nav__section-head">{section.label}</span>
+                          {section.items.map(item => (
+                            <button
+                              key={item.id}
+                              className={`site-nav__dropdown-item${current === item.id ? ' active' : ''}`}
+                              onClick={() => handleChildClick(item.id)}
+                              role="menuitem"
+                              aria-current={current === item.id ? 'page' : undefined}
+                            >
+                              {item.label}
+                            </button>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )
+              })()}
             </div>
           )
         })}
