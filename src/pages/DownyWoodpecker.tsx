@@ -9,7 +9,7 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/1/13/Dryobates_pubescens_UL_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dryobates_pubescens_UL_03.jpg/960px-Dryobates_pubescens_UL_03.jpg"
           alt="Downy Woodpecker clinging to a dead tree snag, probing bark with chisel bill to extract beetle larvae"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
@@ -35,8 +35,6 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
           breeding.
         </p>
       </section>
-
-      
 
       <div className="page">
         <section aria-labelledby="indicator-heading">
@@ -73,7 +71,7 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
             and do not migrate. The one you see in January is the same individual that nested
             in your neighborhood last spring.
           </p>
-              <figure className="species-content-photo species-content-photo--right">
+              <figure className="species-content-photo">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Downy_Woodpecker.jpg"
                   alt="Downy Woodpecker clinging to a dead branch, foraging for insects hidden beneath the bark"
@@ -105,7 +103,7 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that bring Downy Woodpeckers back</h2>
 
-          <figure className="species-content-photo species-content-photo--left">
+          <figure className="species-content-photo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Snag_at_the_Wildlife_Garden_%2842263673541%29.jpg" alt="Standing dead tree in a garden with exposed dead wood" loading="lazy" />
             <figcaption>
               Downy woodpeckers excavate cavities in standing dead wood, and then often abandon those cavities to smaller birds. One snag left upright can function as a nursery column — providing first a woodpecker nest, then a chickadee nest, then a screech-owl roost, across years.
