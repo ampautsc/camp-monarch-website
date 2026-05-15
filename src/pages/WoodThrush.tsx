@@ -174,6 +174,13 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
               depends on. The &ldquo;Choose a Plant&rdquo; tool can match native species
               to your site conditions.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Fallen autumn leaves creating forest floor habitat" loading="lazy" />
+            <figcaption>
+              Wood thrushes flip through surface leaf litter in a specific foraging motion, detecting earthworms and beetles by sound and touch. The deeper the litter layer, the richer the invertebrate community beneath it. Compacted bare soil under ornamental mulch produces nothing a thrush can use.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Leave the leaf litter.</strong>{' '}
               A raked, bare yard is biologically empty to a Wood Thrush.
