@@ -139,6 +139,13 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
               tablespoons per day — too much causes health problems. Halved oranges on a
               spike or platform feeder work as well as any commercial oriole feeder.
             </li>
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Garden bird bath with stone basin" loading="lazy" />
+            <figcaption>
+              Orioles seek water as reliably as food during migration. A clean, shallow basin at or below eye level — refilled every few days — is the most immediate thing a yard can offer a bird passing through on a 2,000-mile journey.
+              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
             <li>
               <strong>Plant native elderberry as your first priority.</strong>{' '}
               Native elderberry (<em>Sambucus canadensis</em>) is among the highest
