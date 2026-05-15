@@ -92,12 +92,7 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three actions that help goldfinches immediately</h2>
-          <ol className="step-list">
-            <li>
-              <strong>Leave seedheads standing through winter.</strong>{' '}
-              Keep stems from native asters, goldenrod, coneflower, rudbeckia, and sunflowers
-              in place until spring cleanup. Those seedheads are winter food.
-            </li>
+
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Butterfly weed (Asclepias tuberosa) with bright orange flowers" loading="lazy" />
             <figcaption>
@@ -105,6 +100,12 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
               <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Leave seedheads standing through winter.</strong>{' '}
+              Keep stems from native asters, goldenrod, coneflower, rudbeckia, and sunflowers
+              in place until spring cleanup. Those seedheads are winter food.
+            </li>
             <li>
               <strong>Plant native seed-bearing species and tolerate some "weeds."</strong>{' '}
               Add goldenrod, native asters, liatris, echinacea, and native sunflowers. Consider
