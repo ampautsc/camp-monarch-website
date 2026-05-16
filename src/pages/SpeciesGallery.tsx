@@ -317,6 +317,14 @@ const SPECIES: Species[] = [
     alt: "Eastern meadowlark perched on a fence post showing brilliant yellow breast with bold black V-collar",
     attr: "USFWS / Public Domain / Wikimedia Commons",
   },
+  {
+    page: 'american-kestrel',
+    name: "American Kestrel",
+    tagline: "North America's smallest falcon. Down 47% since 1966. Can be helped directly with a nest box and open grassland.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Falco-sparverius-001.jpg/960px-Falco-sparverius-001.jpg',
+    alt: "Male American kestrel perched on a branch showing slate-blue wings, russet back and tail, and two bold black facial mustache marks",
+    attr: "Simon Pierre Barrette / CC BY-SA 3.0 / Wikimedia Commons",
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
