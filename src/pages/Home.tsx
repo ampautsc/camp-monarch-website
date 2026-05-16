@@ -134,7 +134,7 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <>
       {/* HOOK — wonder first, then stakes. No explanation yet. (arch-page-as-argument-001) */}
-      <section className="hero" style={{ background: `linear-gradient(rgba(26,46,26,0.72), rgba(26,46,26,0.72)), url('${HERO_PHOTO_URL}') center/cover no-repeat` }}>
+      <section className="hero" style={{ background: `linear-gradient(rgba(26,46,26,0.82), rgba(26,46,26,0.82)), url('${HERO_PHOTO_URL}') center/cover no-repeat` }}>
         <div className="hero__eyebrow">Camp Monarch</div>
         <h1>Monarchs are disappearing.<br />You can help.</h1>
         <p className="hero__lead">
@@ -157,25 +157,27 @@ export default function Home({ onNavigate }: HomeProps) {
             One patch in a sunny yard supports dozens of caterpillars through a summer.
             Dozens of milkweed species are native to different regions of the US.
           </p>
-          <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
-            Find Your Milkweed Species
-          </button>
-          <button
-            onClick={() => onNavigate('monarch-life')}
-            style={{
-              background: 'none',
-              border: 'none',
-              color: 'var(--monarch-orange)',
-              padding: 0,
-              cursor: 'pointer',
-              fontFamily: 'inherit',
-              fontSize: '0.95rem',
-              fontWeight: 'bold',
-              textDecoration: 'underline',
-            }}
-          >
-            Learn more about Monarch Butterflies →
-          </button>
+          <div style={{ marginTop: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1.25rem' }}>
+            <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
+              Find Your Milkweed Species
+            </button>
+            <button
+              onClick={() => onNavigate('monarch-life')}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: 'var(--monarch-green)',
+                padding: 0,
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+                fontSize: '0.95rem',
+                fontWeight: 'bold',
+                textDecoration: 'underline',
+              }}
+            >
+              Learn more about Monarch Butterflies →
+            </button>
+          </div>
         </section>
 
         {/* THE ASK — one primary action, specifically named. Answers "how do I start?" */}
@@ -208,7 +210,7 @@ export default function Home({ onNavigate }: HomeProps) {
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Log a sighting</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                Every observation on iNaturalist becomes open data for migration researchers. 60 seconds.
+                Each sighting goes directly to migration researchers tracking which corridors the population is still using. Takes 60 seconds — snap a photo and submit.
               </p>
               <button
                 className="hero__cta"
