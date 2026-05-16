@@ -79,6 +79,7 @@ export const ALL_PAGE_SLUGS = [
   'purple-martin',
   'red-tailed-hawk',
   'eastern-meadowlark',
+  'american-kestrel',
   'seasonal-calendar',
   'species-gallery',
   'habitat-transformation',
