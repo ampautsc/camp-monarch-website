@@ -274,7 +274,7 @@ export default function Home({ onNavigate }: HomeProps) {
             ))}
           </ul>
         </div>
-                        {/* iNaturalist Monarch count widget — start */}
+                                {/* iNaturalist Monarch count widget — start */}
         <div
           className="action-panel"
           style={{
@@ -284,13 +284,13 @@ export default function Home({ onNavigate }: HomeProps) {
           }}
         >
           <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
-          <p style={{ color: 'var(--text-primary)' }}>
-            <strong style={{ color: 'var(--monarch-orange)' }}>1,218 Monarch sightings</strong>{' '}
+          <p>
+            <strong style={{ color: 'var(--monarch-orange)' }}>1,310 Monarch sightings</strong>{' '}
             have been logged on iNaturalist in the United States this month.
             Each sighting becomes open data that researchers can use to track the migration.
           </p>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '1rem' }}>
-            Updated May 15, 2026 · current count covers observations since 2026-05-01.
+            Updated May 16, 2026 · current count covers observations since 2026-05-01.
           </p>
           <a
             href="https://www.inaturalist.org/observations?month=5&place_id=1&taxon_id=48662&d1=2026-05-01"
