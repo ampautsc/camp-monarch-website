@@ -26,9 +26,16 @@ import DownyWoodpecker from './pages/DownyWoodpecker'
 import BaltimoreOriole from './pages/BaltimoreOriole'
 import NorthernCardinal from './pages/NorthernCardinal'
 import EasternBluebird from './pages/EasternBluebird'
+import Plants from './pages/Plants'
+import PlantsGettingStarted from './pages/PlantsGettingStarted'
+import PlantsHostPlants from './pages/PlantsHostPlants'
+import PlantsBloomCalendar from './pages/PlantsBloomCalendar'
+import PlantCommunities from './pages/PlantCommunities'
+import PlantCommonMistakes from './pages/PlantCommonMistakes'
+import PlantsLibrary from './pages/PlantsLibrary'
 import { trackEvent } from './lib/analytics'
 
-export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird'
+export type Page = 'home' | 'why-monarchs' | 'plant-milkweed' | 'the-migration' | 'take-action' | 'choose-a-plant' | 'native-plant-near-me' | 'monarch-life' | 'raise-a-monarch' | 'the-first-year' | 'faq' | 'log-a-sighting' | 'waystation-guide' | 'fireflies' | 'box-turtles' | 'native-bees' | 'talking-points' | 'gray-tree-frogs' | 'downy-woodpecker' | 'baltimore-oriole' | 'northern-cardinal' | 'eastern-bluebird' | 'plants' | 'plants-getting-started' | 'plants-host-plants' | 'plants-bloom-calendar' | 'plants-communities' | 'plants-common-mistakes' | 'plants-library'
 
 function App() {
   const [page, setPage] = useState<Page>('home')
@@ -61,6 +68,13 @@ function App() {
       case 'baltimore-oriole':    return <BaltimoreOriole onNavigate={setPage} />
       case 'northern-cardinal':   return <NorthernCardinal onNavigate={setPage} />
       case 'eastern-bluebird':    return <EasternBluebird onNavigate={setPage} />
+      case 'plants':              return <Plants onNavigate={setPage} />
+      case 'plants-getting-started': return <PlantsGettingStarted onNavigate={setPage} />
+      case 'plants-host-plants':  return <PlantsHostPlants onNavigate={setPage} />
+      case 'plants-bloom-calendar': return <PlantsBloomCalendar onNavigate={setPage} />
+      case 'plants-communities':  return <PlantCommunities onNavigate={setPage} />
+      case 'plants-common-mistakes': return <PlantCommonMistakes onNavigate={setPage} />
+      case 'plants-library':      return <PlantsLibrary onNavigate={setPage} />
       default:                    return <Home onNavigate={setPage} />
     }
   }

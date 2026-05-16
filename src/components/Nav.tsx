@@ -17,6 +17,19 @@ const groups: NavGroup[] = [
   { id: 'home', label: 'Home', page: 'home' },
   { id: 'matters', label: 'Why It Matters', page: 'why-monarchs' },
   {
+    id: 'plants',
+    label: 'Plants & Wildflowers',
+    page: 'plants',
+    children: [
+      { id: 'plants-getting-started', label: 'Start Here' },
+      { id: 'plants-host-plants',     label: 'Host Plants 101' },
+      { id: 'plants-bloom-calendar',  label: 'Bloom Calendar' },
+      { id: 'plants-communities',     label: 'Plant Communities' },
+      { id: 'plants-common-mistakes', label: 'Common Mistakes' },
+      { id: 'plants-library',         label: 'Plant Library' },
+    ],
+  },
+  {
     id: 'neighbors',
     label: 'Meet Your Neighbors',
     children: [
