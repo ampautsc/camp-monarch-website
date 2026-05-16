@@ -27,7 +27,6 @@ const groups: NavGroup[] = [
   {
     id: 'plants',
     label: 'Plants & Wildflowers',
-    page: 'plants',
     featuredItem: { id: 'plants-finder', label: 'Plant Finder (350+ Plants)' },
     sections: [
       {
