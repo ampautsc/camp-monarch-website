@@ -234,6 +234,37 @@ export default function WaterForWildlife({ onNavigate }: WaterForWildlifeProps) 
         </div>
       </section>
 
+      <section className="page-section">
+        <h2>Mosquito control without broadcast spraying</h2>
+        <div className="prose">
+          <p>
+            If mosquitoes are your biggest concern, the highest-return action
+            is weekly maintenance, not fogging. Mosquitoes in neighborhoods are
+            usually produced in small stagnant containers: clogged gutters,
+            saucers under pots, tarps with pooled rainwater, and forgotten
+            buckets. Emptying those once a week interrupts the life cycle
+            before adults emerge.
+          </p>
+          <p>
+            Keep wildlife water features moving or refreshed. Birdbaths should
+            be dumped, scrubbed, and refilled every two to three days. Container
+            ponds should include circulation, emergent plants, and predator life
+            such as dragonfly nymphs. This approach reduces mosquito pressure
+            while preserving the same insect web that supports
+            {' '}<button className="link-button" onClick={() => onNavigate('chimney-swift')}>Chimney Swifts</button>,
+            {' '}<button className="link-button" onClick={() => onNavigate('purple-martin')}>Purple Martins</button>,
+            {' '}<button className="link-button" onClick={() => onNavigate('little-brown-bat')}>Little Brown Bats</button>,
+            and pollinators in your yard.
+          </p>
+          <p>
+            Broadcast yard sprays kill non-target insects first and rarely solve
+            the breeding source. If you need a deeper walkthrough, read
+            {' '}<button className="link-button" onClick={() => onNavigate('pesticide-guide')}>Pesticides &amp; Your Habitat</button>
+            {' '}before hiring a spray service.
+          </p>
+        </div>
+      </section>
+
       <section className="page-section page-section--cta-row">
         <h2>Keep going</h2>
         <div className="cta-card-row">
