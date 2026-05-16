@@ -65,6 +65,7 @@ import ChimneySwift from './pages/ChimneySwift'
 import PurpleMartin from './pages/PurpleMartin'
 import RedTailedHawk from './pages/RedTailedHawk'
 import EasternMeadowlark from './pages/EasternMeadowlark'
+import AmericanKestrel from './pages/AmericanKestrel'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -170,6 +171,7 @@ function App() {
       case 'purple-martin': return <PurpleMartin onNavigate={navigateTo} />
       case 'red-tailed-hawk': return <RedTailedHawk onNavigate={navigateTo} />
       case 'eastern-meadowlark': return <EasternMeadowlark onNavigate={navigateTo} />
+      case 'american-kestrel': return <AmericanKestrel onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
