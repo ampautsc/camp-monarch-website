@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+﻿import { useMemo } from 'react'
 import type { Page } from '../App'
 
 interface HomeProps {
@@ -15,6 +15,13 @@ const CARD_PHOTOS = {
 }
 
 const HERO_PHOTO_URL = 'https://upload.wikimedia.org/wikipedia/commons/2/23/Angangueo_monarchs.jpg'
+// Neighbor species preview photos — Wikimedia Commons
+const NEIGHBOR_PHOTOS = {
+  fireflies: 'https://upload.wikimedia.org/wikipedia/commons/5/52/Photuris_lucicrescens.jpg',
+  screechOwl: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Screech_Owl.jpg',
+  boxTurtle: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_%28cropped%29.jpg',
+  chickadee: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg',
+}
 
 // Seasonal right-now content — 2 items max on homepage (bta-004, bta-005)
 type SeasonalItem = { label: string; detail: string }
@@ -259,6 +266,63 @@ export default function Home({ onNavigate }: HomeProps) {
 
           </div>
         </section>
+        {/* MEET YOUR NEIGHBORS — preview the species gallery; routes homepage traffic to 35 species pages */}
+        <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
+          <h2 id="neighbors-heading">Your yard is already home to more than you know</h2>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
+            35 species depend on backyards, gardens, and the choices homeowners make about their land.
+            Each one has a story that changes how you see your yard.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('fireflies')}>
+              <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+                <img src={NEIGHBOR_PHOTOS.fireflies} alt="Firefly perched on plant stem at dusk" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
+              <div style={{ padding: '0.9rem 1rem 1rem', flex: 1 }}>
+                <h3 style={{ margin: '0 0 0.4rem', fontSize: '1rem' }}>Fireflies</h3>
+                <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>The larvae live in your leaf litter all winter. When you rake in fall, you're raking them away.</p>
+              </div>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('eastern-screech-owl')}>
+              <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+                <img src={NEIGHBOR_PHOTOS.screechOwl} alt="Eastern screech owl perched on a branch, cryptic bark pattern" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
+              <div style={{ padding: '0.9rem 1rem 1rem', flex: 1 }}>
+                <h3 style={{ margin: '0 0 0.4rem', fontSize: '1rem' }}>Eastern Screech Owl</h3>
+                <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>There&apos;s probably one within a mile of your house right now. You&apos;ve almost certainly never seen it.</p>
+              </div>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('box-turtles')}>
+              <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+                <img src={NEIGHBOR_PHOTOS.boxTurtle} alt="Eastern box turtle with domed orange-patterned shell on leaf litter" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
+              <div style={{ padding: '0.9rem 1rem 1rem', flex: 1 }}>
+                <h3 style={{ margin: '0 0 0.4rem', fontSize: '1rem' }}>Box Turtles</h3>
+                <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>A box turtle&apos;s home range is about 5 acres. She may have been crossing your yard her entire 40-year life.</p>
+              </div>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('black-capped-chickadee')}>
+              <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+                <img src={NEIGHBOR_PHOTOS.chickadee} alt="Black-capped chickadee perched on a branch showing black cap and white cheek" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
+              <div style={{ padding: '0.9rem 1rem 1rem', flex: 1 }}>
+                <h3 style={{ margin: '0 0 0.4rem', fontSize: '1rem' }}>Black-capped Chickadee</h3>
+                <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Each winter night, she burns through 10% of her body fat just surviving until sunrise. Native berries are what gets her there.</p>
+              </div>
+            </div>
+
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+            <button className="hero__cta" onClick={() => onNavigate('species-gallery')}>
+              Meet all 35 neighbors →
+            </button>
+          </div>
+        </section>
+
 
         {/* RIGHT NOW — what to do this week. Answers "what do I do this month?" */}
         <div className="right-now-panel" style={{ marginTop: '2.5rem' }}>
