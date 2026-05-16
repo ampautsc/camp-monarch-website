@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import { trackEvent } from '../lib/analytics'
+import type { Page } from '../App'
 
 interface PlantsProps {
-  onNavigate: (page: any) => void
+  onNavigate: (page: Page) => void
 }
 
 export default function Plants({ onNavigate }: PlantsProps) {
@@ -10,16 +11,31 @@ export default function Plants({ onNavigate }: PlantsProps) {
     trackEvent('page_view', 'plants')
   }, [])
 
-  const modules = [
+  const modules: Array<{ id: Page; title: string; description: string }> = [
     {
-      id: 'plants-getting-started',
-      title: 'Start Here',
-      description: 'What plants have to do with monarchs, and where to begin.',
+      id: 'plants-finder',
+      title: 'Plant Finder',
+      description: 'Search and filter 350+ native plants by sun, moisture, soil, bloom, and wildlife support.',
     },
     {
-      id: 'plants-host-plants',
-      title: 'Host Plants 101',
-      description: 'Milkweed is what monarch caterpillars eat. Nothing else works.',
+      id: 'plants-by-family',
+      title: 'By Family',
+      description: 'Browse plant families such as milkweeds, asters, mints, and grasses.',
+    },
+    {
+      id: 'plants-by-purpose',
+      title: 'By Purpose',
+      description: 'Pick plants by goals: monarch habitat, pollinators, birds, soil health, or low-maintenance yards.',
+    },
+    {
+      id: 'plants-by-conditions',
+      title: 'By Conditions',
+      description: 'Start with your yard conditions to choose plants that will actually thrive.',
+    },
+    {
+      id: 'plants-milkweeds',
+      title: 'Milkweeds',
+      description: 'The essential host plants monarch caterpillars need to survive.',
     },
     {
       id: 'plants-bloom-calendar',
@@ -27,14 +43,14 @@ export default function Plants({ onNavigate }: PlantsProps) {
       description: 'Timing matters. Monarchs need food when they migrate through.',
     },
     {
-      id: 'plants-communities',
-      title: 'Plant Communities',
-      description: 'Plants that grow together support more wildlife than plants alone.',
+      id: 'plants-starter-plants',
+      title: 'Starter Plants',
+      description: 'A practical top list to start habitat fast without overwhelm.',
     },
     {
-      id: 'plants-common-mistakes',
-      title: 'Common Mistakes',
-      description: 'What people get wrong when planting for monarchs, and how to avoid it.',
+      id: 'plants-species-index',
+      title: 'Full Species Index',
+      description: 'A searchable A–Z index of every plant in the Camp Monarch database.',
     },
   ]
 
@@ -49,7 +65,7 @@ export default function Plants({ onNavigate }: PlantsProps) {
       </header>
 
       <section className="learning-path">
-        <h2>Learn</h2>
+        <h2>Browse Plants</h2>
         <div className="module-grid">
           {modules.map((module) => (
             <button
@@ -65,13 +81,12 @@ export default function Plants({ onNavigate }: PlantsProps) {
       </section>
 
       <section className="plant-library-teaser">
-        <h2>Browse All Plants</h2>
+        <h2>Not Sure Where To Start?</h2>
         <p>
-          Find native plants for your yard. Filter by sun, moisture, soil type, bloom time, and
-          what wildlife they support.
+          Start with Plant Finder, then narrow by family, purpose, or site conditions.
         </p>
-        <button onClick={() => onNavigate('plants-library')} className="btn btn-primary">
-          Open Plant Library
+        <button onClick={() => onNavigate('plants-finder')} className="btn btn-primary">
+          Open Plant Finder
         </button>
       </section>
 

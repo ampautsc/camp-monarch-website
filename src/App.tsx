@@ -33,6 +33,13 @@ import PlantsBloomCalendar from './pages/PlantsBloomCalendar'
 import PlantCommunities from './pages/PlantCommunities'
 import PlantCommonMistakes from './pages/PlantCommonMistakes'
 import PlantsLibrary from './pages/PlantsLibrary'
+import PlantsFinder from './pages/PlantsFinder'
+import PlantsByFamily from './pages/PlantsByFamily'
+import PlantsByPurpose from './pages/PlantsByPurpose'
+import PlantsByConditions from './pages/PlantsByConditions'
+import PlantsMilkweeds from './pages/PlantsMilkweeds'
+import PlantsStarterPlants from './pages/PlantsStarterPlants'
+import PlantsSpeciesIndex from './pages/PlantsSpeciesIndex'
 import BlackCappedChickadee from './pages/BlackCappedChickadee'
 import RubyThroatedHummingbird from './pages/RubyThroatedHummingbird'
 import AmericanGoldfinch from './pages/AmericanGoldfinch'
@@ -125,6 +132,13 @@ function App() {
       case 'northern-cardinal':   return <NorthernCardinal onNavigate={navigateTo} />
       case 'eastern-bluebird':    return <EasternBluebird onNavigate={navigateTo} />
       case 'plants':              return <Plants onNavigate={navigateTo} />
+      case 'plants-finder':       return <PlantsFinder onNavigate={navigateTo} />
+      case 'plants-by-family':    return <PlantsByFamily onNavigate={navigateTo} />
+      case 'plants-by-purpose':   return <PlantsByPurpose onNavigate={navigateTo} />
+      case 'plants-by-conditions': return <PlantsByConditions onNavigate={navigateTo} />
+      case 'plants-milkweeds':    return <PlantsMilkweeds onNavigate={navigateTo} />
+      case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo} />
+      case 'plants-species-index': return <PlantsSpeciesIndex onNavigate={navigateTo} />
       case 'plants-getting-started': return <PlantsGettingStarted onNavigate={navigateTo} />
       case 'plants-host-plants':  return <PlantsHostPlants onNavigate={navigateTo} />
       case 'plants-bloom-calendar': return <PlantsBloomCalendar onNavigate={navigateTo} />

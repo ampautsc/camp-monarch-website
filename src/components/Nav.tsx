@@ -28,13 +28,30 @@ const groups: NavGroup[] = [
     id: 'plants',
     label: 'Plants & Wildflowers',
     page: 'plants',
-    children: [
-      { id: 'plants-getting-started', label: 'Start Here' },
-      { id: 'plants-host-plants',     label: 'Host Plants 101' },
-      { id: 'plants-bloom-calendar',  label: 'Bloom Calendar' },
-      { id: 'plants-communities',     label: 'Plant Communities' },
-      { id: 'plants-common-mistakes', label: 'Common Mistakes' },
-      { id: 'plants-library',         label: 'Plant Library' },
+    featuredItem: { id: 'plants-finder', label: 'Plant Finder (350+ Plants)' },
+    sections: [
+      {
+        label: 'Browse',
+        items: [
+          { id: 'plants-by-family',      label: 'By Family' },
+          { id: 'plants-by-conditions',  label: 'By Conditions' },
+          { id: 'plants-species-index',  label: 'Full Species Index' },
+        ],
+      },
+      {
+        label: 'Plan Your Yard',
+        items: [
+          { id: 'plants-by-purpose',     label: 'By Purpose' },
+          { id: 'plants-starter-plants', label: 'Starter Plants (Top 25)' },
+          { id: 'plants-bloom-calendar', label: 'Bloom Calendar' },
+        ],
+      },
+      {
+        label: 'Key Groups',
+        items: [
+          { id: 'plants-milkweeds',      label: 'Milkweeds' },
+        ],
+      },
     ],
   },
   {
