@@ -7,6 +7,22 @@ interface GrayTreeFrogsProps {
 export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Gray Tree Frog clinging to a rain-wet window with adhesive toe pads, camouflage skin matching bark texture"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Randidawn · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: Randidawn&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Gray Tree Frogs</h1>
@@ -17,6 +33,8 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
           silenced them — the same pesticide-free conditions monarchs need to survive.
         </p>
       </section>
+
+      
 
       <div className="page">
         <section aria-labelledby="indicator-heading">
@@ -48,6 +66,18 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
             at close range. The bright yellow-orange flash of color on their inner thighs,
             visible only when they leap, is thought to startle predators mid-flight.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Gray_tree_frog.jpg"
+                  alt="Gray Tree Frog clinging to a branch, showing the bright yellow-orange coloring on the inner thighs — a flash display used to startle predators"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The gray tree frog hides its brightest colors on the inside of its thighs, invisible at rest. When threatened, it flashes those vivid patches as it leaps — a brief burst of yellow-orange that startles the predator and allows escape. A yard that can't hold standing water through June has no frogs calling in July.
+                  <span className="photo-credit"> Photo: Robert A. Coggeshall · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             They are also freeze-tolerant in a way almost no other vertebrate is.
             In autumn, they produce glycerol as a cryoprotectant, allowing ice to form in
@@ -77,6 +107,14 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that bring Gray Tree Frogs back</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow stone water feature in a garden" loading="lazy" />
+            <figcaption>
+              Gray tree frogs breed in any standing fresh water — a garden pond, a rain barrel, even a large container. A single season of breeding success in a yard-scale water feature can produce hundreds of juveniles that disperse into the surrounding neighborhood.
+              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Add a small fishless water feature.</strong>{' '}

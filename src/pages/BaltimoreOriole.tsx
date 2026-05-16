@@ -7,6 +7,22 @@ interface BaltimoreOrioleProps {
 export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Baltimore_Oriole-_dorsum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male Baltimore Oriole, vivid flame-orange and black plumage, hanging from a native tree branch"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: TonyCastro · <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Oriole-_dorsum.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: TonyCastro&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Oriole-_dorsum.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Baltimore Oriole</h1>
@@ -20,6 +36,8 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
           it will keep moving.
         </p>
       </section>
+
+      
 
       <div className="page">
         <section aria-labelledby="indicator-heading">
@@ -62,6 +80,18 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
             (<em>Ulmus americana</em>) were ideal for this — long, flexible, providing
             exactly the branch architecture the nest requires.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Baltimore_oriole_nest_%2864055%29.jpg"
+                  alt="Baltimore Oriole pendant nest — a woven fiber pouch suspended from a drooping branch tip, four to five inches deep"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The pendant nest is engineered over several days by the female alone — plant fibers, bark strips, and grapevine strands woven into a hanging pouch that stretches as nestlings grow. The drooping tips of American elms provided ideal anchors for this architecture. Dutch elm disease removed those anchors from most suburbs in a single generation.
+                  <span className="photo-credit"> Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Baltimore_oriole_nest_(64055).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Dutch elm disease eliminated an estimated 100 million American elms from eastern
             North America between 1950 and 2000. The oriole&apos;s preferred nest tree
@@ -101,6 +131,14 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that bring Baltimore Orioles back</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Garden bird bath with stone basin" loading="lazy" />
+            <figcaption>
+              Orioles seek water as reliably as food during migration. A clean, shallow basin at or below eye level — refilled every few days — is the most immediate thing a yard can offer a bird passing through on a 2,000-mile journey.
+              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Set out grape jelly and orange halves by the first week of May.</strong>{' '}

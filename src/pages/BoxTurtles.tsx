@@ -6,6 +6,22 @@ interface BoxTurtlesProps {}
 export default function BoxTurtles({}: BoxTurtlesProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Eastern Box Turtle on forest floor showing high-domed shell with orange and yellow patterning on dark background"
+          className="species-hero-image"
+          style={{ objectPosition: 'center center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: (c) Joshua Liverman, some rights reserved (CC BY) · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> via Wikimedia Commons */}
+          Photo: (c) Joshua Liverman, some rights reserved (CC BY)&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Box turtles</h1>
@@ -17,6 +33,8 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
           trying to get home.
         </p>
       </section>
+
+      
 
       <div className="page">
         <section aria-labelledby="bt-life-heading">
@@ -43,6 +61,14 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that protect box turtles</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground" loading="lazy" />
+            <figcaption>
+              Box turtles overwinter beneath leaf litter, emerging in spring only when soil temperatures hold. A leaf pile left in a corner all winter is not yard neglect — it is the thermal insulation an animal with no other option depends on.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Drive slowly on country roads in May and June.</strong>{' '}
@@ -71,6 +97,18 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
             When box turtles disappear from a neighborhood, it usually means the landscape fragmented
             before anyone was paying attention.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Eastern_Box_Turtle_8679.jpg"
+                  alt="Eastern Box Turtle on the forest floor, high-domed shell and hinged plastron visible"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The box turtle's hinged lower shell can seal so completely that a blade of grass cannot be inserted between the two halves. This defense evolved against biting predators over 200 million years. It offers zero protection against a lawn mower traveling at three miles per hour.
+                  <span className="photo-credit"> Photo: Jarek Tuszyński · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle_8679.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Their slow reproduction means that even a recovering habitat takes 20 to 30 years
             to show up as a stable population. The best thing most people can do

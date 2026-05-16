@@ -7,6 +7,22 @@ interface DownyWoodpeckerProps {
 export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dryobates_pubescens_UL_03.jpg/960px-Dryobates_pubescens_UL_03.jpg"
+          alt="Downy Woodpecker clinging to a dead tree snag, probing bark with chisel bill to extract beetle larvae"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Dryobates_pubescens_UL_03.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: Cephas&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Dryobates_pubescens_UL_03.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Downy Woodpecker</h1>
@@ -55,6 +71,18 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
             and do not migrate. The one you see in January is the same individual that nested
             in your neighborhood last spring.
           </p>
+              <figure className="species-content-photo">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Downy_Woodpecker.jpg"
+                  alt="Downy Woodpecker clinging to a dead branch, foraging for insects hidden beneath the bark"
+                  loading="lazy"
+                />
+                <figcaption>
+                  A Downy Woodpecker working a dead branch is listening for beetle larvae moving inside the wood. It drills precisely where the vibration originates and extracts the larva with a barbed tongue longer than its bill. Dead trees removed from the yard remove both the food source and the cavity-nesting site the next generation will need.
+                  <span className="photo-credit"> Photo: Ltshears · <a href="https://commons.wikimedia.org/wiki/File:Downy_Woodpecker.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             They drum — rapid mechanical strikes on resonant dead wood or hollow branches —
             to defend territory and attract mates. Drumming is not foraging: it is
@@ -74,6 +102,14 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that bring Downy Woodpeckers back</h2>
+
+          <figure className="species-content-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Snag_at_the_Wildlife_Garden_%2842263673541%29.jpg" alt="Standing dead tree in a garden with exposed dead wood" loading="lazy" />
+            <figcaption>
+              Downy woodpeckers excavate cavities in standing dead wood, and then often abandon those cavities to smaller birds. One snag left upright can function as a nursery column — providing first a woodpecker nest, then a chickadee nest, then a screech-owl roost, across years.
+              <span className="photo-credit"> Photo: Ross Dunn&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Leave dead branches standing on otherwise healthy trees.</strong>{' '}

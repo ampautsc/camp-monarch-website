@@ -7,6 +7,22 @@ interface EasternBluebirdProps {
 export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male Eastern Bluebird with sky-blue back and rust-orange breast perched on a wooden nest box in a pesticide-free meadow"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Sandysphotos2009 · <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
+          Photo: Sandysphotos2009&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Eastern Bluebird</h1>
@@ -23,6 +39,8 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
           a condition they were promised.
         </p>
       </section>
+
+      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
@@ -68,6 +86,18 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
             and pesticide use eliminated the insect populations that nestlings depend on
             for protein during the first weeks of life.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/47/Eastern_bluebird_at_nest_box.jpg"
+                  alt="Eastern Bluebird male perched at the entrance hole of a nest box, about to enter with food for nestlings"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Bluebirds lost most of their natural tree-hole nesting sites to European Starlings after 1890. The nest box trail programs of the 1970s reversed the population collapse — bluebirds went from regional rarity to common within two decades. The box is not decoration. It is a replacement for the dead trees we removed.
+                  <span className="photo-credit"> Photo: William H. Majoros · <a href="https://commons.wikimedia.org/wiki/File:Eastern_bluebird_at_nest_box.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             The recovery since the 1970s is one of conservation&apos;s genuine success
             stories — and it was built almost entirely by volunteers putting up and monitoring
@@ -100,6 +130,14 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>How to bring bluebirds back to your yard</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Male_and_Female_Eastern_Bluebirds_at_a_nesting_box.jpg" alt="Male and female Eastern Bluebirds perched at a mounted nest box" loading="lazy" />
+            <figcaption>
+              A bluebird box mounted on a smooth metal pole — with a predator baffle — is one of the highest-return wildlife investments available to a suburban yard. Bluebirds claim nest boxes quickly when open habitat exists nearby. This pair is already evaluating theirs.
+              <span className="photo-credit"> Photo: Wcedmisten&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Install a nest box with the correct dimensions.</strong>{' '}

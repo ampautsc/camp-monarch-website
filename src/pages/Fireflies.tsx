@@ -7,6 +7,22 @@ interface FirefliesProps {
 export default function Fireflies({ onNavigate }: FirefliesProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/52/Photuris_lucicrescens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Firefly resting on a leaf at dusk, bioluminescent lantern organ visible on abdomen — threatened by lawn chemicals and light pollution"
+          className="species-hero-image"
+          style={{ objectPosition: 'center center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Bruce Marlin · <a href="https://commons.wikimedia.org/wiki/File:Photuris_lucicrescens.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons */}
+          Photo: Bruce Marlin&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Photuris_lucicrescens.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Fireflies</h1>
@@ -16,6 +32,8 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
           Modern yards provide neither. If you stopped seeing fireflies, the yard changed before the fireflies did.
         </p>
       </section>
+
+      
 
       <div className="page">
         <section aria-labelledby="flash-heading">
@@ -38,6 +56,14 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three things that bring fireflies back</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering garden ground" loading="lazy" />
+            <figcaption>
+              Firefly larvae overwinter as predators in moist leaf litter and loose soil. The gesture of leaving an unraked layer — even in just one corner of the yard — provides the thermal and moisture conditions that make the following summer's display possible.
+              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Turn outdoor lights off after 10pm in June and July.</strong>{' '}
@@ -69,6 +95,18 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
             removes two years of breeding output. Recovery from population collapse takes a decade
             even when conditions improve.
           </p>
+          <figure className="species-content-photo" style={{ margin: '1rem 0 2rem' }}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/81/Photinus_pyralis_Firefly_2.jpg"
+              alt="Photinus pyralis firefly resting on a leaf — the most common backyard species in eastern North America"
+              loading="lazy"
+            />
+            <figcaption>
+              The flashing adult firefly is the brief, visible moment in a two-year life. The larva lives in leaf litter and moist soil for one to two years, hunting snails, slugs, and earthworms. Raking leaves in autumn and treating lawns with pesticides destroys the stage that accounts for 95% of a firefly's life.
+              <span className="photo-credit"> Photo: art farmer · <a href="https://commons.wikimedia.org/wiki/File:Photinus_pyralis_Firefly_2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
+
           <p>
             They are most sensitive to three things: light pollution, lawn pesticides,
             and the removal of leaf litter. All three are decisions made inside the property line.

@@ -7,6 +7,22 @@ interface NativeBeesProps {
 export default function NativeBees({ onNavigate }: NativeBeesProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Native bumblebee covered in pollen foraging on a purple coneflower — one of 4,000 native bee species that existed before the honeybee arrived in North America"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Ivar Leidus · <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: Ivar Leidus&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Native bees</h1>
@@ -18,6 +34,8 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
         </p>
       </section>
 
+      
+
       <div className="page">
         <section aria-labelledby="nb-who-heading">
           <h2 id="nb-who-heading">Who is out there</h2>
@@ -28,6 +46,18 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
             A two-inch layer of mulch — standard in most maintained gardens — destroys these nesting sites
             as completely as paving them over.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Xylocopa_virginica.jpg"
+                  alt="Eastern Carpenter Bee hovering near a wooden structure — this species bores nest tunnels in soft wood, not paper or hives"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The Eastern Carpenter Bee is not a honeybee — it lives alone, bores nest galleries in soft wood, and raises a small brood without workers or a queen. Seventy percent of North America's 4,000 native bee species are solitary ground-nesters or wood-nesters. A yard covered entirely in turf or landscape fabric provides no habitat for the majority of native pollinators.
+                  <span className="photo-credit"> Photo: Polinizador · <a href="https://commons.wikimedia.org/wiki/File:Xylocopa_virginica.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Many native bees are specialists. A sweat bee that evolved to collect goldenrod pollen
             cannot raise its young on coneflower pollen. When a plant species disappears from a neighborhood,
@@ -44,6 +74,14 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Three changes that open your yard to native bees</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed flowers providing nectar resources" loading="lazy" />
+            <figcaption>
+              Native milkweeds provide pollen and nectar on a schedule that aligns with native bee emergence — weeks ahead of most garden imports. A single native milkweed patch can support dozens of solitary bee species that non-native ornamentals never attract.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Leave one unmulched, sunny patch of ground.</strong>{' '}

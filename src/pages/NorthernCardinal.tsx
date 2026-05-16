@@ -7,6 +7,22 @@ interface NorthernCardinalProps {
 export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Male Northern Cardinal in brilliant red plumage at a snow-dusted native shrub, crested head turned to look directly at viewer"
+          className="species-hero-image"
+          style={{ objectPosition: 'top center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Male_northern_cardinal_in_Central_Park_(52612).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          Photo: Rhododendrites&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Male_northern_cardinal_in_Central_Park_(52612).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Northern Cardinal</h1>
@@ -19,6 +35,8 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
           your landscape has what his family actually needs.
         </p>
       </section>
+
+      
 
       <div className="page">
         <section aria-labelledby="familiar-heading">
@@ -55,6 +73,18 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
             systemic insecticides may attempt to nest repeatedly and raise few young, because
             the insects that nestlings require are gone.
           </p>
+              <figure className="species-content-photo species-content-photo--right">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/Northern_Cardinal_Pair-27527.jpg"
+                  alt="Male and female Northern Cardinals together — brilliant red male and warm brown female, showing the pair bond that persists through the breeding season"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Cardinal pairs remain bonded through the breeding season — sometimes year-round. During courtship, the male feeds the female beak-to-beak, a behavior that evaluates both his foraging ability and his commitment. A yard without dense native shrubs for nesting privacy disrupts the sequence that follows.
+                  <span className="photo-credit"> Photo: Ken Thomas · <a href="https://commons.wikimedia.org/wiki/File:Northern_Cardinal_Pair-27527.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                </figcaption>
+              </figure>
+
           <p>
             Neonicotinoid pesticides — the most widely used insecticides in North America —
             are taken up systemically by plants and persist in plant tissue, pollen, and
@@ -125,6 +155,14 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that help cardinals breed, not just visit</h2>
+
+          <figure className="species-content-photo species-content-photo--left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native wildflowers providing seeds and structure in a yard" loading="lazy" />
+            <figcaption>
+              Cardinals forage at ground level through native plant structure — picking seeds, gleaning insects from stems, and nesting low in dense shrubs. A native planting that looks informal by conventional standards is precisely the habitat structure they require.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
           <ol className="step-list">
             <li>
               <strong>Add a sunflower or safflower feeder and keep it full through winter.</strong>{' '}

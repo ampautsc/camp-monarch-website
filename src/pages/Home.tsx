@@ -14,6 +14,8 @@ const CARD_PHOTOS = {
   trackMigration: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Monarchs_overwintering_Angangueo_site_in_Mexico.jpg',
 }
 
+const HERO_PHOTO_URL = 'https://upload.wikimedia.org/wikipedia/commons/2/23/Angangueo_monarchs.jpg'
+
 // Seasonal right-now content — 2 items max on homepage (bta-004, bta-005)
 type SeasonalItem = { label: string; detail: string }
 type SeasonalContent = { header: string; items: [SeasonalItem, SeasonalItem] }
@@ -132,12 +134,12 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <>
       {/* HOOK — wonder first, then stakes. No explanation yet. (arch-page-as-argument-001) */}
-      <section className="hero">
+      <section className="hero" style={{ background: `linear-gradient(rgba(26,46,26,0.82), rgba(26,46,26,0.82)), url('${HERO_PHOTO_URL}') center/cover no-repeat` }}>
         <div className="hero__eyebrow">Camp Monarch</div>
-        <h1>Monarchs are disappearing.<br />You can change that.</h1>
+        <h1>Monarchs are disappearing.<br />You can help.</h1>
         <p className="hero__lead">
-          In the 1990s, more than a billion monarchs reached Mexico each fall.<br />
-          Last winter, 60 million did.<sup><a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
+          In the 1990s, hundreds of millions of monarchs reached Mexico each fall.<sup><a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer" className="cite">[1]</a></sup><br />
+          Last winter, about 60 million did.<sup><a href="https://xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
         </p>
       </section>
 
@@ -145,35 +147,37 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
-          <h2 id="lever-heading">Monarch caterpillars eat only milkweed, and it's disappearing. You can help bring it back.</h2>
+          <h2 id="lever-heading">Monarch caterpillars can only eat milkweed, and it has vanished from many fields and roadsides. You can plant it at home.</h2>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
-            Since 1990, an estimated 850 million stems have been lost to expanding agriculture and development.<sup><a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
+            Between 1999 and 2010, an estimated 850 million stems were lost to expanding agriculture and development.<sup><a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer" className="cite">[3]</a></sup>
             The monarchs followed.
           </p>
           <p>
             One patch in a sunny yard supports dozens of caterpillars through a summer.
             Dozens of milkweed species are native to different regions of the US.
           </p>
-          <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
-            Find Your Milkweed Species
-          </button>
-          <button
-            onClick={() => onNavigate('monarch-life')}
-            style={{
-              background: 'none',
-              border: 'none',
-              color: 'var(--monarch-orange)',
-              padding: 0,
-              cursor: 'pointer',
-              fontFamily: 'inherit',
-              fontSize: '0.95rem',
-              fontWeight: 'bold',
-              textDecoration: 'underline',
-            }}
-          >
-            Learn more about Monarch Butterflies →
-          </button>
+          <div style={{ marginTop: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1.25rem' }}>
+            <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
+              Find Your Milkweed Species
+            </button>
+            <button
+              onClick={() => onNavigate('monarch-life')}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: 'var(--monarch-green)',
+                padding: 0,
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+                fontSize: '0.95rem',
+                fontWeight: 'bold',
+                textDecoration: 'underline',
+              }}
+            >
+              Learn more about Monarch Butterflies →
+            </button>
+          </div>
         </section>
 
         {/* THE ASK — one primary action, specifically named. Answers "how do I start?" */}
@@ -206,7 +210,7 @@ export default function Home({ onNavigate }: HomeProps) {
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Log a sighting</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                Every observation on iNaturalist becomes open data for migration researchers. 60 seconds.
+                Each sighting goes directly to migration researchers tracking which corridors the population is still using. Takes 60 seconds — snap a photo and submit.
               </p>
               <button
                 className="hero__cta"
@@ -270,15 +274,46 @@ export default function Home({ onNavigate }: HomeProps) {
             ))}
           </ul>
         </div>
+                        {/* iNaturalist Monarch count widget — start */}
+        <div
+          className="action-panel"
+          style={{
+            marginTop: '2rem',
+            background: 'linear-gradient(135deg, rgba(255, 247, 237, 0.95) 0%, rgba(255, 251, 235, 0.95) 100%)',
+            border: '1px solid rgba(249, 115, 22, 0.24)',
+          }}
+        >
+          <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
+          <p style={{ color: 'var(--text-primary)' }}>
+            <strong style={{ color: 'var(--monarch-orange)' }}>1,218 Monarch sightings</strong>{' '}
+            have been logged on iNaturalist in the United States this month.
+            Each sighting becomes open data that researchers can use to track the migration.
+          </p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '1rem' }}>
+            Updated May 15, 2026 · current count covers observations since 2026-05-01.
+          </p>
+          <a
+            href="https://www.inaturalist.org/observations?month=5&place_id=1&taxon_id=48662&d1=2026-05-01"
+            target="_blank"
+            rel="noreferrer"
+            className="hero__cta"
+            style={{ display: 'inline-block' }}
+          >
+            See this month's sightings on iNaturalist →
+          </a>
+        </div>
+        {/* iNaturalist Monarch count widget — end */}
 
         {/* Citation list */}
         <section className="cite-list" aria-label="Sources">
-          <p>[1] Xerces Society. <a href="https://xerces.org/monarchs" target="_blank" rel="noreferrer">Monarch Butterfly Conservation.</a> Accessed {monthName} {year}.</p>
-          <p>[2] Monarch Joint Venture. <a href="https://monarchjointventure.org/mjvprograms/science/overwintering-population-monitoring" target="_blank" rel="noreferrer">Overwintering Population Monitoring.</a> Accessed {monthName} {year}.</p>
+          <p>[1] Xerces Society. <a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer">Eastern Monarch Conservation.</a> Accessed {monthName} {year}.</p>
+          <p>[2] Xerces Society / WWF-Mexico. <a href="https://xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noreferrer">Eastern Monarch Butterfly Numbers Increase, but Remain Below Historic Levels.</a> March 17, 2026.</p>
+          <p>[3] Pleasants JM, Oberhauser KS. Milkweed loss in agricultural fields because of herbicide use: effect on the monarch butterfly population. <a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer">Insect Conservation and Diversity 6(2):135–144.</a> 2013.</p>
           <p style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-            Photos: Wikimedia Commons (CC BY-SA).
+            Photos: Wikimedia Commons.
             <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noreferrer">Butterfly weed</a>.
             <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noreferrer">Caterpillar</a>.
+            Hero photo: <a href="https://commons.wikimedia.org/wiki/File:Angangueo_monarchs.jpg" target="_blank" rel="noreferrer">Angangueo monarchs</a> (Bfpage, CC BY 3.0).
           </p>
         </section>
 

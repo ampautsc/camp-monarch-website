@@ -9,10 +9,10 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
     <>
       <section className="hero">
         <div className="hero__eyebrow">Why It Matters</div>
-        <h1>Monarchs are down 94%.<br />They are not alone.</h1>
+        <h1>Monarchs are down more than 80%.<br />They are not alone.</h1>
         <p className="hero__lead">
           Since 1970, Earth's wildlife populations have declined 69% on average.
-          Monarchs lost 94% of their eastern population in the same period.
+          Monarchs lost more than 80% of their eastern population in the same period.
           They are not a special case. They are a legible signal from a larger collapse
           that is happening too gradually for most people to see.
         </p>
@@ -27,21 +27,21 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
               <div className="fact-card__label">Average wildlife decline since 1970 (WWF Living Planet Report)</div>
             </div>
             <div className="fact-card">
-              <div className="fact-card__number">94%</div>
-              <div className="fact-card__label">Eastern monarch decline since 1996 (USFWS)</div>
+              <div className="fact-card__number">&gt;80%</div>
+              <div className="fact-card__label">Eastern monarch decline since the 1990s (Xerces Society)</div>
             </div>
             <div className="fact-card">
-              <div className="fact-card__number">165M</div>
-              <div className="fact-card__label">Acres of monarch habitat lost since 1992 (USDA)</div>
+              <div className="fact-card__number">850M</div>
+              <div className="fact-card__label">Milkweed stems lost from Midwest farm fields, 1999–2010 (Pleasants &amp; Oberhauser, 2013)</div>
             </div>
           </div>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
             Sources:{' '}
-            <a href="https://www.worldwildlife.org/pages/living-planet-report-2022" target="_blank" rel="noreferrer">WWF Living Planet Report 2022</a>
+            <a href="https://www.worldwildlife.org/publications/living-planet-report-2022" target="_blank" rel="noreferrer">WWF Living Planet Report 2022</a>
             {' · '}
-            <a href="https://www.fws.gov/species/monarch-butterfly-danaus-plexippus" target="_blank" rel="noreferrer">US Fish & Wildlife Service</a>
+            <a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer">Xerces Society</a>
             {' · '}
-            <a href="https://monarchjointventure.org/mjvprograms/habitat/milkweed" target="_blank" rel="noreferrer">Monarch Joint Venture</a>
+            <a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer">Pleasants &amp; Oberhauser, 2013</a>
           </p>
         </section>
 
@@ -56,16 +56,16 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
           <p>
             The cause is milkweed loss. Herbicide-tolerant crop varieties introduced in the late 1990s
             allowed broad field spraying that eliminated the milkweed growing at field edges for generations.
-            Between 1999 and 2010, an estimated 850 million milkweed stems disappeared from the Midwest alone.
+            Between 1999 and 2010, an estimated 850 million milkweed stems disappeared from the Midwest alone.<sup><a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer" className="cite">[1]</a></sup>
             Monarchs cannot reproduce without milkweed. The math is direct.
           </p>
           <p>
             Milkweed also supports{' '}
-            <a href="https://www.fs.usda.gov/wildflowers/pollinators/Monarch_Butterfly/index.shtml" target="_blank" rel="noreferrer">
-              457 other native insect species
+<a href="https://xerces.org/milkweed" target="_blank" rel="noreferrer">
+              hundreds of other native insect species
             </a>{' '}
             beyond monarchs. The same habitat loss collapsing monarch numbers is reducing native bee populations,
-            ground-nesting bird food supplies, and the pollination services that 35% of the US food supply depends on.
+            ground-nesting bird food supplies, and the pollination services that about 35% of the world's food crops depend on.<sup><a href="https://www.usda.gov/peoples-garden/pollinators" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
             Monarchs are easy to care about. That is why they are useful: as a proxy for everything harder to count.
           </p>
         </section>
@@ -128,6 +128,13 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
           </button>
         </div>
       </div>
+
+        {/* Citation list */}
+        <section className="cite-list" aria-label="Sources">
+          <p>[1] Pleasants JM, Oberhauser KS. Milkweed loss in agricultural fields because of herbicide use: effect on the monarch butterfly population. <a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer">Insect Conservation and Diversity 6(2):135–144.</a> 2013.</p>
+          <p>[2] USDA People's Garden. <a href="https://www.usda.gov/peoples-garden/pollinators" target="_blank" rel="noreferrer">The Importance of Pollinators.</a> Accessed 2026.</p>
+        </section>
+
     </>
   )
 }

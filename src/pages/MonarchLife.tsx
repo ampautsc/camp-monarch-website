@@ -7,6 +7,22 @@ interface MonarchLifeProps {
 export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
   return (
     <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Monarch_butterfly_US_migration.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          alt="Monarch Butterfly nectaring on native milkweed flower, showing vivid orange and black wing pattern — a species whose population has dropped 85%"
+          className="species-hero-image"
+          style={{ objectPosition: 'center center' }}
+          loading="eager"
+        />
+        <div className="species-hero-image-credit">
+          {/* Photo: MonarchWanderungKlein.gif: Harald Süpfle derivative work: B kimmel · <a href="https://commons.wikimedia.org/wiki/File:Monarch_butterfly_US_migration.png" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          Photo: MonarchWanderungKlein.gif: Harald Süpfle derivative work: B kimmel&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Monarch_butterfly_US_migration.png" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          &nbsp;via Wikimedia Commons
+        </div>
+      </div>
+
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>The monarch butterfly</h1>
@@ -18,10 +34,12 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
         </p>
       </section>
 
+      
+
       <div className="page">
         <section aria-labelledby="watch-heading">
           <h2 id="watch-heading">What to look for in your yard</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1rem', margin: '1rem 0' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem', margin: '1rem 0' }}>
             <div className="callout callout--green" style={{ margin: 0 }}>
               <h3 style={{ marginTop: 0, color: 'var(--monarch-green)' }}>Eggs (May-Aug)</h3>
               <p style={{ marginBottom: 0 }}>
@@ -47,6 +65,14 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
               </p>
             </div>
           </div>
+
+          <figure className="species-content-photo" style={{ maxWidth: '560px', margin: '1rem auto 1.5rem' }}>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Butterfly weed (Asclepias tuberosa) in full bloom" loading="lazy" />
+            <figcaption>
+              Butterfly weed — a native milkweed — thrives in poor soil, tolerates drought, and attracts monarchs reliably. It is the one plant whose presence in a yard has a direct, documented effect on whether the monarch migration continues to function.
+              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
         </section>
 
         <section aria-labelledby="diapause-heading">
@@ -58,6 +84,18 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
             Instead it stores fat, delays sexual maturity, and flies 3,000 miles
             to the oyamel fir forests of Michoacan, Mexico.
           </p>
+          <figure className="species-content-photo species-content-photo--right" style={{ width: '36%' }}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/97/Danaus_plexippus_emerging_from_chrysalis_04.jpg"
+              alt="Monarch butterfly emerging from its jade-green chrysalis — wings crumpled and soft, moments before their first unfurling"
+              loading="lazy"
+            />
+            <figcaption>
+              Inside the chrysalis, the caterpillar's tissues dissolve almost entirely — most of its cells break down into an undifferentiated biological broth. Imaginal cells dormant since the egg then organize that material into a butterfly. The monarch that emerges will navigate 2,500 miles to a Mexican mountain it has never visited, using a sun compass calibrated to time of day.
+              <span className="photo-credit"> Photo: Captain-tucker · <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_emerging_from_chrysalis_04.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
+
           <p>
             It overwinters there in clusters so dense that tree branches bend under the weight.
             In February it begins the return — and dies somewhere in Texas or northern Mexico,
