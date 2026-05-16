@@ -116,6 +116,7 @@ const groups: NavGroup[] = [
           { id: 'eastern-screech-owl',        label: 'Eastern Screech Owl' },
           { id: 'red-tailed-hawk',            label: 'Red-tailed Hawk' },
           { id: 'eastern-meadowlark',         label: 'Eastern Meadowlark' },
+          { id: 'american-kestrel',           label: 'American Kestrel' },
         ],
       },
     ],
