@@ -147,7 +147,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE LEVER — answers "can I do something?" One plant. Why it works. (arch-page-as-argument-001) */}
         <section aria-labelledby="lever-heading">
-          <h2 id="lever-heading">Monarch caterpillars can only eat milkweed, and it's been pushed out of too many places. You can plant it at home and help bring it back.</h2>
+          <h2 id="lever-heading">Monarch caterpillars can only eat milkweed, and it has vanished from many fields and roadsides. You can plant it at home.</h2>
           <p>
             A century ago, milkweed grew throughout Midwest cornfields, roadsides, and meadows.
             Between 1999 and 2010, an estimated 850 million stems were lost to expanding agriculture and development.<sup><a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer" className="cite">[3]</a></sup>
