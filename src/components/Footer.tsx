@@ -16,6 +16,13 @@ export default function Footer({ onNavigate }: FooterProps) {
         </button>
         {' · '}
         <button
+          onClick={() => onNavigate('habitat-score')}
+          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
+        >
+          Yard check
+        </button>
+        {' · '}
+        <button
           onClick={() => onNavigate('monarch-life')}
           style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
         >
