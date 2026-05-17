@@ -7,7 +7,7 @@ interface FooterProps {
 export default function Footer({ onNavigate }: FooterProps) {
   return (
     <footer className="site-footer">
-      <p>
+      <p style={{ lineHeight: '1.9' }}>
         <button
           onClick={() => onNavigate('take-action')}
           style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
