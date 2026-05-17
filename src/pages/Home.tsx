@@ -1,4 +1,4 @@
-﻿import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { Page } from '../App'
 
 interface HomeProps {
@@ -15,6 +15,19 @@ const CARD_PHOTOS = {
 }
 
 const HERO_PHOTO_URL = 'https://upload.wikimedia.org/wikipedia/commons/2/23/Angangueo_monarchs.jpg'
+
+const INAT_MONARCH_TAXON_ID = 48662
+const INAT_US_PLACE_ID = 1
+const FALLBACK_MONARCH_SIGHTINGS = 1466
+
+function monthStartIso(date: Date): string {
+  return new Date(Date.UTC(date.getFullYear(), date.getMonth(), 1)).toISOString().slice(0, 10)
+}
+
+function formatSightings(count: number): string {
+  return new Intl.NumberFormat('en-US').format(count)
+}
+
 // Neighbor species preview photos — Wikimedia Commons
 const NEIGHBOR_PHOTOS = {
   fireflies: 'https://upload.wikimedia.org/wikipedia/commons/5/52/Photuris_lucicrescens.jpg',
@@ -135,8 +148,38 @@ export default function Home({ onNavigate }: HomeProps) {
   const month = now.getMonth()
   const monthName = now.toLocaleString('en-US', { month: 'long' })
   const year = now.getFullYear()
+  const monthStart = useMemo(() => monthStartIso(now), [now])
+  const sightingsUrl = useMemo(
+    () => `https://www.inaturalist.org/observations?month=${month + 1}&place_id=${INAT_US_PLACE_ID}&taxon_id=${INAT_MONARCH_TAXON_ID}&d1=${monthStart}`,
+    [month, monthStart],
+  )
+  const [monarchSightings, setMonarchSightings] = useState(FALLBACK_MONARCH_SIGHTINGS)
+  const [hasLiveSightings, setHasLiveSightings] = useState(false)
 
   const seasonal = useMemo(() => getSeasonalContent(month), [month])
+
+  useEffect(() => {
+    let cancelled = false
+
+    fetch(`https://api.inaturalist.org/v1/observations?taxon_id=${INAT_MONARCH_TAXON_ID}&place_id=${INAT_US_PLACE_ID}&d1=${monthStart}&per_page=1`)
+      .then(response => {
+        if (!response.ok) throw new Error(`iNaturalist request failed: ${response.status}`)
+        return response.json() as Promise<{ total_results?: number }>
+      })
+      .then(data => {
+        if (!cancelled && typeof data.total_results === 'number') {
+          setMonarchSightings(data.total_results)
+          setHasLiveSightings(true)
+        }
+      })
+      .catch(() => {
+        // Keep the saved fallback count when the live request fails.
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [monthStart])
 
   return (
     <>
@@ -349,15 +392,17 @@ export default function Home({ onNavigate }: HomeProps) {
         >
           <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
           <p>
-            <strong style={{ color: 'var(--monarch-orange)' }}>1,420 Monarch sightings</strong>{' '}
+            <strong style={{ color: 'var(--monarch-orange)' }}>{formatSightings(monarchSightings)} Monarch sightings</strong>{' '}
             have been logged on iNaturalist in the United States this month.
             Each sighting becomes open data that researchers can use to track the migration.
           </p>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '1rem' }}>
-            Updated May 17, 2026 · current count covers observations since 2026-05-01.
+            {hasLiveSightings
+              ? `Live count for ${monthName} ${year}, refreshed when this page loads.`
+              : `Showing the latest saved count for ${monthName} ${year}; refreshes when live data is available.`}
           </p>
           <a
-            href="https://www.inaturalist.org/observations?month=5&place_id=1&taxon_id=48662&d1=2026-05-01"
+            href={sightingsUrl}
             target="_blank"
             rel="noreferrer"
             className="hero__cta"
