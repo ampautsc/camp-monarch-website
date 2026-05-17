@@ -121,10 +121,10 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
           </ol>
           <button
             className="hero__cta"
-            onClick={() => onNavigate('plant-milkweed')}
+            onClick={() => onNavigate('take-action')}
             style={{ marginTop: '0.5rem' }}
           >
-            Find Your Milkweed Species
+            Here’s what to do →
           </button>
         </div>
       </div>
