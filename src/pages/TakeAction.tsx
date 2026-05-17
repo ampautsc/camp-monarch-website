@@ -111,6 +111,9 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
         {/* Five actions — numbered, specific, low-friction (bta-004, www-001) */}
         <section aria-labelledby="actions-heading">
           <h2 id="actions-heading">Five things you can do this week</h2>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+            If you’re starting from scratch, begin with #1. One action this season is a real contribution.
+          </p>
           <ol className="step-list">
             {actions.map(a => (
               <li key={a.number}>
