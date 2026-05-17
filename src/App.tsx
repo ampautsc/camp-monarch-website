@@ -67,6 +67,7 @@ import RedTailedHawk from './pages/RedTailedHawk'
 import EasternMeadowlark from './pages/EasternMeadowlark'
 import AmericanKestrel from './pages/AmericanKestrel'
 import BrownThrasher from './pages/BrownThrasher'
+import EasternTowhee from './pages/EasternTowhee'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -174,6 +175,7 @@ function App() {
       case 'eastern-meadowlark': return <EasternMeadowlark onNavigate={navigateTo} />
       case 'american-kestrel': return <AmericanKestrel onNavigate={navigateTo} />
       case 'brown-thrasher': return <BrownThrasher onNavigate={navigateTo} />
+      case 'eastern-towhee': return <EasternTowhee onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
