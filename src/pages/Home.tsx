@@ -165,11 +165,11 @@ export default function Home({ onNavigate }: HomeProps) {
             Dozens of milkweed species are native to different regions of the US.
           </p>
           <div style={{ marginTop: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1.25rem' }}>
-            <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
-              Find Your Milkweed Species
+            <button className="hero__cta" onClick={() => onNavigate('take-action')}>
+              What you can do this week →
             </button>
             <button
-              onClick={() => onNavigate('monarch-life')}
+              onClick={() => onNavigate('why-monarchs')}
               style={{
                 background: 'none',
                 border: 'none',
@@ -182,7 +182,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 textDecoration: 'underline',
               }}
             >
-              Learn more about Monarch Butterflies →
+              Why it matters →
             </button>
           </div>
         </section>
