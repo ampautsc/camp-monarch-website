@@ -80,6 +80,7 @@ export const ALL_PAGE_SLUGS = [
   'red-tailed-hawk',
   'eastern-meadowlark',
   'american-kestrel',
+  'brown-thrasher',
   'seasonal-calendar',
   'species-gallery',
   'habitat-transformation',
