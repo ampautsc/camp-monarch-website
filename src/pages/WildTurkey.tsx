@@ -1,1 +1,287 @@
-aW1wb3J0IHR5cGUgeyBQYWdlIH0gZnJvbSAnLi4vQXBwJwoKaW50ZXJmYWNlIFdpbGRUdXJrZXlQcm9wcyB7CiAgb25OYXZpZ2F0ZTogKHBhZ2U6IFBhZ2UpID0+IHZvaWQKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gV2lsZFR1cmtleSh7IG9uTmF2aWdhdGUgfTogV2lsZFR1cmtleVByb3BzKSB7CiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGVjaWVzLWhlcm8taW1hZ2Utd3JhcCI+CiAgICAgICAgPGltZwogICAgICAgICAgc3JjPSJodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iLzUvNWUvTWVsZWFncmlzX2dhbGxvcGF2b18tTWFsYWJhcl9GYXJtX1N0YXRlX1BhcmslMkNfT2hpbyUyQ19VU0EtOC5qcGcvOTYwcHgtTWVsZWFncmlzX2dhbGxvcGF2b18tTWFsYWJhcl9GYXJtX1N0YXRlX1BhcmslMkNfT2hpbyUyQ19VU0EtOC5qcGciCiAgICAgICAgICBhbHQ9IkFkdWx0IHdpbGQgdHVya2V5IGhlbiB3YWxraW5nIHRocm91Z2ggYSB3b29kbGFuZCBlZGdlLCBzaG93aW5nIGJyb256ZS1icm93biBpcmlkZXNjZW50IHBsdW1hZ2UsIGJhcmUgYmx1ZS1ncmF5IGhlYWQsIGFuZCB0aGUgY2hhcmFjdGVyaXN0aWMgdXByaWdodCBwb3N0dXJlIG9mIGEgYmlyZCBtb3ZpbmcgdGhyb3VnaCBjb3ZlciIKICAgICAgICAgIGNsYXNzTmFtZT0ic3BlY2llcy1oZXJvLWltYWdlIgogICAgICAgICAgc3R5bGU9e3sgb2JqZWN0UG9zaXRpb246ICdjZW50ZXIgNDAlJyB9fQogICAgICAgICAgbG9hZGluZz0iZWFnZXIiCiAgICAgICAgICBvbkVycm9yPXtlID0+IHsKICAgICAgICAgICAgY29uc3QgaW1nID0gZS5jdXJyZW50VGFyZ2V0CiAgICAgICAgICAgIGltZy5zcmMgPSAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi8yLzI0L01hbGVfd2lsZF90dXJrZXlfLV9WaXJnaW5pYS5qcGcvOTYwcHgtTWFsZV93aWxkX3R1cmtleV8tX1ZpcmdpbmlhLmpwZycKICAgICAgICAgICAgaW1nLm9uZXJyb3IgPSBudWxsCiAgICAgICAgICB9fQogICAgICAgIC8+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwZWNpZXMtaGVyby1pbWFnZS1jcmVkaXQiPgogICAgICAgICAgUGhvdG86IFRpbSBMZW56Jm5ic3A7Jm1pZGRvdDsmbmJzcDtDQyBCWSAyLjAgdmlhIFdpa2ltZWRpYSBDb21tb25zCiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJoZXJvIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGVyb19fZXllYnJvdyI+TWVldCBZb3VyIE5laWdoYm9yczwvZGl2PgogICAgICAgIDxoMT5XaWxkIFR1cmtleTwvaDE+CiAgICAgICAgPHAgY2xhc3NOYW1lPSJoZXJvX19sZWFkIj4KICAgICAgICAgIFRoZSBiaXJkcyBjcm9zc2luZyB0aGUgeWFyZCBpbiBzaW5nbGUgZmlsZSwgc3RheWluZyBsb3cgaW4gdGhlIGVkZ2Ugc2hydWJzLCBhcmUgYSBoZW4KICAgICAgICAgIGFuZCBwb3VsdHMgZnJvbSBhIGNsdXRjaCB0aGF0IGhhdGNoZWQgd2l0aGluIHRoZSBsYXN0IHR3byB3ZWVrcy4gV2lsZCB0dXJrZXkgZWdncwogICAgICAgICAgaW5jdWJhdGUgZm9yIDI4IGRheXMuIFRoZSBlbnRpcmUgY2x1dGNoIG9mIDggdG8gMTIgZWdncyBoYXRjaGVzIHdpdGhpbiBhIDI0LWhvdXIKICAgICAgICAgIHdpbmRvdy4gVGhlIHBvdWx0cyBzdGFuZCBhbmQgZm9sbG93IHRoZSBoZW4gd2l0aGluIDEyIGhvdXJzIG9mIGhhdGNoaW5nLiBGb3IgdGhlIGZpcnN0CiAgICAgICAgICB0d28gd2Vla3MsIHRoZXkgZWF0IGFsbW9zdCBlbnRpcmVseSBpbnZlcnRlYnJhdGVzICZtZGFzaDsgY2F0ZXJwaWxsYXJzLCBiZWV0bGVzLAogICAgICAgICAgc3BpZGVycywgZmx5IGxhcnZhZS4gVGhlIGhlbiB3YWxrcyB0aGVtIHRvIHdoZXJlIHRoZSBmb29kIGlzLiBTaGUgZG9lcyBub3QgYnJpbmcgaXQuCiAgICAgICAgPC9wPgogICAgICAgIDxwIGNsYXNzTmFtZT0iaGVyb19fbGVhZCI+CiAgICAgICAgICA8ZW0+TWVsZWFncmlzIGdhbGxvcGF2bzwvZW0+IHdhcyBuZWFybHkgZWxpbWluYXRlZCBmcm9tIHRoZSBlYXN0ZXJuIFVuaXRlZCBTdGF0ZXMgYnkKICAgICAgICAgIHRoZSAxOTMwcywgcmVkdWNlZCB0byBzY2F0dGVyZWQgcG9wdWxhdGlvbnMgaW4gcmVtb3RlIGZvcmVzdGVkIGxhbmQuIFN0YXRlIHdpbGRsaWZlCiAgICAgICAgICBhZ2VuY2llcyBiZWdhbiByZXN0b2NraW5nIGluIHRoZSAxOTUwcyB1c2luZyBsaXZlLXRyYXBwZWQgd2lsZCBiaXJkcy4gVGhlIGZsb2NrIGluIGEKICAgICAgICAgIHN1YnVyYmFuIE9oaW8gb3IgVmlyZ2luaWEgeWFyZCB0b2RheSBkZXNjZW5kZWQgZnJvbSB0aGF0IHJlc3RvcmF0aW9uIHN0b2NrLgogICAgICAgIDwvcD4KICAgICAgPC9zZWN0aW9uPgoKICAgICAgPGRpdiBjbGFzc05hbWU9InBhZ2UiPgogICAgICAgIDxzZWN0aW9uIGFyaWEtbGFiZWxsZWRieT0ic2NyYXRjaC1oZWFkaW5nIj4KICAgICAgICAgIDxoMiBpZD0ic2NyYXRjaC1oZWFkaW5nIj5PbmUgZm9vdCBob2xkcywgb25lIGZvb3Qga2lja3M8L2gyPgogICAgICAgICAgPGZpZ3VyZSBjbGFzc05hbWU9InNwZWNpZXMtY29udGVudC1waG90byBzcGVjaWVzLWNvbnRlbnQtcGhvdG8tLXJpZ2h0Ij4KICAgICAgICAgICAgPGltZwogICAgICAgICAgICAgIHNyYz0iaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi8yLzI0L01hbGVfd2lsZF90dXJrZXlfLV9WaXJnaW5pYS5qcGcvOTYwcHgtTWFsZV93aWxkX3R1cmtleV8tX1ZpcmdpbmlhLmpwZyIKICAgICAgICAgICAgICBhbHQ9IldpbGQgdHVya2V5IGluIGEgd29vZGxhbmQgY2xlYXJpbmcsIGhlYWQgbG93ZXJlZCB0b3dhcmQgdGhlIGxlYWYgbGl0dGVyLCBpbiB0aGUgYWxlcnQgcG9zdHVyZSBiZXR3ZWVuIHNjcmF0Y2hpbmcgcGFzc2VzIgogICAgICAgICAgICAgIGxvYWRpbmc9ImxhenkiCiAgICAgICAgICAgICAgb25FcnJvcj17ZSA9PiB7CiAgICAgICAgICAgICAgICBjb25zdCBpbWcgPSBlLmN1cnJlbnRUYXJnZXQKICAgICAgICAgICAgICAgIGltZy5zcmMgPSAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi81LzVlL01lbGVhZ3Jpc19nYWxsb3Bhdm9fLU1hbGFiYXJfRmFybV9TdGF0ZV9QYXJrJTJDX09oaW8lMkNfVVNBLTguanBnLzQ4MHB4LU1lbGVhZ3Jpc19nYWxsb3Bhdm9fLU1hbGFiYXJfRmFybV9TdGF0ZV9QYXJrJTJDX09oaW8lMkNfVVNBLTguanBnJwogICAgICAgICAgICAgICAgaW1nLm9uZXJyb3IgPSBudWxsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgLz4KICAgICAgICAgICAgPGZpZ2NhcHRpb24+CiAgICAgICAgICAgICAgQSB3aWxkIHR1cmtleSBwYXVzaW5nIGJldHdlZW4gZm9yYWdpbmcgcGFzc2VzLiBUaGUgYmlyZHMgd29yayB0aHJvdWdoIGxlYWYgbGl0dGVyCiAgICAgICAgICAgICAgYnkgYWx0ZXJuYXRpbmcgbGVncyAmbWRhc2g7IG9uZSBmb290IGhvbGRzIHBvc2l0aW9uIHdoaWxlIHRoZSBvdGhlciBraWNrcyBiYWNrd2FyZCwKICAgICAgICAgICAgICB0aHJvd2luZyBzdXJmYWNlIGRlYnJpcyAyIHRvIDQgaW5jaGVzIGNsZWFyIGFuZCBleHBvc2luZyB0aGUgc29pbCBhbmQgYnVyaWVkCiAgICAgICAgICAgICAgbWF0ZXJpYWwgdW5kZXJuZWF0aC4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InBob3RvLWNyZWRpdCI+IFBob3RvOiBVU0ZXUyAvIFB1YmxpYyBEb21haW4gLyBXaWtpbWVkaWEgQ29tbW9uczwvc3Bhbj4KICAgICAgICAgICAgPC9maWdjYXB0aW9uPgogICAgICAgICAgPC9maWd1cmU+CiAgICAgICAgICA8cD4KICAgICAgICAgICAgQSB3aWxkIHR1cmtleSBmb3JhZ2VzIGJ5IGFsdGVybmF0aW5nIGJldHdlZW4gbGVncy4gT25lIGZvb3QgaG9sZHMgcG9zaXRpb24gd2hpbGUKICAgICAgICAgICAgdGhlIG90aGVyIGtpY2tzIGJhY2t3YXJkIGluIGEgcmFraW5nIG1vdGlvbiB0aGF0IHRocm93cyAyIHRvIDQgaW5jaGVzIG9mIHN1cmZhY2UKICAgICAgICAgICAgZGVicmlzIGNsZWFyLiBUaGUgYmlyZCBtb3ZlcyBpdHMgaGVhZCBmb3J3YXJkLCBzY2FucyB3aGF0IHdhcyBleHBvc2VkLCBwaWNrcwogICAgICAgICAgICB3aGF0ZXZlciBpcyB3b3J0aCBlYXRpbmcsIHRoZW4gYWR2YW5jZXMgYSBmZXcgaW5jaGVzIGFuZCByZXBlYXRzLiBJbiBpbnRhY3QgbGVhZgogICAgICAgICAgICBsaXR0ZXIsIGEgc2luZ2xlIHBhc3MgZXhwb3NlcyBpbnZlcnRlYnJhdGVzLCBzZWVkcywgYW5kIGJ1cmllZCBtYXN0IHRoYXQgYXJlIG5vdAogICAgICAgICAgICByZWFjaGFibGUgZnJvbSB0aGUgc3VyZmFjZS4gSW4gYSByYWtlZC1iYXJlIGJlZCBvciBtYWludGFpbmVkIHR1cmYsIHRoZXJlIGlzCiAgICAgICAgICAgIG5vdGhpbmcgdG8gdGhyb3cgYW5kIG5vdGhpbmcgYmVsb3cgaXQuCiAgICAgICAgICA8L3A+CiAgICAgICAgICA8cD4KICAgICAgICAgICAgRWFzdGVybiB0b3doZWVzIGFuZCBzb25nIHNwYXJyb3dzIGZvbGxvdyB0dXJrZXkgZmxvY2tzIHNwZWNpZmljYWxseSB0byB3b3JrIHRoZQogICAgICAgICAgICBtYXRlcmlhbCB0dXJrZXlzIGV4cG9zZS4gQSB5YXJkIHdoZXJlIGEgdHVya2V5IGZsb2NrIHBhc3NlZCBhbiBob3VyIGFnbyBoYXMgYQogICAgICAgICAgICBmcmVzaGx5IGRpc3R1cmJlZCBsaXR0ZXIgbGF5ZXIgdGhhdCBhIHRvd2hlZSB3aWxsIGJlIGluIHdpdGhpbiBtaW51dGVzLiBUaGUgdGhyZWUKICAgICAgICAgICAgc3BlY2llcyB1c2UgdGhlIHNhbWUgc3Vic3RyYXRlIGluIHNlcXVlbmNlIHJhdGhlciB0aGFuIGNvbXBldGluZyBmb3IgdGhlIHNhbWUKICAgICAgICAgICAgc3VyZmFjZSBhdCB0aGUgc2FtZSB0aW1lLgogICAgICAgICAgPC9wPgogICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAgPHNlY3Rpb24gYXJpYS1sYWJlbGxlZGJ5PSJtYXN0LWhlYWRpbmciPgogICAgICAgICAgPGgyIGlkPSJtYXN0LWhlYWRpbmciPkFjb3JucyBmcm9tIE9jdG9iZXIgdGhyb3VnaCBKYW51YXJ5PC9oMj4KICAgICAgICAgIDxwPgogICAgICAgICAgICBJbiBhIGdvb2Qgb2FrIG1hc3QgeWVhciwgdGhlIGFjb3JuIGRyb3AgcGVyIGFjcmUgaG9sZHMgZW5vdWdoIGVuZXJneSB0byBzdXN0YWluIGEKICAgICAgICAgICAgdHVya2V5IGZsb2NrIHRocm91Z2ggbW9zdCBvZiB3aW50ZXIgd2l0aG91dCBvdGhlciBmb29kIHNvdXJjZXMuIFR1cmtleXMgYXJyaXZlIHdoZW4KICAgICAgICAgICAgYWNvcm5zIHJlYWNoIG1hdHVyaXR5IGluIE9jdG9iZXIgYW5kIHdvcmsgdGhlIHN1cmZhY2UgZmlyc3QsIHRha2luZyBhY29ybnMgdGhhdCBhcmUKICAgICAgICAgICAgdmlzaWJsZSBvciBzaXR0aW5nIHVuZGVyIHNoYWxsb3cgbGVhZiBjb3Zlci4gQXMgd2ludGVyIGNvbnRpbnVlcyBhbmQgc3VyZmFjZSBhY29ybnMKICAgICAgICAgICAgYXJlIGNvbnN1bWVkLCB0aGUgZmxvY2sgc2NyYXRjaGVzIGRlZXBlciBpbnRvIHRoZSBsaXR0ZXIgZm9yIGFjb3JucyB0aGF0IHJvbGxlZAogICAgICAgICAgICB1bmRlciBkZWJyaXMgb3Igd2VyZSBjYWNoZWQgYW5kIGFiYW5kb25lZC4KICAgICAgICAgIDwvcD4KICAgICAgICAgIDxwPgogICAgICAgICAgICBBIHNpbmdsZSBhZHVsdCB3aWxkIHR1cmtleSBjb25zdW1lcyByb3VnaGx5IGEgcG91bmQgb2YgZm9vZCBwZXIgZGF5IGluIHdpbnRlci4gQQogICAgICAgICAgICBmbG9jayBvZiBlaWdodCBiaXJkcyB3b3JraW5nIHRoZSBsZWFmIGxheWVyIHVuZGVyIGFuIG9hayBvciBhbG9uZyBhIHdvb2RsYW5kIGVkZ2UKICAgICAgICAgICAgY2FuIGhvbGQgdGhhdCB6b25lIGZvciB3ZWVrcyB0aHJvdWdoIE5vdmVtYmVyIGFuZCBEZWNlbWJlci4gSW4gYSB5YXJkIHdoZXJlIHRoZQogICAgICAgICAgICBsZWFmIGxheWVyIGhhcyBiZWVuIHJlbW92ZWQgYW5kIHRoZSBncm91bmQgdW5kZXIgdGhlIG9ha3MgcmFrZWQgYmFyZSBpbiBmYWxsLCB0aGVyZQogICAgICAgICAgICBpcyBub3RoaW5nIGZvciB0aGVtIHRvIHdvcmsgdGhyb3VnaC4gVGhlIGFjb3JucyBhcmUgZ29uZSBiZWZvcmUgdGhlIGZsb2NrIGFycml2ZXMuCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICA8c2VjdGlvbiBhcmlhLWxhYmVsbGVkYnk9InBvdWx0LWhlYWRpbmciPgogICAgICAgICAgPGgyIGlkPSJwb3VsdC1oZWFkaW5nIj5NYXkgaGF0Y2hpbmcsIHR3byB3ZWVrcyBvZiBpbnZlcnRlYnJhdGVzIG9ubHk8L2gyPgogICAgICAgICAgPHA+CiAgICAgICAgICAgIFR1cmtleSBlZ2dzIGhhdGNoIGluIGxhdGUgTWF5IGFmdGVyIDI4IGRheXMgb2YgaW5jdWJhdGlvbi4gVGhlIGhlbiBzaXRzIGFsb25lCiAgICAgICAgICAgIHRocm91Z2ggdGhlIGZ1bGwgaW5jdWJhdGlvbiBwZXJpb2QuIFRoZSBlbnRpcmUgY2x1dGNoICZtZGFzaDsgdHlwaWNhbGx5IDggdG8gMTIKICAgICAgICAgICAgZWdncyAmbWRhc2g7IGhhdGNoZXMgd2l0aGluIGEgMjQtaG91ciB3aW5kb3csIHN5bmNocm9uaXplZCBkdXJpbmcgZGV2ZWxvcG1lbnQgc28KICAgICAgICAgICAgYWxsIHBvdWx0cyBhcmUgcmVhZHkgc2ltdWx0YW5lb3VzbHkuIFRoZSBwb3VsdHMgc3RhbmQgd2l0aGluIGhvdXJzLiBUaGV5IGNhbiBmbHkKICAgICAgICAgICAgc2hvcnQgZGlzdGFuY2VzIGJ5IGRheSA1LCBlbm91Z2ggdG8gcm9vc3QgaW4gbG93IGJyYW5jaGVzIHdpdGggdGhlIGhlbiBhdCBuaWdodC4KICAgICAgICAgIDwvcD4KICAgICAgICAgIDxwPgogICAgICAgICAgICBGb3IgdGhlIGZpcnN0IHR3byB3ZWVrcywgdGhlIHBvdWx0cyBlYXQgYWxtb3N0IGVudGlyZWx5IGludmVydGVicmF0ZXM6IGNhdGVycGlsbGFycywKICAgICAgICAgICAgZ3Jhc3Nob3BwZXJzLCBiZWV0bGVzLCBzcGlkZXJzLCBmbHkgbGFydmFlLiBUaGVpciBkaWdlc3RpdmUgc3lzdGVtcyBjYW5ub3QgcHJvY2VzcwogICAgICAgICAgICBoYXJkIHNlZWRzIHVudGlsIGFmdGVyIHRoZSBmaXJzdCBtb250aC4gVGhlIGhlbiBkb2VzIG5vdCBicmluZyBmb29kIHRvIHRoZSBwb3VsdHMKICAgICAgICAgICAgJm1kYXNoOyBzaGUgbGVhZHMgdGhlIGZsb2NrIHRocm91Z2ggYXJlYXMgd2l0aCBoaWdoIGluc2VjdCBkZW5zaXR5LCB3YWxraW5nIHRocm91Z2gKICAgICAgICAgICAgdW5tb3dlZCBlZGdlcywgaW50YWN0IGxpdHRlciBiZWRzLCBhbmQgZGVjb21wb3NpbmcgcGxhbnQgbWF0ZXJpYWwgd2hlcmUgZmx5IGFuZAogICAgICAgICAgICBiZWV0bGUgbGFydmFlIGNvbmNlbnRyYXRlLiBBIGJyb2FkLXNwZWN0cnVtIHBlc3RpY2lkZSBhcHBsaWVkIGluIEFwcmlsIG9yIE1heQogICAgICAgICAgICByZW1vdmVzIHRoZSBjYXRlcnBpbGxhciBhbmQgYmVldGxlIHBvcHVsYXRpb24gZHVyaW5nIHRoZSB3aW5kb3cgd2hlbiB0aGUgcG91bHRzCiAgICAgICAgICAgIGhhdmUgbm8gYWJpbGl0eSB0byBzdWJzdGl0dXRlIGFueXRoaW5nIGVsc2UuCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWN0aW9uLXBhbmVsIj4KICAgICAgICAgIDxoMiBzdHlsZT17eyBtYXJnaW5Ub3A6IDAgfX0+VGhyZWUgdGhpbmdzIHdpbGQgdHVya2V5cyBuZWVkIGZyb20geW91ciB5YXJkPC9oMj4KCiAgICAgICAgICA8ZmlndXJlIGNsYXNzTmFtZT0ic3BlY2llcy1jb250ZW50LXBob3RvIj4KICAgICAgICAgICAgPGltZwogICAgICAgICAgICAgIHNyYz0iaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi9kL2QyL01lbGVhZ3Jpc19nYWxsb3Bhdm9fVG9tLmpwZy85NjBweC1NZWxlYWdyaXNfZ2FsbG9wYXZvX1RvbS5qcGciCiAgICAgICAgICAgICAgYWx0PSJBZHVsdCBtYWxlIHdpbGQgdHVya2V5ICh0b20pIGluIGZ1bGwgZGlzcGxheTogdGFpbCBmYW5uZWQsIHdpbmd0aXBzIGRyYWdnaW5nIHRoZSBncm91bmQsIHJlZCBhbmQgYmx1ZSBjYXJ1bmNsZXMgaW5mbGF0ZWQsIGlyaWRlc2NlbnQgYnJvbnplIHBsdW1hZ2UgY2F0Y2hpbmcgdGhlIGxpZ2h0IgogICAgICAgICAgICAgIGxvYWRpbmc9ImxhenkiCiAgICAgICAgICAgICAgb25FcnJvcj17ZSA9PiB7CiAgICAgICAgICAgICAgICBjb25zdCBpbWcgPSBlLmN1cnJlbnRUYXJnZXQKICAgICAgICAgICAgICAgIGltZy5zcmMgPSAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi81LzVlL01lbGVhZ3Jpc19nYWxsb3Bhdm9fLU1hbGFiYXJfRmFybV9TdGF0ZV9QYXJrJTJDX09oaW8lMkNfVVNBLTguanBnLzY0MHB4LU1lbGVhZ3Jpc19nYWxsb3Bhdm9fLU1hbGFiYXJfRmFybV9TdGF0ZV9QYXJrJTJDX09oaW8lMkNfVVNBLTguanBnJwogICAgICAgICAgICAgICAgaW1nLm9uZXJyb3IgPSBudWxsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgLz4KICAgICAgICAgICAgPGZpZ2NhcHRpb24+CiAgICAgICAgICAgICAgQW4gYWR1bHQgdG9tIGluIGZ1bGwgc3ByaW5nIGRpc3BsYXkuIE1hbGVzIGZhbiB0aGUgdGFpbCwgbG93ZXIgdGhlIHdpbmd0aXBzIHNvCiAgICAgICAgICAgICAgdGhleSBkcmFnIHRoZSBncm91bmQsIGFuZCBpbmZsYXRlIHRoZSByZWQgYW5kIGJsdWUgY2FydW5jbGVzIG9uIHRoZSBoZWFkLiBUaGUKICAgICAgICAgICAgICBnb2JibGUgY2FycmllcyB1cCB0byBhIG1pbGUgaW4gc3RpbGwgYWlyLiBUb21zIGRpc3BsYXkgZnJvbSBsYXRlIEZlYnJ1YXJ5IHRocm91Z2gKICAgICAgICAgICAgICBBcHJpbCwgdGhlbiBzZXBhcmF0ZSBmcm9tIHRoZSBoZW5zIGJ5IE1heSB3aGVuIG5lc3RpbmcgYmVnaW5zLgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0icGhvdG8tY3JlZGl0Ij4gUGhvdG86IEouTS5HYXJnIC8gQ0MgQlktU0EgMy4wIC8gV2lraW1lZGlhIENvbW1vbnM8L3NwYW4+CiAgICAgICAgICAgIDwvZmlnY2FwdGlvbj4KICAgICAgICAgIDwvZmlndXJlPgogICAgICAgICAgPG9sIGNsYXNzTmFtZT0ic3RlcC1saXN0Ij4KICAgICAgICAgICAgPGxpPgogICAgICAgICAgICAgIDxzdHJvbmc+TGVhdmUgZmFsbGVuIGxlYXZlcyB1bmRlciBvYWtzIGFuZCBhbG9uZyB3b29kbGFuZCBlZGdlcyB0aHJvdWdoIHdpbnRlci48L3N0cm9uZz57JyAnfQogICAgICAgICAgICAgIFR1cmtleXMgYXJyaXZlIHdoZW4gYWNvcm5zIGRyb3AgaW4gT2N0b2JlciBhbmQgd29yayB0aGUgbGl0dGVyIGxheWVyIGZvciB3ZWVrcy4KICAgICAgICAgICAgICBBIHJha2VkLWJhcmUgc3VyZmFjZSB1bmRlciB0aGUgb2FrcyBpbiBOb3ZlbWJlciBnaXZlcyB0aGVtIG5vdGhpbmcgdG8gc2NyYXRjaAogICAgICAgICAgICAgIHRocm91Z2guIEV2ZW4gYSAxMC1mb290IGJhbmQgb2YgaW50YWN0IGxlYXZlcyBhbG9uZyBhIGZlbmNlIGxpbmUgb3IgcHJvcGVydHkgZWRnZQogICAgICAgICAgICAgIGdpdmVzIGEgZmxvY2sgYSBmb3JhZ2luZyB6b25lIHRoZXkgd2lsbCByZXR1cm4gdG8gcmVwZWF0ZWRseS4gU2Vleyc1IGJ9CiAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImxpbmstYnV0dG9uIiBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdsZWF2ZS10aGUtbGVhdmVzJyl9PgogICAgICAgICAgICAgICAgTGVhdmUgdGhlIExlYXZlcwogICAgICAgICAgICAgIDwvYnV0dG9uPnsnICd9CiAgICAgICAgICAgICAgZm9yIHdoeSB0aGUgc2FtZSBsaXR0ZXIgbGF5ZXIgc3VwcG9ydHMgZmlyZWZseSBsYXJ2YWUsIHNvbmcgc3BhcnJvd3MsIGFuZCBlYXN0ZXJuCiAgICAgICAgICAgICAgdG93aGVlcyB0aHJvdWdoIHRoZSBzYW1lIG1vbnRocy4KICAgICAgICAgICAgPC9saT4KICAgICAgICAgICAgPGxpPgogICAgICAgICAgICAgIDxzdHJvbmc+RG8gbm90IGRpc3R1cmIgc2hydWIgYmFzZXMgb3IgYnJ1c2ggcGlsZXMgaW4gQXByaWwuPC9zdHJvbmc+eycrIH0KICAgICAgICAgICAgICBUaGUgaGVuIHNlbGVjdHMgYSBuZXN0IHNpdGUgaW4gbGF0ZSBBcHJpbCAgJm1kYXNoOyB0eXBpY2FsbHkgYXQgdGhlIGJhc2Ugb2YgYSBkZW5zZQogICAgICAgICAgICAgIHNocnViLCBhZ2FpbnN0IGEgZG93bmVkIGxvZywgb3IgaW5zaWRlIGEgYnJ1c2ggcGlsZSB3aXRoIG92ZXJoZWFkIGNvdmVyLiBTaGUgc2NyYXBlcwogICAgICAgICAgICAgIGEgc2hhbGxvdyBkZXByZXNzaW9uIGluIGV4aXN0aW5nIGxlYWYgbGl0dGVyIGFuZCBsYXlzIG9uZSBlZ2cgcGVyIGRheSB1bnRpbCB0aGUKICAgICAgICAgICAgICBjbHV0Y2ggaXMgY29tcGxldGUuIEEgZGlzdHVyYmFuY2UgbmVhciB0aGUgbmVzdCBzaXRlIGR1cmluZyBsYXlpbmcgb3IgaW5jdWJhdGlvbgogICAgICAgICAgICAgIGNhdXNlcyBoZXIgdG8gYWJhbmRvbiB0aGUgY2x1dGNoLiBTaGUgd2lsbCBhdHRlbXB0IHRvIHJlbmVzdCwgYnV0IHRoZSBzZWNvbmQgY2x1dGNoCiAgICAgICAgICAgICAgaXMgc21hbGxlciBhbmQgaGF0Y2hlcyBsYXRlciBpbiB0aGUgc2Vhc29uLgogICAgICAgICAgICA8L2xpPgogICAgICAgICAgICA8bGk+CiAgICAgICAgICAgICAgPHN0cm9uZz5Ib2xkIHRoZSBzcHJpbmcgcGVzdGljaWRlIGFwcGxpY2F0aW9uIHVudGlsIEp1bHkuPC9zdHJvbmc+eycrIH0KICAgICAgICAgICAgICBUaGUgcG91bHRzIGhhdGNoIGluIGxhdGUgTWF5IGFuZCBkZXBlbmQgb24gaW52ZXJ0ZWJyYXRlcyBmb3IgdGhlaXIgZmlyc3QgbW9udGguCiAgICAgICAgICAgICAgQSBicm9hZC1zcGVjdHJ1bSBzcHJheSBpbiBBcHJpbCBvciBNYXkgcmVtb3ZlcyB0aGUgY2F0ZXJwaWxsYXIgYW5kIGJlZXRsZSBwb3B1bGF0aW9uCiAgICAgICAgICAgICAgZHVyaW5nIHRoZSB3aW5kb3cgd2hlbiB0aGUgcG91bHRzIGhhdmUgbm8gYWx0ZXJuYXRpdmUuIFNlZSB0aGV7JyAnfQogICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJsaW5rLWJ1dHRvbiIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgncGVzdGljaWRlLWd1aWRlJyl9PgogICAgICAgICAgICAgICAgUGVzdGljaWRlIEd1aWRlCiAgICAgICAgICAgICAgPC9idXR0b24+eycrIH0KICAgICAgICAgICAgICBmb3Igd2hhdCBhIHNpbmdsZSBhcHBsaWNhdGlvbiBhY3R1YWxseSBkb2VzIHRvIHRoZSBpbnZlcnRlYnJhdGUgcG9wdWxhdGlvbiBpbiB0aGUKICAgICAgICAgICAgICB0d28gd2Vla3MgYWZ0ZXIgc3ByYXlpbmcuCiAgICAgICAgICAgIDwvbGk+CiAgICAgICAgICA8L29sPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8c2VjdGlvbiBhcmlhLWxhYmVsbGVkYnk9ImZsb2NrLWhlYWRpbmciPgogICAgICAgICAgPGgyIGlkPSJmbG9jay1oZWFkaW5nIj5KYWtlcywgbWF0ZXJuYWwgZ3JvdXBzLCBhbmQgdGhlIEFwcmlsIHNlcGFyYXRpb248L2gyPgogICAgICAgICAgPHA+CiAgICAgICAgICAgIFdpbGQgdHVya2V5cyBzcGVuZCBtb3N0IG9mIHRoZSB5ZWFyIGluIHNleC1zZWdyZWdhdGVkIGZsb2Nrcy4gSGVucyB3aXRoIGxhc3QKICAgICAgICAgICAgc2Vhc29uJmFwb3M7cyBwb3VsdHMgZm9ybSBtaXhlZCBtYXRlcm5hbCBncm91cHMgdGhyb3VnaCB3aW50ZXIuIFlvdW5nIG1hbGVzIGZyb20gdGhlCiAgICAgICAgICAgIHNhbWUgaGF0Y2hpbmcgc2Vhc29uICZtZGFzaDsgY2FsbGVkIGpha2VzICZtZGFzaDsgZm9ybSBzZXBhcmF0ZSBmbG9ja3Mgb2YgNCB0byA4CiAgICAgICAgICAgIGJpcmRzLiBPbGRlciBhZHVsdCB0b21zIHJ1biB0b2dldGhlciBvciBhbG9uZS4gQSBmbG9jayBvZiB0dXJrZXlzIG1vdmluZyB0aHJvdWdoCiAgICAgICAgICAgIGEgeWFyZCBpbiBEZWNlbWJlciBpcyBhbG1vc3QgYWx3YXlzIG9uZSBvZiB0aGVzZSB0aHJlZSBncm91cHMsIG5vdCBhIGZhbWlseSB1bml0CiAgICAgICAgICAgIHdpdGggYm90aCBwYXJlbnRzLgogICAgICAgICAgPC9wPgogICAgICAgICAgPHA+CiAgICAgICAgICAgIFRoZSBncm91cHMgY29udmVyZ2UgaW4gbGF0ZSBGZWJydWFyeSBhbmQgTWFyY2guIFRvbXMgZGlzcGxheSB0byBoZW5zIHRocm91Z2ggQXByaWw6CiAgICAgICAgICAgIGZhbm5pbmcgdGhlIHRhaWwsIGRyYWdnaW5nIHRoZSB3aW5ndGlwcyBvbiB0aGUgZ3JvdW5kLCBpbmZsYXRpbmcgdGhlIHJlZCBhbmQgYmx1ZQogICAgICAgICAgICBjYXJ1bmNsZXMgb24gdGhlIGhlYWQsIHByb2R1Y2luZyBhIGdvYmJsZSB0aGF0IGNhcnJpZXMgYSBtaWxlIGluIHN0aWxsIGFpci4gQnkgTWF5LAogICAgICAgICAgICB0aGUgdG9tcyBoYXZlIHNlcGFyYXRlZCBmcm9tIHRoZSBoZW5zIGFnYWluLiBUaGUgYmlyZHMgbW92aW5nIHRocm91Z2ggdGhlIHlhcmQKICAgICAgICAgICAgcXVpZXRseSBpbiBKdW5lICZtZGFzaDsgc3RheWluZyBsb3csIHNpbmdsZSBmaWxlLCBpbiB0aGUgZWRnZSBjb3ZlciAmbWRhc2g7IGFyZSBhCiAgICAgICAgICAgIGhlbiBhbmQgcG91bHRzIDEgdG8gMyB3ZWVrcyBvbGQuCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWN0aW9uLXBhbmVsIiBzdHlsZT17eyBtYXJnaW5Ub3A6ICcycmVtJyB9fT4KICAgICAgICAgIDxwIHN0eWxlPXt7IG1hcmdpbjogMCB9fT4KICAgICAgICAgICAgPHN0cm9uZz5UaGUgd2lsZCB0dXJrZXkgc2hhcmVzIHRoZSBmb3Jlc3QtZmxvb3Igem9uZSB3aXRoIHNldmVyYWwgeWFyZCBuZWlnaGJvcnMuPC9zdHJvbmc+eycrICd9CiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJsaW5rLWJ1dHRvbiIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnZWFzdGVybi10b3doZWUnKX0+CiAgICAgICAgICAgICAgRWFzdGVybiBUb3doZWVzCiAgICAgICAgICAgIDwvYnV0dG9uPnsnICd9CiAgICAgICAgICAgIHNjcmF0Y2ggbGVhZiBsaXR0ZXIgd2l0aCB0aGUgc2FtZSBhbHRlcm5hdGluZy1raWNrIG1vdGlvbiBhbmQgb2Z0ZW4gZm9sbG93IHR1cmtleQogICAgICAgICAgICBmbG9ja3MgdG8gd29yayBmcmVzaGx5IGRpc3R1cmJlZCBtYXRlcmlhbC57JyAnfQogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0ibGluay1idXR0b24iIG9uQ2xpY2s9eygpID0+IG9uTmF2aWdhdGUoJ3Nvbmctc3BhcnJvdycpfT4KICAgICAgICAgICAgICBTb25nIFNwYXJyb3dzCiAgICAgICAgICAgIDwvYnV0dG9uPnsnICd9CiAgICAgICAgICAgIGZvcmFnZSBpbiB0aGUgc2FtZSBsaXR0ZXIgem9uZSBmcm9tIFNlcHRlbWJlciB0aHJvdWdoIEFwcmlsLnsnICd9CiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJsaW5rLWJ1dHRvbiIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnZmlyZWZsaWVzJyl9PgogICAgICAgICAgICAgIEZpcmVmbHkgbGFydmFlCiAgICAgICAgICAgIDwvYnV0dG9uPnsnICd9CiAgICAgICAgICAgIG92ZXJ3aW50ZXIgaW4gdGhlIHNhbWUgbGVhZiBsYXllciB0aGUgdHVya2V5cyBzY3JhdGNoIHRocm91Z2ggJm1kYXNoOyB0aGUgbGl0dGVyCiAgICAgICAgICAgIHRoYXQgc3VwcG9ydHMgb25lIHN1cHBvcnRzIGFsbCBvZiB0aGVtLiBNZWV0IG1vcmUgZm9yZXN0LWZsb29yIHNwZWNpZXMgaW4gdGhleysnICd9CiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJsaW5rLWJ1dHRvbiIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnc3BlY2llcy1nYWxsZXJ5Jyl9PgogICAgICAgICAgICAgIFNwZWNpZXMgR2FsbGVyeQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgLgogICAgICAgICAgPC9wPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvPgogICkKfQo=
+import type { Page } from '../App'
+
+interface WildTurkeyProps {
+  onNavigate: (page: Page) => void
+}
+
+export default function WildTurkey({ onNavigate }: WildTurkeyProps) {
+  return (
+    <>
+      <div className="species-hero-image-wrap">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tom_turkey_strutting.jpg/960px-Tom_turkey_strutting.jpg"
+          alt="Male Wild Turkey in full display — tail fanned into a wide semicircle, back feathers raised, red and blue bare-skinned head, standing on fallen leaves in a mixed hardwood forest"
+          className="species-hero-image"
+          style={{ objectPosition: 'center 25%' }}
+          loading="eager"
+          onError={e => {
+            const img = e.currentTarget
+            img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Meleagris_gallopavo_-male.jpg/960px-Meleagris_gallopavo_-male.jpg'
+            img.onerror = null
+          }}
+        />
+        <div className="species-hero-image-credit">
+          Photo: USFWS&nbsp;&middot;&nbsp;Public Domain via Wikimedia Commons
+        </div>
+      </div>
+
+      <section className="hero">
+        <div className="hero__eyebrow">Meet Your Neighbors</div>
+        <h1>Wild Turkey</h1>
+        <p className="hero__lead">
+          On a November morning you might look to the back of the yard and see a group of birds
+          the size of small dogs working through the fallen leaves under the oaks. They move
+          slowly, each one scratching backward with both feet at once, flipping leaves two feet
+          behind them, stepping forward to pick at what the scratch exposed. A flock of ten
+          turkeys can turn over a half-acre of leaf litter in a morning — acorns, beetles,
+          millipedes, salamanders, seeds of dozens of plant species pulled up and redistributed.
+          Then they walk into the neighbor&apos;s woodlot and disappear.
+        </p>
+        <p className="hero__lead">
+          <em>Meleagris gallopavo</em> &mdash; the Eastern Wild Turkey was nearly gone by 1900,
+          reduced from an estimated 10 million birds to fewer than 30,000 by market hunting and
+          forest clearing. Reintroduction programs over the following 80 years brought the
+          population back to roughly 6.5 million. The turkey now reaches the suburbs wherever
+          a connected woodlot has roosting trees and an intact leaf-littered floor to forage
+          through from October to May.
+        </p>
+      </section>
+
+      <div className="page">
+        <section aria-labelledby="scratch-heading">
+          <h2 id="scratch-heading">Acorns, beetle grubs, and the scratch that reaches both</h2>
+          <figure className="species-content-photo species-content-photo--right">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Wild_Turkey_Meleagris_gallopavo.jpg/960px-Wild_Turkey_Meleagris_gallopavo.jpg"
+              alt="Wild Turkey hen in fall plumage — brown and bronze feathered, standing on a ground layer of fallen leaves among tree roots — showing the typical foraging posture of the species on the forest floor"
+              loading="lazy"
+              onError={e => {
+                const img = e.currentTarget
+                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tom_turkey_strutting.jpg/960px-Tom_turkey_strutting.jpg'
+                img.onerror = null
+              }}
+            />
+            <figcaption>
+              A Wild Turkey hen foraging on the leaf litter floor. Turkeys extract acorns,
+              beetle larvae, seeds, and invertebrates from beneath the leaf mat using a
+              double-foot backward scratch — the same technique the{' '}
+              <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
+                Eastern Towhee
+              </button>
+              {' '}uses, scaled up to a 15-pound bird. The scratch is the only way the turkey
+              reaches food that is buried under debris the bird cannot move by picking.
+              <span className="photo-credit"> Photo: USFWS / Public Domain / Wikimedia Commons</span>
+            </figcaption>
+          </figure>
+          <p>
+            Wild Turkeys eat almost nothing from standing plants. Their entire diet comes from
+            the ground layer: acorns and other mast buried under leaf litter, seeds dropped from
+            native perennials and woody plants, and invertebrates — beetles and their larvae, ants,
+            grasshoppers, spiders, centipedes, small salamanders — found in the organic debris
+            where soil meets the leaf layer above it. The double-foot backward scratch that exposes
+            this food is the defining behavior of the species, performed hundreds of times per bird
+            per day.
+          </p>
+          <p>
+            In fall and winter, mast accounts for roughly half the turkey&apos;s diet in
+            mast-producing hardwood forests. A mature white oak drops between 10,000 and 20,000
+            acorns in a good mast year. Turkeys, deer, blue jays, gray squirrels, and wood ducks
+            all extract those calories, each by a different mechanism. The turkey&apos;s mechanism
+            is the scratch: it cannot reach a buried acorn any other way. A yard with mature oaks
+            and intact leaf litter beneath them holds food that turkeys will return to week after
+            week from November through March. A yard where every leaf is blown and bagged does not.
+          </p>
+          <p>
+            The scratch also acts as disturbance in the long-grass sense. Research in eastern
+            hardwood forests documents that turkey foraging shreds the leaf mat, redistributes
+            seeds from the understory plants growing above, and exposes bare mineral soil in small
+            patches that favor germination. The turkeys are consuming the mast and, in the process,
+            dispersing the seeds of the plants that will produce the next mast.
+          </p>
+        </section>
+
+        <section aria-labelledby="nest-heading">
+          <h2 id="nest-heading">One egg per day, 28 days, and a hen who covers the eggs before she leaves</h2>
+          <p>
+            Wild Turkey hens nest on the ground, alone. No other turkey is present during
+            incubation. The hen scrapes a shallow depression in leaf litter under the lowest
+            branches of a dense shrub or at the base of a fallen log, lays one egg per day for
+            10 to 14 days, then begins incubating the clutch. She leaves the nest only once or
+            twice per day to drink and feed. Incubation lasts 28 days, and all eggs hatch within
+            hours of each other.
+          </p>
+          <p>
+            Each time she leaves the nest, she covers the eggs with dead leaves before walking
+            away. She does not return the same way she left — she approaches from a different
+            angle each time to avoid creating a worn path that a predator could follow. The nest
+            has no cup, no added lining material. The eggs sit in the leaf duff itself, insulated
+            and hidden by the leaves she gathered before she went.
+          </p>
+          <p>
+            Raccoons, fox, coyotes, and skunks find the majority of Wild Turkey nests before
+            hatch. A hen who loses her first clutch will renest with a smaller clutch — typically
+            6 to 9 eggs. A hen who loses the second clutch does not attempt a third. Annual
+            productivity across the population depends almost entirely on how many first clutches
+            survive to hatch.
+          </p>
+        </section>
+
+        <section aria-labelledby="poults-heading">
+          <h2 id="poults-heading">Running at two hours, foraging at two days, not warm-blooded for two weeks</h2>
+          <p>
+            Wild Turkey poults hatch covered in down and can stand within an hour. They follow
+            the hen away from the nest site within 24 hours. They cannot fly for the first
+            10 to 14 days. From the first day in the field, each poult finds and catches its
+            own food — the hen does not bring food to them. They forage in the leaf litter and
+            low vegetation near the brood, eating beetles, ants, caterpillars, and other
+            invertebrates that live in the ground layer.
+          </p>
+          <p>
+            For those first two weeks, poults cannot regulate their own body temperature. When
+            a poult gets cold, it runs back to the hen and crawls under her wing to be brooded.
+            She broods the group frequently throughout the day and through every night until
+            the poults are old enough to roost in trees. The forage-return-brood cycle repeats
+            all day: the poult walks out into the leaf litter, eats for a few minutes, gets
+            cold, returns to the hen. How far it can walk before needing to return is the
+            radius within which it must find food.
+          </p>
+          <p>
+            The protein from insects drives feather growth, and growing feathers is what makes
+            thermoregulation possible. A poult must eat insects to grow feathers, and it must
+            grow feathers to survive long enough to keep eating insects. At 14 days the first
+            wing-tip feathers reach flying length. At 6 to 8 weeks the poult can roost in a
+            tree with the brood.
+          </p>
+          <p>
+            Roughly 50 to 70 percent of Wild Turkey poults die in the first two weeks after
+            hatch — a figure documented across decades of National Wild Turkey Federation
+            population research. Cold and starvation account for most of this mortality when
+            poults cannot find enough insects within their walking range to maintain protein
+            intake and stay warm at the same time. A poult on a mowed lawn with raked edges
+            has no leaf-litter invertebrate substrate to work. It walks farther from the
+            brood to find food, gets colder faster, and returns with less protein than a
+            poult foraging in intact leaf litter 20 feet from where it started.
+          </p>
+        </section>
+
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>Three things Wild Turkeys need from your yard</h2>
+
+          <figure className="species-content-photo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Wild_turkeys_in_a_field.jpg/960px-Wild_turkeys_in_a_field.jpg"
+              alt="Flock of Wild Turkeys foraging at the edge of a woodland, moving across ground with a mix of grass and fallen leaves, with trees visible in the background"
+              loading="lazy"
+              onError={e => {
+                const img = e.currentTarget
+                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tom_turkey_strutting.jpg/960px-Tom_turkey_strutting.jpg'
+                img.onerror = null
+              }}
+            />
+            <figcaption>
+              Wild Turkeys cover a home range of 1 to 5 square miles and return repeatedly to
+              locations that have produced food before. A yard or neighborhood block within that
+              range that holds intact leaf litter under mature oaks, and dense low shrubs in a
+              back corner, becomes a stop on a circuit the flock will work all fall and winter.
+              <span className="photo-credit"> Photo: Wikimedia Commons / Public Domain</span>
+            </figcaption>
+          </figure>
+          <ol className="step-list">
+            <li>
+              <strong>Leave the leaves under oaks and woodland-edge trees intact through spring.</strong>{' '}
+              Wild Turkey scratch foraging happens in intact leaf litter, not in mulched beds, bare
+              soil, or mown lawn. The beetle grubs, earthworms, acorns, and seeds turkeys extract
+              from November through March live in the interface between undisturbed leaf duff and
+              mineral soil beneath it. That same leaf mat is the layer turkey poults will forage
+              for insects in June when they cannot yet fly. Removing it removes both resources. The
+              full case for why the leaf layer matters across a dozen species is at{' '}
+              <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+                Leave the Leaves
+              </button>
+              .
+            </li>
+            <li>
+              <strong>Allow dense low native shrubs to develop in the back edges and corners.</strong>{' '}
+              Wild Turkey nests sit in leaf duff at the base of dense shrubs, where the lowest
+              branches touch or nearly touch the ground and the surrounding leaf cover makes the
+              nest invisible from a few feet away. Sumac, native viburnums, elderberry, hawthorn,
+              and spicebush all provide this structure. A back corner allowed to fill in with
+              multi-shrub plantings gives hens a nest site option that a yard of ornamental
+              specimens separated by mulch does not. Find native shrubs for your hardiness zone at{' '}
+              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
+                Find Plants Near Me
+              </button>
+              .
+            </li>
+            <li>
+              <strong>Retain any mature oaks, hickories, or beeches already on the property.</strong>{' '}
+              A mature white oak that was a sapling in 1840 will drop acorns through the lifetimes
+              of everyone reading this. There is no tree available at any nursery that replaces
+              one on any timeline that means anything to the people who live here now. Wild Turkeys
+              show strong seasonal fidelity to mast-producing trees &mdash; they will return to
+              the same oaks year after year as long as the trees stand. Every mature oak removed
+              from a neighborhood erases a foraging anchor that a flock used, and a new planting
+              takes a human generation to produce the same food load. See which oaks are native
+              to your region at{' '}
+              <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
+                Choose a Plant
+              </button>
+              .
+            </li>
+          </ol>
+        </div>
+
+        <section aria-labelledby="roosting-heading">
+          <h2 id="roosting-heading">Twenty feet up, same trees, every night</h2>
+          <p>
+            Wild Turkeys roost in trees at night. They fly up at dusk to perches 15 to 30 feet
+            off the ground on large horizontal branches in mature oaks, beeches, pines, and
+            tulip poplars. A flock spreads across several adjacent large trees and returns to
+            the same roost night after night through the winter, shifting only when disturbed
+            repeatedly or when a roost tree comes down. At dawn they fly to the ground and walk
+            to the first foraging area of the day.
+          </p>
+          <p>
+            In suburban and edge neighborhoods, turkeys roost in any mature tree with branches
+            wide enough to hold a 15- to 20-pound bird. The roost and the foraging area are
+            often on different properties. A flock may roost in a neighbor&apos;s white pines
+            and arrive in your yard to scratch under the oaks when the light changes. What
+            brings them to your property in the morning is not where they slept &mdash; it is
+            where the leaf litter is.
+          </p>
+        </section>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>The Wild Turkey shares the ground layer with species that all need the same intact leaf litter.</strong>{' '}
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
+              Eastern Towhee
+            </button>
+            {' '}scratches through the same leaf mat the turkey worked, pulling beetle larvae and
+            ant pupae from the upper layer with the same double-kick technique at a smaller scale.{' '}
+            <button className="link-button" onClick={() => onNavigate('dark-eyed-junco')}>
+              Dark-eyed Juncos
+            </button>
+            {' '}pick up small seeds along the edges of turkey scratch zones through the winter.{' '}
+            <button className="link-button" onClick={() => onNavigate('fireflies')}>
+              Firefly larvae
+            </button>
+            {' '}overwinter in the same leaf layer where turkey poults will be hunting beetles in
+            June &mdash; the leaf mat that survives the autumn leaf blower is the layer that
+            produces fireflies the following summer and supports turkey broods the following
+            spring. See all the species working this same ground layer in the{' '}
+            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
+              Species Gallery
+            </button>
+            , or read why the layer itself matters at{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
+            </button>
+            .
+          </p>
+        </div>
+      </div>
+    </>
+  )
+}
