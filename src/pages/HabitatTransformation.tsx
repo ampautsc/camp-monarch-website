@@ -222,11 +222,14 @@ export default function HabitatTransformation({ onNavigate }: HabitatTransformat
 
         {/* ── Section 5: Who comes back ── */}
         <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">Who comes back</h2>
+          <h2 id="neighbors-heading">Milkweed draws the monarch. Leaf litter holds the firefly. Eight species, eight specific needs.</h2>
           <p>
-            These are some of the species that depend on exactly the kind of
-            habitat described above. Each one has a full page on this site
-            explaining what it needs, what threatens it, and what you can do.
+            A monarch butterfly lays her eggs only on milkweed — no other plant
+            hosts her caterpillars. A firefly larva spends two years in your
+            leaf litter before it produces a single flash of light. Each species
+            below needs something specific from a yard, and each one has a full
+            page on this site explaining what it needs, what threatens it, and
+            what you can do.
           </p>
           <div
             style={{
