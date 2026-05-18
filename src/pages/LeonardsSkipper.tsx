@@ -169,6 +169,10 @@ export default function LeonardsSkipper({ onNavigate }: LeonardsSkipperProps) {
               <span className="neighbor-name">Prairie Dropseed</span>
               <span className="neighbor-note">Primary host grass; the seed panicle tip becomes the hilltop perch for a male Leonard's Skipper in late August</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('little-bluestem')}>
+              <span className="neighbor-name">Little Bluestem</span>
+              <span className="neighbor-note">Fellow host grass; females lay eggs on Little Bluestem blades in late August — taller than Prairie Dropseed with copper-red fall color that stands through winter while larvae overwinter at the crown below</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
               <span className="neighbor-name">Cobweb Skipper</span>
               <span className="neighbor-note">Spring sibling in the same genus; emerges in April on the same native bunchgrass stems where Leonard's Skipper perched the previous September</span>
