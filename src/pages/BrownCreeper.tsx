@@ -150,7 +150,7 @@ export default function BrownCreeper({ onNavigate }: BrownCreeperProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that support Brown Creeper</h2>
+          <h2 style={{ marginTop: 0 }}>A standing snag, rough-barked native trees, vine-free trunks, and no bark-surface pesticides</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img
