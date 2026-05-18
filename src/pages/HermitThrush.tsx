@@ -257,6 +257,15 @@ export default function HermitThrush({ onNavigate }: HermitThrushProps) {
               Hermit Thrush; both species foraging a yard in January signal
               intact winter habitat structure.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('cedar-waxwing')}>
+                Cedar Waxwing
+              </button>
+              {' — '}Arrives in nomadic flocks of 10 to 100 with no fixed winter territory.
+              When the flock hits the winterberry the Hermit Thrush has been defending,
+              it clears the whole shrub in 12 minutes and moves on — and the thrush
+              waits in the brush for the next fruiting plant to come in.
+            </li>
           </ul>
         </section>
 
