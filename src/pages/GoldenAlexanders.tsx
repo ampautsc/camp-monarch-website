@@ -179,6 +179,15 @@ export default function GoldenAlexanders({ onNavigate }: GoldenAlexandersProps) 
                 than a vegetable garden herb
               </li>
               <li>
+                <button className="link-button" onClick={() => onNavigate('cobweb-skipper')}>
+                  Cobweb Skipper
+                </button>{' '}
+                — adults emerge in late April and need a nectar source within their patrol range;
+                Golden Alexanders opens in the same two-week window and supplies the spring nectar
+                that male Cobweb Skippers use while patrolling native grass patches for mates and
+                egg-laying sites
+              </li>
+              <li>
                 <button className="link-button" onClick={() => onNavigate('wild-columbine')}>
                   Wild Columbine
                 </button>{' '}
