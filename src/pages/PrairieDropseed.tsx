@@ -171,6 +171,10 @@ export default function PrairieDropseed({ onNavigate }: PrairieDropseedProps) {
         <section aria-labelledby="connections-heading">
           <h2 id="connections-heading">Related pages</h2>
           <div className="neighbor-grid">
+            <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
+              <span className="neighbor-name">Leonard's Skipper</span>
+              <span className="neighbor-note">Grass skipper that lays eggs on Prairie Dropseed blades in September; the male perches on seed panicle tips to defend his territory</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
               <span className="neighbor-name">Dark-eyed Junco</span>
               <span className="neighbor-note">Forages on dried Prairie Dropseed seed heads through fall and early winter</span>
@@ -181,11 +185,7 @@ export default function PrairieDropseed({ onNavigate }: PrairieDropseedProps) {
             </button>
             <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
               <span className="neighbor-name">Canada Goldenrod</span>
-              <span className="neighbor-note">Fellow September bloomer; goldenrod provides insect food at the same time Prairie Dropseed is in seed</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('new-england-aster')}>
-              <span className="neighbor-name">New England Aster</span>
-              <span className="neighbor-note">Late-season companion; aster and Prairie Dropseed open simultaneously in September</span>
+              <span className="neighbor-note">Fellow September bloomer; goldenrod provides nectar for Leonard's Skipper adults at the same time Prairie Dropseed is in seed</span>
             </button>
           </div>
         </section>
