@@ -184,7 +184,7 @@ export default function ScarletTanager({ onNavigate }: ScarletTanagerProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Every mature native tree kept, native oaks planted, native fruit shrubs ripening July through September, and no insecticide spray in the canopy</h2>
+          <h2 style={{ marginTop: 0 }}>Mature native trees kept, native oaks planted, late-summer fruiting shrubs, and no canopy insecticides</h2>
           <ol className="step-list">
             <li>
               <strong>Keep every mature native tree.</strong>{' '}
