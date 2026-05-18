@@ -13,6 +13,7 @@ const starterPlants = [
   'Goldenrod (Solidago spp.)',
   'Black-eyed Susan (Rudbeckia hirta)',
   'Little Bluestem (Schizachyrium scoparium)',
+  'Prairie Dropseed (Sporobolus heterolepis)',
 ]
 
 export default function PlantsStarterPlants({ onNavigate }: PlantsStarterPlantsProps) {
