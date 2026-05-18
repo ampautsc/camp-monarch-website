@@ -1,1 +1,244 @@
-aW1wb3J0IHR5cGUgeyBQYWdlIH0gZnJvbSAnLi4vQXBwJwoKaW50ZXJmYWNlIEhvbWVQcm9wcyB7CiAgb25OYXZpZ2F0ZTogKHBhZ2U6IFBhZ2UpID0+IHZvaWQKfQoKLy8gUGhvdG8gc291cmNlczogV2lraW1lZGlhIENvbW1vbnMgKENDIEJZLVNBKS4gQXR0cmlidXRpb24gYXQgYm90dG9tIG9mIHBhZ2UuCi8vIHZpcy0wMDQ6IHZlcmlmaWVkIHRodW1ibmFpbCBVUkxzIGZyb20gV2lraW1lZGlhIENvbW1vbnMgQVBJIDIwMjYtMDUtMDkuCi8vIFRPRE86IGRvd25sb2FkIGFuZCBob3N0IGluIC9wdWJsaWMvIGZvciBwcm9kdWN0aW9uIHBlcmZvcm1hbmNlLgpjb25zdCBDQVJEX1BIT1RPUyA9IHsKICBwbGFudE1pbGt3ZWVkOiAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi9iL2I4L01vbmFyY2hfQnV0dGVyZmx5X0NhdGVycGlsbGFyX29uX01pbGt3ZWVkX1BsYW50LmpwZy8zMjBweC1Nb25hcmNoX0J1dHRlcmZseV9DYXRlcnBpbGxhcl9vbl9NaWxrd2VlZF9QbGFudC5qcGcnLAogIGZpbmRNaWxrd2VlZDogJ2h0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvOC84OC9Bc2NsZXBpYXNfdHViZXJvc2FfMDAwMS5qcGcvMzIwcHgtQXNjbGVwaWFzX3R1YmVyb3NhXzAwMDEuanBnJywKICBzdG9wUGVzdGljaWRlczogJ2h0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvNS81Ny9Nb25hcmNoX0J1dHRlcmZseV9EYW5hdXNfcGxleGlwcHVzX1Jlc3RpbmdfMTgwMHB4LmpwZy8zMjBweC1Nb25hcmNoX0J1dHRlcmZseV9EYW5hdXNfcGxleGlwcHVzX1Jlc3RpbmdfMTgwMHB4LmpwZycsCiAgc3ByZWFkVGhlV29yZDogJ2h0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvOS85Zi9EYW5hdXNfcGxleGlwcHVzX29uX0FzY2xlcGlhc190dWJlcm9zYV8xLmpwZy8zMjBweC1EYW5hdXNfcGxleGlwcHVzX29uX0FzY2xlcGlhc190dWJlcm9zYV8xLmpwZycsCn0KCmNvbnN0IE5FSUdIQk9SX1BIT1RPUyA9IHsKICBmaXJlZmxpZXM6ICdodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iLzQvNDAvRmlyZWZseV8yXyUyOExhbXB5cmlkYWUlMjkuanBnLzMyMHB4LUZpcmVmbHlfMl8lMjhMYW1weXJpZGFlJTI5LmpwZycsCiAgYm94VHVydGxlczogJ2h0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvMC8wZi9Cb3hfdHVydGxlX0Vhc3Rlcm5fMi5qcGcvMzIwcHgtQm94X3R1cnRsZV9FYXN0ZXJuXzIuanBnJywKICBidW1ibGViZWVzOiAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi9kL2Q2L0JvbWJ1c19odW50aWlfLV9QZW5zdGVtb25fc3RyaWN0dXNfLV9CYWxkX01vdW50YWluLmpwZy8zMjBweC1Cb21idXNfaHVudGlpXy1fUGVuc3RlbW9uX3N0cmljdHVzXy1fQmFsZF9Nb3VudGFpbi5qcGcnLAogIGh1bW1pbmdiaXJkczogJ2h0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvYi9iMS9SdWJ5LXRocm9hdGVkX0h1bW1pbmdiaXJkXy1fQXJjaGlsb2NodXNfY29sdWJyaXMlMkNfTWVycmltYWNfRmFybV9XaWxkbGlmZV9NYW5hZ2VtZW50X0FyZWElMkNfTm9rZXN2aWxsZSUyQ19WaXJnaW5pYV8lMjg0OTExMTQ1NTM4OCUyOS5qcGcvMzIwcHgtUnVieS10aHJvYXRlZF9IdW1taW5nYmlyZF8tX0FyY2hpbG9jaHVzX2NvbHVicmlzJTJDX01lcnJpbWFjX0Zhcm1fV2lsZGxpZmVfTWFuYWdlbWVudF9BcmVhJTJDX05va2VzdmlsbGUlMkNfVmlyZ2luaWFfJTI4NDkxMTE0NTUzODglMjkuanBnJywKICBzd2FsbG93VGFpbHM6ICdodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iLzMvMzAvUGFwaWxpb19wb2x5eGVuZXNfJTI4QmxhY2tfU3dhbGxvd3RhaWwlMjklMkNfbWFsZS5qcGcvMzIwcHgtUGFwaWxpb19wb2x5eGVuZXNfJTI4QmxhY2tfU3dhbGxvd3RhaWwlMjklMkNfbWFsZS5qcGcnLAogIGNlY3JvcGlhOiAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi8wLzBlL0NlY3JvcGlhX01vdGhfJTI4SHlhbG9waG9yYV9jZWNyb3BpYSUyOS5qcGcvMzIwcHgtQ2Vjcm9waWFfTW90aF8lMjhIeWFsb3Bob3JhX2NlY3JvcGlhJTI5LmpwZycsCiAgbm9ydGhlcm5GbGlja2VyOiAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi8yLzI0L05vcnRoZXJuX0ZsaWNrZXJfJTI4UmVkLXNoYWZ0ZWQlMjkuanBnLzMyMHB4LU5vcnRoZXJuX0ZsaWNrZXJfJTI4UmVkLXNoYWZ0ZWQlMjkuanBnJywKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSh7IG9uTmF2aWdhdGUgfTogSG9tZVByb3BzKSB7CiAgcmV0dXJuICgKICAgIDxtYWluPgoKICAgICAgey8qIOKUguKUgCBIRVJPIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCovfQogICAgICA8c2VjdGlvbiBjbGFzc05hbWU9Imhlcm8iPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoZXJvX19ib2R5Ij4KCiAgICAgICAgICB7LyogSGVybyBoZWFkbGluZSArIGxlYWQgKi99CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaGVyb19fdGV4dCI+CiAgICAgICAgICAgIDxoMT5Nb25hcmNoIGNhdGVycGlsbGFycyBlYXQgb25seSBtaWxrd2VlZC48YnIgLz5UaGF0IHBsYW50IGhhcyBuZWFybHkgdmFuaXNoZWQgZnJvbSBBbWVyaWNhbiBmYXJtbGFuZC48L2gxPgogICAgICAgICAgICA8cCBjbGFzc05hbWU9Imhlcm9fX2xlYWQiPgogICAgICAgICAgSW4gdGhlIDE5OTBzLCBodW5kcmVkcyBvZiBtaWxsaW9ucyBvZiBtb25hcmNocyByZWFjaGVkIE1leGljbyBlYWNoIGZhbGwuPHN1cD48YSBocmVmPSJodHRwczovL3hlcmNlcy5vcmcvbW9uYXJjaHMvZWFzdGVybi1tb25hcmNoLWNvbnNlcnZhdGlvbiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9yZWZlcnJlciIgY2xhc3NOYW1lPSJjaXRlIj5bMV08L2E+PC9zdXA+PGJyIC8+CiAgICAgICAgICBMYXN0IHdpbnRlciwgYWJvdXQgNjAgbWlsbGlvbiBkaWQuPHN1cD48YSBocmVmPSJodHRwczovL3hlcmNlcy5vcmcvcHJlc3MvZWFzdGVybi1tb25hcmNoLWJ1dHRlcmZseS1udW1iZXJzLWluY3JlYXNlLWJ1dC1yZW1haW4tYmVsb3ctaGlzdG9yaWMtbGV2ZWxzIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub3JlZmVycmVyIiBjbGFzc05hbWU9ImNpdGUiPlsyXTwvYT48L3N1cD4KICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHsvKiBIZXJvIENUQSBjYXJkcyAqL30KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoZXJvX19hY3Rpb25zIj4KCiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJhY3Rpb24tY2FyZCIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgncGxhbnQtbWlsa3dlZWQnKX0+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFjdGlvbi1jYXJkX19pbWFnZS13cmFwIj4KICAgICAgICAgICAgICAgIDxpbWcKICAgICAgICAgICAgICAgICAgc3JjPXtDQVJEX1BIT1RPUy5wbGFudE1pbGt3ZWVkfQogICAgICAgICAgICAgICAgICBhbHQ9Ik1vbmFyY2ggY2F0ZXJwaWxsYXIgb24gbWlsa3dlZWQgcGxhbnQiCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iYWN0aW9uLWNhcmRfX2ltZyIKICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFjdGlvbi1jYXJkX19ib2R5Ij4KICAgICAgICAgICAgICAgIDxoMz5QbGFudCBtaWxrd2VlZDwvaDM+CiAgICAgICAgICAgICAgICA8cD5UaGUgaG9zdCBwbGFudCBtb25hcmNocyBjYW5ub3Qgc3Vydml2ZSB3aXRob3V0IOKAlCBhbmQgb25lIG9mIHRoZSBiZXN0IHRoaW5ncyBhbnkgeWFyZCBjYW4gb2ZmZXIuPC9wPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2J1dHRvbj4KCiAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJhY3Rpb24tY2FyZCIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnZmluZC1taWxrd2VlZCcpfT4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWN0aW9uLWNhcmRfX2ltYWdlLXdyYXAiPgogICAgICAgICAgICAgICAgPGltZwogICAgICAgICAgICAgICAgICBzcmM9e0NBUkRfUEhPVE9TLmZpbmRNaWxrd2VlZH0KICAgICAgICAgICAgICAgICAgYWx0PSJBc2NsZXBpYXMgdHViZXJvc2Egd2l0aCBicmlnaHQgb3JhbmdlIGZsb3dlciBjbHVzdGVycyIKICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJhY3Rpb24tY2FyZF9faW1nIgogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWN0aW9uLWNhcmRfX2JvZHkiPgogICAgICAgICAgICAgICAgPGgzPkZpbmQgdGhlIHJpZ2h0IHNwZWNpZXMgZm9yIHlvdXIgY291bnR5PC9oMz4KICAgICAgICAgICAgICAgIDxwPkFzY2xlcGlhcyB0dWJlcm9zYSB0aHJpdmVzIGluIE9oaW8uIEl0IHN0cnVnZ2xlcyBpbiB0aGUgUGFjaWZpYyBOb3J0aHdlc3QuIFRoZSByaWdodCBzcGVjaWVzIGRlcGVuZHMgb24geW91ciBjb3VudHkuIFRoaXMgcGFnZSBmaW5kcyBpdC48L3A+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvYnV0dG9uPgoKICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9ImFjdGlvbi1jYXJkIiBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdzdG9wLXBlc3RpY2lkZXMnKX0+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFjdGlvbi1jYXJkX19pbWFnZS13cmFwIj4KICAgICAgICAgICAgICAgIDxpbWcKICAgICAgICAgICAgICAgICAgc3JjPXtDQVJEX1BIT1RPUy5zdG9wUGVzdGljaWRlc30KICAgICAgICAgICAgICAgICAgYWx0PSJNb25hcmNoIGJ1dHRlcmZseSByZXN0aW5nIHdpdGggd2luZ3Mgc3ByZWFkIgogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImFjdGlvbi1jYXJkX19pbWciCiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhY3Rpb24tY2FyZF9fYm9keSI+CiAgICAgICAgICAgICAgICA8aDM+U3RvcCB1c2luZyBwZXN0aWNpZGVzPC9oMz4KICAgICAgICAgICAgICAgIDxwPk1vc3QgcmVzaWRlbnRpYWwgcGVzdGljaWRlcyBraWxsIG1vbmFyY2hzIGFuZCB0aGVpciBsYXJ2YWUgb24gY29udGFjdC4gVGhlIGxhd24gbG9va3MgdGhlIHNhbWUgd2l0aG91dCB0aGVtLjwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9idXR0b24+CgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iYWN0aW9uLWNhcmQiIG9uQ2xpY2s9eygpID0+IG9uTmF2aWdhdGUoJ3NwcmVhZC10aGUtd29yZCcpfT4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWN0aW9uLWNhcmRfX2ltYWdlLXdyYXAiPgogICAgICAgICAgICAgICAgPGltZwogICAgICAgICAgICAgICAgICBzcmM9e0NBUkRfUEhPVE9TLnNwcmVhZFRoZVdvcmR9CiAgICAgICAgICAgICAgICAgIGFsdD0iTW9uYXJjaCBidXR0ZXJmbHkgZmVlZGluZyBvbiBtaWxrd2VlZCBmbG93ZXIiCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iYWN0aW9uLWNhcmRfX2ltZyIKICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFjdGlvbi1jYXJkX19ib2R5Ij4KICAgICAgICAgICAgICAgIDxoMz5TcHJlYWQgdGhlIHdvcmQ8L2gzPgogICAgICAgICAgICAgICAgPHA+TW9zdCBwZW9wbGUgZG9uJ3Qga25vdyB0aGUgcG9wdWxhdGlvbiBoYXMgZHJvcHBlZCA4MCUuIEhhYml0YXQgaXMgYSBjb3JyaWRvci4gQSBjb252ZXJzYXRpb24gd2l0aCBhIG5laWdoYm9yIG1hdHRlcnMuPC9wPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2J1dHRvbj4KCiAgICAgICAgICA8L2Rpdj57LyogLy5oZXJvX19hY3Rpb25zICovfQogICAgICAgIDwvZGl2PnsvKiAvLmhlcm9fX2JvZHkgKi99CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIHsvKiDilILilIAgV0hZIElUIE1BVFRFUlMg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAKi99CiAgICAgIDxzZWN0aW9uIGFyaWEtbGFiZWxsZWRieT0id2h5LWhlYWRpbmciIHN0eWxlPXt7IG1hcmdpblRvcDogJzIuNXJlbScgfX0+CiAgICAgICAgPGgyIGlkPSJ3aHktaGVhZGluZyI+V2h5IHRoZSBtb25hcmNoIHBvcHVsYXRpb24gaXMgY29sbGFwc2luZzwvaDI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZhY3QtZ3JpZCI+CgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZhY3QtY2FyZCI+CiAgICAgICAgICAgIDxoMz5NaWxrd2VlZCBsb3NzPC9oMz4KICAgICAgICAgICAgPHA+U2luY2UgMTk5NiwgdGhlIFUuUy4gaGFzIGxvc3QgYW4gZXN0aW1hdGVkIDxzdHJvbmc+MTY1IG1pbGxpb24gYWNyZXM8L3N0cm9uZz4gb2YgbW9uYXJjaCBoYWJpdGF0IOKAlCBsYXJnZWx5IGR1ZSB0byBoZXJiaWNpZGUtcmVzaXN0YW50IGNyb3BzIGVsaW1pbmF0aW5nIG1pbGt3ZWVkIGZyb20gYWdyaWN1bHR1cmFsIGxhbmQuPC9wPgogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZhY3QtY2FyZCI+CiAgICAgICAgICAgIDxoMz5QZXN0aWNpZGUgZXhwb3N1cmU8L2gzPgogICAgICAgICAgICA8cD5OZW9uaWNvdGlub2lkcyDigJQgdGhlIHdvcmxkJ3MgbW9zdCB3aWRlbHkgdXNlZCBjbGFzcyBvZiBpbnNlY3RpY2lkZXMg4oCUIHBlcnNpc3QgaW4gc29pbCBhbmQgcG9sbGVuLiBBIHRyZWF0ZWQgcGxhbnQgY2FuIHJlbWFpbiBsZXRoYWwgdG8gbW9uYXJjaCBsYXJ2YWUgZm9yIDxzdHJvbmc+bW9udGhzPC9zdHJvbmc+IGFmdGVyIGFwcGxpY2F0aW9uLjwvcD4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiPgogICAgICAgICAgICA8aDM+Q2xpbWF0ZSBkaXNydXB0aW9uPC9oMz4KICAgICAgICAgICAgPHA+U2hpZnRpbmcgdGVtcGVyYXR1cmVzIG1pc2FsaWduIG1vbmFyY2ggbWlncmF0aW9uIHdpdGggbWlsa3dlZWQgYXZhaWxhYmlsaXR5LiBXYXJtZXIgd2ludGVycyBhbGxvdyA8ZW0+T3BocnlvY3lzdGlzIGVsZWt0cm9zY2lycmhhPC9lbT4gKE9FKSDigJQgYSBkZWJpbGl0YXRpbmcgbW9uYXJjaCBwYXJhc2l0ZSDigJQgdG8gc3Vydml2ZSBpbiB5ZWFyLXJvdW5kIHNvdXRoZXJuIHBvcHVsYXRpb25zLjwvcD4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiPgogICAgICAgICAgICA8aDM+SGFiaXRhdCBmcmFnbWVudGF0aW9uPC9oMz4KICAgICAgICAgICAgPHA+TW9uYXJjaHMgdHJhdmVsIHVwIHRvIDMsMDAwIG1pbGVzLiBBIGNvcnJpZG9yIG9mIG1pbGt3ZWVkIGFuZCBuZWN0YXIgcGxhbnRzIGlzIHRoZSBpbmZyYXN0cnVjdHVyZSB0aGF0IG1pZ3JhdGlvbiBydW5zIG9uLiBTdWJ1cmJhbiBsYXducyBhbmQgcm9hZHNpZGVzIGFyZSB3aGVyZSB0aGF0IGluZnJhc3RydWN0dXJlIGlzIG1vc3RseSBtaXNzaW5nLjwvcD4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICA8L2Rpdj4KICAgICAgPC9zZWN0aW9uPgoKICAgICAgey8qIOKUguKUgCBNRUVUIFlPVVIgTkVJR0hCT1JTIC0tLSBwcmV2aWV3IHRoZSBzcGVjaWVzIGdhbGxlcnk7IHJvdXRlcyBob21lcGFnZSB0cmFmZmljIHRvIDQ5IHNwZWNpZXMgcGFnZXMgKi99CiAgICAgIDxzZWN0aW9uIGFyaWEtbGFiZWxsZWRieT0ibmVpZ2hib3JzLWhlYWRpbmciIHN0eWxlPXt7IG1hcmdpblRvcDogJzIuNXJlbScgfX0+CiAgICAgICAgPGgyIGlkPSJuZWlnaGJvcnMtaGVhZGluZyI+WW91ciB5YXJkIGlzIGFscmVhZHkgaG9tZSB0byBtb3JlIHRoYW4geW91IGtub3c8L2gyPgogICAgICAgIDxwIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dC1zZWNvbmRhcnkpJywgbWFyZ2luQm90dG9tOiAnMS4yNXJlbScgfX0+CiAgICAgICAgICA0NCBzcGVjaWVzIHJhaXNlIHlvdW5nIGluIGJhY2t5YXJkcyDigJQgaW4gbGVhZiBsaXR0ZXIsIGhvbGxvdyBsb2dzLCBsb29zZSBzb2lsLCBhbmQgc2hhbGxvdyBncm91bmQgbmVzdHMuCiAgICAgICAgICBFYWNoIG9uZSBpcyBkb2luZyBzb21ldGhpbmcgcmlnaHQgbm93IGluIHlvdXIgeWFyZCB0aGF0IHlvdXIgbmV4dCBkZWNpc2lvbiB3aWxsIGVpdGhlciBhbGxvdyBvciBwcmV2ZW50LgogICAgICAgIDwvcD4KICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdncmlkJywgZ3JpZFRlbXBsYXRlQ29sdW1uczogJ3JlcGVhdChhdXRvLWZpbGwsIG1pbm1heCgyMDBweCwgMWZyKSknLCBnYXA6ICcxcmVtJyB9fT4KCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1jYXJkIiBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLCBvdmVyZmxvdzogJ2hpZGRlbicsIHBhZGRpbmc6ICcwJywgY3Vyc29yOiAncG9pbnRlcicgfX0gb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnZmlyZWZsaWVzJyl9PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGhlaWdodDogJzE2MHB4Jywgb3ZlcmZsb3c6ICdoaWRkZW4nLCBiYWNrZ3JvdW5kOiAnI2U4ZWRlOCcgfX0+CiAgICAgICAgICAgICAgPGltZyBzcmM9e05FSUdIQk9SX1BIT1RPUy5maXJlZmxpZXN9IGFsdD0iRmlyZWZseSBwZXJjaGVkIG9uIHBsYW50IHN0ZW0gYXQgZHVzayIgbG9hZGluZz0ibGF6eSIgc3R5bGU9e3sgd2lkdGg6ICcxMDAlJywgaGVpZ2h0OiAnMTAwJScsIG9iamVjdEZpdDogJ2NvdmVyJywgZGlzcGxheTogJ2Jsb2NrJyB9fSAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBwYWRkaW5nOiAnMXJlbScgfX0+CiAgICAgICAgICAgICAgPGgzIHN0eWxlPXt7IG1hcmdpbjogJzAgMCAwLjVyZW0nIH19PkZpcmVmbGllczwvaDM+CiAgICAgICAgICAgICAgPHAgc3R5bGU9e3sgbWFyZ2luOiAwLCBmb250U2l6ZTogJzAuOXJlbScsIGNvbG9yOiAndmFyKC0tdGV4dC1zZWNvbmRhcnkpJyB9fT5MYXJ2YWUgaHVudCBzb2lsIGluc2VjdHMgZm9yIHR3byB5ZWFycyBiZWZvcmUgdGhlaXIgb25lLXN1bW1lciBmbGFzaC4gTGVhZiBsaXR0ZXIgaXMgd2hlcmUgdGhleSBsaXZlIHVudGlsIHRoZW4uPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiIHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsIG92ZXJmbG93OiAnaGlkZGVuJywgcGFkZGluZzogJzAnLCBjdXJzb3I6ICdwb2ludGVyJyB9fSBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdib3gtdHVydGxlcycpfT4KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBoZWlnaHQ6ICcxNjBweCcsIG92ZXJmbG93OiAnaGlkZGVuJywgYmFja2dyb3VuZDogJyNlOGVkZTgnIH19PgogICAgICAgICAgICAgIDxpbWcgc3JjPXtORUlHSEJPUl9QSE9UT1MuYm94VHVydGxlc30gYWx0PSJFYXN0ZXJuIGJveCB0dXJ0bGUgb24gZm9yZXN0IGZsb29yIiBsb2FkaW5nPSJsYXp5IiBzdHlsZT17eyB3aWR0aDogJzEwMCUnLCBoZWlnaHQ6ICcxMDAlJywgb2JqZWN0Rml0OiAnY292ZXInLCBkaXNwbGF5OiAnYmxvY2snIH19IC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6ICcxcmVtJyB9fT4KICAgICAgICAgICAgICA8aDMgc3R5bGU9e3sgbWFyZ2luOiAnMCAwIDAuNXJlbScgfX0+Qm94IFR1cnRsZXM8L2gzPgogICAgICAgICAgICAgIDxwIHN0eWxlPXt7IG1hcmdpbjogMCwgZm9udFNpemU6ICcwLjlyZW0nLCBjb2xvcjogJ3ZhcigtLXRleHQtc2Vjb25kYXJ5KScgfX0+QSBib3ggdHVydGxlJ3MgaG9tZSByYW5nZSBpcyBzbWFsbGVyIHRoYW4gbW9zdCB5YXJkcy4gVGhleSBuYXZpZ2F0ZSBieSBtZW1vcnkg4oCUIHRoZSBzYW1lIGxvZywgdGhlIHNhbWUgYmVycnkgcGF0Y2gsIGRlY2FkZSBhZnRlciBkZWNhZGUuPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiIHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsIG92ZXJmbG93OiAnaGlkZGVuJywgcGFkZGluZzogJzAnLCBjdXJzb3I6ICdwb2ludGVyJyB9fSBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdidW1ibGViZWVzJyl9PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGhlaWdodDogJzE2MHB4Jywgb3ZlcmZsb3c6ICdoaWRkZW4nLCBiYWNrZ3JvdW5kOiAnI2U4ZWRlOCcgfX0+CiAgICAgICAgICAgICAgPGltZyBzcmM9e05FSUdIQk9SX1BIT1RPUy5idW1ibGViZWVzfSBhbHQ9IkJ1bWJsZWJlZSBvbiBwdXJwbGUgd2lsZGZsb3dlciIgbG9hZGluZz0ibGF6eSIgc3R5bGU9e3sgd2lkdGg6ICcxMDAlJywgaGVpZ2h0OiAnMTAwJScsIG9iamVjdEZpdDogJ2NvdmVyJywgZGlzcGxheTogJ2Jsb2NrJyB9fSAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBwYWRkaW5nOiAnMXJlbScgfX0+CiAgICAgICAgICAgICAgPGgzIHN0eWxlPXt7IG1hcmdpbjogJzAgMCAwLjVyZW0nIH19PkJ1bWJsZWJlZXM8L2gzPgogICAgICAgICAgICAgIDxwIHN0eWxlPXt7IG1hcmdpbjogMCwgZm9udFNpemU6ICcwLjlyZW0nLCBjb2xvcjogJ3ZhcigtLXRleHQtc2Vjb25kYXJ5KScgfX0+QSBxdWVlbiBvdmVyd2ludGVycyBhbG9uZSB1bmRlcmdyb3VuZCwgdGhlbiBidWlsZHMgYSBjb2xvbnkgZnJvbSBzY3JhdGNoIGVhY2ggc3ByaW5nLiBTaGUgaXMgbG9va2luZyBmb3IgeW91ciB5YXJkIHJpZ2h0IG5vdy48L3A+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZhY3QtY2FyZCIgc3R5bGU9e3sgZGlzcGxheTogJ2ZsZXgnLCBmbGV4RGlyZWN0aW9uOiAnY29sdW1uJywgb3ZlcmZsb3c6ICdoaWRkZW4nLCBwYWRkaW5nOiAnMCcsIGN1cnNvcjogJ3BvaW50ZXInIH19IG9uQ2xpY2s9eygpID0+IG9uTmF2aWdhdGUoJ2h1bW1pbmdiaXJkcycpfT4KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBoZWlnaHQ6ICcxNjBweCcsIG92ZXJmbG93OiAnaGlkZGVuJywgYmFja2dyb3VuZDogJyNlOGVkZTgnIH19PgogICAgICAgICAgICAgIDxpbWcgc3JjPXtORUlHSEJPUl9QSE9UT1MuaHVtbWluZ2JpcmRzfSBhbHQ9IlJ1YnktdGhyb2F0ZWQgaHVtbWluZ2JpcmQgaW4gZmxpZ2h0IiBsb2FkaW5nPSJsYXp5IiBzdHlsZT17eyB3aWR0aDogJzEwMCUnLCBoZWlnaHQ6ICcxMDAlJywgb2JqZWN0Rml0OiAnY292ZXInLCBkaXNwbGF5OiAnYmxvY2snIH19IC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6ICcxcmVtJyB9fT4KICAgICAgICAgICAgICA8aDMgc3R5bGU9e3sgbWFyZ2luOiAnMCAwIDAuNXJlbScgfX0+SHVtbWluZ2JpcmRzPC9oMz4KICAgICAgICAgICAgICA8cCBzdHlsZT17eyBtYXJnaW46IDAsIGZvbnRTaXplOiAnMC45cmVtJywgY29sb3I6ICd2YXIoLS10ZXh0LXNlY29uZGFyeSknIH19PkEgcnVieS10aHJvYXRlZCBodW1taW5nYmlyZCB3ZWlnaHMgbGVzcyB0aGFuIGEgbmlja2VsLiBJdCBjcm9zc2VzIHRoZSBHdWxmIG9mIE1leGljbyBub25zdG9wIOKAlCA1MDAgbWlsZXMgaW4gMTggaG91cnMg4oCUIGFuZCBsYW5kcyBpbiB5b3VyIHlhcmQgbmVlZGluZyBuZWN0YXIuPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiIHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsIG92ZXJmbG93OiAnaGlkZGVuJywgcGFkZGluZzogJzAnLCBjdXJzb3I6ICdwb2ludGVyJyB9fSBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdzd2FsbG93dGFpbHMnKX0+CiAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgaGVpZ2h0OiAnMTYwcHgnLCBvdmVyZmxvdzogJ2hpZGRlbicsIGJhY2tncm91bmQ6ICcjZThlZGU4JyB9fT4KICAgICAgICAgICAgICA8aW1nIHNyYz17TkVJR0hCT1JfUEhPVE9TLnN3YWxsb3dUYWlsc30gYWx0PSJCbGFjayBzd2FsbG93dGFpbCBidXR0ZXJmbHkgd2l0aCB3aW5ncyBvcGVuIiBsb2FkaW5nPSJsYXp5IiBzdHlsZT17eyB3aWR0aDogJzEwMCUnLCBoZWlnaHQ6ICcxMDAlJywgb2JqZWN0Rml0OiAnY292ZXInLCBkaXNwbGF5OiAnYmxvY2snIH19IC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6ICcxcmVtJyB9fT4KICAgICAgICAgICAgICA8aDMgc3R5bGU9e3sgbWFyZ2luOiAnMCAwIDAuNXJlbScgfX0+U3dhbGxvd3RhaWxzPC9oMz4KICAgICAgICAgICAgICA8cCBzdHlsZT17eyBtYXJnaW46IDAsIGZvbnRTaXplOiAnMC45cmVtJywgY29sb3I6ICd2YXIoLS10ZXh0LXNlY29uZGFyeSknIH19PkJsYWNrIHN3YWxsb3d0YWlsIGNhdGVycGlsbGFycyBlYXQgcGFyc2xleSBhbmQgZGlsbCDigJQgaGVyYnMgYWxyZWFkeSBpbiBtb3N0IGtpdGNoZW4gZ2FyZGVucy4gVGhlIGJ1dHRlcmZseSBpcyB0aGVyZSBpZiB0aGUgcGxhbnQgaXMuPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiIHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsIG92ZXJmbG93OiAnaGlkZGVuJywgcGFkZGluZzogJzAnLCBjdXJzb3I6ICdwb2ludGVyJyB9fSBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdjZWNyb3BpYS1tb3RoJyl9PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGhlaWdodDogJzE2MHB4Jywgb3ZlcmZsb3c6ICdoaWRkZW4nLCBiYWNrZ3JvdW5kOiAnI2U4ZWRlOCcgfX0+CiAgICAgICAgICAgICAgPGltZyBzcmM9e05FSUdIQk9SX1BIT1RPUy5jZWNyb3BpYX0gYWx0PSJDZWN yb3BpYSBtb3RoIHdpdGggd2luZ3Mgc3ByZWFkIHNob3dpbmcgcmVkIGFuZCB3aGl0ZSBiYW5kaW5nIiBsb2FkaW5nPSJsYXp5IiBzdHlsZT17eyB3aWR0aDogJzEwMCUnLCBoZWlnaHQ6ICcxMDAlJywgb2JqZWN0Rml0OiAnY292ZXInLCBkaXNwbGF5OiAnYmxvY2snIH19IC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6ICcxcmVtJyB9fT4KICAgICAgICAgICAgICA8aDMgc3R5bGU9e3sgbWFyZ2luOiAnMCAwIDAuNXJlbScgfX0+Q2Vjcm9waWEgTW90aDwvaDM+CiAgICAgICAgICAgICAgPHAgc3R5bGU9e3sgbWFyZ2luOiAwLCBmb250U2l6ZTogJzAuOXJlbScsIGNvbG9yOiAndmFyKC0tdGV4dC1zZWNvbmRhcnkpJyB9fT5Ob3J0aCBBbWVyaWNhJ3MgbGFyZ2VzdCBtb3RoIOKAlCB3aW5nc3BhbiB1cCB0byA3IGluY2hlcy4gQWR1bHRzIGRvbid0IGVhdC4gVGhleSBsaXZlIG9ubHkgdG8gZmluZCBhIG1hdGUsIGFuZCB0aGV5IGRvIGl0IGluIHRoZSBkYXJrLCBndWlkZWQgYnkgc2NlbnQgYWNyb3NzIG1pbGVzLjwvcD4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1jYXJkIiBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLCBvdmVyZmxvdzogJ2hpZGRlbicsIHBhZGRpbmc6ICcwJywgY3Vyc29yOiAncG9pbnRlcicgfX0gb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnbm9ydGhlcm4tZmxpY2tlcicpfT4KICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBoZWlnaHQ6ICcxNjBweCcsIG92ZXJmbG93OiAnaGlkZGVuJywgYmFja2dyb3VuZDogJyNlOGVkZTgnIH19PgogICAgICAgICAgICAgIDxpbWcgc3JjPXtORUlHSEJPUl9QSE9UT1Mubm9ydGhlcm5GbGlja2VyfSBhbHQ9Ik5vcnRoZXJuIGZsaWNrZXIgd29vZHBlY2tlciBwZXJjaGVkIHNob3dpbmcgc3BvdHRlZCBicmVhc3QiIGxvYWRpbmc9ImxhenkiIHN0eWxlPXt7IHdpZHRoOiAnMTAwJScsIGhlaWdodDogJzEwMCUnLCBvYmplY3RGaXQ6ICdjb3ZlcicsIGRpc3BsYXk6ICdibG9jaycgfX0gLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgcGFkZGluZzogJzFyZW0nIH19PgogICAgICAgICAgICAgIDxoMyBzdHlsZT17eyBtYXJnaW46ICcwIDAgMC41cmVtJyB9fT5Ob3J0aGVybiBGbGlja2VyPC9oMz4KICAgICAgICAgICAgICA8cCBzdHlsZT17eyBtYXJnaW46IDAsIGZvbnRTaXplOiAnMC45cmVtJywgY29sb3I6ICd2YXIoLS10ZXh0LXNlY29uZGFyeSknIH19PkEgd29vZHBlY2tlciB0aGF0IGFiYW5kb25lZCB0cmVlcyBmb3IgdGhlIGdyb3VuZC4gSXQgaHVudHMgYW50cyDigJQgdGhvdXNhbmRzIHBlciBkYXkg4oCUIHVzaW5nIGEgdG9uZ3VlIHRoYXQgd3JhcHMgYXJvdW5kIHRoZSBiYWNrIG9mIGl0cyBza3VsbC48L3A+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgc3R5bGU9e3sgdGV4dEFsaWduOiAnY2VudGVyJywgbWFyZ2luVG9wOiAnMS41cmVtJyB9fT4KICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJjdGEtYnV0dG9uIiBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCduZWlnaGJvcnMnKX0+CiAgICAgICAgICAgIE1lZXQgYWxsIDQ5IG5laWdoYm9ycyDihpIKICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICB7LyogLeKUgiBBVFRSSUJVVElPTiDilILilILilILilILilILilILilILilILilILilILilILilILilILilILilILilILilILilIAqL30KICAgICAgPHNlY3Rpb24gYXJpYS1sYWJlbD0iUGhvdG8gYXR0cmlidXRpb24iIHN0eWxlPXt7IG1hcmdpblRvcDogJzIuNXJlbScsIGJvcmRlclRvcDogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJywgcGFkZGluZ1RvcDogJzFyZW0nIH19PgogICAgICAgIDxkZXRhaWxzPgogICAgICAgICAgPHN1bW1hcnkgc3R5bGU9e3sgY3Vyc29yOiAncG9pbnRlcicsIGNvbG9yOiAndmFyKC0tdGV4dC1zZWNvbmRhcnkpJywgZm9udFNpemU6ICcwLjg1cmVtJyB9fT5QaG90byBjcmVkaXRzPC9zdW1tYXJ5PgogICAgICAgICAgPHVsIHN0eWxlPXt7IGZvbnRTaXplOiAnMC44cmVtJywgY29sb3I6ICd2YXIoLS10ZXh0LXNlY29uZGFyeSknLCBtYXJnaW5Ub3A6ICcwLjVyZW0nLCBsaW5lSGVpZ2h0OiAxLjYgfX0+CiAgICAgICAgICAgIDxsaT5Nb25hcmNoIGNhdGVycGlsbGFyOiA8YSBocmVmPSJodHRwczovL2NvbW1vbnMud2lraW1lZGlhLm9yZy93aWtpL0ZpbGU6TW9uYXJjaF9CdXR0ZXJmbHlfQ2F0ZXJwaWxsYXJfb25fTWlsa3dlZWRfUGxhbnQuanBnIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub3JlZmVycmVyIj5VU0dTIEJlZSBJbnZlbnRvcnkgYW5kIE1vbml0b3JpbmcgTGFiPC9hPiwgUHVibGljIERvbWFpbjwvbGk+CiAgICAgICAgICAgIDxsaT5Bc2NsZXBpYXMgdHViZXJvc2E6IDxhIGhyZWY9Imh0dHBzOi8vY29tbW9ucy53aWtpbWVkaWEub3JnL3dpa2kvRmlsZTpBc2NsZXBpYXNfdHViZXJvc2FfMDAwMS5qcGciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPlJhdWw2NTQ8L2E+LCBDQSBCWS1TQSAzLjA8L2xpPgogICAgICAgICAgICA8bGk+TW9uYXJjaCByZXN0aW5nOiA8YSBocmVmPSJodHRwczovL2NvbW1vbnMud2lraW1lZGlhLm9yZy93aWtpL0ZpbGU6TW9uYXJjaF9CdXR0ZXJmbHlfRGFuYXVzX3BsZXhpcHB1c19SZXN0aW5nXzE4MDBweC5qcGciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPkNvZHkgSG91Z2g8L2E+LCBDQSBCWS1TQSAzLjA8L2xpPgogICAgICAgICAgICA8bGk+TW9uYXJjaCBvbiBtaWxrd2VlZDogPGEgaHJlZj0iaHR0cHM6Ly9jb21tb25zLndpa2ltZWRpYS5vcmcvd2lraS9GaWxlOkRhbmF1c19wbGV4aXBwdXNfb25fQXNjbGVwaWFzX3R1YmVyb3NhXzEuanBnIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub3JlZmVycmVyIj5EZXJlayBSYW1zZXk8L2E+LCBDQSBCWS1TQSAyLjU8L2xpPgogICAgICAgICAgICA8bGk+RmlyZWZseTogPGEgaHJlZj0iaHR0cHM6Ly9jb21tb25zLndpa2ltZWRpYS5vcmcvd2lraS9GaWxlOkZpcmVmbHlfMl8oTGFtcHlyaWRhZSkuanBnIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub3JlZmVycmVyIj5BcnQgRmFybWVyPC9hPiwgQ0MgQlktU0EgMi4wPC9saT4KICAgICAgICAgICAgPGxpPkJveCB0dXJ0bGU6IDxhIGhyZWY9Imh0dHBzOi8vY29tbW9ucy53aWtpbWVkaWEub3JnL3dpa2kvRmlsZTpCb3hfdHVydGxlX0Vhc3Rlcm5fMi5qcGciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPk1vb25kaWdnZXI8L2E+LCBDQSBCWS1TQSAyLjU8L2xpPgogICAgICAgICAgICA8bGk+QnVtYmxlYmVlOiA8YSBocmVmPSJodHRwczovL2NvbW1vbnMud2lraW1lZGlhLm9yZy93aWtpL0ZpbGU6Qm9tYnVzX2h1bnRpaV8tX1BlbnN0ZW1vbl9zdHJpY3R1c18tX0JhbGRfTW91bnRhaW4uanBnIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub3JlZmVycmVyIj5VU0dTIEJlZSBMYWI8L2E+LCBQdWJsaWMgRG9tYWluPC9saT4KICAgICAgICAgICAgPGxpPkh1bW1pbmdiaXJkOiA8YSBocmVmPSJodHRwczovL2NvbW1vbnMud2lraW1lZGlhLm9yZy93aWtpL0ZpbGU6UnVieS10aHJvYXRlZF9IdW1taW5nYmlyZF8tX0FyY2hpbG9jaHVzX2NvbHVicmlzLF9NZXJyaW1hY19GYXJtX1dpbGRsaWZlX01hbmFnZW1lbnRfQXJlYSxfTm9rZXN2aWxsZSxfVmlyZ2luaWFfKDQ5MTExNDU1Mzg4KS5qcGciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPkp1ZHkgR2FsbGFnaGVyPC9hPiwgQ0MgQlkgMi4wPC9saT4KICAgICAgICAgICAgPGxpPlN3YWxsb3d0YWlsOiA8YSBocmVmPSJodHRwczovL2NvbW1vbnMud2lraW1lZGlhLm9yZy93aWtpL0ZpbGU6UGFwaWxpb19wb2x5eGVuZXNfKEJsYWNrX1N3YWxsb3d0YWlsKSxfbWFsZS5qcGciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPkp1ZHkgR2FsbGFnaGVyPC9hPiwgQ0MgQlkgMi4wPC9saT4KICAgICAgICAgICAgPGxpPkNlY3JvcGlhIG1vdGg6IDxhIGhyZWY9Imh0dHBzOi8vY29tbW9ucy53aWtpbWVkaWEub3JnL3dpa2kvRmlsZTpDZWNyb3BpYV9Nb3RoXyhIeWFsb3Bob3JhX2NlY3JvcGlhKS5qcGciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPlBldGVyd2NoZW48L2E+LCBDQSBCWS1TQSAzLjA8L2xpPgogICAgICAgICAgICA8bGk+Tm9ydGhlcm4gRmxpY2tlcjogPGEgaHJlZj0iaHR0cHM6Ly9jb21tb25zLndpa2ltZWRpYS5vcmcvd2lraS9GaWxlOk5vcnRoZXJuX0ZsaWNrZXJfKFJlZC1zaGFmdGVkKS5qcGciIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPkFsYW4gRC4gV2lsc29uPC9hPiwgQ0MgQlktU0EgMy4wPC9saT4KICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9kZXRhaWxzPgogICAgICA8L3NlY3Rpb24+CgogICAgPC9tYWluPgogICkKfQo=
+import type { Page } from '../App'
+
+interface HomeProps {
+  onNavigate: (page: Page) => void
+}
+
+// Photo sources: Wikimedia Commons (CC BY-SA). Attribution at bottom of page.
+// vis-004: verified thumbnail URLs from Wikimedia Commons API 2026-05-09.
+// TODO: download and host in /public/ for production performance.
+const CARD_PHOTOS = {
+  plantMilkweed: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Monarch_Butterfly_Caterpillar_on_Milkweed_Plant.jpg/320px-Monarch_Butterfly_Caterpillar_on_Milkweed_Plant.jpg',
+  findMilkweed: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Asclepias_tuberosa_0001.jpg/320px-Asclepias_tuberosa_0001.jpg',
+  stopPesticides: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Monarch_Butterfly_Danaus_plexippus_Resting_1800px.jpg/320px-Monarch_Butterfly_Danaus_plexippus_Resting_1800px.jpg',
+  spreadTheWord: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Danaus_plexippus_on_Asclepias_tuberosa_1.jpg/320px-Danaus_plexippus_on_Asclepias_tuberosa_1.jpg',
+}
+
+const NEIGHBOR_PHOTOS = {
+  fireflies: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Firefly_2_%28Lampyridae%29.jpg/320px-Firefly_2_%28Lampyridae%29.jpg',
+  boxTurtles: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Box_turtle_Eastern_2.jpg/320px-Box_turtle_Eastern_2.jpg',
+  bumblebees: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Bombus_huntii_-_Penstemon_strictus_-_Bald_Mountain.jpg/320px-Bombus_huntii_-_Penstemon_strictus_-_Bald_Mountain.jpg',
+  hummingbirds: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Ruby-throated_Hummingbird_-_Archilochus_colubris%2C_Merrimac_Farm_Wildlife_Management_Area%2C_Nokesville%2C_Virginia_%2849111455388%29.jpg/320px-Ruby-throated_Hummingbird_-_Archilochus_colubris%2C_Merrimac_Farm_Wildlife_Management_Area%2C_Nokesville%2C_Virginia_%2849111455388%29.jpg',
+  swallowTails: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Papilio_polyxenes_%28Black_Swallowtail%29%2C_male.jpg/320px-Papilio_polyxenes_%28Black_Swallowtail%29%2C_male.jpg',
+  cecropia: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cecropia_Moth_%28Hyalophora_cecropia%29.jpg/320px-Cecropia_Moth_%28Hyalophora_cecropia%29.jpg',
+  northernFlicker: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Northern_Flicker_%28Red-shafted%29.jpg/320px-Northern_Flicker_%28Red-shafted%29.jpg',
+}
+
+export default function Home({ onNavigate }: HomeProps) {
+  return (
+    <main>
+
+      {/* ── HERO ─────────────────────────────────────────── */}
+      <section className="hero">
+        <div className="hero__body">
+
+          {/* Hero headline + lead */}
+          <div className="hero__text">
+            <h1>Monarch caterpillars eat only milkweed.<br />That plant has nearly vanished from American farmland.</h1>
+            <p className="hero__lead">
+          In the 1990s, hundreds of millions of monarchs reached Mexico each fall.<sup><a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer" className="cite">[1]</a></sup><br />
+          Last winter, about 60 million did.<sup><a href="https://xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
+        </p>
+          </div>
+
+          {/* Hero CTA cards */}
+          <div className="hero__actions">
+
+            <button className="action-card" onClick={() => onNavigate('plant-milkweed')}>
+              <div className="action-card__image-wrap">
+                <img
+                  src={CARD_PHOTOS.plantMilkweed}
+                  alt="Monarch caterpillar on milkweed plant"
+                  className="action-card__img"
+                />
+              </div>
+              <div className="action-card__body">
+                <h3>Plant milkweed</h3>
+                <p>The host plant monarchs cannot survive without — and one of the best things any yard can offer.</p>
+              </div>
+            </button>
+
+            <button className="action-card" onClick={() => onNavigate('find-milkweed')}>
+              <div className="action-card__image-wrap">
+                <img
+                  src={CARD_PHOTOS.findMilkweed}
+                  alt="Asclepias tuberosa with bright orange flower clusters"
+                  className="action-card__img"
+                />
+              </div>
+              <div className="action-card__body">
+                <h3>Find the right species for your county</h3>
+                <p>Asclepias tuberosa thrives in Ohio. It struggles in the Pacific Northwest. The right species depends on your county. This page finds it.</p>
+              </div>
+            </button>
+
+            <button className="action-card" onClick={() => onNavigate('stop-pesticides')}>
+              <div className="action-card__image-wrap">
+                <img
+                  src={CARD_PHOTOS.stopPesticides}
+                  alt="Monarch butterfly resting with wings spread"
+                  className="action-card__img"
+                />
+              </div>
+              <div className="action-card__body">
+                <h3>Stop using pesticides</h3>
+                <p>Most residential pesticides kill monarchs and their larvae on contact. The lawn looks the same without them.</p>
+              </div>
+            </button>
+
+            <button className="action-card" onClick={() => onNavigate('spread-the-word')}>
+              <div className="action-card__image-wrap">
+                <img
+                  src={CARD_PHOTOS.spreadTheWord}
+                  alt="Monarch butterfly feeding on milkweed flower"
+                  className="action-card__img"
+                />
+              </div>
+              <div className="action-card__body">
+                <h3>Spread the word</h3>
+                <p>Most people don't know the population has dropped 80%. Habitat is a corridor. A conversation with a neighbor matters.</p>
+              </div>
+            </button>
+
+          </div>{/* /.hero__actions */}
+        </div>{/* /.hero__body */}
+      </section>
+
+      {/* ── WHY IT MATTERS ───────────────────────────────── */}
+      <section aria-labelledby="why-heading" style={{ marginTop: '2.5rem' }}>
+        <h2 id="why-heading">Why the monarch population is collapsing</h2>
+        <div className="fact-grid">
+
+          <div className="fact-card">
+            <h3>Milkweed loss</h3>
+            <p>Since 1996, the U.S. has lost an estimated <strong>165 million acres</strong> of monarch habitat — largely due to herbicide-resistant crops eliminating milkweed from agricultural land.</p>
+          </div>
+
+          <div className="fact-card">
+            <h3>Pesticide exposure</h3>
+            <p>Neonicotinoids — the world's most widely used class of insecticides — persist in soil and pollen. A treated plant can remain lethal to monarch larvae for <strong>months</strong> after application.</p>
+          </div>
+
+          <div className="fact-card">
+            <h3>Climate disruption</h3>
+            <p>Shifting temperatures misalign monarch migration with milkweed availability. Warmer winters allow <em>Ophryocystis elektroscirrha</em> (OE) — a debilitating monarch parasite — to survive in year-round southern populations.</p>
+          </div>
+
+          <div className="fact-card">
+            <h3>Habitat fragmentation</h3>
+            <p>Monarchs travel up to 3,000 miles. A corridor of milkweed and nectar plants is the infrastructure that migration runs on. Suburban lawns and roadsides are where that infrastructure is mostly missing.</p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ── MEET YOUR NEIGHBORS — preview the species gallery; routes homepage traffic to 49 species pages */}
+      <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
+        <h2 id="neighbors-heading">Your yard is already home to more than you know</h2>
+        <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
+          44 species raise young in backyards — in leaf litter, hollow logs, loose soil, and shallow ground nests.
+          Each one is doing something right now in your yard that your next decision will either allow or prevent.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
+
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('fireflies')}>
+            <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+              <img src={NEIGHBOR_PHOTOS.fireflies} alt="Firefly perched on plant stem at dusk" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem' }}>Fireflies</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Larvae hunt soil insects for two years before their one-summer flash. Leaf litter is where they live until then.</p>
+            </div>
+          </div>
+
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('box-turtles')}>
+            <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+              <img src={NEIGHBOR_PHOTOS.boxTurtles} alt="Eastern box turtle on forest floor" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem' }}>Box Turtles</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>A box turtle's home range is smaller than most yards. They navigate by memory — the same log, the same berry patch, decade after decade.</p>
+            </div>
+          </div>
+
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('bumblebees')}>
+            <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+              <img src={NEIGHBOR_PHOTOS.bumblebees} alt="Bumblebee on purple wildflower" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem' }}>Bumblebees</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>A queen overwinters alone underground, then builds a colony from scratch each spring. She is looking for your yard right now.</p>
+            </div>
+          </div>
+
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('hummingbirds')}>
+            <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+              <img src={NEIGHBOR_PHOTOS.hummingbirds} alt="Ruby-throated hummingbird in flight" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem' }}>Hummingbirds</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>A ruby-throated hummingbird weighs less than a nickel. It crosses the Gulf of Mexico nonstop — 500 miles in 18 hours — and lands in your yard needing nectar.</p>
+            </div>
+          </div>
+
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('swallowtails')}>
+            <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+              <img src={NEIGHBOR_PHOTOS.swallowTails} alt="Black swallowtail butterfly with wings open" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem' }}>Swallowtails</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Black swallowtail caterpillars eat parsley and dill — herbs already in most kitchen gardens. The butterfly is there if the plant is.</p>
+            </div>
+          </div>
+
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('cecropia-moth')}>
+            <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+              <img src={NEIGHBOR_PHOTOS.cecropia} alt="Cecropia moth with wings spread showing red and white banding" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem' }}>Cecropia Moth</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>North America's largest moth — wingspan up to 7 inches. Adults don't eat. They live only to find a mate, and they do it in the dark, guided by scent across miles.</p>
+            </div>
+          </div>
+
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('northern-flicker')}>
+            <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
+              <img src={NEIGHBOR_PHOTOS.northernFlicker} alt="Northern flicker woodpecker perched showing spotted breast" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem' }}>Northern Flicker</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>A woodpecker that abandoned trees for the ground. It hunts ants — thousands per day — using a tongue that wraps around the back of its skull.</p>
+            </div>
+          </div>
+
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+          <button className="cta-button" onClick={() => onNavigate('neighbors')}>
+            Meet all 49 neighbors →
+          </button>
+        </div>
+      </section>
+
+      {/* ── ATTRIBUTION ───────────────────────────────── */}
+      <section aria-label="Photo attribution" style={{ marginTop: '2.5rem', borderTop: '1px solid var(--border)', paddingTop: '1rem' }}>
+        <details>
+          <summary style={{ cursor: 'pointer', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>Photo credits</summary>
+          <ul style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem', lineHeight: 1.6 }}>
+            <li>Monarch caterpillar: <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Caterpillar_on_Milkweed_Plant.jpg" target="_blank" rel="noreferrer">USGS Bee Inventory and Monitoring Lab</a>, Public Domain</li>
+            <li>Asclepias tuberosa: <a href="https://commons.wikimedia.org/wiki/File:Asclepias_tuberosa_0001.jpg" target="_blank" rel="noreferrer">Raul654</a>, CC BY-SA 3.0</li>
+            <li>Monarch resting: <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Resting_1800px.jpg" target="_blank" rel="noreferrer">Cody Hough</a>, CC BY-SA 3.0</li>
+            <li>Monarch on milkweed: <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_on_Asclepias_tuberosa_1.jpg" target="_blank" rel="noreferrer">Derek Ramsey</a>, CC BY-SA 2.5</li>
+            <li>Firefly: <a href="https://commons.wikimedia.org/wiki/File:Firefly_2_(Lampyridae).jpg" target="_blank" rel="noreferrer">Art Farmer</a>, CC BY-SA 2.0</li>
+            <li>Box turtle: <a href="https://commons.wikimedia.org/wiki/File:Box_turtle_Eastern_2.jpg" target="_blank" rel="noreferrer">Moondigger</a>, CC BY-SA 2.5</li>
+            <li>Bumblebee: <a href="https://commons.wikimedia.org/wiki/File:Bombus_huntii_-_Penstemon_strictus_-_Bald_Mountain.jpg" target="_blank" rel="noreferrer">USGS Bee Lab</a>, Public Domain</li>
+            <li>Hummingbird: <a href="https://commons.wikimedia.org/wiki/File:Ruby-throated_Hummingbird_-_Archilochus_colubris,_Merrimac_Farm_Wildlife_Management_Area,_Nokesville,_Virginia_(49111455388).jpg" target="_blank" rel="noreferrer">Judy Gallagher</a>, CC BY 2.0</li>
+            <li>Swallowtail: <a href="https://commons.wikimedia.org/wiki/File:Papilio_polyxenes_(Black_Swallowtail),_male.jpg" target="_blank" rel="noreferrer">Judy Gallagher</a>, CC BY 2.0</li>
+            <li>Cecropia moth: <a href="https://commons.wikimedia.org/wiki/File:Cecropia_Moth_(Hyalophora_cecropia).jpg" target="_blank" rel="noreferrer">Peterwchen</a>, CC BY-SA 3.0</li>
+            <li>Northern Flicker: <a href="https://commons.wikimedia.org/wiki/File:Northern_Flicker_(Red-shafted).jpg" target="_blank" rel="noreferrer">Alan D. Wilson</a>, CC BY-SA 3.0</li>
+          </ul>
+        </details>
+      </section>
+
+    </main>
+  )
+}
