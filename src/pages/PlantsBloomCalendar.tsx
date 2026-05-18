@@ -72,6 +72,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       page: 'wild-columbine',
     },
     {
+      name: 'Golden Alexanders',
+      latinName: 'Zizia aurea',
+      bloomWindow: 'April–May',
+      observation:
+        'Golden Alexanders opens flat-topped yellow clusters in April. A small mining bee, Andrena ziziae, emerges from her underground nest in April on the same soil-temperature trigger that opens Zizia flowers — and she collects pollen exclusively from Zizia, not dandelion, clover, or any other available spring flower. If no Golden Alexanders is blooming within her foraging range when she comes up, her nest cells remain empty and her larvae starve. Black Swallowtail females lay eggs on its leaves; the caterpillar is the same green-and-black-banded "parsley worm" that gardeners pull off dill — but on a native host, in the range where it evolved.',
+      page: 'golden-alexanders',
+    },
+    {
       name: 'New Jersey Tea',
       latinName: 'Ceanothus americanus',
       bloomWindow: 'May–June',
@@ -210,9 +218,9 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Fourteen natives, March to frost</h2>
+        <h2>Fifteen natives, March to frost</h2>
         <p>
-          These fourteen native plants open in sequence from March through late October, covering
+          These fifteen native plants open in sequence from March through late October, covering
           every week that monarchs are present — as caterpillars, as breeding adults, and as
           migrants fueling for Mexico — and providing nectar and larval host plants for specialist
           insects that depend on each one.
