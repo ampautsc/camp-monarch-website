@@ -86,6 +86,7 @@ export const ALL_PAGE_SLUGS = [
   'species-gallery',
   'habitat-transformation',
   'hoa-guide',
+  'habitat-hero',
   'habitat-score',
   'spring-checklist',
   'pesticide-guide',
