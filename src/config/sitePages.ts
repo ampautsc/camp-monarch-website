@@ -127,6 +127,7 @@ export const ALL_PAGE_SLUGS = [
   'virginia-bluebell',
   'buttonbush',
   'ironweed',
+  'winterberry-holly',
   'partridge-pea',
   'golden-alexanders',
   'prairie-dropseed',
