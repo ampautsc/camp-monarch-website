@@ -194,6 +194,7 @@ function App() {
       case 'yellow-warbler': return <YellowWarbler onNavigate={navigateTo} />
       case 'ruby-crowned-kinglet': return <RubyCrownedKinglet onNavigate={navigateTo} />
       case 'yellow-rumped-warbler': return <YellowRumpedWarbler onNavigate={navigateTo} />
+      case 'scarlet-tanager': return <ScarletTanager onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
@@ -209,7 +210,6 @@ function App() {
       case 'brown-creeper':      return <BrownCreeper onNavigate={navigateTo} />
       case 'hermit-thrush':      return <HermitThrush onNavigate={navigateTo} />
       case 'eastern-wood-pewee': return <EasternWoodPewee onNavigate={navigateTo} />
-      case 'scarlet-tanager':    return <ScarletTanager onNavigate={navigateTo} />
       default:                    return <Home onNavigate={navigateTo} />
     }
   }
