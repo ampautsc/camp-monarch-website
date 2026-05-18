@@ -95,6 +95,7 @@ export const ALL_PAGE_SLUGS = [
   'eastern-phoebe',
   'yellow-warbler',
   'ruby-crowned-kinglet',
+  'cedar-waxwing',
   'seasonal-calendar',
   'species-gallery',
   'habitat-transformation',
