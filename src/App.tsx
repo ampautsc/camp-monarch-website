@@ -238,5 +238,3 @@ export default function App() {
     </I18nextProvider>
   )
 }
-
-export default App
