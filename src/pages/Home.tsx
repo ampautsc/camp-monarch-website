@@ -303,9 +303,9 @@ export default function Home({ onNavigate }: HomeProps) {
               <button
                 className="hero__cta"
                 style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}
-                onClick={() => onNavigate('choose-a-plant')}
+                onClick={() => onNavigate('canada-goldenrod')}
               >
-                Find plants for your yard →
+                Canada goldenrod — the fall fuel stop →
               </button>
             </div>
 
