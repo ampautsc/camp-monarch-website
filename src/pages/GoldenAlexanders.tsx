@@ -170,6 +170,15 @@ export default function GoldenAlexanders({ onNavigate }: GoldenAlexandersProps) 
             <h3>Plants and species connected to Golden Alexanders</h3>
             <ul>
               <li>
+                <button className="link-button" onClick={() => onNavigate('black-swallowtail')}>
+                  Black Swallowtail
+                </button>{' '}
+                — females lay eggs directly on Golden Alexanders leaves in April; the
+                green-and-black banded larvae are the same "parsley worms" gardeners find
+                on dill — on Golden Alexanders, they are on a native host plant rather
+                than a vegetable garden herb
+              </li>
+              <li>
                 <button className="link-button" onClick={() => onNavigate('wild-columbine')}>
                   Wild Columbine
                 </button>{' '}
