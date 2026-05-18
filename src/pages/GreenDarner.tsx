@@ -9,14 +9,13 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Anax_junius.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
-          alt="Common Green Darner dragonfly perched at a backyard pond, iridescent green thorax and blue abdomen visible — a migratory species that travels thousands of miles like the monarch"
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Anax_junius.JPG"
+          alt="Common Green Darner dragonfly perched on vegetation, iridescent green thorax and blue abdomen — a migratory species that travels the same fall flyways as monarch butterflies"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Bruce Marlin · <a href="https://commons.wikimedia.org/wiki/File:Anax_junius.JPG" target="_blank" rel="noopener noreferrer">CC BY 3.0</a> via Wikimedia Commons */}
           Photo: Bruce Marlin&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Anax_junius.JPG" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>
           &nbsp;via Wikimedia Commons
@@ -27,128 +26,132 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Common Green Darner</h1>
         <p className="hero__lead">
-          Common Green Darners are among North America's most widespread large
-          dragonflies and one of the few dragonfly species proven to migrate.
-          The same fall fronts that move monarchs south can also move Green
-          Darners across the landscape.
+          The green darner naiad hunts in still water for most of a year before it grows wings.
+          Its lower jaw stays folded flat beneath its face, held under compression.
+          When a mosquito larva moves within range, the jaw shoots forward, impales it, and retracts —
+          the whole motion takes under 30 milliseconds.
+          The adult that crawls from that naiad, dries its wings on a cattail stem, and lifts into
+          the September air above your pond will travel south on the same cold front that carries monarchs.
         </p>
       </section>
 
-      
-
       <div className="page">
+        <section aria-labelledby="naiad-heading">
+          <h2 id="naiad-heading">Most of a year underwater, breathing through its rectum</h2>
+          <p>
+            Green darner naiads draw water through the rectum across internal gill chambers, then expel it.
+            Fast expulsion provides a burst of thrust for escaping predators.
+            They spend 10 to 12 months in this stage, molting through multiple instars,
+            growing with each one.
+            A final molt at the water's edge splits the old cuticle down the back.
+            The adult pulls itself free, pumps fluid into its wings, and waits a few hours
+            for them to harden before flying for the first time.
+          </p>
+          <p>
+            The full development happens in a backyard pond, a rain garden with standing water,
+            or a half-barrel planter with native plants and no fish.
+            Most people in the eastern United States live within breeding range of a green darner population
+            and have never seen a naiad.
+          </p>
+        </section>
+
         <section aria-labelledby="migration-heading">
-          <h2 id="migration-heading">A migratory dragonfly that travels with fall fronts</h2>
-          <p>
-            Common Green Darner (<em>Anax junius</em>) migration can exceed
-            900 miles. Adults move south in waves triggered by cooling
-            temperatures, often on the same days monarch watchers are tracking
-            butterfly movement.
-          </p>
-          <p>
-            This makes Green Darners an ideal co-migrant for Camp Monarch:
-            they expand the migration story beyond a single species while
-            reinforcing the same need for connected seasonal habitat.
-          </p>
-        </section>
+          <h2 id="migration-heading">The September cold front that moves monarchs also moves darners</h2>
 
-        <section aria-labelledby="water-heading">
-          <h2 id="water-heading">Why clean water matters before wings appear</h2>
-          <p>
-            Green Darner larvae (naiads) spend 1–2 years in freshwater where
-            they hunt mosquito larvae and other aquatic prey. Successful
-            breeding depends on clean, pesticide-free water with emergent
-            native vegetation.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Anax_junius.JPG"
-                  alt="Male Green Darner dragonfly perched, showing brilliant green thorax and blue abdomen — North America's largest common dragonfly"
-                  loading="lazy"
-                />
-                <figcaption>
-                  The Green Darner is one of the few dragonflies that migrates — traveling in loose swarms along the same Atlantic flyways as monarch butterflies each September and October. Like monarchs, the migration is multigenerational: the darners that leave in fall are not the same individuals that return in spring.
-                  <span className="photo-credit"> Photo: Bruce Marlin · <a href="https://commons.wikimedia.org/wiki/File:Anax_junius.JPG" target="_blank" rel="noopener noreferrer">CC BY 3.0</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+          <figure className="species-content-photo species-content-photo--right">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Common_Green_Darner_Anax_junius_JG.jpg"
+              alt="Common Green Darner dragonfly in flight showing wingspan — one of the few dragonfly species proven to migrate hundreds of miles along the Atlantic flyway each fall"
+              loading="lazy"
+            />
+            <figcaption>
+              The green darner is one of the largest dragonflies in North America, with a wingspan reaching 4.5 inches. Individuals travel up to 100 miles in a single day during fall migration, moving south in loose groups triggered by the same cold fronts that concentrate monarch butterflies at Atlantic flyway watch sites.
+              <span className="photo-credit"> Photo: JeffreyGammon · <a href="https://commons.wikimedia.org/wiki/File:Common_Green_Darner_Anax_junius_JG.jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
 
           <p>
-            A fish-free backyard pond with native plants can support this full
-            aquatic stage. When naiads are present, they provide visible
-            evidence that local water quality and habitat structure are working.
-          </p>
-        </section>
-
-        <section aria-labelledby="threats-heading">
-          <h2 id="threats-heading">The preventable threat: mosquito sprays and wetland loss</h2>
-          <p>
-            Mosquito insecticide programs can kill adult dragonflies and
-            contaminate breeding water at the same time. Wetland drainage removes
-            larval habitat entirely, leaving fewer places for this migration
-            partner to reproduce.
+            In late September and early October, cold fronts push green darners south in groups —
+            hundreds of individuals moving low over coastal meadows and ridgelines, catching insects as they fly.
+            Monarch watchers at Atlantic flyway hawkwatch stations regularly record darner movement
+            on the same days as peak butterfly counts.
           </p>
           <p>
-            Protecting pond and wetland habitat is practical conservation:
-            healthy dragonfly populations help suppress mosquitoes naturally
-            while keeping seasonal insect migration visible.
+            The migration is multigenerational.
+            Darners that reach the Gulf states in October breed there.
+            Their offspring emerge in late winter and fly north to breed in spring.
+            The adults arriving at a northern pond in April are the grandchildren of the ones that left in September.
+            This is the same mechanic the monarch uses.
+            Neither species navigates to a location it has ever been.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that help Green Darners now</h2>
+          <h2 style={{ marginTop: 0 }}>What stops a naiad from becoming a migrant</h2>
 
           <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Garden water feature with shallow open water" loading="lazy" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg"
+              alt="Garden water feature with shallow open water and surrounding native vegetation"
+              loading="lazy"
+            />
             <figcaption>
-              Green darner nymphs require open, unpolluted water for one to three years before emergence. A garden pond without fish — even a half-barrel — can complete their development. The adult that emerges from your yard may migrate hundreds of miles.
+              Green darner naiads complete development in still, fish-free water with native emergent stems to climb during emergence. A half-barrel planter, a shallow garden pond, or a rain garden with standing water qualifies. Ornamental fish eat naiads. Mosquito sprays and lawn herbicides contaminate the water they breathe through.
               <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+
           <ol className="step-list">
             <li>
-              <strong>Create or protect a fish-free pond.</strong>{' '}
-              Keep water pesticide-free and include native emergent plants so
-              naiads can develop and adults can emerge.
+              <strong>Don't spray for mosquitoes near water.</strong>{' '}
+              Adulticide sprays drift into ponds within hours of application.
+              Larvicides applied to standing water kill darner naiads directly —
+              naiads breathe through the same water column they inhabit.
+              A dragonfly population in a pond suppresses mosquitoes at every life stage;
+              spraying eliminates both at once.
             </li>
             <li>
-              <strong>Skip mosquito sprays near water.</strong>{' '}
-              Use habitat-first mosquito management so dragonfly predators can
-              keep working over the long term.
+              <strong>Build or restore a fish-free pond.</strong>{' '}
+              Koi, goldfish, and bass eat naiads on sight.
+              A lined half-barrel with native arrowhead or pickerelweed, no fish, and no herbicide
+              will be colonized by patrolling darners within a few seasons —
+              they locate new water by aerial survey.
             </li>
             <li>
-              <strong>Track fall co-migration.</strong>{' '}
-              Watch for Green Darners during monarch migration days and submit
-              sightings to citizen-science platforms.
+              <strong>Leave emergent stems at the water's edge.</strong>{' '}
+              Naiads crawl up cattail and bulrush stems to emerge.
+              Trimmed or bare pond edges mean adults fall back into the water before their wings harden.
+              Leave at least a few stems standing through midsummer.
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">One corridor can support both dragonflies and monarchs</h2>
+        <section aria-labelledby="indicator-heading">
+          <h2 id="indicator-heading">Darners emerging from a pond are two years of water quality evidence</h2>
           <p>
-            Monarch butterflies and Green Darners share fall migration windows
-            and many of the same threats: habitat loss and insecticide exposure.
-            Protecting clean water plus native nectar corridors strengthens the
-            whole seasonal system.
-          </p>
-          <p>
-            Camp Monarch habitat works best when we design for multi-species
-            outcomes. The result is not just one recovered species, but a more
-            resilient neighborhood ecosystem.
+            A green darner naiad breathes water through its gill chambers continuously for 10 to 12 months.
+            Pesticides that enter the water accumulate in its tissue.
+            A pond that produces adult darners has been free of lethal contamination
+            for that full development period.
+            A pond that produced darners five years ago and no longer does has changed —
+            the most common causes are lawn pesticide runoff, mosquito spray programs,
+            and fish introductions.
           </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
-            <strong>Ready to build migration habitat for more than one species?</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a native plant
+            Darners need clean water to breed and monarchs need nectar corridors to migrate —
+            both movements cross the same mid-Atlantic flyway in September.
+            Build the water habitat and the nectar plants and the two migrations converge above the same yard.{' '}
+            <button className="link-button" onClick={() => onNavigate('water-for-wildlife')}>
+              Water for Wildlife
             </button>
-            {' '}to strengthen nectar corridors and edge habitat, or{' '}
-            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-              plant milkweed
+            {' '}covers pond design and rain garden options, and{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
             </button>
-            {' '}as part of a broader migration-ready yard plan.
+            {' '}explains how the leaf litter floor supports the insect prey darners need before they migrate.
           </p>
         </div>
       </div>
