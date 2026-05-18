@@ -90,6 +90,7 @@ import WaterForWildlife from './pages/WaterForWildlife'
 import LeaveTheLeaves from './pages/LeaveTheLeaves'
 import HabitatLayers from './pages/HabitatLayers'
 import InvasivePlants from './pages/InvasivePlants'
+import BrownCreeper from './pages/BrownCreeper'
 import { trackEvent } from './lib/analytics'
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -200,6 +201,7 @@ function App() {
       case 'leave-the-leaves':    return <LeaveTheLeaves onNavigate={navigateTo} />
       case 'habitat-layers':      return <HabitatLayers onNavigate={navigateTo} />
       case 'invasive-plants':    return <InvasivePlants onNavigate={navigateTo} />
+      case 'brown-creeper':      return <BrownCreeper onNavigate={navigateTo} />
       default:                    return <Home onNavigate={navigateTo} />
     }
   }
