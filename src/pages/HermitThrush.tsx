@@ -161,7 +161,7 @@ export default function HermitThrush({ onNavigate }: HermitThrushProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that keep Hermit Thrush through winter</h2>
+          <h2 style={{ marginTop: 0 }}>Native viburnums for October, winterberry through February, leaf litter intact through March, and window tape near fruit shrubs</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img
