@@ -47,6 +47,7 @@ import AmericanGoldfinch from './pages/AmericanGoldfinch'
 import AmericanRobin from './pages/AmericanRobin'
 import IndigoBunting from './pages/IndigoBunting'
 import TigerSwallowtail from './pages/TigerSwallowtail'
+import BlackSwallowtail from './pages/BlackSwallowtail'
 import GreatSpangledFritillary from './pages/GreatSpangledFritillary'
 import GreenDarner from './pages/GreenDarner'
 import GarterSnake from './pages/GarterSnake'
@@ -188,6 +189,7 @@ export default function App() {
       case 'american-robin': return <AmericanRobin onNavigate={navigateTo} />
       case 'indigo-bunting': return <IndigoBunting onNavigate={navigateTo} />
       case 'tiger-swallowtail': return <TigerSwallowtail onNavigate={navigateTo} />
+      case 'black-swallowtail': return <BlackSwallowtail onNavigate={navigateTo} />
       case 'great-spangled-fritillary': return <GreatSpangledFritillary onNavigate={navigateTo} />
       case 'green-darner': return <GreenDarner onNavigate={navigateTo} />
       case 'garter-snake': return <GarterSnake onNavigate={navigateTo} />
