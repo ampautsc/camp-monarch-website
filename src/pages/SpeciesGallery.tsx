@@ -341,6 +341,14 @@ const SPECIES: Species[] = [
     alt: "Male Eastern Towhee showing jet-black hood and back, vivid rufous flanks, white belly, and striking red eye",
     attr: "DickDaniels / CC BY-SA 3.0 / Wikimedia Commons",
   },
+  {
+    page: 'carolina-wren',
+    name: "Carolina Wren",
+    tagline: "Weighs 20 grams and never leaves. A non-migratory year-round resident whose survival through winter depends directly on brush piles and intact leaf litter.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg/960px-Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg',
+    alt: "Carolina Wren perched showing rich cinnamon-brown upperparts, bold white eyebrow stripe, and the characteristically upright cocked tail",
+    attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
