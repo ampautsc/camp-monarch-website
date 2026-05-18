@@ -16,7 +16,7 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
           Photo: Cephas&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
@@ -74,7 +74,7 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
                 />
                 <figcaption>
                   The bulging glands behind a toad's eyes are parotoid glands — they secrete bufadienolides, compounds toxic to most predators. This is why toads can sit in garden beds during daylight. Lawn pesticides absorbed through their permeable skin bypass this chemical armor entirely.
-                  <span className="photo-credit"> Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Bufo_americanus_PJC2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -165,7 +165,13 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
               plant milkweed
             </button>
-            {' '}to expand a pesticide-free pollinator corridor.
+            {' '}to expand a pesticide-free pollinator corridor. See how the ground layer —
+            the loose soil and leaf litter where toads burrow and overwinter — connects to the
+            shrub and canopy layers above it in the{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers guide
+            </button>
+            .
           </p>
         </div>
       </div>
