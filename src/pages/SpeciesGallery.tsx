@@ -203,6 +203,18 @@ const SPECIES: Species[] = [
     habitatTags: ['meadow', 'edge', 'woodland'],
   },
   {
+    id: 'leonards-skipper',
+    name: "Leonard's Skipper",
+    scientificName: 'Hesperia leonardus',
+    emoji: '🦋',
+    shortDesc: "Lays eggs on native bunchgrass blades in September. Each newly hatched larva — less than 3 mm long — crawls to the base of the same grass clump and stays there without feeding until the following April.",
+    status: 'declining',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/173602758/large.jpeg',
+    photoCredit: 'loricvs / iNaturalist, CC0',
+    page: 'leonards-skipper',
+    habitatTags: ['prairie', 'meadow', 'garden'],
+  },
+  {
     id: 'luna-moth',
     name: 'Luna Moth',
     scientificName: 'Actias luna',
