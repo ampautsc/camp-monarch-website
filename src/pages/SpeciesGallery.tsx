@@ -551,6 +551,18 @@ const SPECIES: Species[] = [
     habitatTags: ['shrub-edge', 'woodland', 'garden'],
   },
   {
+    id: 'american-tree-sparrow',
+    name: 'American Tree Sparrow',
+    scientificName: 'Spizelloides arborea',
+    emoji: '🐦',
+    shortDesc: "Arrives from subarctic nesting grounds in October carrying a bi-colored bill — dark above, yellow below — that separates it from every other small winter sparrow. Forages in flocks of 10 to 40 through standing Little Bluestem and goldenrod seed heads from November to March. Down 53% since 1966.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Spizelloides_arborea_CT1.jpg/960px-Spizelloides_arborea_CT1.jpg',
+    photoCredit: 'Cephas / CC BY-SA 3.0',
+    page: 'american-tree-sparrow',
+    habitatTags: ['winter-visitor', 'garden', 'open-meadow'],
+  },
+  {
     id: 'eastern-meadowlark',
     name: 'Eastern Meadowlark',
     scientificName: 'Sturnella magna',
