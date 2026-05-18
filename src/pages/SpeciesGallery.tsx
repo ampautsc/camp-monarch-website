@@ -444,6 +444,15 @@ const SPECIES: Species[] = [
     attr: "Cephas / CC BY-SA 3.0 / Wikimedia Commons",
     category: 'Birds',
   },
+  {
+    page: 'wild-turkey',
+    name: "Wild Turkey",
+    tagline: "Poults hatch ready to run but cannot thermoregulate for two weeks — each one forages for insects in leaf litter independently while returning to the hen for warmth throughout the day.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tom_turkey_strutting.jpg/960px-Tom_turkey_strutting.jpg',
+    alt: "Male Wild Turkey in full display — tail fanned into a wide semicircle, back feathers raised, standing on fallen leaves in a mixed hardwood forest",
+    attr: "USFWS / Public Domain / Wikimedia Commons",
+    category: 'Birds',
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
