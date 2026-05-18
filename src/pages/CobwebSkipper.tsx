@@ -172,6 +172,10 @@ export default function CobwebSkipper({ onNavigate }: CobwebSkipperProps) {
               <span className="neighbor-name">Prairie Dropseed</span>
               <span className="neighbor-note">Host grass; females lay eggs on blades and larvae overwinter in a silk shelter at the crown of the same clump for ten months</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('little-bluestem')}>
+              <span className="neighbor-name">Little Bluestem</span>
+              <span className="neighbor-note">Fellow host grass; the same bunchgrass whose copper-red fall color holds through January while Cobweb Skipper larvae overwinter in the crown below the blades that turned red above them</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
               <span className="neighbor-name">Leonard's Skipper</span>
               <span className="neighbor-note">Uses the same native grass stems in late August that Cobweb Skipper used in April — one bunchgrass clump hosts both skippers across the same calendar year</span>
