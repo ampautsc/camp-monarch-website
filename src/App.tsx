@@ -95,6 +95,7 @@ import BlackEyedSusan from './pages/BlackEyedSusan'
 import VirginiaBluebell from './pages/VirginiaBluebell'
 import Buttonbush from './pages/Buttonbush'
 import Ironweed from './pages/Ironweed'
+import PartridgePea from './pages/PartridgePea'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -234,6 +235,7 @@ export default function App() {
       case 'virginia-bluebell': return <VirginiaBluebell onNavigate={navigateTo} />
       case 'buttonbush':       return <Buttonbush onNavigate={navigateTo} />
       case 'ironweed':         return <Ironweed onNavigate={navigateTo} />
+      case 'partridge-pea':    return <PartridgePea onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
