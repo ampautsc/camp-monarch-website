@@ -132,7 +132,7 @@ const SEED_OPTIONS: SeedOption[] = [
     id: 'showy-goldenrod',
     collection: 'Season-Long Nectar collection',
     label: 'Showy Goldenrod',
-    description: 'Fall nectar when Monarchs need to fill up before heading south.',
+    description: 'Fall nectar when monarchs are filling up before heading south.',
   },
 ]
 
@@ -210,7 +210,7 @@ function getSeasonalTip(): { heading: string; detail: string; actionLabel: strin
   if (month >= 8 && month <= 10) {
     return {
       heading: 'Fall: leave the stems standing if you can.',
-      detail: 'The seed heads you see in October are next year’s packets. The hollow stems are winter shelter for bees that never make nests in boxes.',
+      detail: 'The seed heads you see in October are next year\'s packets. The hollow stems are winter shelter for bees that never make nests in boxes.',
       actionLabel: 'Why the stems matter →',
       actionPage: 'leave-the-leaves',
     }
@@ -462,10 +462,10 @@ export default function HabitatHero({ onNavigate }: HabitatHeroProps) {
     <>
       <section className="hero">
         <div className="hero__eyebrow">Habitat Hero</div>
-        <h1>Six seed packets can start a yard.</h1>
+        <h1>A monarch checks hundreds of plants before she lays a single egg. She needs milkweed — and most yards don't have any.</h1>
         <p className="hero__lead">
-          Milkweed for caterpillars. Nectar plants for everything that follows.
-          Habitat Hero emails a sign-in link, asks what your yard is like, and matches your request to the seed Camp Monarch has on hand.
+          Camp Monarch mails seed packets to homeowners who want to change that.
+          Tell us what your yard is like and we'll match you with the plants most likely to take hold.
         </p>
       </section>
 
@@ -483,20 +483,14 @@ export default function HabitatHero({ onNavigate }: HabitatHeroProps) {
           </section>
         ) : !user ? (
           <>
-            <section aria-labelledby="what-heading">
-              <h2 id="what-heading">What this program does</h2>
+            <section aria-labelledby="how-heading">
+              <h2 id="how-heading">How it works</h2>
               <p>
-                The first season is simple: Camp Monarch has seed on hand, and one address can request up to six packets.
-                The request stays inside Camp Monarch. Stewards never see each other's identities, and the matching happens in the background.
+                New stewards start with six tokens — one per packet. Sign in with your email,
+                tell us about your yard, and choose the packets you want from the milkweed
+                and native nectar collection. A steward near you confirms the match and sends the seed.
               </p>
-              <div className="action-panel">
-                <h2 style={{ marginTop: 0 }}>How the handoff works</h2>
-                <ol style={{ marginBottom: 0 }}>
-                  <li>You sign in by email so the request stays tied to one address.</li>
-                  <li>You tell Camp Monarch what your yard is like and which packets you want.</li>
-                  <li>A steward confirms the match, and the tokens move only when the packets are claimed.</li>
-                </ol>
-              </div>
+              <p>One address, one request per season. No cost.</p>
             </section>
 
             <section aria-labelledby="seed-options-heading" style={{ marginTop: '2.5rem' }}>
@@ -504,20 +498,18 @@ export default function HabitatHero({ onNavigate }: HabitatHeroProps) {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1rem' }}>
                 <div className="callout callout--green" style={{ margin: 0 }}>
                   <h3 style={{ marginTop: 0 }}>Milkweed collection</h3>
-                  <p>Common, butterfly, swamp, and whorled milkweed. These are the leaves monarch females search for when they lay eggs.</p>
+                  <p>Common, butterfly, swamp, and whorled milkweed. These are the leaves monarch females search for when they lay eggs — no other plant will do.</p>
                 </div>
                 <div className="callout callout--orange" style={{ margin: 0 }}>
                   <h3 style={{ marginTop: 0 }}>Season-long nectar collection</h3>
-                  <p>Golden Alexander through showy goldenrod. The point is bloom overlap, so something is still feeding insects when the migration reaches your street.</p>
+                  <p>Golden Alexander through showy goldenrod. Staggered bloom times so something is still feeding insects when the migration reaches your street.</p>
                 </div>
               </div>
             </section>
 
             <section aria-labelledby="email-heading" style={{ marginTop: '2.5rem' }}>
-              <h2 id="email-heading">Email yourself the sign-in link</h2>
-              <p>
-                The link opens this page again. If you are already signed in on this browser, the onboarding form appears instead.
-              </p>
+              <h2 id="email-heading">Request your packets</h2>
+              <p>Enter your email and we'll send a sign-in link. The link brings you back here to choose your seed.</p>
               <form onSubmit={handleSendMagicLink} style={{ maxWidth: '560px' }}>
                 <label htmlFor="habitat-hero-email" style={{ display: 'block', fontWeight: 700, marginBottom: '0.4rem' }}>
                   Email address
@@ -629,7 +621,7 @@ export default function HabitatHero({ onNavigate }: HabitatHeroProps) {
                 {step === 3 && (
                   <>
                     <h2 id="step-heading" style={{ marginTop: 0 }}>Choose up to six packets</h2>
-                    <p>Each packet costs one token. New Habitat Hero stewards start with six tokens, and nothing is deducted until a steward confirms the match.</p>
+                    <p>Each packet costs one token. You started with six, and nothing is deducted until a steward confirms the match.</p>
                     <p style={{ fontWeight: 700, marginBottom: '1rem' }}>
                       Selected: {selectedSeeds.length}/6 packets
                     </p>
