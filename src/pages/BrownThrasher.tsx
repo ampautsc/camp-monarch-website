@@ -57,17 +57,16 @@ export default function BrownThrasher({ onNavigate }: BrownTrasherProps) {
             knows the undergrowth better than you do.
           </p>
           <p>
-            The song is the species&apos; most remarkable feature. A singing male produces phrases
-            in couplets — each distinct phrase sung twice before moving to the next — in an
-            unbroken stream that can last 20 minutes without repetition. Researchers who have
-            catalogued the repertoires of individual birds have counted more than 2,000 distinct
-            phrase types per individual; some studies have recorded repertoires exceeding 3,000.
-            This is the largest documented song vocabulary of any North American songbird, surpassing
-            the Northern Mockingbird by a wide margin. The mockingbird&apos;s strategy is mimicry
-            and endless repetition; the thrasher&apos;s is original composition at enormous scale.
-            A male singing from a shrub in late April is running through a library built over years
-            of listening and learning, adding phrases heard from other thrashers, other species, and
-            sounds from the surrounding soundscape.
+            A singing male produces phrases in couplets — each distinct phrase sung twice before
+            moving to the next — in an unbroken stream that can last 20 minutes without repetition.
+            Researchers who have catalogued the repertoires of individual birds have counted more
+            than 2,000 distinct phrase types per individual; some studies have recorded repertoires
+            exceeding 3,000. This is the largest documented song vocabulary of any North American
+            songbird, surpassing the Northern Mockingbird by a wide margin. The mockingbird&apos;s
+            strategy is mimicry and endless repetition; the thrasher&apos;s is original composition
+            at enormous scale. A male singing from a shrub in late April is running through a
+            library built over years of listening and learning, adding phrases heard from other
+            thrashers, other species, and sounds from the surrounding soundscape.
           </p>
 
           <figure className="species-content-photo species-content-photo--right">
@@ -121,14 +120,14 @@ export default function BrownThrasher({ onNavigate }: BrownTrasherProps) {
         <section aria-labelledby="decline-heading">
           <h2 id="decline-heading">A bird of brushy edges — and the edges are disappearing</h2>
           <p>
-            The USGS Breeding Bird Survey, conducted continuously since 1966, documents a
-            significant long-term decline in Brown Thrasher populations across the species&apos;
-            range. Partners in Flight includes the Brown Thrasher on its Watch List as a Common
-            Bird in Steep Decline — a category reserved for species whose population losses are
-            large enough to become severe within decades if the drivers are not addressed.
-            The estimated total population has fallen substantially from historical levels, with
-            losses steepest in the northern and midwestern portions of the range where hedgerow
-            and brushy-edge habitat has been most comprehensively removed.
+            The USGS Breeding Bird Survey, conducted continuously since 1966, records steady
+            Brown Thrasher losses across the species&apos; range. Partners in Flight includes
+            the Brown Thrasher on its Watch List as a Common Bird in Steep Decline — a category
+            reserved for species whose population losses are large enough to become severe within
+            decades if the drivers are not addressed. The estimated total population has fallen
+            substantially from historical levels, with losses steepest in the northern and
+            midwestern portions of the range where hedgerow and brushy-edge habitat has been
+            most comprehensively removed.
           </p>
           <p>
             The thrasher is a bird of the edge — the dense thicket between a mowed lawn and a
@@ -160,7 +159,7 @@ export default function BrownThrasher({ onNavigate }: BrownTrasherProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that help Brown Thrashers</h2>
+          <h2 style={{ marginTop: 0 }}>Dense native shrubs for nesting, leaf litter intact for foraging, treated windows, and cats kept indoors</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img
