@@ -329,11 +329,11 @@ export default function Home({ onNavigate }: HomeProps) {
 
           </div>
         </section>
-        {/* MEET YOUR NEIGHBORS — preview the species gallery; routes homepage traffic to 43 species pages */}
+        {/* MEET YOUR NEIGHBORS — preview the species gallery; routes homepage traffic to 44 species pages */}
         <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
           <h2 id="neighbors-heading">Your yard is already home to more than you know</h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
-            43 species depend on backyards, gardens, and the choices homeowners make about their land.
+            44 species depend on backyards, gardens, and the choices homeowners make about their land.
             Each one has a story that changes how you see your yard.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
@@ -381,7 +381,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
             <button className="hero__cta" onClick={() => onNavigate('species-gallery')}>
-              Meet all 43 neighbors →
+              Meet all 44 neighbors →
             </button>
           </div>
         </section>
