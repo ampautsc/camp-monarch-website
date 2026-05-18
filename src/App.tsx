@@ -73,6 +73,7 @@ import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
 import HOAGuide from './pages/HOAGuide'
 import HabitatScore from './pages/HabitatScore'
+import HabitatHero from './pages/HabitatHero'
 import SpringChecklist from './pages/SpringChecklist'
 import PesticideGuide from './pages/PesticideGuide'
 import WaterForWildlife from './pages/WaterForWildlife'
@@ -180,6 +181,7 @@ function App() {
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
       case 'hoa-guide': return <HOAGuide onNavigate={navigateTo} />
+      case 'habitat-hero':         return <HabitatHero onNavigate={navigateTo} />
       case 'habitat-score':        return <HabitatScore onNavigate={navigateTo} />
       case 'spring-checklist':    return <SpringChecklist onNavigate={navigateTo} />
       case 'pesticide-guide':     return <PesticideGuide onNavigate={navigateTo} />
