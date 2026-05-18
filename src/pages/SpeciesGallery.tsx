@@ -453,6 +453,24 @@ const SPECIES: Species[] = [
     attr: "USFWS / Public Domain / Wikimedia Commons",
     category: 'Birds',
   },
+  {
+    page: 'eastern-phoebe',
+    name: "Eastern Phoebe",
+    tagline: "Returns in late February — weeks before most migrants — to hunt flying insects from perches 4 to 8 feet high, launching from the same spot dozens of times per hour.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Eastern_Phoebe-27527-2.jpg/960px-Eastern_Phoebe-27527-2.jpg',
+    alt: "Eastern Phoebe perched on a thin branch — gray-brown back, off-white underparts, rounded dark head, pumping its tail slowly downward in the characteristic tail-pumping posture of the species",
+    attr: "PEHart / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'yellow-warbler',
+    name: "Yellow Warbler",
+    tagline: "Builds a nest in a shrub fork 2 to 6 feet off the ground — invisible from outside the canopy — during the same weeks most homeowners trim their shrubs.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Setophaga_petechia_-Ithaca%2C_New_York%2C_USA-8.jpg/960px-Setophaga_petechia_-Ithaca%2C_New_York%2C_USA-8.jpg',
+    alt: "Male Yellow Warbler — brilliant all-yellow plumage with rusty-red streaks down the chest, small rounded bill, bright dark eye",
+    attr: "PEHart / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
