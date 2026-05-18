@@ -37,8 +37,8 @@ export default function WildColumbine({ onNavigate }: WildColumbineProps) {
         <p className="hero__lead">
           The plant grows in partial to full shade, spreads by seed across rocky slopes and
           woodland edges, and reaches one to three feet tall. It goes dormant by midsummer —
-          what looks like a brief presence is two months of bloom in the window that matters
-          most for spring migrants.
+          two months of bloom that open in April, when hummingbirds arrive and almost no
+          other native plant has flowered.
         </p>
       </section>
 
@@ -105,12 +105,10 @@ export default function WildColumbine({ onNavigate }: WildColumbineProps) {
           </p>
           <p>
             Spring Azure butterflies (<em>Celastrina ladon</em>), whose first generation
-            flies in April and May, nectar from Wild Columbine flowers. Bumblebee queens
-            emerging in late April visit columbine, though they often cut a hole in the
-            base of the spur to reach the nectar directly rather than entering from the
-            opening — the hole left behind is visible on spent flowers. Long-tongued native
-            bees in the genus <em>Bombus</em> and some <em>Osmia</em> species work the
-            flowers legitimately through the tube entrance.
+            flies in April and May, visit Wild Columbine for nectar. Bumblebee queens
+            emerging in late April also visit — though many cut a hole in the base of the
+            spur rather than entering through the opening. The hole left behind is visible
+            on spent flowers.
           </p>
         </section>
 
@@ -131,7 +129,7 @@ export default function WildColumbine({ onNavigate }: WildColumbineProps) {
             faster than spring transplants.
           </p>
           <p>
-            Above ground, Wild Columbine is present from April through July, then goes fully
+            Wild Columbine grows above ground from April through July, then goes fully
             dormant. The crown survives underground and re-emerges in early spring. Because
             the plant flowers before most deciduous trees leaf out, spots that will be deeply
             shaded by midsummer still receive enough light during bloom.
