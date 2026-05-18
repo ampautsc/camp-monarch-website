@@ -80,6 +80,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       page: 'common-milkweed',
     },
     {
+      name: 'Black-eyed Susan',
+      latinName: 'Rudbeckia hirta',
+      bloomWindow: 'Late June–September',
+      observation:
+        'American Goldfinches nest later than almost every other songbird — July through early August — timing their nesting to overlap with seed production from thistles and native composites. Black-eyed Susan seed heads mature in August, carrying food through the interval when goldfinch nestlings are fledging. The Silvery Checkerspot butterfly lays eggs in clusters of 20 to 200 on Rudbeckia leaves in July and August.',
+      page: 'black-eyed-susan',
+    },
+    {
       name: 'Wild Bergamot',
       latinName: 'Monarda fistulosa',
       bloomWindow: 'Late June–August',
@@ -170,9 +178,9 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Nine natives, April to frost</h2>
+        <h2>Ten natives, April to frost</h2>
         <p>
-          These nine native plants open in sequence from April through late October, covering every
+          These ten native plants open in sequence from April through late October, covering every
           week that monarchs are present — as caterpillars, as breeding adults, and as migrants
           fueling for Mexico — and providing larval host plants for specialist insects that depend
           on each one.
