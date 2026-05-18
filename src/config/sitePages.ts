@@ -105,6 +105,7 @@ export const ALL_PAGE_SLUGS = [
   'habitat-layers',
   'invasive-plants',
   'brown-creeper',
+  'hermit-thrush',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
