@@ -9,15 +9,15 @@ export default function HermitThrush({ onNavigate }: HermitThrushProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Catharus_guttatus_-_2.jpg/960px-Catharus_guttatus_-_2.jpg"
-          alt="Hermit Thrush perched on a branch, showing spotted breast, rufous tail, and the alert posture of a bird scanning the ground below for fallen fruit"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hermit_Thrush_0777vv_%28cloudy%29.jpg/960px-Hermit_Thrush_0777vv_%28cloudy%29.jpg"
+          alt="Hermit Thrush perched on a branch, spotted breast visible, rufous tail raised in the slow upward pump that distinguishes it from every other spotted thrush"
           className="species-hero-image"
           style={{ objectPosition: 'center' }}
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          Photo: Manjith Kainickara&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Catharus_guttatus_-_2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
+          Photo: Dan Pancamo&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Hermit_Thrush_0777vv_(cloudy).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -26,189 +26,258 @@ export default function HermitThrush({ onNavigate }: HermitThrushProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Hermit Thrush</h1>
         <p className="hero__lead">
-          The Wood Thrush leaves in September. The Hermit Thrush arrives in
-          October. Both are spotted thrushes from the same family. One departs
-          because it cannot find food through a northern winter. The other stays
-          because it can shift its diet — from insects to native berries — in a
-          way no other spotted thrush in eastern North America manages.
+          Every autumn, the Wood Thrush leaves the eastern US and reappears
+          in Costa Rica. The Hermit Thrush does not go. It raises its spotted
+          rufous tail in a slow upward pump — a gesture no other common thrush
+          makes — and moves toward the nearest winterberry shrub. It stays
+          because the shrub is there.
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="arrival-heading">
-          <h2 id="arrival-heading">Brown back, spotted breast, rufous tail that lifts and lowers</h2>
+        <section aria-labelledby="switch-heading">
+          <h2 id="switch-heading">The insect-to-berry switch, October through March</h2>
           <p>
-            The Hermit Thrush (<em>Catharus guttatus</em>) is a 6.75-inch bird
-            with a brown back, white breast spotted heavily in dark brown, and a
-            tail that is distinctly rufous — warmer and redder than its wings and
-            back. It breeds across boreal forests from Alaska to Nova Scotia and
-            arrives in the eastern United States in October, just as the Wood
-            Thrush finishes its southward migration to Central America.
+            The Hermit Thrush (<em>Catharus guttatus</em>) is a 7-inch bird with a
+            warm brown back, a spotted white breast, and a rufous tail it raises
+            slowly and lets fall — a repetitive pump that distinguishes it from
+            every other spotted thrush in North America. It spends summers in cool,
+            moist forests from Alaska to the southern Appalachians, eating beetles,
+            earthworms, ants, and caterpillars.
           </p>
           <p>
-            The rufous tail provides the field mark. A Hermit Thrush perched in a
-            shrub will slowly raise its tail and then lower it again — a deliberate,
-            unhurried pump, repeated two or three times before the bird drops to
-            the ground to forage. No other spotted thrush in North America performs
-            this gesture. Watch a thrush in late October raise and lower its tail
-            once, then twice: that bird is still here.
+            In September, the insect supply collapses across the eastern US.
+            The Wood Thrush, Swainson&apos;s Thrush, and Veery all respond the same
+            way: they migrate. Their digestive systems cannot process berry pulp
+            efficiently enough to sustain them through a northern winter. The
+            Hermit Thrush responds differently. Its gut shifts to accommodate
+            berry pulp, and it pivots to native viburnums, winterberry holly,
+            dogwood drupes, and native persimmon — plants whose fruit persists
+            through November and into January. It stays.
           </p>
           <p>
-            The &ldquo;hermit&rdquo; name comes from its preference for dense undergrowth.
-            It forages on the ground beneath shrubs, flipping dead leaves to expose
-            invertebrates on warmer winter days, then retreating into thicket when
-            temperatures drop. Vermont chose it as the state bird. The bird itself
-            is indifferent to state borders — it winters across the southern half
-            of the US and along both coasts as far north as southern New England.
+            In a yard with fruiting native shrubs, the Hermit Thrush works
+            from the ground up through the shrub layer: sweeping leaf litter
+            aside with its bill, picking up fallen viburnum berries, pausing in
+            a winterberry to pull clusters from bare stems. In a yard planted
+            only with ornamental shrubs whose berries either never set or drop
+            by October — burning bush, barberry, non-fruiting cultivars — the
+            Hermit Thrush passes through once and does not return.
           </p>
         </section>
 
-        <section aria-labelledby="diet-heading">
-          <h2 id="diet-heading">The berry switch that keeps one thrush through February</h2>
+        <section aria-labelledby="tail-heading">
+          <h2 id="tail-heading">Slow tail pump, winter song</h2>
           <p>
-            The Hermit Thrush eats insects and earthworms from spring through
-            early fall, like most thrushes. In September, as soil temperatures
-            drop and invertebrate activity decreases, it shifts to fruit. This
-            dietary flexibility is what separates it from every other spotted
-            thrush on the eastern seaboard.
+            The slow upward raise and drop of the Hermit Thrush&apos;s rufous
+            tail is involuntary — the bird does it when it lands, when it
+            pauses, when it watches from a branch. The behavior has no agreed
+            explanation. It does not appear to be territorial; the bird pumps
+            its tail when alone. The most-cited hypothesis is that the motion
+            disturbs prey in the leaf litter below, causing insects or spiders
+            to move and become detectable. This remains unconfirmed.
+          </p>
+          <p>
+            What the tail pump does from the outside is make the Hermit Thrush
+            identifiable from 30 feet — even when the bird is half-hidden in
+            a shrub. A spotted brown bird raising its rufous tail slowly and
+            repeatedly is not a Veery, not a Wood Thrush, not a Fox Sparrow.
+            Learning the gesture is a way of finding a bird that has been
+            present all winter without being noticed.
+          </p>
+          <p>
+            On winter days when temperatures climb above 40°F, Hermit Thrushes
+            sometimes sing. Each phrase begins on one pitch and spirals through
+            harmonically complex intervals — pause — then starts again on a
+            different starting pitch. From inside a house with windows closed,
+            the sound is thin and looping, belonging to a different season.
+            The bird is in the viburnum, 15 feet from the window.
+          </p>
+        </section>
+
+        <section aria-labelledby="hazards-heading">
+          <h2 id="hazards-heading">Forest-edge parasitism, winter windows, outdoor cats</h2>
+          <p>
+            The Hermit Thrush nests on or near the ground in cool, moist
+            deciduous and mixed forest — mature stands where the understory
+            stays dense and the soil supports earthworm populations. Partners
+            in Flight estimates the global breeding population at around
+            120 million birds, placing it among the more numerous North American
+            thrushes. Wintering populations in the eastern US concentrate
+            wherever fruit persists, which brings them into close contact
+            with suburban hazards.
           </p>
 
           <figure className="species-content-photo species-content-photo--right">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Hermit_thrush_jan_2015.jpg/800px-Hermit_thrush_jan_2015.jpg"
-              alt="Hermit Thrush perched in dense winter cover, rufous tail and spotted breast visible through bare branches — a bird that stays when all other spotted thrushes have left"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Hermit_thrush_in_Washington_D.C._%2813938964175%29.jpg/800px-Hermit_thrush_in_Washington_D.C._%2813938964175%29.jpg"
+              alt="Hermit Thrush on leaf litter with bill angled down, spotted breast and rufous tail both visible — the foraging posture it holds from October through March"
               loading="lazy"
             />
             <figcaption>
-              Hermit Thrush in January. The species overwinters across much of the eastern US — the only spotted thrush that does — by switching from insects to native berries when the ground freezes.
-              <span className="photo-credit"> Photo: Ltshears&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Hermit_thrush_jan_2015.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
+              The Hermit Thrush forages by sweeping leaf litter aside and picking
+              prey from the exposed soil beneath — the same motion it uses hunting
+              earthworms in summer and beetle larvae in a winter yard. A yard with
+              intact leaf litter under its shrubs holds overwintering beetles, ants,
+              and soil invertebrates the thrush works from October to March.
+              <span className="photo-credit"> Photo: Doris Evans&nbsp;·&nbsp;
+                <a href="https://commons.wikimedia.org/wiki/File:Hermit_thrush_in_Washington_D.C._(13938964175).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+                &nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
 
           <p>
-            The Wood Thrush (<em>Hylocichla mustelina</em>), the Swainson&apos;s
-            Thrush, and the Veery — three spotted thrushes that breed in the same
-            eastern forests — all leave for Central or South America by October.
-            They do not leave because winter temperatures kill them. They leave
-            because their food disappears: invertebrates buried in frozen soil,
-            unavailable until spring. None of them can sustain themselves through
-            a northern winter on fruit the way the Hermit Thrush can.
+            Brown-headed Cowbirds parasitize Hermit Thrush nests — laying a
+            single egg that hatches faster than the thrush&apos;s own eggs and
+            outcompetes the thrush chicks for food. Cowbird parasitism rates
+            in forest interior nests run below 5%; in forest-edge habitats
+            adjacent to suburban development, rates exceed 30% in some studied
+            populations (Brittingham &amp; Temple 1983). The Hermit Thrush&apos;s
+            ground nest, concealed under a dense shrub or beneath a root mass,
+            offers some protection — but only when the forest floor structure
+            is intact.
           </p>
           <p>
-            In January, a Hermit Thrush on a winterberry holly works through
-            berries that have been hanging on the branch since October. Each
-            berry delivers fat and carbohydrates. A single large winterberry
-            loaded with several dozen red fruits represents several hours of
-            foraging. A yard with three winterberry hollies at the shrub layer
-            becomes a station the Hermit Thrush returns to every day for four
-            months.
+            Window collisions kill Hermit Thrushes in numbers most homeowners
+            do not see because the birds move through yards before dawn and
+            after dusk. The species flocks loosely during peak winter fruit
+            season — October through January — and winter morning light angles
+            produce glass reflections of bare trees that birds read as open
+            sky. American Bird Conservancy estimates 600 million to 1 billion
+            birds die in US window strikes annually; the Hermit Thrush, as a
+            ground-moving suburban winter resident that approaches buildings
+            closely when following fruit sources, is among the species most
+            exposed to this hazard.
+          </p>
+          <p>
+            Outdoor cats kill Hermit Thrushes on the ground. The bird forages
+            with its head down, sweeping litter, for long stretches without
+            raising its eyes. American Bird Conservancy and the Smithsonian
+            Conservation Biology Institute estimate outdoor cats kill 1.3 to
+            4 billion birds annually in the US; ground-foraging birds that
+            spend long periods motionless in leaf litter carry a
+            disproportionate share of that number.
           </p>
         </section>
 
-        <section aria-labelledby="plants-heading">
-          <h2 id="plants-heading">Winterberry, nannyberry, and the shrubs that hold fruit through cold</h2>
-          <p>
-            Native hollies in the genus <em>Ilex</em> form the backbone of the
-            Hermit Thrush&apos;s winter diet in the Northeast and Midwest. Winterberry
-            holly (<em>Ilex verticillata</em>) holds bright red berries through
-            January and into February. American holly (<em>Ilex opaca</em>) holds
-            blue-black berries even longer. Both species produce fruit with fat
-            content high enough to sustain a thrush through sustained cold —
-            the same fat profile that native berries have been delivering to
-            overwintering birds on this continent for millions of years.
-          </p>
-          <p>
-            Native viburnums provide a second tier. Nannyberry (<em>Viburnum
-            lentago</em>) and arrowwood (<em>Viburnum dentatum</em>) produce dark
-            fruit that persists into late fall. Both grow six to twelve feet tall
-            at maturity and feed the Hermit Thrush along with dozens of other
-            overwintering and migrating songbirds. A winterberry holly at the
-            yard edge and a nannyberry against a fence creates a thrush station
-            that runs October through March.
-          </p>
-          <p>
-            Burning bush (<em>Euonymus alatus</em>), multiflora rose (<em>Rosa
-            multiflora</em>), and autumn olive (<em>Elaeagnus umbellata</em>)
-            all produce berries that birds eat. The problem is what happens
-            afterward. Birds that eat invasive berries carry the seeds to forest
-            edges, roadsides, and other yards. Multiflora rose has colonized
-            roughly 45 million acres of eastern US farmland and forest edge.
-            Autumn olive alters soil nitrogen in ways that suppress native plant
-            regeneration. Feeding birds on invasive berries exports those plants
-            to every site the birds visit.
-          </p>
-        </section>
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>Four things that keep Hermit Thrush through winter</h2>
 
-        <section aria-labelledby="population-heading">
-          <h2 id="population-heading">Stable where others drop — and what that stability costs</h2>
-          <p>
-            The North American Breeding Bird Survey shows the Hermit Thrush
-            holding roughly stable while its spotted-thrush relatives decline.
-            Wood Thrush populations have fallen more than 60% since 1966.
-            Swainson&apos;s Thrush is down. Veery is down. The Hermit Thrush holds
-            because its breeding range — boreal and montane forest — has
-            experienced less fragmentation than the eastern deciduous forest
-            where Wood Thrush nests.
-          </p>
-          <p>
-            The stability is conditional. It rests on wintering habitat that
-            still provides native fruit through cold months. A yard that removes
-            its shrub layer eliminates the Hermit Thrush from the winter equation.
-            A neighborhood that plants invasive ornamentals feeds the birds but
-            spreads the plants. The wintering range of the Hermit Thrush overlaps
-            almost exactly with the range where winterberry holly grows natively.
-            The bird and the plant co-evolved on the same continent. The shrub
-            produces fruit when the thrush needs it; the thrush disperses the
-            seeds after they pass through its gut.
-          </p>
-        </section>
+          <figure className="species-content-photo species-content-photo--left">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Ilex_verticillata_-%22Winter_Red%22.jpg/800px-Ilex_verticillata_-%22Winter_Red%22.jpg"
+              alt="Winterberry holly (Ilex verticillata) loaded with clusters of bright red berries on bare stems in late fall — fruit visible from across the yard"
+              loading="lazy"
+            />
+            <figcaption>
+              Winterberry holly (<em>Ilex verticillata</em>) holds its fruit
+              through February — after viburnum and dogwood berries have already
+              been stripped. A single female plant draws Hermit Thrushes, Cedar
+              Waxwings, and American Robins to the same shrub on the same January
+              morning. One male pollinator within 50 feet is needed for fruit set.
+              <span className="photo-credit"> Photo: F. D. Richards&nbsp;·&nbsp;
+                <a href="https://commons.wikimedia.org/wiki/File:Ilex_verticillata_-%22Winter_Red%22.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
+                &nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
 
-        <section aria-labelledby="actions-heading">
-          <h2 id="actions-heading">What to plant, what to remove, and what to leave alone</h2>
-          <ul className="action-list">
+          <ol className="step-list">
             <li>
-              <strong>Plant winterberry holly (<em>Ilex verticillata</em>)</strong> —
-              native shrub, 6–10 feet tall, full sun to part shade, wet to average
-              soil. Requires one male per three to five female plants to set fruit.
-              Choose locally native genotypes rather than heavily hybridized
-              cultivars bred primarily for ornamental berry size.
+              <strong>Plant native viburnums for October–November fruit.</strong>{' '}
+              Arrowwood viburnum (<em>Viburnum dentatum</em>), blackhaw
+              (<em>V. prunifolium</em>), and nannyberry (<em>V. lentago</em>)
+              produce blue-black drupes that persist into November. Hermit
+              Thrushes feed on viburnum fruit heavily during October and November,
+              before hard freezes reduce availability. A single mature arrowwood
+              viburnum feeds multiple birds across several weeks.
             </li>
             <li>
-              <strong>Plant native viburnum</strong> — nannyberry (<em>Viburnum
-              lentago</em>) or arrowwood (<em>Viburnum dentatum</em>) depending on
-              site conditions. Both grow 6–12 feet, produce fruit into late fall,
-              and support caterpillars in summer — food for nestlings when the
-              Hermit Thrush is breeding in boreal forest north of your yard.
+              <strong>Add winterberry holly for coverage through February.</strong>{' '}
+              Winterberry (<em>Ilex verticillata</em>) holds fruit through
+              February in most of its range — long after viburnum and dogwood
+              berries have been consumed. One female plant needs one male
+              pollinator within 50 feet for fruit set. A yard with both viburnum
+              and winterberry provides staggered fruit from October through February.
             </li>
             <li>
-              <strong>Remove burning bush and multiflora rose before they fruit</strong> —
-              both produce berries that birds scatter across the landscape. Burning
-              bush is regulated or prohibited in 31 states. Cutting them before
-              berry set stops the dispersal cycle from your property.
+              <strong>Leave leaf litter in place under shrubs through March.</strong>{' '}
+              The Hermit Thrush forages by sweeping litter aside to expose the
+              soil beneath — picking up overwintering beetles, ants, and earthworm
+              activity on warm days. Raking the yard bare removes this food layer.
+              Leaf litter under shrubs, along borders, and in low-traffic corners
+              holds the invertebrate community the thrush works from October into spring.
             </li>
             <li>
-              <strong>Leave fallen leaves under shrubs</strong> — the Hermit
-              Thrush forages by flipping dead leaves on the ground under dense
-              cover. A cleared mulch bed under a shrub offers nothing. A layer
-              of oak leaves beneath a winterberry holly holds arthropods and
-              shelter through cold snaps.
+              <strong>Apply window tape on glass near fruit shrubs before October.</strong>{' '}
+              Hermit Thrushes approach buildings closely when following fruit
+              sources, and winter morning light angles produce glass reflections
+              that register as open sky. Vertical tape strips spaced 2 inches
+              apart on exterior glass break the reflection enough for birds to
+              read the surface as solid. Any window within 15 feet of a
+              winterberry or viburnum shrub is worth treating.
+            </li>
+          </ol>
+        </div>
+
+        <section aria-labelledby="connections-heading">
+          <h2 id="connections-heading">Who else winters on these same shrubs</h2>
+          <p>
+            The native shrubs that keep a Hermit Thrush through January draw
+            other winter species to the same yard. Cedar Waxwings strip
+            winterberry in flocks of 20 or more, descend for 10 minutes, and
+            vanish. American Robins, which many homeowners assume leave entirely,
+            regularly overwinter wherever fruit persists. Yellow-rumped Warblers —
+            the only warbler that commonly overwinters in the eastern US — have
+            the same fruit-digesting ability as the Hermit Thrush and work the
+            same viburnum clusters. A yard with native fruit-bearing shrubs in
+            January is not empty. It is full of birds that arrived quietly and
+            will leave the same way.
+          </p>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
+                Wood Thrush
+              </button>
+              {' — '}The thrush that leaves: same eastern forest all summer, gone
+              by October because it cannot shift to winter fruit.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('yellow-rumped-warbler')}>
+                Yellow-rumped Warbler
+              </button>
+              {' — '}The only warbler that overwinters commonly in the eastern US;
+              uses the same fruit-digesting strategy and forages the same native
+              viburnum shrubs.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('dark-eyed-junco')}>
+                Dark-eyed Junco
+              </button>
+              {' — '}Ground forager that works the same leaf-litter layer as the
+              Hermit Thrush; both species foraging a yard in January signal
+              intact winter habitat structure.
             </li>
           </ul>
-          <div className="action-cta">
-            <p>
-              The shrub layer that holds winterberry holly in winter supports
-              Yellow Warblers nesting in summer and Gray Catbirds feeding in
-              fall. One native shrub carries multiple species through multiple
-              seasons.
-            </p>
-            <button
-              className="btn btn-primary"
-              onClick={() => onNavigate('habitat-layers')}
-            >
-              Explore the habitat layers
-            </button>
-          </div>
         </section>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>Ready to plant for winter birds?</strong>{' '}
+            Find native viburnums and winterberry in{' '}
+            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
+              Choose a Plant
+            </button>
+            , see how the shrub layer connects to the full winter habitat in{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers
+            </button>
+            , and understand how autumn raking removes the winter foraging layer in{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
+            </button>
+            .
+          </p>
+        </div>
       </div>
     </>
   )
