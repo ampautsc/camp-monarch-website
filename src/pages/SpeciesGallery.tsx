@@ -427,6 +427,15 @@ const SPECIES: Species[] = [
     attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
     category: 'Birds',
   },
+  {
+    page: 'song-sparrow',
+    name: "Song Sparrow",
+    tagline: "Sings from the same three to five branches every morning — each perch a point on a circuit the male memorized and defends from March through midsummer. The shrub he sings from has been claimed.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Song_Sparrow_Melospiza_melodia.jpg/960px-Song_Sparrow_Melospiza_melodia.jpg',
+    alt: "Song Sparrow perched on a branch showing brown-streaked plumage, broad dark eyebrow stripe, and the dark central breast spot amid dense streaking",
+    attr: "Alan D. Wilson / CC BY-SA 2.5 / Wikimedia Commons",
+    category: 'Birds',
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
