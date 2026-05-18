@@ -115,6 +115,7 @@ import BrownCreeper from './pages/BrownCreeper'
 import HermitThrush from './pages/HermitThrush'
 import EasternWoodPewee from './pages/EasternWoodPewee'
 import LeonardsSkipper from './pages/LeonardsSkipper'
+import CobwebSkipper from './pages/CobwebSkipper'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -244,6 +245,7 @@ export default function App() {
       case 'golden-alexanders': return <GoldenAlexanders onNavigate={navigateTo} />
       case 'prairie-dropseed':  return <PrairieDropseed onNavigate={navigateTo} />
       case 'leonards-skipper':  return <LeonardsSkipper onNavigate={navigateTo} />
+      case 'cobweb-skipper':    return <CobwebSkipper onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
