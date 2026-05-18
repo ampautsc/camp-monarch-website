@@ -480,6 +480,15 @@ const SPECIES: Species[] = [
     attr: "Channel City Camera Club / CC BY 2.0 / Wikimedia Commons",
     category: 'Birds',
   },
+  {
+    page: 'brown-creeper',
+    name: "Brown Creeper",
+    tagline: "Spirals up every trunk from base to canopy, never descending. 40% population decline since 1966. Needs loose bark flaps to nest.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Certhia_americana_CT2.jpg/960px-Certhia_americana_CT2.jpg',
+    alt: "Brown Creeper pressed flat against a tree trunk, decurved bill inserted into a bark crevice — camouflage so complete the bird is nearly invisible until it moves",
+    attr: "i_got_the_fever / CC BY 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
