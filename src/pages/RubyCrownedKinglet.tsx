@@ -155,7 +155,7 @@ export default function RubyCrownedKinglet({ onNavigate }: RubyCrownedKingletPro
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>What Ruby-crowned Kinglets need from your yard</h2>
+          <h2 style={{ marginTop: 0 }}>Bayberry for October fat, native shrubs with insects in April, unpruned branch tips, intact leaf litter, and no migration-window insecticide</h2>
 
           <figure className="species-content-photo">
             <img
