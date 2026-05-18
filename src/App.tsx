@@ -52,6 +52,7 @@ import GreatSpangledFritillary from './pages/GreatSpangledFritillary'
 import GreenDarner from './pages/GreenDarner'
 import GarterSnake from './pages/GarterSnake'
 import DarkEyedJunco from './pages/DarkEyedJunco'
+import AmericanTreeSparrow from './pages/AmericanTreeSparrow'
 import EasternChipmunk from './pages/EasternChipmunk'
 import SpringPeeper from './pages/SpringPeeper'
 import AmericanToad from './pages/AmericanToad'
@@ -198,6 +199,7 @@ export default function App() {
       case 'green-darner': return <GreenDarner onNavigate={navigateTo} />
       case 'garter-snake': return <GarterSnake onNavigate={navigateTo} />
       case 'dark-eyed-junco': return <DarkEyedJunco onNavigate={navigateTo} />
+      case 'american-tree-sparrow': return <AmericanTreeSparrow onNavigate={navigateTo} />
       case 'eastern-chipmunk': return <EasternChipmunk onNavigate={navigateTo} />
       case 'spring-peeper': return <SpringPeeper onNavigate={navigateTo} />
       case 'toad': return <AmericanToad onNavigate={navigateTo} />
