@@ -51,8 +51,8 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
           <p>
             Juncos breed in boreal forests and at high mountain elevations
             across North America — habitats that are contracting as
-            temperatures rise. Audubon Society models project significant
-            loss of winter range by 2080, with breeding habitat at mountaintops
+            temperatures rise. Audubon Society models project
+            loss of more than half the winter range by 2080, with breeding habitat at mountaintops
             becoming climatically unsuitable. A bird that 630 million strong
             can still lose ground to climate change is one of conservation's
             clearest early-warning signals.
@@ -85,13 +85,13 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
           <p>
             As ground foragers, juncos scratch through leaf litter and soil
             for weed seeds, grass seeds, and small invertebrates. Intact,
-            undisturbed leaf litter is essential winter habitat — the foraging
-            substrate that manicured, raked yards simply cannot provide.
+            undisturbed leaf litter is the foraging
+            substrate juncos depend on — and one that manicured, raked yards simply cannot provide.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that bring juncos to your yard this winter</h2>
+          <h2 style={{ marginTop: 0 }}>White millet on bare ground, leaf litter under shrubs, and a winter feeder count</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground in a natural setting" loading="lazy" />
