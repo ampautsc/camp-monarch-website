@@ -56,6 +56,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
     page: Page
   }> = [
     {
+      name: 'Virginia Bluebell',
+      latinName: 'Mertensia virginica',
+      bloomWindow: 'March–May',
+      observation:
+        'Virginia Bluebell is a spring ephemeral — it completes its entire above-ground life in 8 to 10 weeks, then pulls energy back into its rhizome and disappears until the following March. The flowers open pink in bud and shift to blue as they mature. Ruby-throated Hummingbirds arrive in mid-April as the plant reaches peak bloom, before most other native nectar sources have opened. Homeowners who see the yellowing leaves and dig up the rhizome lose the plant permanently.',
+      page: 'virginia-bluebell',
+    },
+    {
       name: 'Wild Columbine',
       latinName: 'Aquilegia canadensis',
       bloomWindow: 'April–May',
@@ -178,12 +186,12 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Ten natives, April to frost</h2>
+        <h2>Eleven natives, March to frost</h2>
         <p>
-          These ten native plants open in sequence from April through late October, covering every
-          week that monarchs are present — as caterpillars, as breeding adults, and as migrants
-          fueling for Mexico — and providing larval host plants for specialist insects that depend
-          on each one.
+          These eleven native plants open in sequence from March through late October, covering
+          every week that monarchs are present — as caterpillars, as breeding adults, and as
+          migrants fueling for Mexico — and providing nectar and larval host plants for specialist
+          insects that depend on each one.
         </p>
         {profilePlants.map((plant) => (
           <div key={plant.page} className="callout callout--green" style={{ marginBottom: '1rem' }}>
