@@ -169,6 +169,10 @@ export default function LeonardsSkipper({ onNavigate }: LeonardsSkipperProps) {
               <span className="neighbor-name">Prairie Dropseed</span>
               <span className="neighbor-note">Primary host grass; the seed panicle tip becomes the hilltop perch for a male Leonard's Skipper in late August</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
+              <span className="neighbor-name">Cobweb Skipper</span>
+              <span className="neighbor-note">Spring sibling in the same genus; emerges in April on the same native bunchgrass stems where Leonard's Skipper perched the previous September</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
               <span className="neighbor-name">Canada Goldenrod</span>
               <span className="neighbor-note">Opens mid-August to September — the same week Leonard's Skipper emerges — and is the primary adult nectar source</span>
