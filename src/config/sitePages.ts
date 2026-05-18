@@ -89,6 +89,7 @@ export const ALL_PAGE_SLUGS = [
   'song-sparrow',
   'yellow-rumped-warbler',
   'wild-turkey',
+  'eastern-phoebe',
   'seasonal-calendar',
   'species-gallery',
   'habitat-transformation',
