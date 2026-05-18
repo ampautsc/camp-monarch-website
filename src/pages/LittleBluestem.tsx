@@ -206,6 +206,10 @@ export default function LittleBluestem({ onNavigate }: LittleBluestemProps) {
               <span className="neighbor-name">Dark-eyed Junco</span>
               <span className="neighbor-note">Pulls seeds from Little Bluestem seed heads in November and December; the standing dried clump extends the seed-foraging window after other sources are exhausted</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('american-tree-sparrow')}>
+              <span className="neighbor-name">American Tree Sparrow</span>
+              <span className="neighbor-note">Arrives in October from subarctic nesting grounds; pulls seeds from standing Little Bluestem stalks and dried goldenrod heads in loose flocks of 10 to 40 birds through January — the same copper-red stalks the juncos and sparrows are both working</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
               <span className="neighbor-name">Canada Goldenrod</span>
               <span className="neighbor-note">Leonard's Skipper adults nectar on goldenrod in late August while the same grass blades are receiving the first Leonard's Skipper eggs — nectar source and host plant in the same border, the same week</span>
