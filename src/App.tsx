@@ -88,6 +88,7 @@ import JoePyeWeed from './pages/JoePyeWeed'
 import CommonMilkweed from './pages/CommonMilkweed'
 import NewEnglandAster from './pages/NewEnglandAster'
 import SwampMilkweed from './pages/SwampMilkweed'
+import WildBergamot from './pages/WildBergamot'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -220,6 +221,7 @@ export default function App() {
       case 'common-milkweed': return <CommonMilkweed onNavigate={navigateTo} />
       case 'new-england-aster': return <NewEnglandAster onNavigate={navigateTo} />
       case 'swamp-milkweed':  return <SwampMilkweed onNavigate={navigateTo} />
+      case 'wild-bergamot':    return <WildBergamot onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
