@@ -88,6 +88,7 @@ import SpringChecklist from './pages/SpringChecklist'
 import PesticideGuide from './pages/PesticideGuide'
 import WaterForWildlife from './pages/WaterForWildlife'
 import LeaveTheLeaves from './pages/LeaveTheLeaves'
+import HabitatLayers from './pages/HabitatLayers'
 import InvasivePlants from './pages/InvasivePlants'
 import { trackEvent } from './lib/analytics'
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
@@ -197,6 +198,7 @@ function App() {
       case 'pesticide-guide':     return <PesticideGuide onNavigate={navigateTo} />
       case 'water-for-wildlife':  return <WaterForWildlife onNavigate={navigateTo} />
       case 'leave-the-leaves':    return <LeaveTheLeaves onNavigate={navigateTo} />
+      case 'habitat-layers':      return <HabitatLayers onNavigate={navigateTo} />
       case 'invasive-plants':    return <InvasivePlants onNavigate={navigateTo} />
       default:                    return <Home onNavigate={navigateTo} />
     }
