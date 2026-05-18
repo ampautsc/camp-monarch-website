@@ -93,6 +93,7 @@ import HabitatLayers from './pages/HabitatLayers'
 import InvasivePlants from './pages/InvasivePlants'
 import BrownCreeper from './pages/BrownCreeper'
 import HermitThrush from './pages/HermitThrush'
+import EasternWoodPewee from './pages/EasternWoodPewee'
 import { trackEvent } from './lib/analytics'
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -206,6 +207,7 @@ function App() {
       case 'invasive-plants':    return <InvasivePlants onNavigate={navigateTo} />
       case 'brown-creeper':      return <BrownCreeper onNavigate={navigateTo} />
       case 'hermit-thrush':      return <HermitThrush onNavigate={navigateTo} />
+      case 'eastern-wood-pewee': return <EasternWoodPewee onNavigate={navigateTo} />
       default:                    return <Home onNavigate={navigateTo} />
     }
   }
