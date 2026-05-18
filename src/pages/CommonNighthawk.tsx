@@ -16,8 +16,7 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Andy Reago &amp; Chrissy McClarren · <a href="https://commons.wikimedia.org/wiki/File:Common_Nighthawk_(14428313550).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
-          Photo: Andy Reago &amp; Chrissy McClarren&nbsp;·&nbsp;
+          Photo: Andy Reago &amp; Chrissy McClarren&nbsp;&middot;&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Common_Nighthawk_(14428313550).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
           &nbsp;via Wikimedia Commons
         </div>
@@ -32,8 +31,6 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
           away its food and filled its sky with light.
         </p>
       </section>
-
-      
 
       <div className="page">
         <section aria-labelledby="biology-heading">
@@ -73,16 +70,15 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
         </section>
 
         <section aria-labelledby="prey-heading">
-          <h2 id="prey-heading">What it eats — and why that matters</h2>
+          <h2 id="prey-heading">Mass emergence, or nothing: the diet has no substitute</h2>
           <p>
-            Nighthawks are obligate aerial insectivores. They eat only flying
-            insects caught in flight: moths, beetles, flying ants, mosquitoes,
-            mayflies, crane flies — whatever is emerging in concentration on a
-            given night. A nighthawk tracking a mayfly hatch over a lake or a
-            mass carpenter-ant nuptial flight above a meadow can consume hundreds
-            of insects in an hour. That concentration-feeding strategy means the
-            bird is tracking insect emergence events, not searching for scattered
-            prey.
+            A nighthawk moving over a lake at dusk is not searching — it is
+            converging. A mayfly hatch releases thousands of adults from the
+            water surface within minutes. A carpenter-ant nuptial flight lifts
+            a cloud of winged insects into still evening air. The nighthawk
+            tracks these concentration events, not scattered individual prey.
+            When a hatch is on, it can consume hundreds of insects in a single
+            hour.
           </p>
               <figure className="species-content-photo species-content-photo--right">
                 <img
@@ -92,7 +88,7 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
                 />
                 <figcaption>
                   Nighthawks do not build nests. The female lays two eggs directly on gravel — flat rooftops, open fields, railroad ballast — relying on cryptic coloration for camouflage. The shift from gravel to rubberized roofing membranes eliminated most urban nesting habitat in a single decade.
-                  <span className="photo-credit"> Photo: USFWS Mountain Prairie · <a href="https://commons.wikimedia.org/wiki/File:Common_nighthawk_at_Seedskadee_National_Wildlife_Refuge_Wyoming_(52155592586).jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: USFWS Mountain Prairie · <a href="https://commons.wikimedia.org/wiki/File:Common_nighthawk_at_Seedskadee_National_Wildlife_Refuge_Wyoming_(52155592586).jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
