@@ -16,7 +16,7 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Wood_thrush_(Hylocichla_mustelina)_Peten.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Wood_thrush_(Hylocichla_mustelina)_Peten.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: Charles J. Sharp&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Wood_thrush_(Hylocichla_mustelina)_Peten.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -87,7 +87,7 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
                 />
                 <figcaption>
                   The Wood Thrush nests in forest interior — not edge, not suburb, not a yard with scattered trees. A breeding pair requires roughly two acres of continuous canopy. Forest fragmentation forces pairs into edge habitat where Brown-headed Cowbirds parasitize their nests at rates approaching 80% in fragmented landscapes.
-                  <span className="photo-credit"> Photo: Wildreturn · <a href="https://commons.wikimedia.org/wiki/File:Wood_Thrush.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Wildreturn · <a href="https://commons.wikimedia.org/wiki/File:Wood_Thrush.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -297,7 +297,11 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
             <button className="link-button" onClick={() => onNavigate('invasive-plants')}>
               Remove Invasive Plants
             </button>
-            .
+            . To see how floor, shrub, and canopy work as one system,{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              The Four Layers
+            </button>
+            {' '}maps the full vertical structure your yard needs.
           </p>
         </div>
       </div>
