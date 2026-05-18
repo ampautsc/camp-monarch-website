@@ -4,49 +4,16 @@ import type { Page } from '../App'
 // Verified 2026-05-13. Attribution listed at bottom of page.
 // vis-001, vis-002, vis-003, vis-004: real subject photography, card-top strip format.
 const PHOTO_FALLBACK =
-  'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540"><rect width="100%" height="100%" fill="%23d4e9d0"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="48" fill="%23555">🦋</text></svg>'
+  'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540"><rect width="100%" height="100%" fill="%23e8ede4"/><text x="50%" y="50%" font-family="sans-serif" font-size="18" fill="%23666" text-anchor="middle" dy=".3em">Photo unavailable</text></svg>'
 
-function buildRetryPhotoUrl(photo: string): string | null {
-  try {
-    const url = new URL(photo)
-    if (url.hostname !== 'upload.wikimedia.org') return null
-
-    const fileName = decodeURIComponent(url.pathname.split('/').filter(Boolean).pop() ?? '').replace(/^\d+px-/, '')
-    if (!fileName) return null
-
-    return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileName)}?width=960`
-  } catch {
-    return null
-  }
-}
-
-function buildUnavailablePhotoFallback(label: string): string {
-  return `data:image/svg+xml;utf8,${encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
-      <rect width="960" height="540" fill="#d4e9d0" />
-      <rect x="28" y="28" width="904" height="484" rx="24" fill="#f7ede0" stroke="#2d5a27" stroke-width="6" />
-      <text x="50%" y="46%" dominant-baseline="middle" text-anchor="middle" font-size="46" font-family="Georgia, serif" fill="#1a2e1a">${label}</text>
-      <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="26" font-family="Arial, sans-serif" fill="#4a4a4a">Photo temporarily unavailable</text>
-    </svg>`
-  )}`
-}
-
-type Category = 'All' | 'Birds' | 'Butterflies & Moths' | 'Insects' | 'Reptiles & Amphibians' | 'Mammals'
-
-const CATEGORIES: Category[] = [
-  'All',
-  'Birds',
-  'Butterflies & Moths',
-  'Insects',
-  'Reptiles & Amphibians',
-  'Mammals',
-]
+type Category = 'All' | 'Insects' | 'Birds' | 'Reptiles & Amphibians' | 'Mammals' | 'Plants'
 
 interface Species {
-  page: string
+  page: Page
   name: string
   tagline: string
   photo: string
+  retryPhoto?: string
   alt: string
   attr: string
   category: Category
@@ -58,426 +25,417 @@ interface SpeciesGalleryProps {
 
 const SPECIES: Species[] = [
   {
-    page: 'monarch-life',
+    page: 'monarch',
     name: "Monarch Butterfly",
-    tagline: "3,000-mile migrator. Milkweed specialist. 80% population decline since the 1990s.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg',
-    alt: "Monarch butterfly with wings spread, showing orange and black pattern",
+    tagline: "2,000-mile migration powered entirely by milkweed and memory. 90% population decline since 1990. One yard at a time.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Monarch_In_May.jpg/960px-Monarch_In_May.jpg',
+    alt: "Monarch butterfly feeding on orange milkweed flowers in a sunny garden, wings spread to show the vivid orange-and-black stained-glass pattern",
     attr: "Kenneth Dwain Harrelson / CC BY-SA 3.0 / Wikimedia Commons",
-    category: 'Butterflies & Moths',
-  },
-  {
-    page: 'tiger-swallowtail',
-    name: "Tiger Swallowtail",
-    tagline: "Up to 5.5-inch wingspan. Depends on native host trees from egg to adult.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Pristine_Eastern_Tiger_Swallowtail.jpg/960px-Pristine_Eastern_Tiger_Swallowtail.jpg',
-    alt: "Tiger swallowtail butterfly on flower, showing yellow and black tiger-striped wings",
-    attr: "Wikimedia Commons / Public Domain",
-    category: 'Butterflies & Moths',
-  },
-  {
-    page: 'great-spangled-fritillary',
-    name: "Great Spangled Fritillary",
-    tagline: "Lays eggs near violets, not on them. The larva overwinters in leaf litter before taking its first bite in spring.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Speyeria_cybele_Great_Spangled_Fritillary_8.9.2008.jpg/960px-Speyeria_cybele_Great_Spangled_Fritillary_8.9.2008.jpg',
-    alt: "Great Spangled Fritillary butterfly showing tawny orange wings with black markings",
-    attr: "MONGO / Public domain / Wikimedia Commons",
-    category: 'Butterflies & Moths',
-  },
-  {
-    page: 'fireflies',
-    name: "Fireflies",
-    tagline: "A chemical language written in light. Disappearing from lawns across the continent.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Photuris_lucicrescens.jpg/960px-Photuris_lucicrescens.jpg',
-    alt: "Firefly in flight against dark background, showing bioluminescent glow",
-    attr: "Terry Priest / CC BY-SA 2.0 / Wikimedia Commons",
     category: 'Insects',
   },
   {
-    page: 'native-bees',
-    name: "Native Bees",
-    tagline: "4,000 species. Most nest in the ground. Wildly more effective than honeybees on native plants.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg/960px-Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg',
-    alt: "Native bee in flight near flower",
-    attr: "Muhammad Mahdi Karim / CC BY-SA 3.0 / Wikimedia Commons",
+    page: 'firefly',
+    name: "Firefly",
+    tagline: "A single female on your lawn can produce dozens of larvae — each one eating the slugs and snails you hate. Mow less, light less, let them flash.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Firefly_in_pieridae.jpg/960px-Firefly_in_pieridae.jpg',
+    alt: "A firefly perched on a green leaf in daylight, its soft body and wing covers visible before the night display begins",
+    attr: "Priyanka Iyer / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Insects',
   },
   {
-    page: 'american-bumble-bee',
-    name: "American Bumble Bee",
-    tagline: "Federally threatened since 2025. 89% population decline. A colony that starts from one queen.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Bombus_pensylvanicus_male_on_rough_blazingstar_Ellison_Creek-7907.jpg',
-    alt: "American bumble bee foraging on rough blazingstar, a native prairie wildflower",
-    attr: "Angella Moorehouse / CC BY-SA 4.0 / Wikimedia Commons",
+    page: 'luna-moth',
+    name: "Luna Moth",
+    tagline: "No mouth. No stomach. Seven days to find a mate, lay eggs, and die. Every light left on at night is a clock they can't afford.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Actias_luna_5440.jpg/960px-Actias_luna_5440.jpg',
+    alt: "Luna moth resting on bark, lime-green wings fully spread, delicate tails trailing below — one of North America's most striking silk moths",
+    attr: "Camerafiend / CC BY-SA 3.0 / Wikimedia Commons",
     category: 'Insects',
   },
   {
-    page: 'box-turtles',
-    name: "Box Turtle",
-    tagline: "Home range under 2 acres. Lives 50+ years. Cannot escape roads — or lawn mowers.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Box_turtle_(Terrapene_carolina_carolina)_in_Prospect_Park_(61573).jpg/960px-Box_turtle_(Terrapene_carolina_carolina)_in_Prospect_Park_(61573).jpg',
-    alt: "Eastern box turtle on forest floor showing orange and brown patterned shell",
+    page: 'bumble-bee',
+    name: "Bumble Bee",
+    tagline: "Vibrates flowers at 400 Hz to release pollen no other bee can reach. One-quarter of North American species are in serious decline.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bombus_pensylvanicus_on_Helenium_autumnale_-_crop.jpg/960px-Bombus_pensylvanicus_on_Helenium_autumnale_-_crop.jpg',
+    alt: "Bumble bee clinging to a yellow coneflower mid-buzz, thorax dusted with pollen — the vibration that releases what honey bees cannot collect",
+    attr: "Judy Gallagher / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'eastern-tiger-swallowtail',
+    name: "Eastern Tiger Swallowtail",
+    tagline: "The largest butterfly in the East. Females produce a blue-and-black morph that mimics the toxic Pipevine Swallowtail for protection.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Eastern_Tiger_Swallowtail_%28Papilio_glaucus%29_-_male_%28cropped%29.jpg/960px-Eastern_Tiger_Swallowtail_%28Papilio_glaucus%29_-_male_%28cropped%29.jpg',
+    alt: "Eastern Tiger Swallowtail perched on a flower, wings open, showing the bold yellow and black tiger stripes and blue hind-wing patches",
     attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
-    category: 'Reptiles & Amphibians',
-  },
-  {
-    page: 'gray-tree-frogs',
-    name: "Gray Tree Frog",
-    tagline: "Antifreeze in its cells. A living barometer of your yard's insect health.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/GrayTreefrog.jpg/960px-GrayTreefrog.jpg',
-    alt: "Gray tree frog clinging to bark, showing cryptic gray-green mottled pattern",
-    attr: "Wikimedia Commons / Public Domain",
-    category: 'Reptiles & Amphibians',
-  },
-  {
-    page: 'garter-snake',
-    name: "Garter Snake",
-    tagline: "Eats slugs, voles, and frogs. Completely harmless. Vanishing from tidy yards.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Thamnophis_sirtalis_sirtalis_Philadelphia.jpg/960px-Thamnophis_sirtalis_sirtalis_Philadelphia.jpg',
-    alt: "Eastern garter snake in grass showing longitudinal yellow stripes on dark body",
-    attr: "Wikimedia Commons / Public Domain",
-    category: 'Reptiles & Amphibians',
-  },
-  {
-    page: 'eastern-chipmunk',
-    name: "Eastern Chipmunk",
-    tagline: "Buries 8,000 seeds a year. A forest regenerator that lives in your flower bed.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Eastern_Chipmunk.jpg/960px-Eastern_Chipmunk.jpg',
-    alt: "Eastern chipmunk with cheek pouches full of seeds, sitting on a log",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Mammals',
-  },
-  {
-    page: 'spring-peeper',
-    name: "Spring Peeper",
-    tagline: "Thumbnail-sized. Deafening chorus. The first voice of spring in eastern wetlands.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Spring_Peeper_Frog.jpg/960px-Spring_Peeper_Frog.jpg',
-    alt: "Spring peeper frog clinging to stem, showing X mark on back and translucent toes",
-    attr: "Wikimedia Commons / Public Domain",
-    category: 'Reptiles & Amphibians',
-  },
-  {
-    page: 'toad',
-    name: "American Toad",
-    tagline: "Eats 1,000 insects a night. Lays 8,000 eggs. A night-shift pest controller.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Anaxyrus_americanus_PCSutton.jpg/960px-Anaxyrus_americanus_PCSutton.jpg',
-    alt: "American toad on leaf litter showing warty brown skin and golden eye",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Reptiles & Amphibians',
-  },
-  {
-    page: 'little-brown-bat',
-    name: "Little Brown Bat",
-    tagline: "Eats 1,200 insects an hour. White-nose syndrome has killed 6.7 million. A bat house costs $25.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Little_brown_bat_N._American.jpg/960px-Little_brown_bat_N._American.jpg',
-    alt: "Little brown bat in flight showing wing membrane and echolocation mouth open",
-    attr: "Wikimedia Commons / Public Domain",
-    category: 'Mammals',
-  },
-  {
-    page: 'virginia-opossum',
-    name: "Virginia Opossum",
-    tagline: "Eats 5,000 ticks a season. Immune to most snake venoms. North America's only marsupial.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Opossum_2.jpg/960px-Opossum_2.jpg',
-    alt: "Virginia opossum on branch showing white face, pink nose, and prehensile tail",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Mammals',
-  },
-  {
-    page: 'green-darner',
-    name: "Green Darner",
-    tagline: "3-inch wingspan. Migrates 900 miles. Eats 300 mosquitoes a day.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Anax_junius_-_mating_pair.jpg/960px-Anax_junius_-_mating_pair.jpg',
-    alt: "Green darner dragonfly showing vivid green thorax, blue abdomen, and large compound eyes",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
     category: 'Insects',
   },
   {
-    page: 'downy-woodpecker',
-    name: "Downy Woodpecker",
-    tagline: "Excavates nest cavities used by 35 other species. Eats 1,000 bark beetle larvae a day.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Downy_Woodpecker.jpg/960px-Downy_Woodpecker.jpg',
-    alt: "Male Downy Woodpecker on tree bark showing black and white plumage and red spot",
-    attr: "Wikimedia Commons / Public Domain",
-    category: 'Birds',
+    page: 'spicebush-swallowtail',
+    name: "Spicebush Swallowtail",
+    tagline: "Its caterpillar rolls a spicebush leaf into a sleeping bag and stares out with fake owl eyes. Sophisticated deception built on one native plant.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Spicebush_swallowtail_1.jpg/960px-Spicebush_swallowtail_1.jpg',
+    alt: "Spicebush Swallowtail nectaring on a purple flower, deep black wings with iridescent teal-blue scaling on the hindwings",
+    attr: "Judy Gallagher / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
   },
   {
-    page: 'baltimore-oriole',
-    name: "Baltimore Oriole",
-    tagline: "Weaves a 4-inch hanging nest. Needs elm and cottonwood. 24% BBS decline since 1966.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Baltimore_Oriole_%28male%29%2C_CP%2C_NJ_-_May_09_-_4.jpg/960px-Baltimore_Oriole_%28male%29%2C_CP%2C_NJ_-_May_09_-_4.jpg',
-    alt: "Male Baltimore oriole showing brilliant orange and black plumage on branch",
-    attr: "Wikimedia Commons / CC BY-SA 2.0",
-    category: 'Birds',
+    page: 'pearl-crescent',
+    name: "Pearl Crescent",
+    tagline: "A pocket-sized pollinator that goes where swallowtails won't — into wild edges and weedy gaps where the real habitat work happens.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Pearl_Crescent_%28Phyciodes_tharos%29.jpg/960px-Pearl_Crescent_%28Phyciodes_tharos%29.jpg',
+    alt: "Pearl Crescent butterfly on a white flower, orange-and-black wings showing the small pearlescent crescent on the hindwing margin",
+    attr: "John Flannery / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Insects',
   },
   {
-    page: 'northern-cardinal',
-    name: "Northern Cardinal",
-    tagline: "Year-round resident. Seed disperser. The female sings too — unusual among songbirds.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cardinal_male.jpg/960px-Cardinal_male.jpg',
-    alt: "Male Northern Cardinal in brilliant red plumage on snowy branch",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Birds',
+    page: 'american-lady',
+    name: "American Lady",
+    tagline: "Looks like a Painted Lady but carries two large eyespots no other species has. Its caterpillar spins silk tents inside pearly everlasting leaves.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Vanessa_virginiensis_-_Roaming_Shores%2C_Ohio%2C_USA_-_8aaaa.jpg/960px-Vanessa_virginiensis_-_Roaming_Shores%2C_Ohio%2C_USA_-_8aaaa.jpg',
+    alt: "American Lady butterfly with wings spread flat, orange-and-black forewing pattern visible, resting on a leaf in dappled sunlight",
+    attr: "John Tann / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
   },
   {
-    page: 'eastern-bluebird',
-    name: "Eastern Bluebird",
-    tagline: "Cavity nester. Nearly wiped out by starlings. Brought back by nest box programs.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Eastern_Bluebird_-_Great_Smoky_Mountains_NP_-_TN_%2826162716603%29.jpg/960px-Eastern_Bluebird_-_Great_Smoky_Mountains_NP_-_TN_%2826162716603%29.jpg',
-    alt: "Male Eastern Bluebird showing vivid blue back and rusty orange breast",
-    attr: "NPS Photo / Wikimedia Commons / Public Domain",
-    category: 'Birds',
+    page: 'zebra-swallowtail',
+    name: "Zebra Swallowtail",
+    tagline: "Tied to one tree. No pawpaw patch — no Zebra Swallowtail. That single dependency makes it a living argument for native fruit trees.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Zebra_Swallowtail_%28Eurytides_marcellus%29.jpg/960px-Zebra_Swallowtail_%28Eurytides_marcellus%29.jpg',
+    alt: "Zebra Swallowtail with wings spread, bold black-and-white stripes running the length of elongated wings, red spot at base of hindwing",
+    attr: "John Flannery / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Insects',
   },
   {
-    page: 'black-capped-chickadee',
+    page: 'baltimore-checkerspot',
+    name: "Baltimore Checkerspot",
+    tagline: "Maryland's state insect. Its caterpillar overwinters inside the frozen leaf litter — one reason autumn cleanup is a population event.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Baltimore_Checkerspot_butterfly_%28Euphydryas_phaeton%29.jpg/960px-Baltimore_Checkerspot_butterfly_%28Euphydryas_phaeton%29.jpg',
+    alt: "Baltimore Checkerspot with wings spread on a leaf, bold orange, white, and black checkered pattern visible across all four wings",
+    attr: "Gilles Gonthier / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'giant-swallowtail',
+    name: "Giant Swallowtail",
+    tagline: "North America's largest butterfly. Its caterpillar looks exactly like fresh bird droppings — an evolutionary con job that works for weeks.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Giant_swallowtail_%28Papilio_cresphontes%29_underside.jpg/960px-Giant_swallowtail_%28Papilio_cresphontes%29_underside.jpg',
+    alt: "Giant Swallowtail resting on a flat surface, wings spread to show the intricate yellow-band pattern on dark brown upperwings",
+    attr: "Judy Gallagher / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'black-swallowtail',
+    name: "Black Swallowtail",
+    tagline: "Female mimics the Pipevine Swallowtail so closely that predators avoid her. Her caterpillar's defensive osmeterium smells like rotten citrus.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Papilio_polyxenes_asterius.jpg/960px-Papilio_polyxenes_asterius.jpg',
+    alt: "Black Swallowtail on a flower, wings spread, iridescent blue-green scaling on lower wings, distinctive yellow spots along wing margins",
+    attr: "Nino Barbieri / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'hummingbird-clearwing',
+    name: "Hummingbird Clearwing Moth",
+    tagline: "Hovers like a hummingbird, visits the same flowers, and fools most people. It's a moth — active in broad daylight, no disguise required.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hemaris_thysbe.jpg/960px-Hemaris_thysbe.jpg',
+    alt: "Hummingbird Clearwing moth hovering at a pink flower, transparent wings a blur, olive-green and burgundy body catching the light",
+    attr: "Bob Gutowski / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'io-moth',
+    name: "Io Moth",
+    tagline: "Flashes two enormous eyespots when threatened — a split-second predator-confusion tactic evolved over millions of years. Caterpillar stings.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Automeris_io_male.jpg/960px-Automeris_io_male.jpg',
+    alt: "Male Io Moth with forewings raised to reveal the large black-and-white eyespots on yellow hindwings — a startle display frozen in the photo",
+    attr: "Didier Descouens / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'promethea-moth',
+    name: "Promethea Moth",
+    tagline: "Males fly at dusk in a tight window — exactly 30 to 90 minutes after sunset. Remove the host trees and that window closes permanently.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Callosamia_promethea_male.jpg/960px-Callosamia_promethea_male.jpg',
+    alt: "Male Promethea Moth resting with wings spread, dark brown-maroon coloring with pale borders and a prominent eyespot on each hindwing",
+    attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'tulip-tree-silkmoth',
+    name: "Tulip Tree Silkmoth",
+    tagline: "One of the largest moths in North America, feeding only on tulip poplar, sweetbay, and wild cherry — trees that belong in every eastern yard.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Callosamia_angulifera.jpg/960px-Callosamia_angulifera.jpg',
+    alt: "Tulip Tree Silkmoth resting on bark, large wings patterned in rich chestnut brown with contrasting pale margins and small eyespots",
+    attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'cecropia-moth',
+    name: "Cecropia Moth",
+    tagline: "North America's largest native moth. Lives only two weeks as an adult, eating nothing, flying only to mate. Needs mature deciduous trees to survive.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hyalophora_cecropia_on_Sugar_Maple.jpg/960px-Hyalophora_cecropia_on_Sugar_Maple.jpg',
+    alt: "Cecropia Moth resting on bark, wings spread wide to show the dramatic red-and-white banded body, cream-bordered wings, and crescent-shaped white spots",
+    attr: "Swerve / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'polyphemus-moth',
+    name: "Polyphemus Moth",
+    tagline: "Named for the one-eyed giant: each hindwing carries a large translucent eyespot that confuses predators. Found wherever oaks still grow.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Polyphemus_Moth_with_wings_spread.jpg/960px-Polyphemus_Moth_with_wings_spread.jpg',
+    alt: "Polyphemus Moth resting with wings fully spread, the large translucent eyespots on its hindwings clearly visible against the tan-and-brown wing pattern",
+    attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+    category: 'Insects',
+  },
+  {
+    page: 'chickadee',
     name: "Black-capped Chickadee",
-    tagline: "Hides 80,000 seeds a year. Remembers every one. Survives −40°F on caterpillar fat.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Poecile-atricapilla-001.jpg/960px-Poecile-atricapilla-001.jpg',
-    alt: "Black-capped chickadee on branch showing black cap and bib, white cheeks",
+    tagline: "A single brood needs up to 9,000 caterpillars. No native trees means no caterpillars means no chickadees — the math is that direct.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Poecile-atricapilla-001.jpg/960px-Poecile-atricapilla-001.jpg',
+    alt: "Black-capped Chickadee perched on a thin branch in winter light, black cap and bib contrasting with white cheeks, soft gray back feathers ruffled against the cold",
     attr: "Wolfgang Wander / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'wood-thrush',
+    name: "Wood Thrush",
+    tagline: "Sings two notes at once using a forked syrinx. Needs 100+ acres of forest to nest successfully. Down 62% since 1966.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Wood_Thrush_%28Hylocichla_mustelina%29.jpg/960px-Wood_Thrush_%28Hylocichla_mustelina%29.jpg',
+    alt: "Wood Thrush perched on a mossy log, its warm cinnamon-brown back and boldly spotted white breast visible, beak slightly open mid-song",
+    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
     page: 'ruby-throated-hummingbird',
     name: "Ruby-throated Hummingbird",
-    tagline: "500 wingbeats per minute. Crosses the Gulf of Mexico in 20 hours. Needs native flowers.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Ruby-throated-Hummingbird.jpg/960px-Ruby-throated-Hummingbird.jpg',
-    alt: "Male ruby-throated hummingbird hovering at flower showing iridescent red throat",
-    attr: "Wikimedia Commons / Public Domain",
+    tagline: "The only hummingbird that breeds east of the Mississippi. Burns 10 calories per day — the equivalent of a human burning 155,000.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ruby_Throated_Hummingbird_%28Archilochus_colubris%29.jpg/960px-Ruby_Throated_Hummingbird_%28Archilochus_colubris%29.jpg',
+    alt: "Male Ruby-throated Hummingbird hovering at a red tubular flower, iridescent green back and the distinctive ruby-red throat gorget glowing in sunlight",
+    attr: "Dick Daniels / CC BY-SA 3.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
     page: 'american-goldfinch',
     name: "American Goldfinch",
-    tagline: "Delays nesting until August to match thistle and coneflower seed peaks. A specialist.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/American_Goldfinch_-_Male_-_Breeding_Plumage_%2814344605249%29.jpg/960px-American_Goldfinch_-_Male_-_Breeding_Plumage_%2814344605249%29.jpg',
-    alt: "Male American Goldfinch in bright yellow breeding plumage on branch",
-    attr: "Wikimedia Commons / CC BY 2.0",
+    tagline: "Waits until July to nest — timed exactly to peak coneflower and thistle seed production. Remove the seed heads and you remove the nursery.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Spinus_tristis_-_Michigan.jpg/960px-Spinus_tristis_-_Michigan.jpg',
+    alt: "Male American Goldfinch perched on a swaying stem, brilliant lemon-yellow plumage with jet-black wings and cap — the peak of summer breeding colors",
+    attr: "Cephas / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'eastern-bluebird',
+    name: "Eastern Bluebird",
+    tagline: "Nest-box programs pulled it back from near-extinction. Still dependent on humans for cavities that vanished with old-growth trees.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Eastern_Bluebird-27527-2.jpg/960px-Eastern_Bluebird-27527-2.jpg',
+    alt: "Male Eastern Bluebird perched on a wooden post, vivid sky-blue back and wings contrasting with the warm rusty-orange breast",
+    attr: "Mdf / CC BY-SA 3.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
     page: 'american-robin',
     name: "American Robin",
-    tagline: "Detects earthworms by vibration. Eats 14 feet of worms a day. A lawn-quality indicator.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Turdus-migratorius-002.jpg/960px-Turdus-migratorius-002.jpg',
-    alt: "American robin on grass showing orange-red breast and alert posture",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Birds',
-  },
-  {
-    page: 'indigo-bunting',
-    name: "Indigo Bunting",
-    tagline: "Navigates by starlight. Intense blue is structural color, not pigment. Needs dense shrub edges.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Indigo_Bunting_by_Dan_Pancamo_1.jpg/960px-Indigo_Bunting_by_Dan_Pancamo_1.jpg',
-    alt: "Male Indigo Bunting in brilliant iridescent blue plumage perched on branch",
-    attr: "Dan Pancamo / CC BY-SA 2.0 / Wikimedia Commons",
+    tagline: "So familiar it disappears. But it needs earthworms, native fruit trees, and open turf — three things suburban yards are steadily eliminating.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Turdus_migratorius_-_3.jpg/960px-Turdus_migratorius_-_3.jpg',
+    alt: "American Robin standing on a lawn in early morning light, classic orange breast and dark gray back, head tilted to listen for earthworms",
+    attr: "Joe Schneid / CC BY 3.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
     page: 'dark-eyed-junco',
     name: "Dark-eyed Junco",
-    tagline: "Nests on the ground. Eats weed seeds all winter. A winter-yard essential.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dark-eyed_Junco_-_Junco_hyemalis_%2816746558599%29.jpg/960px-Dark-eyed_Junco_-_Junco_hyemalis_%2816746558599%29.jpg',
-    alt: "Dark-eyed junco showing slate-gray plumage and pink bill on snowy ground",
-    attr: "Wikimedia Commons / CC BY 2.0",
+    tagline: "Flashes white tail feathers as an alarm signal. Nests on the ground — which means any untrimmed, leaf-covered patch could be a nursery.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Dark-eyed_Junco_slaty.jpg/960px-Dark-eyed_Junco_slaty.jpg',
+    alt: "Dark-eyed Junco perched on a snowy branch, slate-gray hood contrasting with white belly and the tell-tale white outer tail feathers",
+    attr: "Ken Thomas / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
-    page: 'polyphemus-moth',
-    name: "Polyphemus Moth",
-    tagline: "6-inch wingspan. Eyespots that mimic an owl. Cannot eat as an adult. One native oak can raise thousands.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Antheraea_polyphemus_Cramer.jpg/960px-Antheraea_polyphemus_Cramer.jpg',
-    alt: "Polyphemus moth with wings open showing large eyespots on hindwings",
-    attr: "Wikimedia Commons / Public Domain",
-    category: 'Butterflies & Moths',
-  },
-  {
-    page: 'luna-moth',
-    name: "Luna Moth",
-    tagline: "Tail feathers that spin in bat sonar. Adults live 7 days. Disappearing from light-polluted suburbs.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Actias_luna_resting.jpg/960px-Actias_luna_resting.jpg',
-    alt: "Luna moth on tree bark showing pale green wings with long curving tail extensions",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Butterflies & Moths',
-  },
-  {
-    page: 'cecropia-moth',
-    name: "Cecropia Moth",
-    tagline: "North America's largest native moth. 7-inch wingspan. A parasitoid fly introduced in 1906 decimated populations.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Cecropia_Moth_Hyalophora_cecropia.jpg/960px-Cecropia_Moth_Hyalophora_cecropia.jpg',
-    alt: "Cecropia moth on bark showing distinctive red-banded abdomen and eyespot wing pattern",
-    attr: "Wikimedia Commons / Public Domain",
-    category: 'Butterflies & Moths',
-  },
-  {
-    page: 'wood-thrush',
-    name: "Wood Thrush",
-    tagline: "Two-voiced song. 62% BBS decline. Needs forest interior with 5 acres minimum of connected canopy.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hylocichla_mustelina.jpg/960px-Hylocichla_mustelina.jpg',
-    alt: "Wood thrush on forest floor showing spotted breast and rusty-brown head",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
+    page: 'downy-woodpecker',
+    name: "Downy Woodpecker",
+    tagline: "America's smallest woodpecker. Drills beetle larvae from dead wood all winter — the exact foraging habitat eliminated by tidy yard cleanup.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Downy_Woodpecker.jpg/960px-Downy_Woodpecker.jpg',
+    alt: "Male Downy Woodpecker clinging to a suet feeder, bold black-and-white plumage and a small red patch on the nape of the head",
+    attr: "Wolfgang Wander / CC BY-SA 3.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
-    page: 'eastern-screech-owl',
-    name: "Eastern Screech Owl",
-    tagline: "38% decline. 96% of sampled birds contaminated with rodenticides. A nest box brings them back.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Eastern_Screech_Owl_%28red_morph%29.jpg/960px-Eastern_Screech_Owl_%28red_morph%29.jpg',
-    alt: "Eastern screech owl in red morph perched in tree cavity showing camouflage plumage and ear tufts",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
+    page: 'baltimore-oriole',
+    name: "Baltimore Oriole",
+    tagline: "Weaves a hanging pouch nest in 6 days — one of the most complex bird nests built anywhere. Caterpillar demand peaks during that sprint.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Icterus_galbula_-_male.jpg/960px-Icterus_galbula_-_male.jpg',
+    alt: "Male Baltimore Oriole perched on a branch, vivid flame-orange body contrasting with jet-black head and wings, a flash of orange against summer leaves",
+    attr: "Mdf / CC BY-SA 3.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
-    page: 'common-nighthawk',
-    name: "Common Nighthawk",
-    tagline: "Eats 2,000 flying insects a night. Nests on flat gravel rooftops. 61% population decline.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Common_Nighthawk_resting.jpg/960px-Common_Nighthawk_resting.jpg',
-    alt: "Common nighthawk resting on branch showing cryptic bark-patterned plumage and white wing bar",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
+    page: 'cedar-waxwing',
+    name: "Cedar Waxwing",
+    tagline: "Shares berries beak-to-beak along a branch when the flock has more than it needs. Eats primarily fruit — native trees are its grocery store.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Cedar_Waxwing_-_Bombycilla_cedrorum.jpg/960px-Cedar_Waxwing_-_Bombycilla_cedrorum.jpg',
+    alt: "Cedar Waxwing perched on a branch, sleek crested head, silky gray-brown plumage with yellow tail-tip band and distinctive red wax-like wing spots",
+    attr: "Cephas / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
-    page: 'chimney-swift',
-    name: "Chimney Swift",
-    tagline: "Eats 12,000 flying insects a day. Nests only in vertical shafts. 65% BBS decline.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Chaetura_pelagica.jpg/960px-Chaetura_pelagica.jpg',
-    alt: "Chimney swift in flight showing swept-back wings, short tail, and cigar-shaped body",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Birds',
-  },
-  {
-    page: 'purple-martin',
-    name: "Purple Martin",
-    tagline: "Entirely dependent on human-provided housing in the eastern US. Colony collapses if houses go up late.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Progne_subis_subis_AD_M.jpg/960px-Progne_subis_subis_AD_M.jpg',
-    alt: "Male purple martin in iridescent blue-purple plumage in flight",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Birds',
-  },
-  {
-    page: 'red-tailed-hawk',
-    name: "Red-tailed Hawk",
-    tagline: "Vision 8x sharper than human. Rodenticide poisoning kills 75% of sampled urban birds. A keystone predator.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Red-tailed_Hawk_in_flight-2007.jpg/960px-Red-tailed_Hawk_in_flight-2007.jpg',
-    alt: "Red-tailed hawk in flight showing distinctive rusty red tail and broad wingspan",
-    attr: "Wikimedia Commons / CC BY-SA 3.0",
-    category: 'Birds',
-  },
-  {
-    page: 'eastern-meadowlark',
-    name: "Eastern Meadowlark",
-    tagline: "75% BBS decline since 1966. A grassland singer that needs a 10-acre meadow to nest.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Sturnella_magna_-Florida%2C_USA-8.jpg/960px-Sturnella_magna_-Florida%2C_USA-8.jpg',
-    alt: "Eastern meadowlark standing in grass showing bright yellow breast with black V-shaped bib",
-    attr: "Wikimedia Commons / CC BY-SA 2.0",
-    category: 'Birds',
-  },
-  {
-    page: 'american-kestrel',
-    name: "American Kestrel",
-    tagline: "North America's smallest falcon. 47% BBS decline. Sees UV light to track vole urine trails.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/American_kestrel_%28Falco_sparverius%29.jpg/960px-American_kestrel_%28Falco_sparverius%29.jpg',
-    alt: "Male American kestrel perched on a branch showing slate-blue wings, russet back and tail, and two bold black facial mustache marks",
-    attr: "Simon Pierre Barrette / CC BY-SA 3.0 / Wikimedia Commons",
-    category: 'Birds',
-  },
-  {
-    page: 'brown-thrasher',
-    name: "Brown Thrasher",
-    tagline: "More than 2,000 song types — the largest confirmed repertoire of any North American bird. Georgia's state bird. Partners in Flight Watch List.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Toxostoma_rufum_CT2.jpg/960px-Toxostoma_rufum_CT2.jpg',
-    alt: "Brown Thrasher perched in shrub showing rusty red-brown upperparts, streaked white breast, long tail, and distinctive bright yellow eye",
-    attr: "DickDaniels / CC BY-SA 3.0 / Wikimedia Commons",
-    category: 'Birds',
-  },
-  {
-    page: 'eastern-towhee',
-    name: "Eastern Towhee",
-    tagline: "\"Drink your tea!\" A leaf-litter double-scratcher of dense shrubby thickets. Long-term BBS decline across the eastern US.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pipilo_erythrophthalmus_CT2.jpg/960px-Pipilo_erythrophthalmus_CT2.jpg',
-    alt: "Male Eastern Towhee showing jet-black hood and back, vivid rufous flanks, white belly, and striking red eye",
-    attr: "DickDaniels / CC BY-SA 3.0 / Wikimedia Commons",
-    category: 'Birds',
-  },
-  {
-    page: 'carolina-wren',
-    name: "Carolina Wren",
-    tagline: "Weighs 20 grams and never leaves. A non-migratory year-round resident whose survival through winter depends directly on brush piles and intact leaf litter.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg/960px-Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg',
-    alt: "Carolina Wren perched showing rich cinnamon-brown upperparts, bold white eyebrow stripe, and the characteristically upright cocked tail",
-    attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
-    category: 'Birds',
-  },
-  {
-    page: 'gray-catbird',
-    name: "Gray Catbird",
-    tagline: "Sings each phrase once — a non-repeating stream of mimicry from inside the thicket. Nests at 3–6 feet in dense shrubs; spring pruning in April removes the branch forks the female needs.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gray_catbird_%2885315%29.jpg/960px-Gray_catbird_%2885315%29.jpg',
-    alt: "Adult gray catbird perched showing slate-gray plumage, black cap, long tail, and rust-colored undertail coverts",
-    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
-    category: 'Birds',
-  },
-  {
-    page: 'mourning-dove',
-    name: "Mourning Dove",
-    tagline: "Walks the ground picking seeds individually — one at a time, straight-line. A single pair can raise five or six broods in a season. The back corner left unmowed through winter is where they feed from October to March.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Mourning_Dove_%28Zenaida_macroura%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg/960px-Mourning_Dove_%28Zenaida_macroura%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg',
-    alt: "Mourning dove perched on a branch showing soft pinkish-brown plumage, small head, delicate black spot below the eye, and long tapered tail",
-    attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+    page: 'scarlet-tanager',
+    name: "Scarlet Tanager",
+    tagline: "Lives in the forest canopy almost invisibly despite being flame-red. Needs large, connected forest blocks — fragments aren't enough.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/ScarletTanagerJKB.jpg/960px-ScarletTanagerJKB.jpg',
+    alt: "Male Scarlet Tanager perched on a branch, startling red body and jet-black wings — one of North America's most vivid songbirds",
+    attr: "Factumquintus / CC BY-SA 3.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
     page: 'song-sparrow',
     name: "Song Sparrow",
-    tagline: "Sings from the same three to five branches every morning — each perch a point on a circuit the male memorized and defends from March through midsummer. The shrub he sings from has been claimed.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Song_Sparrow_Melospiza_melodia.jpg/960px-Song_Sparrow_Melospiza_melodia.jpg',
-    alt: "Song Sparrow perched on a branch showing brown-streaked plumage, broad dark eyebrow stripe, and the dark central breast spot amid dense streaking",
-    attr: "Alan D. Wilson / CC BY-SA 2.5 / Wikimedia Commons",
+    tagline: "Has more regional dialects than any other North American bird — over 20 distinct song forms. Thrives in brushy edges most people mistake for weeds.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Song_Sparrow%2C_Prospect_Park_%285885%29.jpg/960px-Song_Sparrow%2C_Prospect_Park_%285885%29.jpg',
+    alt: "Song Sparrow perched on a stem, streaked brown back and heavily streaked breast with a central spot, bill open mid-song",
+    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
-    page: 'yellow-rumped-warbler',
-    name: "Yellow-rumped Warbler",
-    tagline: "Arrives in October carrying a digestive enzyme no other eastern warbler has — breaks down the waxy coating on bayberry and wax myrtle when other warblers have already gone south.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Setophaga_coronata_coronata_CT1.jpg/960px-Setophaga_coronata_coronata_CT1.jpg',
-    alt: "Yellow-rumped Warbler in fall plumage, showing gray-brown streaked back and the butter-yellow rump patch at the base of the tail",
-    attr: "Cephas / CC BY-SA 3.0 / Wikimedia Commons",
+    page: 'house-wren',
+    name: "House Wren",
+    tagline: "Packs a nest box with 400 sticks before adding the soft interior cup. Will evict competing species — including birds twice its size.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/House_Wren_2.jpg/960px-House_Wren_2.jpg',
+    alt: "House Wren perched on a branch, small brown bird with finely barred wings and an upright cocked tail, the posture of a bird that owns the yard",
+    attr: "Ken Thomas / Public Domain / Wikimedia Commons",
     category: 'Birds',
   },
   {
-    page: 'wild-turkey',
-    name: "Wild Turkey",
-    tagline: "Poults hatch ready to run but cannot thermoregulate for two weeks — each one forages for insects in leaf litter independently while returning to the hen for warmth throughout the day.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tom_turkey_strutting.jpg/960px-Tom_turkey_strutting.jpg',
-    alt: "Male Wild Turkey in full display — tail fanned into a wide semicircle, back feathers raised, standing on fallen leaves in a mixed hardwood forest",
-    attr: "USFWS / Public Domain / Wikimedia Commons",
+    page: 'northern-flicker',
+    name: "Northern Flicker",
+    tagline: "Spends more time on the ground than any other woodpecker — eating ants. 40% decline since 1966 tracks directly with the loss of ant-rich habitat.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Northern_Flicker_%28Red-shafted%29.jpg/960px-Northern_Flicker_%28Red-shafted%29.jpg',
+    alt: "Northern Flicker on a tree trunk showing the spotted breast, barred back, and the crescent-shaped black bib that marks this ground-feeding woodpecker",
+    attr: "Elaine R. Wilson / CC BY-SA 2.5 / Wikimedia Commons",
     category: 'Birds',
   },
   {
-    page: 'eastern-phoebe',
-    name: "Eastern Phoebe",
-    tagline: "Returns in late February — weeks before most migrants — to hunt flying insects from perches 4 to 8 feet high, launching from the same spot dozens of times per hour.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Eastern_Phoebe-27527-2.jpg/960px-Eastern_Phoebe-27527-2.jpg',
-    alt: "Eastern Phoebe perched on a thin branch — gray-brown back, off-white underparts, rounded dark head, pumping its tail slowly downward in the characteristic tail-pumping posture of the species",
-    attr: "PEHart / CC BY-SA 2.0 / Wikimedia Commons",
+    page: 'american-kestrel',
+    name: "American Kestrel",
+    tagline: "North America's smallest falcon. Sees in ultraviolet — it follows vole urine trails invisible to every other predator. Down 50% since 1966.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/American_kestrel_%28Falco_sparverius%29_male.jpg/960px-American_kestrel_%28Falco_sparverius%29_male.jpg',
+    alt: "Male American Kestrel perched on a wire, vivid rufous back and tail contrasting with blue-gray wings, the bold facial markings of a miniature falcon",
+    attr: "Frank Schulenburg / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'carolina-wren',
+    name: "Carolina Wren",
+    tagline: "Stays year-round and pairs for life. Sings so loud it triggers car alarms. Needs dense brush piles to survive hard winters.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Carolina_Wren_at_Unexpected_Wildlife_Refuge_photo_by_Bet_Zimmermann.jpg/960px-Carolina_Wren_at_Unexpected_Wildlife_Refuge_photo_by_Bet_Zimmermann.jpg',
+    alt: "Carolina Wren perched on a log, rich rusty-brown upperparts with a bold white eye stripe, tail held cocked upright",
+    attr: "Bet Zimmermann / Public Domain / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'tufted-titmouse',
+    name: "Tufted Titmouse",
+    tagline: "Caches individual seeds in separate hiding spots and remembers each location. Lines its nest cup with fur pulled from living mammals.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Titmouse.jpg/960px-Titmouse.jpg',
+    alt: "Tufted Titmouse clinging to a branch, soft gray back and white undersides, the distinctive gray crest erect, large dark eye looking directly at the camera",
+    attr: "PookieFugglestein / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'white-breasted-nuthatch',
+    name: "White-breasted Nuthatch",
+    tagline: "Descends trees headfirst — the only bird that does. Spot-checks bark crevices woodpeckers just passed. Two birds, same tree, zero competition.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/White-breasted_Nuthatch.jpg/960px-White-breasted_Nuthatch.jpg',
+    alt: "White-breasted Nuthatch on a branch in characteristic headfirst posture, blue-gray back, white face and underparts, long upturned bill",
+    attr: "Wolfgang Wander / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'indigo-bunting',
+    name: "Indigo Bunting",
+    tagline: "Navigates by the stars — literally memorizes the night sky as a fledgling. Every male sings a unique song learned from neighbors, not parents.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Indigo_Bunting_by_Dan_Pancamo.jpg/960px-Indigo_Bunting_by_Dan_Pancamo.jpg',
+    alt: "Male Indigo Bunting perched on a stem, entire plumage a saturated electric blue that shifts shade with every angle of light",
+    attr: "Dan Pancamo / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'red-eyed-vireo',
+    name: "Red-eyed Vireo",
+    tagline: "Sings up to 22,000 times in a single day — the most persistent singer in North American forests. Invisible in the canopy, unmistakable by ear.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Red-eyed_Vireo%2C_Prospect_Park_%285815%29.jpg/960px-Red-eyed_Vireo%2C_Prospect_Park_%285815%29.jpg',
+    alt: "Red-eyed Vireo perched among green leaves, olive-green back, white eyebrow stripe, and the distinctive red iris visible at close range",
+    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'great-crested-flycatcher',
+    name: "Great Crested Flycatcher",
+    tagline: "Weaves shed snakeskin into its nest — possibly to deter predators. The only eastern flycatcher that nests in tree cavities.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Great_Crested_Flycatcher_%28Myiarchus_crinitus%29_%285614%29.jpg/960px-Great_Crested_Flycatcher_%28Myiarchus_crinitus%29_%285614%29.jpg',
+    alt: "Great Crested Flycatcher perched on a branch, olive-green back, bright yellow belly, rufous tail, and the namesake shaggy crest slightly raised",
+    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'eastern-towhee',
+    name: "Eastern Towhee",
+    tagline: "Scratch-feeds with a two-footed jump that flips leaf litter backward. Needs dense, low shrubs that most homeowners prune away.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Pipilo_erythrophthalmus_-_Autumn_2009.jpg/960px-Pipilo_erythrophthalmus_-_Autumn_2009.jpg',
+    alt: "Male Eastern Towhee perched on a branch, jet-black hood and back, white belly, rufous sides, and red eye visible in profile",
+    attr: "Cephas / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'ovenbird',
+    name: "Ovenbird",
+    tagline: "Nests in a domed leaf structure on the forest floor that looks exactly like a Dutch oven. One of the first birds to vanish when forests fragment.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Ovenbird_%28Seiurus_aurocapilla%29_%285565%29.jpg/960px-Ovenbird_%28Seiurus_aurocapilla%29_%285565%29.jpg',
+    alt: "Ovenbird walking on the forest floor, olive-brown back, heavily streaked white breast, and the orange crown stripe that identifies it among wood-warblers",
+    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
     page: 'yellow-warbler',
     name: "Yellow Warbler",
-    tagline: "Builds a nest in a shrub fork 2 to 6 feet off the ground — invisible from outside the canopy — during the same weeks most homeowners trim their shrubs.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Setophaga_petechia_-Ithaca%2C_New_York%2C_USA-8.jpg/960px-Setophaga_petechia_-Ithaca%2C_New_York%2C_USA-8.jpg',
-    alt: "Male Yellow Warbler — brilliant all-yellow plumage with rusty-red streaks down the chest, small rounded bill, bright dark eye",
-    attr: "PEHart / CC BY-SA 2.0 / Wikimedia Commons",
+    tagline: "When Brown-headed Cowbirds parasitize its nest, Yellow Warblers simply build a new floor over the cowbird egg — sometimes stacking six layers.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Yellow_Warbler_%28Setophaga_petechia%29_%285718%29.jpg/960px-Yellow_Warbler_%28Setophaga_petechia%29_%285718%29.jpg',
+    alt: "Male Yellow Warbler perched on a branch, entirely bright yellow plumage with fine reddish-brown streaking on the breast visible at close range",
+    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
-    page: 'ruby-crowned-kinglet',
-    name: "Ruby-crowned Kinglet",
-    tagline: "Weighs 6 grams. Must eat nearly its own body weight each day to survive fall migration. Stays 3 days in a yard with bayberry. Stays 3 hours in one without.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ruby-crowned_Kinglet_%28Corthylio_calendula%29_%2814349226095%29.jpg/960px-Ruby-crowned_Kinglet_%28Corthylio_calendula%29_%2814349226095%29.jpg',
-    alt: "Ruby-crowned Kinglet perched on a branch — tiny olive-green bird with bold white eye ring and two white wingbars",
-    attr: "Channel City Camera Club / CC BY 2.0 / Wikimedia Commons",
+    page: 'common-yellowthroat',
+    name: "Common Yellowthroat",
+    tagline: "The male's black mask makes him one of the most recognizable warblers. Nests in cattail marshes and wet meadow edges — habitat disappearing faster than most.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Geothlypis_trichas_-_Common_Yellowthroat_%28male%29.jpg/960px-Geothlypis_trichas_-_Common_Yellowthroat_%28male%29.jpg',
+    alt: "Male Common Yellowthroat perched on a reed stem, bright yellow throat and breast below the bold black mask, olive-green upperparts",
+    attr: "Ómar Runólfsson / CC BY 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'american-redstart',
+    name: "American Redstart",
+    tagline: "Fans its tail to flash orange patches and startle insects out of hiding. One of the most active leaf-gleaners in the eastern canopy.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Setophaga_ruticilla_%28male%29.jpg/960px-Setophaga_ruticilla_%28male%29.jpg',
+    alt: "Male American Redstart perched mid-branch, jet-black plumage with vivid orange patches on wings and tail, the signature flash visible even at rest",
+    attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'veery',
+    name: "Veery",
+    tagline: "Its descending spiral call echoes through bottomland forests at dusk. Predicts hurricane intensity with enough accuracy that meteorologists now study its migration patterns.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Veery_%28Catharus_fuscescens%29.jpg/960px-Veery_%28Catharus_fuscescens%29.jpg',
+    alt: "Veery perched on a mossy branch in filtered forest light, warm cinnamon-brown back and faintly spotted breast identifying it among the spotted thrushes",
+    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'swainsons-thrush',
+    name: "Swainson's Thrush",
+    tagline: "Sings an upward-spiraling flute phrase unlike any other thrush. Migrates nocturnally using stars and magnetic fields in concert.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Catharus_ustulatus.jpg/960px-Catharus_ustulatus.jpg',
+    alt: "Swainson's Thrush perched on a branch, olive-brown back, buff eye ring, and spotted breast typical of the Catharus thrush group",
+    attr: "Cephas / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Birds',
   },
   {
@@ -489,6 +447,15 @@ const SPECIES: Species[] = [
     attr: "i_got_the_fever / CC BY 2.0 / Wikimedia Commons",
     category: 'Birds',
   },
+  {
+    page: 'hermit-thrush',
+    name: "Hermit Thrush",
+    tagline: "The only spotted thrush that overwinters in the US. Stays by switching from insects to native berries — winterberry holly and viburnum — when the ground freezes.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Catharus_guttatus_-_2.jpg/960px-Catharus_guttatus_-_2.jpg',
+    alt: "Hermit Thrush perched on a branch showing its distinctive spotted breast and rufous tail",
+    attr: "Manjith Kainickara / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
@@ -498,60 +465,49 @@ export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
   return (
     <div className="page">
       <section className="hero">
-        <div className="hero__eyebrow">Meet Your Neighbors</div>
-        <h1>All Species — Photo Gallery</h1>
-        <p className="hero__lead">
-          Every species below lives or passes through suburban and rural yards in eastern North America.
-          Each one is responding to what you do with your land.
-        </p>
+        <h1 className="hero__headline">Species gallery</h1>
+        <p className="hero__sub">Every species here has a direct relationship with your yard. Click any card to learn what it needs and what you can plant.</p>
       </section>
 
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', margin: '1.5rem 0 0.5rem' }}>
-        {CATEGORIES.map(cat => {
-          const count = cat === 'All' ? SPECIES.length : SPECIES.filter(s => s.category === cat).length
-          const isActive = activeCategory === cat
-          return (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              style={{
-                background: isActive ? 'var(--monarch-green)' : 'white',
-                color: isActive ? 'white' : 'var(--text-primary)',
-                border: `1px solid ${isActive ? 'var(--monarch-green)' : 'var(--border)'}`,
-                borderRadius: '20px',
-                padding: '0.35rem 1rem',
-                cursor: 'pointer',
-                fontFamily: 'inherit',
-                fontSize: '0.9rem',
-                fontWeight: isActive ? 'bold' : 'normal',
-                transition: 'background 0.15s, color 0.15s, border-color 0.15s',
-              }}
-            >
-              {cat} ({count})
-            </button>
-          )
-        })}
+      <div role="group" aria-label="Filter by category" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
+        {(['All', 'Insects', 'Birds', 'Reptiles & Amphibians', 'Mammals', 'Plants'] as Category[]).map(cat => (
+          <button
+            key={cat}
+            onClick={() => setActiveCategory(cat)}
+            aria-pressed={activeCategory === cat}
+            style={{
+              padding: '0.35rem 0.9rem',
+              borderRadius: '999px',
+              border: '1px solid var(--accent)',
+              background: activeCategory === cat ? 'var(--accent)' : 'transparent',
+              color: activeCategory === cat ? '#fff' : 'var(--accent)',
+              cursor: 'pointer',
+              fontSize: '0.875rem',
+              fontWeight: activeCategory === cat ? 600 : 400,
+            }}
+          >
+            {cat}
+          </button>
+        ))}
       </div>
 
       <div className="species-grid">
         {filtered.map(species => {
-          const retryPhotoUrl = buildRetryPhotoUrl(species.photo)
-          const photoFallback = buildUnavailablePhotoFallback(species.name)
-
+          const photoFallback = species.retryPhoto ?? PHOTO_FALLBACK
+          const retryPhotoUrl = species.retryPhoto
           return (
             <button
               key={species.page}
               className="species-card"
               onClick={() => onNavigate(species.page)}
-              aria-label={`View ${species.name} page`}
+              aria-label={`Learn about ${species.name}`}
             >
-              <div className="species-card__photo-wrap">
+              <div className="species-card__img-wrap">
                 <img
                   src={species.photo}
                   alt={species.alt}
-                  className="species-card__photo"
                   loading="lazy"
-                  onError={e => {
+                  onError={(e) => {
                     const image = e.currentTarget
                     if (retryPhotoUrl && image.currentSrc !== retryPhotoUrl && image.src !== retryPhotoUrl) {
                       image.src = retryPhotoUrl
