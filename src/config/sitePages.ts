@@ -115,6 +115,7 @@ export const ALL_PAGE_SLUGS = [
   'purple-coneflower',
   'joe-pye-weed',
   'common-milkweed',
+  'new-england-aster',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
