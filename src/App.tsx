@@ -3,11 +3,14 @@ import { I18nextProvider } from 'react-i18next'
 import i18n from './i18n'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import FeedbackWidget from './components/FeedbackWidget'
 import Home from './pages/Home'
 import WhyMonarchs from './pages/WhyMonarchs'
 import PlantMilkweed from './pages/PlantMilkweed'
 import TheMigration from './pages/TheMigration'
 import TakeAction from './pages/TakeAction'
+import ChooseAPlant from './pages/ChooseAPlant'
+import NativePlantNearMe from './pages/NativePlantNearMe'
 import MonarchLife from './pages/MonarchLife'
 import RaiseAMonarch from './pages/RaiseAMonarch'
 import TheFirstYear from './pages/TheFirstYear'
@@ -24,9 +27,6 @@ import NorthernFlicker from './pages/NorthernFlicker'
 import BaltimoreOriole from './pages/BaltimoreOriole'
 import NorthernCardinal from './pages/NorthernCardinal'
 import EasternBluebird from './pages/EasternBluebird'
-import PlantMilkweedPage from './pages/PlantMilkweed'
-import ChooseAPlant from './pages/ChooseAPlant'
-import NativePlantNearMe from './pages/NativePlantNearMe'
 import Plants from './pages/Plants'
 import PlantsGettingStarted from './pages/PlantsGettingStarted'
 import PlantsHostPlants from './pages/PlantsHostPlants'
@@ -41,13 +41,6 @@ import PlantsByConditions from './pages/PlantsByConditions'
 import PlantsMilkweeds from './pages/PlantsMilkweeds'
 import PlantsStarterPlants from './pages/PlantsStarterPlants'
 import PlantsSpeciesIndex from './pages/PlantsSpeciesIndex'
-import CanadaGoldenrod from './pages/CanadaGoldenrod'
-import CommonMilkweed from './pages/CommonMilkweed'
-import SwampMilkweed from './pages/SwampMilkweed'
-import Buttonbush from './pages/Buttonbush'
-import Ironweed from './pages/Ironweed'
-import WinterberryHolly from './pages/WinterberryHolly'
-import InvasivePlants from './pages/InvasivePlants'
 import BlackCappedChickadee from './pages/BlackCappedChickadee'
 import RubyThroatedHummingbird from './pages/RubyThroatedHummingbird'
 import AmericanGoldfinch from './pages/AmericanGoldfinch'
@@ -89,6 +82,26 @@ import EasternPhoebe from './pages/EasternPhoebe'
 import YellowWarbler from './pages/YellowWarbler'
 import RubyCrownedKinglet from './pages/RubyCrownedKinglet'
 import CedarWaxwing from './pages/CedarWaxwing'
+import ScarletTanager from './pages/ScarletTanager'
+import WhipPoorWill from './pages/WhipPoorWill'
+import Ovenbird from './pages/Ovenbird'
+import CanadaGoldenrod from './pages/CanadaGoldenrod'
+import PurpleConeflower from './pages/PurpleConeflower'
+import JoePyeWeed from './pages/JoePyeWeed'
+import CommonMilkweed from './pages/CommonMilkweed'
+import NewEnglandAster from './pages/NewEnglandAster'
+import SwampMilkweed from './pages/SwampMilkweed'
+import WildBergamot from './pages/WildBergamot'
+import NewJerseyTea from './pages/NewJerseyTea'
+import WildColumbine from './pages/WildColumbine'
+import BlackEyedSusan from './pages/BlackEyedSusan'
+import VirginiaBluebell from './pages/VirginiaBluebell'
+import Buttonbush from './pages/Buttonbush'
+import Ironweed from './pages/Ironweed'
+import WinterberryHolly from './pages/WinterberryHolly'
+import PartridgePea from './pages/PartridgePea'
+import GoldenAlexanders from './pages/GoldenAlexanders'
+import PrairieDropseed from './pages/PrairieDropseed'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -100,62 +113,47 @@ import PesticideGuide from './pages/PesticideGuide'
 import WaterForWildlife from './pages/WaterForWildlife'
 import LeaveTheLeaves from './pages/LeaveTheLeaves'
 import HabitatLayers from './pages/HabitatLayers'
+import InvasivePlants from './pages/InvasivePlants'
 import BrownCreeper from './pages/BrownCreeper'
 import HermitThrush from './pages/HermitThrush'
 import EasternWoodPewee from './pages/EasternWoodPewee'
-import ScarletTanager from './pages/ScarletTanager'
-import WhipPoorWill from './pages/WhipPoorWill'
-import Ovenbird from './pages/Ovenbird'
-import PurpleConeflower from './pages/PurpleConeflower'
-import JoePyeWeed from './pages/JoePyeWeed'
-import NewEnglandAster from './pages/NewEnglandAster'
-import WildBergamot from './pages/WildBergamot'
-import NewJerseyTea from './pages/NewJerseyTea'
-import WildColumbine from './pages/WildColumbine'
-import BlackEyedSusan from './pages/BlackEyedSusan'
-import VirginiaBluebell from './pages/VirginiaBluebell'
-import PartridgePea from './pages/PartridgePea'
-import GoldenAlexanders from './pages/GoldenAlexanders'
-import PrairieDropseed from './pages/PrairieDropseed'
 import LeonardsSkipper from './pages/LeonardsSkipper'
 import CobwebSkipper from './pages/CobwebSkipper'
 import LittleBluestem from './pages/LittleBluestem'
+
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
 
-// --- Scroll restoration ---
-function useScrollRestoration(page: Page) {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [page])
-}
-
 export default function App() {
-  const initialPage = (): Page => {
-    const path = window.location.pathname.replace(/^\//, '') || 'home'
-    return (ALL_PAGE_SLUGS as readonly string[]).includes(path) ? path as Page : 'home'
-  }
+  const [page, setPage] = useState<Page>('home')
 
-  const [currentPage, setCurrentPage] = useState<Page>(initialPage)
-  useScrollRestoration(currentPage)
+  useEffect(() => {
+    const slug = window.location.pathname.replace(/^\//, '') || 'home'
+    if ((ALL_PAGE_SLUGS as readonly string[]).includes(slug)) {
+      setPage(slug as Page)
+    }
+  }, [])
 
-  const navigateTo = (newPage: Page) => {
-    setCurrentPage(newPage)
+  function navigateTo(newPage: Page) {
+    setPage(newPage)
     window.history.pushState({}, '', `/${newPage === 'home' ? '' : newPage}`)
+    window.scrollTo(0, 0)
   }
 
   useEffect(() => {
-    const handlePop = () => {
-      const path = window.location.pathname.replace(/^\//, '') || 'home'
-      setCurrentPage((ALL_PAGE_SLUGS as readonly string[]).includes(path) ? path as Page : 'home')
+    function onPop() {
+      const slug = window.location.pathname.replace(/^\//, '') || 'home'
+      if ((ALL_PAGE_SLUGS as readonly string[]).includes(slug)) {
+        setPage(slug as Page)
+      }
     }
-    window.addEventListener('popstate', handlePop)
-    return () => window.removeEventListener('popstate', handlePop)
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
   }, [])
 
   function renderPage() {
-    switch (currentPage) {
-      case 'home':           return <Home onNavigate={navigateTo} />
+    switch (page) {
+      case 'home':            return <Home onNavigate={navigateTo} />
       case 'why-monarchs':   return <WhyMonarchs onNavigate={navigateTo} />
       case 'plant-milkweed': return <PlantMilkweed onNavigate={navigateTo} />
       case 'the-migration':  return <TheMigration onNavigate={navigateTo} />
@@ -178,7 +176,6 @@ export default function App() {
       case 'baltimore-oriole': return <BaltimoreOriole onNavigate={navigateTo} />
       case 'northern-cardinal': return <NorthernCardinal onNavigate={navigateTo} />
       case 'eastern-bluebird': return <EasternBluebird onNavigate={navigateTo} />
-      case 'plant-milkweed': return <PlantMilkweedPage onNavigate={navigateTo} />
       case 'plants':          return <Plants onNavigate={navigateTo} />
       case 'plants-finder':   return <PlantsFinder onNavigate={navigateTo} />
       case 'plants-by-family':    return <PlantsByFamily onNavigate={navigateTo} />
@@ -196,68 +193,53 @@ export default function App() {
       case 'black-capped-chickadee': return <BlackCappedChickadee onNavigate={navigateTo} />
       case 'ruby-throated-hummingbird': return <RubyThroatedHummingbird onNavigate={navigateTo} />
       case 'american-goldfinch': return <AmericanGoldfinch onNavigate={navigateTo} />
-      case 'american-robin':   return <AmericanRobin onNavigate={navigateTo} />
-      case 'indigo-bunting':   return <IndigoBunting onNavigate={navigateTo} />
+      case 'american-robin': return <AmericanRobin onNavigate={navigateTo} />
+      case 'indigo-bunting': return <IndigoBunting onNavigate={navigateTo} />
       case 'tiger-swallowtail': return <TigerSwallowtail onNavigate={navigateTo} />
       case 'black-swallowtail': return <BlackSwallowtail onNavigate={navigateTo} />
       case 'great-spangled-fritillary': return <GreatSpangledFritillary onNavigate={navigateTo} />
-      case 'green-darner':     return <GreenDarner onNavigate={navigateTo} />
-      case 'garter-snake':     return <GarterSnake onNavigate={navigateTo} />
-      case 'dark-eyed-junco':  return <DarkEyedJunco onNavigate={navigateTo} />
+      case 'green-darner': return <GreenDarner onNavigate={navigateTo} />
+      case 'garter-snake': return <GarterSnake onNavigate={navigateTo} />
+      case 'dark-eyed-junco': return <DarkEyedJunco onNavigate={navigateTo} />
       case 'american-tree-sparrow': return <AmericanTreeSparrow onNavigate={navigateTo} />
       case 'eastern-chipmunk': return <EasternChipmunk onNavigate={navigateTo} />
-      case 'spring-peeper':    return <SpringPeeper onNavigate={navigateTo} />
-      case 'toad':             return <AmericanToad onNavigate={navigateTo} />
+      case 'spring-peeper': return <SpringPeeper onNavigate={navigateTo} />
+      case 'toad': return <AmericanToad onNavigate={navigateTo} />
       case 'little-brown-bat': return <LittleBrownBat onNavigate={navigateTo} />
-      case 'wood-thrush':      return <WoodThrush onNavigate={navigateTo} />
+      case 'wood-thrush': return <WoodThrush onNavigate={navigateTo} />
       case 'eastern-screech-owl': return <EasternScreechOwl onNavigate={navigateTo} />
-      case 'polyphemus-moth':  return <PolyphemusMoth onNavigate={navigateTo} />
-      case 'luna-moth':        return <LunaMoth onNavigate={navigateTo} />
+      case 'polyphemus-moth': return <PolyphemusMoth onNavigate={navigateTo} />
+      case 'luna-moth': return <LunaMoth onNavigate={navigateTo} />
       case 'common-nighthawk': return <CommonNighthawk onNavigate={navigateTo} />
-      case 'cecropia-moth':    return <CecropiaMoth onNavigate={navigateTo} />
+      case 'cecropia-moth': return <CecropiaMoth onNavigate={navigateTo} />
       case 'virginia-opossum': return <VirginiaOpossum onNavigate={navigateTo} />
       case 'american-bumble-bee': return <AmericanBumbleBee onNavigate={navigateTo} />
-      case 'chimney-swift':    return <ChimneySwift onNavigate={navigateTo} />
-      case 'purple-martin':    return <PurpleMartin onNavigate={navigateTo} />
-      case 'red-tailed-hawk':  return <RedTailedHawk onNavigate={navigateTo} />
+      case 'chimney-swift': return <ChimneySwift onNavigate={navigateTo} />
+      case 'purple-martin': return <PurpleMartin onNavigate={navigateTo} />
+      case 'red-tailed-hawk': return <RedTailedHawk onNavigate={navigateTo} />
       case 'eastern-meadowlark': return <EasternMeadowlark onNavigate={navigateTo} />
       case 'american-kestrel': return <AmericanKestrel onNavigate={navigateTo} />
-      case 'brown-thrasher':   return <BrownThrasher onNavigate={navigateTo} />
-      case 'eastern-towhee':   return <EasternTowhee onNavigate={navigateTo} />
-      case 'carolina-wren':    return <CarolinaWren onNavigate={navigateTo} />
-      case 'gray-catbird':     return <GrayCatbird onNavigate={navigateTo} />
-      case 'mourning-dove':    return <MourningDove onNavigate={navigateTo} />
-      case 'song-sparrow':     return <SongSparrow onNavigate={navigateTo} />
-      case 'yellow-rumped-warbler': return <YellowRumpedWarbler onNavigate={navigateTo} />
-      case 'wild-turkey':      return <WildTurkey onNavigate={navigateTo} />
-      case 'eastern-phoebe':   return <EasternPhoebe onNavigate={navigateTo} />
-      case 'yellow-warbler':   return <YellowWarbler onNavigate={navigateTo} />
+      case 'brown-thrasher': return <BrownThrasher onNavigate={navigateTo} />
+      case 'eastern-towhee': return <EasternTowhee onNavigate={navigateTo} />
+      case 'carolina-wren':  return <CarolinaWren onNavigate={navigateTo} />
+      case 'gray-catbird':   return <GrayCatbird onNavigate={navigateTo} />
+      case 'mourning-dove':  return <MourningDove onNavigate={navigateTo} />
+      case 'song-sparrow':   return <SongSparrow onNavigate={navigateTo} />
+      case 'wild-turkey':    return <WildTurkey onNavigate={navigateTo} />
+      case 'eastern-phoebe': return <EasternPhoebe onNavigate={navigateTo} />
+      case 'yellow-warbler': return <YellowWarbler onNavigate={navigateTo} />
       case 'ruby-crowned-kinglet': return <RubyCrownedKinglet onNavigate={navigateTo} />
-      case 'cedar-waxwing':    return <CedarWaxwing onNavigate={navigateTo} />
-      case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
-      case 'species-gallery':  return <SpeciesGallery onNavigate={navigateTo} />
-      case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
-      case 'hoa-guide':        return <HOAGuide onNavigate={navigateTo} />
-      case 'habitat-hero':     return <HabitatHero onNavigate={navigateTo} />
-      case 'habitat-score':    return <HabitatScore onNavigate={navigateTo} />
-      case 'spring-checklist': return <SpringChecklist onNavigate={navigateTo} />
-      case 'pesticide-guide':  return <PesticideGuide onNavigate={navigateTo} />
-      case 'water-for-wildlife': return <WaterForWildlife onNavigate={navigateTo} />
-      case 'leave-the-leaves': return <LeaveTheLeaves onNavigate={navigateTo} />
-      case 'habitat-layers':   return <HabitatLayers onNavigate={navigateTo} />
-      case 'invasive-plants':    return <InvasivePlants onNavigate={navigateTo} />
-      case 'brown-creeper':    return <BrownCreeper onNavigate={navigateTo} />
-      case 'hermit-thrush':    return <HermitThrush onNavigate={navigateTo} />
-      case 'eastern-wood-pewee': return <EasternWoodPewee onNavigate={navigateTo} />
-      case 'scarlet-tanager':  return <ScarletTanager onNavigate={navigateTo} />
-      case 'whip-poor-will':   return <WhipPoorWill onNavigate={navigateTo} />
-      case 'ovenbird':         return <Ovenbird onNavigate={navigateTo} />
+      case 'cedar-waxwing':       return <CedarWaxwing onNavigate={navigateTo} />
+      case 'yellow-rumped-warbler': return <YellowRumpedWarbler onNavigate={navigateTo} />
+      case 'scarlet-tanager': return <ScarletTanager onNavigate={navigateTo} />
+      case 'whip-poor-will': return <WhipPoorWill onNavigate={navigateTo} />
+      case 'ovenbird':       return <Ovenbird onNavigate={navigateTo} />
       case 'canada-goldenrod': return <CanadaGoldenrod onNavigate={navigateTo} />
       case 'purple-coneflower': return <PurpleConeflower onNavigate={navigateTo} />
-      case 'joe-pye-weed':     return <JoePyeWeed onNavigate={navigateTo} />
-      case 'common-milkweed':  return <CommonMilkweed onNavigate={navigateTo} />
+      case 'joe-pye-weed':    return <JoePyeWeed onNavigate={navigateTo} />
+      case 'common-milkweed': return <CommonMilkweed onNavigate={navigateTo} />
       case 'new-england-aster': return <NewEnglandAster onNavigate={navigateTo} />
-      case 'swamp-milkweed':   return <SwampMilkweed onNavigate={navigateTo} />
+      case 'swamp-milkweed':  return <SwampMilkweed onNavigate={navigateTo} />
       case 'wild-bergamot':    return <WildBergamot onNavigate={navigateTo} />
       case 'new-jersey-tea':   return <NewJerseyTea onNavigate={navigateTo} />
       case 'wild-columbine':   return <WildColumbine onNavigate={navigateTo} />
@@ -268,19 +250,35 @@ export default function App() {
       case 'winterberry-holly': return <WinterberryHolly onNavigate={navigateTo} />
       case 'partridge-pea':    return <PartridgePea onNavigate={navigateTo} />
       case 'golden-alexanders': return <GoldenAlexanders onNavigate={navigateTo} />
-      case 'prairie-dropseed': return <PrairieDropseed onNavigate={navigateTo} />
-      case 'leonards-skipper': return <LeonardsSkipper onNavigate={navigateTo} />
-      case 'cobweb-skipper':   return <CobwebSkipper onNavigate={navigateTo} />
-      case 'little-bluestem':  return <LittleBluestem onNavigate={navigateTo} />
-      default:                 return <Home onNavigate={navigateTo} />
+      case 'prairie-dropseed':  return <PrairieDropseed onNavigate={navigateTo} />
+      case 'leonards-skipper':  return <LeonardsSkipper onNavigate={navigateTo} />
+      case 'cobweb-skipper':    return <CobwebSkipper onNavigate={navigateTo} />
+      case 'little-bluestem':   return <LittleBluestem onNavigate={navigateTo} />
+      case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
+      case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
+      case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
+      case 'hoa-guide': return <HOAGuide onNavigate={navigateTo} />
+      case 'habitat-hero':         return <HabitatHero onNavigate={navigateTo} />
+      case 'habitat-score':        return <HabitatScore onNavigate={navigateTo} />
+      case 'spring-checklist':    return <SpringChecklist onNavigate={navigateTo} />
+      case 'pesticide-guide':     return <PesticideGuide onNavigate={navigateTo} />
+      case 'water-for-wildlife':  return <WaterForWildlife onNavigate={navigateTo} />
+      case 'leave-the-leaves':    return <LeaveTheLeaves onNavigate={navigateTo} />
+      case 'habitat-layers':      return <HabitatLayers onNavigate={navigateTo} />
+      case 'invasive-plants':    return <InvasivePlants onNavigate={navigateTo} />
+      case 'brown-creeper':      return <BrownCreeper onNavigate={navigateTo} />
+      case 'hermit-thrush':      return <HermitThrush onNavigate={navigateTo} />
+      case 'eastern-wood-pewee': return <EasternWoodPewee onNavigate={navigateTo} />
+      default:                    return <Home onNavigate={navigateTo} />
     }
   }
 
   return (
     <I18nextProvider i18n={i18n}>
-      <Nav onNavigate={navigateTo} currentPage={currentPage} />
+      <Nav current={page} onNavigate={navigateTo} />
       <main>{renderPage()}</main>
       <Footer onNavigate={navigateTo} />
+      <FeedbackWidget page={page} />
     </I18nextProvider>
   )
 }
