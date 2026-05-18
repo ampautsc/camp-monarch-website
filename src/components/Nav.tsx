@@ -51,6 +51,13 @@ const groups: NavGroup[] = [
           { id: 'plants-milkweeds',      label: 'Milkweeds' },
         ],
       },
+      {
+        label: 'Native Wildflower Profiles',
+        items: [
+          { id: 'canada-goldenrod',   label: 'Canada Goldenrod' },
+          { id: 'purple-coneflower',  label: 'Purple Coneflower' },
+        ],
+      },
     ],
   },
   {
