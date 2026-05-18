@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { Page } from '../App'
 
 // Photo data — Wikimedia Commons (CC BY-SA) and iNaturalist open-data (CC BY-NC).
@@ -31,6 +32,17 @@ function buildUnavailablePhotoFallback(label: string): string {
   )}`
 }
 
+type Category = 'All' | 'Birds' | 'Butterflies & Moths' | 'Insects' | 'Reptiles & Amphibians' | 'Mammals'
+
+const CATEGORIES: Category[] = [
+  'All',
+  'Birds',
+  'Butterflies & Moths',
+  'Insects',
+  'Reptiles & Amphibians',
+  'Mammals',
+]
+
 interface Species {
   page: string
   name: string
@@ -38,10 +50,11 @@ interface Species {
   photo: string
   alt: string
   attr: string
+  category: Category
 }
 
 interface SpeciesGalleryProps {
-  onNavigate: (page: string) => void
+  onNavigate: (page: Page) => void
 }
 
 const SPECIES: Species[] = [
@@ -52,6 +65,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg',
     alt: "Monarch butterfly with wings spread, showing orange and black pattern",
     attr: "Kenneth Dwain Harrelson / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Butterflies & Moths',
   },
   {
     page: 'tiger-swallowtail',
@@ -60,6 +74,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Pristine_Eastern_Tiger_Swallowtail.jpg/960px-Pristine_Eastern_Tiger_Swallowtail.jpg',
     alt: "Tiger swallowtail butterfly on flower, showing yellow and black tiger-striped wings",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Butterflies & Moths',
   },
   {
     page: 'fireflies',
@@ -68,6 +83,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Photuris_lucicrescens.jpg/960px-Photuris_lucicrescens.jpg',
     alt: "Firefly in flight against dark background, showing bioluminescent glow",
     attr: "Terry Priest / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Insects',
   },
   {
     page: 'native-bees',
@@ -76,6 +92,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg/960px-Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg',
     alt: "Native bee in flight near flower",
     attr: "Muhammad Mahdi Karim / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Insects',
   },
   {
     page: 'american-bumble-bee',
@@ -84,6 +101,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Bombus_pensylvanicus_male_on_rough_blazingstar_Ellison_Creek-7907.jpg',
     alt: "American bumble bee foraging on rough blazingstar, a native prairie wildflower",
     attr: "Angella Moorehouse / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Insects',
   },
   {
     page: 'box-turtles',
@@ -92,6 +110,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Box_turtle_(Terrapene_carolina_carolina)_in_Prospect_Park_(61573).jpg/960px-Box_turtle_(Terrapene_carolina_carolina)_in_Prospect_Park_(61573).jpg',
     alt: "Eastern box turtle on forest floor showing orange and brown patterned shell",
     attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
+    category: 'Reptiles & Amphibians',
   },
   {
     page: 'gray-tree-frogs',
@@ -100,6 +119,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/GrayTreefrog.jpg/960px-GrayTreefrog.jpg',
     alt: "Gray tree frog clinging to bark, showing cryptic gray-green mottled pattern",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Reptiles & Amphibians',
   },
   {
     page: 'garter-snake',
@@ -108,6 +128,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Thamnophis_sirtalis_sirtalis_Philadelphia.jpg/960px-Thamnophis_sirtalis_sirtalis_Philadelphia.jpg',
     alt: "Eastern garter snake in grass showing longitudinal yellow stripes on dark body",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Reptiles & Amphibians',
   },
   {
     page: 'eastern-chipmunk',
@@ -116,6 +137,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Eastern_Chipmunk.jpg/960px-Eastern_Chipmunk.jpg',
     alt: "Eastern chipmunk with cheek pouches full of seeds, sitting on a log",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Mammals',
   },
   {
     page: 'spring-peeper',
@@ -124,6 +146,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Spring_Peeper_Frog.jpg/960px-Spring_Peeper_Frog.jpg',
     alt: "Spring peeper frog clinging to stem, showing X mark on back and translucent toes",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Reptiles & Amphibians',
   },
   {
     page: 'toad',
@@ -132,6 +155,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Anaxyrus_americanus_PCSutton.jpg/960px-Anaxyrus_americanus_PCSutton.jpg',
     alt: "American toad on leaf litter showing warty brown skin and golden eye",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Reptiles & Amphibians',
   },
   {
     page: 'little-brown-bat',
@@ -140,6 +164,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Little_brown_bat_N._American.jpg/960px-Little_brown_bat_N._American.jpg',
     alt: "Little brown bat in flight showing wing membrane and echolocation mouth open",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Mammals',
   },
   {
     page: 'virginia-opossum',
@@ -148,6 +173,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Opossum_2.jpg/960px-Opossum_2.jpg',
     alt: "Virginia opossum on branch showing white face, pink nose, and prehensile tail",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Mammals',
   },
   {
     page: 'green-darner',
@@ -156,6 +182,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Anax_junius_-_mating_pair.jpg/960px-Anax_junius_-_mating_pair.jpg',
     alt: "Green darner dragonfly showing vivid green thorax, blue abdomen, and large compound eyes",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Insects',
   },
   {
     page: 'downy-woodpecker',
@@ -164,6 +191,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Downy_Woodpecker.jpg/960px-Downy_Woodpecker.jpg',
     alt: "Male Downy Woodpecker on tree bark showing black and white plumage and red spot",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Birds',
   },
   {
     page: 'baltimore-oriole',
@@ -172,6 +200,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Baltimore_Oriole_%28male%29%2C_CP%2C_NJ_-_May_09_-_4.jpg/960px-Baltimore_Oriole_%28male%29%2C_CP%2C_NJ_-_May_09_-_4.jpg',
     alt: "Male Baltimore oriole showing brilliant orange and black plumage on branch",
     attr: "Wikimedia Commons / CC BY-SA 2.0",
+    category: 'Birds',
   },
   {
     page: 'northern-cardinal',
@@ -180,6 +209,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cardinal_male.jpg/960px-Cardinal_male.jpg',
     alt: "Male Northern Cardinal in brilliant red plumage on snowy branch",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Birds',
   },
   {
     page: 'eastern-bluebird',
@@ -188,6 +218,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Eastern_Bluebird_-_Great_Smoky_Mountains_NP_-_TN_%2826162716603%29.jpg/960px-Eastern_Bluebird_-_Great_Smoky_Mountains_NP_-_TN_%2826162716603%29.jpg',
     alt: "Male Eastern Bluebird showing vivid blue back and rusty orange breast",
     attr: "NPS Photo / Wikimedia Commons / Public Domain",
+    category: 'Birds',
   },
   {
     page: 'black-capped-chickadee',
@@ -196,6 +227,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Poecile-atricapilla-001.jpg/960px-Poecile-atricapilla-001.jpg',
     alt: "Black-capped chickadee on branch showing black cap and bib, white cheeks",
     attr: "Wolfgang Wander / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Birds',
   },
   {
     page: 'ruby-throated-hummingbird',
@@ -204,6 +236,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Ruby-throated-Hummingbird.jpg/960px-Ruby-throated-Hummingbird.jpg',
     alt: "Male ruby-throated hummingbird hovering at flower showing iridescent red throat",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Birds',
   },
   {
     page: 'american-goldfinch',
@@ -212,6 +245,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/American_Goldfinch_-_Male_-_Breeding_Plumage_%2814344605249%29.jpg/960px-American_Goldfinch_-_Male_-_Breeding_Plumage_%2814344605249%29.jpg',
     alt: "Male American Goldfinch in bright yellow breeding plumage on branch",
     attr: "Wikimedia Commons / CC BY 2.0",
+    category: 'Birds',
   },
   {
     page: 'american-robin',
@@ -220,6 +254,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Turdus-migratorius-002.jpg/960px-Turdus-migratorius-002.jpg',
     alt: "American robin on grass showing orange-red breast and alert posture",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Birds',
   },
   {
     page: 'indigo-bunting',
@@ -228,6 +263,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Indigo_Bunting_by_Dan_Pancamo_1.jpg/960px-Indigo_Bunting_by_Dan_Pancamo_1.jpg',
     alt: "Male Indigo Bunting in brilliant iridescent blue plumage perched on branch",
     attr: "Dan Pancamo / CC BY-SA 2.0 / Wikimedia Commons",
+    category: 'Birds',
   },
   {
     page: 'dark-eyed-junco',
@@ -236,6 +272,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dark-eyed_Junco_-_Junco_hyemalis_%2816746558599%29.jpg/960px-Dark-eyed_Junco_-_Junco_hyemalis_%2816746558599%29.jpg',
     alt: "Dark-eyed junco showing slate-gray plumage and pink bill on snowy ground",
     attr: "Wikimedia Commons / CC BY 2.0",
+    category: 'Birds',
   },
   {
     page: 'polyphemus-moth',
@@ -244,6 +281,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Antheraea_polyphemus_Cramer.jpg/960px-Antheraea_polyphemus_Cramer.jpg',
     alt: "Polyphemus moth with wings open showing large eyespots on hindwings",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Butterflies & Moths',
   },
   {
     page: 'luna-moth',
@@ -252,6 +290,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Actias_luna_resting.jpg/960px-Actias_luna_resting.jpg',
     alt: "Luna moth on tree bark showing pale green wings with long curving tail extensions",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Butterflies & Moths',
   },
   {
     page: 'cecropia-moth',
@@ -260,6 +299,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Cecropia_Moth_Hyalophora_cecropia.jpg/960px-Cecropia_Moth_Hyalophora_cecropia.jpg',
     alt: "Cecropia moth on bark showing distinctive red-banded abdomen and eyespot wing pattern",
     attr: "Wikimedia Commons / Public Domain",
+    category: 'Butterflies & Moths',
   },
   {
     page: 'wood-thrush',
@@ -268,6 +308,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hylocichla_mustelina.jpg/960px-Hylocichla_mustelina.jpg',
     alt: "Wood thrush on forest floor showing spotted breast and rusty-brown head",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Birds',
   },
   {
     page: 'eastern-screech-owl',
@@ -276,6 +317,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Eastern_Screech_Owl_%28red_morph%29.jpg/960px-Eastern_Screech_Owl_%28red_morph%29.jpg',
     alt: "Eastern screech owl in red morph perched in tree cavity showing camouflage plumage and ear tufts",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Birds',
   },
   {
     page: 'common-nighthawk',
@@ -284,6 +326,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Common_Nighthawk_resting.jpg/960px-Common_Nighthawk_resting.jpg',
     alt: "Common nighthawk resting on branch showing cryptic bark-patterned plumage and white wing bar",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Birds',
   },
   {
     page: 'chimney-swift',
@@ -292,6 +335,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Chaetura_pelagica.jpg/960px-Chaetura_pelagica.jpg',
     alt: "Chimney swift in flight showing swept-back wings, short tail, and cigar-shaped body",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Birds',
   },
   {
     page: 'purple-martin',
@@ -300,6 +344,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Progne_subis_subis_AD_M.jpg/960px-Progne_subis_subis_AD_M.jpg',
     alt: "Male purple martin in iridescent blue-purple plumage in flight",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Birds',
   },
   {
     page: 'red-tailed-hawk',
@@ -308,6 +353,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Red-tailed_Hawk_in_flight-2007.jpg/960px-Red-tailed_Hawk_in_flight-2007.jpg',
     alt: "Red-tailed hawk in flight showing distinctive rusty red tail and broad wingspan",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
+    category: 'Birds',
   },
   {
     page: 'eastern-meadowlark',
@@ -316,6 +362,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Sturnella_magna_-Florida%2C_USA-8.jpg/960px-Sturnella_magna_-Florida%2C_USA-8.jpg',
     alt: "Eastern meadowlark standing in grass showing bright yellow breast with black V-shaped bib",
     attr: "Wikimedia Commons / CC BY-SA 2.0",
+    category: 'Birds',
   },
   {
     page: 'american-kestrel',
@@ -324,6 +371,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/American_kestrel_%28Falco_sparverius%29.jpg/960px-American_kestrel_%28Falco_sparverius%29.jpg',
     alt: "Male American kestrel perched on a branch showing slate-blue wings, russet back and tail, and two bold black facial mustache marks",
     attr: "Simon Pierre Barrette / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Birds',
   },
   {
     page: 'brown-thrasher',
@@ -332,6 +380,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Toxostoma_rufum_CT2.jpg/960px-Toxostoma_rufum_CT2.jpg',
     alt: "Brown Thrasher perched in shrub showing rusty red-brown upperparts, streaked white breast, long tail, and distinctive bright yellow eye",
     attr: "DickDaniels / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Birds',
   },
   {
     page: 'eastern-towhee',
@@ -340,6 +389,7 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pipilo_erythrophthalmus_CT2.jpg/960px-Pipilo_erythrophthalmus_CT2.jpg',
     alt: "Male Eastern Towhee showing jet-black hood and back, vivid rufous flanks, white belly, and striking red eye",
     attr: "DickDaniels / CC BY-SA 3.0 / Wikimedia Commons",
+    category: 'Birds',
   },
   {
     page: 'carolina-wren',
@@ -348,10 +398,14 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg/960px-Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg',
     alt: "Carolina Wren perched showing rich cinnamon-brown upperparts, bold white eyebrow stripe, and the characteristically upright cocked tail",
     attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+    category: 'Birds',
   },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
+  const [activeCategory, setActiveCategory] = useState<Category>('All')
+  const filtered = activeCategory === 'All' ? SPECIES : SPECIES.filter(s => s.category === activeCategory)
+
   return (
     <div className="page">
       <section className="hero">
@@ -363,8 +417,35 @@ export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
         </p>
       </section>
 
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', margin: '1.5rem 0 0.5rem' }}>
+        {CATEGORIES.map(cat => {
+          const count = cat === 'All' ? SPECIES.length : SPECIES.filter(s => s.category === cat).length
+          const isActive = activeCategory === cat
+          return (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              style={{
+                background: isActive ? 'var(--monarch-green)' : 'white',
+                color: isActive ? 'white' : 'var(--text-primary)',
+                border: `1px solid ${isActive ? 'var(--monarch-green)' : 'var(--border)'}`,
+                borderRadius: '20px',
+                padding: '0.35rem 1rem',
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+                fontSize: '0.9rem',
+                fontWeight: isActive ? 'bold' : 'normal',
+                transition: 'background 0.15s, color 0.15s, border-color 0.15s',
+              }}
+            >
+              {cat} ({count})
+            </button>
+          )
+        })}
+      </div>
+
       <div className="species-grid">
-        {SPECIES.map(species => {
+        {filtered.map(species => {
           const retryPhotoUrl = buildRetryPhotoUrl(species.photo)
           const photoFallback = buildUnavailablePhotoFallback(species.name)
 
