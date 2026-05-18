@@ -239,6 +239,18 @@ const SPECIES: Species[] = [
     habitatTags: ['open-meadow', 'native-grass', 'edge'],
   },
   {
+    id: 'little-bluestem',
+    name: 'Little Bluestem',
+    scientificName: 'Schizachyrium scoparium',
+    emoji: '🌾',
+    shortDesc: "Turns copper-red in October and holds that color through January while Leonard's Skipper and Cobweb Skipper larvae overwinter in silk shelters at the crown — one bunchgrass clump, two skipper species, a ten-month sequence from egg in summer to adult the following spring.",
+    status: 'stable',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/103310661/large.jpeg',
+    photoCredit: 'jasonswanson / iNaturalist obs. 64276736, CC0',
+    page: 'little-bluestem',
+    habitatTags: ['open-meadow', 'native-grass', 'dry-garden'],
+  },
+  {
     id: 'luna-moth',
     name: 'Luna Moth',
     scientificName: 'Actias luna',
