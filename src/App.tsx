@@ -81,6 +81,7 @@ import WildTurkey from './pages/WildTurkey'
 import EasternPhoebe from './pages/EasternPhoebe'
 import YellowWarbler from './pages/YellowWarbler'
 import RubyCrownedKinglet from './pages/RubyCrownedKinglet'
+import CedarWaxwing from './pages/CedarWaxwing'
 import ScarletTanager from './pages/ScarletTanager'
 import WhipPoorWill from './pages/WhipPoorWill'
 import Ovenbird from './pages/Ovenbird'
@@ -227,6 +228,7 @@ export default function App() {
       case 'eastern-phoebe': return <EasternPhoebe onNavigate={navigateTo} />
       case 'yellow-warbler': return <YellowWarbler onNavigate={navigateTo} />
       case 'ruby-crowned-kinglet': return <RubyCrownedKinglet onNavigate={navigateTo} />
+      case 'cedar-waxwing':       return <CedarWaxwing onNavigate={navigateTo} />
       case 'yellow-rumped-warbler': return <YellowRumpedWarbler onNavigate={navigateTo} />
       case 'scarlet-tanager': return <ScarletTanager onNavigate={navigateTo} />
       case 'whip-poor-will': return <WhipPoorWill onNavigate={navigateTo} />
