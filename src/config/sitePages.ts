@@ -111,6 +111,7 @@ export const ALL_PAGE_SLUGS = [
   'scarlet-tanager',
   'whip-poor-will',
   'ovenbird',
+  'canada-goldenrod',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
