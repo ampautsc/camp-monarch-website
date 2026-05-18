@@ -16,7 +16,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Randidawn · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: Randidawn · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: Randidawn&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -29,7 +29,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
         <p className="hero__lead">
           On warm summer evenings after rain, a trill carrying over 300 feet rings out from
           somewhere in the trees. You may never see who is calling. But if you hear it, you know
-          something important: your yard is free of the systemic pesticides that would have
+          your yard is free of the systemic pesticides that would have
           silenced them — the same pesticide-free conditions monarchs need to survive.
         </p>
       </section>
@@ -50,7 +50,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
           <p>
             A yard where Gray Tree Frogs are calling in July has been free of these chemicals
             long enough for tadpoles to survive a full season — from May through metamorphosis.
-            That is a meaningful signal. It is the same chemical and habitat profile
+            That is a measurable threshold. It is the same chemical and habitat profile
             that monarch butterflies need to safely feed, lay eggs, and complete their
             breeding cycle.
           </p>
@@ -74,7 +74,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
                 />
                 <figcaption>
                   The gray tree frog hides its brightest colors on the inside of its thighs, invisible at rest. When threatened, it flashes those vivid patches as it leaps — a brief burst of yellow-orange that startles the predator and allows escape. A yard that can't hold standing water through June has no frogs calling in July.
-                  <span className="photo-credit"> Photo: Robert A. Coggeshall · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Robert A. Coggeshall · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -98,7 +98,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
             small ponds and water features.
           </p>
           <p>
-            One critical requirement: no fish. Fish eat both eggs and tadpoles with near-complete
+            One hard requirement: no fish. Fish eat both eggs and tadpoles with near-complete
             efficiency and will eliminate a breeding population in a single season.
             Even a small ornamental pond stocked with goldfish cannot support Gray Tree Frog
             breeding. A fishless pond — even a half-barrel or shallow tub — can.
@@ -106,7 +106,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that bring Gray Tree Frogs back</h2>
+          <h2 style={{ marginTop: 0 }}>A fishless water feature, a 50-foot pesticide-free buffer, and native shrubs at the edge</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow stone water feature in a garden" loading="lazy" />
@@ -128,8 +128,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
               <strong>Keep a 50-foot pesticide-free buffer around any water.</strong>{' '}
               Atrazine and glyphosate travel in runoff. Applications on a lawn uphill
               from a pond will reach the water within a few rain cycles.
-              A no-spray buffer around any water feature is the single most important
-              action you can take for tadpole survival.
+              A no-spray buffer around any water feature is the action that most directly determines tadpole survival.
             </li>
             <li>
               <strong>Keep native shrubs and trees near the water.</strong>{' '}
