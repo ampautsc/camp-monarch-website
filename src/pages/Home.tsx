@@ -42,8 +42,8 @@ type SeasonalItem = { label: string; detail: string }
 type SeasonalContent = { header: string; items: [SeasonalItem, SeasonalItem] }
 
 function getSeasonalContent(month: number): SeasonalContent {
-  // Spring: March (2), April (3), May (4)
-  if (month >= 2 && month <= 4) {
+  // Early spring: March (2), April (3)
+  if (month >= 2 && month <= 3) {
     return {
       header: 'Spring migration: what to watch for right now',
       items: [
@@ -58,6 +58,27 @@ function getSeasonalContent(month: number): SeasonalContent {
           detail:
             'The spring migration has no organized reporting network. ' +
             'Your observation tells researchers which corridors the population is using this year. It takes 60 seconds.',
+        },
+      ],
+    }
+  }
+  // Late spring: May (4) — breeding monarchs arriving in the Midwest
+  if (month === 4) {
+    return {
+      header: 'Monarchs are arriving in the Midwest this week',
+      items: [
+        {
+          label: "Don't mow the milkweed.",
+          detail:
+            'A female monarch finds milkweed by landing on leaves and testing them — ' +
+            'she has chemoreceptors on her feet that detect the cardiac glycosides milkweed produces. ' +
+            'She lays a single egg on the underside of each leaf. Cut the plant now and there is nothing left to test.',
+        },
+        {
+          label: 'Log any monarch you see.',
+          detail:
+            'Spring sighting data is sparse compared to fall — fewer observers are watching in May. ' +
+            'Your iNaturalist observation tells researchers which northbound corridors the population is actually using this year.',
         },
       ],
     }
