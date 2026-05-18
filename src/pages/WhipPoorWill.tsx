@@ -151,7 +151,7 @@ export default function WhipPoorWill({ onNavigate }: WhipPoorWillProps) {
         </section>
 
         <section aria-labelledby="actions-heading">
-          <h2 id="actions-heading">Four things you can change before the next breeding season</h2>
+          <h2 id="actions-heading">No mosquito spray, outdoor lights off by 10 PM, one native tree planted, and leaf litter left each fall</h2>
           <ul className="actions-list">
             <li>
               <strong>Cancel the mosquito spray service.</strong> If you use one, call and
