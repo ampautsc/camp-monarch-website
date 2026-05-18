@@ -71,6 +71,7 @@ import BrownThrasher from './pages/BrownThrasher'
 import EasternTowhee from './pages/EasternTowhee'
 import CarolinaWren from './pages/CarolinaWren'
 import GrayCatbird from './pages/GrayCatbird'
+import MourningDove from './pages/MourningDove'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -173,6 +174,7 @@ function App() {
       case 'eastern-towhee': return <EasternTowhee onNavigate={navigateTo} />
       case 'carolina-wren':  return <CarolinaWren onNavigate={navigateTo} />
       case 'gray-catbird':   return <GrayCatbird onNavigate={navigateTo} />
+      case 'mourning-dove':  return <MourningDove onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
