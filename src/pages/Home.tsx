@@ -12,6 +12,7 @@ const CARD_PHOTOS = {
   plantMilkweed: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg',
   logSighting: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Danaus_plexippus_caterpillar_on_milkweed.jpg/960px-Danaus_plexippus_caterpillar_on_milkweed.jpg',
   trackMigration: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Monarchs_overwintering_Angangueo_site_in_Mexico.jpg',
+  wildflowers: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Echinacea_purpurea_001.jpg/960px-Echinacea_purpurea_001.jpg',
 }
 
 const HERO_PHOTO_URL = 'https://upload.wikimedia.org/wikipedia/commons/2/23/Angangueo_monarchs.jpg'
@@ -41,22 +42,42 @@ type SeasonalItem = { label: string; detail: string }
 type SeasonalContent = { header: string; items: [SeasonalItem, SeasonalItem] }
 
 function getSeasonalContent(month: number): SeasonalContent {
-  // Spring: March (2), April (3), May (4)
-  if (month >= 2 && month <= 4) {
+  // Early spring: March (2), April (3)
+  if (month >= 2 && month <= 3) {
     return {
-      header: 'Spring migration: what to watch for right now',
+      header: 'Spring migration approaching: milkweed is emerging',
       items: [
         {
           label: 'Milkweed is emerging.',
           detail:
             "Look for thick, gray-green leaves pushing up from bare ground. Don't mow over it. " +
-            "Monarchs arrive when it's 6 inches tall. That window opens in most of the Midwest in the next 3–5 weeks.",
+            "Monarchs arrive when it's 6 inches tall. The first arrivals reach Missouri in early May.",
         },
         {
           label: 'Log any monarch you see on iNaturalist.',
           detail:
             'The spring migration has no organized reporting network. ' +
             'Your observation tells researchers which corridors the population is using this year. It takes 60 seconds.',
+        },
+      ],
+    }
+  }
+  // Late spring: May (4)
+  if (month === 4) {
+    return {
+      header: 'Monarchs are arriving now: check your milkweed',
+      items: [
+        {
+          label: 'Check the underside of milkweed leaves for eggs.',
+          detail:
+            'Monarch eggs are the size of a pinhead \u2014 pale yellow, ribbed, one per leaf. ' +
+            'Look on leaves that are 6 inches or taller. A female lays 300\u2013500 eggs over her adult life, one at a time.',
+        },
+        {
+          label: 'Log any monarch you see on iNaturalist.',
+          detail:
+            'Spring migration data is sparse outside traditional corridors. ' +
+            'Your sighting in 60 seconds tells researchers which routes the population is using this year.',
         },
       ],
     }
@@ -232,7 +253,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE ASK — one primary action, specifically named. Answers "how do I start?" */}
         <section aria-labelledby="help-heading" style={{ marginTop: '2.5rem' }}>
-          <h2 id="help-heading">How You Can Help</h2>
+          <h2 id="help-heading">What to plant, what to log, and what to say</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '1rem' }}>
 
             <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
@@ -291,8 +312,8 @@ export default function Home({ onNavigate }: HomeProps) {
 
             <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
               <CardPhoto
-                src={CARD_PHOTOS.plantMilkweed}
-                alt="Native wildflowers in bloom"
+                src={CARD_PHOTOS.wildflowers}
+                alt="Purple coneflower in bloom — a native perennial that blooms June through September and feeds monarchs on migration"
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Plant perennial wildflowers</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
@@ -313,7 +334,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
           <h2 id="neighbors-heading">Your yard is already home to more than you know</h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
-            36 species depend on backyards, gardens, and the choices homeowners make about their land.
+            38 species depend on backyards, gardens, and the choices homeowners make about their land.
             Each one has a story that changes how you see your yard.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
@@ -361,7 +382,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
             <button className="hero__cta" onClick={() => onNavigate('species-gallery')}>
-              Meet all 36 neighbors →
+              Meet all 38 neighbors →
             </button>
           </div>
         </section>
@@ -422,6 +443,7 @@ export default function Home({ onNavigate }: HomeProps) {
             Photos: Wikimedia Commons.
             <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noreferrer">Butterfly weed</a>.
             <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noreferrer">Caterpillar</a>.
+            <a href="https://commons.wikimedia.org/wiki/File:Echinacea_purpurea_001.jpg" target="_blank" rel="noreferrer">Purple coneflower</a>.
             Hero photo: <a href="https://commons.wikimedia.org/wiki/File:Angangueo_monarchs.jpg" target="_blank" rel="noreferrer">Angangueo monarchs</a> (Bfpage, CC BY 3.0).
           </p>
         </section>
