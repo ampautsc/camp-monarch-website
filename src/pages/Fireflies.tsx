@@ -122,13 +122,17 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
-            Firefly larvae live in the floor layer &mdash; leaf litter and moist soil from
-            November through April. Every other yard decision that affects them operates through
-            that one layer.{' '}
+            Firefly larvae share the leaf-litter floor with Wood Thrush foraging routes,
+            overwintering moth caterpillars, and American Toad winter burrows. See how the
+            floor layer connects to the three zones above it in the{' '}
             <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
-              The Four Layers
+              Habitat Layers guide
             </button>
-            {' '}maps floor, shrub, canopy, and edge as one integrated system.
+            , and build the litter layer they need with the{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves guide
+            </button>
+            .
           </p>
         </div>
       </div>
