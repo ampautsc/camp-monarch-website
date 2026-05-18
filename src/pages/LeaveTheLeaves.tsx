@@ -143,6 +143,62 @@ above-ground plants. The whole window is October through late April.`,
       { page: 'american-goldfinch' as Page, name: 'American Goldfinch', why: 'Uses undisturbed areas for seed foraging; benefits from the insect diversity that litter supports in other species.' },
     ],
   },
+  {
+    id: 'grasses',
+    label: '04',
+    headline: "A Leonard's Skipper larva builds its shelter at the base of the grass clump in September and stays there until April",
+    color: '#7b4ea0',
+    body: `Leonard's Skipper lays a single egg on a native bunchgrass blade in
+September. When the larva hatches, it feeds briefly on grass tissue, then
+moves down to the crown of the clump — the dense junction where stem base
+meets soil — and constructs a silk shelter. It stays there through October,
+November, December, January, February, and March. The adult butterfly that
+appears in late August of the following year spent the previous seven months
+at the base of the same grass clump the egg was laid on.
+
+A homeowner who cuts Prairie Dropseed or Little Bluestem to ground level
+in October is cutting at the moment the larva has just moved in. The clump
+looks like dead straw from outside. The larva is at the base of it.`,
+    detail: `Leonard's Skipper flies only in late August and September — it is the last
+skipper on the wing in the eastern United States each year. A male selects
+the tallest native bunchgrass stem in a patch and perches at the tip, chasing
+rivals and intercepting females. A mated female has roughly two weeks to
+locate grass and lay eggs. Prairie Dropseed, Little Bluestem, and Sideoats
+Grama are all documented host grasses. Each egg goes on a grass blade, not
+into soil.
+
+The overwintering larva is inside the crown — not in the leaf litter and not
+in the soil. It constructs a silk tube at or just below the soil surface, at
+the point where dead stem meets root. From outside the clump, nothing marks
+the shelter. There is no external sign the crown is occupied.
+
+In early spring the larva breaks from its shelter and begins feeding on new
+grass growth from inside the clump. By June or July it pupates in the ground
+just below the crown. The adult emerges in late August and the pattern
+repeats. The seven months in the crown are the bottleneck in the lifecycle.
+Cutting the clump in October, raking out the dead thatch at the base, or
+removing the plant entirely each end that generation.
+
+The alternative cut window is February through mid-March, before new growth
+begins. At that point the larva has completed overwintering and is either
+feeding on early growth or has moved into the soil. Cutting spent material
+at that stage does not remove the shelter. The same clump, cut in October,
+loses the larva. Cut in February, it does not.`,
+    action: `Leave Prairie Dropseed, Little Bluestem, and Sideoats Grama standing from
+September through February. Do not cut native grass clumps in fall. Cut to
+4 to 6 inches in late February or early March, before new growth emerges.
+Leave the dead thatch at the base undisturbed through winter — it is part
+of the shelter structure the larva is using. If new growth is already pushing
+through old stems before you cut, the larva has already moved on and it is
+safe to cut. The winter-standing grass also holds seed panicles that juncos,
+goldfinches, and sparrows work through November and December.`,
+    species: [
+      { page: 'leonards-skipper' as Page, name: "Leonard's Skipper", why: "Overwinters as a larva in a silk shelter at the crown of native bunchgrass from September through April; cutting the clump in fall removes that shelter." },
+      { page: 'prairie-dropseed' as Page, name: 'Prairie Dropseed', why: "Documented host grass for Leonard's Skipper; its arching seed panicle also provides the perch structure a male uses to hold hilltop territory in August." },
+      { page: 'dark-eyed-junco' as Page, name: 'Dark-eyed Junco', why: 'Forages in standing native grass panicles through November and December; finds seed in Little Bluestem and Prairie Dropseed left intact through winter.' },
+      { page: 'american-goldfinch' as Page, name: 'American Goldfinch', why: 'Picks seed from standing Little Bluestem and Prairie Dropseed panicles through October and November before heading south.' },
+    ],
+  },
 ]
 
 const sources = [
@@ -152,6 +208,7 @@ const sources = [
   'Lloyd, J.E. (1966). Studies on the flash communication system in Photinus fireflies. Miscellaneous Publications of the Museum of Zoology, University of Michigan 130.',
   'Narango, D.L., Tallamy, D.W., & Marra, P.P. (2018). Nonnative plants reduce population growth of an insectivorous bird. PNAS 115(45), 11549–11554.',
   'Otterstatter, M.C., & Thomson, J.D. (2008). Does pathogen spillover from commercially reared bumble bees threaten wild pollinators? PLOS ONE 3(7), e2771.',
+  'Calhoun, J.V. (2010). The life history of Hesperia leonardus Harris (Lepidoptera: Hesperiidae), with an account of an unusual larval shelter. Journal of the Lepidopterists\' Society 64(1), 1–17.',
 ]
 
 export default function LeaveTheLeaves({ onNavigate }: LeaveTheLeavesProps) {
