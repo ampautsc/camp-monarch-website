@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import type { Page } from '../App'
 
 // Photo data — Wikimedia Commons (CC BY-SA) and iNaturalist open-data (CC BY-NC).
@@ -434,6 +433,15 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Song_Sparrow_Melospiza_melodia.jpg/960px-Song_Sparrow_Melospiza_melodia.jpg',
     alt: "Song Sparrow perched on a branch showing brown-streaked plumage, broad dark eyebrow stripe, and the dark central breast spot amid dense streaking",
     attr: "Alan D. Wilson / CC BY-SA 2.5 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'yellow-rumped-warbler',
+    name: "Yellow-rumped Warbler",
+    tagline: "Arrives in October carrying a digestive enzyme no other eastern warbler has — breaks down the waxy coating on bayberry and wax myrtle when other warblers have already gone south.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Setophaga_coronata_coronata_CT1.jpg/960px-Setophaga_coronata_coronata_CT1.jpg',
+    alt: "Yellow-rumped Warbler in fall plumage, showing gray-brown streaked back and the butter-yellow rump patch at the base of the tail",
+    attr: "Cephas / CC BY-SA 3.0 / Wikimedia Commons",
     category: 'Birds',
   },
 ]
