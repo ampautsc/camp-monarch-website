@@ -16,7 +16,7 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: No machine-readable author provided. Mdf assumed (based on copyright claims). · <a href="https://commons.wikimedia.org/wiki/File:Poecile-atricapilla-001.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          {/* Photo: No machine-readable author provided. Mdf assumed (based on copyright claims). · <a href="https://commons.wikimedia.org/wiki/File:Poecile-atricapilla-001.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
           Photo: No machine-readable author provided. Mdf assumed (based on copyright claims).&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Poecile-atricapilla-001.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
@@ -112,7 +112,7 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
                 />
                 <figcaption>
                   A single chickadee brood requires an estimated 6,000 to 9,000 caterpillars between hatching and fledging. That number is not met by visiting one or two plants — it requires a landscape with enough native tree canopy to sustain a functioning caterpillar population through May and June.
-                  <span className="photo-credit"> Photo: Owebb44 · <a href="https://commons.wikimedia.org/wiki/File:Black-capped_chickadee_4-13.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Owebb44 · <a href="https://commons.wikimedia.org/wiki/File:Black-capped_chickadee_4-13.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -227,7 +227,14 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
             >
               choose a native plant
             </button>
-            {' '}to find the caterpillar-hosting trees and wildflowers that serve chickadees and monarchs together.
+            {' '}to find the caterpillar-hosting trees and wildflowers that serve chickadees and monarchs together. To see how the canopy layer &mdash; where caterpillar production happens &mdash; connects to the floor and shrub layers below it,{' '}
+            <button
+              className="link-button"
+              onClick={() => onNavigate('habitat-layers')}
+            >
+              The Four Layers
+            </button>
+            {' '}maps the full vertical structure of a functioning habitat yard.
           </p>
         </div>
 
