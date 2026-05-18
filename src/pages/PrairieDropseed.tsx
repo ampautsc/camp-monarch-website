@@ -175,6 +175,10 @@ export default function PrairieDropseed({ onNavigate }: PrairieDropseedProps) {
               <span className="neighbor-name">Leonard's Skipper</span>
               <span className="neighbor-note">Grass skipper that lays eggs on Prairie Dropseed blades in September; the male perches on seed panicle tips to defend his territory</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
+              <span className="neighbor-name">Cobweb Skipper</span>
+              <span className="neighbor-note">Spring grass skipper whose larvae overwinter in a silk shelter at the Prairie Dropseed crown — uses the same grass clump as Leonard's Skipper, seven months earlier in the year</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
               <span className="neighbor-name">Dark-eyed Junco</span>
               <span className="neighbor-note">Forages on dried Prairie Dropseed seed heads through fall and early winter</span>
