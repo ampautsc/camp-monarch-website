@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import { trackEvent } from '../lib/analytics'
+import type { Page } from '../App'
 
 interface PlantsBloomCalendarProps {
-  onNavigate: (page: any) => void
+  onNavigate: (page: Page) => void
 }
 
 export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarProps) {
@@ -43,7 +44,56 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       season: 'Late Fall (November)',
       monarchActivity: 'Final monarchs reach Mexico. Prepare for winter.',
       plantNeeds: 'Season winding down.',
-      yourAction: 'Don\'t cut back dead plants. Insects overwinter in hollow stems. Leave them standing.',
+      yourAction: "Don't cut back dead plants. Insects overwinter in hollow stems. Leave them standing.",
+    },
+  ]
+
+  const profilePlants: Array<{
+    name: string
+    latinName: string
+    bloomWindow: string
+    observation: string
+    page: Page
+  }> = [
+    {
+      name: 'Common Milkweed',
+      latinName: 'Asclepias syriaca',
+      bloomWindow: 'June–July',
+      observation:
+        'A monarch caterpillar hatches onto a milkweed leaf and eats nothing else for the two weeks it takes to reach chrysalis weight. No other plant in North America will substitute.',
+      page: 'common-milkweed',
+    },
+    {
+      name: 'Purple Coneflower',
+      latinName: 'Echinacea purpurea',
+      bloomWindow: 'July–August',
+      observation:
+        'Purple coneflower opens in July when most spring wildflowers are finished and summer butterflies are actively foraging — monarchs, swallowtails, and fritillaries can feed on the same flower head in the same afternoon.',
+      page: 'purple-coneflower',
+    },
+    {
+      name: 'Joe Pye Weed',
+      latinName: 'Eutrochium purpureum',
+      bloomWindow: 'August–September',
+      observation:
+        'Joe Pye Weed can grow to seven feet in a single season and opens its flower heads in August, covering the window between summer bloomers and fall goldenrod when monarch adults are building fat reserves for migration.',
+      page: 'joe-pye-weed',
+    },
+    {
+      name: 'Canada Goldenrod',
+      latinName: 'Solidago canadensis',
+      bloomWindow: 'Late August–October',
+      observation:
+        'Goldenrod peaks in September, covering the same weeks when monarchs moving south accumulate abdominal fat for the 2,500-mile flight to a mountain forest in Michoacán, Mexico.',
+      page: 'canada-goldenrod',
+    },
+    {
+      name: 'New England Aster',
+      latinName: 'Symphyotrichum novae-angliae',
+      bloomWindow: 'Late August–hard frost',
+      observation:
+        'New England aster can still produce open flowers through October and into November in mild autumns — after goldenrod has gone to seed and nearly everything else has closed for the year.',
+      page: 'new-england-aster',
     },
   ]
 
@@ -83,6 +133,34 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
             <p>
               <strong>Your Action:</strong> {period.yourAction}
             </p>
+          </div>
+        ))}
+      </section>
+
+      <section className="content-section">
+        <h2>Five natives, June to frost</h2>
+        <p>
+          These five native plants open in sequence from June through late October, covering every
+          week that monarchs are present — as caterpillars, as breeding adults, and as migrants
+          fueling for Mexico.
+        </p>
+        {profilePlants.map((plant) => (
+          <div key={plant.page} className="callout callout--green" style={{ marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.4rem' }}>
+              <strong>
+                {plant.name}{' '}
+                <em style={{ fontWeight: 'normal', color: 'var(--text-secondary)', fontSize: '0.9em' }}>
+                  {plant.latinName}
+                </em>
+              </strong>
+              <span style={{ fontSize: '0.875rem', color: 'var(--monarch-orange)', fontWeight: 600 }}>
+                {plant.bloomWindow}
+              </span>
+            </div>
+            <p style={{ marginBottom: '0.75rem' }}>{plant.observation}</p>
+            <button className="link-button" onClick={() => onNavigate(plant.page)}>
+              View {plant.name} profile →
+            </button>
           </div>
         ))}
       </section>
