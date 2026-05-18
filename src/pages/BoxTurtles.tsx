@@ -15,7 +15,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: (c) Joshua Liverman, some rights reserved (CC BY) · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> via Wikimedia Commons */}
+          {/* Photo: (c) Joshua Liverman, some rights reserved (CC BY) · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> via Wikimedia Commons */}
           Photo: (c) Joshua Liverman, some rights reserved (CC BY)&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -38,7 +38,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
 
       <div className="page">
         <section aria-labelledby="bt-life-heading">
-          <h2 id="bt-life-heading">What makes them vulnerable</h2>
+          <h2 id="bt-life-heading">Seven to ten years to breed, and roads to cross every June</h2>
           <p>
             Box turtles reach sexual maturity between 7 and 10 years. A female lays 4 to 6 eggs
             per clutch, and most years a predator finds the nest. A population can absorb this
@@ -60,7 +60,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that protect box turtles</h2>
+          <h2 style={{ marginTop: 0 }}>Slow roads in May, a turtle moved 10 feet forward, and brush left on the edges</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground" loading="lazy" />
@@ -90,7 +90,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
         </div>
 
         <section aria-labelledby="bt-indicator-heading">
-          <h2 id="bt-indicator-heading">What box turtles tell us</h2>
+          <h2 id="bt-indicator-heading">One resident turtle means 20 undisturbed years behind it</h2>
           <p>
             Box turtles are an indicator of landscape continuity. A yard or woodlot with a resident box turtle
             has been ecologically intact long enough for that animal to establish a territory and survive.
@@ -105,7 +105,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
                 />
                 <figcaption>
                   The box turtle's hinged lower shell can seal so completely that a blade of grass cannot be inserted between the two halves. This defense evolved against biting predators over 200 million years. It offers zero protection against a lawn mower traveling at three miles per hour.
-                  <span className="photo-credit"> Photo: Jarek Tuszyński · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle_8679.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Jarek Tuszyński · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle_8679.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
