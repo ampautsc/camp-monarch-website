@@ -132,11 +132,11 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      {/* ── MEET YOUR NEIGHBORS — preview the species gallery; routes homepage traffic to 50 species pages */}
+      {/* ── MEET YOUR NEIGHBORS — preview the species gallery; routes homepage traffic to 52 species pages */}
       <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
         <h2 id="neighbors-heading">Your yard is already home to more than you know</h2>
         <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
-          50 species raise young in backyards — in leaf litter, hollow logs, loose soil, and shallow ground nests.
+          52 species raise young in backyards — in leaf litter, hollow logs, loose soil, and shallow ground nests.
           Each one is doing something right now in your yard that your next decision will either allow or prevent.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
@@ -214,7 +214,7 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
         <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
           <button className="cta-button" onClick={() => onNavigate('species-gallery')}>
-            Meet all 50 neighbors →
+            Meet all 52 neighbors →
           </button>
         </div>
       </section>
