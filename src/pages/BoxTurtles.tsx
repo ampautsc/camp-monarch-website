@@ -1,9 +1,10 @@
 import type { Page } from '../App'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-interface BoxTurtlesProps {}
+interface BoxTurtlesProps {
+  onNavigate: (page: Page) => void
+}
 
-export default function BoxTurtles({}: BoxTurtlesProps) {
+export default function BoxTurtles({ onNavigate }: BoxTurtlesProps) {
   return (
     <>
       <div className="species-hero-image-wrap">
@@ -38,7 +39,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
 
       <div className="page">
         <section aria-labelledby="bt-life-heading">
-          <h2 id="bt-life-heading">Seven to ten years to breed, and roads to cross every June</h2>
+          <h2 id="bt-life-heading">Slow breeding, road crossings in May, and a home range they cannot leave</h2>
           <p>
             Box turtles reach sexual maturity between 7 and 10 years. A female lays 4 to 6 eggs
             per clutch, and most years a predator finds the nest. A population can absorb this
@@ -60,7 +61,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Slow roads in May, a turtle moved 10 feet forward, and brush left on the edges</h2>
+          <h2 style={{ marginTop: 0 }}>Slow in May and June, ten feet forward for road turtles, and brushy corners left untended</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground" loading="lazy" />
@@ -76,9 +77,9 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
               At 55 mph, swerving is dangerous and braking is not enough. Slow down.
             </li>
             <li>
-              <strong>If a turtle is crossing a road, help it to the side it was heading toward.</strong>{' '}
-              Do not take it home. Do not move it to a pond or park. Move it 10 feet in the direction
-              it was already traveling and set it down facing that way. That is enough.
+              <strong>If a turtle is crossing a road, move it ten feet in the direction it was already heading.</strong>{' '}
+              Do not take it home. Do not move it to a pond or park. Set it down facing the direction
+              it was traveling. That is enough.
             </li>
             <li>
               <strong>Leave the brushy edges of your yard untended.</strong>{' '}
@@ -90,7 +91,7 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
         </div>
 
         <section aria-labelledby="bt-indicator-heading">
-          <h2 id="bt-indicator-heading">One resident turtle means 20 undisturbed years behind it</h2>
+          <h2 id="bt-indicator-heading">A resident box turtle means the yard has been ecologically intact longer than most people have owned it</h2>
           <p>
             Box turtles are an indicator of landscape continuity. A yard or woodlot with a resident box turtle
             has been ecologically intact long enough for that animal to establish a territory and survive.
@@ -115,6 +116,20 @@ export default function BoxTurtles({}: BoxTurtlesProps) {
             is protect the ones that remain.
           </p>
         </section>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>A yard safe for box turtles is a yard where monarchs can overwinter too.</strong>{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the leaves
+            </button>
+            {' '}to protect both, or{' '}
+            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
+              choose a native plant
+            </button>
+            {' '}to build the ground layer that keeps both coming back.
+          </p>
+        </div>
       </div>
     </>
   )
