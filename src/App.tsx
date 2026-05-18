@@ -84,6 +84,7 @@ import WhipPoorWill from './pages/WhipPoorWill'
 import Ovenbird from './pages/Ovenbird'
 import CanadaGoldenrod from './pages/CanadaGoldenrod'
 import PurpleConeflower from './pages/PurpleConeflower'
+import CommonMilkweed from './pages/CommonMilkweed'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -212,6 +213,7 @@ export default function App() {
       case 'ovenbird':       return <Ovenbird onNavigate={navigateTo} />
       case 'canada-goldenrod': return <CanadaGoldenrod onNavigate={navigateTo} />
       case 'purple-coneflower': return <PurpleConeflower onNavigate={navigateTo} />
+      case 'common-milkweed': return <CommonMilkweed onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
