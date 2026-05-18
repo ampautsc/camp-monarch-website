@@ -471,6 +471,15 @@ const SPECIES: Species[] = [
     attr: "PEHart / CC BY-SA 2.0 / Wikimedia Commons",
     category: 'Birds',
   },
+  {
+    page: 'ruby-crowned-kinglet',
+    name: "Ruby-crowned Kinglet",
+    tagline: "Arrives in mid-April weighing 6 grams after a night of flying — lands in shrubs at dawn looking for insects on native plants to refuel before continuing to Canada.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ruby-crowned_Kinglet_%28Corthylio_calendula%29_%2814349226095%29.jpg/960px-Ruby-crowned_Kinglet_%28Corthylio_calendula%29_%2814349226095%29.jpg',
+    alt: "Ruby-crowned Kinglet — tiny olive-green bird with bold white eye ring and two white wingbars perched on a branch",
+    attr: "Channel City Camera Club / CC BY 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
 ]
 
 export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
@@ -564,4 +573,3 @@ export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
       </section>
     </div>
   )
-}
