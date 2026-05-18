@@ -197,7 +197,6 @@ export default function Home({ onNavigate }: HomeProps) {
       .catch(() => {
         // Keep the saved fallback count when the live request fails.
       })
-
     return () => {
       cancelled = true
     }
@@ -315,7 +314,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
               <CardPhoto
                 src={CARD_PHOTOS.nativeWildflowers}
-                alt="Canada goldenrod in bloom — one of the most important fall nectar sources for migrating monarchs"
+                alt="Canada goldenrod in bloom — goldenrod peaks in September, covering the same weeks when monarchs accumulate fat for the 2,500-mile flight to Mexico"
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Plant perennial wildflowers</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
