@@ -16,7 +16,7 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
           Photo: Cephas&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
@@ -78,7 +78,7 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
                 />
                 <figcaption>
                   Juncos nest on the ground, usually concealed against a rock, log, or the base of a dense shrub — a tight cup of grass lined with animal hair. Ground nesting means every outdoor cat, every cleared brush pile, every manicured edge costs breeding pairs directly.
-                  <span className="photo-credit"> Photo: YellowstoneNPS · <a href="https://commons.wikimedia.org/wiki/File:Dark-eyed_junco_(Junco_hyemalis)_nest_and_eggs_(53006127360).jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: YellowstoneNPS · <a href="https://commons.wikimedia.org/wiki/File:Dark-eyed_junco_(Junco_hyemalis)_nest_and_eggs_(53006127360).jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -156,7 +156,13 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
               plant milkweed
             </button>
-            {' '}as the first step toward a fully chemical-free, wildlife-ready yard.
+            {' '}as the first step toward a fully chemical-free, wildlife-ready yard. See how the
+            floor layer — the leaf litter and loose soil where juncos scratch — fits into the full
+            structure of a yard in the{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers guide
+            </button>
+            .
           </p>
         </div>
       </div>
