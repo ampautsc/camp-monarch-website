@@ -62,6 +62,7 @@ const groups: NavGroup[] = [
           { id: 'joe-pye-weed',          label: 'Joe Pye Weed' },
           { id: 'ironweed',              label: 'Ironweed' },
           { id: 'partridge-pea',         label: 'Partridge Pea' },
+          { id: 'prairie-dropseed',      label: 'Prairie Dropseed' },
           { id: 'new-england-aster',     label: 'New England Aster' },
           { id: 'wild-bergamot',         label: 'Wild Bergamot' },
         ],
@@ -77,12 +78,13 @@ const groups: NavGroup[] = [
       {
         label: 'Butterflies & Moths',
         items: [
-          { id: 'monarch-life',      label: 'Monarch Butterfly' },
-          { id: 'tiger-swallowtail', label: 'Tiger Swallowtail' },
-          { id: 'black-swallowtail', label: 'Black Swallowtail' },
-          { id: 'polyphemus-moth',   label: 'Polyphemus Moth' },
-          { id: 'luna-moth',         label: 'Luna Moth' },
-          { id: 'cecropia-moth',     label: 'Cecropia Moth' },
+          { id: 'monarch-life',               label: 'Monarch Butterfly' },
+          { id: 'tiger-swallowtail',          label: 'Tiger Swallowtail' },
+          { id: 'black-swallowtail',          label: 'Black Swallowtail' },
+          { id: 'great-spangled-fritillary',  label: 'Great Spangled Fritillary' },
+          { id: 'polyphemus-moth',            label: 'Polyphemus Moth' },
+          { id: 'luna-moth',                  label: 'Luna Moth' },
+          { id: 'cecropia-moth',              label: 'Cecropia Moth' },
         ],
       },
       {
