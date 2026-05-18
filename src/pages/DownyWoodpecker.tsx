@@ -16,7 +16,7 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Dryobates_pubescens_UL_03.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Dryobates_pubescens_UL_03.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: Cephas&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Dryobates_pubescens_UL_03.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -79,7 +79,7 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
                 />
                 <figcaption>
                   A Downy Woodpecker working a dead branch is listening for beetle larvae moving inside the wood. It drills precisely where the vibration originates and extracts the larva with a barbed tongue longer than its bill. Dead trees removed from the yard remove both the food source and the cavity-nesting site the next generation will need.
-                  <span className="photo-credit"> Photo: Ltshears · <a href="https://commons.wikimedia.org/wiki/File:Downy_Woodpecker.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Ltshears · <a href="https://commons.wikimedia.org/wiki/File:Downy_Woodpecker.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -139,7 +139,7 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
         </div>
 
         <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The connection to monarchs</h2>
+          <h2 id="connection-heading">A Downy nest is a monarch readiness signal</h2>
           <p>
             A yard where Downy Woodpeckers are nesting has made a particular set of decisions:
             dead wood left standing, systemic pesticide use reduced or stopped, tidiness
@@ -156,8 +156,9 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
             hospitable to both.
           </p>
           <p>
-            Downy Woodpeckers are also a reminder that habitat restoration is not only about
-            what you add. It is equally about what you stop removing.
+            A yard where Downies are nesting has been left alone in the right places — dead
+            branches not cut, stumps not ground out, leaf litter not hauled away. The habitat
+            grew back when the removal stopped.
           </p>
         </section>
 
