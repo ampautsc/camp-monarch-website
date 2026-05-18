@@ -198,6 +198,14 @@ export default function Ironweed({ onNavigate }: IronweedProps) {
                 picking the small achene seeds from the dried clusters while the upright stems
                 hold them above the leaf litter
               </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('leonards-skipper')}>
+                  Leonard&apos;s Skipper
+                </button>{' '}
+                — adults take nectar from Ironweed during their 7-to-14-day adult window in late
+                August and September; the same weeks Ironweed peaks are the only weeks this
+                butterfly flies each year
+              </li>
             </ul>
           </div>
         </section>
