@@ -16,7 +16,7 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: SMBishop · <a href="https://commons.wikimedia.org/wiki/File:Little_Brown_Myotis_(cropped).JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          {/* Photo: SMBishop · <a href="https://commons.wikimedia.org/wiki/File:Little_Brown_Myotis_(cropped).JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
           Photo: SMBishop&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Little_Brown_Myotis_(cropped).JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
@@ -88,7 +88,7 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
                 />
                 <figcaption>
                   A bat's wing is a modified hand — the membrane stretches between five elongated finger bones. Using echolocation calls at frequencies above human hearing, a little brown bat can locate and intercept a moth or gnat in complete darkness. White-nose syndrome, a fungal disease spreading since 2006, has killed over 90% of some hibernating colonies in a decade.
-                  <span className="photo-credit"> Photo: U.S. Fish and Wildlife Service · <a href="https://commons.wikimedia.org/wiki/File:Little_brown_bat.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: U.S. Fish and Wildlife Service · <a href="https://commons.wikimedia.org/wiki/File:Little_brown_bat.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -111,7 +111,7 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
         </section>
 
         <section aria-labelledby="habitat-heading">
-          <h2 id="habitat-heading">What they need: roost, water, and intact insect habitat</h2>
+          <h2 id="habitat-heading">The roost needs 80–100°F heat; the foraging route needs an insect base pesticides haven't erased</h2>
           <p>
             Little Brown Bats use three distinct habitat types across the year.
             In summer, maternity colonies of females and young roost in warm
@@ -199,10 +199,9 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
         <section aria-labelledby="tolerance-heading">
           <h2 id="tolerance-heading">The bat in the attic: what to do and what not to do</h2>
           <p>
-            A maternity colony in an attic is a meaningful conservation
-            asset — a group of breeding females that have chosen your
-            structure as their summer roost. Their presence is legal
-            to tolerate and ecologically valuable to keep. However, if
+            A maternity colony in an attic is a group of breeding females that
+            have chosen your structure as their summer roost. Their presence is
+            legal to tolerate and ecologically valuable to keep. However, if
             exclusion is necessary, the timing matters enormously.
           </p>
           <p>
