@@ -119,6 +119,18 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
             and the removal of leaf litter. All three are decisions made inside the property line.
           </p>
         </section>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            Firefly larvae live in the floor layer &mdash; leaf litter and moist soil from
+            November through April. Every other yard decision that affects them operates through
+            that one layer.{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              The Four Layers
+            </button>
+            {' '}maps floor, shrub, canopy, and edge as one integrated system.
+          </p>
+        </div>
       </div>
     </>
   )
