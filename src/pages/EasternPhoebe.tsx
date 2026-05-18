@@ -266,8 +266,12 @@ export default function EasternPhoebe({ onNavigate }: EasternPhoebeProps) {
             {' '}also eats small flying insects caught near flower faces — a different technique
             from the same insect pool. What all three need is the same thing: a yard with enough
             native plant cover to produce the flying insect population that fills three separate
-            altitude bands at once. See the full picture of how a yard&apos;s insect life
-            supports the species that need it at{' '}
+            altitude bands at once. See how those altitude bands map onto the layer structure of a
+            yard in the{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers guide
+            </button>
+            , or find all the yard neighbors that depend on that structure in the{' '}
             <button className="link-button" onClick={() => onNavigate('species-gallery')}>
               Species Gallery
             </button>
