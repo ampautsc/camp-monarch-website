@@ -58,7 +58,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
             </button>
 
-            <button className="action-card" onClick={() => onNavigate('find-milkweed')}>
+            <button className="action-card" onClick={() => onNavigate('native-plant-near-me')}>
               <div className="action-card__image-wrap">
                 <img
                   src={CARD_PHOTOS.findMilkweed}
@@ -72,7 +72,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
             </button>
 
-            <button className="action-card" onClick={() => onNavigate('stop-pesticides')}>
+            <button className="action-card" onClick={() => onNavigate('pesticide-guide')}>
               <div className="action-card__image-wrap">
                 <img
                   src={CARD_PHOTOS.stopPesticides}
@@ -86,7 +86,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
             </button>
 
-            <button className="action-card" onClick={() => onNavigate('spread-the-word')}>
+            <button className="action-card" onClick={() => onNavigate('talking-points')}>
               <div className="action-card__image-wrap">
                 <img
                   src={CARD_PHOTOS.spreadTheWord}
@@ -161,7 +161,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('bumblebees')}>
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('american-bumble-bee')}>
             <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
               <img src={NEIGHBOR_PHOTOS.bumblebees} alt="Bumblebee on purple wildflower" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
@@ -171,7 +171,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('hummingbirds')}>
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('ruby-throated-hummingbird')}>
             <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
               <img src={NEIGHBOR_PHOTOS.hummingbirds} alt="Ruby-throated hummingbird in flight" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
@@ -181,7 +181,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('swallowtails')}>
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('tiger-swallowtail')}>
             <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
               <img src={NEIGHBOR_PHOTOS.swallowTails} alt="Black swallowtail butterfly with wings open" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
