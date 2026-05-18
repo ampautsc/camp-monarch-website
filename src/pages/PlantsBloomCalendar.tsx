@@ -112,6 +112,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       page: 'swamp-milkweed',
     },
     {
+      name: 'Buttonbush',
+      latinName: 'Cephalanthus occidentalis',
+      bloomWindow: 'July–August',
+      observation:
+        'Each Buttonbush flower head is a 1-inch sphere of 200 or more individual florets, each one with a pollen-bearing anther protruding above the petal tube. Short-tongued native bees that cannot probe deep into tubular flowers — dozens of species with tongue lengths under 4 mm — harvest pollen from Buttonbush by landing on the sphere\'s surface. A single flower head stays in active pollen production for three to four weeks as the florets open in sequence from the outside in. Buttonbush roots tolerate standing water, making it the right plant for the wet corner of a yard where most shrubs fail.',
+      page: 'buttonbush',
+    },
+    {
       name: 'Purple Coneflower',
       latinName: 'Echinacea purpurea',
       bloomWindow: 'July–August',
@@ -186,9 +194,9 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Eleven natives, March to frost</h2>
+        <h2>Twelve natives, March to frost</h2>
         <p>
-          These eleven native plants open in sequence from March through late October, covering
+          These twelve native plants open in sequence from March through late October, covering
           every week that monarchs are present — as caterpillars, as breeding adults, and as
           migrants fueling for Mexico — and providing nectar and larval host plants for specialist
           insects that depend on each one.
