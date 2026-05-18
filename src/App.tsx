@@ -76,6 +76,7 @@ import SongSparrow from './pages/SongSparrow'
 import WildTurkey from './pages/WildTurkey'
 import EasternPhoebe from './pages/EasternPhoebe'
 import YellowWarbler from './pages/YellowWarbler'
+import RubyCrownedKinglet from './pages/RubyCrownedKinglet'
 import YellowRumpedWarbler from './pages/YellowRumpedWarbler'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
@@ -184,6 +185,7 @@ function App() {
       case 'wild-turkey':    return <WildTurkey onNavigate={navigateTo} />
       case 'eastern-phoebe': return <EasternPhoebe onNavigate={navigateTo} />
       case 'yellow-warbler': return <YellowWarbler onNavigate={navigateTo} />
+      case 'ruby-crowned-kinglet': return <RubyCrownedKinglet onNavigate={navigateTo} />
       case 'yellow-rumped-warbler': return <YellowRumpedWarbler onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
