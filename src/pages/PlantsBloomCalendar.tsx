@@ -160,6 +160,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       page: 'ironweed',
     },
     {
+      name: 'Prairie Dropseed',
+      latinName: 'Sporobolus heterolepis',
+      bloomWindow: 'Late August–October',
+      observation:
+        'Prairie Dropseed sends up airy seed-bearing panicles in late August on wiry stems that tremble in the lightest wind. The seeds ripen through September inside a thin husk infused with volatile compounds — walking past the plant on a warm afternoon releases a fragrance most people identify as coriander or buttered popcorn, the variation real and tied to individual olfactory receptors. Leonard\'s Skipper, a small orange-and-brown butterfly that flies in August and September, lays eggs on native grass blades and overwinters as a young larva on the same clump. In a yard planted with only broadleaf wildflowers, it has no grass blade on which to complete its life cycle.',
+      page: 'prairie-dropseed',
+    },
+    {
       name: 'Canada Goldenrod',
       latinName: 'Solidago canadensis',
       bloomWindow: 'Late August–October',
@@ -218,9 +226,9 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Fifteen natives, March to frost</h2>
+        <h2>Sixteen natives, March to frost</h2>
         <p>
-          These fifteen native plants open in sequence from March through late October, covering
+          These sixteen native plants open in sequence from March through late October, covering
           every week that monarchs are present — as caterpillars, as breeding adults, and as
           migrants fueling for Mexico — and providing nectar and larval host plants for specialist
           insects that depend on each one.
