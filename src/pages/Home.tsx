@@ -186,6 +186,7 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* HOOK — wonder first, then stakes. No explanation yet. (arch-page-as-argument-001) */}
       <section className="hero" style={{ background: `linear-gradient(rgba(26,46,26,0.82), rgba(26,46,26,0.82)), url('${HERO_PHOTO_URL}') center/cover no-repeat` }}>
         <div className="hero__eyebrow">Camp Monarch</div>
+        {/* LOCKED COPY — hero H1. Do not change without explicit Boss approval. */}
         <h1>Monarchs are disappearing.<br />You can help.</h1>
         <p className="hero__lead">
           In the 1990s, hundreds of millions of monarchs reached Mexico each fall.<sup><a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer" className="cite">[1]</a></sup><br />
