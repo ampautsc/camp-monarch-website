@@ -1,3 +1,4 @@
+import type { Page } from '../App'
 
 // Photo data — Wikimedia Commons (CC BY-SA) and iNaturalist open-data (CC BY-NC).
 // Verified 2026-05-13. Attribution listed at bottom of page.
@@ -473,9 +474,9 @@ const SPECIES: Species[] = [
   {
     page: 'ruby-crowned-kinglet',
     name: "Ruby-crowned Kinglet",
-    tagline: "Arrives in mid-April weighing 6 grams after a night of flying — lands in shrubs at dawn looking for insects on native plants to refuel before continuing to Canada.",
+    tagline: "Weighs 6 grams. Must eat nearly its own body weight each day to survive fall migration. Stays 3 days in a yard with bayberry. Stays 3 hours in one without.",
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ruby-crowned_Kinglet_%28Corthylio_calendula%29_%2814349226095%29.jpg/960px-Ruby-crowned_Kinglet_%28Corthylio_calendula%29_%2814349226095%29.jpg',
-    alt: "Ruby-crowned Kinglet — tiny olive-green bird with bold white eye ring and two white wingbars perched on a branch",
+    alt: "Ruby-crowned Kinglet perched on a branch — tiny olive-green bird with bold white eye ring and two white wingbars",
     attr: "Channel City Camera Club / CC BY 2.0 / Wikimedia Commons",
     category: 'Birds',
   },
