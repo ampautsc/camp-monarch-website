@@ -74,17 +74,21 @@ import CarolinaWren from './pages/CarolinaWren'
 import GrayCatbird from './pages/GrayCatbird'
 import MourningDove from './pages/MourningDove'
 import SongSparrow from './pages/SongSparrow'
+import YellowRumpedWarbler from './pages/YellowRumpedWarbler'
 import WildTurkey from './pages/WildTurkey'
 import EasternPhoebe from './pages/EasternPhoebe'
 import YellowWarbler from './pages/YellowWarbler'
 import RubyCrownedKinglet from './pages/RubyCrownedKinglet'
-import YellowRumpedWarbler from './pages/YellowRumpedWarbler'
+import ScarletTanager from './pages/ScarletTanager'
+import WhipPoorWill from './pages/WhipPoorWill'
+import Ovenbird from './pages/Ovenbird'
+import CanadaGoldenrod from './pages/CanadaGoldenrod'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
 import HOAGuide from './pages/HOAGuide'
-import HabitatScore from './pages/HabitatScore'
 import HabitatHero from './pages/HabitatHero'
+import HabitatScore from './pages/HabitatScore'
 import SpringChecklist from './pages/SpringChecklist'
 import PesticideGuide from './pages/PesticideGuide'
 import WaterForWildlife from './pages/WaterForWildlife'
@@ -94,60 +98,66 @@ import InvasivePlants from './pages/InvasivePlants'
 import BrownCreeper from './pages/BrownCreeper'
 import HermitThrush from './pages/HermitThrush'
 import EasternWoodPewee from './pages/EasternWoodPewee'
-import ScarletTanager from './pages/ScarletTanager'
-import WhipPoorWill from './pages/WhipPoorWill'
-import Ovenbird from './pages/Ovenbird'
-import { trackEvent } from './lib/analytics'
-import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
+import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
 
-function App() {
+export default function App() {
   const [page, setPage] = useState<Page>('home')
 
   useEffect(() => {
-    const slug = window.location.hash.replace('#', '') as Page
-    if (slug && ALL_PAGE_SLUGS.includes(slug as PageSlug)) {
+    const slug = window.location.pathname.replace(/^\//, '') || 'home'
+    if ((ALL_PAGE_SLUGS as readonly string[]).includes(slug)) {
       setPage(slug as Page)
     }
   }, [])
 
-  const navigateTo = (newPage: Page) => {
+  function navigateTo(newPage: Page) {
     setPage(newPage)
-    window.location.hash = newPage
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-    trackEvent('page_view', { page: newPage })
+    window.history.pushState({}, '', `/${newPage === 'home' ? '' : newPage}`)
+    window.scrollTo(0, 0)
   }
 
-  const renderPage = () => {
+  useEffect(() => {
+    function onPop() {
+      const slug = window.location.pathname.replace(/^\//, '') || 'home'
+      if ((ALL_PAGE_SLUGS as readonly string[]).includes(slug)) {
+        setPage(slug as Page)
+      }
+    }
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
+
+  function renderPage() {
     switch (page) {
-      case 'home':               return <Home onNavigate={navigateTo} />
-      case 'why-monarchs':       return <WhyMonarchs onNavigate={navigateTo} />
-      case 'plant-milkweed':     return <PlantMilkweed onNavigate={navigateTo} />
-      case 'the-migration':      return <TheMigration onNavigate={navigateTo} />
-      case 'take-action':        return <TakeAction onNavigate={navigateTo} />
-      case 'choose-a-plant':     return <ChooseAPlant onNavigate={navigateTo} />
+      case 'home':            return <Home onNavigate={navigateTo} />
+      case 'why-monarchs':   return <WhyMonarchs onNavigate={navigateTo} />
+      case 'plant-milkweed': return <PlantMilkweed onNavigate={navigateTo} />
+      case 'the-migration':  return <TheMigration onNavigate={navigateTo} />
+      case 'take-action':    return <TakeAction onNavigate={navigateTo} />
+      case 'choose-a-plant': return <ChooseAPlant onNavigate={navigateTo} />
       case 'native-plant-near-me': return <NativePlantNearMe onNavigate={navigateTo} />
-      case 'monarch-life':       return <MonarchLife onNavigate={navigateTo} />
-      case 'raise-a-monarch':    return <RaiseAMonarch onNavigate={navigateTo} />
-      case 'the-first-year':     return <TheFirstYear onNavigate={navigateTo} />
-      case 'faq':                return <FAQ onNavigate={navigateTo} />
-      case 'log-a-sighting':     return <LogASighting onNavigate={navigateTo} />
-      case 'waystation-guide':   return <WaystationGuide onNavigate={navigateTo} />
-      case 'fireflies':          return <Fireflies onNavigate={navigateTo} />
-      case 'box-turtles':        return <BoxTurtles onNavigate={navigateTo} />
-      case 'native-bees':        return <NativeBees onNavigate={navigateTo} />
-      case 'talking-points':     return <TalkingPoints onNavigate={navigateTo} />
-      case 'gray-tree-frogs':    return <GrayTreeFrogs onNavigate={navigateTo} />
-      case 'downy-woodpecker':   return <DownyWoodpecker onNavigate={navigateTo} />
-      case 'northern-flicker':   return <NorthernFlicker onNavigate={navigateTo} />
-      case 'baltimore-oriole':   return <BaltimoreOriole onNavigate={navigateTo} />
-      case 'northern-cardinal':  return <NorthernCardinal onNavigate={navigateTo} />
-      case 'eastern-bluebird':   return <EasternBluebird onNavigate={navigateTo} />
-      case 'plants':             return <Plants onNavigate={navigateTo} />
-      case 'plants-finder':      return <PlantsFinder onNavigate={navigateTo} />
-      case 'plants-by-family':   return <PlantsByFamily onNavigate={navigateTo} />
-      case 'plants-by-purpose':  return <PlantsByPurpose onNavigate={navigateTo} />
+      case 'monarch-life':   return <MonarchLife onNavigate={navigateTo} />
+      case 'raise-a-monarch': return <RaiseAMonarch onNavigate={navigateTo} />
+      case 'the-first-year': return <TheFirstYear onNavigate={navigateTo} />
+      case 'faq':            return <FAQ onNavigate={navigateTo} />
+      case 'log-a-sighting': return <LogASighting onNavigate={navigateTo} />
+      case 'waystation-guide': return <WaystationGuide onNavigate={navigateTo} />
+      case 'fireflies':      return <Fireflies onNavigate={navigateTo} />
+      case 'box-turtles':    return <BoxTurtles onNavigate={navigateTo} />
+      case 'native-bees':    return <NativeBees onNavigate={navigateTo} />
+      case 'talking-points': return <TalkingPoints onNavigate={navigateTo} />
+      case 'gray-tree-frogs': return <GrayTreeFrogs onNavigate={navigateTo} />
+      case 'downy-woodpecker': return <DownyWoodpecker onNavigate={navigateTo} />
+      case 'northern-flicker': return <NorthernFlicker onNavigate={navigateTo} />
+      case 'baltimore-oriole': return <BaltimoreOriole onNavigate={navigateTo} />
+      case 'northern-cardinal': return <NorthernCardinal onNavigate={navigateTo} />
+      case 'eastern-bluebird': return <EasternBluebird onNavigate={navigateTo} />
+      case 'plants':          return <Plants onNavigate={navigateTo} />
+      case 'plants-finder':   return <PlantsFinder onNavigate={navigateTo} />
+      case 'plants-by-family':    return <PlantsByFamily onNavigate={navigateTo} />
+      case 'plants-by-purpose':   return <PlantsByPurpose onNavigate={navigateTo} />
       case 'plants-by-conditions': return <PlantsByConditions onNavigate={navigateTo} />
       case 'plants-milkweeds':   return <PlantsMilkweeds onNavigate={navigateTo} />
       case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo} />
@@ -199,6 +209,7 @@ function App() {
       case 'scarlet-tanager': return <ScarletTanager onNavigate={navigateTo} />
       case 'whip-poor-will': return <WhipPoorWill onNavigate={navigateTo} />
       case 'ovenbird':       return <Ovenbird onNavigate={navigateTo} />
+      case 'canada-goldenrod': return <CanadaGoldenrod onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
