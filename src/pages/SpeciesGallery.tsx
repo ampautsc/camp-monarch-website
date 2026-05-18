@@ -39,7 +39,7 @@ const SPECIES: Species[] = [
     photo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg',
     photoCredit: 'Kenneth Dwain Harrelson / CC BY-SA 3.0',
-    page: 'monarch',
+    page: 'why-monarchs',
     habitatTags: ['milkweed', 'open-meadow', 'garden'],
   },
   {
