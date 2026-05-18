@@ -56,6 +56,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
     page: Page
   }> = [
     {
+      name: 'Wild Columbine',
+      latinName: 'Aquilegia canadensis',
+      bloomWindow: 'April–May',
+      observation:
+        'Wild Columbine blooms in April — before milkweed, coneflower, or bergamot has opened. Its red, downward-facing spurs hold nectar at a depth that fits a Ruby-throated Hummingbird\'s bill. The Columbine Duskywing skipper lays eggs on Aquilegia leaves and on no other plant in the eastern US.',
+      page: 'wild-columbine',
+    },
+    {
       name: 'New Jersey Tea',
       latinName: 'Ceanothus americanus',
       bloomWindow: 'May–June',
@@ -162,9 +170,9 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Eight natives, May to frost</h2>
+        <h2>Nine natives, April to frost</h2>
         <p>
-          These eight native plants open in sequence from May through late October, covering every
+          These nine native plants open in sequence from April through late October, covering every
           week that monarchs are present — as caterpillars, as breeding adults, and as migrants
           fueling for Mexico — and providing larval host plants for specialist insects that depend
           on each one.
