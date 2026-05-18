@@ -369,9 +369,9 @@ const SPECIES: Species[] = [
   {
     page: 'eastern-wood-pewee',
     name: "Eastern Wood-Pewee",
-    tagline: "Hunts from dead snags 30 to 50 feet up — two-second sallying flights to catch flying insects mid-air. 37% decline since 1966 as mature trees with dead branches disappear.",
-    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Contopus_virens_-_Eastern_wood_pewee.jpg/960px-Contopus_virens_-_Eastern_wood_pewee.jpg',
-    alt: "Eastern Wood-Pewee perched on a bare branch — small olive-gray flycatcher with two pale wing bars, sitting upright and motionless between sallying flights",
+    tagline: "Catches flying insects in mid-air from a dead branch at 30 feet, returning to the same perch within inches. Breeding Bird Survey: 37% fewer than 1966.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Contopus_virens_-Eastern_Wood-Pewee_-_Canada.jpg/960px-Contopus_virens_-Eastern_Wood-Pewee_-_Canada.jpg',
+    alt: "Eastern Wood-Pewee perched on a bare dead branch against open sky — small olive-gray flycatcher with two pale wing bars, upright posture, and slightly peaked crown",
     attr: "Wikimedia Commons / CC BY-SA 3.0",
     category: 'Birds',
   },

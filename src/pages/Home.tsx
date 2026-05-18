@@ -19,7 +19,7 @@ const NEIGHBOR_PHOTOS = {
   boxTurtles: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Box_turtle_Eastern_2.jpg/320px-Box_turtle_Eastern_2.jpg',
   bumblebees: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Bombus_huntii_-_Penstemon_strictus_-_Bald_Mountain.jpg/320px-Bombus_huntii_-_Penstemon_strictus_-_Bald_Mountain.jpg',
   hummingbirds: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Ruby-throated_Hummingbird_-_Archilochus_colubris%2C_Merrimac_Farm_Wildlife_Management_Area%2C_Nokesville%2C_Virginia_%2849111455388%29.jpg/320px-Ruby-throated_Hummingbird_-_Archilochus_colubris%2C_Merrimac_Farm_Wildlife_Management_Area%2C_Nokesville%2C_Virginia_%2849111455388%29.jpg',
-  swallowTails: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Pristine_Eastern_Tiger_Swallowtail.jpg/320px-Pristine_Eastern_Tiger_Swallowtail.jpg',
+  swallowTails: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Papilio_polyxenes_%28Black_Swallowtail%29%2C_male.jpg/320px-Papilio_polyxenes_%28Black_Swallowtail%29%2C_male.jpg',
   cecropia: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cecropia_Moth_%28Hyalophora_cecropia%29.jpg/320px-Cecropia_Moth_%28Hyalophora_cecropia%29.jpg',
   northernFlicker: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Northern_Flicker_%28Red-shafted%29.jpg/320px-Northern_Flicker_%28Red-shafted%29.jpg',
 }
@@ -136,7 +136,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
         <h2 id="neighbors-heading">Your yard is already home to more than you know</h2>
         <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
-          44 species raise young in backyards — in leaf litter, hollow logs, loose soil, and shallow ground nests.
+          49 species raise young in backyards — in leaf litter, hollow logs, loose soil, and shallow ground nests.
           Each one is doing something right now in your yard that your next decision will either allow or prevent.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
@@ -161,7 +161,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('american-bumble-bee')}>
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('bumblebees')}>
             <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
               <img src={NEIGHBOR_PHOTOS.bumblebees} alt="Bumblebee on purple wildflower" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
@@ -171,7 +171,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('ruby-throated-hummingbird')}>
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('hummingbirds')}>
             <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
               <img src={NEIGHBOR_PHOTOS.hummingbirds} alt="Ruby-throated hummingbird in flight" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
@@ -181,13 +181,13 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
 
-          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('tiger-swallowtail')}>
+          <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '0', cursor: 'pointer' }} onClick={() => onNavigate('swallowtails')}>
             <div style={{ height: '160px', overflow: 'hidden', background: '#e8ede8' }}>
-              <img src={NEIGHBOR_PHOTOS.swallowTails} alt="Eastern Tiger Swallowtail with yellow and black striped wings open on a flower" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              <img src={NEIGHBOR_PHOTOS.swallowTails} alt="Black swallowtail butterfly with wings open" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ padding: '1rem' }}>
-              <h3 style={{ margin: '0 0 0.5rem' }}>Tiger Swallowtail</h3>
-              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>The female tiger swallowtail exists in two forms — yellow with black stripes, or all-black. The black form mimics the Pipevine Swallowtail, which birds avoid after learning it tastes bitter. She is borrowing a reputation she did not earn.</p>
+              <h3 style={{ margin: '0 0 0.5rem' }}>Swallowtails</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Black swallowtail caterpillars eat parsley and dill — herbs already in most kitchen gardens. The butterfly is there if the plant is.</p>
             </div>
           </div>
 
@@ -232,7 +232,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <li>Box turtle: <a href="https://commons.wikimedia.org/wiki/File:Box_turtle_Eastern_2.jpg" target="_blank" rel="noreferrer">Moondigger</a>, CC BY-SA 2.5</li>
             <li>Bumblebee: <a href="https://commons.wikimedia.org/wiki/File:Bombus_huntii_-_Penstemon_strictus_-_Bald_Mountain.jpg" target="_blank" rel="noreferrer">USGS Bee Lab</a>, Public Domain</li>
             <li>Hummingbird: <a href="https://commons.wikimedia.org/wiki/File:Ruby-throated_Hummingbird_-_Archilochus_colubris,_Merrimac_Farm_Wildlife_Management_Area,_Nokesville,_Virginia_(49111455388).jpg" target="_blank" rel="noreferrer">Judy Gallagher</a>, CC BY 2.0</li>
-            <li>Tiger Swallowtail: <a href="https://commons.wikimedia.org/wiki/File:Pristine_Eastern_Tiger_Swallowtail.jpg" target="_blank" rel="noreferrer">HaarFager</a>, CC BY-SA 3.0</li>
+            <li>Swallowtail: <a href="https://commons.wikimedia.org/wiki/File:Papilio_polyxenes_(Black_Swallowtail),_male.jpg" target="_blank" rel="noreferrer">Judy Gallagher</a>, CC BY 2.0</li>
             <li>Cecropia moth: <a href="https://commons.wikimedia.org/wiki/File:Cecropia_Moth_(Hyalophora_cecropia).jpg" target="_blank" rel="noreferrer">Peterwchen</a>, CC BY-SA 3.0</li>
             <li>Northern Flicker: <a href="https://commons.wikimedia.org/wiki/File:Northern_Flicker_(Red-shafted).jpg" target="_blank" rel="noreferrer">Alan D. Wilson</a>, CC BY-SA 3.0</li>
           </ul>
