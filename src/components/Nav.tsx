@@ -53,6 +53,7 @@ const groups: NavGroup[] = [
           { id: 'canada-goldenrod',      label: 'Canada Goldenrod' },
           { id: 'purple-coneflower',     label: 'Purple Coneflower' },
           { id: 'joe-pye-weed',          label: 'Joe Pye Weed' },
+          { id: 'new-england-aster',     label: 'New England Aster' },
         ],
       },
     ],
