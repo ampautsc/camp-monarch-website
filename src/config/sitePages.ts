@@ -84,6 +84,7 @@ export const ALL_PAGE_SLUGS = [
   'brown-thrasher',
   'eastern-towhee',
   'carolina-wren',
+  'gray-catbird',
   'seasonal-calendar',
   'species-gallery',
   'habitat-transformation',
