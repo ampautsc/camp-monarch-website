@@ -20,7 +20,7 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
 
       <div className="page">
         <section aria-labelledby="numbers-heading">
-          <h2 id="numbers-heading">The numbers</h2>
+          <h2 id="numbers-heading">69% of wildlife, 80% of monarchs, 850 million milkweed stems — the same 30 years</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '1rem', margin: '1rem 0 1.5rem' }}>
             <div className="fact-card">
               <div className="fact-card__number">69%</div>
@@ -124,7 +124,7 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
             onClick={() => onNavigate('take-action')}
             style={{ marginTop: '0.5rem' }}
           >
-            Here’s what to do →
+            Here's what to do →
           </button>
         </div>
       </div>
