@@ -246,7 +246,11 @@ export default function YellowWarbler({ onNavigate }: YellowWarblerProps) {
             {' '}often nests lower, at 1 to 3 feet, inside the same shrub clump. What all three
             need from the same shrub is not just nest structure but caterpillar-hosting foliage
             within 50 to 100 feet of the nest — the prey that feeds nestlings through fledging.
-            See what the shrub layer supports across the full bird community at{' '}
+            See how the shrub layer connects to the floor below and the canopy above in the{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers guide
+            </button>
+            , or see what the shrub layer supports across the full bird community at{' '}
             <button className="link-button" onClick={() => onNavigate('species-gallery')}>
               Species Gallery
             </button>
