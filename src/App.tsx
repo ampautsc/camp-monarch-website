@@ -23,6 +23,7 @@ import NativeBees from './pages/NativeBees'
 import TalkingPoints from './pages/TalkingPoints'
 import GrayTreeFrogs from './pages/GrayTreeFrogs'
 import DownyWoodpecker from './pages/DownyWoodpecker'
+import NorthernFlicker from './pages/NorthernFlicker'
 import BaltimoreOriole from './pages/BaltimoreOriole'
 import NorthernCardinal from './pages/NorthernCardinal'
 import EasternBluebird from './pages/EasternBluebird'
@@ -135,6 +136,7 @@ function App() {
       case 'talking-points':     return <TalkingPoints onNavigate={navigateTo} />
       case 'gray-tree-frogs':    return <GrayTreeFrogs onNavigate={navigateTo} />
       case 'downy-woodpecker':   return <DownyWoodpecker onNavigate={navigateTo} />
+      case 'northern-flicker':   return <NorthernFlicker onNavigate={navigateTo} />
       case 'baltimore-oriole':   return <BaltimoreOriole onNavigate={navigateTo} />
       case 'northern-cardinal':  return <NorthernCardinal onNavigate={navigateTo} />
       case 'eastern-bluebird':   return <EasternBluebird onNavigate={navigateTo} />
