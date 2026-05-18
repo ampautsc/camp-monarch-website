@@ -95,6 +95,7 @@ import BrownCreeper from './pages/BrownCreeper'
 import HermitThrush from './pages/HermitThrush'
 import EasternWoodPewee from './pages/EasternWoodPewee'
 import ScarletTanager from './pages/ScarletTanager'
+import WhipPoorWill from './pages/WhipPoorWill'
 import { trackEvent } from './lib/analytics'
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -195,6 +196,7 @@ function App() {
       case 'ruby-crowned-kinglet': return <RubyCrownedKinglet onNavigate={navigateTo} />
       case 'yellow-rumped-warbler': return <YellowRumpedWarbler onNavigate={navigateTo} />
       case 'scarlet-tanager': return <ScarletTanager onNavigate={navigateTo} />
+      case 'whip-poor-will': return <WhipPoorWill onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
