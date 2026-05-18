@@ -91,6 +91,7 @@ import SwampMilkweed from './pages/SwampMilkweed'
 import WildBergamot from './pages/WildBergamot'
 import NewJerseyTea from './pages/NewJerseyTea'
 import WildColumbine from './pages/WildColumbine'
+import BlackEyedSusan from './pages/BlackEyedSusan'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -226,6 +227,7 @@ export default function App() {
       case 'wild-bergamot':    return <WildBergamot onNavigate={navigateTo} />
       case 'new-jersey-tea':   return <NewJerseyTea onNavigate={navigateTo} />
       case 'wild-columbine':   return <WildColumbine onNavigate={navigateTo} />
+      case 'black-eyed-susan': return <BlackEyedSusan onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
