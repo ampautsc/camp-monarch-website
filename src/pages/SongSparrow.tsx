@@ -136,7 +136,7 @@ export default function SongSparrow({ onNavigate }: SongSparrowProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things Song Sparrows need from your yard</h2>
+          <h2 style={{ marginTop: 0 }}>Uncut grass clumps through May, leaf litter under shrubs through winter, and one unpruned native shrub at 3–5 feet</h2>
 
           <figure className="species-content-photo">
             <img
