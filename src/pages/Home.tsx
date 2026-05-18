@@ -110,22 +110,22 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="fact-grid">
 
           <div className="fact-card">
-            <h3>Milkweed loss</h3>
+            <h3>Herbicide-tolerant crops eliminated the milkweed that grew between rows of corn</h3>
             <p>Since 1996, the U.S. has lost an estimated <strong>165 million acres</strong> of monarch habitat — largely due to herbicide-resistant crops eliminating milkweed from agricultural land.</p>
           </div>
 
           <div className="fact-card">
-            <h3>Pesticide exposure</h3>
+            <h3>A treated plant stays lethal to monarch larvae for months after application</h3>
             <p>Neonicotinoids — the world's most widely used class of insecticides — persist in soil and pollen. A treated plant can remain lethal to monarch larvae for <strong>months</strong> after application.</p>
           </div>
 
           <div className="fact-card">
-            <h3>Climate disruption</h3>
+            <h3>Warmer winters let a monarch parasite survive year-round in the South</h3>
             <p>Shifting temperatures misalign monarch migration with milkweed availability. Warmer winters allow <em>Ophryocystis elektroscirrha</em> (OE) — a debilitating monarch parasite — to survive in year-round southern populations.</p>
           </div>
 
           <div className="fact-card">
-            <h3>Habitat fragmentation</h3>
+            <h3>A 3,000-mile migration corridor runs through suburban backyards and roadsides</h3>
             <p>Monarchs travel up to 3,000 miles. A corridor of milkweed and nectar plants is the infrastructure that migration runs on. Suburban lawns and roadsides are where that infrastructure is mostly missing.</p>
           </div>
 
