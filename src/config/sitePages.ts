@@ -129,6 +129,7 @@ export const ALL_PAGE_SLUGS = [
   'golden-alexanders',
   'prairie-dropseed',
   'leonards-skipper',
+  'cobweb-skipper',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
@@ -143,4 +144,5 @@ export const PAGE_LABEL_OVERRIDES: Partial<Record<PageSlug, string>> = {
   'hoa-guide': 'HOA Guide',       // "HOA" is an acronym; auto-case gives "Hoa Guide"
   'faq':       'FAQ',             // all-caps acronym
   'leonards-skipper': "Leonard's Skipper",  // apostrophe lost in slug
+  'cobweb-skipper': 'Cobweb Skipper',       // no override needed but added for clarity
 }
