@@ -10,13 +10,13 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
       <div className="species-hero-image-wrap">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/a/ad/H_crucifer_USGS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="Spring Peeper frog showing distinctive X marking on back — this dime-sized frog's call is the first sure sign that winter has ended"
+          alt="Spring Peeper frog showing distinctive X marking on back — this dime-sized frog's call is the first sound of the year that reaches you from a pond two lots away"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: USGS · <a href="https://commons.wikimedia.org/wiki/File:H_crucifer_USGS.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons */}
+          {/* Photo: USGS · <a href="https://commons.wikimedia.org/wiki/File:H_crucifer_USGS.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons */}
           Photo: USGS&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:H_crucifer_USGS.jpg" target="_blank" rel="noopener noreferrer">Public domain</a>
           &nbsp;via Wikimedia Commons
@@ -27,10 +27,13 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Spring Peeper</h1>
         <p className="hero__lead">
-          The Spring Peeper's chorus is one of the most unmistakable sounds of
-          eastern North America — a high, piercing peep that signals winter is
-          truly over. This thumbnail-sized frog is both a phenological clock and
-          a living indicator of wetland health.
+          The Spring Peeper's chorus begins before winter is over — on the first
+          night the air holds above 50°F, sometimes while ice still edges the pond,
+          sometimes in late February. The frog making that sound weighs less than a
+          grape. One male, calling alone at the edge of a pond, can be heard from
+          inside a house with the windows shut. In a pond of a hundred males calling
+          together, the sound carries half a mile. Most people who grew up near water
+          in the eastern United States know that sound. Many have stopped hearing it.
         </p>
       </section>
 
@@ -38,21 +41,23 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
 
       <div className="page">
         <section aria-labelledby="phenology-heading">
-          <h2 id="phenology-heading">The frog that tells you spring has arrived</h2>
+          <h2 id="phenology-heading">Calling before the pond is fully thawed</h2>
           <p>
             Spring Peepers (<em>Pseudacris crucifer</em>) are often the first
             frogs to call each year — sometimes while ice still edges the pond.
-            Males produce that iconic chorus by calling up to 13,500 times per
-            night. Because calling onset is tightly correlated with air
-            temperature and snowmelt timing, phenologists use it as a biological
-            marker for winter's end.
+            Males produce that chorus by calling up to 13,500 times per
+            night. The first-chorus date in any given location has shifted an
+            average of ten days earlier over the past fifty years, tracking the
+            same rise in spring air temperatures that has pushed maple syrup
+            harvest and cherry blossom dates earlier across the same region.
           </p>
           <p>
-            Their presence in a pond signals something equally important: the
-            water is fish-free, shallow enough to warm quickly, and surrounded
-            by intact terrestrial habitat. A Spring Peeper chorus is not just a
-            pleasant sound — it is audible evidence that the habitat system is
-            working.
+            A pond that hosts peepers in March was fish-free through winter,
+            shallow enough to warm quickly in spring, and surrounded by enough
+            terrestrial cover — leaf litter, bark, logs — for adults to have
+            overwintered and returned. Peepers cannot breed in water where fish
+            are present: a single introduction of goldfish or koi ends the
+            chorus permanently. When you hear them, it means those conditions held.
           </p>
         </section>
 
@@ -74,7 +79,7 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
                 />
                 <figcaption>
                   Each male Spring Peeper inflates its vocal sac to produce a call audible 1,000 feet away — extraordinary for an animal smaller than a quarter. The chorus of dozens of males creates the rising wall of sound that marks the genuine arrival of spring. The first night above 50°F in late February or March triggers the chorus.
-                  <span className="photo-credit"> Photo: Wildreturn · <a href="https://commons.wikimedia.org/wiki/File:Spring_Peeper.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Wildreturn · <a href="https://commons.wikimedia.org/wiki/File:Spring_Peeper.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -86,7 +91,7 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
         </section>
 
         <section aria-labelledby="threats-heading">
-          <h2 id="threats-heading">What threatens them: chemicals and wetland loss</h2>
+          <h2 id="threats-heading">Glyphosate, road salt, and the pond someone drained</h2>
           <p>
             Spring Peepers are IUCN Least Concern rangewide, but locally
             threatened wherever wetlands have been drained. Breeding populations
@@ -144,12 +149,12 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
         <section aria-labelledby="connection-heading">
           <h2 id="connection-heading">The peeper chorus is the habitat working</h2>
           <p>
-            A Camp Monarch homeowner who creates native wildflower gardens,
-            eliminates pesticides, preserves leaf litter, and installs a
-            fish-free water feature may be rewarded with a Spring Peeper chorus
-            by the third or fourth spring. That sound is the biological
-            confirmation that the restoration is real — not just aesthetically
-            pleasing but structurally functional.
+            A homeowner who creates native wildflower gardens, eliminates
+            pesticides, preserves leaf litter, and installs a fish-free water
+            feature may hear a Spring Peeper chorus for the first time by the
+            third or fourth spring. That sound means the water stayed fish-free,
+            the leaf litter held through winter, and nothing toxic reached the
+            drainage. The restoration worked.
           </p>
           <p>
             The same chemical-free, structurally layered habitat that supports
