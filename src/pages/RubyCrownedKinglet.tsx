@@ -38,11 +38,11 @@ export default function RubyCrownedKinglet({ onNavigate }: RubyCrownedKingletPro
           boreal spruce-fir forests of Canada where it breeds, depends partly on whether it finds any.
         </p>
         <p className="hero__lead">
-          The foraging style is the field mark most people notice before they notice the bird
-          itself: a blur of olive-green moving through the shrub layer faster than any bird its
-          size should be able to move. When it pauses, the white eye ring and two white wingbars
-          on the folded wing give it away. The ruby crown the bird is named for stays hidden
-          under surrounding olive feathers most of the time. You may never see it.
+          Six months later, the same species returns southbound through October — but the food
+          source that determines how long it stays is different. In fall, when cold nights shut
+          down insect activity, a yard with bayberry holds a kinglet for 3 to 7 days. A yard
+          without one holds it for 3 to 7 hours. Two migrations, two plant arguments, one
+          consistently underplanted yard.
         </p>
       </section>
 
@@ -95,6 +95,39 @@ export default function RubyCrownedKinglet({ onNavigate }: RubyCrownedKingletPro
           </p>
         </section>
 
+        <section aria-labelledby="bayberry-heading">
+          <h2 id="bayberry-heading">Bayberry wax, 50% fat, and a berry that holds into December</h2>
+          <p>
+            In October, when overnight temperatures drop below 45°F and insect flight nearly
+            stops, kinglets shift from hunting insects to eating berries. Most fall berries are
+            10 to 20% fat by dry weight. Bayberry berries — the small gray-white fruits on{' '}
+            <em>Morella pensylvanica</em> and <em>Morella caroliniensis</em> — are covered in a
+            thick, hard wax that is approximately 50% fat. The wax also resists microbial
+            breakdown, so bayberry berries persist on the shrub through November and into
+            December, long after softer berries have been consumed or rotted.
+          </p>
+          <p>
+            Most songbirds cannot digest this wax coating efficiently. Kinglets can. So can{' '}
+            <button className="link-button" onClick={() => onNavigate('yellow-rumped-warbler')}>
+              Yellow-rumped Warblers
+            </button>
+            , which are named in part for this dietary specialization. On cold October days,
+            a bayberry shrub loaded with ripe berries provides a dense, accessible fat source
+            at a moment when almost no other food is available. On warm afternoons when insect
+            activity resumes, kinglets leave the bayberry and return to hunting. A yard with
+            both native shrubs hosting overwintering insects and bayberry in fruit supports
+            both feeding modes as temperature changes through the day.
+          </p>
+          <p>
+            <em>Morella pensylvanica</em> (northern bayberry) grows into a dense multi-stemmed
+            shrub 5 to 10 feet tall. Male and female flowers occur on separate plants; berry
+            production requires a female plant with at least one male nearby for pollination.
+            Northern bayberry tolerates poor, sandy, or dry soils and spreads slowly by root
+            sprout, forming dense colonies in time. A single established female in fruit in
+            mid-October extends a kinglet&apos;s stopover from hours to days.
+          </p>
+        </section>
+
         <section aria-labelledby="ruby-crown-heading">
           <h2 id="ruby-crown-heading">The ruby crown stays flat — until another male lands in the same shrub</h2>
           <p>
@@ -144,41 +177,53 @@ export default function RubyCrownedKinglet({ onNavigate }: RubyCrownedKingletPro
           </figure>
           <ol className="step-list">
             <li>
-              <strong>Plant native shrubs that carry insects from late winter through early spring.</strong>{' '}
-              Serviceberries, native viburnums, native wild roses, and dogwoods break dormancy
-              early and support insect activity in March and April — the window when northbound
-              kinglets pass through. The caterpillar density on a native serviceberry or wild rose
-              is documented to be 40 to 100 times higher per unit of canopy area than on a
-              comparable non-native ornamental. Find species growing in your hardiness zone at{' '}
+              <strong>Plant bayberry — at least one female plant with a male nearby.</strong>{' '}
+              <em>Morella pensylvanica</em> (northern bayberry) and <em>Morella caroliniensis</em>{' '}
+              (southern bayberry) produce persistent, fat-rich berries that ripen in October and
+              hold through November. On cold October days when insect activity shuts down, bayberry
+              berries provide the only reliable fat source in most suburban yards. The same shrubs
+              serve the{' '}
+              <button className="link-button" onClick={() => onNavigate('yellow-rumped-warbler')}>
+                Yellow-rumped Warbler
+              </button>
+              {' '}through the same mechanism. Find species suited to your zone at{' '}
               <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
                 Find Plants Near Me
               </button>
               .
             </li>
             <li>
+              <strong>Plant native shrubs that carry insects from late winter through early spring.</strong>{' '}
+              Serviceberries, native viburnums, native wild roses, and dogwoods break dormancy
+              early and support insect activity in March and April — the window when northbound
+              kinglets pass through. The caterpillar density on a native serviceberry or wild rose
+              is documented to be 40 to 100 times higher per unit of canopy area than on a
+              comparable non-native ornamental.
+            </li>
+            <li>
               <strong>Do not prune shrubs in March or April.</strong>{' '}
               Branch tips pruned in late winter remove the overwintering insect eggs and spider
               egg sacs that migrating kinglets are searching for. Pruning that leaves clean bare
-              branches also eliminates the rough bark texture and dead-stem structure where
-              insects overwinter. If shrub pruning is necessary, do it in early March before
-              migration peaks, or wait until after May 15.
+              branches also eliminates the rough bark texture and dead-stem structure where insects
+              overwinter. If shrub pruning is necessary, do it in early March before migration
+              peaks, or wait until after May 15.
             </li>
             <li>
-              <strong>Leave dead stems and rough bark on native perennials and shrubs through winter.</strong>{' '}
-              Overwintering insect eggs, lacewing adults, and spider egg sacs concentrate on
-              rough surfaces: dead stems, loose bark, branch crevices. A garden tidied to bare
-              soil and clean cuts through fall and early spring removes the prey that kinglets,
-              chickadees, and nuthatches are scanning for in March and April. See what else
-              overwinters in garden debris at{' '}
+              <strong>Leave fallen leaves under and around shrubs through October and November.</strong>{' '}
+              Leaf litter under shrubs holds overwintering insect eggs, pupae, and adults at
+              temperatures that remain above freezing even when air drops below. On warm October
+              afternoons, kinglets drop into the leaf layer under shrubs to forage for
+              invertebrates. The same leaf layer hosts the overwintering firefly larvae covered
+              on the{' '}
               <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
                 Leave the Leaves
               </button>
-              .
+              {' '}page — the same action that benefits fireflies also keeps the kinglet&apos;s
+              October foraging habitat.
             </li>
             <li>
-              <strong>Reduce broad-spectrum insecticide use in April through May and September through October.</strong>{' '}
-              The two migration windows — northbound in April-May, southbound in September-October
-              — overlap with the two peak yard-treatment seasons for many homeowners. Insecticide
+              <strong>Reduce broad-spectrum insecticide use in April–May and September–October.</strong>{' '}
+              The two migration windows overlap with peak yard-treatment seasons. Insecticide
               applications that eliminate aphid colonies and caterpillar populations from shrubs
               during these periods remove the prey that migrating insectivores depend on during
               stopovers. The full picture is at{' '}
@@ -191,27 +236,28 @@ export default function RubyCrownedKinglet({ onNavigate }: RubyCrownedKingletPro
         </div>
 
         <section aria-labelledby="migration-heading">
-          <h2 id="migration-heading">April northbound, October southbound — your yard is on both routes</h2>
+          <h2 id="migration-heading">April northbound, October southbound — cold fronts move them both</h2>
           <p>
             Ruby-crowned Kinglets breed in the spruce-fir belt of the boreal forest, from
             southeastern Alaska east across Canada to Newfoundland, and south into the higher
             elevations of the Rocky Mountains. They winter along the Gulf Coast, in the
-            southwestern United States, and in Mexico. The migration routes connecting these
-            ranges pass through virtually every yard east of the Rockies.
+            southwestern United States, and in Mexico. The migration routes pass through
+            virtually every yard east of the Rockies, twice each year.
           </p>
           <p>
             The northbound window runs from late March through mid-May across most of the
             eastern and central United States. Birds arrive in the mid-Atlantic and Midwest
             in early to mid-April. The southbound window runs from late September through
-            mid-November. Some individuals winter as far north as the southern Great Lakes
-            region when food sources remain accessible.
+            mid-November, with peak passage from October 10 through November 10 in most of
+            the eastern flyways. Both movements are amplified by cold fronts — the morning
+            after a front passes through, migrants appear in numbers not seen the day before.
           </p>
           <p>
-            Stopovers typically last 2 to 7 days in a location with adequate food. In a yard
-            with native shrubs carrying insects in the range a 6-gram bird needs to refuel —
-            caterpillar eggs, aphids, small beetles — the bird stays long enough to rebuild
-            fat reserves before the next flight leg. In a yard with ornamental plantings and
-            trimmed shrubs, it passes through in hours.
+            Stopovers in a location with adequate food typically last 2 to 7 days — long enough
+            to rebuild the fat reserves needed for the next flight leg. In a yard where both the
+            spring insect layer (native shrubs in April) and the fall berry layer (bayberry in
+            October) are present, the same bird may stop twice in the same yard within six
+            months, once in each direction.
           </p>
         </section>
 
@@ -221,7 +267,7 @@ export default function RubyCrownedKinglet({ onNavigate }: RubyCrownedKingletPro
             The Ruby-crowned Kinglet is 3.5 to 4.5 inches long and weighs 5 to 10 grams
             depending on fat reserves. The body is olive-green above and whitish-gray below,
             with two white wingbars on the folded wing and a complete white eye ring. The bill
-            is fine and pointed. The tail is often cocked slightly upward while the bird forages.
+            is fine and pointed. The tail is often cocked slightly upward while foraging.
           </p>
           <p>
             The species most likely to be confused with the Ruby-crowned Kinglet in the eastern
@@ -232,10 +278,8 @@ export default function RubyCrownedKinglet({ onNavigate }: RubyCrownedKingletPro
             in eastern yards.
           </p>
           <p>
-            Male Ruby-crowned Kinglets in fresh spring plumage may show a faint yellow-green
-            wash on the flanks. Females are identical in field plumage except for the absence of
-            the red crown patch. Neither sex shows the striped face pattern of the Golden-crowned
-            Kinglet.
+            The call is a loud, scratchy <em>tsit</em> given nearly continuously during foraging —
+            loud enough that it locates the bird inside dense shrub before it is visible.
           </p>
         </section>
 
