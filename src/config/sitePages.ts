@@ -82,6 +82,7 @@ export const ALL_PAGE_SLUGS = [
   'american-kestrel',
   'brown-thrasher',
   'eastern-towhee',
+  'carolina-wren',
   'seasonal-calendar',
   'species-gallery',
   'habitat-transformation',
