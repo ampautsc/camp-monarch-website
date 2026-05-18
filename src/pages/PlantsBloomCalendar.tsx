@@ -31,7 +31,7 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       plantNeeds:
         'Abundant milkweed for caterpillars. High-energy nectar for adults preparing for migration.',
       yourAction:
-        'No mowing or herbicides. Let the milkweed grow. Provide mid-summer bloomers: bee balm, coneflowers, zinnias.',
+        'No mowing or herbicides. Let the milkweed grow. Provide mid-summer bloomers: wild bergamot, coneflowers.',
     },
     {
       season: 'Early Fall (September–October)',
@@ -55,6 +55,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
     observation: string
     page: Page
   }> = [
+    {
+      name: 'New Jersey Tea',
+      latinName: 'Ceanothus americanus',
+      bloomWindow: 'May–June',
+      observation:
+        'New Jersey Tea blooms before common milkweed — in May and June, when Mottled Duskywing skippers emerge and need nectar and a plant on which to lay their eggs. The larvae eat New Jersey Tea foliage and no other plant in the eastern US.',
+      page: 'new-jersey-tea',
+    },
     {
       name: 'Common Milkweed',
       latinName: 'Asclepias syriaca',
@@ -154,11 +162,12 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Seven natives, June to frost</h2>
+        <h2>Eight natives, May to frost</h2>
         <p>
-          These seven native plants open in sequence from June through late October, covering every
+          These eight native plants open in sequence from May through late October, covering every
           week that monarchs are present — as caterpillars, as breeding adults, and as migrants
-          fueling for Mexico.
+          fueling for Mexico — and providing larval host plants for specialist insects that depend
+          on each one.
         </p>
         {profilePlants.map((plant) => (
           <div key={plant.page} className="callout callout--green" style={{ marginBottom: '1rem' }}>
