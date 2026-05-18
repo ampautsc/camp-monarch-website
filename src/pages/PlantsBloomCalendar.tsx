@@ -64,6 +64,22 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       page: 'common-milkweed',
     },
     {
+      name: 'Wild Bergamot',
+      latinName: 'Monarda fistulosa',
+      bloomWindow: 'Late June–August',
+      observation:
+        'Anthophora montana provisions each nest cell with wild bergamot pollen and nothing else. If no Monarda is blooming within her foraging range during her July–August nesting window, those cells remain empty — she waits, and then the season ends.',
+      page: 'wild-bergamot',
+    },
+    {
+      name: 'Swamp Milkweed',
+      latinName: 'Asclepias incarnata',
+      bloomWindow: 'July–August',
+      observation:
+        'Swamp milkweed tolerates flooded roots in spring and gradual drying through summer — the conditions that kill Common Milkweed. A fifth-instar monarch caterpillar consumes roughly two full leaves per day; a patch of five to ten plants in a rain garden or low corner can support a full brood through pupation.',
+      page: 'swamp-milkweed',
+    },
+    {
       name: 'Purple Coneflower',
       latinName: 'Echinacea purpurea',
       bloomWindow: 'July–August',
@@ -138,9 +154,9 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Five natives, June to frost</h2>
+        <h2>Seven natives, June to frost</h2>
         <p>
-          These five native plants open in sequence from June through late October, covering every
+          These seven native plants open in sequence from June through late October, covering every
           week that monarchs are present — as caterpillars, as breeding adults, and as migrants
           fueling for Mexico.
         </p>
