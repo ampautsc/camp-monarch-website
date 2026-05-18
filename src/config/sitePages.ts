@@ -124,6 +124,7 @@ export const ALL_PAGE_SLUGS = [
   'virginia-bluebell',
   'buttonbush',
   'ironweed',
+  'partridge-pea',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
