@@ -27,9 +27,16 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Fireflies</h1>
         <p className="hero__lead">
-          A firefly spends two years as a larva in your soil before it emerges for a few weeks as an adult.
-          It needs darkness to find a mate and undisturbed ground to overwinter.
-          Modern yards provide neither. If you stopped seeing fireflies, the yard changed before the fireflies did.
+          Photinus pyralis, the most common firefly in eastern yards, flies a slow J-curve arc
+          and flashes once every 5.5 seconds. A female resting in the grass below waits for that
+          exact interval before answering with a single flash of her own, 2 seconds later.
+          A porch light 50 feet away raises the ambient brightness enough that she cannot
+          distinguish his pattern from the general glow. He flashes. She never sees him.
+        </p>
+        <p className="hero__lead">
+          The adults you see in June are the larvae that survived your yard last November.
+          Raked leaves, lawn pesticides, and outdoor lights are three decisions made inside
+          the property line that determine how many come back next summer.
         </p>
       </section>
 
