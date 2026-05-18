@@ -16,7 +16,7 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Wilson44691 · <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_sirtalis_Wooster.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons */}
+          {/* Photo: Wilson44691 · <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_sirtalis_Wooster.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons */}
           Photo: Wilson44691&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_sirtalis_Wooster.jpg" target="_blank" rel="noopener noreferrer">Public domain</a>
           &nbsp;via Wikimedia Commons
@@ -49,7 +49,7 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
             complete food web.
           </p>
           <p>
-            Garter snakes also sit at a critical junction in the food web,
+            Garter snakes also occupy a junction in the food web,
             connecting aquatic prey (frogs, small fish) to terrestrial prey
             (earthworms, voles) while serving as prey for Red-tailed Hawks,
             Great Blue Herons, raccoons, and Red Foxes. Removing this link
@@ -73,7 +73,7 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
                 />
                 <figcaption>
                   The garter snake finds prey entirely by chemosensory detection — its flickering tongue collects scent molecules and delivers them to a sensory organ in the roof of its mouth. An average adult consumes dozens of slugs, earthworms, and small rodents per season. It is one of the garden's most effective pest-control agents.
-                  <span className="photo-credit"> Photo: National Park Service · <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_parietalis.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: National Park Service · <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_parietalis.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -94,7 +94,7 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that help garter snakes now</h2>
+          <h2 style={{ marginTop: 0 }}>A south-facing rock pile, no rodenticide, and the patience to leave them alone</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves and garden debris on the ground" loading="lazy" />
