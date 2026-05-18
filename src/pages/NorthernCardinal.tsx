@@ -16,7 +16,7 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Male_northern_cardinal_in_Central_Park_(52612).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Male_northern_cardinal_in_Central_Park_(52612).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: Rhododendrites&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Male_northern_cardinal_in_Central_Park_(52612).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -63,7 +63,7 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
         </section>
 
         <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">What a cardinal family actually needs</h2>
+          <h2 id="biology-heading">Nestlings eat insects, not seeds — and systemic pesticides erase that food source</h2>
           <p>
             The Northern Cardinal is primarily a seed eater — sunflower seeds, safflower,
             cracked corn, wild berries. But nestlings are fed almost entirely on insects.
@@ -81,7 +81,7 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
                 />
                 <figcaption>
                   Cardinal pairs remain bonded through the breeding season — sometimes year-round. During courtship, the male feeds the female beak-to-beak, a behavior that evaluates both his foraging ability and his commitment. A yard without dense native shrubs for nesting privacy disrupts the sequence that follows.
-                  <span className="photo-credit"> Photo: Ken Thomas · <a href="https://commons.wikimedia.org/wiki/File:Northern_Cardinal_Pair-27527.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Ken Thomas · <a href="https://commons.wikimedia.org/wiki/File:Northern_Cardinal_Pair-27527.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -154,7 +154,7 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that help cardinals breed, not just visit</h2>
+          <h2 style={{ marginTop: 0 }}>A feeder for winter, tangled shrubs for nesting season, and a window that stops attacking its own reflection</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native wildflowers providing seeds and structure in a yard" loading="lazy" />
@@ -201,7 +201,7 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
         </div>
 
         <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The connection to monarchs</h2>
+          <h2 id="connection-heading">The native shrub border where cardinals nest in June anchors milkweed at its base</h2>
           <p>
             Northern Cardinals and Monarch Butterflies share habitat that is converging
             on a single answer: native shrubs, native wildflowers, and a landscape managed
@@ -212,7 +212,7 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
           </p>
           <p>
             This is not coincidence. Both species evolved in native plant communities; both
-            require the insects that native plants uniquely support; both are harmed by the
+            require the insect populations that establish only in native plant communities; both are harmed by the
             insecticide regimens common in managed suburban landscapes. A yard managed for
             monarchs — native plants present, pesticide use minimal, dense vegetation in the
             shrub layer — is a yard that supports cardinal breeding. What you grow for one,
