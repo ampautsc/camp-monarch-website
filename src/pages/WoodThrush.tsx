@@ -297,11 +297,11 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
             <button className="link-button" onClick={() => onNavigate('invasive-plants')}>
               Remove Invasive Plants
             </button>
-            . To see how floor, shrub, and canopy work as one system,{' '}
+            . See how the floor, shrub layer, and canopy a Wood Thrush needs simultaneously fit together as a spatial system in the{' '}
             <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
-              The Four Layers
+              Habitat Layers guide
             </button>
-            {' '}maps the full vertical structure your yard needs.
+            .
           </p>
         </div>
       </div>
