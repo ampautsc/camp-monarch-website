@@ -95,7 +95,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
 
         {/* Context — pre-existing grief needs a path (bta-005); don't just add more information */}
         <section aria-labelledby="context-heading">
-          <h2 id="context-heading">The situation, in plain terms</h2>
+          <h2 id="context-heading">Eighty percent decline since 1996 — milkweed loss is the measurable cause</h2>
           <p>
             The Eastern Monarch population has declined 80% since 1996.
             The primary cause is milkweed loss — habitat converted to agriculture and development.
@@ -110,9 +110,9 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
 
         {/* Five actions — numbered, specific, low-friction (bta-004, www-001) */}
         <section aria-labelledby="actions-heading">
-          <h2 id="actions-heading">Five things you can do this week</h2>
+          <h2 id="actions-heading">One patch planted, one sighting logged, and one neighbor told</h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-            If you’re starting from scratch, begin with #1. One action this season is a real contribution.
+            If you're starting from scratch, begin with #1. One action this season is a real contribution.
           </p>
           <ol className="step-list">
             {actions.map(a => (
@@ -157,7 +157,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
 
         {/* Track your sightings — place-specific engagement (bta-004) */}
         <div className="action-panel" style={{ marginTop: '2.5rem' }}>
-          <h2 style={{ marginTop: 0 }}>Track what you see</h2>
+          <h2 style={{ marginTop: 0 }}>Your 90-second sighting becomes open data that migration researchers use</h2>
           <p>
             Your observations are data. When you log a Monarch sighting, you are contributing to the count that researchers use to track the migration.
             iNaturalist is the citizen science platform that researchers rely on — every observation you submit becomes open data that conservation scientists can access.
@@ -179,7 +179,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
 
         {/* Resources — low friction, specific sources (www-013, bta-004) */}
         <section aria-labelledby="resources-heading" style={{ marginTop: '2.5rem' }}>
-          <h2 id="resources-heading">Resources to get started</h2>
+          <h2 id="resources-heading">Six organizations, six links — each goes to something specific</h2>
           <p>
             These are the organizations doing the most credible work on Monarch habitat.
             Each link goes to something specific you can do — not a homepage.
@@ -196,7 +196,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
 
         {/* The neighbor step — social action reduces collective action problem */}
         <section aria-labelledby="neighbor-heading">
-          <h2 id="neighbor-heading">The most underrated step</h2>
+          <h2 id="neighbor-heading">Your patch and a neighbor's patch begin to form a corridor</h2>
           <p>
             When you plant milkweed, your yard becomes a node in a habitat corridor.
             A corridor needs multiple nodes. One yard in isolation is valuable.
@@ -212,7 +212,7 @@ export default function TakeAction({ onNavigate }: TakeActionProps) {
 
         {/* Cross-link — inverted pyramid, keep them in the site (www-004) */}
         <section aria-labelledby="learn-heading">
-          <h2 id="learn-heading">Learn more</h2>
+          <h2 id="learn-heading">Where Monarchs come from, where they go, and what to plant for them</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginTop: '0.5rem' }}>
             <button
               onClick={() => { trackEvent('cta_click', 'take-action', 'learn-more-why-monarchs'); onNavigate('why-monarchs') }}
