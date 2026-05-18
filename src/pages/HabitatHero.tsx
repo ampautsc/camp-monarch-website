@@ -462,10 +462,10 @@ export default function HabitatHero({ onNavigate }: HabitatHeroProps) {
     <>
       <section className="hero">
         <div className="hero__eyebrow">Habitat Hero</div>
-        <h1>A monarch checks hundreds of plants before she lays a single egg. She needs milkweed — and most yards don't have any.</h1>
+        <h1>Request free milkweed and native plant seed for your yard.</h1>
         <p className="hero__lead">
-          Camp Monarch mails seed packets to homeowners who want to change that.
-          Tell us what your yard is like and we'll match you with the plants most likely to take hold.
+          Tell us what your yard is like and we'll match you to the packets Camp Monarch has on hand.
+          Milkweed for monarchs. Native nectar plants for everything that follows.
         </p>
       </section>
 
