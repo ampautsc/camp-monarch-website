@@ -49,6 +49,7 @@ const groups: NavGroup[] = [
         label: 'Plant Profiles',
         items: [
           { id: 'plants-milkweeds',      label: 'Milkweeds' },
+          { id: 'virginia-bluebell',     label: 'Virginia Bluebell' },
           { id: 'wild-columbine',        label: 'Wild Columbine' },
           { id: 'common-milkweed',       label: 'Common Milkweed' },
           { id: 'swamp-milkweed',        label: 'Swamp Milkweed' },
