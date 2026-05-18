@@ -102,6 +102,7 @@ export const ALL_PAGE_SLUGS = [
   'pesticide-guide',
   'water-for-wildlife',
   'leave-the-leaves',
+  'habitat-layers',
   'invasive-plants',
 ] as const
 
