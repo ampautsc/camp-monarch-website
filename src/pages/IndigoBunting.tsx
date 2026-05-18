@@ -16,7 +16,7 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Dan Pancamo · <a href="https://commons.wikimedia.org/wiki/File:Indigo_Bunting_by_Dan_Pancamo_4.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons */}
+          {/* Photo: Dan Pancamo · <a href="https://commons.wikimedia.org/wiki/File:Indigo_Bunting_by_Dan_Pancamo_4.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons */}
           Photo: Dan Pancamo&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Indigo_Bunting_by_Dan_Pancamo_4.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
           &nbsp;via Wikimedia Commons
@@ -54,7 +54,7 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
             and defend territory; females use camouflage to protect active nests.
             This dimorphism means most people only report seeing the males.
             When you find a plain brown bird in brushy habitat in summer, look
-            carefully: it may be a nesting female doing invisible, essential work.
+            carefully: it may be a nesting female incubating eggs and ferrying insects to chicks whose bones and feathers are still forming.
           </p>
         </section>
 
@@ -76,7 +76,7 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
                 />
                 <figcaption>
                   The male Indigo Bunting contains no blue pigment. The feathers have microstructures that refract and scatter light, producing vivid blue only in direct sun. In shadow, the male appears brown — identical to the female whose plain coloration evolved to keep her invisible on the nest.
-                  <span className="photo-credit"> Photo: Trisha Shears · <a href="https://commons.wikimedia.org/wiki/File:IndigoBunting.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Trisha Shears · <a href="https://commons.wikimedia.org/wiki/File:IndigoBunting.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -110,7 +110,7 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that help Indigo Buntings now</h2>
+          <h2 style={{ marginTop: 0 }}>Native shrubs at the yard edge, white millet in fall, and seed heads left standing into October</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Butterfly weed in bloom with orange flower clusters" loading="lazy" />
