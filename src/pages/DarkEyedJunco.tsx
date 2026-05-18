@@ -146,6 +146,28 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
           </p>
         </section>
 
+        <section aria-labelledby="neighbors-heading">
+          <h2 id="neighbors-heading">Related pages</h2>
+          <div className="neighbor-grid">
+            <button className="neighbor-card" onClick={() => onNavigate('american-tree-sparrow')}>
+              <span className="neighbor-name">American Tree Sparrow</span>
+              <span className="neighbor-note">Arrives the same week in October from subarctic nesting grounds; travels in mixed flocks with Dark-eyed Juncos through the same winter seed patches and leaf litter; the two species often forage within 20 feet of each other from November through March</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('little-bluestem')}>
+              <span className="neighbor-name">Little Bluestem</span>
+              <span className="neighbor-note">Its copper-red stalks hold fluffy seed heads from October through January — juncos cling to the standing stems and pull seeds directly, then drop to scratch through the fallen seeds below</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('prairie-dropseed')}>
+              <span className="neighbor-name">Prairie Dropseed</span>
+              <span className="neighbor-note">Native bunchgrass holding small seeds on fine stalks through fall and winter; juncos and American Tree Sparrows forage through the same stand in the same week</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('leave-the-leaves')}>
+              <span className="neighbor-name">Leave the Leaves</span>
+              <span className="neighbor-note">The intact leaf litter that juncos scratch through in January is the same layer sheltering overwintering moth pupae, beetle larvae, and native bee cocoons the spring food web depends on</span>
+            </button>
+          </div>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to build a winter yard that works for juncos and monarchs?</strong>{' '}
