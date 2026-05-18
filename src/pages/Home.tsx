@@ -206,8 +206,9 @@ export default function Home({ onNavigate }: HomeProps) {
       {/* HOOK — wonder first, then stakes. No explanation yet. (arch-page-as-argument-001) */}
       <section className="hero" style={{ background: `linear-gradient(rgba(26,46,26,0.82), rgba(26,46,26,0.82)), url('${HERO_PHOTO_URL}') center/cover no-repeat` }}>
         <div className="hero__eyebrow">Camp Monarch</div>
-        <h1>A monarch lays her eggs only on milkweed.<br />An estimated 850 million stems disappeared between 1999 and 2010.</h1>
+        <h1>Monarch caterpillars eat only milkweed.<br />That plant has nearly vanished from American farmland.</h1>
         <p className="hero__lead">
+          A monarch lays her eggs one at a time on milkweed leaves — the caterpillar that hatches will eat nothing else.<br />
           In the 1990s, hundreds of millions of monarchs reached Mexico each fall.<sup><a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer" className="cite">[1]</a></sup><br />
           Last winter, about 60 million did.<sup><a href="https://xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noreferrer" className="cite">[2]</a></sup>
         </p>
