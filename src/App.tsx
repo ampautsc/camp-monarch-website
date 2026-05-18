@@ -1,1 +1,209 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBJMThuZXh0UHJvdmlkZXIgfSBmcm9tICdyZWFjdC1pMThuZXh0JwppbXBvcnQgaTE4biBmcm9tICcuL2kxOG4nCmltcG9ydCBOYXYgZnJvbSAnLi9jb21wb25lbnRzL05hdicKaW1wb3J0IEZvb3RlciBmcm9tICcuL2NvbXBvbmVudHMvRm9vdGVyJwppbXBvcnQgRmVlZGJhY2tXaWRnZXQgZnJvbSAnLi9jb21wb25lbnRzL0ZlZWRiYWNrV2lkZ2V0JwppbXBvcnQgSG9tZSBmcm9tICcuL3BhZ2VzL0hvbWUnCmltcG9ydCBXaHlNb25hcmNocyBmcm9tICcuL3BhZ2VzL1doeU1vbmFyY2hzJwppbXBvcnQgUGxhbnRNaWxrd2VlZCBmcm9tICcuL3BhZ2VzL1BsYW50TWlsa3dlZWQnCmltcG9ydCBUaGVNaWdyYXRpb24gZnJvbSAnLi9wYWdlcy9UaGVNaWdyYXRpb24nCmltcG9ydCBUYWtlQWN0aW9uIGZyb20gJy4vcGFnZXMvVGFrZUFjdGlvbicKaW1wb3J0IENob29zZUFQbGFudCBmcm9tICcuL3BhZ2VzL0Nob29zZUFQbGFudCcKaW1wb3J0IE5hdGl2ZVBsYW50TmVhck1lIGZyb20gJy4vcGFnZXMvTmF0aXZlUGxhbnROZWFyTWUnCmltcG9ydCBNb25hcmNoTGlmZSBmcm9tICcuL3BhZ2VzL01vbmFyY2hMaWZlJwppbXBvcnQgUmFpc2VBTW9uYXJjaCBmcm9tICcuL3BhZ2VzL1JhaXNlQU1vbmFyY2gnCmltcG9ydCBUaGVGaXJzdFllYXIgZnJvbSAnLi9wYWdlcy9UaGVGaXJzdFllYXInCmltcG9ydCBGQVEgZnJvbSAnLi9wYWdlcy9GQVEnCmltcG9ydCBMb2dBU2lnaHRpbmcgZnJvbSAnLi9wYWdlcy9Mb2dBU2lnaHRpbmcnCmltcG9ydCBXYXlzdGF0aW9uR3VpZGUgZnJvbSAnLi9wYWdlcy9XYXlzdGF0aW9uR3VpZGUnCmltcG9ydCBGaXJlZmxpZXMgZnJvbSAnLi9wYWdlcy9GaXJlZmxpZXMnCmltcG9ydCBCb3hUdXJ0bGVzIGZyb20gJy4vcGFnZXMvQm94VHVydGxlcycKaW1wb3J0IE5hdGl2ZUJlZXMgZnJvbSAnLi9wYWdlcy9OYXRpdmVCZWVzJwppbXBvcnQgVGFsa2luZ1BvaW50cyBmcm9tICcuL3BhZ2VzL1RhbGtpbmdQb2ludHMnCmltcG9ydCBHcmF5VHJlZUZyb2dzIGZyb20gJy4vcGFnZXMvR3JheVRyZWVGcm9ncycKaW1wb3J0IERvd255V29vZHBlY2tlciBmcm9tICcuL3BhZ2VzL0Rvd255V29vZHBlY2tlcicKaW1wb3J0IEJhbHRpbW9yZU9yaW9sZSBmcm9tICcuL3BhZ2VzL0JhbHRpbW9yZU9yaW9sZScKaW1wb3J0IE5vcnRoZXJuQ2FyZGluYWwgZnJvbSAnLi9wYWdlcy9Ob3J0aGVybkNhcmRpbmFsJwppbXBvcnQgRWFzdGVybkJsdWViaXJkIGZyb20gJy4vcGFnZXMvRWFzdGVybkJsdWViaXJkJwppbXBvcnQgUGxhbnRzIGZyb20gJy4vcGFnZXMvUGxhbnRzJwppbXBvcnQgUGxhbnRzR2V0dGluZ1N0YXJ0ZWQgZnJvbSAnLi9wYWdlcy9QbGFudHNHZXR0aW5nU3RhcnRlZCcKaW1wb3J0IFBsYW50c0hvc3RQbGFudHMgZnJvbSAnLi9wYWdlcy9QbGFudHNIb3N0UGxhbnRzJwppbXBvcnQgUGxhbnRzQmxvb21DYWxlbmRhciBmcm9tICcuL3BhZ2VzL1BsYW50c0Jsb29tQ2FsZW5kYXInCmltcG9ydCBQbGFudENvbW11bml0aWVzIGZyb20gJy4vcGFnZXMvUGxhbnRDb21tdW5pdGllcycKaW1wb3J0IFBsYW50Q29tbW9uTWlzdGFrZXMgZnJvbSAnLi9wYWdlcy9QbGFudENvbW1vbk1pc3Rha2VzJwppbXBvcnQgUGxhbnRzTGlicmFyeSBmcm9tICcuL3BhZ2VzL1BsYW50c0xpYnJhcnknCmltcG9ydCBQbGFudHNGaW5kZXIgZnJvbSAnLi9wYWdlcy9QbGFudHNGaW5kZXInCmltcG9ydCBQbGFudHNCeUZhbWlseSBmcm9tICcuL3BhZ2VzL1BsYW50c0J5RmFtaWx5JwppbXBvcnQgUGxhbnRzQnlQdXJwb3NlIGZyb20gJy4vcGFnZXMvUGxhbnRzQnlQdXJwb3NlJwppbXBvcnQgUGxhbnRzQnlDb25kaXRpb25zIGZyb20gJy4vcGFnZXMvUGxhbnRzQnlDb25kaXRpb25zJwppbXBvcnQgUGxhbnRzTWlsa3dlZWRzIGZyb20gJy4vcGFnZXMvUGxhbnRzTWlsa3dlZWRzJwppbXBvcnQgUGxhbnRzU3RhcnRlclBsYW50cyBmcm9tICcuL3BhZ2VzL1BsYW50c1N0YXJ0ZXJQbGFudHMnCmltcG9ydCBQbGFudHNTcGVjaWVzSW5kZXggZnJvbSAnLi9wYWdlcy9QbGFudHNTcGVjaWVzSW5kZXgnCmltcG9ydCBCbGFja0NhcHBlZENoaWNrYWRlZSBmcm9tICcuL3BhZ2VzL0JsYWNrQ2FwcGVkQ2hpY2thZGVlJwppbXBvcnQgUnVieVRocm9hdGVkSHVtbWluZ2JpcmQgZnJvbSAnLi9wYWdlcy9SdWJ5VGhyb2F0ZWRIdW1taW5nYmlyZCcKaW1wb3J0IEFtZXJpY2FuR29sZGZpbmNoIGZyb20gJy4vcGFnZXMvQW1lcmljYW5Hb2xkZmluY2gnCmltcG9ydCBBbWVyaWNhblJvYmluIGZyb20gJy4vcGFnZXMvQW1lcmljYW5Sb2JpbicKaW1wb3J0IEluZGlnb0J1bnRpbmcgZnJvbSAnLi9wYWdlcy9JbmRpZ29CdW50aW5nJwppbXBvcnQgVGlnZXJTd2FsbG93dGFpbCBmcm9tICcuL3BhZ2VzL1RpZ2VyU3dhbGxvd3RhaWwnCmltcG9ydCBHcmVhdFNwYW5nbGVkRnJpdGlsbGFyeSBmcm9tICcuL3BhZ2VzL0dyZWF0U3BhbmdsZWRGcml0aWxsYXJ5JwppbXBvcnQgR3JlZW5EYXJuZXIgZnJvbSAnLi9wYWdlcy9HcmVlbkRhcm5lcicKaW1wb3J0IEdhcnRlclNuYWtlIGZyb20gJy4vcGFnZXMvR2FydGVyU25ha2UnCmltcG9ydCBEYXJrRXllZEp1bmNvIGZyb20gJy4vcGFnZXMvRGFya0V5ZWRKdW5jbycKaW1wb3J0IEVBU3Rlcm5DaGlwbXVuayBmcm9tICcuL3BhZ2VzL0Vhc3Rlcm5DaGlwbXVuaycKaW1wb3J0IFNwcmluZ1BlZXBlciBmcm9tICcuL3BhZ2VzL1NwcmluZ1BlZXBlcicKaW1wb3J0IEFtZXJpY2FuVG9hZCBmcm9tICcuL3BhZ2VzL0FtZXJpY2FuVG9hZCcKaW1wb3J0IExpdHRsZUJyb3duQmF0IGZyb20gJy4vcGFnZXMvTGl0dGxlQnJvd25CYXQnCmltcG9ydCBXb29kVGhydXNoIGZyb20gJy4vcGFnZXMvV29vZFRocnVzaCcKaW1wb3J0IEVBU3Rlcm5TY3JlZWNoT3dsIGZyb20gJy4vcGFnZXMvRWFzdGVyblNjcmVlY2hPd2wnCmltcG9ydCBQb2x5cGhlbXVzTW90aCBmcm9tICcuL3BhZ2VzL1BvbHlwaGVtdXNNb3RoJwppbXBvcnQgTHVuYU1vdGggZnJvbSAnLi9wYWdlcy9MdW5hTW90aCcKaW1wb3J0IENvbW1vbk5pZ2h0aGF3ayBmcm9tICcuL3BhZ2VzL0NvbW1vbk5pZ2h0aGF3aycKaW1wb3J0IENlY3JvcGlhTW90aCBmcm9tICcuL3BhZ2VzL0NlY3JvcGlhTW90aCcKaW1wb3J0IFZpcmdpbmlhT3Bvc3N1bSBmcm9tICcuL3BhZ2VzL1ZpcmdpbmlhT3Bvc3N1bScKaW1wb3J0IEFtZXJpY2FuQnVtYmxlQmVlIGZyb20gJy4vcGFnZXMvQW1lcmljYW5CdW1ibGVCZWUnCmltcG9ydCBDaGltbmV5U3dpZnQgZnJvbSAnLi9wYWdlcy9DaGltbmV5U3dpZnQnCmltcG9ydCBQdXJwbGVNYXJ0aW4gZnJvbSAnLi9wYWdlcy9QdXJwbGVNYXJ0aW4nCmltcG9ydCBSZWRUYWlsZWRIYXdrIGZyb20gJy4vcGFnZXMvUmVkVGFpbGVkSGF3aycKaW1wb3J0IEVBU3Rlcm5NZWFkb3dsYXJrIGZyb20gJy4vcGFnZXMvRWFzdGVybk1lYWRvd2xhcmsnCmltcG9ydCBBbWVyaWNhbktlc3RyZWwgZnJvbSAnLi9wYWdlcy9BbWVyaWNhbktlc3RyZWwnCmltcG9ydCBCcm93blRocmFzaGVyIGZyb20gJy4vcGFnZXMvQnJvd25UaHJhc2hlcicKaW1wb3J0IEVBU3Rlcm5Ub3doZWUgZnJvbSAnLi9wYWdlcy9FYXN0ZXJuVG93aGVlJwppbXBvcnQgQ2Fyb2xpbmFXcmVuIGZyb20gJy4vcGFnZXMvQ2Fyb2xpbmFXcmVuJwppbXBvcnQgR3JheUNhdGJpcmQgZnJvbSAnLi9wYWdlcy9HcmF5Q2F0YmlyZCcKaW1wb3J0IE1vdXJuaW5nRG92ZSBmcm9tICcuL3BhZ2VzL01vdXJuaW5nRG92ZScKaW1wb3J0IFNvbmdTcGFycm93IGZyb20gJy4vcGFnZXMvU29uZ1NwYXJyb3cnCmltcG9ydCBXaWxkVHVya2V5IGZyb20gJy4vcGFnZXMvV2lsZFR1cmtleScKaW1wb3J0IFllbGxvd1J1bXBlZFdhcmJsZXIgZnJvbSAnLi9wYWdlcy9ZZWxsb3dSdW1wZWRXYXJibGVyJwppbXBvcnQgU2Vhc29uYWxDYWxlbmRhciBmcm9tICcuL3BhZ2VzL1NlYXNvbmFsQ2FsZW5kYXInCmltcG9ydCBTcGVjaWVzR2FsbGVyeSBmcm9tICcuL3BhZ2VzL1NwZWNpZXNHYWxsZXJ5JwppbXBvcnQgSGFiaXRhdFRyYW5zZm9ybWF0aW9uIGZyb20gJy4vcGFnZXMvSGFiaXRhdFRyYW5zZm9ybWF0aW9uJwppbXBvcnQgSE9BR3VpZGUgZnJvbSAnLi9wYWdlcy9IT0FHdWlkZScKaW1wb3J0IEhhYml0YXRTY29yZSBmcm9tICcuL3BhZ2VzL0hhYml0YXRTY29yZScKaW1wb3J0IEhhYml0YXRIZXJvIGZyb20gJy4vcGFnZXMvSGFiaXRhdEhlcm8nCmltcG9ydCBTcHJpbmdDaGVja2xpc3QgZnJvbSAnLi9wYWdlcy9TcHJpbmdDaGVja2xpc3QnCmltcG9ydCBQZXN0aWNpZGVHdWlkZSBmcm9tICcuL3BhZ2VzL1Blc3RpY2lkZUd1aWRlJwppbXBvcnQgV2F0ZXJGb3JXaWxkbGlmZSBmcm9tICcuL3BhZ2VzL1dhdGVyRm9yV2lsZGxpZmUnCmltcG9ydCBMZWF2ZVRoZUxlYXZlcyBmcm9tICcuL3BhZ2VzL0xlYXZlVGhlTGVhdmVzJwppbXBvcnQgSW52YXNpdmVQbGFudHMgZnJvbSAnLi9wYWdlcy9JbnZhc2l2ZVBsYW50cycKaW1wb3J0IHsgdHJhY2tFdmVudCB9IGZyb20gJy4vbGliL2FuYWx5dGljcycKaW1wb3J0IHsgQUxMX1BBR0VfU0xVR1MsIHR5cGUgUGFnZVNsdWcgfSBmcm9tICcuL2NvbmZpZy9zaXRlUGFnZXMnCgpleHBvcnQgdHlwZSBQYWdlID0gUGFnZVNsdWcKCmZ1bmN0aW9uIEFwcCgpIHsKICBjb25zdCBbcGFnZSwgc2V0UGFnZV0gPSB1c2VTdGF0ZTxQYWdlPignaG9tZScpCgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBjb25zdCBzbHVnID0gd2luZG93LmxvY2F0aW9uLmhhc2gucmVwbGFjZSgnIycsICcnKSBhcyBQYWdlCiAgICBpZiAoc2x1ZyAmJiBBTExfUEFHRV9TTFVHUy5pbmNsdWRlcyhzbHVnIGFzIFBhZ2VTbHVnKSkgewogICAgICBzZXRQYWdlKHNsdWcgYXMgUGFnZSkKICAgIH0KICB9LCBbXSkKCiAgY29uc3QgbmF2aWdhdGVUbyA9IChuZXdQYWdlOiBQYWdlKSA9PiB7CiAgICBzZXRQYWdlKG5ld1BhZ2UpCiAgICB3aW5kb3cubG9jYXRpb24uaGFzaCA9IG5ld1BhZ2UKICAgIHdpbmRvdy5zY3JvbGxUbyh7IHRvcDogMCwgYmVoYXZpb3I6ICdzbW9vdGgnIH0pCiAgICB0cmFja0V2ZW50KCdwYWdlX3ZpZXcnLCB7IHBhZ2U6IG5ld1BhZ2UgfSkKICB9CgogIGNvbnN0IHJlbmRlclBhZ2UgPSAoKSA9PiB7CiAgICBzd2l0Y2ggKHBhZ2UpIHsKICAgICAgY2FzZSAnaG9tZSc6ICAgICAgICAgICAgICAgcmV0dXJuIDxIb21lIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3doeS1tb25hcmNocyc6ICAgICAgIHJldHVybiA8V2h5TW9uYXJjaHMgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncGxhbnQtbWlsa3dlZWQnOiAgICAgcmV0dXJuIDxQbGFudE1pbGt3ZWVkIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3RoZS1taWdyYXRpb24nOiAgICAgIHJldHVybiA8VGhlTWlncmF0aW9uIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3Rha2UtYWN0aW9uJzogICAgICAgIHJldHVybiA8VGFrZUFjdGlvbiBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdjaG9vc2UtYS1wbGFudCc6ICAgICByZXR1cm4gPENob29zZUFQbGFudCBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICduYXRpdmUtcGxhbnQtbmVhci1tZSc6IHJldHVybiA8TmF0aXZlUGxhbnROZWFyTWUgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnbW9uYXJjaC1saWZlJzogICAgICAgcmV0dXJuIDxNb25hcmNoTGlmZSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdyYWlzZS1hLW1vbmFyY2gnOiAgICByZXR1cm4gPFJhaXNlQU1vbmFyY2ggb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAndGhlLWZpcnN0LXllYXInOiAgICAgcmV0dXJuIDxUaGVGaXJzdFllYXIgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnZmFxJzogICAgICAgICAgICAgICAgcmV0dXJuIDxGQVEgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnbG9nLWEtc2lnaHRpbmcnOiAgICAgcmV0dXJuIDxMb2dBU2lnaHRpbmcgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnd2F5c3RhdGlvbi1ndWlkZSc6ICAgcmV0dXJuIDxXYXlzdGF0aW9uR3VpZGUgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnZmlyZWZsaWVzJzogICAgICAgICAgcmV0dXJuIDxGaXJlZmxpZXMgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnYm94LXR1cnRsZXMnOiAgICAgICAgcmV0dXJuIDxCb3hUdXJ0bGVzIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ25hdGl2ZS1iZWVzJzogICAgICAgIHJldHVybiA8TmF0aXZlQmVlcyBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICd0YWxraW5nLXBvaW50cyc6ICAgICByZXR1cm4gPFRhbGtpbmdQb2ludHMgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnZ3JheS10cmVlLWZyb2dzJzogICAgcmV0dXJuIDxHcmF5VHJlZUZyb2dzIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ2Rvd255LXdvb2RwZWNrZXInOiAgIHJldHVybiA8RG93bnlXb29kcGVja2VyIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ2JhbHRpbW9yZS1vcmlvbGUnOiAgIHJldHVybiA8QmFsdGltb3JlT3Jpb2xlIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ25vcnRoZXJuLWNhcmRpbmFsJzogIHJldHVybiA8Tm9ydGhlcm5DYXJkaW5hbCBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdlYXN0ZXJuLWJsdWViaXJkJzogICByZXR1cm4gPEVhc3Rlcm5CbHVlYmlyZCBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdwbGFudHMnOiAgICAgICAgICAgICByZXR1cm4gPFBsYW50cyBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdwbGFudHMtZmluZGVyJzogICAgICByZXR1cm4gPFBsYW50c0ZpbmRlciBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdwbGFudHMtYnktZmFtaWx5JzogICByZXR1cm4gPFBsYW50c0J5RmFtaWx5IG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3BsYW50cy1ieS1wdXJwb3NlJzogIHJldHVybiA8UGxhbnRzQnlQdXJwb3NlIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3BsYW50cy1ieS1jb25kaXRpb25zJzogcmV0dXJuIDxQbGFudHNCeUNvbmRpdGlvbnMgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncGxhbnRzLW1pbGt3ZWVkcyc6ICAgcmV0dXJuIDxQbGFudHNNaWxrd2VlZHMgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncGxhbnRzLXN0YXJ0ZXItcGxhbnRzJzogcmV0dXJuIDxQbGFudHNTdGFydGVyUGxhbnRzIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3BsYW50cy1zcGVjaWVzLWluZGV4JzogcmV0dXJuIDxQbGFudHNTcGVjaWVzSW5kZXggb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncGxhbnRzLWdldHRpbmctc3RhcnRlZCc6IHJldHVybiA8UGxhbnRzR2V0dGluZ1N0YXJ0ZWQgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncGxhbnRzLWhvc3QtcGxhbnRzJzogIHJldHVybiA8UGxhbnRzSG9zdFBsYW50cyBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdwbGFudHMtYmxvb20tY2FsZW5kYXInOiByZXR1cm4gPFBsYW50c0Jsb29tQ2FsZW5kYXIgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncGxhbnRzLWNvbW11bml0aWVzJzogIHJldHVybiA8UGxhbnRDb21tdW5pdGllcyBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdwbGFudHMtY29tbW9uLW1pc3Rha2VzJzogcmV0dXJuIDxQbGFudENvbW1vbk1pc3Rha2VzIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3BsYW50cy1saWJyYXJ5JzogICAgICByZXR1cm4gPFBsYW50c0xpYnJhcnkgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnYmxhY2stY2FwcGVkLWNoaWNrYWRlZSc6IHJldHVybiA8QmxhY2tDYXBwZWRDaGlja2FkZWUgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncnVieS10aHJvYXRlZC1odW1taW5nYmlyZCc6IHJldHVybiA8UnVieVRocm9hdGVkSHVtbWluZ2JpcmQgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnYW1lcmljYW4tZ29sZGZpbmNoJzogcmV0dXJuIDxBbWVyaWNhbkdvbGRmaW5jaCBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdhbWVyaWNhbi1yb2Jpbic6IHJldHVybiA8QW1lcmljYW5Sb2JpbiBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdpbmRpZ28tYnVudGluZyc6IHJldHVybiA8SW5kaWdvQnVudGluZyBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICd0aWdlci1zd2FsbG93dGFpbCc6IHJldHVybiA8VGlnZXJTd2FsbG93dGFpbCBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdncmVhdC1zcGFuZ2xlZC1mcml0aWxsYXJ5JzogcmV0dXJuIDxHcmVhdFNwYW5nbGVkRnJpdGlsbGFyeSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdncmVlbi1kYXJuZXInOiByZXR1cm4gPEdyZWVuRGFybmVyIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ2dhcnRlci1zbmFrZSc6IHJldHVybiA8R2FydGVyU25ha2Ugb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnZGFyay1leWVkLWp1bmNvJzogcmV0dXJuIDxEYXJrRXllZEp1bmNvIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ2Vhc3Rlcm4tY2hpcG11bmsnOiByZXR1cm4gPEVhc3Rlcm5DaGlwbXVuayBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdzcHJpbmctcGVlcGVyJzogcmV0dXJuIDxTcHJpbmdQZWVwZXIgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAndG9hZCc6IHJldHVybiA8QW1lcmljYW5Ub2FkIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ2xpdHRsZS1icm93bi1iYXQnOiByZXR1cm4gPExpdHRsZUJyb3duQmF0IG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3dvb2QtdGhydXNoJzogcmV0dXJuIDxXb29kVGhydXNoIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ2Vhc3Rlcm4tc2NyZWVjaC1vd2wnOiByZXR1cm4gPEVhc3Rlcm5TY3JlZWNoT3dsIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3BvbHlwaGVtdXMtbW90aCc6IHJldHVybiA8UG9seXBoZW11c01vdGggb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnbHVuYS1tb3RoJzogcmV0dXJuIDxMdW5hTW90aCBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdjb21tb24tbmlnaHRoYXdrJzogcmV0dXJuIDxDb21tb25OaWdodGhhd2sgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnY2Vjcm9waWEtbW90aCc6IHJldHVybiA8Q2Vjcm9waWFNb3RoIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3ZpcmdpbmlhLW9wb3NzdW0nOiByZXR1cm4gPFZpcmdpbmlhT3Bvc3N1bSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdhbWVyaWNhbi1idW1ibGUtYmVlJzogcmV0dXJuIDxBbWVyaWNhbkJ1bWJsZUJlZSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdjaGltbmV5LXN3aWZ0JzogcmV0dXJuIDxDaGltbmV5U3dpZnQgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncHVycGxlLW1hcnRpbic6IHJldHVybiA8UHVycGxlTWFydGluIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3JlZC10YWlsZWQtaGF3ayc6IHJldHVybiA8UmVkVGFpbGVkSGF3ayBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdlYXN0ZXJuLW1lYWRvd2xhcmsnOiByZXR1cm4gPEVhc3Rlcm5NZWFkb3dsYXJrIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ2FtZXJpY2FuLWtlc3RyZWwnOiByZXR1cm4gPEFtZXJpY2FuS2VzdHJlbCBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdicm93bi10aHJhc2hlcic6IHJldHVybiA8QnJvd25UaHJhc2hlciBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdlYXN0ZXJuLXRvd2hlZSc6IHJldHVybiA8RWFzdGVyblRvd2hlZSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdjYXJvbGluYS13cmVuJzogIHJldHVybiA8Q2Fyb2xpbmFXcmVuIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ2dyYXktY2F0YmlyZCc6ICAgcmV0dXJuIDxHcmF5Q2F0YmlyZCBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdtb3VybmluZy1kb3ZlJzogIHJldHVybiA8TW91cm5pbmdEb3ZlIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGNhc2UgJ3Nvbmctc3BhcnJvdyc6ICAgcmV0dXJuIDxTb25nU3BhcnJvdyBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICd3aWxkLXR1cmtleSc6ICAgIHJldHVybiA8V2lsZFR1cmtleSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICd5ZWxsb3ctcnVtcGVkLXdhcmJsZXInOiByZXR1cm4gPFllbGxvd1J1bXBlZFdhcmJsZXIgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnc2Vhc29uYWwtY2FsZW5kYXInOiByZXR1cm4gPFNlYXNvbmFsQ2FsZW5kYXIgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnc3BlY2llcy1nYWxsZXJ5JzogcmV0dXJuIDxTcGVjaWVzR2FsbGVyeSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdoYWJpdGF0LXRyYW5zZm9ybWF0aW9uJzogcmV0dXJuIDxIYWJpdGF0VHJhbnNmb3JtYXRpb24gb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnaG9hLWd1aWRlJzogcmV0dXJuIDxIT0FHdWlkZSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdoYWJpdGF0LWhlcm8nOiAgICAgICAgIHJldHVybiA8SGFiaXRhdEhlcm8gb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnaGFiaXRhdC1zY29yZSc6ICAgICAgICByZXR1cm4gPEhhYml0YXRTY29yZSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdzcHJpbmctY2hlY2tsaXN0JzogICAgcmV0dXJuIDxTcHJpbmdDaGVja2xpc3Qgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAncGVzdGljaWRlLWd1aWRlJzogICAgIHJldHVybiA8UGVzdGljaWRlR3VpZGUgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgICAgY2FzZSAnd2F0ZXItZm9yLXdpbGRsaWZlJzogIHJldHVybiA8V2F0ZXJGb3JXaWxkbGlmZSBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdsZWF2ZS10aGUtbGVhdmVzJzogICAgcmV0dXJuIDxMZWF2ZVRoZUxlYXZlcyBvbk5hdmlnYXRlPXtuYXZpZ2F0ZVRvfSAvPgogICAgICBjYXNlICdpbnZhc2l2ZS1wbGFudHMnOiAgICByZXR1cm4gPEludmFzaXZlUGxhbnRzIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIGRlZmF1bHQ6ICAgICAgICAgICAgICAgICAgICByZXR1cm4gPEhvbWUgb25OYXZpZ2F0ZT17bmF2aWdhdGVUb30gLz4KICAgIH0KICB9CgogIHJldHVybiAoCiAgICA8STE4bmV4dFByb3ZpZGVyIGkxOG49e2kxOG59PgogICAgICA8TmF2IGN1cnJlbnQ9e3BhZ2V9IG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIDxtYWluPntyZW5kZXJQYWdlKCl9PC9tYWluPgogICAgICA8Rm9vdGVyIG9uTmF2aWdhdGU9e25hdmlnYXRlVG99IC8+CiAgICAgIDxGZWVkYmFja1dpZGdldCBwYWdlPXtwYWdlfSAvPgogICAgPC9JMThuZXh0UHJvdmlkZXI+CiAgKQp9CgpleHBvcnQgZGVmYXVsdCBBcHAK
+import { useState, useEffect } from 'react'
+import { I18nextProvider } from 'react-i18next'
+import i18n from './i18n'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import FeedbackWidget from './components/FeedbackWidget'
+import Home from './pages/Home'
+import WhyMonarchs from './pages/WhyMonarchs'
+import PlantMilkweed from './pages/PlantMilkweed'
+import TheMigration from './pages/TheMigration'
+import TakeAction from './pages/TakeAction'
+import ChooseAPlant from './pages/ChooseAPlant'
+import NativePlantNearMe from './pages/NativePlantNearMe'
+import MonarchLife from './pages/MonarchLife'
+import RaiseAMonarch from './pages/RaiseAMonarch'
+import TheFirstYear from './pages/TheFirstYear'
+import FAQ from './pages/FAQ'
+import LogASighting from './pages/LogASighting'
+import WaystationGuide from './pages/WaystationGuide'
+import Fireflies from './pages/Fireflies'
+import BoxTurtles from './pages/BoxTurtles'
+import NativeBees from './pages/NativeBees'
+import TalkingPoints from './pages/TalkingPoints'
+import GrayTreeFrogs from './pages/GrayTreeFrogs'
+import DownyWoodpecker from './pages/DownyWoodpecker'
+import BaltimoreOriole from './pages/BaltimoreOriole'
+import NorthernCardinal from './pages/NorthernCardinal'
+import EasternBluebird from './pages/EasternBluebird'
+import Plants from './pages/Plants'
+import PlantsGettingStarted from './pages/PlantsGettingStarted'
+import PlantsHostPlants from './pages/PlantsHostPlants'
+import PlantsBloomCalendar from './pages/PlantsBloomCalendar'
+import PlantCommunities from './pages/PlantCommunities'
+import PlantCommonMistakes from './pages/PlantCommonMistakes'
+import PlantsLibrary from './pages/PlantsLibrary'
+import PlantsFinder from './pages/PlantsFinder'
+import PlantsByFamily from './pages/PlantsByFamily'
+import PlantsByPurpose from './pages/PlantsByPurpose'
+import PlantsByConditions from './pages/PlantsByConditions'
+import PlantsMilkweeds from './pages/PlantsMilkweeds'
+import PlantsStarterPlants from './pages/PlantsStarterPlants'
+import PlantsSpeciesIndex from './pages/PlantsSpeciesIndex'
+import BlackCappedChickadee from './pages/BlackCappedChickadee'
+import RubyThroatedHummingbird from './pages/RubyThroatedHummingbird'
+import AmericanGoldfinch from './pages/AmericanGoldfinch'
+import AmericanRobin from './pages/AmericanRobin'
+import IndigoBunting from './pages/IndigoBunting'
+import TigerSwallowtail from './pages/TigerSwallowtail'
+import GreatSpangledFritillary from './pages/GreatSpangledFritillary'
+import GreenDarner from './pages/GreenDarner'
+import GarterSnake from './pages/GarterSnake'
+import DarkEyedJunco from './pages/DarkEyedJunco'
+import EasternChipmunk from './pages/EasternChipmunk'
+import SpringPeeper from './pages/SpringPeeper'
+import AmericanToad from './pages/AmericanToad'
+import LittleBrownBat from './pages/LittleBrownBat'
+import WoodThrush from './pages/WoodThrush'
+import EasternScreechOwl from './pages/EasternScreechOwl'
+import PolyphemusMoth from './pages/PolyphemusMoth'
+import LunaMoth from './pages/LunaMoth'
+import CommonNighthawk from './pages/CommonNighthawk'
+import CecropiaMoth from './pages/CecropiaMoth'
+import VirginiaOpossum from './pages/VirginiaOpossum'
+import AmericanBumbleBee from './pages/AmericanBumbleBee'
+import ChimneySwift from './pages/ChimneySwift'
+import PurpleMartin from './pages/PurpleMartin'
+import RedTailedHawk from './pages/RedTailedHawk'
+import EasternMeadowlark from './pages/EasternMeadowlark'
+import AmericanKestrel from './pages/AmericanKestrel'
+import BrownThrasher from './pages/BrownThrasher'
+import EasternTowhee from './pages/EasternTowhee'
+import CarolinaWren from './pages/CarolinaWren'
+import GrayCatbird from './pages/GrayCatbird'
+import MourningDove from './pages/MourningDove'
+import SongSparrow from './pages/SongSparrow'
+import WildTurkey from './pages/WildTurkey'
+import YellowRumpedWarbler from './pages/YellowRumpedWarbler'
+import SeasonalCalendar from './pages/SeasonalCalendar'
+import SpeciesGallery from './pages/SpeciesGallery'
+import HabitatTransformation from './pages/HabitatTransformation'
+import HOAGuide from './pages/HOAGuide'
+import HabitatScore from './pages/HabitatScore'
+import HabitatHero from './pages/HabitatHero'
+import SpringChecklist from './pages/SpringChecklist'
+import PesticideGuide from './pages/PesticideGuide'
+import WaterForWildlife from './pages/WaterForWildlife'
+import LeaveTheLeaves from './pages/LeaveTheLeaves'
+import InvasivePlants from './pages/InvasivePlants'
+import { trackEvent } from './lib/analytics'
+import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
+
+export type Page = PageSlug
+
+function App() {
+  const [page, setPage] = useState<Page>('home')
+
+  useEffect(() => {
+    const slug = window.location.hash.replace('#', '') as Page
+    if (slug && ALL_PAGE_SLUGS.includes(slug as PageSlug)) {
+      setPage(slug as Page)
+    }
+  }, [])
+
+  const navigateTo = (newPage: Page) => {
+    setPage(newPage)
+    window.location.hash = newPage
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    trackEvent('page_view', { page: newPage })
+  }
+
+  const renderPage = () => {
+    switch (page) {
+      case 'home':               return <Home onNavigate={navigateTo} />
+      case 'why-monarchs':       return <WhyMonarchs onNavigate={navigateTo} />
+      case 'plant-milkweed':     return <PlantMilkweed onNavigate={navigateTo} />
+      case 'the-migration':      return <TheMigration onNavigate={navigateTo} />
+      case 'take-action':        return <TakeAction onNavigate={navigateTo} />
+      case 'choose-a-plant':     return <ChooseAPlant onNavigate={navigateTo} />
+      case 'native-plant-near-me': return <NativePlantNearMe onNavigate={navigateTo} />
+      case 'monarch-life':       return <MonarchLife onNavigate={navigateTo} />
+      case 'raise-a-monarch':    return <RaiseAMonarch onNavigate={navigateTo} />
+      case 'the-first-year':     return <TheFirstYear onNavigate={navigateTo} />
+      case 'faq':                return <FAQ onNavigate={navigateTo} />
+      case 'log-a-sighting':     return <LogASighting onNavigate={navigateTo} />
+      case 'waystation-guide':   return <WaystationGuide onNavigate={navigateTo} />
+      case 'fireflies':          return <Fireflies onNavigate={navigateTo} />
+      case 'box-turtles':        return <BoxTurtles onNavigate={navigateTo} />
+      case 'native-bees':        return <NativeBees onNavigate={navigateTo} />
+      case 'talking-points':     return <TalkingPoints onNavigate={navigateTo} />
+      case 'gray-tree-frogs':    return <GrayTreeFrogs onNavigate={navigateTo} />
+      case 'downy-woodpecker':   return <DownyWoodpecker onNavigate={navigateTo} />
+      case 'baltimore-oriole':   return <BaltimoreOriole onNavigate={navigateTo} />
+      case 'northern-cardinal':  return <NorthernCardinal onNavigate={navigateTo} />
+      case 'eastern-bluebird':   return <EasternBluebird onNavigate={navigateTo} />
+      case 'plants':             return <Plants onNavigate={navigateTo} />
+      case 'plants-finder':      return <PlantsFinder onNavigate={navigateTo} />
+      case 'plants-by-family':   return <PlantsByFamily onNavigate={navigateTo} />
+      case 'plants-by-purpose':  return <PlantsByPurpose onNavigate={navigateTo} />
+      case 'plants-by-conditions': return <PlantsByConditions onNavigate={navigateTo} />
+      case 'plants-milkweeds':   return <PlantsMilkweeds onNavigate={navigateTo} />
+      case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo} />
+      case 'plants-species-index': return <PlantsSpeciesIndex onNavigate={navigateTo} />
+      case 'plants-getting-started': return <PlantsGettingStarted onNavigate={navigateTo} />
+      case 'plants-host-plants':  return <PlantsHostPlants onNavigate={navigateTo} />
+      case 'plants-bloom-calendar': return <PlantsBloomCalendar onNavigate={navigateTo} />
+      case 'plants-communities':  return <PlantCommunities onNavigate={navigateTo} />
+      case 'plants-common-mistakes': return <PlantCommonMistakes onNavigate={navigateTo} />
+      case 'plants-library':      return <PlantsLibrary onNavigate={navigateTo} />
+      case 'black-capped-chickadee': return <BlackCappedChickadee onNavigate={navigateTo} />
+      case 'ruby-throated-hummingbird': return <RubyThroatedHummingbird onNavigate={navigateTo} />
+      case 'american-goldfinch': return <AmericanGoldfinch onNavigate={navigateTo} />
+      case 'american-robin': return <AmericanRobin onNavigate={navigateTo} />
+      case 'indigo-bunting': return <IndigoBunting onNavigate={navigateTo} />
+      case 'tiger-swallowtail': return <TigerSwallowtail onNavigate={navigateTo} />
+      case 'great-spangled-fritillary': return <GreatSpangledFritillary onNavigate={navigateTo} />
+      case 'green-darner': return <GreenDarner onNavigate={navigateTo} />
+      case 'garter-snake': return <GarterSnake onNavigate={navigateTo} />
+      case 'dark-eyed-junco': return <DarkEyedJunco onNavigate={navigateTo} />
+      case 'eastern-chipmunk': return <EasternChipmunk onNavigate={navigateTo} />
+      case 'spring-peeper': return <SpringPeeper onNavigate={navigateTo} />
+      case 'toad': return <AmericanToad onNavigate={navigateTo} />
+      case 'little-brown-bat': return <LittleBrownBat onNavigate={navigateTo} />
+      case 'wood-thrush': return <WoodThrush onNavigate={navigateTo} />
+      case 'eastern-screech-owl': return <EasternScreechOwl onNavigate={navigateTo} />
+      case 'polyphemus-moth': return <PolyphemusMoth onNavigate={navigateTo} />
+      case 'luna-moth': return <LunaMoth onNavigate={navigateTo} />
+      case 'common-nighthawk': return <CommonNighthawk onNavigate={navigateTo} />
+      case 'cecropia-moth': return <CecropiaMoth onNavigate={navigateTo} />
+      case 'virginia-opossum': return <VirginiaOpossum onNavigate={navigateTo} />
+      case 'american-bumble-bee': return <AmericanBumbleBee onNavigate={navigateTo} />
+      case 'chimney-swift': return <ChimneySwift onNavigate={navigateTo} />
+      case 'purple-martin': return <PurpleMartin onNavigate={navigateTo} />
+      case 'red-tailed-hawk': return <RedTailedHawk onNavigate={navigateTo} />
+      case 'eastern-meadowlark': return <EasternMeadowlark onNavigate={navigateTo} />
+      case 'american-kestrel': return <AmericanKestrel onNavigate={navigateTo} />
+      case 'brown-thrasher': return <BrownThrasher onNavigate={navigateTo} />
+      case 'eastern-towhee': return <EasternTowhee onNavigate={navigateTo} />
+      case 'carolina-wren':  return <CarolinaWren onNavigate={navigateTo} />
+      case 'gray-catbird':   return <GrayCatbird onNavigate={navigateTo} />
+      case 'mourning-dove':  return <MourningDove onNavigate={navigateTo} />
+      case 'song-sparrow':   return <SongSparrow onNavigate={navigateTo} />
+      case 'wild-turkey':    return <WildTurkey onNavigate={navigateTo} />
+      case 'yellow-rumped-warbler': return <YellowRumpedWarbler onNavigate={navigateTo} />
+      case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
+      case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
+      case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
+      case 'hoa-guide': return <HOAGuide onNavigate={navigateTo} />
+      case 'habitat-hero':         return <HabitatHero onNavigate={navigateTo} />
+      case 'habitat-score':        return <HabitatScore onNavigate={navigateTo} />
+      case 'spring-checklist':    return <SpringChecklist onNavigate={navigateTo} />
+      case 'pesticide-guide':     return <PesticideGuide onNavigate={navigateTo} />
+      case 'water-for-wildlife':  return <WaterForWildlife onNavigate={navigateTo} />
+      case 'leave-the-leaves':    return <LeaveTheLeaves onNavigate={navigateTo} />
+      case 'invasive-plants':    return <InvasivePlants onNavigate={navigateTo} />
+      default:                    return <Home onNavigate={navigateTo} />
+    }
+  }
+
+  return (
+    <I18nextProvider i18n={i18n}>
+      <Nav current={page} onNavigate={navigateTo} />
+      <main>{renderPage()}</main>
+      <Footer onNavigate={navigateTo} />
+      <FeedbackWidget page={page} />
+    </I18nextProvider>
+  )
+}
+
+export default App
