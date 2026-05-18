@@ -234,7 +234,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* THE ASK — one primary action, specifically named. Answers "how do I start?" */}
         <section aria-labelledby="help-heading" style={{ marginTop: '2.5rem' }}>
-          <h2 id="help-heading">Monarch caterpillars eat only milkweed. Adults need nectar for a 2,500-mile fall flight. Planting both makes a yard useful at both ends of their year.</h2>
+          <h2 id="help-heading">Monarchs breed in the Midwest, migrate through your county, and overwinter in Mexico — the corridor runs through your yard whether you notice it or not.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '1rem' }}>
 
             <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
@@ -280,7 +280,7 @@ export default function Home({ onNavigate }: HomeProps) {
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Talk about it</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                Most people don't know the population has dropped 80%. Habitat is a corridor. A conversation with a neighbor matters.
+                Most people don't know the population has dropped 80%. Two yards with milkweed make a corridor. One yard with milkweed makes an island. A conversation with a neighbor turns an island into a corridor segment.
               </p>
               <button
                 className="hero__cta"
@@ -392,7 +392,7 @@ export default function Home({ onNavigate }: HomeProps) {
             border: '1px solid rgba(249, 115, 22, 0.24)',
           }}
         >
-          <h2 style={{ marginTop: 0 }}>Every observation logged on iNaturalist becomes open migration data.</h2>
+          <h2 style={{ marginTop: 0 }}>Each sighting logged on iNaturalist becomes open data for researchers tracking which migration corridors are still working.</h2>
           <p>
             <strong style={{ color: 'var(--monarch-orange)' }}>{formatSightings(monarchSightings)} Monarch sightings</strong>{' '}
             have been logged on iNaturalist in the United States this month.
