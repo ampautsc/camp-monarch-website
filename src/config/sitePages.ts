@@ -86,6 +86,7 @@ export const ALL_PAGE_SLUGS = [
   'carolina-wren',
   'gray-catbird',
   'mourning-dove',
+  'song-sparrow',
   'seasonal-calendar',
   'species-gallery',
   'habitat-transformation',
