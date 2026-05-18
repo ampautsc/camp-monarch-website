@@ -55,6 +55,7 @@ const groups: NavGroup[] = [
           { id: 'purple-coneflower',     label: 'Purple Coneflower' },
           { id: 'joe-pye-weed',          label: 'Joe Pye Weed' },
           { id: 'new-england-aster',     label: 'New England Aster' },
+          { id: 'wild-bergamot',         label: 'Wild Bergamot' },
         ],
       },
     ],
