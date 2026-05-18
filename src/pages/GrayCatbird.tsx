@@ -229,7 +229,12 @@ export default function GrayCatbird({ onNavigate }: GrayCatbirdProps) {
             </button>{' '}
             overwinter in the leaf litter at the base of those shrubs. The same dense native
             planting that brings a catbird in May supports a community of species through
-            all four seasons. Start the shrub layer at{' '}
+            all four seasons. To see how the shrub layer connects to the floor below and the
+            canopy above &mdash; and why the distance between them matters &mdash; read{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              The Four Layers
+            </button>
+            . Start the shrub layer at{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a Plant
             </button>
