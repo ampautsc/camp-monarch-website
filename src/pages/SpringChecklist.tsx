@@ -330,10 +330,9 @@ export default function SpringChecklist({ onNavigate }: SpringChecklistProps) {
             Why spring matters
           </p>
           <p style={{ color: '#444', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
-            Monarchs left their Mexican overwintering sites in March. The leading edge of the spring
-            migration is moving through Texas and Oklahoma right now — arriving in the Midwest in
-            3 to 5 weeks. Native plants planted today will be established and blooming when they
-            arrive. The window is now.
+            The spring migration moves through Texas and Oklahoma in March and April, reaching
+            the Midwest by May. Monarchs arriving now will look for milkweed to lay their eggs on.
+            Native plants already in the ground are ready for them. The window is open.
           </p>
         </div>
       )}
