@@ -195,6 +195,24 @@ export default function GreatSpangledFritillary({ onNavigate }: GreatSpangledFri
             {' '}that serve both species from June through September.
           </p>
         </div>
+
+        <section aria-labelledby="connections-heading">
+          <h2 id="connections-heading">Related pages</h2>
+          <div className="neighbor-grid">
+            <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
+              <span className="neighbor-name">Leonard's Skipper</span>
+              <span className="neighbor-note">Flies August to September — the window that opens just as the fritillary season closes; both species overwinter as larvae in the ground layer through winter</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('joe-pye-weed')}>
+              <span className="neighbor-name">Joe-Pye Weed</span>
+              <span className="neighbor-note">Opens mid-July through September; fritillary adults nectar on it during the same window they are flying and laying their fall eggs</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('ironweed')}>
+              <span className="neighbor-name">Ironweed</span>
+              <span className="neighbor-note">Opens in August alongside goldenrod; named in the same late-summer native flowers where fritillaries and monarchs both nectar</span>
+            </button>
+          </div>
+        </section>
       </div>
     </>
   )
