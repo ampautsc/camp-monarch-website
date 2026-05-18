@@ -165,7 +165,7 @@ export default function WildTurkey({ onNavigate }: WildTurkeyProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things Wild Turkeys need from your yard</h2>
+          <h2 style={{ marginTop: 0 }}>Leaf litter intact through spring, dense native shrubs in the back corners, and every mature oak kept</h2>
 
           <figure className="species-content-photo">
             <img
