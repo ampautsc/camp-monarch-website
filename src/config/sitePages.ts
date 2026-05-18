@@ -113,6 +113,7 @@ export const ALL_PAGE_SLUGS = [
   'ovenbird',
   'canada-goldenrod',
   'purple-coneflower',
+  'joe-pye-weed',
   'common-milkweed',
 ] as const
 
