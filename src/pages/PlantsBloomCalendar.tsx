@@ -128,6 +128,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       page: 'purple-coneflower',
     },
     {
+      name: 'Partridge Pea',
+      latinName: 'Chamaecrista fasciculata',
+      bloomWindow: 'July–September',
+      observation:
+        'Partridge Pea carries nectar-producing glands on its leaf stems — outside the flowers — that attract ants, which then patrol the foliage and drive away smaller herbivores. Cloudless Sulphur caterpillars eat Partridge Pea leaves while the ant guards are actively patrolling them. The caterpillar shifts body color to match what it is eating: green on leaves, yellow on flowers. Partridge Pea is also a nitrogen-fixing annual that self-seeds, returning to the same bare, sunny spot each May without replanting.',
+      page: 'partridge-pea',
+    },
+    {
       name: 'Joe Pye Weed',
       latinName: 'Eutrochium purpureum',
       bloomWindow: 'August–September',
@@ -202,9 +210,9 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Thirteen natives, March to frost</h2>
+        <h2>Fourteen natives, March to frost</h2>
         <p>
-          These thirteen native plants open in sequence from March through late October, covering
+          These fourteen native plants open in sequence from March through late October, covering
           every week that monarchs are present — as caterpillars, as breeding adults, and as
           migrants fueling for Mexico — and providing nectar and larval host plants for specialist
           insects that depend on each one.
