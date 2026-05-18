@@ -146,7 +146,7 @@ export default function AmericanKestrel({ onNavigate }: AmericanKestrelProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that help American Kestrels</h2>
+          <h2 style={{ marginTop: 0 }}>Nest box, open ground, no rodenticide, and one report to the Partnership</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img
