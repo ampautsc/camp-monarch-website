@@ -296,7 +296,12 @@ export default function RubyCrownedKinglet({ onNavigate }: RubyCrownedKingletPro
             </button>
             {' '}forages year-round in the same branches for the same overwintering insect eggs
             and pupae. What all three require from the shrub layer is food — insects that native
-            plants carry and non-native ornamentals do not. See the full community at{' '}
+            plants carry and non-native ornamentals do not. See why the shrub layer is the
+            most commonly absent of the four vertical zones in the{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers guide
+            </button>
+            . See the full community at{' '}
             <button className="link-button" onClick={() => onNavigate('species-gallery')}>
               Species Gallery
             </button>
