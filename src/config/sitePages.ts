@@ -119,6 +119,7 @@ export const ALL_PAGE_SLUGS = [
   'swamp-milkweed',
   'wild-bergamot',
   'new-jersey-tea',
+  'wild-columbine',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
