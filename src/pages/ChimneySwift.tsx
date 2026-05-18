@@ -273,6 +273,10 @@ export default function ChimneySwift({ onNavigate }: ChimneySwiftProps) {
             <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
               Pesticides &amp; Your Habitat guide
             </button>
+            , see how the edge airspace the swift hunts is produced by the three layers below it in the{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers guide
+            </button>
             , and meet every other species sharing your airspace in the{' '}
             <button className="link-button" onClick={() => onNavigate('species-gallery')}>
               Species Gallery
