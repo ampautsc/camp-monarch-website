@@ -16,7 +16,7 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Wolfgang Wander · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech_Owl.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          {/* Photo: Wolfgang Wander · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech_Owl.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
           Photo: Wolfgang Wander&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech_Owl.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
@@ -89,7 +89,7 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
                 />
                 <figcaption>
                   The Screech Owl's bark-patterned plumage is camouflage so effective that the owl can roost in a tree cavity opening in broad daylight and go unnoticed. It uses the same cavity for roosting, storing cached prey, and nesting. Remove the dead tree with a cavity and you remove its pantry, bedroom, and nursery simultaneously.
-                  <span className="photo-credit"> Photo: Derek Bakken · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech-Owl.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Derek Bakken · <a href="https://commons.wikimedia.org/wiki/File:Eastern_Screech-Owl.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -119,7 +119,7 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
         </section>
 
         <section aria-labelledby="habitat-heading">
-          <h2 id="habitat-heading">What they need from a yard</h2>
+          <h2 id="habitat-heading">The cavity they cannot make on their own</h2>
           <p>
             Eastern Screech Owls are habitat generalists — they survive in
             woodland edges, suburban parks, mature residential lots, stream
@@ -140,12 +140,11 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
             roosting, not just for spring nesting.
           </p>
           <p>
-            Artificial light at night is a meaningful deterrent. Screech Owls
-            avoid bright illumination while hunting — it disrupts prey detection
-            and exposes the owl to Great Horned Owls and Red-tailed Hawks that
-            will kill them. A yard with motion-activated lighting used only when
-            needed is dramatically more hospitable than a yard with all-night
-            illumination near trees and shrub edges.
+            Screech Owls avoid bright illumination while hunting — it disrupts
+            prey detection and exposes the owl to Great Horned Owls and
+            Red-tailed Hawks that will kill them. A yard with motion-activated
+            lighting used only when needed is dramatically more hospitable than
+            a yard with all-night illumination near trees and shrub edges.
           </p>
         </section>
 
