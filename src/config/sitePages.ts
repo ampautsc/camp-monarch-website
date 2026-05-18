@@ -37,6 +37,7 @@ export const ALL_PAGE_SLUGS = [
   'talking-points',
   'gray-tree-frogs',
   'downy-woodpecker',
+  'northern-flicker',
   'baltimore-oriole',
   'northern-cardinal',
   'eastern-bluebird',
