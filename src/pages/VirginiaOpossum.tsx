@@ -40,9 +40,10 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
             The Virginia Opossum (<em>Didelphis virginiana</em>) is the sole
             representative of the marsupial order on the North American continent.
             Its lineage predates the extinction of the non-avian dinosaurs — the
-            opossum body plan is over 70 million years old and has changed
-            remarkably little. Its 50 teeth — more than any other North American
-            land mammal — are a relic of that ancient ancestry.
+            opossum body plan has been distinct for over 70 million years, and the
+            skeletal structure it carried then is the structure it carries now.
+            Its 50 teeth — more than any other North American land mammal — are
+            a relic of that ancient ancestry.
           </p>
           <p>
             After a gestation of just 13 days, newborns the size of a honeybee
@@ -149,8 +150,7 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
             is very little to sustain them.
           </p>
           <p>
-            They are also remarkably resistant to snake venom. Opossums can
-            survive bites from copperheads, cottonmouths, and several
+            Opossums can survive bites from copperheads, cottonmouths, and several
             rattlesnake species, and will eat venomous snakes when
             encountered. Researchers have identified a peptide in opossum
             blood serum that neutralizes pit viper venom — work that may
@@ -159,7 +159,7 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that support Virginia Opossums</h2>
+          <h2 style={{ marginTop: 0 }}>A brush pile, no rodenticides, fresh water at ground level, and leaf litter standing through winter</h2>
           <figure className="species-content-photo species-content-photo--left">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Leaf_litter_Scot%27s_Pine_Forest.jpg/960px-Leaf_litter_Scot%27s_Pine_Forest.jpg"
