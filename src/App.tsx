@@ -98,6 +98,7 @@ import Buttonbush from './pages/Buttonbush'
 import Ironweed from './pages/Ironweed'
 import PartridgePea from './pages/PartridgePea'
 import GoldenAlexanders from './pages/GoldenAlexanders'
+import PrairieDropseed from './pages/PrairieDropseed'
 import SeasonalCalendar from './pages/SeasonalCalendar'
 import SpeciesGallery from './pages/SpeciesGallery'
 import HabitatTransformation from './pages/HabitatTransformation'
@@ -240,6 +241,7 @@ export default function App() {
       case 'ironweed':         return <Ironweed onNavigate={navigateTo} />
       case 'partridge-pea':    return <PartridgePea onNavigate={navigateTo} />
       case 'golden-alexanders': return <GoldenAlexanders onNavigate={navigateTo} />
+      case 'prairie-dropseed':  return <PrairieDropseed onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
