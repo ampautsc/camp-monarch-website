@@ -138,7 +138,7 @@ export default function GrayCatbird({ onNavigate }: GrayCatbirdProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that keep catbirds nesting in your yard</h2>
+          <h2 style={{ marginTop: 0 }}>No spring pruning before mid-July, one unpruned native shrub, and fruit left on the branch through October</h2>
 
           <figure className="species-content-photo">
             <img
