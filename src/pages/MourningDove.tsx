@@ -124,7 +124,7 @@ export default function MourningDove({ onNavigate }: MourningDoveProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that keep mourning doves feeding in your yard</h2>
+          <h2 style={{ marginTop: 0 }}>Native seed-head plants standing through winter, bare ground near seeds, and one unpruned native shrub</h2>
 
           <figure className="species-content-photo">
             <img
