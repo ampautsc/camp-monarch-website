@@ -60,6 +60,7 @@ export const ALL_PAGE_SLUGS = [
   'american-robin',
   'indigo-bunting',
   'tiger-swallowtail',
+  'great-spangled-fritillary',
   'green-darner',
   'garter-snake',
   'dark-eyed-junco',
