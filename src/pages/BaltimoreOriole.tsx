@@ -16,7 +16,7 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: TonyCastro · <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Oriole-_dorsum.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: TonyCastro · <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Oriole-_dorsum.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: TonyCastro&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Baltimore_Oriole-_dorsum.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -41,7 +41,7 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
 
       <div className="page">
         <section aria-labelledby="indicator-heading">
-          <h2 id="indicator-heading">What the orange means</h2>
+          <h2 id="indicator-heading">A 24% decline since 1966, at both ends of a 2,000-mile migration</h2>
           <p>
             The Baltimore Oriole (<em>Icterus galbula</em>) is the state bird of Maryland and
             one of the most visually recognizable songbirds in North America. It is also
@@ -88,7 +88,7 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
                 />
                 <figcaption>
                   The pendant nest is engineered over several days by the female alone — plant fibers, bark strips, and grapevine strands woven into a hanging pouch that stretches as nestlings grow. The drooping tips of American elms provided ideal anchors for this architecture. Dutch elm disease removed those anchors from most suburbs in a single generation.
-                  <span className="photo-credit"> Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Baltimore_oriole_nest_(64055).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Baltimore_oriole_nest_(64055).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -115,8 +115,8 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
           <p>
             Baltimore Orioles eat dark-colored fruits — cherries, elderberries, mulberries,
             serviceberries — nectar from tubular flowers, and caterpillars and other insects
-            during the breeding season. The caterpillar protein is critical for nestlings and
-            cannot be replaced by feeders. A yard without native trees and shrubs providing
+            during the breeding season. Nestlings require caterpillar protein for development,
+            and no feeder can supply it. A yard without native trees and shrubs providing
             insect habitat cannot sustain an oriole family through the summer no matter how
             many jelly feeders are out.
           </p>
@@ -130,7 +130,7 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that bring Baltimore Orioles back</h2>
+          <h2 style={{ marginTop: 0 }}>Grape jelly by May 1, native elderberry, tall pendant trees, and no systemic pesticides during nesting season</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Garden bird bath with stone basin" loading="lazy" />
@@ -193,7 +193,7 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
         </section>
 
         <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The connection to monarchs</h2>
+          <h2 id="connection-heading">Two species that just crossed the Gulf, sharing the same elderberry and the same pesticide-free yard</h2>
           <p>
             The same May morning that a monarch arrives to nectar on milkweed in a
             Camp Monarch yard, a Baltimore Oriole may visit the elderberry planted
