@@ -16,7 +16,7 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Ivar Leidus · <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: Ivar Leidus · <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: Ivar Leidus&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -38,7 +38,7 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
 
       <div className="page">
         <section aria-labelledby="nb-who-heading">
-          <h2 id="nb-who-heading">Who is out there</h2>
+          <h2 id="nb-who-heading">Mulch, turf, and the 70% that live underground</h2>
           <p>
             Approximately 70% of North American native bee species nest in the ground.
             A ground-nesting bee tunnels into bare or sparsely vegetated soil, provisions each cell
@@ -54,7 +54,7 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
                 />
                 <figcaption>
                   The Eastern Carpenter Bee is not a honeybee — it lives alone, bores nest galleries in soft wood, and raises a small brood without workers or a queen. Seventy percent of North America's 4,000 native bee species are solitary ground-nesters or wood-nesters. A yard covered entirely in turf or landscape fabric provides no habitat for the majority of native pollinators.
-                  <span className="photo-credit"> Photo: Polinizador · <a href="https://commons.wikimedia.org/wiki/File:Xylocopa_virginica.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Polinizador · <a href="https://commons.wikimedia.org/wiki/File:Xylocopa_virginica.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -66,9 +66,14 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
             because it keeps pollinating long after the specialists are gone.
           </p>
           <p>
-            Native bees are responsible for pollinating a significant portion of wild plants
-            and many crops that honeybees do not effectively service — including blueberries, cranberries,
-            squash, and tomatoes, which require buzz pollination that honeybees cannot perform.
+            Some flowering plants seal their pollen inside tube-shaped anthers that open only when
+            vibrated at a specific resonant frequency. Bumblebees and many solitary native bee species
+            achieve this by temporarily disconnecting their flight muscles from their wings and vibrating
+            them at around 400 Hz — a behavior called sonication. The vibration shakes loose pollen that
+            stays locked inside the anther under any gentler contact. Honeybees do not sonicate; they
+            scrape pollen from flowers where it is already exposed. Blueberries, cranberries, tomatoes,
+            and squash all require sonication to set a full crop, which is why commercial tomato
+            greenhouses rent bumblebee colonies — not honeybee hives.
           </p>
         </section>
 
