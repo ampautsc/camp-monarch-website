@@ -256,6 +256,14 @@ export default function CedarWaxwing({ onNavigate }: CedarWaxwingProps) {
               fall and draw waxwings along with other species. Pairs naturally with winterberry
               in any yard where drainage is slow.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('winterberry-holly')}>
+                Winterberry Holly
+              </button>
+              {' — '}Native deciduous holly; red berries hold through January on bare stems
+              in wet-edge sites — the last food source in the landscape when everything else
+              has been stripped.
+            </li>
           </ul>
         </section>
       </div>
