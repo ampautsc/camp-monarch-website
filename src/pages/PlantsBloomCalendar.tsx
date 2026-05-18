@@ -136,6 +136,14 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       page: 'joe-pye-weed',
     },
     {
+      name: 'Ironweed',
+      latinName: 'Vernonia fasciculata',
+      bloomWindow: 'August–September',
+      observation:
+        'Ironweed carries no ray florets — each flower head is a compact cluster of 15 to 35 disc florets, each one a narrow purple tube. The color is the deepest in the late-summer native palette, uninterrupted by any ray fringe. A monarch nectaring on an Ironweed cluster in August or September lands on the flat top of the flower head and works across it, probing one floret at a time. Ironweed opens earlier than aster and in some years before peak goldenrod, extending the fall refueling window for migrants by two to three weeks.',
+      page: 'ironweed',
+    },
+    {
       name: 'Canada Goldenrod',
       latinName: 'Solidago canadensis',
       bloomWindow: 'Late August–October',
@@ -194,9 +202,9 @@ export default function PlantsBloomCalendar({ onNavigate }: PlantsBloomCalendarP
       </section>
 
       <section className="content-section">
-        <h2>Twelve natives, March to frost</h2>
+        <h2>Thirteen natives, March to frost</h2>
         <p>
-          These twelve native plants open in sequence from March through late October, covering
+          These thirteen native plants open in sequence from March through late October, covering
           every week that monarchs are present — as caterpillars, as breeding adults, and as
           migrants fueling for Mexico — and providing nectar and larval host plants for specialist
           insects that depend on each one.
