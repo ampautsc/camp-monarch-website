@@ -90,6 +90,7 @@ export const ALL_PAGE_SLUGS = [
   'yellow-rumped-warbler',
   'wild-turkey',
   'eastern-phoebe',
+  'yellow-warbler',
   'seasonal-calendar',
   'species-gallery',
   'habitat-transformation',
