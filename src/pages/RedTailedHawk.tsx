@@ -42,7 +42,7 @@ export default function RedTailedHawk({ onNavigate }: RedTailedHawkProps) {
           <p>
             <em>Buteo jamaicensis</em> is a large buteo — a broad-winged, broad-tailed soaring
             hawk built for open country hunting. The adult weighs one and a half to three and a
-            half pounds, with a wingspan of 43 to 58 inches. Females are significantly larger
+            half pounds, with a wingspan of 43 to 58 inches. Females are roughly a third heavier
             than males, a pattern called reversed sexual size dimorphism that is common in
             birds of prey. The diagnostic field marks are the white chest with a dark belly band
             of streaked brown, and — in adults — the brick-red tail that reflects in sunlight.
@@ -148,7 +148,7 @@ export default function RedTailedHawk({ onNavigate }: RedTailedHawkProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that help red-tailed hawks</h2>
+          <h2 style={{ marginTop: 0 }}>Snap traps instead of rodenticide, a rough grass edge, large canopy trees, and window tape on large glass</h2>
 
           <figure className="species-content-photo">
             <img
