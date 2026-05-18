@@ -208,8 +208,8 @@ export default function Home({ onNavigate }: HomeProps) {
             Dozens of milkweed species are native to different regions of the US.
           </p>
           <div style={{ marginTop: '1.5rem', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1.25rem' }}>
-            <button className="hero__cta" onClick={() => onNavigate('take-action')}>
-              What you can do this week →
+            <button className="hero__cta" onClick={() => onNavigate('habitat-hero')}>
+              Get free seeds for your yard →
             </button>
             <button
               onClick={() => onNavigate('why-monarchs')}
