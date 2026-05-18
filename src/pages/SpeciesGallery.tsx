@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import type { Page } from '../App'
 
 // Photo data — Wikimedia Commons (CC BY-SA) and iNaturalist open-data (CC BY-NC).
@@ -407,6 +406,15 @@ const SPECIES: Species[] = [
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg/960px-Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg',
     alt: "Carolina Wren perched showing rich cinnamon-brown upperparts, bold white eyebrow stripe, and the characteristically upright cocked tail",
     attr: "Andy Reago & Chrissy McClarren / CC BY 2.0 / Wikimedia Commons",
+    category: 'Birds',
+  },
+  {
+    page: 'gray-catbird',
+    name: "Gray Catbird",
+    tagline: "Sings each phrase once — a non-repeating stream of mimicry from inside the thicket. Nests at 3–6 feet in dense shrubs; spring pruning in April removes the branch forks the female needs.",
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gray_catbird_%2885315%29.jpg/960px-Gray_catbird_%2885315%29.jpg',
+    alt: "Adult gray catbird perched showing slate-gray plumage, black cap, long tail, and rust-colored undertail coverts",
+    attr: "Rhododendrites / CC BY-SA 4.0 / Wikimedia Commons",
     category: 'Birds',
   },
 ]
