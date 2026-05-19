@@ -99,6 +99,7 @@ import VirginiaBluebell from './pages/VirginiaBluebell'
 import Buttonbush from './pages/Buttonbush'
 import Ironweed from './pages/Ironweed'
 import WinterberryHolly from './pages/WinterberryHolly'
+import ArrowwoodViburnum from './pages/ArrowwoodViburnum'
 import PartridgePea from './pages/PartridgePea'
 import GoldenAlexanders from './pages/GoldenAlexanders'
 import PrairieDropseed from './pages/PrairieDropseed'
@@ -248,6 +249,7 @@ export default function App() {
       case 'buttonbush':       return <Buttonbush onNavigate={navigateTo} />
       case 'ironweed':         return <Ironweed onNavigate={navigateTo} />
       case 'winterberry-holly': return <WinterberryHolly onNavigate={navigateTo} />
+      case 'arrowwood-viburnum': return <ArrowwoodViburnum onNavigate={navigateTo} />
       case 'partridge-pea':    return <PartridgePea onNavigate={navigateTo} />
       case 'golden-alexanders': return <GoldenAlexanders onNavigate={navigateTo} />
       case 'prairie-dropseed':  return <PrairieDropseed onNavigate={navigateTo} />

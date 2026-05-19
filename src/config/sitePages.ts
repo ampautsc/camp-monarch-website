@@ -128,6 +128,7 @@ export const ALL_PAGE_SLUGS = [
   'buttonbush',
   'ironweed',
   'winterberry-holly',
+  'arrowwood-viburnum',
   'partridge-pea',
   'golden-alexanders',
   'prairie-dropseed',

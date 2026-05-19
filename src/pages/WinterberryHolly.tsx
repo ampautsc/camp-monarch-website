@@ -21,9 +21,9 @@ export default function WinterberryHolly({ onNavigate }: WinterberryHollyProps) 
           }}
         />
         <div className="species-hero-image-credit">
-          Photo: terrikoontz&nbsp;·&nbsp;
+          Photo: terrikoontz&nbsp;&middot;&nbsp;
           <a href="https://www.inaturalist.org/observations/190018470" target="_blank" rel="noopener noreferrer">iNaturalist obs. 190018470</a>
-          &nbsp;· CC0 / No Rights Reserved
+          &nbsp;&middot; CC0 / No Rights Reserved
         </div>
       </div>
 
@@ -63,9 +63,9 @@ export default function WinterberryHolly({ onNavigate }: WinterberryHollyProps) 
               Winterberry in late November. Each cluster holds 3–8 drupes set close along the stem.
               A female plant that fruited like this required a male plant within 50 feet during
               late June flowering — one detail most plant tags omit entirely.
-              <span className="photo-credit"> Photo: kat_the_nat&nbsp;·&nbsp;
+              <span className="photo-credit"> Photo: kat_the_nat&nbsp;&middot;&nbsp;
                 <a href="https://www.inaturalist.org/observations/101969794" target="_blank" rel="noopener noreferrer">iNaturalist obs. 101969794</a>
-                &nbsp;· CC0 / No Rights Reserved
+                &nbsp;&middot; CC0 / No Rights Reserved
               </span>
             </figcaption>
           </figure>
@@ -173,9 +173,9 @@ export default function WinterberryHolly({ onNavigate }: WinterberryHollyProps) 
               Winterberry at a wetland margin in Vermont, late June. The root system tolerates
               flooded soil through spring and draws down to moist by midsummer — the same cycle
               that makes the low corner of most yards a good planting site.
-              <span className="photo-credit"> Photo: raffib128&nbsp;·&nbsp;
+              <span className="photo-credit"> Photo: raffib128&nbsp;&middot;&nbsp;
                 <a href="https://www.inaturalist.org/observations/170186574" target="_blank" rel="noopener noreferrer">iNaturalist obs. 170186574</a>
-                &nbsp;· CC0 / No Rights Reserved
+                &nbsp;&middot; CC0 / No Rights Reserved
               </span>
             </figcaption>
           </figure>
@@ -263,6 +263,13 @@ export default function WinterberryHolly({ onNavigate }: WinterberryHollyProps) 
               </button>{' '}
               — overwinters in the northern US by switching from insects to waxy-coated
               berries; uses winterberry in late fall and mild winter periods
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('arrowwood-viburnum')}>
+                Arrowwood Viburnum
+              </button>{' '}
+              — fruits in August and September before winterberry is ready; plant both shrubs
+              and native fruit is available from late summer through February without gap
             </li>
             <li>
               <button className="neighbor-link" onClick={() => onNavigate('buttonbush')}>
