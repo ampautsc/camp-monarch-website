@@ -124,7 +124,7 @@ export default function MourningDove({ onNavigate }: MourningDoveProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Native seed-head plants standing through winter, bare ground near seeds, and one unpruned native shrub</h2>
+          <h2 style={{ marginTop: 0 }}>Native seed-head plants standing through winter, bare ground near seeds, one unpruned native shrub, and no herbicides in the back section</h2>
 
           <figure className="species-content-photo">
             <img
@@ -177,6 +177,19 @@ export default function MourningDove({ onNavigate }: MourningDoveProps) {
                 Choose a Plant
               </button>{' '}
               for native shrubs that serve both nesting structure and fall seed production.
+            </li>
+            <li>
+              <strong>Avoid herbicide use in the back section of the yard.</strong>{' '}
+              The mourning dove&apos;s diet is nearly 100% seeds gathered from the ground,
+              including seeds from ragweed, foxtail, pigweed, and smartweed &mdash; plants that
+              pre-emergent herbicide eliminates from the seed bank before they sprout in spring.
+              A back corner treated with weed control in March produces far fewer seeds on the
+              ground by October. That same corner left untreated accumulates seeds through the
+              fall that doves work through from September to February. See{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                Pesticide Guide
+              </button>{' '}
+              for which products reduce ground-level seed production.
             </li>
           </ol>
         </div>
@@ -231,6 +244,30 @@ export default function MourningDove({ onNavigate }: MourningDoveProps) {
               Species Gallery
             </button>
             .
+          </p>
+        </div>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
+              Choose a Plant
+            </button>
+            {' '}has native seed-head plants and shrubs that provide both the winter food supply
+            and the branch forks the pair returns to for nesting.{' '}
+            <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
+              Find Plants Near Me
+            </button>
+            {' '}shows what seed-producing natives grow in your specific region.{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
+            </button>
+            {' '}explains why the leaf-littered ground under shrubs is the same surface doves
+            pick seeds from through winter.{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticide Guide
+            </button>
+            {' '}covers herbicide use and what it does to the weed seed bank doves forage from
+            September through February.
           </p>
         </div>
       </div>
