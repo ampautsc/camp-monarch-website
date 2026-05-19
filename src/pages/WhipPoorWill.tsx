@@ -235,6 +235,21 @@ export default function WhipPoorWill({ onNavigate }: WhipPoorWillProps) {
             </li>
           </ul>
         </section>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>Mosquito spray services and outdoor lights running through the night are the two things directly cutting the food supply this bird depends on.</strong>{' '}
+            Read the full breakdown of spray alternatives at the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticides &amp; Your Habitat guide
+            </button>
+            , and learn how leaving autumn leaf litter intact preserves moth pupae through spring at{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
+            </button>
+            .
+          </p>
+        </div>
       </div>
     </>
   )
