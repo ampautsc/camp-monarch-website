@@ -16,7 +16,7 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Sandysphotos2009 · <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
+          {/* Photo: Sandysphotos2009 · <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
           Photo: Sandysphotos2009&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
           &nbsp;via Wikimedia Commons
@@ -94,7 +94,7 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
                 />
                 <figcaption>
                   Bluebirds lost most of their natural tree-hole nesting sites to European Starlings after 1890. The nest box trail programs of the 1970s reversed the population collapse — bluebirds went from regional rarity to common within two decades. The box is not decoration. It is a replacement for the dead trees we removed.
-                  <span className="photo-credit"> Photo: William H. Majoros · <a href="https://commons.wikimedia.org/wiki/File:Eastern_bluebird_at_nest_box.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: William H. Majoros · <a href="https://commons.wikimedia.org/wiki/File:Eastern_bluebird_at_nest_box.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -219,21 +219,28 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to take the next step?</strong>{' '}
+            Stop pesticide use in the yard surrounding the box with the{' '}
+            <button
+              className="link-button"
+              onClick={() => onNavigate('pesticide-guide')}
+            >
+              Pesticides &amp; Your Habitat guide
+            </button>
+            {' '}— neonicotinoids applied to soil and plants eliminate the beetles and caterpillars nestlings eat. Then{' '}
             <button
               className="link-button"
               onClick={() => onNavigate('choose-a-plant')}
             >
-              Choose a native plant
+              choose a native plant
             </button>
-            {' '}— native dogwoods, viburnums, and hollies support bluebirds year-round
-            and build the same native plant community monarchs need. Or{' '}
+            {' '}to build the fruiting shrub layer bluebirds use year-round, or{' '}
             <button
               className="link-button"
               onClick={() => onNavigate('plant-milkweed')}
             >
               plant milkweed
             </button>
-            {' '}to add monarch habitat in the open foraging ground bluebirds require.
+            {' '}to expand the open pollinator habitat they forage over.
           </p>
         </div>
       </div>
