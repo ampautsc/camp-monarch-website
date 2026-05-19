@@ -124,6 +124,18 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
               completely alone and you may witness one of the most remarkable
               events a backyard can offer.
             </li>
+            <li>
+              <strong>Plant native groundcover between your rock pile and garden beds.</strong>{' '}
+              Garter snakes track earthworms, slugs, and salamanders by scent, working the soil
+              surface between their shelter and foraging areas. Bare ground under sun exposure
+              desiccates the top inch of soil and drives earthworms two to four inches deeper,
+              below the zone the snake can reach with its tongue. Native low groundcovers —
+              wild ginger (<em>Asarum canadense</em>), golden groundsel (<em>Packera aurea</em>),
+              or mayapple (<em>Podophyllum peltatum</em>) — keep that surface layer moist and
+              cool. Avoid herbicide applications in the zone between shelter and plant beds:
+              the same spray that kills broadleaf plants removes the moisture cover the earthworm
+              layer requires.
+            </li>
           </ol>
         </div>
 
