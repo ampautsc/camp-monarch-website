@@ -11,7 +11,7 @@ interface HomeProps {
 const CARD_PHOTOS = {
   plantMilkweed: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg',
   logSighting: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Danaus_plexippus_caterpillar_on_milkweed.jpg/960px-Danaus_plexippus_caterpillar_on_milkweed.jpg',
-  trackMigration: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Monarchs_overwintering_Angangueo_site_in_Mexico.jpg',
+  trackMigration: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Monarch_butterfly_on_common_milkweed_%2848372506736%29.jpg/960px-Monarch_butterfly_on_common_milkweed_%2848372506736%29.jpg',
   nativeWildflowers: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Solidago_canadensis_20050815_04.jpg/960px-Solidago_canadensis_20050815_04.jpg',
 }
 
@@ -297,7 +297,7 @@ export default function Home({ onNavigate }: HomeProps) {
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Log a sighting</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
-                Each sighting goes directly to migration researchers tracking which corridors the population is still using. Takes 60 seconds — snap a photo and submit.
+                Researchers tracking which corridors the population is still using pull from iNaturalist. Your observation is in that dataset. Snap a photo and submit — it takes 60 seconds.
               </p>
               <button
                 className="hero__cta"
@@ -311,7 +311,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
               <CardPhoto
                 src={CARD_PHOTOS.trackMigration}
-                alt="Monarchs overwintering in the oyamel fir forest in Mexico"
+                alt="Monarch butterfly nectaring on common milkweed flowers — the same scene in a neighbor's yard that happens when two people decide to plant milkweed on the same block"
               />
               <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Talk about it</h3>
               <p style={{ margin: '0 0 1rem', fontSize: '0.92rem', color: 'var(--text-secondary)', flex: 1 }}>
