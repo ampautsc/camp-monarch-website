@@ -141,7 +141,7 @@ export default function Ovenbird({ onNavigate }: OvenbirdProps) {
         </section>
 
         <section aria-labelledby="actions-heading">
-          <h2 id="actions-heading">Three things that widen or narrow the edge</h2>
+          <h2 id="actions-heading">Four things that widen or narrow the edge</h2>
           <ul className="actions-list">
             <li>
               <strong>Leave a buffer at the treeline.</strong> A strip of unmowed grass,
@@ -164,12 +164,26 @@ export default function Ovenbird({ onNavigate }: OvenbirdProps) {
               motionless on the nest until a predator is within one or two steps. An
               outdoor cat working a forest edge during breeding season will find it.
             </li>
+            <li>
+              <strong>Stop applying grub-control products and broad-spectrum insecticides within 20 feet of the treeline.</strong>{' '}
+              Ovenbirds forage for earthworms, beetle larvae, snails, and ants from the duff
+              layer at the forest edge. Grub-control products containing imidacloprid — the most
+              widely sold residential lawn treatment — are water-soluble and move laterally
+              through the soil into the adjacent forest floor. Earthworm populations in areas
+              treated with imidacloprid drop measurably within weeks of application. The buffer
+              zone you leave unmowed should also receive no pesticide applications. See the full
+              picture at the{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                Pesticides &amp; Your Habitat guide
+              </button>
+              .
+            </li>
           </ul>
 
           <figure className="species-content-photo species-content-photo--center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Ovenbird_RWD2.jpg"
-              alt="Ovenbird on a mossy log in a mature eastern deciduous forest — the bird is alert, head raised, orange crown stripe visible, surrounded by the dappled light and brown forest floor of the habitat it requires"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ovenbird_by_Dan_Pancamo.jpg/960px-Ovenbird_by_Dan_Pancamo.jpg"
+              alt="Ovenbird in leaf litter on the forest floor, surrounded by dead leaves and debris — the natural habitat where it both nests and forages"
               loading="lazy"
             />
             <figcaption>
@@ -178,7 +192,7 @@ export default function Ovenbird({ onNavigate }: OvenbirdProps) {
               flies further than one low perch to the next. A lawn that runs to the treeline
               is not a yard with a forest edge — it is a yard with a cowbird patrol route
               running directly to the ovenbird&apos;s nest.
-              <span className="photo-credit"> Photo: Dick Daniels · <a href="https://commons.wikimedia.org/wiki/File:Ovenbird_RWD2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+              <span className="photo-credit"> Photo: Dan Pancamo · <a href="https://commons.wikimedia.org/wiki/File:Ovenbird_by_Dan_Pancamo.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons</span>
             </figcaption>
           </figure>
         </section>
