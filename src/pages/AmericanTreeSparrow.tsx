@@ -148,7 +148,7 @@ export default function AmericanTreeSparrow({ onNavigate }: AmericanTreeSparrowP
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Standing grass stems through January, white millet on bare ground, and a winter count</h2>
+          <h2 style={{ marginTop: 0 }}>Standing grass stems through January, white millet on bare ground, a winter count, and a brush pile at the edge</h2>
 
           <figure className="species-content-photo">
             <img
@@ -191,6 +191,18 @@ export default function AmericanTreeSparrow({ onNavigate }: AmericanTreeSparrowP
               each March. A consistent count each winter — even a rough estimate — contributes
               to the dataset tracking whether the 53 percent decline since 1966 is continuing,
               stabilizing, or accelerating. The bird at your feeder is also a data point.
+            </li>
+            <li>
+              <strong>Leave a brush pile or dense stem bundle at the edge of the seed-head planting.</strong>{' '}
+              American Tree Sparrows retreat to ground-level cover — not upward — when a
+              hawk or cat appears. A bird working a seed patch makes multiple evasive flights
+              per hour into nearby brush, and each retreat costs foraging time and calories.
+              A stack of cut native stems or small branches, 2 to 3 feet tall, placed within
+              10 feet of the seed-head planting gives the flock an immediate landing point
+              so foraging resumes within seconds. The material left from clearing other beds
+              in late winter — bundled stems from last year&apos;s switchgrass or goldenrod,
+              or a loose pile of branches — works directly for this purpose. Place it at the
+              edge and leave it through April.
             </li>
           </ol>
         </div>
