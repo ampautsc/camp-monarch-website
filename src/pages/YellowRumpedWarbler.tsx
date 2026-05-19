@@ -120,7 +120,7 @@ export default function YellowRumpedWarbler({ onNavigate }: YellowRumpedWarblerP
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things Yellow-rumped Warblers need from your yard</h2>
+          <h2 style={{ marginTop: 0 }}>Bayberry, no burning bush, standing stems, and no September insecticides</h2>
 
           <figure className="species-content-photo">
             <img
@@ -179,6 +179,20 @@ export default function YellowRumpedWarbler({ onNavigate }: YellowRumpedWarblerP
                 Leave the Leaves
               </button>
               {' '}for why standing stems matter beyond this species.
+            </li>
+            <li>
+              <strong>Avoid insecticide applications on native shrubs between September 1 and November 1.</strong>{' '}
+              Yellow-rumped Warblers arrive in mid-Atlantic and northeastern yards in September
+              as insect foragers, weeks before the bayberry crop is ready. They pull insects
+              from bark crevices, glean aphids and scale from stems, and take caterpillars from
+              native shrub foliage. A shrub treated with broad-spectrum or systemic insecticide
+              in late summer has already had its insect community suppressed by the time the
+              first warblers land. The same shrub untreated carries the bird through the
+              September gap before bayberry fruit matures. See the{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                Pesticide Guide
+              </button>
+              {' '}for what to avoid and when.
             </li>
           </ol>
         </div>
