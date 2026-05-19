@@ -101,7 +101,7 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that make a difference</h2>
+          <h2 style={{ marginTop: 0 }}>Milkweed, sightings, one conversation, and one ornamental to replace</h2>
           <ol className="step-list">
             <li>
               <strong>Plant milkweed.</strong>{' '}
@@ -117,6 +117,14 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
               <strong>Tell one neighbor.</strong>{' '}
               Habitat is a corridor, not a single yard. One conversation in May can become
               two milkweed patches by September.
+            </li>
+            <li>
+              <strong>Replace one non-native ornamental this fall.</strong>{' '}
+              Burning bush, barberry, and Bradford pear were selected for their resistance to native insects —
+              which is why they sit undisturbed while every native nearby hums with activity.
+              A burning bush in full fall color holds almost no native insects.
+              The same space with native asters blooming in September feeds monarchs fueling the Mexico crossing,
+              late-season native bees, and seed-eating sparrows through December.
             </li>
           </ol>
           <button
