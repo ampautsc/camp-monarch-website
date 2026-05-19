@@ -197,14 +197,21 @@ export default function NorthernFlicker({ onNavigate }: NorthernFlickerProps) {
             >
               Explore habitat layers
             </button>
-            {' '}to see how ground, shrub, and canopy layers connect, or{' '}
+            {' '}to see how ground, shrub, and canopy layers connect,{' '}
             <button
               className="link-button"
               onClick={() => onNavigate('leave-the-leaves')}
             >
-              learn about leaf litter
+              read about leaf litter
             </button>
-            {' '}and how autumn cleanup decisions affect the insects that feed every bird in your yard.
+            {' '}and how autumn cleanup decisions affect the insects that feed every bird in your yard, or see how systemic lawn pesticides reach the ant food chain at the{' '}
+            <button
+              className="link-button"
+              onClick={() => onNavigate('pesticide-guide')}
+            >
+              Pesticides &amp; Your Habitat guide
+            </button>
+            .
           </p>
         </div>
       </div>
