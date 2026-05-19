@@ -335,7 +335,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
           <h2 id="neighbors-heading">The firefly that lights up your yard each June spent most of its life living in your leaf litter.</h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
-            52 species share backyards, gardens, and suburban lots up and down the migration corridor.
+            59 species share backyards, gardens, and suburban lots up and down the migration corridor.
             The four below are probably in yours.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
@@ -383,7 +383,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
             <button className="hero__cta" onClick={() => onNavigate('species-gallery')}>
-              Meet all 52 neighbors →
+              Meet all 59 neighbors →
             </button>
           </div>
         </section>
