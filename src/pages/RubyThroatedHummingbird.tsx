@@ -27,7 +27,7 @@ export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHumm
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: jeffreyw · <a href="https://commons.wikimedia.org/wiki/File:Archilochus_colubris_-flying_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
+          {/* Photo: jeffreyw · <a href="https://commons.wikimedia.org/wiki/File:Archilochus_colubris_-flying_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
           Photo: jeffreyw&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Archilochus_colubris_-flying_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
           &nbsp;via Wikimedia Commons
@@ -110,7 +110,7 @@ export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHumm
                 />
                 <figcaption>
                   The ruby-throat's bill and the native trumpet vine's flower tube co-evolved over millions of years — the bill length matches the tube depth exactly, the flower produces nectar in exchange for pollen transport. Substitute a red plastic feeder for native flowers and the bird survives, but the ecological relationship does not.
-                  <span className="photo-credit"> Photo: Len Benzi · <a href="https://commons.wikimedia.org/wiki/File:Ruby_Throated_Hummingbird.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Len Benzi · <a href="https://commons.wikimedia.org/wiki/File:Ruby_Throated_Hummingbird.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -253,7 +253,14 @@ export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHumm
               Choose a native plant
             </button>
             {' '}ΓÇö find trumpet honeysuckle, cardinal flower, and bee balm for your region.
-            Or{' '}
+            Remove the insecticides that eliminate the insect food chain with the{' '}
+            <button
+              className="link-button"
+              onClick={() => onNavigate('pesticide-guide')}
+            >
+              Pesticides &amp; Your Habitat guide
+            </button>
+            . Or{' '}
             <button
               className="link-button"
               onClick={() => onNavigate('plant-milkweed')}
