@@ -16,7 +16,7 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Rodney Campbell · <a href="https://commons.wikimedia.org/wiki/File:Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
+          {/* Photo: Rodney Campbell · <a href="https://commons.wikimedia.org/wiki/File:Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
           Photo: Rodney Campbell&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
           &nbsp;via Wikimedia Commons
@@ -74,7 +74,7 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
                 />
                 <figcaption>
                   Goldfinches are specialist seed-eaters — they delay nesting until late summer so caterpillar-fed nestlings can transition directly to ripe thistle and coneflower seeds. A garden with native composites still standing in August is exactly what triggers breeding.
-                  <span className="photo-credit"> Photo: Ken Thomas · <a href="https://commons.wikimedia.org/wiki/File:American_Goldfinch-27527-2.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Ken Thomas · <a href="https://commons.wikimedia.org/wiki/File:American_Goldfinch-27527-2.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -91,7 +91,7 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that help goldfinches immediately</h2>
+          <h2 style={{ marginTop: 0 }}>Seed heads, native plantings, milkweed, and no neonicotinoids</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Butterfly weed (Asclepias tuberosa) with bright orange flowers" loading="lazy" />
@@ -116,6 +116,21 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
               Milkweed supports monarch caterpillars and also provides soft down used in
               goldfinch nests. One planting decision can serve both species.
             </li>
+            <li>
+              <strong>Skip systemic insecticides on seed-bearing native plants.</strong>{' '}
+              Neonicotinoids are taken up through plant roots and distributed into leaves,
+              stems, pollen, and seeds — including the goldenrod and sunflower seeds
+              goldfinches return to repeatedly across a feeding territory. University of
+              Saskatchewan researchers found that white-crowned sparrows consuming small
+              quantities of imidacloprid-treated seeds lost 25% of their body mass and
+              showed impaired migratory orientation within three days. A goldfinch cycling
+              through treated seed heads over multiple weeks receives the dose in
+              fractions. See the{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                Pesticide Guide
+              </button>
+              {' '}for alternatives when pest pressure is severe.
+            </li>
           </ol>
         </div>
 
@@ -136,15 +151,23 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
-            <strong>Ready to support both species?</strong>{' '}
+            <strong>Ready to support goldfinches?</strong>{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a native plant
+              Choose a plant
             </button>
-            {' '}to build seed-rich habitat for goldfinches, or{' '}
+            {' '}for seed-rich native species by region,{' '}
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
               plant milkweed
             </button>
-            {' '}to create shared habitat for monarchs and goldfinches.
+            {' '}for shared monarch and goldfinch habitat,{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticide Guide
+            </button>
+            {' '}to check which products are safe around seed plants, and{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
+            </button>
+            {' '}for why standing seedheads matter through winter.
           </p>
         </div>
       </div>
