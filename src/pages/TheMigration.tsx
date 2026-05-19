@@ -123,7 +123,7 @@ export default function TheMigration({ onNavigate }: TheMigrationProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Your yard is part of the route</h2>
+          <h2 style={{ marginTop: 0 }}>Milkweed for the relay, sightings in fall, the Journey North map, and no pesticides in August</h2>
           <p>
             The migration passes through every state between Canada and Mexico.
             The butterfly on your roof in September depended on milkweed 500 miles north in May.
@@ -144,6 +144,14 @@ export default function TheMigration({ onNavigate }: TheMigrationProps) {
               <a href="https://journeynorth.org/monarchs" target="_blank" rel="noreferrer">journeynorth.org/monarchs</a>{' '}
               publishes weekly sighting maps showing the migration front as it moves south.
               Check it in September to know when your area is in the path.
+            </li>
+            <li>
+              <strong>Skip pesticide applications to the garden in August and September.</strong>{' '}
+              The diapause generation nectars on whatever blooms along its route south.
+              A fall garden where asters or goldenrod were treated with systemic insecticide in August
+              delivers sublethal imidacloprid doses to monarchs with each nectar visit —
+              at exactly the point when they are loading fat reserves they cannot replace
+              until the next uncontaminated stand, miles south.
             </li>
           </ol>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
