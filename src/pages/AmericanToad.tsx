@@ -165,11 +165,18 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
               plant milkweed
             </button>
-            {' '}to expand a pesticide-free pollinator corridor. See how the ground layer —
-            the loose soil and leaf litter where toads burrow and overwinter — connects to the
-            shrub and canopy layers above it in the{' '}
+            {' '}to expand a pesticide-free pollinator corridor. The ground layer — the loose
+            soil and leaf litter where toads burrow and overwinter — is covered in the{' '}
             <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
               Habitat Layers guide
+            </button>
+            {' '}and the{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves guide
+            </button>
+            . Stop the chemical exposure that moves through permeable toad skin with the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticide Guide
             </button>
             .
           </p>
