@@ -54,7 +54,7 @@ export default function NorthernFlicker({ onNavigate }: NorthernFlickerProps) {
           <p>
             Flickers also engage in anting: they press live ants against their feathers or
             roll in active mounds, letting the insects crawl through the plumage. The formic
-            acid the ants release appears to kill feather mites. The birds are not just
+            acid the ants release appears to eliminate feather mites. The birds are not just
             eating ants — they are using them as a maintenance tool.
           </p>
         </section>
@@ -120,7 +120,7 @@ export default function NorthernFlicker({ onNavigate }: NorthernFlickerProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three yard changes that bring Northern Flickers back</h2>
+          <h2 style={{ marginTop: 0 }}>Pesticide pause, naturalized edges, a standing snag, and a nest box</h2>
 
           <figure className="species-content-photo">
             <img
@@ -164,6 +164,14 @@ export default function NorthernFlicker({ onNavigate }: NorthernFlickerProps) {
               Tree Swallows, and Eastern Screech Owls move into those cavities in
               the years that follow. A single standing snag starts a nesting
               succession that runs for a decade without any additional work.
+            </li>
+            <li>
+              <strong>Install a nest box if there is no standing dead wood.</strong>{' '}
+              Flickers excavate cavities 13–16 inches deep with a 3-inch entrance hole.
+              Where standing dead trees have been removed, a box built to those dimensions
+              and mounted on a post at 6–10 feet replicates the cavity. A pair that breeds
+              there abandons the hole after the season ends. Eastern Bluebirds, Tree Swallows,
+              and Eastern Screech Owls occupy it in the years that follow.
             </li>
           </ol>
         </div>
