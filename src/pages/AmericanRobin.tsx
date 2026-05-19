@@ -16,7 +16,7 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: Rhododendrites&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -75,7 +75,7 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
                 />
                 <figcaption>
                   In summer, robins hunt earthworms by sight and sound in short turf. In winter, they abandon earthworms entirely and rely on berries — serviceberry, holly, dogwood, and native crabapple sustain entire flocks through January and February. A yard with no fruiting native shrubs is a food desert for half the year.
-                  <span className="photo-credit"> Photo: Alan Vernon · <a href="https://commons.wikimedia.org/wiki/File:American_Robin.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Alan Vernon · <a href="https://commons.wikimedia.org/wiki/File:American_Robin.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -93,7 +93,7 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that help robins now</h2>
+          <h2 style={{ marginTop: 0 }}>No pesticides, native berry plants, leaf litter, and fresh water</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Stone bird bath in a garden setting" loading="lazy" />
@@ -115,6 +115,17 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
             <li>
               <strong>Leave leaf litter in place through spring.</strong>{' '}
               Robins forage where leaves are decomposing because those zones hold invertebrates.
+            </li>
+            <li>
+              <strong>Set out a ground-level water source and refresh it every two to three days.</strong>{' '}
+              Robins bathe regularly to maintain feather condition — a shallow dish 4 to 6 inches
+              deep placed on the ground or a low platform matches the depth they wade into.
+              Refreshing every two or three days prevents mosquito larvae from maturing and keeps
+              the water clean enough that robins return. Read the full case for yard water at{' '}
+              <button className="link-button" onClick={() => onNavigate('water-for-wildlife')}>
+                Water for Wildlife
+              </button>
+              .
             </li>
           </ol>
         </div>
@@ -140,11 +151,19 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a native plant
             </button>
-            {' '}to add berry and nectar structure, or{' '}
-            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-              plant milkweed
+            {' '}to add berry structure,{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              leave the leaves
             </button>
-            {' '}to strengthen shared habitat for monarchs and neighborhood birds.
+            {' '}to keep the invertebrate base alive, add a{' '}
+            <button className="link-button" onClick={() => onNavigate('water-for-wildlife')}>
+              water source
+            </button>
+            {' '}to complete the habitat, or read the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              pesticide guide
+            </button>
+            {' '}to protect the soil food web robins depend on.
           </p>
         </div>
       </div>
