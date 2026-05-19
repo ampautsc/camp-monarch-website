@@ -62,7 +62,7 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that bring fireflies back</h2>
+          <h2 style={{ marginTop: 0 }}>Lights out, leaf litter, unmowed ground, and no grub treatment</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering garden ground" loading="lazy" />
@@ -89,6 +89,14 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
               Tall grass and native plants provide the moist, shaded ground cover that larvae need
               and the vegetation that females perch in during mating. A 4x6 foot patch is meaningful.
               It does not need to be large.
+            </li>
+            <li>
+              <strong>Skip granular grub treatments on your lawn.</strong>{' '}
+              Products containing imidacloprid or clothianidin — sold for Japanese beetle control
+              under names like Bayer Season-Long Grub Control — move through thatch and into the
+              soil zone where firefly larvae spend one to two years hunting. The compounds do not
+              distinguish between Japanese beetle grubs and firefly larvae. A lawn treated for grubs
+              in June has dosed the soil that this summer's firefly larvae are moving through.
             </li>
           </ol>
         </div>
