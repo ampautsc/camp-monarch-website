@@ -16,7 +16,7 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: No machine-readable author provided. Kugamazog~commonswiki assumed (based on cop · <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_adult_female_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons */}
+          {/* Photo: No machine-readable author provided. Kugamazog~commonswiki assumed (based on cop · <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_adult_female_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons */}
           Photo: No machine-readable author provided. Kugamazog~commonswiki assumed (based on cop&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_adult_female_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a>
           &nbsp;via Wikimedia Commons
@@ -97,7 +97,7 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
                 />
                 <figcaption>
                   The caterpillar that becomes a Cecropia Moth grows to four inches — one of the largest in North America. It feeds on cherry, maple, birch, and apple. The adult that emerges has no functional mouth and will not eat again. Its entire adult life — seven to ten days — is devoted to finding a mate.
-                  <span className="photo-credit"> Photo: Michael Hodge · <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_caterpillar.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Michael Hodge · <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_caterpillar.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -273,6 +273,10 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
             , reduce pesticides with the{' '}
             <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
               Pesticides &amp; Your Habitat guide
+            </button>
+            , protect overwintering cocoons with the{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves guide
             </button>
             , and see what else shares your yard in the{' '}
             <button className="link-button" onClick={() => onNavigate('species-gallery')}>
