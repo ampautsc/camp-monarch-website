@@ -78,7 +78,7 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three changes that open your yard to native bees</h2>
+          <h2 style={{ marginTop: 0 }}>An unmulched patch, a season of blooms, no pesticides, and stems left standing</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed flowers providing nectar resources" loading="lazy" />
@@ -108,6 +108,16 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
               persist in plant tissue — neonicotinoids treated into nursery plants
               remain in the pollen and nectar for years after planting.
               Ask before you buy.
+            </li>
+            <li>
+              <strong>Cut native perennial stems at 12 inches, not at ground level, in fall or early spring.</strong>{' '}
+              More than 300 North American bee species are cavity nesters that lay their eggs
+              inside hollow plant stems. Goldenrod, Joe Pye weed, wild bergamot, and ironweed
+              have pithy stems that small native bees excavate or move directly into. Cutting
+              perennials to the ground each October removes every nest established in those stems
+              over the season. Cutting at 12 inches and leaving the stubs standing through winter
+              keeps those nesting sites intact. Cut the old growth back in late March when new
+              growth is already emerging — not before.
             </li>
           </ol>
           <button
