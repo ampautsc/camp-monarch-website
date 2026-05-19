@@ -266,13 +266,25 @@ export default function HermitThrush({ onNavigate }: HermitThrushProps) {
               it clears the whole shrub in 12 minutes and moves on — and the thrush
               waits in the brush for the next fruiting plant to come in.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('winterberry-holly')}>
+                Winterberry Holly
+              </button>
+              {' — '}Native deciduous holly; red berries hold through January on bare stems
+              after every other fruit source has been stripped — the one shrub a Hermit
+              Thrush can work alone once the waxwing flock moves on.
+            </li>
           </ul>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to plant for winter birds?</strong>{' '}
-            Find native viburnums and winterberry in{' '}
+            Start with{' '}
+            <button className="link-button" onClick={() => onNavigate('winterberry-holly')}>
+              Winterberry Holly
+            </button>
+            {' '}for coverage through February, find native viburnums and more in{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a Plant
             </button>
