@@ -188,6 +188,22 @@ export default function EasternWoodPewee({ onNavigate }: EasternWoodPeweeProps) 
           </p>
         </section>
 
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>Want to support the Wood-Pewee?</strong>{' '}
+            Start by cutting pesticide use with the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticides &amp; Your Habitat guide
+            </button>
+            {' '}— a pesticide-free canopy is a productive hunting ground. Then read how dead
+            wood and canopy structure connect to every layer beneath in the{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers guide
+            </button>
+            .
+          </p>
+        </div>
+
         <section aria-label="Photo attribution" style={{ marginTop: '2rem', borderTop: '1px solid var(--border)', paddingTop: '1rem' }}>
           <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
             Photos: Wikimedia Commons, CC BY-SA 3.0.
