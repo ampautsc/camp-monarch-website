@@ -138,9 +138,9 @@ export default function GrayCatbird({ onNavigate }: GrayCatbirdProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>No spring pruning before mid-July, one unpruned native shrub, and fruit left on the branch through October</h2>
+          <h2 style={{ marginTop: 0 }}>No spring pruning before mid-July, one unpruned native shrub, fruit through October, and leaf litter at the base</h2>
 
-          <figure className="species-content-photo">
+          <figure className="species-content-photo species-content-photo--left">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gray_Catbird_in_the_grass.jpg/960px-Gray_Catbird_in_the_grass.jpg"
               alt="Gray catbird standing in grass near a shrub edge, showing the full slate-gray body, black cap, and rufous undertail coverts"
@@ -184,6 +184,20 @@ export default function GrayCatbird({ onNavigate }: GrayCatbirdProps) {
               summer diet is fruit, and the berry crop on native shrubs in August and September
               is the catbird&apos;s primary pre-migration fuel. Shrubs cut for tidiness before
               fruiting removes this resource at the point catbirds need it most.
+            </li>
+            <li>
+              <strong>Leave the leaf litter at the base of dense shrubs year-round.</strong>{' '}
+              Gray catbirds forage in the shrub-base zone for beetles, earthworms, and other
+              invertebrates — the same zone where the nest is anchored a few feet overhead.
+              A raked or mulched bed under a hawthorn or spicebush removes both the substrate
+              the birds probe and the invertebrate community that makes it productive. Leaves
+              left undisturbed decompose into soil, sustain the beetle and earthworm
+              populations, and give catbirds a foraging zone right beside the nest. Read the
+              full case at{' '}
+              <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+                Leave the Leaves
+              </button>
+              .
             </li>
           </ol>
         </div>
