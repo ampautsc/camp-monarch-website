@@ -1,2 +1,556 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VNZW1vLCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgdHlwZSB7IFBhZ2UgfSBmcm9tICcuLi9BcHAnCgppbnRlcmZhY2UgSG9tZVByb3BzIHsKICBvbk5hdmlnYXRlOiAocGFnZTogUGFnZSkgPT4gdm9pZAp9CgovLyBQaG90byBzb3VyY2VzOiBXaWtpbWVkaWEgQ29tbW9ucyAoQ0MgQlktU0EpLiBBdHRyaWJ1dGlvbiBhdCBib3R0b20gb2YgcGFnZS4KLy8gdmlzLTAwNDogdmVyaWZpZWQgdGh1bWJuYWlsIFVSTHMgZnJvbSBXaWtpbWVkaWEgQ29tbW9ucyBBUEkgMjAyNi0wNS0wOS4KLy8gVE9ETzogZG93bmxvYWQgYW5kIGhvc3QgaW4gL3B1YmxpYy8gZm9yIHByb2R1Y3Rpb24gcGVyZm9ybWFuY2UuCmNvbnN0IENBR1JEX1BIT1RPUyA9IHsKICBwbGFudE1pbGt3ZWVkOiAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi85Lzk5L01vbmFyY2hfQnV0dGVyZmx5X0RhbmF1c19wbGV4aXBwdXNfQnV0dGVyZmx5X1dlZWRfMTY1MHB4LmpwZy80ODBweC1Nb25hcmNoX0J1dHRlcmZseV9EYW5hdXNfcGxleGlwcHVzX0J1dHRlcmZseV9XZWVkXzE2NTBweC5qcGcnLAogIHJlZHVjZVBlc3RpY2lkZXM6ICdodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iLzQvNGQvU3VtbWl0X1BhY2tldF9HcmFudWxlcy5qcGcvNDgwcHgtU3VtbWl0X1BhY2tldF9HcmFudWxlcy5qcGcnLAogIGxlYXZlTGVhdmVzOiAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi9lL2VkL0ZhbGxfbGVhdmVzXzIwMjFfNi5qcGcvNDgwcHgtRmFsbF9sZWF2ZXNfMjAyMV82LmpwZycsCiAgYWRkV2F0ZXI6ICdodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iLzgvOGMvQmlyZGJhdGgwMTYuanBnLzQ4MHB4LUJpcmRiYXRoMDE2LmpwZycsCiAgbW9uYXJjaDogJ2h0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvMS8xNy9Nb25hcmNoX0J1dHRlcmZseV9EYW5hdXNfcGxleGlwcHVzX01pZ3JhdGluZyAyLmpwZy80ODBweC1Nb25hcmNoX0J1dHRlcmZseV9EYW5hdXNfcGxleGlwcHVzX01pZ3JhdGluZyAyLmpwZycsCiAgZmlyZWZseTogJ2h0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvdGh1bWIvYS9hMy9GaXJlZmx5X0xhbXB5cmlzX25vY3RpbHVjYV8lMjhSb2JlcnRfRWlzZWxlJTI5LmpwZy80ODBweC1GaXJlZmx5X0xhbXB5cmlzX25vY3RpbHVjYV8lMjhSb2JlcnRfRWlzZWxlJTI5LmpwZycsCiAgYm94VHVydGxlOiAnaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy8zLzNkL0Vhc3Rlcm5fQm94X1R1cnRsZSUyQ19Ob3J0aF9DYXJvbGluYSUyQ19VU19pbXBvcnRlZF9mcm9tX2lOYXR1cmFsaXN0X3Bob3RvXzcxMTY4NTIxXyUyOGNyb3BwZWQlMjkuanBnJywKfQoKY29uc3QgU0VBU09OQUxfQ09OVEVOVDogUmVjb3JkPHN0cmluZywgeyBoZWFkZXI6IHN0cmluZzsgaXRlbXM6IHsgbGFiZWw6IHN0cmluZzsgZGV0YWlsOiBzdHJpbmcgfVtdIH0+ID0gewogIHNwcmluZzoge30sCiAgaGVhZGVyOiAnU3ByaW5nOiBoZWxwIG1vbmFyY2hzIGZpbmQgZm9vZCBhbmQgbGF5IGVnZ3MgYXMgdGhleSBtb3ZlIG5vcnRoLicsCiAgaXRlbXM6IFsKICAgIHsKICAgICAgbGFiZWw6ICdQbGFudCBvciBsb2NhdGUgbWlsa3dlZWQnLAogICAgICBkZXRhaWw6CiAgICAgICAgJ01pbGt3ZWVkIGlzIHRoZSBvbmx5IHBsYW50IG1vbmFyY2hzIHdpbGwgbGF5IGVnZ3Mgb24uIExvb2sgZm9yIG5hdGl2ZSBzcGVjaWVzIGF0IGEgbG9jYWwgbnVyc2Vy eS4nLAogICAgfSwKICAgIHsKICAgICAgbGFiZWw6ICdMb2cgYW55IG1vbmFyY2ggeW91IHNlZSBvbiBpTmF0dXJhbGlzdC4nLAogICAgICBkZXRhaWw6CiAgICAgICAgJ1NwcmluZyBzaWdodGluZ3MgaGVscCByZXNlYXJjaGVycyB0cmFjayB3aGljaCBjb3JyaWRvcnMgdGhlIG1pZ3JhdGlvbiBpcyB1c2luZyBlYWNoIHllYXIuJywKICAgIH0sCiAgICB7CiAgICAgIGxhYmVsOiAnU2tpcCB0aGUgcGVzdGljaWRlcycsCiAgICAgIGRldGFpbDoKICAgICAgICAnWW91ciBpTmF0dXJhbGlzdCBvYnNlcnZhdGlvbiB0ZWxscyByZXNlYXJjaGVycyB3aGljaCBub3J0aGJvdW5kIGNvcnJpZG9ycyB0aGUgcG9wdWxhdGlvbiBpcyBhY3R1YWxseSB1c2luZyB0aGlzIHllYXIuJywKICAgIH0sCiAgXSwKfSwKc3VtbWVyOiB7CiAgaGVhZGVyOiAnU3VtbWVyOiBidWlsZCB0aGUgYnJlZWRpbmcgaGFiaXRhdCB0aGF0IHN1c3RhaW5zIG11bHRpcGxlIGdlbmVyYXRpb25zLicsCiAgaXRlbXM6IFsKICAgIHsKICAgICAgbGFiZWw6ICdMZWF2ZSBsZWFmIGxpdHRlciBpbiBwbGFjZScsCiAgICAgIGRldGFpbDogJ0ZpcmVmbGllcywgc2FsYW1hbmRlcnMsIGFuZCBib3ggdHVydGxlcyBhbGwgZGVwZW5kIG9uIGRlYWQgbGVhdmVzIGZvciBsYXJ2YWwgaGFiaXRhdC4nLAogICAgfSwKICAgIHsKICAgICAgbGFiZWw6ICdBZGQgYSBzaGFsbG93IHdhdGVyIHNvdXJjZScsCiAgICAgIGRldGFpbDogJ0EgYmlyZGJhdGggb3IgZHJpcHBpbmcgaG9zZSBzdXBwb3J0cyBidXR0ZXJmbGllcywgYmVlcywgYW5kIHNvbmcgYmlyZHMgZHVyaW5nIGRyeSBzdHJldGNoZXMuJywKICAgIH0sCiAgICB7CiAgICAgIGxhYmVsOiAnTG9nIHdoYXQgeW91IHNlZSBvbiBpTmF0dXJhbGlzdC4nLAogICAgICBkZXRhaWw6CiAgICAgICAgJ1N1bW1lciBpcyBwZWFrIG1vbmFyY2ggYnJlZWRpbmcgc2Vhc29uLiBFdmVyeSBzaWdodGluZyBoZWxwcyByZXNlYXJjaGVycyB1bmRlcnN0YW5kIHdoZXJlIHBvcHVsYXRpb25zIGFyZSBjb25jZW50cmF0aW5nLicsCiAgICB9LAogIF0sCn0sCmZhbGw6IHsKICBoZWFkZXI6ICdGYWxsOiBoZWxwIG1vbmFyY2hzIGZ1ZWwgdXAgZm9yIHRoZSBsb25nIG1pZ3JhdGlvbiBzb3V0aC4nLAogIGl0ZW1zOiBbCiAgICB7CiAgICAgIGxhYmVsOiAnUGxhbnQgbGF0ZS1ibG9vbWluZyBuYXRpdmUgZmxvd2Vycycsd
-      aW50ZXI6IHsKICBoZWFkZXI6ICdXaW50ZXI6IHByZXBhcmUgeW91ciB5YXJkIG5vdyBzbyBpdCdzIHJlYWR5IHdoZW4gbW9uYXJjaHMgcmV0dXJuLicsCiAgaXRlbXM6IFsKICAgIHsKICAgICAgbGFiZWw6ICdQbGFuIHlvdXIgc3ByaW5nIG1pbGt3ZWVkIHBsYW50aW5nJywKICAgICAgZGV0YWlsOiAnT3JkZXIgbmF0aXZlIG1pbGt3ZWVkIHNlZWRzIG9yIHBsYW50cyBub3cgZm9yIGVhcmx5IHNwcmluZyBwbGFudGluZy4nLAogICAgfSwKICAgIHsKICAgICAgbGFiZWw6ICdMZWF2ZSBsZWFmIGxpdHRlciBpbiBwbGFjZScsCiAgICAgIGRldGFpbDogJ0ZpcmVmbHkgbGFydmFlIG92ZXJ3aW50ZXIgaW4gdGhlIGxlYWYgbGl0dGVyLiBEb24ndCBjaGlwIG9yIHJlbW92ZSBpdC4nLAogICAgfSwKICAgIHsKICAgICAgbGFiZWw6ICdSZWR1Y2Ugb3IgZWxpbWluYXRlIHBlc3RpY2lkZXMnLAogICAgICBkZXRhaWw6ICdJbnNlY3RpY2lkZXMga2lsbCBtb25hcmNocyBkaXJlY3RseSBhbmQgZWxpbWluYXRlIHRoZSBpbnNlY3QgZm9vZCBzb3VyY2VzIG90aGVyIHNwZWNpZXMgbmVlZC4nLAogICAgfSwKICBdLAp9LAp9CgppbnRlcmZhY2UgQ2FyZFBob3RvUHJvcHMgewogIHNyYzogc3RyaW5nCiAgYWx0OiBzdHJpbmcKfQoKZnVuY3Rpb24gQ2FyZFBob3RvKHsgc3JjLCBhbHQgfTogQ2FyZFBob3RvUHJvcHMpIHsKICBjb25zdCBbc3RhdHVzLCBzZXRTdGF0dXNdID0gdXNlU3RhdGU8J2xvYWRpbmcnIHwgJ2xvYWRlZCcgfCAnZXJyb3InPignbG9hZGluZycpCiAgcmV0dXJuICgKICAgIDxkaXYKICAgICAgc3R5bGU9e3sKICAgICAgICB3aWR0aDogJzEwMCUnLAogICAgICAgIGhlaWdodDogJzE0MHB4JywKICAgICAgICBtYXJnaW46ICcwIDAgMC43NXJlbSAtMS4yNXJlbScsCiAgICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLAogICAgICAgIGJhY2tncm91bmQ6ICcjZWVlJywKICAgICAgfX0KICAgID4KICAgICAge3N0YXR1cyAhPT0gJ2Vycm9yJyAmJiAoCiAgICAgICAgPGltZwogICAgICAgICAgc3JjPXtzcmN9CiAgICAgICAgICBhbHQ9e2FsdH0KICAgICAgICAgIG9uTG9hZD17KCkgPT4gc2V0U3RhdHVzKCdsb2FkZWQnKX0KICAgICAgICAgIG9uRXJyb3I9eygpID0+IHNldFN0YXR1cygnZXJyb3InKX0KICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIHdpZHRoOiAnY2FsYygxMDAlICsgMS4yNXJlbSknLAogICAgICAgICAgICBoZWlnaHQ6ICcxMDAlJywKICAgICAgICAgICAgb2JqZWN0Rml0OiAnY292ZXInLAogICAgICAgICAgICBvYmplY3RQb3NpdGlvbjogJ2NlbnRlcicsCiAgICAgICAgICAgIG9wYWNpdHk6IHN0YXR1cyA9PT0gJ2xvYWRlZCcgPyAxIDogMCwKICAgICAgICAgICAgdHJhbnNpdGlvbjogJ29wYWNpdHkgMC4zcyBlYXNlJywKICAgICAgICAgIH19CiAgICAgICAgLz4KICAgICAgKX0KICAgIDwvZGl2PgogICkKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSh7IG9uTmF2aWdhdGUgfTogSG9tZVByb3BzKSB7CiAgY29uc3QgW21vbmFyY2hTaWdodGluZ3MsIHNldE1vbmFyY2hTaWdodGluZ3NdID0gdXNlU3RhdGU8bnVtYmVyIHwgbnVsbD4obnVsbCkKICBjb25zdCBbaGFzTGl2ZVNpZ2h0aW5ncywgc2V0SGFzTGl2ZVNpZ2h0aW5nc10gPSB1c2VTdGF0ZShmYWxzZSkKCiAgY29uc3Qgbm93ID0gdXNlTWVtbygoKSA9PiBuZXcgRGF0ZSgpLCBbXSkKICBjb25zdCBtb250aCA9IG5vdy5nZXRNb250aCgpIC8vIDAtMTEKICBjb25zdCB5ZWFyID0gbm93LmdldEZ1bGxZZWFyKCkKICBjb25zdCBtb250aE5hbWUgPSBub3cudG9Mb2NhbGVTdHJpbmcoJ2VuLVVTJywgeyBtb250aDogJ2xvbmcnIH0pCgogIGNvbnN0IHNlYXNvbiA9IHVzZU1lbW8oKCkgPT4gewogICAgaWYgKG1vbnRoID49IDIgJiYgbW9udGggPD0gNCkgcmV0dXJuICdzcHJpbmcnCiAgICBpZiAobW9udGggPj0gNSAmJiBtb250aCA8PSA3KSByZXR1cm4gJ3N1bW1lcicKICAgIGlmIChtb250aCA+PSA4ICYmIG1vbnRoIDw9IDEwKSByZXR1cm4gJ2ZhbGwnCiAgICByZXR1cm4gJ3dpbnRlcicKICB9LCBbbW9udGhdKQoKICBjb25zdCBzZWFzb25hbCA9IFNFQVNPQVNDX0NPTlRFTlRbc2Vhc29uXQoKICBjb25zdCBzaWdodGluZ3NVcmwgPSBgaHR0cHM6Ly93d3cuaW5hdHVyYWxpc3Qub3JnL29ic2VydmF0aW9ucy90YXhvbl9pZD00ODY2MiZwbGFjZV9pZD0xJm1vbnRoJXNEJHttb250aCArIDF9JnllYXI9JHt5ZWFyfWAKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IENBQ0hFX0tFWSA9IGBtb25hcmNoLXNpZ2h0aW5ncy0ke3llYXJ9LSR7bW9udGggKyAxfWAKCiAgICBjb25zdCBjYWNoZWQgPSBzZXNzaW9uU3RvcmFnZS5nZXRJdGVtKENBQ0hFX0tFWSkKICAgIGlmIChjYWNoZWQgIT09IG51bGwpIHsKICAgICAgc2V0TW9uYXJjaFNpZ2h0aW5ncyhOdW1iZXIoY2FjaGVkKSkKICAgICAgcmV0dXJuCiAgICB9CgogICAgY29uc3QgY29udHJvbGxlciA9IG5ldyBBYm9ydENvbnRyb2xsZXIoKQogICAgY29uc3QgdGltZW91dElkID0gc2V0VGltZW91dCgoKSA9PiBjb250cm9sbGVyLmFib3J0KCksIDgwMDApCgogICAgZmV0Y2goCiAgICAgIGBodHRwczovL2FwaS5pbmF0dXJhbGlzdC5vcmcvdjEvb2JzZXJ2YXRpb25zP3RheG9uX2lkPTQ4NjYyJnBsYWNlX2lkPTEmbW9udGg9JHttb250aCArIDF9JnllYXI9JHt5ZWFyfSZwZXJfcGFnZT0xYCwKICAgICAgeyBzaWduYWw6IGNvbnRyb2xsZXIuc2lnbmFsIH0KICAgICkKICAgICAgLnRoZW4oKHJlc3BvbnNlKSA9PiB7CiAgICAgICAgaWYgKCFyZXNwb25zZS5vaykgdGhyb3cgbmV3IEVycm9yKGBpTmF0dXJhbGlzdCByZXF1ZXN0IGZhaWxlZDogJHtyZXNwb25zZS5zdGF0dXN9YCkKICAgICAgICByZXR1cm4gcmVzcG9uc2UuanNvbigpCiAgICAgIH0pCiAgICAgIC50aGVuKChkYXRhKSA9PiB7CiAgICAgICAgY2xlYXJUaW1lb3V0KHRpbWVvdXRJZCkKICAgICAgICBjb25zdCB0b3RhbCA9IGRhdGE/LnRvdGFsX3Jlc3VsdHMgPz8gMAogICAgICAgIHNldE1vbmFyY2hTaWdodGluZ3ModG90YWwpCiAgICAgICAgc2V0SGFzTGl2ZVNpZ2h0aW5ncyh0cnVlKQogICAgICAgIHNlc3Npb25TdG9yYWdlLnNldEl0ZW0oQ0FDSEVfS0VZLCB0b3RhbC50b1N0cmluZygpKQogICAgICB9KQogICAgICAuY2F0Y2goKCkgPT4gewogICAgICAgIGNsZWFyVGltZW91dCh0aW1lb3V0SWQpCiAgICAgIH0pCiAgfSwgW21vbnRoLCB5ZWFyXSkKCiAgZnVuY3Rpb24gZm9ybWF0U2lnaHRpbmdzKG46IG51bWJlciB8IG51bGwpOiBzdHJpbmcgewogICAgaWYgKG4gPT09IG51bGwpIHJldHVybiAnVGhvdXNhbmRzIG9mJwogICAgcmV0dXJuIG4udG9Mb2NhbGVTdHJpbmcoKQogIH0KCiAgcmV0dXJuICgKICAgIDxtYWluIGNsYXNzTmFtZT0iaG9tZSI+CiAgICAgIHsvKiBIRVJPIC0tLSBhbmNob3IgKi99CiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0iaGVybyI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Imhlcm9fX292ZXJsYXkiPjwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoZXJvX19jb250ZW50Ij4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0iaGVyb19fZXllYnJvdyI+Q2FtcCBNb25hcmNoPC9wPgogICAgICAgICAgPGgxIGNsYXNzTmFtZT0iaGVyb19fdGl0bGUiPk1vbmFyY2hzIGFyZSBkaXNhcHBlYXJpbmcuIFlvdSBjYW4gaGVscC48L2gxPgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICB7LyogVEhFIEJVUk4gLS0tIHRocmVhdC4gQW5zd2VycyAid2h5IHNob3VsZCBJIGNhcmU/IiAqL30KICAgICAgPHNlY3Rpb24gYXJpYS1sYWJlbGxlZGJ5PSJidXJuLWhlYWRpbmciIHN0eWxlPXt7IG1hcmdpblRvcDogJzIuNXJlbScgfX0+CiAgICAgICAgPGgyIGlkPSJidXJuLWhlYWRpbmciPk1vbmFyY2ggcG9wdWxhdGlvbnMgaGF2ZSBkZWNsaW5lZCBieSBtb3JlIHRoYW4gODAlIHNpbmNlIHRoZSAxOTgwcy4gW1sxXV08L2gyPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LXJvdyI+CgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZhY3QtY2FyZCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmRfX251bWJlciI+JiM4OTM7IDgwJTwvZGl2PgogICAgICAgICAgICA8cD5Nb25hcmNoIHBvcHVsYXRpb24gZGVjbGluZSBzaW5jZSB0aGUgMTk4MHMuIFsxXTwvcD4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1jYXJkX19udW1iZXIiPjM3Mjwvc3Bhbj48c3BhbiBjbGFzc05hbWU9ImZhY3QtY2FyZF9fdW5pdCI+TSBhY3JlczwvZGl2PgogICAgICAgICAgICA8cD5PZiBtaWxrd2VlZCBoYWJpdGF0IGxvc3QgaW4gdGhlIE1pZHdlc3QgYWxvbmUuIFszXTwvcD4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1jYXJkX19udW1iZXIiPjIuMjwvZGl2PgogICAgICAgICAgICA8cD5BY3JlcyBvZiBmb3Jlc3QgYXQgdGhlIE1leGljYW4gb3ZlcndpbnRlcmluZyBzaXRlcyBpbiAyMDI0LiBQZWFrOiAxOC4xNiBhY3JlcyBpbiAxOTk2LiBbMl08L3A+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgPC9kaXY+CiAgICAgIDwvc2VjdGlvbj4KCiAgICAgIHsvKiBUSEUgTEVWRVIgLS0tIGNhdXNhbCBtZWNoYW5pc20uIEFuc3dlcnMgIndoeSBpcyB0aGlzIGhhcHBlbmluZz8iICovfQogICAgICA8c2VjdGlvbiBhcmlhLWxhYmVsbGVkYnk9ImxldmVyLWhlYWRpbmciIHN0eWxlPXt7IG1hcmdpblRvcDogJzIuNXJlbScgfX0+CiAgICAgICAgPGgyIGlkPSJsZXZlci1oZWFkaW5nIj5BIG1vbmFyY2ggY2Fubm90IGxheSBhbiBlZ2cgd2l0aG91dCBtaWxrd2VlZC4gVGhlIG1pbGt3ZWVkIGlzIGdvbmUgYmVjYXVzZSB0aGUgbGFuZHNjYXBlIGNoYW5nZWQuPC9oMj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1yb3ciPgoKICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiIHN0eWxlPXt7IHBhZGRpbmc6ICcxLjI1cmVtJywgbWF4V2lkdGg6ICc2MDBweCcgfX0+CiAgICAgICAgICAgIDxwPkFncmljdWx0dXJhbCBoZXJiaWNpZGVzIGhhdmUgZWxpbWluYXRlZCBtaWxrd2VlZCBmcm9tIGZhcm1maWVsZHMgYWNyb3NzIHRoZSBNaWR3ZXN0LiBXaGVyZSBtaWxrd2VlZCBvbmNlIGdyZXcgYWxvbmcgZXZlcnkgZmllbGQgZWRnZSwgdGhlcmUgaXMgbm93IG9ubHkgYmFyZSBzb2lsIG9yIHBhdmVtZW50LiBbM108L3A+CiAgICAgICAgICAgIDxwPlRoZSBtb25hcmNoIG1pZ3JhdGlvbiBydW5zIHRocm91Z2ggbWlsbGlvbnMgb2YgcHJpdmF0ZSB5YXJkcy4gSWYgZXZlbiBhIHNtYWxsIGZyYWN0aW9uIG9mIHRob3NlIHlhcmRzIHJlc3RvcmUgc29tZSBoYWJpdGF0LCB0aGUgY3VtdWxhdGl2ZSBlZmZlY3QgaXMgcmVhbC48L3A+CiAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICBjbGFzc05hbWU9Imhlcm9fX2N0YSIKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgYmFja2dyb3VuZDogJ3RyYW5zcGFyZW50JywKICAgICAgICAgICAgICAgIGNvbG9yOiAndmFyKC0tdGV4dC1wcmltYXJ5KScsCiAgICAgICAgICAgICAgICBib3JkZXI6ICcxcHggc29saWQgdmFyKC0tdGV4dC1wcmltYXJ5KScsCiAgICAgICAgICAgICAgICBmb250U2l6ZTogJzAuOTVyZW0nLAogICAgICAgICAgICAgICAgZm9udFdlaWdodDogJ2JvbGQnLAogICAgICAgICAgICAgICAgdGV4dERlY29yYXRpb246ICd1bmRlcmxpbmUnLAogICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnbWlsa3dlZWQnKX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIFdoeSBpdCBtYXR0ZXJzIOKGkgogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L3NlY3Rpb24+CgogICAgICAgIHsvKiBSSUdIVCBOT1cgLS0tIHdoYXQgdG8gZG8gdGhpcyB3ZWVrLiBBbnN3ZXJzICJ3aGF0IGRvIEkgZG8gdGhpcyBtb250aD8iICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyaWdodC1ub3ctcGFuZWwiIHN0eWxlPXt7IG1hcmdpblRvcDogJzIuNXJlbScgfX0+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmlnaHQtbm93LXBhbmVsX19oZWFkZXIiPgogICAgICAgICAgICB7c2Vhc29uYWwuaGVhZGVyfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8dWwgY2xhc3NOYW1lPSJyaWdodC1ub3ctcGFuZWxfX2xpc3QiPgogICAgICAgICAgICB7c2Vhc29uYWwuaXRlbXMubWFwKChpdGVtLCBpKSA9PiAoCiAgICAgICAgICAgICAgPGxpIGtleT17aX0+CiAgICAgICAgICAgICAgICA8c3Ryb25nPntpdGVtLmxhYmVsfTwvc3Ryb25nPnsnICd9CiAgICAgICAgICAgICAgICB7aXRlbS5kZXRhaWx9CiAgICAgICAgICAgICAgPC9saT4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L3VsPgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogVEhFIEFTSyAtLS0gb25lIHByaW1hcnkgYWN0aW9uLCBzcGVjaWZpY2FsbHkgbmFtZWQuIEFuc3dlcnMgImhvdyBkbyBJIHN0YXJ0PyIgKi99CiAgICAgICAgPHNlY3Rpb24gYXJpYS1sYWJlbGxlZGJ5PSJoZWxwLWhlYWRpbmciIHN0eWxlPXt7IG1hcmdpblRvcDogJzIuNXJlbScgfX0+CiAgICAgICAgICA8aDIgaWQ9ImhlbHAtaGVhZGluZyI+TW9uYXJjaHMgYnJlZWQgaW4gdGhlIE1pZHdlc3QsIG1pZ3JhdGUgdGhyb3VnaCB5b3VyIGNvdW50eSwgYW5kIG92ZXJ3aW50ZXIgaW4gTWV4aWNvIOKAlCB0aGUgY29ycmlkb3IgcnVucyB0aHJvdWdoIHlvdXIgeWFyZCB3aGV0aGVyIHlvdSBub3RpY2UgaXQgb3Igbm90LjwvaDI+CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdncmlkJywgZ3JpZFRlbXBsYXRlQ29sdW1uczogJ3JlcGVhdChhdXRvLWZpbGwsIG1pbm1heCgyMjBweCwgMWZyKSknLCBnYXA6ICcxLjI1cmVtJywgbWFyZ2luVG9wOiAnMXJlbScgfX0+CgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1jYXJkIiBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLCBhbGlnbkl0ZW1zOiAnZmxleC1zdGFydCcsIHBhZGRpbmc6ICcxLjI1cmVtJywgcGFkZGluZ1RvcDogMCwgb3ZlcmZsb3c6ICdoaWRkZW4nIH19PgogICAgICAgICAgICAgIDxDYXJkUGhvdG8KICAgICAgICAgICAgICAgIHNyYz17Q0FSRF9QSE9UT1MucGxhbnRNaWxrd2VlZH0KICAgICAgICAgICAgICAgIGFsdD0iTW9uYXJjaCBidXR0ZXJmbHkgb24gYnV0dGVyZmx5IHdlZWQgKEFzY2xlcGlhcyB0dWJlcm9zYSkiCiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8aDMgc3R5bGU9e3sgbWFyZ2luOiAnMCAwIDAuNXJlbScsIGZvbnRTaXplOiAnMS4xcmVtJyB9fT5QbGFudCBtaWxrd2VlZDwvaDM+CiAgICAgICAgICAgICAgPHA+TWlsa3dlZWQgaXMgdGhlIG9ubHkgcGxhbnQgbW9uYXJjaHMgd2lsbCBsYXkgZWdncyBvbi4gT25lIG5hdGl2ZSBwbGFudCBpbiB5b3VyIHlhcmQgZ2l2ZXMgdGhlIG1pZ3JhdGlvbiBhIGZvb3Rob2xkLjwvcD4KICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iaGVyb19fY3RhIiBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdtaWxrd2VlZCcpfT5HZXQgc3RhcnRlZCDigJQ8L2J1dHRvbj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1jYXJkIiBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLCBhbGlnbkl0ZW1zOiAnZmxleC1zdGFydCcsIHBhZGRpbmc6ICcxLjI1cmVtJywgcGFkZGluZ1RvcDogMCwgb3ZlcmZsb3c6ICdoaWRkZW4nIH19PgogICAgICAgICAgICAgIDxDYXJkUGhvdG8KICAgICAgICAgICAgICAgIHNyYz17Q0FSRF9QSE9UT1MucmVkdWNlUGVzdGljaWRlc30KICAgICAgICAgICAgICAgIGFsdD0iUGVzdGljaWRlIGdyYW51bGVzIgogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgPGgzIHN0eWxlPXt7IG1hcmdpbjogJzAgMCAwLjVyZW0nLCBmb250U2l6ZTogJzEuMXJlbScgfX0+UmVkdWNlIHBlc3RpY2lkZXM8L2gzPgogICAgICAgICAgICAgIDxwPkluc2VjdGljaWRlcyBraWxsIG1vbmFyY2hzIGRpcmVjdGx5LiBFbGltaW5hdGluZyB0aGVtIGZyb20geW91ciB5YXJkIGFsc28gcHJlc2VydmVzIHRoZSBpbnNlY3QgZm9vZCBzb3VyY2VzIHRoYXQgYmlyZHMgYW5kIG90aGVyIHdpbGRsaWZlIG5lZWQuPC9wPgogICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJoZXJvX19jdGEiIG9uQ2xpY2s9eygpID0+IG9uTmF2aWdhdGUoJ3Blc3RpY2lkZXMnKX0+R2V0IHN0YXJ0ZWQg4oCUPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZhY3QtY2FyZCIgc3R5bGU9e3sgZGlzcGxheTogJ2ZsZXgnLCBmbGV4RGlyZWN0aW9uOiAnY29sdW1uJywgYWxpZ25JdGVtczogJ2ZsZXgtc3RhcnQnLCBwYWRkaW5nOiAnMS4yNXJlbScsIHBhZGRpbmdUb3A6IDAsIG92ZXJmbG93OiAnaGlkZGVuJyB9fT4KICAgICAgICAgICAgICA8Q2FyZFBob3RvCiAgICAgICAgICAgICAgICBzcmM9e0NBUkRfUEhPVE9TLmxlYXZlTGVhdmVzfQogICAgICAgICAgICAgICAgYWx0PSJGYWXB3aW50ZXJpbmcgbGVhdmVzIG9uIHRoZSBncm91bmQiCiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8aDMgc3R5bGU9e3sgbWFyZ2luOiAnMCAwIDAuNXJlbScsIGZvbnRTaXplOiAnMS4xcmVtJyB9fT5MZWF2ZSB0aGUgbGVhdmVzPC9oMz4KICAgICAgICAgICAgICA8cD5GaXJlZmx5IGxhcnZhZSBvdmVyd2ludGVyIGluIGxlYWYgbGl0dGVyLiBSZW1vdmluZyBpdCBraWxscyB0aGUgbmV4dCBnZW5lcmF0aW9uIGJlZm9yZSBpdCBoYXRjaGVzLjwvcD4KICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT0iaGVyb19fY3RhIiBvbkNsaWNrPXsoKSA9PiBvbk5hdmlnYXRlKCdsZWF2ZS10aGUtbGVhdmVzJyl9PkdldCBzdGFydGVkIOKAlDwvYnV0dG9uPgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiIHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsIGFsaWduSXRlbXM6ICdmbGV4LXN0YXJ0JywgcGFkZGluZzogJzEuMjVyZW0nLCBwYWRkaW5nVG9wOiAwLCBvdmVyZmxvdzogJ2hpZGRlbicgfX0+CiAgICAgICAgICAgICAgPENhcmRQaG90bwogICAgICAgICAgICAgICAgc3JjPXtDQVJEX1BIT1RPUy5hZGRXYXRlcn0KICAgICAgICAgICAgICAgIGFsdD0iQmlyZGJhdGggd2l0aCB3YXRlciIKICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgIDxoMyBzdHlsZT17eyBtYXJnaW46ICcwIDAgMC41cmVtJywgZm9udFNpemU6ICcxLjFyZW0nIH19PkFkZCB3YXRlcjwvaDM+CiAgICAgICAgICAgICAgPHA+QSBzaGFsbG93IGJpcmRiYXRoIG9yIGRyaXBwaW5nIGhvc2Ugc3VwcG9ydHMgbW9uYXJjaHMsIGJpcmRzLCBhbmQgcG9sbGluYXRvcnMgZHVyaW5nIGRyeSBzdHJldGNoZXMuPC9wPgogICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJoZXJvX19jdGEiIG9uQ2xpY2s9eygpID0+IG9uTmF2aWdhdGUoJ3dhdGVyJyl9PkdldCBzdGFydGVkIOKAlDwvYnV0dG9uPgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIDxzZWN0aW9uIGFyaWEtbGFiZWxsZWRieT0ibmVpZ2hib3JzLWhlYWRpbmciIHN0eWxlPXt7IG1hcmdpblRvcDogJzIuNXJlbScgfX0+CiAgICAgICAgICA8aDIgaWQ9Im5laWdoYm9ycy1oZWFkaW5nIj5UaGUgZmlyZWZseSB0aGF0IGxpZ2h0cyB1cCB5b3VyIHlhcmQgZWFjaCBKdW5lIHNwZW50IG1vc3Qgb2YgaXRzIGxpZmUgbGl2aW5nIGluIHlvdXIgbGVhZiBsaXR0ZXIuPC9oMj4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogJ2dyaWQnLCBncmlkVGVtcGxhdGVDb2x1bW5zOiAncmVwZWF0KGF1dG8tZmlsbCwgbWlubWF4KDIyMHB4LCAxZnIpKScsIGdhcDogJzEuMjVyZW0nLCBtYXJnaW5Ub3A6ICcxcmVtJyB9fT4KCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmYWN0LWNhcmQiIHN0eWxlPXt7IHBhZGRpbmc6ICcxLjI1cmVtJywgcGFkZGluZ1RvcDogMCwgb3ZlcmZsb3c6ICdoaWRkZW4nIH19PgogICAgICAgICAgICAgIDxDYXJkUGhvdG8KICAgICAgICAgICAgICAgIHNyYz17Q0FSRF9QSE9UT1MubW9uYXJjaH0KICAgICAgICAgICAgICAgIGFsdD0iTW9uYXJjaCBidXR0ZXJmbHkgbWlncmF0aW5nIgogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9Imhlcm9fX2N0YSIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnc3BlY2llcy9tb25hcmNoLWJ1dHRlcmZseScpfSBzdHlsZT17eyBiYWNrZ3JvdW5kOiAndHJhbnNwYXJlbnQnLCBjb2xvcjogJ3ZhcigtLXRleHQtcHJpbWFyeSknLCBib3JkZXI6ICdub25lJywgcGFkZGluZzogMCwgZm9udFdlaWdodDogJ25vcm1hbCcsIHRleHRBbGlnbjogJ2xlZnQnLCBmb250U2l6ZTogJ2luaGVyaXQnLCBtYXJnaW5Ub3A6ICcwLjVyZW0nIH19PgogICAgICAgICAgICAgICAgPGgzIHN0eWxlPXt7IG1hcmdpbjogMCwgZm9udFNpemU6ICcxLjFyZW0nIH19Pk1vbmFyY2ggYnV0dGVyZmx5IOKGkjwvaDM+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgPHA+T25jZSBhIGNvbW1vbiBzaWdodCBvbiB0aGUgbWlncmF0aW9uLiBOb3cgb25lIG9mIHRoZSBtb3N0IHRocmVhdGVuZWQgYW5pbWFscyBpbiBOb3J0aCBBbWVyaWNhLjwvcD4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1jYXJkIiBzdHlsZT17eyBwYWRkaW5nOiAnMS4yNXJlbScsIHBhZGRpbmdUb3A6IDAsIG92ZXJmbG93OiAnaGlkZGVuJyB9fT4KICAgICAgICAgICAgICA8Q2FyZFBob3RvCiAgICAgICAgICAgICAgICBzcmM9e0NBUkRfUEhPVE9TLmZpcmVmbHl9CiAgICAgICAgICAgICAgICBhbHQ9IkZpcmVmbHkgZ2xvd2luZyBpbiB0aGUgZGFyayIKICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSJoZXJvX19jdGEiIG9uQ2xpY2s9eygpID0+IG9uTmF2aWdhdGUoJ3NwZWNpZXMvZWFzdGVybi1maXJlZmx5Jyl9IHN0eWxlPXt7IGJhY2tncm91bmQ6ICd0cmFuc3BhcmVudCcsIGNvbG9yOiAndmFyKC0tdGV4dC1wcmltYXJ5KScsIGJvcmRlcjogJ25vbmUnLCBwYWRkaW5nOiAwLCBmb250V2VpZ2h0OiAnbm9ybWFsJywgdGV4dEFsaWduOiAnbGVmdCcsIGZvbnRTaXplOiAnaW5oZXJpdCcsIG1hcmdpblRvcDogJzAuNXJlbScgfX0+CiAgICAgICAgICAgICAgICA8aDMgc3R5bGU9e3sgbWFyZ2luOiAwLCBmb250U2l6ZTogJzEuMXJlbScgfX0+RWFzdGVybiBmaXJlZmx5IOKGkjwvaDM+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgPHA+TGFydmFlIG92ZXJ3aW50ZXIgaW4gdGhlIGxlYWYgbGl0dGVyIGZvciB1cCB0byB0d28geWVhcnMuIFJlbW92ZSB0aGUgbGVhdmVzIGFuZCB5b3Uga2lsbCB0aGUgbmV4dCBnZW5lcmF0aW9uLjwvcD4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmFjdC1jYXJkIiBzdHlsZT17eyBwYWRkaW5nOiAnMS4yNXJlbScsIHBhZGRpbmdUb3A6IDAsIG92ZXJmbG93OiAnaGlkZGVuJyB9fT4KICAgICAgICAgICAgICA8Q2FyZFBob3RvCiAgICAgICAgICAgICAgICBzcmM9e0NBUkRfUEhPVE9TLmJveFR1cnRsZX0KICAgICAgICAgICAgICAgIGFsdD0iRWFzdGVybiBib3ggdHVydGxlIgogICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9Imhlcm9fX2N0YSIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnc3BlY2llcy9ib3gtdHVydGxlJyl9IHN0eWxlPXt7IGJhY2tncm91bmQ6ICd0cmFuc3BhcmVudCcsIGNvbG9yOiAndmFyKC0tdGV4dC1wcmltYXJ5KScsIGJvcmRlcjogJ25vbmUnLCBwYWRkaW5nOiAwLCBmb250V2VpZ2h0OiAnbm9ybWFsJywgdGV4dEFsaWduOiAnbGVmdCcsIGZvbnRTaXplOiAnaW5oZXJpdCcsIG1hcmdpblRvcDogJzAuNXJlbScgfX0+CiAgICAgICAgICAgICAgICA8aDMgc3R5bGU9e3sgbWFyZ2luOiAwLCBmb250U2l6ZTogJzEuMXJlbScgfX0+RWFzdGVybiBib3ggdHVydGxlIOKGkjwvaDM+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgPHA+TW92ZXMgdGhyb3VnaCB5YXJkcywgd29vZGxhbmQgZWRnZXMsIGFuZCBsZWFmIGxpdHRlciAtLS0gYWxsIG9mIHdoaWNoIGhhdmUgc2hyaWQuPC9wPgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgdGV4dEFsaWduOiAnY2VudGVyJywgbWFyZ2luVG9wOiAnMS41cmVtJyB9fT4KICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9Imhlcm9fX2N0YSIgb25DbGljaz17KCkgPT4gb25OYXZpZ2F0ZSgnc3BlY2llcy1nYWxsZXJ5Jyl9PgogICAgICAgICAgICAgIE1lZXQgYWxsIDU5IG5laWdoYm9ycyDihpIKICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7LyogaU5hdHVyYWxpc3QgTW9uYXJjaCBjb3VudCB3aWRnZXQgLS0tIHN0YXJ0ICovfQogICAgICAgIDxkaXYKICAgICAgICAgIGNsYXNzTmFtZT0iYWN0aW9uLXBhbmVsIgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgbWFyZ2luVG9wOiAnMnJlbScsCiAgICAgICAgICAgIGJhY2tncm91bmQ6ICdsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCByZ2JhKDI1NSwgMjQ3LCAyMzcsIDAuOTUpIDAl LCByZ2JhKDI1NSwgMjUxLCAyMzUsIDAuOTUpIDEwMCUpJywKICAgICAgICAgICAgYm9yZGVyOiAnMXB4IHNvbGlkIHJnYmEoMjQ5LCAxMTUsIDIyLCAwLjI0KScsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIDxoMiBzdHlsZT17eyBtYXJnaW5Ub3A6IDAgfX0+RWFjaCBzaWdodGluZyBsb2dnZWQgb24gaU5hdHVyYWxpc3QgYmVjb21lcyBvcGVuIGRhdGEgZm9yIHJlc2VhcmNoZXJzIHRyYWNraW5nIHdoaWNoIG1pZ3JhdGlvbiBjb3JyaWRvcnMgYXJlIHN0aWxsIHdvcmtpbmcuPC9oMj4KICAgICAgICAgIDxwPgogICAgICAgICAgICA8c3Ryb25nIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tbW9uYXJjaC1vcmFuZ2UpJyB9fT57Zm9ybWF0U2lnaHRpbmdzKG1vbmFyY2hTaWdodGluZ3MpfSBNb25hcmNoIHNpZ2h0aW5nczwvc3Ryb25nPnsnICd9CiAgICAgICAgICAgIGhhdmUgYmVlbiBsb2dnZWQgb24gaU5hdHVyYWxpc3QgaW4gdGhlIFVuaXRlZCBTdGF0ZXMgdGhpcyBtb250aC4KICAgICAgICAgICAgRWFjaCBzaWdodGluZyBiZWNvbWVzIG9wZW4gZGF0YSB0aGF0IHJlc2VhcmNoZXJzIGNhbiB1c2UgdG8gdHJhY2sgdGhlIG1pZ3JhdGlvbi4KICAgICAgICAgIDwvcD4KICAgICAgICAgIDxwIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dC1zZWNvbmRhcnkpJywgZm9udFNpemU6ICcwLjkycmVtJywgbWFyZ2luQm90dG9tOiAnMXJlbScgfX0+CiAgICAgICAgICAgIHtoYXNMaXZlU2lnaHRpbmdzCiAgICAgICAgICAgICAgPyBgTGl2ZSBjb3VudCBmb3IgJHttb250aE5hbWV9ICR7eWVhcn0sIHJlZnJlc2hlZCB3aGVuIHRoaXMgcGFnZSBsb2Fkcy5gCiAgICAgICAgICAgICAgOiBgU2hvd2luZyB0aGUgbGF0ZXN0IHNhdmVkIGNvdW50IGZvciAke21vbnRoTmFtZX0gJHt5ZWFyfTsgcmVmcmVzaGVzIHdoZW4gbGl2ZSBkYXRhIGlzIGF2YWlsYWJsZS5gfQogICAgICAgICAgPC9wPgogICAgICAgICAgPGEKICAgICAgICAgICAgaHJlZj17c2lnaHRpbmdzVXJsfQogICAgICAgICAgICB0YXJnZXQ9Il9ibGFuayIKICAgICAgICAgICAgcmVsPSJub3JlZmVycmVyIgogICAgICAgICAgICBjbGFzc05hbWU9Imhlcm9fX2N0YSIKICAgICAgICAgICAgc3R5bGU9e3sgZGlzcGxheTogJ2lubGluZS1ibG9jaycgfX0KICAgICAgICAgID4KICAgICAgICAgICAgU2VlIHRoaXMgbW9udGgncyBzaWdodGluZ3Mgb24gaU5hdHVyYWxpc3Qg4oaQCiAgICAgICAgICA8L2E+CiAgICAgICAgPC9kaXY+CiAgICAgICAgey8qIGlOYXR1cmFsaXN0IE1vbmFyY2ggY291bnQgd2lkZ2V0IC0tLSBlbmQgKi99CgogICAgICAgIHsvKiBDaXRhdGlvbiBsaXN0ICovfQogICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0iY2l0ZS1saXN0IiBhcmlhLWxhYmVsPSJTb3VyY2VzIj4KICAgICAgICAgIDxwPlsxXSBYZXJjZXMgU29jaWV0eS4gPGEgaHJlZj0iaHR0cHM6Ly94ZXJjZXMub3JnL21vbmFyY2hzL2Vhc3Rlcm4tbW9uYXJjaC1jb25zZXJ2YXRpb24iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPkVhc3Rlcm4gTW9uYXJjaCBDb25zZXJ2YXRpb24uPC9hPiBBY2Nlc3NlZCAke21vbnRoTmFtZX0gJHt5ZWFyfS48L3A+CiAgICAgICAgICA8cD5bMl0gWGVyY2VzIFNvY2lldHkgLyBXV0YtTWV4aWNvLiA8YSBocmVmPSJodHRwczovL3hlcmNlcy5vcmcvcHJlc3MvZWFzdGVybi1tb25hcmNoLWJ1dHRlcmZseS1udW1iZXJzLWluY3JlYXNlLWJ1dC1yZW1haW4tYmVsb3ctaGlzdG9yaWMtbGV2ZWxzIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub3JlZmVycmVyIj5FYXN0ZXJuIE1vbmFyY2ggQnV0dGVyZmx5IE51bWJlcnMgSW5jcmVhc2UsIGJ1dCBSZW1haW4gQmVsb3cgSGlzdG9yaWMgTGV2ZWxzLjwvYT4gTWFyY2ggMTcsIDIwMjYuPC9wPgogICAgICAgICAgPHA+WzNdIFBsZWFzYW50cyBKTSwgT2JlcmhhdXNlciBLUy4gTWlsa3dlZWQgbG9zcyBpbiBhZ3JpY3VsdHVyYWwgZmllbGRzIGJlY2F1c2Ugb2YgaGVyYmljaWRlIHVzZTogZWZmZWN0IG9uIHRoZSBtb25hcmNoIGJ1dHRlcmZseSBwb3B1bGF0aW9uLiA8YSBocmVmPSJodHRwczovL2RvaS5vcmcvMTAuMTExMS9qLjE3NTItNDU5OC4yMDEyLjAwMTk2LngiIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPkluc2VjdCBDb25zZXJ2YXRpb24gYW5kIERpdmVyc2l0eSA2KDIpOjEzNS0xNDQuPC9hPiAyMDEzLjwvcD4KICAgICAgICAgIDxwIHN0eWxlPXt7IG1hcmdpblRvcDogJzAuNzVyZW0nLCBmb250U2l6ZTogJzAuNzVyZW0nLCBjb2xvcjogJ3Zhcigm dGV4dC1zZWNvbmRhcnkpJyB9fT4KICAgICAgICAgICAgUGhvdG9zOiBXaWtpbWVkaWEgQ29tbW9ucy4KICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9jb21tb25zLndpa2ltZWRpYS5vcmcvd2lraS9GaWxlOk1vbmFyY2hfQnV0dGVyZmx5X0RhbmF1c19wbGV4aXBwdXNfQnV0dGVyZmx5X1dlZWRfMTY1MHB4LmpwZyIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9yZWZlcnJlciI+QnV0dGVyZmx5IHdlZWQ8L2E+Lg==
+import { useEffect, useMemo, useState } from 'react'
+import type { Page } from '../App'
+
+interface HomeProps {
+  onNavigate: (page: Page) => void
+}
+
+// Photo sources: Wikimedia Commons (CC BY-SA). Attribution at bottom of page.
+// vis-004: verified thumbnail URLs from Wikimedia Commons API 2026-05-09.
+// TODO: download and host in /public/ for production performance.
+const CARD_PHOTOS = {
+  plantMilkweed: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg',
+  reducePesticides: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Summit_Packet_Granules.jpg/480px-Summit_Packet_Granules.jpg',
+  leaveLeaves: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Fall_leaves_2021_6.jpg/480px-Fall_leaves_2021_6.jpg',
+  addWater: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Birdbath016.jpg/480px-Birdbath016.jpg',
+  monarch: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Monarch_Butterfly_Danaus_plexippus_Migrating 2.jpg/480px-Monarch_Butterfly_Danaus_plexippus_Migrating 2.jpg',
+  firefly: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Firefly_Lampyris_noctiluca_%28Robert_Eisele%29.jpg/480px-Firefly_Lampyris_noctiluca_%28Robert_Eisele%29.jpg',
+  boxTurtle: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_%28cropped%29.jpg',
+}
+
+// Seasonal action content — indexed by month (0=Jan … 11=Dec)
+const SEASONAL_CONTENT: { header: string; items: { label: string; detail: string }[] }[] = [
+  // January (0) — winter
+  {
+    header: 'January: plan your yard now so it’s ready when monarchs return.',
+    items: [
+      {
+        label: 'Plan your spring milkweed planting',
+        detail: 'Order native milkweed seeds or plants now for early spring planting.',
+      },
+      {
+        label: 'Leave leaf litter in place',
+        detail: 'Firefly larvae overwinter in the leaf litter. Don’t chip or remove it.',
+      },
+      {
+        label: 'Reduce or eliminate pesticides',
+        detail:
+          'Insecticides kill monarchs directly and eliminate the insect food sources other species need.',
+      },
+    ],
+  },
+  // February (1) — late winter
+  {
+    header: 'February: prepare your yard now so it’s ready when monarchs return.',
+    items: [
+      {
+        label: 'Order native milkweed',
+        detail: 'Native species like butterfly weed (Asclepias tuberosa) are available online now.',
+      },
+      {
+        label: 'Leave leaf litter in place',
+        detail: 'Firefly larvae overwinter in the leaf litter. Don’t chip or remove it.',
+      },
+      {
+        label: 'Skip the pre-emergent herbicides',
+        detail: 'Pre-emergents applied now will prevent your milkweed from germinating in spring.',
+      },
+    ],
+  },
+  // Early spring: March (2), April (3)
+  {
+    header: 'March: help monarchs find food and lay eggs as they move north.',
+    items: [
+      {
+        label: 'Plant or locate milkweed',
+        detail:
+          'Milkweed is the only plant monarchs will lay eggs on. Look for native species at a local nursery.',
+      },
+      {
+        label: 'Log any monarch you see on iNaturalist.',
+        detail:
+          'Spring sightings help researchers track which corridors the migration is using each year.',
+      },
+      {
+        label: 'Skip the pesticides',
+        detail:
+          'Your iNaturalist observation tells researchers which northbound corridors the population is actually using this year.',
+      },
+    ],
+  },
+  // April (3)
+  {
+    header: 'April: help monarchs find food and lay eggs as they move north.',
+    items: [
+      {
+        label: 'Plant or locate milkweed',
+        detail:
+          'Milkweed is the only plant monarchs will lay eggs on. Look for native species at a local nursery.',
+      },
+      {
+        label: 'Log any monarch you see on iNaturalist.',
+        detail:
+          'Spring sightings help researchers track which corridors the migration is using each year.',
+      },
+      {
+        label: 'Skip the pesticides',
+        detail: 'Insecticides kill monarchs directly and eliminate insect food sources birds need.',
+      },
+    ],
+  },
+  // Late spring: May (4) — breeding monarchs arriving in the Midwest
+  {
+    header: 'May: breeding monarchs are arriving in the Midwest. Make your yard count.',
+    items: [
+      {
+        label: 'Plant milkweed now',
+        detail: 'May is when breeding monarchs arrive. Native milkweed planted now will support egg-laying this season.',
+      },
+      {
+        label: 'Add a shallow water source',
+        detail: 'A birdbath or dripping hose supports monarchs, bees, and song birds during dry stretches.',
+      },
+      {
+        label: 'Log what you see on iNaturalist.',
+        detail:
+          'Your sighting on iNaturalist helps researchers understand where corridors are shifting.',
+      },
+    ],
+  },
+  // June (5) — peak breeding
+  {
+    header: 'June: peak breeding season. Every milkweed plant in your yard matters.',
+    items: [
+      {
+        label: 'Leave leaf litter in place',
+        detail: 'Fireflies, salamanders, and box turtles all depend on dead leaves for larval habitat.',
+      },
+      {
+        label: 'Add a shallow water source',
+        detail: 'A birdbath or dripping hose supports butterflies, bees, and song birds during dry stretches.',
+      },
+      {
+        label: 'Log what you see on iNaturalist.',
+        detail:
+          'Summer is peak monarch breeding season. Every sighting helps researchers understand where populations are concentrating.',
+      },
+    ],
+  },
+  // July (6) — midsummer
+  {
+    header: 'July: build the breeding habitat that sustains multiple generations.',
+    items: [
+      {
+        label: 'Leave leaf litter in place',
+        detail: 'Fireflies, salamanders, and box turtles all depend on dead leaves for larval habitat.',
+      },
+      {
+        label: 'Add a shallow water source',
+        detail: 'A birdbath or dripping hose supports butterflies, bees, and song birds during dry stretches.',
+      },
+      {
+        label: 'Log what you see on iNaturalist.',
+        detail:
+          'Summer is peak monarch breeding season. Every sighting helps researchers understand where populations are concentrating.',
+      },
+    ],
+  },
+  // August (7) — late summer / early migration
+  {
+    header: 'August: the southbound migration is starting. Help monarchs fuel up.',
+    items: [
+      {
+        label: 'Plant late-blooming native flowers',
+        detail: 'Goldenrod, asters, and ironweed provide nectar for fall migrants fueling up for the journey south.',
+      },
+      {
+        label: 'Skip the pesticides',
+        detail: 'Fall migrants need every nectar source they can find. Insecticides eliminate both insects and their food.',
+      },
+      {
+        label: 'Log what you see on iNaturalist.',
+        detail: 'Fall migration sightings help researchers map which corridors the population is using this year.',
+      },
+    ],
+  },
+  // September (8) — peak fall migration
+  {
+    header: 'September: peak fall migration. Help monarchs fuel up for Mexico.',
+    items: [
+      {
+        label: 'Plant late-blooming native flowers',
+        detail: 'Goldenrod, asters, and ironweed provide nectar for fall migrants fueling up for the journey south.',
+      },
+      {
+        label: 'Skip the pesticides',
+        detail: 'Fall migrants need every nectar source they can find. Insecticides eliminate both insects and their food.',
+      },
+      {
+        label: 'Log what you see on iNaturalist.',
+        detail: 'Fall migration sightings help researchers map which corridors the population is using this year.',
+      },
+    ],
+  },
+  // October (9) — late migration
+  {
+    header: 'October: the last migrants are moving south. Make your yard a rest stop.',
+    items: [
+      {
+        label: 'Plant late-blooming native flowers',
+        detail: 'Late asters and goldenrod still blooming in October provide critical fuel for the last migrants.',
+      },
+      {
+        label: 'Leave leaf litter in place',
+        detail: 'Firefly larvae overwinter in the leaf litter. Don’t chip or remove it.',
+      },
+      {
+        label: 'Log what you see on iNaturalist.',
+        detail: 'Late October sightings tell researchers where the trailing edge of the migration is each year.',
+      },
+    ],
+  },
+  // November (10) — early winter
+  {
+    header: 'November: prepare your yard now so it’s ready when monarchs return.',
+    items: [
+      {
+        label: 'Leave leaf litter in place',
+        detail: 'Firefly larvae overwinter in the leaf litter. Don’t chip or remove it.',
+      },
+      {
+        label: 'Plan your spring milkweed planting',
+        detail: 'Order native milkweed seeds or plants now for early spring planting.',
+      },
+      {
+        label: 'Reduce or eliminate pesticides',
+        detail:
+          'Insecticides kill monarchs directly and eliminate the insect food sources other species need.',
+      },
+    ],
+  },
+  // December (11) — winter
+  {
+    header: 'December: prepare your yard now so it’s ready when monarchs return.',
+    items: [
+      {
+        label: 'Plan your spring milkweed planting',
+        detail: 'Order native milkweed seeds or plants now for early spring planting.',
+      },
+      {
+        label: 'Leave leaf litter in place',
+        detail: 'Firefly larvae overwinter in the leaf litter. Don’t chip or remove it.',
+      },
+      {
+        label: 'Reduce or eliminate pesticides',
+        detail:
+          'Insecticides kill monarchs directly and eliminate the insect food sources other species need.',
+      },
+    ],
+  },
+]
+
+interface CardPhotoProps {
+  src: string
+  alt: string
+}
+
+function CardPhoto({ src, alt }: CardPhotoProps) {
+  const [status, setStatus] = useState<'loading' | 'loaded' | 'error'>('loading')
+  return (
+    <div
+      style={{
+        width: '100%',
+        height: '140px',
+        margin: '0 0 0.75rem -1.25rem',
+        overflow: 'hidden',
+        background: '#eee',
+      }}
+    >
+      {status !== 'error' && (
+        <img
+          src={src}
+          alt={alt}
+          onLoad={() => setStatus('loaded')}
+          onError={() => setStatus('error')}
+          style={{
+            width: 'calc(100% + 1.25rem)',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center',
+            opacity: status === 'loaded' ? 1 : 0,
+            transition: 'opacity 0.3s ease',
+          }}
+        />
+      )}
+    </div>
+  )
+}
+
+export default function Home({ onNavigate }: HomeProps) {
+  const [monarchSightings, setMonarchSightings] = useState<number | null>(null)
+  const [hasLiveSightings, setHasLiveSightings] = useState(false)
+
+  const now = useMemo(() => new Date(), [])
+  const month = now.getMonth() // 0-11
+  const year = now.getFullYear()
+  const monthName = now.toLocaleString('en-US', { month: 'long' })
+
+  const seasonal = SEASONAL_CONTENT[month]
+
+  const sightingsUrl = `https://www.inaturalist.org/observations?taxon_id=48662&place_id=1&month=${month + 1}&year=${year}`
+
+  useEffect(() => {
+    const CACHE_KEY = `monarch-sightings-${year}-${month + 1}`
+
+    const cached = sessionStorage.getItem(CACHE_KEY)
+    if (cached !== null) {
+      setMonarchSightings(Number(cached))
+      return
+    }
+
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), 8000)
+
+    fetch(
+      `https://api.inaturalist.org/v1/observations?taxon_id=48662&place_id=1&month=${month + 1}&year=${year}&per_page=1`,
+      { signal: controller.signal }
+    )
+      .then((response) => {
+        if (!response.ok) throw new Error(`iNaturalist request failed: ${response.status}`)
+        return response.json()
+      })
+      .then((data) => {
+        clearTimeout(timeoutId)
+        const total = data?.total_results ?? 0
+        setMonarchSightings(total)
+        setHasLiveSightings(true)
+        sessionStorage.setItem(CACHE_KEY, total.toString())
+      })
+      .catch(() => {
+        clearTimeout(timeoutId)
+      })
+  }, [month, year])
+
+  function formatSightings(n: number | null): string {
+    if (n === null) return 'Thousands of'
+    return n.toLocaleString()
+  }
+
+  return (
+    <main className="home">
+      {/* HERO --- anchor */}
+      <section className="hero">
+        <div className="hero__overlay"></div>
+        <div className="hero__content">
+          <p className="hero__eyebrow">Camp Monarch</p>
+          <h1 className="hero__title">Monarchs are disappearing. You can help.</h1>
+        </div>
+      </section>
+
+      {/* THE BURN --- threat. Answers "why should I care?" */}
+      <section aria-labelledby="burn-heading" style={{ marginTop: '2.5rem' }}>
+        <h2 id="burn-heading">Monarch populations have declined by more than 80% since the 1980s. [[1]]</h2>
+        <div className="fact-row">
+
+          <div className="fact-card">
+            <div className="fact-card__number">&darr; 80%</div>
+            <p>Monarch population decline since the 1980s. [1]</p>
+          </div>
+
+          <div className="fact-card">
+            <div className="fact-card__number">372<span className="fact-card__unit">M acres</span></div>
+            <p>Of milkweed habitat lost in the Midwest alone. [3]</p>
+          </div>
+
+          <div className="fact-card">
+            <div className="fact-card__number">2.2</div>
+            <p>Acres of forest at the Mexican overwintering sites in 2024. Peak: 18.16 acres in 1996. [2]</p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* THE LEVER --- causal mechanism. Answers "why is this happening?" */}
+      <section aria-labelledby="lever-heading" style={{ marginTop: '2.5rem' }}>
+        <h2 id="lever-heading">A monarch cannot lay an egg without milkweed. The milkweed is gone because the landscape changed.</h2>
+        <div className="fact-row">
+
+          <div className="fact-card" style={{ padding: '1.25rem', maxWidth: '600px' }}>
+            <p>Agricultural herbicides have eliminated milkweed from farmfields across the Midwest. Where milkweed once grew along every field edge, there is now only bare soil or pavement. [3]</p>
+            <p>The monarch migration runs through millions of private yards. If even a small fraction of those yards restore some habitat, the cumulative effect is real.</p>
+            <button
+              className="hero__cta"
+              style={{
+                background: 'transparent',
+                color: 'var(--text-primary)',
+                border: '1px solid var(--text-primary)',
+                fontSize: '0.95rem',
+                fontWeight: 'bold',
+                textDecoration: 'underline',
+              }}
+              onClick={() => onNavigate('milkweed')}
+            >
+              Why it matters →
+            </button>
+          </div>
+        </div>
+      </section>
+
+        {/* RIGHT NOW --- what to do this week. Answers "what do I do this month?" */}
+        <div className="right-now-panel" style={{ marginTop: '2.5rem' }}>
+          <div className="right-now-panel__header">
+            {seasonal.header}
+          </div>
+          <ul className="right-now-panel__list">
+            {seasonal.items.map((item, i) => (
+              <li key={i}>
+                <strong>{item.label}</strong>{' '}
+                {item.detail}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* THE ASK --- one primary action, specifically named. Answers "how do I start?" */}
+        <section aria-labelledby="help-heading" style={{ marginTop: '2.5rem' }}>
+          <h2 id="help-heading">Monarchs breed in the Midwest, migrate through your county, and overwinter in Mexico — the corridor runs through your yard whether you notice it or not.</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '1rem' }}>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.plantMilkweed}
+                alt="Monarch butterfly on butterfly weed (Asclepias tuberosa)"
+              />
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Plant milkweed</h3>
+              <p>Milkweed is the only plant monarchs will lay eggs on. One native plant in your yard gives the migration a foothold.</p>
+              <button className="hero__cta" onClick={() => onNavigate('milkweed')}>Get started —</button>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.reducePesticides}
+                alt="Pesticide granules"
+              />
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Reduce pesticides</h3>
+              <p>Insecticides kill monarchs directly. Eliminating them from your yard also preserves the insect food sources that birds and other wildlife need.</p>
+              <button className="hero__cta" onClick={() => onNavigate('pesticides')}>Get started —</button>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.leaveLeaves}
+                alt="Fall leaves on the ground"
+              />
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Leave the leaves</h3>
+              <p>Firefly larvae overwinter in leaf litter. Removing it kills the next generation before it hatches.</p>
+              <button className="hero__cta" onClick={() => onNavigate('leave-the-leaves')}>Get started —</button>
+            </div>
+
+            <div className="fact-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.addWater}
+                alt="Birdbath with water"
+              />
+              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Add water</h3>
+              <p>A shallow birdbath or dripping hose supports monarchs, birds, and pollinators during dry stretches.</p>
+              <button className="hero__cta" onClick={() => onNavigate('water')}>Get started —</button>
+            </div>
+
+          </div>
+        </section>
+
+        <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
+          <h2 id="neighbors-heading">The firefly that lights up your yard each June spent most of its life living in your leaf litter.</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '1rem' }}>
+
+            <div className="fact-card" style={{ padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.monarch}
+                alt="Monarch butterfly migrating"
+              />
+              <button className="hero__cta" onClick={() => onNavigate('species/monarch-butterfly')} style={{ background: 'transparent', color: 'var(--text-primary)', border: 'none', padding: 0, fontWeight: 'normal', textAlign: 'left', fontSize: 'inherit', marginTop: '0.5rem' }}>
+                <h3 style={{ margin: 0, fontSize: '1.1rem' }}>Monarch butterfly →</h3>
+              </button>
+              <p>Once a common sight on the migration. Now one of the most threatened animals in North America.</p>
+            </div>
+
+            <div className="fact-card" style={{ padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.firefly}
+                alt="Firefly glowing in the dark"
+              />
+              <button className="hero__cta" onClick={() => onNavigate('species/eastern-firefly')} style={{ background: 'transparent', color: 'var(--text-primary)', border: 'none', padding: 0, fontWeight: 'normal', textAlign: 'left', fontSize: 'inherit', marginTop: '0.5rem' }}>
+                <h3 style={{ margin: 0, fontSize: '1.1rem' }}>Eastern firefly →</h3>
+              </button>
+              <p>Larvae overwinter in the leaf litter for up to two years. Remove the leaves and you kill the next generation.</p>
+            </div>
+
+            <div className="fact-card" style={{ padding: '1.25rem', paddingTop: 0, overflow: 'hidden' }}>
+              <CardPhoto
+                src={CARD_PHOTOS.boxTurtle}
+                alt="Eastern box turtle"
+              />
+              <button className="hero__cta" onClick={() => onNavigate('species/box-turtle')} style={{ background: 'transparent', color: 'var(--text-primary)', border: 'none', padding: 0, fontWeight: 'normal', textAlign: 'left', fontSize: 'inherit', marginTop: '0.5rem' }}>
+                <h3 style={{ margin: 0, fontSize: '1.1rem' }}>Eastern box turtle →</h3>
+              </button>
+              <p>Moves through yards, woodland edges, and leaf litter --- all of which have shrid.</p>
+            </div>
+
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+            <button className="hero__cta" onClick={() => onNavigate('species-gallery')}>
+              Meet all 59 neighbors →
+            </button>
+          </div>
+        </section>
+                                        {/* iNaturalist Monarch count widget --- start */}
+        <div
+          className="action-panel"
+          style={{
+            marginTop: '2rem',
+            background: 'linear-gradient(135deg, rgba(255, 247, 237, 0.95) 0%, rgba(255, 251, 235, 0.95) 100%)',
+            border: '1px solid rgba(249, 115, 22, 0.24)',
+          }}
+        >
+          <h2 style={{ marginTop: 0 }}>Each sighting logged on iNaturalist becomes open data for researchers tracking which migration corridors are still working.</h2>
+          <p>
+            <strong style={{ color: 'var(--monarch-orange)' }}>{formatSightings(monarchSightings)} Monarch sightings</strong>{' '}
+            have been logged on iNaturalist in the United States this month.
+            Each sighting becomes open data that researchers can use to track the migration.
+          </p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '1rem' }}>
+            {hasLiveSightings
+              ? `Live count for ${monthName} ${year}, refreshed when this page loads.`
+              : `Showing the latest saved count for ${monthName} ${year}; refreshes when live data is available.`}
+          </p>
+          <a
+            href={sightingsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="hero__cta"
+            style={{ display: 'inline-block' }}
+          >
+            See this month's sightings on iNaturalist →
+          </a>
+        </div>
+        {/* iNaturalist Monarch count widget --- end */}
+
+        {/* Citation list */}
+        <section className="cite-list" aria-label="Sources">
+          <p>[1] Xerces Society. <a href="https://xerces.org/monarchs/eastern-monarch-conservation" target="_blank" rel="noreferrer">Eastern Monarch Conservation.</a> Accessed {monthName} {year}.</p>
+          <p>[2] Xerces Society / WWF-Mexico. <a href="https://xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noreferrer">Eastern Monarch Butterfly Numbers Increase, but Remain Below Historic Levels.</a> March 17, 2026.</p>
+          <p>[3] Pleasants JM, Oberhauser KS. Milkweed loss in agricultural fields because of herbicide use: effect on the monarch butterfly population. <a href="https://doi.org/10.1111/j.1752-4598.2012.00196.x" target="_blank" rel="noreferrer">Insect Conservation and Diversity 6(2):135–144.</a> 2013.</p>
+          <p style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+            Photos: Wikimedia Commons.
+            <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noreferrer">Butterfly weed</a>.
+            <a href="https://commons.wikimedia.org/wiki/File:Summit_Packet_Granules.jpg" target="_blank" rel="noreferrer">Pesticide granules</a>.
+            <a href="https://commons.wikimedia.org/wiki/File:Fall_leaves_2021_6.jpg" target="_blank" rel="noreferrer">Fall leaves</a>.
+            <a href="https://commons.wikimedia.org/wiki/File:Birdbath016.jpg" target="_blank" rel="noreferrer">Birdbath</a>.
+            <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Migrating_2.jpg" target="_blank" rel="noreferrer">Monarch migrating</a>.
+            <a href="https://commons.wikimedia.org/wiki/File:Firefly_Lampyris_noctiluca_(Robert_Eisele).jpg" target="_blank" rel="noreferrer">Firefly</a>.
+            <a href="https://commons.wikimedia.org/wiki/File:Eastern_Box_Turtle,_North_Carolina,_US_imported_from_iNaturalist_photo_71168521_(cropped).jpg" target="_blank" rel="noreferrer">Box turtle</a>.
+          </p>
+        </section>
+    </main>
+  )
+}
