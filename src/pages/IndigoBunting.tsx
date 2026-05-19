@@ -139,6 +139,20 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
               and fall, supporting both resident buntings and migrants fueling up
               for the Gulf crossing.
             </li>
+            <li>
+              <strong>Stop insecticide applications on shrubs and native plants from May through August.</strong>{' '}
+              A female Indigo Bunting feeding nestlings carries soft-bodied insects and small
+              caterpillars to the nest cup several hundred times per day — pulled from the canopy
+              of native shrubs within 150 feet of the nest. Broad-spectrum insecticide applications
+              on those shrubs remove the prey the nestlings need during the 9 to 12 days between
+              hatch and fledge. Systemic products applied as a soil drench or nursery pre-treatment
+              suppress caterpillar populations in treated plants for weeks after application. The
+              full picture is in the{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                Pesticides &amp; Your Habitat guide
+              </button>
+              .
+            </li>
           </ol>
         </div>
 
@@ -165,11 +179,20 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a native plant
             </button>
-            {' '}to add brushy edge structure and seed sources, or{' '}
+            {' '}to add brushy edge structure and seed sources,{' '}
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
               plant milkweed
             </button>
-            {' '}to strengthen the shared habitat that supports both monarchs and migrants.
+            {' '}to strengthen the shared habitat that supports both monarchs and migrants,
+            understand how insecticide use reduces the caterpillar supply at the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticides &amp; Your Habitat guide
+            </button>
+            , and see how the brushy edge layer connects to the full yard structure in the{' '}
+            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
+              Habitat Layers guide
+            </button>
+            .
           </p>
         </div>
       </div>
