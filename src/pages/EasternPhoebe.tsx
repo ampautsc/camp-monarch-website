@@ -158,7 +158,7 @@ export default function EasternPhoebe({ onNavigate }: EasternPhoebeProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three conditions Eastern Phoebes use from a yard</h2>
+          <h2 style={{ marginTop: 0 }}>Low perches, a nest shelf, native plants, and no pesticides from March through September</h2>
 
           <figure className="species-content-photo">
             <img
@@ -215,6 +215,18 @@ export default function EasternPhoebe({ onNavigate }: EasternPhoebeProps) {
                 Find Plants Near Me
               </button>
               .
+            </li>
+            <li>
+              <strong>Stop pesticide applications to the yard from early March through late September.</strong>{' '}
+              Eastern Phoebes arrive in late February and begin feeding nestlings in May. An
+              imidacloprid or bifenthrin application to the lawn in April — a common timing for
+              grub and mosquito treatments — reduces surface-active insect populations by 60 to
+              80 percent within two weeks. A phoebe pair feeding four nestlings needs more than
+              200 insect deliveries per day. A treated yard cannot support that prey density. The
+              birds cannot relocate a nest once incubation has begun. A yard that keeps pesticide
+              applications to November or later, after phoebes and most other insectivorous
+              migrants have departed, loses almost nothing and keeps its aerial insect food web
+              intact through the breeding season.
             </li>
           </ol>
         </div>
