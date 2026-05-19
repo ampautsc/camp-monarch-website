@@ -136,7 +136,7 @@ export default function SongSparrow({ onNavigate }: SongSparrowProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Uncut grass clumps through May, leaf litter under shrubs through winter, and one unpruned native shrub at 3–5 feet</h2>
+          <h2 style={{ marginTop: 0 }}>Uncut grass clumps through May, leaf litter under shrubs through winter, one unpruned native shrub, and no pesticides in May and June</h2>
 
           <figure className="species-content-photo">
             <img
@@ -189,6 +189,19 @@ export default function SongSparrow({ onNavigate }: SongSparrowProps) {
                 Choose a Plant
               </button>{' '}
               for native shrubs by region.
+            </li>
+            <li>
+              <strong>Skip pesticide applications in May and June.</strong>{' '}
+              Song Sparrow nestlings eat almost entirely invertebrates during their first two
+              weeks after hatching &mdash; caterpillars, beetles, and fly larvae the parents
+              carry back to the nest from the surrounding yard. A spray program that reduces
+              caterpillar populations in May depletes that food supply during the period when
+              the female is cycling through up to four broods across the season. The parents
+              continue laying, but fewer nestlings reach the point of fledging. See{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                Pesticide Guide
+              </button>{' '}
+              for what to avoid in the months when nestlings are active.
             </li>
           </ol>
         </div>
@@ -247,6 +260,27 @@ export default function SongSparrow({ onNavigate }: SongSparrowProps) {
               Species Gallery
             </button>
             .
+          </p>
+        </div>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
+              Choose a Plant
+            </button>
+            {' '}has native shrubs and grasses that provide the singing height and ground cover
+            a Song Sparrow pair uses within one territory.{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
+            </button>
+            {' '}covers why the leaf litter at shrub bases is the same material the female
+            evaluates for nest sites in April and the same material the birds scratch through
+            for seeds from September to March.{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticide Guide
+            </button>
+            {' '}covers what to skip in May and June when nestlings are being fed caterpillars
+            from the yard.
           </p>
         </div>
       </div>
