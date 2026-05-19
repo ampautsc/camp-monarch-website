@@ -108,7 +108,7 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three ways to help this season</h2>
+          <h2 style={{ marginTop: 0 }}>Milkweed, sightings, fall watch, and nectar for the crossing</h2>
           <ol className="step-list">
             <li>
               <strong>Plant milkweed.</strong>{' '}
@@ -124,6 +124,14 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
               <strong>Watch in September.</strong>{' '}
               The fall migration passes through most of the US between mid-September and mid-October.
               Roost trees near open fields, late-blooming goldenrod, and river corridors are places to look.
+            </li>
+            <li>
+              <strong>Plant native goldenrod or asters near your milkweed.</strong>{' '}
+              The diapause generation leaves breeding grounds in late August already storing fat for the
+              crossing. It fuels the 3,000-mile flight primarily by nectaring on Solidago and
+              Symphyotrichum species, which bloom precisely during the migration window — August through
+              October. A monarch working a blooming goldenrod stand in September is not simply passing
+              through. It is loading the reserves it needs to reach the overwintering site in Michoacan.
             </li>
           </ol>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
