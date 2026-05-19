@@ -222,6 +222,17 @@ export default function Ovenbird({ onNavigate }: OvenbirdProps) {
             </li>
           </ul>
         </section>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>The leaf layer the ovenbird walks is the same layer firefly larvae, box turtle hatchlings, and fritillary caterpillars depend on through winter.</strong>{' '}
+            Read why autumn raking affects a dozen species simultaneously at{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
+            </button>
+            .
+          </p>
+        </div>
       </div>
     </>
   )
