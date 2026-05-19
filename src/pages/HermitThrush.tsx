@@ -274,6 +274,14 @@ export default function HermitThrush({ onNavigate }: HermitThrushProps) {
               after every other fruit source has been stripped — the one shrub a Hermit
               Thrush can work alone once the waxwing flock moves on.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('arrowwood-viburnum')}>
+                Arrowwood Viburnum
+              </button>
+              {' — '}Native viburnum; blue-black drupes in August–October that Hermit Thrushes
+              strip heavily on fall arrival. Fruits out three months before winterberry begins,
+              bridging the October arrival window to the late-season winterberry coverage.
+            </li>
           </ul>
         </section>
 
@@ -281,6 +289,10 @@ export default function HermitThrush({ onNavigate }: HermitThrushProps) {
           <p style={{ margin: 0 }}>
             <strong>Ready to plant for winter birds?</strong>{' '}
             Start with{' '}
+            <button className="link-button" onClick={() => onNavigate('arrowwood-viburnum')}>
+              Arrowwood Viburnum
+            </button>
+            {' '}for October–November coverage,{' '}
             <button className="link-button" onClick={() => onNavigate('winterberry-holly')}>
               Winterberry Holly
             </button>
