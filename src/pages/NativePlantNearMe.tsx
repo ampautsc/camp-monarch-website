@@ -189,7 +189,7 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
 
         {/* First step — low friction, named action (bta-004) */}
         <section aria-labelledby="start-heading">
-          <h2 id="start-heading">Start here: 60 seconds to a local source</h2>
+          <h2 id="start-heading">A ZIP code search, two supplier backups, and one question to ask at any nursery</h2>
           <ol className="step-list">
             <li>
               <strong>Go to NWF Native Plant Finder.</strong>
@@ -226,6 +226,16 @@ export default function NativePlantNearMe({ onNavigate }: NativePlantNearMeProps
               Most states have a native plant society that runs annual spring and fall sales.
               Search "[your state] native plant society sale" — these events often have the widest
               selection of locally-grown, regionally-appropriate species.
+            </li>
+            <li>
+              <strong>Ask the nursery whether the plants were grown from local or regional seed sources.</strong>
+              A plant labeled "native" may have been propagated from seed collected in Texas,
+              Georgia, or the Pacific Northwest and shipped to a Midwest nursery. Pollinators and
+              caterpillars are most reliably supported by plants grown from seed collected within
+              200 to 300 miles of where they will be planted. Nurseries that source regionally can
+              usually state the provenance of their stock. If a nursery cannot answer the question,
+              the plants are likely grown from generic commercial seed — still useful, but less
+              reliably than local genotypes in supporting the insects that evolved alongside them.
             </li>
           </ol>
         </section>
