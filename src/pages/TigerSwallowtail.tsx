@@ -16,7 +16,7 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: HaarFager at English Wikipedia · <a href="https://commons.wikimedia.org/wiki/File:Pristine_Eastern_Tiger_Swallowtail.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
+          {/* Photo: HaarFager at English Wikipedia · <a href="https://commons.wikimedia.org/wiki/File:Pristine_Eastern_Tiger_Swallowtail.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
           Photo: HaarFager at English Wikipedia&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Pristine_Eastern_Tiger_Swallowtail.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
@@ -70,7 +70,7 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
                 />
                 <figcaption>
                   The young tiger swallowtail caterpillar looks exactly like a bird dropping — a defense so convincing that predators ignore it. Later instars develop false eyespots near the head and an osmeterium, a forked orange scent organ that deploys when touched. Host trees include tulip poplar, wild cherry, and native magnolia.
-                  <span className="photo-credit"> Photo: Jacy Lucier · <a href="https://commons.wikimedia.org/wiki/File:Papilio_glaucus_larva_1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Jacy Lucier · <a href="https://commons.wikimedia.org/wiki/File:Papilio_glaucus_larva_1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -101,7 +101,7 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that help Tiger Swallowtails now</h2>
+          <h2 style={{ marginTop: 0 }}>A host tree, a nectar corridor, no Bt near host plants, and a puddling site</h2>
 
           <figure className="species-content-photo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed in bloom, attracting pollinators" loading="lazy" />
@@ -126,6 +126,10 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               Accept some leaf damage as the sign of a functioning butterfly
               nursery and keep reproduction intact.
             </li>
+            <li>
+              <strong>Create a moist, bare soil puddling spot near your nectar planting.</strong>{' '}
+              Male tiger swallowtails gather at consistently wet soil to extract sodium, potassium, and amino acids — a behavior called puddling. This sodium is transferred to females during mating. A dripping outdoor faucet, the wet margin of a rain garden, or a shallow sand tray kept moist provides the mineral site males use. The same spot will concentrate multiple males in one visible location on any warm morning.
+            </li>
           </ol>
         </div>
 
@@ -138,7 +142,7 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
             support breeding and nectaring for both iconic butterflies.
           </p>
           <p>
-            This is what makes native habitat restoration powerful: one yard can
+            This is what makes native habitat restoration work: one yard can
             support multiple life cycles at once when structure, nectar, and
             pesticide-free management are aligned.
           </p>
