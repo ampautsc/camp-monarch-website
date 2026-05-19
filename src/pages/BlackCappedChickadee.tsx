@@ -146,7 +146,7 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that support chickadee breeding</h2>
+          <h2 style={{ marginTop: 0 }}>A native tree, a nest box, no systemic pesticides, and one standing dead snag</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Nest_box.jpg" alt="Wooden bird nest box mounted on a post" loading="lazy" />
@@ -182,6 +182,18 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
               the food web functioning correctly. A tree with chewed leaves in June is a tree that
               is feeding the neighborhood. If tree health genuinely requires intervention, ask your
               arborist about systemic-free alternatives.
+            </li>
+            <li>
+              <strong>Leave at least one standing dead snag or dead branch on the property.</strong>{' '}
+              Natural cavities in dead wood are where Black-capped Chickadees nested before anyone
+              manufactured a nest box. A standing dead tree 8 to 15 feet tall — or a dead branch
+              with intact bark remaining on a living tree — produces beetle larvae throughout its
+              decay: the same beetle larvae that a breeding pair delivers to nestlings alongside
+              caterpillars all summer. A natural cavity in that wood gives a breeding pair a site
+              they do not have to compete with House Sparrows for. If the snag requires removal for
+              safety, leave the stump: a stump still hosts the ground beetles, sowbugs, and
+              fungus-feeding larvae that chickadees cache and retrieve from the soil surface through
+              winter.
             </li>
           </ol>
         </div>
