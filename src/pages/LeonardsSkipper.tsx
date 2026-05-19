@@ -137,7 +137,7 @@ export default function LeonardsSkipper({ onNavigate }: LeonardsSkipperProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three conditions that make a yard usable for Leonard's Skipper</h2>
+          <h2 style={{ marginTop: 0 }}>A host grass in full sun, goldenrod in the same border, standing through winter, and three or more clumps grouped together</h2>
           <ol className="step-list">
             <li>
               <strong>Plant Prairie Dropseed or Little Bluestem in full sun, in dry to average soil.</strong>{' '}
@@ -158,6 +158,16 @@ export default function LeonardsSkipper({ onNavigate }: LeonardsSkipperProps) {
               April. Cutting in October removes its shelter. Cutting in March, before new growth
               emerges, removes only the spent material after the larva has completed its
               overwintering stage.
+            </li>
+            <li>
+              <strong>Plant 3 or more grass clumps within a 15-foot radius, mixing Prairie Dropseed and Little Bluestem if possible.</strong>{' '}
+              Leonard's Skipper females spend two to three weeks flying between nectaring sites
+              and host grasses. A single isolated grass clump is a single egg-laying site; a
+              cluster of 3 to 5 clumps gives one female multiple blades to inspect on the same
+              visit. Males patrol the highest available grass tips in the patch and spend the
+              entire adult lifespan at the same site if conditions remain undisturbed. A planting
+              with both Prairie Dropseed and Little Bluestem gives females two host grass species
+              to check within the same 10-square-foot area.
             </li>
           </ol>
         </div>
