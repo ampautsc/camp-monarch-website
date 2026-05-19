@@ -16,7 +16,7 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Chipmunk_with_stuffed_cheeks_in_Prospect_Park_(05980).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:Chipmunk_with_stuffed_cheeks_in_Prospect_Park_(05980).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: Rhododendrites&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Chipmunk_with_stuffed_cheeks_in_Prospect_Park_(05980).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -70,7 +70,7 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
                 />
                 <figcaption>
                   Chipmunks cache hundreds of separate seed stores through late summer and autumn. They forget some of them. Those forgotten caches germinate in spring. The chipmunk is an involuntary tree-planter — a dispersal mechanism for oaks, hickories, and beeches that cannot disperse their own heavy seeds by wind.
-                  <span className="photo-credit"> Photo: Chuck Homler, Focus On Wildlife · <a href="https://commons.wikimedia.org/wiki/File:Eastern_chipmunk_(Tamias_striatus)_-_Kennebunk,_Maine,_USA.png" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Chuck Homler, Focus On Wildlife · <a href="https://commons.wikimedia.org/wiki/File:Eastern_chipmunk_(Tamias_striatus)_-_Kennebunk,_Maine,_USA.png" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -83,7 +83,7 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that support Eastern Chipmunks</h2>
+          <h2 style={{ marginTop: 0 }}>Native shrubs, no rodenticide, leaf litter, and at least one oak</h2>
 
           <figure className="species-content-photo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Fallen_leaves.jpg/960px-Fallen_leaves.jpg" alt="Autumn leaves on the ground near vegetation" loading="lazy" />
@@ -110,6 +110,10 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
               Leave a 3–4 inch leaf layer under shrubs and at yard edges. This
               supports foraging, protects burrow entrances, and improves winter
               insulation for small mammals and invertebrates.
+            </li>
+            <li>
+              <strong>Plant at least one native oak.</strong>{' '}
+              White oak (<em>Quercus alba</em>) and bur oak (<em>Quercus macrocarpa</em>) produce heavy acorns that wind cannot carry more than a few feet. Chipmunks carry them hundreds of feet and cache them in separate locations throughout the yard. Each forgotten cache is a potential tree. The caloric density of a single acorn is far higher than any berry per trip — a mature oak in or adjacent to your yard provides a mast resource that shrub fruits alone cannot replace.
             </li>
           </ol>
         </div>
