@@ -108,7 +108,7 @@ export default function GreatSpangledFritillary({ onNavigate }: GreatSpangledFri
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that bring fritillaries back</h2>
+          <h2 style={{ marginTop: 0 }}>Violets untreated, mowing delayed through April, leaf litter through winter, and tall native nectar within 50 feet</h2>
 
           <figure className="species-content-photo">
             <img
@@ -144,6 +144,16 @@ export default function GreatSpangledFritillary({ onNavigate }: GreatSpangledFri
               soil surface. Raking this layer in autumn removes the overwintering microhabitat. Leaving
               a thin layer — even just an inch of loose leaves — in the areas where violets grow gives
               the dormant larvae shelter through the cold months.
+            </li>
+            <li>
+              <strong>Plant milkweed, ironweed, or Joe-Pye weed within 50 feet of the violet patch.</strong>{' '}
+              Female Great Spangled Fritillaries emerge in June and spend four to six weeks nectaring
+              on tall native wildflowers before returning to lay eggs on violets in August and September.
+              A female nectaring on common milkweed 40 feet from a violet patch encounters the violets
+              while foraging. The same milkweed patch that attracts monarchs in July attracts fritillary
+              females at the same time, on the same flowers. A yard with tall summer nectar but no
+              violet patch pulls females in without giving them a place to complete their life cycle;
+              a violet patch with no nectar nearby may not hold a female long enough for egg deposition.
             </li>
           </ol>
         </div>
