@@ -165,7 +165,7 @@ export default function WildTurkey({ onNavigate }: WildTurkeyProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Leaf litter under oaks through spring, dense native shrubs in back corners, and every mature oak retained</h2>
+          <h2 style={{ marginTop: 0 }}>Leaf litter through spring, native shrubs for nesting, oaks retained, and back edges unmowed through June</h2>
 
           <figure className="species-content-photo">
             <img
@@ -227,6 +227,19 @@ export default function WildTurkey({ onNavigate }: WildTurkeyProps) {
                 Choose a Plant
               </button>
               .
+            </li>
+            <li>
+              <strong>Delay mowing and string trimmer use in back portions of the yard through June.</strong>{' '}
+              Wild Turkey hens begin full incubation in mid-May, 28 days before hatch. The nest sits
+              on the ground at the base of a shrub, hidden under leaf cover the hen gathered — it is
+              not visible from more than a few feet away. A riding mower or string trimmer passing
+              within 10 feet of an active nest causes nest abandonment. A hen who abandons her first
+              clutch renests with a smaller clutch of 6 to 9 eggs; a hen who loses the second clutch
+              does not attempt a third. Delaying mowing in back corners and edges through June
+              gives a first clutch the undisturbed 28-day incubation window it needs. The back
+              corners are the same areas where dense native shrubs provide the nest structure —
+              if that ground is mowed before the shrubs are established, both the nest cover and the
+              nesting opportunity disappear together.
             </li>
           </ol>
         </div>
