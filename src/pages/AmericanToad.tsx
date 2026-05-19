@@ -107,7 +107,7 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that support American Toads</h2>
+          <h2 style={{ marginTop: 0 }}>No glyphosate, a fish-free pond, leaf litter, and no road salt</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow garden water feature in a landscaped yard" loading="lazy" />
@@ -134,6 +134,10 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
               emergent plants can provide breeding habitat, as long as no fish
               are added and runoff from roads or sprayed lawn edges is kept out.
             </li>
+            <li>
+              <strong>Replace sodium chloride road salt with sand or calcium magnesium acetate on surfaces that drain toward your water feature.</strong>{' '}
+              Chloride does not bind to soil — it moves freely through snowmelt into standing water. At low concentrations, it causes measurable increases in tadpole deformity rates near road-corridor ponds. Calcium magnesium acetate breaks down through soil bacteria within days. Sand provides traction with no dissolved compounds reaching the breeding water at all.
+            </li>
           </ol>
         </div>
 
@@ -143,7 +147,7 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
             American Toads can eat up to 1,000 insects in a single night,
             including slugs, beetles, mosquitoes, and other garden pests. They
             are free pest management — but only if the homeowner stops using the
-            chemicals that kill them first.
+            chemicals that harm them first.
           </p>
           <p>
             This is where the toad connects directly to Camp Monarch's mission.
@@ -151,7 +155,7 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
             monarch caterpillars and native pollinators also supports toads. If
             toads are breeding in a yard, the chemical load is low enough for
             one of the most sensitive vertebrates in the system to survive. That
-            is meaningful proof that restoration is becoming real.
+            is a concrete sign that restoration is becoming real.
           </p>
         </section>
 
