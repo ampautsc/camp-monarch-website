@@ -106,7 +106,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>A fishless water feature, a 50-foot pesticide-free buffer, and native shrubs at the edge</h2>
+          <h2 style={{ marginTop: 0 }}>A fishless water feature, a pesticide-free buffer, native shrubs, and leaf litter through winter</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow stone water feature in a garden" loading="lazy" />
@@ -137,6 +137,18 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
               calling perches, and summer shelter. Buttonbush, elderberry, and native
               viburnums thrive at wet edges and support both the frogs and the insects
               they hunt.
+            </li>
+            <li>
+              <strong>Leave leaf litter in garden beds undisturbed through winter.</strong>{' '}
+              In autumn, Gray Tree Frogs produce glycerol that moves into the spaces between
+              cells, preventing ice crystals from forming inside the cell walls as temperatures
+              drop below freezing. The frogs freeze solid — no heartbeat, no breathing — under
+              the leaf mat from November through March, then thaw and resume activity when
+              temperatures rise in April. The leaf litter must remain intact through this period:
+              raking garden beds in October or blowing leaves off beds in November removes the
+              frogs before they can emerge the following spring. A garden bed with leaf litter
+              left through April is the same bed where adults will be calling from the trees
+              above it the following June.
             </li>
           </ol>
         </div>
