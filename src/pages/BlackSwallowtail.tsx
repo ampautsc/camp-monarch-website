@@ -136,7 +136,7 @@ export default function BlackSwallowtail({ onNavigate }: BlackSwallowtailProps) 
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that let a Black Swallowtail complete its full year in your yard</h2>
+          <h2 style={{ marginTop: 0 }}>Golden Alexanders, leave parsley worms, leave stems standing, and let native Apiaceae self-seed</h2>
           <ol className="step-list">
             <li>
               <strong>Plant Golden Alexanders in a sunny to partly shady spot.</strong>{' '}
@@ -155,6 +155,15 @@ export default function BlackSwallowtail({ onNavigate }: BlackSwallowtailProps) 
               Overwintering Black Swallowtail chrysalides attach to vertical hard surfaces —
               fence posts, dried plant stems, building foundations. Autumn clearing removes
               them before adults can emerge the following May.
+            </li>
+            <li>
+              <strong>Allow Golden Alexanders to self-seed at a sunny edge.</strong>{' '}
+              <em>Zizia aurea</em> spreads slowly from seed dropped near the parent plant and
+              from root division after several years. A single plant in the right spot can
+              naturalize a small colony along a fence line or at the base of a native shrub
+              without any management. That expanding colony feeds multiple consecutive broods
+              across multiple seasons — unlike parsley in a raised bed, which must be replanted
+              annually and is not in the ground during the first-brood laying window in late April.
             </li>
           </ol>
         </div>
