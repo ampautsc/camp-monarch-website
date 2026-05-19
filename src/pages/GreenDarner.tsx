@@ -123,6 +123,16 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
               Trimmed or bare pond edges mean adults fall back into the water before their wings harden.
               Leave at least a few stems standing through midsummer.
             </li>
+            <li>
+              <strong>Plant native vegetation within 10 feet of the pond perimeter — no lawn up to the edge.</strong>{' '}
+              Lawn fertilizers applied within a few yards of still water move into the pond
+              through rain runoff. Nitrogen causes algal blooms; algal decomposition after the
+              bloom consumes dissolved oxygen in the water column. Green darner naiads breathe
+              that water continuously — an oxygen crash kills them before they ever emerge.
+              Native riparian plantings (blue flag iris, swamp milkweed, cardinal flower) absorb
+              nitrogen from runoff before it reaches the water and provide perch and hunting
+              habitat for adult darners flying the pond edge.
+            </li>
           </ol>
         </div>
 
