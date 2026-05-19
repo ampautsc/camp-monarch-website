@@ -130,7 +130,7 @@ export default function PrairieDropseed({ onNavigate }: PrairieDropseedProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that give Prairie Dropseed the conditions it needs to establish</h2>
+          <h2 style={{ marginTop: 0 }}>Cleared ground before planting, full sun with drainage, standing through winter, and Little Bluestem as a companion in the same bed</h2>
           <figure className="species-content-photo">
             <img
               src="https://inaturalist-open-data.s3.amazonaws.com/photos/11345813/large.jpg"
@@ -164,6 +164,16 @@ export default function PrairieDropseed({ onNavigate }: PrairieDropseedProps) {
               The seed heads hold seeds for ground-feeding birds through winter. The dried stems
               may shelter overwintering insects. Cutting in October removes both. Cutting in
               March, before new growth emerges from the crown, removes only what is spent.
+            </li>
+            <li>
+              <strong>Plant alongside Little Bluestem in the same sunny bed.</strong>{' '}
+              Both Prairie Dropseed and Little Bluestem host Cobweb Skipper and Leonard's
+              Skipper. A patrolling female that locates one grass species in a bed searches
+              the adjacent ground for more host-grass blades — a bed with both plants doubles
+              the egg-laying surface a female can inspect in the same square footage. Prairie
+              Dropseed mounds at 18 to 24 inches; Little Bluestem stands 2 to 4 feet. Both
+              species need the same dry, sunny soil and do not compete destructively once
+              their crowns are established.
             </li>
           </ol>
         </div>
