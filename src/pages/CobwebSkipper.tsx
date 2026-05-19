@@ -125,7 +125,7 @@ export default function CobwebSkipper({ onNavigate }: CobwebSkipperProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three conditions that make a yard usable for Cobweb Skipper</h2>
+          <h2 style={{ marginTop: 0 }}>A native grass in full sun, an early-blooming nectar source, standing until mid-April, and three or more clumps grouped together</h2>
           <figure className="species-content-photo">
             <img
               src="https://inaturalist-open-data.s3.amazonaws.com/photos/639963029/large.jpg"
@@ -161,6 +161,16 @@ export default function CobwebSkipper({ onNavigate }: CobwebSkipperProps) {
               mid-April. Cutting Prairie Dropseed or Little Bluestem before mid-April removes
               the pupating larva. Cutting in late April or early May — once adults may already
               have emerged — removes only the previous year's dead growth from the clump.
+            </li>
+            <li>
+              <strong>Group 3 or more grass clumps within a 10-foot radius.</strong>{' '}
+              A Cobweb Skipper male selects the highest available perch point in a native grass
+              patch and defends the surrounding area for 10 to 14 days. In a yard with a single
+              isolated bunchgrass, his territory has one egg-laying site. In a cluster of 3 to
+              5 Prairie Dropseed or Little Bluestem plants, the territory contains multiple egg-laying
+              sites and the male's patrol loop covers all of them. Female Cobweb Skippers enter
+              territories, inspect grass blades for egg placement, and deposit eggs — the male's
+              presence signals that other suitable blades are nearby.
             </li>
           </ol>
         </div>
