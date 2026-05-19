@@ -61,7 +61,7 @@ export default function BoxTurtles({ onNavigate }: BoxTurtlesProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Slow in May and June, ten feet forward for road turtles, and brushy corners left untended</h2>
+          <h2 style={{ marginTop: 0 }}>Slow in May and June, ten feet for road turtles, brushy corners, and a mowing delay until late May</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground" loading="lazy" />
@@ -86,6 +86,15 @@ export default function BoxTurtles({ onNavigate }: BoxTurtlesProps) {
               Box turtles use brushy cover for shelter, overwintering, and foraging.
               A strip of undisturbed ground along a fence or property edge is habitat.
               Fallen logs, leaf piles, and overgrown corners are the features that make a yard usable.
+            </li>
+            <li>
+              <strong>Hold mowing on brushy corners until late May.</strong>{' '}
+              Box turtles emerge from winter dormancy when soil temperature reaches 50°F —
+              typically late March through early May depending on location.
+              A freshly emerged turtle moves slowly and stays in leaf-litter cover.
+              A mower running over an April corner can reach a turtle still in the debris it overwintered under.
+              Waiting until late May gives emerging turtles six to eight weeks to disperse
+              before the blade reaches that ground.
             </li>
           </ol>
         </div>
