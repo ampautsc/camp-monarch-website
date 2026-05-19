@@ -264,6 +264,15 @@ export default function CedarWaxwing({ onNavigate }: CedarWaxwingProps) {
               in wet-edge sites — the last food source in the landscape when everything else
               has been stripped.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('arrowwood-viburnum')}>
+                Arrowwood Viburnum
+              </button>
+              {' — '}Native shrub; blue-black drupes ripen in August and September — three
+              months before winterberry. Fall migration waxwing flocks hit arrowwood first,
+              before the later-fruiting species are ready. A yard with both arrowwood and
+              winterberry holds fruit from August through January.
+            </li>
           </ul>
         </section>
       </div>
