@@ -101,7 +101,7 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three things that bring Downy Woodpeckers back</h2>
+          <h2 style={{ marginTop: 0 }}>Dead wood, suet, a pesticide pause, and one native tree</h2>
 
           <figure className="species-content-photo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Snag_at_the_Wildlife_Garden_%2842263673541%29.jpg" alt="Standing dead tree in a garden with exposed dead wood" loading="lazy" />
@@ -134,6 +134,19 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
               food carry those compounds. Repeated sublethal exposure during a breeding season
               is enough to reduce nesting success. If tree health requires treatment, ask your
               arborist about alternatives that do not persist in the wood.
+            </li>
+            <li>
+              <strong>Plant one native tree — an oak, cherry, or native maple — anywhere on the property.</strong>{' '}
+              A native oak (<em>Quercus</em>) hosts more than 530 caterpillar species whose larvae
+              bore into wood. A Bradford pear hosts 8. Dead branches from a native oak hold an
+              order of magnitude more beetle larvae per cubic foot than dead branches from an
+              ornamental of the same size. The dead limbs that fall as a native tree matures
+              carry a beetle food web already built in. No ornamental tree produces that return
+              on a standing snag. Find what grows in your hardiness zone at{' '}
+              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
+                Find Plants Near Me
+              </button>
+              .
             </li>
           </ol>
         </div>
