@@ -188,11 +188,19 @@ export default function GreatSpangledFritillary({ onNavigate }: GreatSpangledFri
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
               Plant milkweed
             </button>
-            {' '}to build a shared summer fueling station, or{' '}
+            {' '}to build a shared summer fueling station,{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               choose native nectar plants
             </button>
-            {' '}that serve both species from June through September.
+            {' '}that serve both species from June through September, keep the larval overwintering layer intact with{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
+            </button>
+            , and stop the broadleaf herbicide that kills violet host plants with the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticides &amp; Your Habitat guide
+            </button>
+            .
           </p>
         </div>
 
