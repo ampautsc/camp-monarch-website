@@ -162,13 +162,37 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to take the next step?</strong>{' '}
+            Glyphosate reaches a breeding pond within a few rain cycles from uphill applications
+            — the{' '}
+            <button
+              className="link-button"
+              onClick={() => onNavigate('pesticide-guide')}
+            >
+              Pesticide Guide
+            </button>
+            {' '}covers what those concentrations do to tadpoles. Build or maintain a fishless
+            water feature with the{' '}
+            <button
+              className="link-button"
+              onClick={() => onNavigate('water-for-wildlife')}
+            >
+              Water for Wildlife guide
+            </button>
+            . The{' '}
+            <button
+              className="link-button"
+              onClick={() => onNavigate('leave-the-leaves')}
+            >
+              Leave the Leaves guide
+            </button>
+            {' '}covers the leaf litter that gray tree frogs freeze inside every winter. Or{' '}
             <button
               className="link-button"
               onClick={() => onNavigate('plant-milkweed')}
             >
-              Plant milkweed
+              plant milkweed
             </button>
-            {' '}to add monarch habitat alongside your water feature, or{' '}
+            {' '}alongside your water feature, or{' '}
             <button
               className="link-button"
               onClick={() => onNavigate('choose-a-plant')}
