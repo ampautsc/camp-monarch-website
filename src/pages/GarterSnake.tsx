@@ -146,14 +146,25 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to build a yard good enough for garter snakes and monarchs?</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a native plant
+            Eliminate rodenticide with the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticide Guide
             </button>
-            {' '}to restore the ground layer they both need, or{' '}
+            {' '}— anticoagulant compounds accumulate through the earthworm and rodent prey
+            garter snakes eat. The{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves guide
+            </button>
+            {' '}covers the leaf accumulations and brush piles garter snakes use as shelter.
+            Or{' '}
+            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
+              choose a native plant
+            </button>
+            {' '}to restore the food web they both need, or{' '}
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
               plant milkweed
             </button>
-            {' '}as the first step toward a fully chemical-free yard.
+            {' '}to add monarch habitat in the same chemical-free ground layer.
           </p>
         </div>
       </div>
