@@ -16,7 +16,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: David notMD · <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
+          {/* Photo: David notMD · <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: David notMD&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -91,7 +91,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
                 />
                 <figcaption>
                   The caterpillar feeds on walnut, sweet gum, persimmon, birch, and hickory for several weeks, then spins a papery cocoon in the leaf litter on the forest floor. When it emerges as an adult, it has no functional mouth. The adult lives, on average, seven days. Its only purpose is reproduction.
-                  <span className="photo-credit"> Photo: Kugamazog · <a href="https://commons.wikimedia.org/wiki/File:Actias_luna_4th_instar_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
+                  <span className="photo-credit"> Photo: Kugamazog · <a href="https://commons.wikimedia.org/wiki/File:Actias_luna_4th_instar_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
                 </figcaption>
               </figure>
 
@@ -247,6 +247,10 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
             Remove pesticides with the{' '}
             <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
               Pesticides &amp; Your Habitat guide
+            </button>
+            , protect overwintering pupae with the{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves guide
             </button>
             , add native host trees with{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
