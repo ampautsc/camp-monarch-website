@@ -168,8 +168,21 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to build habitat that works for peepers and monarchs?</strong>{' '}
+            Build or maintain a fishless water feature with the{' '}
+            <button className="link-button" onClick={() => onNavigate('water-for-wildlife')}>
+              Water for Wildlife guide
+            </button>
+            . Protect the overwintering leaf layer with the{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves guide
+            </button>
+            . Stop glyphosate near drainage with the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticide Guide
+            </button>
+            . Or{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a native plant
+              choose a native plant
             </button>
             {' '}to strengthen your understory, or{' '}
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
