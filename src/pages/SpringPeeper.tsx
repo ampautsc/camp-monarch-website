@@ -110,7 +110,7 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Three actions that support Spring Peepers</h2>
+          <h2 style={{ marginTop: 0 }}>A fishless pond, the leaf layer, no herbicide, no road salt</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow water feature suitable for amphibian breeding" loading="lazy" />
@@ -142,6 +142,17 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
               mechanical weeding or mulch instead. Road salt alternatives and
               reduced application rates also lower chloride runoff to breeding
               ponds.
+            </li>
+            <li>
+              <strong>Switch from sodium chloride road salt to sand or calcium magnesium acetate on any surface that drains toward seasonal water.</strong>{' '}
+              Chloride from road salt does not bind to soil particles — it moves freely through
+              groundwater and arrives in breeding ponds through snowmelt each spring, at the same
+              time peeper eggs are developing. Studies of peeper populations along road corridors
+              in the northeast found embryo deformity rates measurably higher in ponds receiving
+              road salt runoff than in ponds insulated from drainage. Calcium magnesium acetate
+              breaks down in soil microbiologically rather than accumulating as chloride ion.
+              Sand, used alone, provides traction without contributing any dissolved compound to
+              drainage.
             </li>
           </ol>
         </div>
