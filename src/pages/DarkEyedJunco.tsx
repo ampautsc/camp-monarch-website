@@ -91,7 +91,7 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>White millet on bare ground, leaf litter under shrubs, and a winter feeder count</h2>
+          <h2 style={{ marginTop: 0 }}>White millet on bare ground, leaf litter under shrubs, a winter feeder count, and no fall soil treatments</h2>
 
           <figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground in a natural setting" loading="lazy" />
@@ -124,6 +124,21 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
               local observation contributing to continental understanding of
               whether this abundant species is holding steady or declining
               further.
+            </li>
+            <li>
+              <strong>Skip fall grub treatments and soil insecticide applications.</strong>{' '}
+              Dark-eyed Juncos scratch through the top inch of soil and leaf litter
+              from October through March, pulling up dormant beetle larvae, moth
+              pupae, and other invertebrates. A fall grub-control application —
+              whether imidacloprid, chlorantraniliprole, or trichlorfon — kills
+              invertebrates throughout that same soil zone. Juncos arriving from
+              northern breeding grounds in October land in a lawn where the surface
+              food layer has been chemically eliminated and does not recover its
+              overwintering invertebrate density within a single season. The{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                pesticide guide
+              </button>
+              {' '}covers timing, alternatives, and the species that benefit when you stop.
             </li>
           </ol>
         </div>
@@ -174,13 +189,12 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a native plant
             </button>
-            {' '}to build the leaf-litter and seed-bearing ground layer both need, or{' '}
-            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-              plant milkweed
+            {' '}to build the leaf-litter and seed-bearing ground layer both need,{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              reduce pesticide use
             </button>
-            {' '}as the first step toward a fully chemical-free, wildlife-ready yard. See how the
-            floor layer — the leaf litter and loose soil where juncos scratch — fits into the full
-            structure of a yard in the{' '}
+            {' '}to protect the soil invertebrates juncos scratch for all winter, or see how the
+            floor layer fits into the full structure of a yard in the{' '}
             <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
               Habitat Layers guide
             </button>
