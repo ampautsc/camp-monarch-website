@@ -291,7 +291,11 @@ export default function ScarletTanager({ onNavigate }: ScarletTanagerProps) {
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to build canopy habitat?</strong>{' '}
-            Start with native trees and shrubs using{' '}
+            Stop canopy insecticides first with the{' '}
+            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+              Pesticides &amp; Your Habitat guide
+            </button>
+            , then add native trees and shrubs using{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a Plant
             </button>
