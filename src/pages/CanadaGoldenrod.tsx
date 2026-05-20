@@ -147,6 +147,57 @@ export default function CanadaGoldenrod({ onNavigate }: CanadaGoldenrodProps) {
           </p>
         </section>
 
+        <section aria-labelledby="goldenrod-neighbors-heading">
+          <h2 id="goldenrod-neighbors-heading">Who else depends on what is still blooming in September</h2>
+          <p>
+            Goldenrod is one of the few native perennials that flowers late enough to overlap
+            with fall migration and early enough to finish before the first hard frost.
+            That late-August through October window is the only nectar source available for
+            several species that cannot complete the season without it.
+          </p>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('monarch-life')}>
+                Monarch Butterfly
+              </button>
+              {' — '}The diapause generation departing breeding grounds in late August fuels the
+              2,500-mile Mexico crossing primarily on goldenrod and aster nectar through September
+              and October. A monarch at a blooming goldenrod stand is not simply passing through —
+              it is converting flower sugar into abdominal fat reserves it will burn over continuous
+              flight days to Michoacán.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('tiger-swallowtail')}>
+                Tiger Swallowtail
+              </button>
+              {' — '}Adults appear on goldenrod in late August and September, feeding in the weeks
+              before the final flight of the season ends. The spring-to-fall generations overlap
+              on goldenrod at the same time the monarch migration is moving through; a goldenrod
+              stand in late August often has both butterfly species on it simultaneously.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('american-goldfinch')}>
+                American Goldfinch
+              </button>
+              {' — '}The nectar phase that feeds monarchs in September gives way to a seed phase
+              that feeds goldfinches from October through January. After goldenrod flowers finish,
+              the seed heads dry on stiff stems; goldfinches cling to those stems and pull seeds
+              throughout fall and winter. A goldenrod stand cut to the ground in October removes
+              five months of goldfinch food.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('native-bees')}>
+                Native Bees
+              </button>
+              {' — '}Goldenrod flowers when most spring and summer blooms have finished,
+              giving late-season foragers — including the federally threatened rusty patched bumblebee —
+              one of the few remaining nectar sources available. Bumblebee colonies provisioned
+              on September goldenrod produce the queens that overwinter and start the following
+              year's colony; a yard without late-season goldenrod breaks this provisioning window.
+            </li>
+          </ul>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             Canada goldenrod is one of the plants that can turn a property line or unused fence row
