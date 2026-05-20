@@ -9,7 +9,7 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Thamnophis_sirtalis_sirtalis_Wooster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Thamnophis_sirtalis_sirtalis_Wooster.jpg"
           alt="Common Garter Snake emerging from leaf litter showing yellow dorsal stripe — a beneficial predator of garden pests and slug populations"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
