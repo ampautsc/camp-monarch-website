@@ -9,7 +9,7 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Hyalophora_cecropia_adult_female_sjh.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Hyalophora_cecropia_adult_female_sjh.JPG"
           alt="Cecropia Moth at rest with wings fully spread, revealing dinner-plate wingspan with red-banded body and eye spots — North America's largest native moth"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
