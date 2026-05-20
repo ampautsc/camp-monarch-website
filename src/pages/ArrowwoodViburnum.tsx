@@ -220,6 +220,14 @@ export default function ArrowwoodViburnum({ onNavigate }: ArrowwoodViburnumProps
               fruit sequence runs from August to February with the two shrubs handing off as
               arrowwood empties and winterberry colors
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('northern-mockingbird')}>
+                Northern Mockingbird
+              </button>{' '}
+              — arrives in October to establish a winter food territory on the most visible
+              fruiting shrubs in the yard; arrowwood is one of the first it claims, before
+              winterberry colors and the territory shifts to hold both
+            </li>
           </ul>
         </section>
       </div>
