@@ -9,7 +9,7 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg"
           alt="Gray Tree Frog clinging to a rain-wet window with adhesive toe pads, camouflage skin matching bark texture"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
