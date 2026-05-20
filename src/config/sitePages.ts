@@ -138,6 +138,7 @@ export const ALL_PAGE_SLUGS = [
   'cobweb-skipper',
   'little-bluestem',
   'spicebush-swallowtail',
+  'hummingbird-clearwing-moth',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
