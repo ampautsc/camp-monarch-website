@@ -143,6 +143,41 @@ export default function PurpleConeflower({ onNavigate }: PurpleConeflowerProps) 
             and local conditions. The window overlaps with the July monarch feeding period and
             continues through the early-August peak of great spangled fritillary activity.
           </p>
+          <div className="connections">
+            <h3>Plants and species connected to Purple Coneflower</h3>
+            <ul>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('monarch-life')}>
+                  Monarch Butterfly
+                </button>{' '}
+                — feeds on coneflower blooms from late June through August during the pre-diapause fat-accumulation period before the September migration
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('tiger-swallowtail')}>
+                  Tiger Swallowtail
+                </button>{' '}
+                — works coneflower heads in late July and August alongside monarchs, fritillaries, and longhorn bees
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('american-goldfinch')}>
+                  American Goldfinch
+                </button>{' '}
+                — clings to hardened seed stalks and extracts seeds from October through January after the ray petals have dropped
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
+                  Canada Goldenrod
+                </button>{' '}
+                — picks up the bloom season in September when coneflower finishes, bridging the summer-to-fall nectar window
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('native-bees')}>
+                  Native Bees
+                </button>{' '}
+                — the two-spotted longhorn bee (<em>Melissodes bimaculata</em>) collects pollen exclusively from <em>Echinacea</em> and its close relatives in the aster family
+              </li>
+            </ul>
+          </div>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
