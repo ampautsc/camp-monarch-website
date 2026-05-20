@@ -9,7 +9,7 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyphemus_Moth_Antheraea_polyphemus.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyphemus_Moth_Antheraea_polyphemus.JPG"
           alt="Polyphemus Moth with wings spread revealing large eyespot on hindwings — a 6-inch wingspan predator-deterrent evolved over millions of years"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
