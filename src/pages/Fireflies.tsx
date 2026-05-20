@@ -9,7 +9,7 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/52/Photuris_lucicrescens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/52/Photuris_lucicrescens.jpg"
           alt="Firefly resting on a leaf at dusk, bioluminescent lantern organ visible on abdomen — threatened by lawn chemicals and light pollution"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
