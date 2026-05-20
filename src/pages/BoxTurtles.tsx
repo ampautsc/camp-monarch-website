@@ -126,19 +126,92 @@ export default function BoxTurtles({ onNavigate }: BoxTurtlesProps) {
           </p>
         </section>
 
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>A yard safe for box turtles is a yard where monarchs can overwinter too.</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the leaves
-            </button>
-            {' '}to protect both, or{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              choose a native plant
-            </button>
-            {' '}to build the ground layer that keeps both coming back.
+        <section aria-labelledby="bt-plastron-heading">
+          <h2 id="bt-plastron-heading">A hinge that took 200 million years to evolve closes in under a second</h2>
+          <p>
+            The box turtle is the only turtle in North America with a fully movable hinge in its plastron —
+            the flat lower shell. The hinge is a band of flexible cartilage connecting two bone lobes.
+            A hatchling cannot close completely; the cartilage is still hardening and the lobes have
+            not yet reached full size. By the time the turtle reaches sexual maturity at age seven to ten,
+            the two halves of the plastron seal together tightly enough that no predator native to North America
+            can force them apart.
           </p>
-        </div>
+          <p>
+            The shell is not worn over a body the way armor is worn over a soldier. The carapace —
+            the upper dome — is fused directly to the turtle's spine and expanded ribcage.
+            The plastron below connects to it at the sides. Both are living bone covered with keratin scutes,
+            the same protein that forms human fingernails. A box turtle cannot step out of its shell
+            any more than you could step out of your ribcage.
+          </p>
+          <p>
+            A raccoon working on a closed box turtle can maintain the attempt for twenty minutes
+            without gaining access. Skunks, foxes, and coyotes all give up. The defense works
+            against every predator that evolved alongside the box turtle across those 200 million years.
+            A lawn mower blade traveling at three miles per hour generates enough rotational force
+            to split the plastron along the hinge line.
+          </p>
+        </section>
+
+        <section aria-labelledby="bt-territory-heading">
+          <h2 id="bt-territory-heading">A fifty-foot circle measured across three decades of ownership</h2>
+          <p>
+            Radio-tracking studies established that box turtles typically use a home range of one to five acres —
+            sometimes considerably less in fragmented suburban landscapes. Within that range, individuals
+            return to the same overwintering sites, the same shallow mud depressions for heat regulation,
+            the same berry patches year after year. Long-term mark-recapture data from several field sites
+            found individuals within fifty feet of their original capture point thirty years after
+            first tagging. Three different families had owned the property. The turtle had not moved.
+          </p>
+          <p>
+            A box turtle navigates using at least three mechanisms: sensitivity to the Earth's magnetic field,
+            sun-angle mapping that requires an open sky, and spatial memory of physical landmarks —
+            fallen logs, stream edges, slope gradients. Remove the turtle from that landscape
+            and all three systems orient toward home.
+          </p>
+          <p>
+            A displaced turtle enters searching behavior. Its daily movement distances increase.
+            Feeding stops. Body weight drops. The animal crosses roads it would not otherwise cross,
+            moving in the direction of its original territory. Some individuals travel two or three miles
+            before starvation, predation, or a vehicle ends the attempt.
+            The turtle is not confused. It knows exactly where it is trying to go.
+            The distance between where it is and where its map says home should be is the problem.
+          </p>
+        </section>
+
+        <section aria-labelledby="bt-neighbors-heading">
+          <h2 id="bt-neighbors-heading">Who else uses the same leaf litter and undisturbed ground</h2>
+          <p>
+            The leaf litter a box turtle overwinters in and the undisturbed soil beneath it are the same
+            resources three other animals cannot complete their life cycles without.
+            Protecting one means protecting all of them.
+          </p>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('fireflies')}>
+                Fireflies
+              </button>
+              {' — '}Larvae spend one to two years as predators in the soil and leaf-litter layer;
+              the grub treatments that kill Japanese beetle larvae kill firefly larvae in the same
+              application, at the same depth, in the same ground.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('toad')}>
+                American toad
+              </button>
+              {' — '}Overwinters below the frost line in loose soil and organic matter, emerging in March
+              or April when soil temperatures rise above 50°F — the same thermal threshold that brings
+              box turtles out of dormancy.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('cecropia-moth')}>
+                Cecropia moth
+              </button>
+              {' — '}Pupates in a cocoon attached to a woody shrub or small tree through winter —
+              the same brushy edge cover that box turtles shelter beneath and forage through
+              from spring into fall.
+            </li>
+          </ul>
+        </section>
       </div>
     </>
   )
