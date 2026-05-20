@@ -275,20 +275,31 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
             The{' '}
             <button className="link-button" onClick={() => onNavigate('dark-eyed-junco')}>
               Dark-eyed Junco
-            </button>{' '}
-            scratches through the same leaf-litter layer the robin hunts at its edge — both
+            </button>
+            {' '}scratches through the same leaf-litter layer the robin hunts at its edge — both
             feeding on the same overwintering invertebrate community from October through March.
             The{' '}
             <button className="link-button" onClick={() => onNavigate('brown-thrasher')}>
               Brown Thrasher
-            </button>{' '}
-            and the{' '}
+            </button>
+            {' '}and the{' '}
             <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
               Eastern Towhee
-            </button>{' '}
-            work the deeper leaf litter under shrubs where the robin doesn&apos;t go. Each
+            </button>
+            {' '}work the deeper leaf litter under shrubs where the robin doesn&apos;t go. Each
             species is reading a different depth and zone of the same undisturbed soil layer.
             When the layer goes away, they all leave.
+          </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('northern-mockingbird')}>
+              Northern Mockingbird
+            </button>
+            {' '}holds a winter territory on whatever fruiting shrub it has claimed — crabapple,
+            hawthorn, or winterberry — and defends it against every fruit-seeking species,
+            including robin flocks of 50 to 200 birds. A single mockingbird drives off the
+            first robins that land. When the full flock arrives, the mockingbird cannot hold
+            the patch and retreats. The shrub it defended all January is stripped in 20 minutes.
           </p>
         </section>
 
