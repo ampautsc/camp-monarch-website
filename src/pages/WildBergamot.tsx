@@ -145,6 +145,73 @@ export default function WildBergamot({ onNavigate }: WildBergamotProps) {
             a few hundred meters of a place to dig.
           </p>
         </section>
+
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>Plant in full sun, leave bare soil nearby for nesting burrows, let stems stand through winter, and skip insecticides in July and August</h2>
+          <ol className="step-list">
+            <li>
+              <strong>Plant wild bergamot in a sunny spot with well-drained soil.</strong>{' '}
+              A single plug or one-gallon container planted in May or June establishes by
+              fall. The following summer it blooms. Choose a site that gets at least six
+              hours of direct sun — bergamot grown in partial shade produces fewer flower
+              heads and blooms later, compressing the window that <em>Anthophora montana</em>
+              depends on. Find local nursery sources using the{' '}
+              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
+                Find Plants Near Me
+              </button>
+              {' '}tool.
+            </li>
+            <li>
+              <strong>Leave a small patch of bare or sandy soil within 30 feet.</strong>{' '}
+              <em>Anthophora montana</em> nests in loose, well-drained soil — south-facing
+              slopes, sandy patches at the edge of a path, bare soil along a raised bed edge.
+              A patch 12 inches across is enough. The bee digs a burrow a few inches deep,
+              creates branching brood cells, and stocks each cell with bergamot pollen.
+              Without a nesting site within foraging range, she cannot use the plant.
+            </li>
+            <li>
+              <strong>Let bergamot stems stand through winter and into early spring.</strong>{' '}
+              After flowering, bergamot forms seed heads that goldfinches and sparrows strip
+              through fall. The hollow square stems provide overwintering habitat for small
+              native bees — masked bees (<em>Hylaeus</em> spp.) and small carpenter bees
+              (<em>Ceratina</em> spp.) overwinter as adults inside hollow stems.
+              Cut the stems back to a few inches above the ground in March or April only,
+              after temperatures consistently hold above 50°F.
+            </li>
+            <li>
+              <strong>Skip all insecticide applications on and within 20 feet of bergamot from June through August.</strong>{' '}
+              The pollinator traffic on a blooming bergamot plant in July includes
+              <em> Anthophora montana</em>, bumblebees, clearwing moths, and small native
+              bees of a dozen species alongside monarch butterflies nectaring between
+              milkweed patches. Pyrethroid sprays — including products marketed for mosquito
+              control — fall on visiting insects and persist in plant tissue. A single
+              application timed to peak bloom eliminates the <em>Anthophora</em> nesting
+              generation for that year. See the full picture of residue timing in the{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                Pesticides &amp; Your Habitat guide
+              </button>
+              .
+            </li>
+          </ol>
+        </div>
+
+        <div className="action-panel" style={{ marginTop: '2rem' }}>
+          <p style={{ margin: 0 }}>
+            Wild bergamot blooms between milkweed and goldenrod — see how all three overlap in the{' '}
+            <button className="link-button" onClick={() => onNavigate('plants-bloom-calendar')}>
+              Bloom Calendar
+            </button>
+            , find local sources at the{' '}
+            <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
+              Find Plants Near Me
+            </button>
+            {' '}finder, or{' '}
+            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
+              browse all native plants
+            </button>
+            {' '}to build the full sequence from milkweed through goldenrod and aster.
+          </p>
+        </div>
       </div>
     </>
   )
