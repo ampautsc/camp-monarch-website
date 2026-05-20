@@ -278,6 +278,15 @@ export default function WinterberryHolly({ onNavigate }: WinterberryHollyProps) 
               — the wet-edge companion shrub; plant in the same low corner for July–August
               bloom while winterberry is still in green-berry phase
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('northern-mockingbird')}>
+                Northern Mockingbird
+              </button>{' '}
+              — establishes a winter food territory anchored to winterberry in October and
+              defends it against every arriving fruit-feeding species through February; a
+              well-fruited female plant within view of open ground gives the mockingbird
+              a resource worth holding alone for months
+            </li>
           </ul>
         </section>
       </div>
