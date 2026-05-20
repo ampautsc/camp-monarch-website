@@ -9,7 +9,7 @@ export default function AmericanToad({ onNavigate }: AmericanToadProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Bufo_americanus_PJC1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Bufo_americanus_PJC1.jpg"
           alt="American Toad resting in garden leaf litter, warty brown skin providing natural camouflage among fallen leaves"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
