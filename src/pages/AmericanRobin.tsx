@@ -9,14 +9,13 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
-          alt="American Robin on a lawn, rust-orange breast visible, head tilted listening for earthworms beneath the surface"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg"
+          alt="American Robin on a lawn showing rust-orange breast and the classic head-tilted pause of earthworm detection"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Rhododendrites · <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: Rhododendrites&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:American_robin_(71307).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -27,101 +26,209 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>American Robin</h1>
         <p className="hero__lead">
-          The American robin is the most abundant landbird in North America.
-          It is common enough to feel ordinary, but robin behavior is a real-time
-          signal of whether your yard still has living soil, safe food webs, and
-          year-round habitat that supports wildlife.
+          A robin hunting earthworms moves in a stop-start pattern — three or four quick steps,
+          a complete halt, head tilted 90 degrees toward the ground, then a sudden lunge and pull.
+          That tilted-head pause is the moment the bird is reading the soil: detecting earthworm
+          movement by sound, vibration, or the subtle visual cues of fresh soil disturbance. It
+          stops working when the yard beneath it goes silent — when fungicide has killed the
+          earthworms, the soil has been compacted, or the food web that starts in the soil has
+          been interrupted at its base.
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="indicator-heading">
-          <h2 id="indicator-heading">A familiar bird that reveals hidden conditions</h2>
+        <section aria-labelledby="detection-heading">
+          <h2 id="detection-heading">Three steps, a pause, and a lunge</h2>
           <p>
-            American robins (<em>Turdus migratorius</em>) are successful suburban adapters,
-            which makes them easy to overlook. But because they are so familiar, they are
-            one of the best gateway species for habitat awareness. If a species this common
-            starts struggling, the issue is usually not the robin itself. The issue is what
-            changed in the yard and soil around it.
+            The American Robin (<em>Turdus migratorius</em>) is the most abundant landbird
+            in North America — the breeding population runs to the hundreds of millions.
+            Familiarity makes it easy to overlook. But a robin running across a lawn, stopping,
+            tilting its head toward the ground, and then pulling an earthworm from the soil is
+            demonstrating, in real time, whether the soil food web beneath that patch of turf
+            is alive.
           </p>
           <p>
-            Robins forage heavily on lawns and open ground for earthworms and invertebrates.
-            Persistent robin foraging is often a sign that the soil food web is still alive.
-            When robins disappear from areas they used to hunt, that can indicate soil life
-            has been suppressed by lawn chemicals or overly tidy landscaping.
+            The foraging sequence is precise. Robins don&apos;t walk steadily scanning the
+            surface. They run in short bursts and stop completely. The head tilts — not for
+            balance, but to gather information from below. Ornithologists have documented that
+            robins use a combination of hearing earthworm movement through the soil, detecting
+            faint vibrations in the substrate, and spotting the visual traces of a fresh
+            casting or soil disturbance at the surface. The lunge is timed to the information
+            the pause gathered. Robins rarely miss when they commit.
           </p>
           <p>
-            This species also carries one of conservation&apos;s clearest historical warnings:
-            robin die-offs during DDT spraying were a central case in <em>Silent Spring</em>.
-            The mechanism was bioaccumulation through food chains, not direct spraying of
-            birds. That pattern still matters whenever toxins move through soil and prey.
+            When robins stop foraging on a lawn they used to hunt, the soil has usually changed
+            in one of a few ways: the earthworm population crashed from pesticide application,
+            the surface was treated with fungicide that killed the soil fauna, or the ground was
+            so compacted that earthworms can no longer reach the top two inches where a robin
+            can pull them out. The absence is a measurement.
           </p>
         </section>
 
         <section aria-labelledby="season-heading">
-          <h2 id="season-heading">Year-round habitat requires two food systems</h2>
+          <h2 id="season-heading">The bird that reads two completely different food systems across a year</h2>
           <p>
-            Robins need both healthy invertebrate-rich ground and reliable fruiting plants.
-            During breeding season they depend heavily on worms, beetles, and caterpillars.
-            In fall and winter, berries from native shrubs and trees become essential.
+            Most people think of the first robin of spring as a migrant returning from the
+            south. In much of the eastern United States, this is not what&apos;s happening.
+            American Robins in the Northeast and Mid-Atlantic overwinter in wooded areas and
+            brush edges nearby, eating American holly berries, native crabapple, dogwood drupes,
+            and winterberry. The robin that appears on the lawn in March is often the same
+            individual that has been 200 meters away all winter, now shifting its diet back to
+            earthworms as the soil thaws.
           </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/6f/American_Robin.jpg"
-                  alt="American Robin on a lawn, alert posture, head cocked — the classic earthworm-hunting stance"
-                  loading="lazy"
-                />
-                <figcaption>
-                  In summer, robins hunt earthworms by sight and sound in short turf. In winter, they abandon earthworms entirely and rely on berries — serviceberry, holly, dogwood, and native crabapple sustain entire flocks through January and February. A yard with no fruiting native shrubs is a food desert for half the year.
-                  <span className="photo-credit"> Photo: Alan Vernon · <a href="https://commons.wikimedia.org/wiki/File:American_Robin.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+
+          <figure className="species-content-photo species-content-photo--right">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6f/American_Robin.jpg"
+              alt="American Robin in the stop-and-tilt posture on a lawn — head cocked, weight slightly forward, just before the lunge"
+              loading="lazy"
+            />
+            <figcaption>
+              The head-tilt is not a quirk. It is the robin orienting its senses toward
+              information from below the surface. When earthworm density in a lawn drops —
+              from fungicide, compaction, or chemical treatment — the robin stops pausing
+              here and hunts elsewhere. A yard with robins actively pulling worms has, by
+              demonstration, a functional soil food web in the top two inches of its lawn.
+              <span className="photo-credit"> Photo: Alan Vernon&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:American_Robin.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
 
           <p>
-            A yard that only supports one side of that equation is incomplete habitat.
-            Chemical-free soil without berry plants leaves winter gaps. Berry shrubs without
-            living soil leaves spring and nesting gaps. Robins make these seasonal gaps
-            visible because they stay in our neighborhoods through changing conditions.
+            This seasonal shift makes the robin one of the most useful species for reading
+            yard habitat completeness. A yard that holds robins year-round has to deliver two
+            completely different things: a living, untreated soil layer with earthworms and
+            invertebrates through spring, summer, and fall; and persistent native berry sources
+            through winter. A yard with chemical-free soil but no fruiting native plants loses
+            its robins in November. A yard with berry plants but treated soil loses them in
+            April. Both halves are required.
           </p>
           <p>
-            High juvenile mortality means post-fledging food access matters as much as
-            nest success. Seeing fledglings in your yard is a reminder that nearby insect
-            abundance during those first vulnerable weeks can determine survival.
+            Nesting runs from April through July. The female builds the nest: a sturdy outer
+            cup of dry grass and plant stems, plastered inside with wet mud, then lined with fine
+            dry grass. The mud cup interior is shaped by the female pressing her body into the
+            fresh mud and rotating — she uses her breast as the form that produces the smooth
+            bowl shape. It hardens as it dries. Three to four eggs, the bright blue that has
+            become the bird&apos;s color synecdoche. Incubation lasts 12 to 14 days. Chicks leave
+            the nest at 13 days — still unable to fly — and scatter into nearby vegetation. The
+            parents locate and feed each one individually for two more weeks.
+          </p>
+          <p>
+            Those two post-fledging weeks carry the highest mortality of the robin&apos;s first
+            year. Chicks are on the ground, unable to fly, needing invertebrate food nearby and
+            cover to hide in. In a yard maintained as a uniformly open, raked surface, there is
+            nowhere to hide and little to eat. In a yard with native shrubs, leaf litter, and
+            untreated soil, the chick has both.
+          </p>
+        </section>
+
+        <section aria-labelledby="ddt-heading">
+          <h2 id="ddt-heading">The DDT bird — and what the recovery showed</h2>
+          <p>
+            The American Robin is the species Rachel Carson built <em>Silent Spring</em>
+            around. The mechanism was this: DDT was sprayed on elm trees across the Midwest
+            and Northeast in the 1950s to control Dutch elm disease. The elm leaves fell each
+            autumn. Earthworms consumed the leaf litter and stored the DDT in their tissues.
+            Robins ate those earthworms — a typical foraging robin eats dozens of earthworms
+            per day during peak season. The DDT accumulated in the robin&apos;s body across
+            the foraging period. The result was tremors, loss of coordination, and death from
+            central nervous system failure.
+          </p>
+          <p>
+            In communities that sprayed heavily, ornithologists documented die-offs that removed
+            most of the local robin population within a single breeding season. A town with robins
+            on every street in April was largely silent by June. This outcome was visible to anyone
+            who looked, which is why Carson chose it. The bioaccumulation chain — leaves to
+            earthworms to robins — was legible in a way that laboratory toxicology was not.
+          </p>
+          <p>
+            DDT was banned in the United States in 1972. Robin populations recovered. That
+            recovery is the piece of this history that matters for habitat work: when the
+            cause was removed, the earthworm population rebounded and the robins came back.
+            Population recovery after targeted cause removal is repeatable. The trajectory
+            reversed.
+          </p>
+          <p>
+            The current analogs operate through the same food chain. Certain fungicides in
+            common lawn use — particularly strobilurin-class compounds sold under product names
+            for brown patch, dollar spot, and rust control — carry documented toxicity to
+            earthworms at the concentrations applied to turf. Research on earthworm responses
+            to strobilurin fungicides has documented population losses in treated plots.
+            Robins hunting a treated lawn are hunting a depleted food supply, and the earthworms
+            they do catch carry whatever compound has moved through the soil and into the
+            worm&apos;s tissues. The chain Carson documented in the 1950s is running today with
+            different compounds at lower visible mortality rates — which makes it easier to
+            overlook.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>No pesticides, native berry plants, leaf litter, and fresh water</h2>
+          <h2 style={{ marginTop: 0 }}>Stop the fungicides, plant one berry tree, leave the litter, and add water at ground level</h2>
 
           <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Stone bird bath in a garden setting" loading="lazy" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg"
+              alt="Stone bird bath set at ground level in a garden — robins prefer shallow water sources at or near the ground where they can wade in and beat their wings"
+              loading="lazy"
+            />
             <figcaption>
-              A ground-level water source earns daily visits from robins foraging nearby. Refresh it every two or three days to disrupt mosquito breeding and maintain what draws them back.
+              Robins bathe rather than sip from tube feeders. A shallow dish — 4 to 6 inches
+              deep — placed on or near the ground earns daily visits during breeding season and
+              on warm winter days when natural water sources have frozen over. Refresh every
+              two to three days to prevent mosquito larvae from reaching the biting stage.
               <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+
           <ol className="step-list">
             <li>
-              <strong>Stop using lawn pesticides and herbicides.</strong>{' '}
-              Keep the soil food web alive so robins can find worms, beetles, and other prey.
+              <strong>Stop using lawn fungicides.</strong>{' '}
+              Fungicides are the least-discussed pesticide threat to earthworm populations.
+              Products sold for brown patch and dollar spot — including formulations containing
+              pyraclostrobin, azoxystrobin, or trifloxystrobin — carry documented toxicity to
+              earthworms at the concentrations used on lawns. A treated lawn can lose most of
+              its accessible earthworm population within weeks of application, and robins that
+              arrive expecting a productive food supply find it absent. The full breakdown of
+              which pesticides affect which parts of the food web is at the{' '}
+              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
+                Pesticides &amp; Your Habitat guide
+              </button>
+              .
             </li>
             <li>
-              <strong>Add native berry-producing shrubs and trees.</strong>{' '}
-              Plant serviceberry, native dogwood, winterberry holly, hawthorn, or viburnums
-              to provide critical fall and winter food.
+              <strong>Plant one native berry-producing tree or large shrub this season.</strong>{' '}
+              American Holly (<em>Ilex opaca</em>), native crabapple (<em>Malus</em> species),
+              Eastern Dogwood (<em>Cornus florida</em>), and Winterberry Holly (<em>Ilex
+              verticillata</em>) all produce fruit that persists into winter and is eaten by
+              robins through cold months when earthworms are frozen or inaccessible beneath
+              the surface. Flocks of robins congregate at single fruiting hollies and dogwoods
+              on January mornings when other food sources have been exhausted. A yard with no
+              fruiting native plants has nothing to offer robins from November through March.
+              Find what grows in your hardiness zone at{' '}
+              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
+                Find Plants Near Me
+              </button>
+              .
             </li>
             <li>
-              <strong>Leave leaf litter in place through spring.</strong>{' '}
-              Robins forage where leaves are decomposing because those zones hold invertebrates.
+              <strong>Leave leaf litter along the base of shrubs and borders.</strong>{' '}
+              Robins forage at the edge where leaf litter meets open soil — the zone of
+              highest invertebrate density in a suburban yard. Earthworm counts are consistently
+              higher beneath intact leaf litter than in raked or cleared ground of the same
+              lawn, because the litter holds moisture, buffers temperature, and adds organic
+              matter that earthworms consume. Raking removes the habitat along with the leaves.
+              Leave it under shrubs, along fences, and at garden edges. The full case is at{' '}
+              <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+                Leave the Leaves
+              </button>
+              .
             </li>
             <li>
               <strong>Set out a ground-level water source and refresh it every two to three days.</strong>{' '}
-              Robins bathe regularly to maintain feather condition — a shallow dish 4 to 6 inches
-              deep placed on the ground or a low platform matches the depth they wade into.
-              Refreshing every two or three days prevents mosquito larvae from maturing and keeps
-              the water clean enough that robins return. Read the full case for yard water at{' '}
+              Robins wade into shallow water to bathe — they beat their wings to wet their
+              feathers, then preen. A dish 4 to 6 inches deep placed on or near the ground
+              draws visits during breeding season and on warm winter days. Refresh every two
+              to three days to prevent mosquito larvae from reaching the biting stage. The
+              full guide to yard water sources is at{' '}
               <button className="link-button" onClick={() => onNavigate('water-for-wildlife')}>
                 Water for Wildlife
               </button>
@@ -131,39 +238,76 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
         </div>
 
         <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The connection to monarch habitat</h2>
+          <h2 id="connection-heading">The earthworm chain and the animals that run on it</h2>
           <p>
-            Robin-friendly yards and monarch-friendly yards overlap. Reducing pesticides,
-            increasing native plant diversity, and allowing living ground cover helps both
-            species. One set of yard decisions can support birds, butterflies, and the wider
-            food web at the same time.
+            Rachel Carson chose robins because their die-offs were visible and countable. The
+            bioaccumulation chain — leaves to earthworms to robins — could be traced by anyone
+            willing to look. The same food chain structure runs today through the{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-screech-owl')}>
+              Eastern Screech Owl
+            </button>
+            : rodenticide bait station in a garage, mouse eating the bait and carrying
+            brodifacoum in its tissues, owl eating the mouse, owl liver failing weeks later.
+            A 2023 study found rodenticide contamination in 96 percent of screech owl carcasses
+            tested from suburban areas. The robin version of this chain runs faster and at
+            higher volume; it is harder to count because individual earthworms are not visible,
+            but the mechanism is the same.
           </p>
           <p>
-            Camp Monarch&apos;s core idea is visible here: when you restore habitat functions,
-            familiar species return first. That familiarity can become momentum for broader
-            restoration.
+            A yard where fungicide use has stopped and the earthworm population is recovering
+            is rebuilding the same soil food web that{' '}
+            <button className="link-button" onClick={() => onNavigate('fireflies')}>
+              firefly
+            </button>{' '}
+            larvae live in through winter,{' '}
+            <button className="link-button" onClick={() => onNavigate('american-toad')}>
+              American Toads
+            </button>{' '}
+            hunt through summer, and the caterpillars that share a yard with{' '}
+            <button className="link-button" onClick={() => onNavigate('monarch-butterfly')}>
+              monarchs
+            </button>{' '}
+            during caterpillar development depend on for their own part of the food web.
+            Stopping the fungicide application is one decision that recovers habitat for
+            all of them at once.
+          </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('dark-eyed-junco')}>
+              Dark-eyed Junco
+            </button>{' '}
+            scratches through the same leaf-litter layer the robin hunts at its edge — both
+            feeding on the same overwintering invertebrate community from October through March.
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('brown-thrasher')}>
+              Brown Thrasher
+            </button>{' '}
+            and the{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
+              Eastern Towhee
+            </button>{' '}
+            work the deeper leaf litter under shrubs where the robin doesn&apos;t go. Each
+            species is reading a different depth and zone of the same undisturbed soil layer.
+            When the layer goes away, they all leave.
           </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
-            <strong>Ready to build robin habitat?</strong>{' '}
+            <strong>Build the soil and berry structure the robin reads as alive.</strong>{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a native plant
-            </button>
-            {' '}to add berry structure,{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              leave the leaves
-            </button>
-            {' '}to keep the invertebrate base alive, add a{' '}
-            <button className="link-button" onClick={() => onNavigate('water-for-wildlife')}>
-              water source
-            </button>
-            {' '}to complete the habitat, or read the{' '}
+            </button>{' '}
+            to add the berry sources that carry robins through winter,{' '}
             <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              pesticide guide
+              read the pesticide guide
+            </button>{' '}
+            to see which lawn products kill the earthworms the robin is hunting, and follow
+            the case for intact winter leaf litter at{' '}
+            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
+              Leave the Leaves
             </button>
-            {' '}to protect the soil food web robins depend on.
+            .
           </p>
         </div>
       </div>
