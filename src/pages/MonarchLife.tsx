@@ -9,16 +9,15 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Monarch_butterfly_US_migration.png"
-          alt="Monarch Butterfly nectaring on native milkweed flower, showing vivid orange and black wing pattern — a species whose population has dropped 85%"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Monarch_Butterfly_Danaus_plexippus.jpg"
+          alt="Monarch butterfly (Danaus plexippus) on milkweed bloom with wings spread open, showing the vivid orange wing panels and black vein network — the adult that emerges from chrysalis in late August will not reproduce; instead it will fly 2,500 miles to a Mexican mountain forest it has never visited"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: MonarchWanderungKlein.gif: Harald Süpfle derivative work: B kimmel · <a href="https://commons.wikimedia.org/wiki/File:Monarch_butterfly_US_migration.png" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
-          Photo: MonarchWanderungKlein.gif: Harald Süpfle derivative work: B kimmel&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Monarch_butterfly_US_migration.png" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          Photo: Derek Ramsey (Ram-Man)&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -91,7 +90,7 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
               loading="lazy"
             />
             <figcaption>
-              Inside the chrysalis, the caterpillar's tissues dissolve almost entirely — most of its cells break down into an undifferentiated biological broth. Imaginal cells dormant since the egg then organize that material into a butterfly. The monarch that emerges will navigate 2,500 miles to a Mexican mountain it has never visited, using a sun compass calibrated to time of day.
+              Inside the chrysalis, the caterpillar's tissues dissolve almost entirely — most of its cells break down into an undifferentiated biological broth. Imaginal cells dormant since the egg then organize that material into a butterfly. The monarch that emerges will navigate 2,500 miles to a Mexican mountain using a sun compass calibrated to time of day.
               <span className="photo-credit"> Photo: Captain-tucker · <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_emerging_from_chrysalis_04.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
             </figcaption>
           </figure>
@@ -146,6 +145,56 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
             </button>
           </div>
         </div>
+
+        <section aria-labelledby="monarch-neighbors-heading">
+          <h2 id="monarch-neighbors-heading">Who shares the fall flyway and the milkweed patch</h2>
+          <p>
+            The milkweed stand in July and the goldenrod bloom in September that sustain the monarch's
+            annual cycle also sustain other species working the same landscape on similar schedules.
+          </p>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
+                Canada Goldenrod
+              </button>
+              {' — '}The diapause generation departing breeding grounds in late August fuels the
+              2,500-mile Mexico crossing primarily on goldenrod and aster nectar through September
+              and October. A single monarch working a blooming goldenrod stand converts flower sugar
+              into the abdominal fat reserves that will carry it to Michoacán — the same goldenrod
+              that most homeowners pull because they assume it causes hay fever (ragweed does; goldenrod
+              is insect-pollinated and its pollen never reaches your sinuses).
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('green-darner')}>
+                Common Green Darner
+              </button>
+              {' — '}Migrates south on the same September cold fronts. Monarch counters at Atlantic
+              flyway hawk-watch stations record darner movement on the same weather days as peak
+              butterfly counts. Both species navigate to wintering locations they have never visited;
+              neither the darner nor the monarch arriving at your yard in April was there the previous October —
+              both are the offspring of the generation that departed.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('tiger-swallowtail')}>
+                Tiger Swallowtail
+              </button>
+              {' — '}Nectars on milkweed blooms in June and July alongside the summer monarch generation,
+              and feeds on wild bergamot and coneflowers through August. The tiger swallowtail on your
+              coneflowers in August will overwinter as a pupa; the monarch working the same flower heads
+              is building fat for a crossing it will complete in six weeks.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('purple-coneflower')}>
+                Purple Coneflower
+              </button>
+              {' — '}Blooms from late June through August — the exact window when the pre-diapause
+              generation of monarchs is feeding most intensively before its reproductive biology shifts
+              toward long-distance flight. A patch of coneflowers in late July carries monarch adults,
+              native bees, and fritillaries simultaneously; the monarchs working it in August belong to
+              the generation that will leave on the September cold front.
+            </li>
+          </ul>
+        </section>
       </div>
     </>
   )
