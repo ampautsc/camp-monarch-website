@@ -279,6 +279,14 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
               </button>
               {' — '}Shares the invertebrate foraging niche on the forest floor.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('northern-mockingbird')}>
+                Northern Mockingbird
+              </button>
+              {' — '}Carries Wood Thrush phrases in its song library for life. In areas where
+              Wood Thrushes have been gone for twenty years, young mockingbirds never hear that
+              phrase — the repertoire reflects the neighbor list, and the neighbor list has changed.
+            </li>
           </ul>
         </section>
 
