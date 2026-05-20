@@ -9,7 +9,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Actias_luna-male.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Actias_luna-male.jpg"
           alt="Luna Moth resting on tree bark with pale green wings fully spread, long elegant tails trailing — wings are a single night of adult life"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
