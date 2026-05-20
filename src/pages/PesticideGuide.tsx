@@ -199,8 +199,8 @@ export default function PesticideGuide({ onNavigate }: PesticideGuideProps) {
               Label check before you buy
             </h3>
             <ul style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.6 }}>
-              <li>Skip plants labeled “insect protected,” “systemic,” or “long-lasting pest control.”</li>
-              <li>Ask the nursery one direct question: “Were these treated with neonicotinoids?”</li>
+              <li>Skip plants labeled "insect protected," "systemic," or "long-lasting pest control."</li>
+              <li>Ask the nursery one direct question: "Were these treated with neonicotinoids?"</li>
               <li>Choose untreated native plants or seed-grown stock when treatment history is unclear.</li>
             </ul>
           </div>
@@ -432,12 +432,25 @@ export default function PesticideGuide({ onNavigate }: PesticideGuideProps) {
             <InlineLink page="habitat-transformation" label="From Lawn to Habitat" onNavigate={onNavigate} />{' '}
             guide.
           </p>
+          <p>
+            Canceling a spray service creates a gap that dragonflies and bats already fill — but
+            only when your yard gives them somewhere to breed. A green darner nymph spends ten
+            months to two years in a pond, hunting mosquito larvae in the water column before it
+            surfaces as an adult. A 25-gallon container sunk flush to the ground supports a small
+            nymph colony through a season. The{' '}
+            <InlineLink page="water-for-wildlife" label="Water for Wildlife" onNavigate={onNavigate} />{' '}
+            guide covers what each water feature needs — the depth, edge texture, and plants that
+            make the difference between a decoration and a dragonfly nursery.
+          </p>
           <div style={{ marginTop: '1.25rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <button onClick={() => onNavigate('habitat-score')} className="btn btn-primary">
               Take the Yard Check →
             </button>
             <button onClick={() => onNavigate('choose-a-plant')} className="btn btn-secondary">
               Find plants for my yard →
+            </button>
+            <button onClick={() => onNavigate('water-for-wildlife')} className="btn btn-secondary">
+              Add water for wildlife →
             </button>
           </div>
         </div>
