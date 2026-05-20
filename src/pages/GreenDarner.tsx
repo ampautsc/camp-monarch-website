@@ -136,6 +136,33 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
           </ol>
         </div>
 
+        <section aria-labelledby="aerial-heading">
+          <h2 id="aerial-heading">Ninety-five percent: what closes on a mosquito in the final foot of approach</h2>
+          <p>
+            Green darner adults locate prey by computing an intercept point ahead of the target's
+            flight path rather than chasing directly. Their compound eyes cover nearly the full
+            hemisphere of vision around the head — perceiving prey movement up to 40 feet away,
+            tracking angle and velocity simultaneously. In the final foot of approach, the forelegs
+            close into a spined basket around the prey before it can change course. Studies measuring
+            dragonfly hunting success place the capture rate above 95% of initiated attempts.
+          </p>
+          <p>
+            An adult patrolling the edge of a quarter-acre pond makes 40 to 50 strikes per hour during
+            peak activity, targeting mosquitoes, midges, and gnats in the 3–10 millimeter range.
+            The naiad that became this adult spent ten months hunting mosquito larvae in the water column
+            below the same pond. Two life stages, one prey population, continuous predation pressure
+            from below the surface and above it simultaneously.
+          </p>
+          <p>
+            A mosquito adulticide program — a spray timed to hit biting adults — does not distinguish
+            between mosquitoes and darners. Both move in the temperature range that triggers spray schedules.
+            A spray that cuts adult darner density reduces the yard's most accurate aerial predator.
+            Naiad loss from residue drift in the same pond the following spring removes the predation
+            from below. The spray that reduced biting for three nights dismantled the mechanism running
+            at 95% accuracy, year-round, at no cost.
+          </p>
+        </section>
+
         <section aria-labelledby="indicator-heading">
           <h2 id="indicator-heading">Darners emerging from a pond are two years of water quality evidence</h2>
           <p>
@@ -149,21 +176,51 @@ export default function GreenDarner({ onNavigate }: GreenDarnerProps) {
           </p>
         </section>
 
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            Darners need clean water to breed and monarchs need nectar corridors to migrate —
-            both movements cross the same mid-Atlantic flyway in September.
-            Build the water habitat and the nectar plants and the two migrations converge above the same yard.{' '}
-            <button className="link-button" onClick={() => onNavigate('water-for-wildlife')}>
-              Water for Wildlife
-            </button>
-            {' '}covers pond design and rain garden options, and{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves
-            </button>
-            {' '}explains how the leaf litter floor supports the insect prey darners need before they migrate.
+        <section aria-labelledby="darner-neighbors-heading">
+          <h2 id="darner-neighbors-heading">Who else loses the pond when the spray program starts</h2>
+          <p>
+            The fish-free pond, the unmowed shoreline, and the no-adulticide zone that sustains a darner
+            population are the same three conditions three other animals cannot complete their life cycles without.
           </p>
-        </div>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('spring-peeper')}>
+                Spring Peeper
+              </button>
+              {' — '}Breeds in the same shallow fish-free ponds, beginning in February and March;
+              glyphosate at concentrations from normal residential use causes up to 70% tadpole mortality;
+              adulticide drift onto breeding water reaches tadpoles and darner naiads in the same pond
+              in the same season.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('toad')}>
+                American Toad
+              </button>
+              {' — '}Enters ponds in April to lay continuous egg strings across submerged vegetation,
+              often in the same two-week window that darner naiads complete their final molt and emerge;
+              road salt chloride accumulating through winter snowmelt arrives in breeding ponds at the
+              same time toad eggs and darner naiads are developing.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('fireflies')}>
+                Fireflies
+              </button>
+              {' — '}Larvae spend one to two years as predators in the shoreline soil layer —
+              the same structurally intact, unmowed border that emerging darner naiads need to climb
+              during emergence; grub treatments applied to lawn for Japanese beetle larvae reach
+              firefly larvae in the same surface soil zone at the pond margin.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('monarch-life')}>
+                Monarch butterfly
+              </button>
+              {' — '}The September cold front that pushes green darner migration south carries monarch
+              movement on the same air mass; both appear at Atlantic flyway watch stations on the same
+              weather days. A yard with a fish-free pond and late-season native nectar plants within
+              fifty feet of the water hosts both migrations converging in the same September afternoon.
+            </li>
+          </ul>
+        </section>
       </div>
     </>
   )
