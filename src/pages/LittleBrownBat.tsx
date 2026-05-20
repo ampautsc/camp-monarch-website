@@ -9,7 +9,7 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/8/88/Little_Brown_Myotis_%28cropped%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/88/Little_Brown_Myotis_%28cropped%29.JPG"
           alt="Little Brown Bat in flight over still water at dusk, mouth open in mid-echolocation — consuming up to 1,000 mosquito-sized insects per hour"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
