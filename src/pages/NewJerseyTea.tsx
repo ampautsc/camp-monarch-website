@@ -168,6 +168,12 @@ export default function NewJerseyTea({ onNavigate }: NewJerseyTeaProps) {
                 </button>{' '}
                 — adults moving north in late May and early June need nectar before common milkweed flowers open; New Jersey Tea is blooming during that gap
               </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('american-goldfinch')}>
+                  American Goldfinch
+                </button>{' '}
+                — the small tan seed capsules ripen in late summer after the white flowers fade; goldfinches strip seeds from the dried heads in August and September
+              </li>
             </ul>
           </div>
         </section>
