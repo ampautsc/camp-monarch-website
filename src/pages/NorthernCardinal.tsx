@@ -9,7 +9,7 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg"
           alt="Male Northern Cardinal in brilliant red plumage at a snow-dusted native shrub, crested head turned to look directly at viewer"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
