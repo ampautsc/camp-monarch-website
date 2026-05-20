@@ -77,6 +77,58 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
           </p>
         </section>
 
+        <section aria-labelledby="nb-lifecycle-heading">
+          <h2 id="nb-lifecycle-heading">One egg, a pollen ball, and a sealed cell she never sees hatch</h2>
+          <p>
+            A ground-nesting female spends her adult life — roughly four to six weeks for most species —
+            excavating and provisioning cells. She digs a main shaft a few inches into bare soil,
+            branches off individual brood chambers, and packs each one with a sphere of pollen
+            mixed with nectar. Collecting enough pollen for a single cell takes two to three
+            days of foraging. She lays one egg on top of the provision ball, seals the chamber
+            with packed earth or chewed vegetation, and moves on to the next cell.
+          </p>
+          <p>
+            She does not stay to raise her larvae. She dies before they hatch. Each larva develops
+            alone inside its sealed cell — eating the provision ball, growing through several instars,
+            pupating, and overwintering as a fully formed adult still inside the cell wall.
+            In spring, when soil temperature rises, it chews through the seal and emerges.
+          </p>
+          <p>
+            Stem-nesting bees follow the same pattern above ground. A mason bee cuts plant resin
+            or leaf discs to partition a hollow stem into individual cells. A leaf-cutter bee
+            uses circular sections of leaf. Each cell gets a provision ball and one egg, then a seal —
+            and the female moves to the next cavity. The standing stem stubs you leave through winter
+            are occupied galleries. More than 300 North American bee species use hollow or pithy stems
+            as brood chambers. Cutting perennial stems to the ground in October removes every nest
+            established during the growing season before the larvae inside have finished development.
+          </p>
+        </section>
+
+        <section aria-labelledby="nb-cleptoparasite-heading">
+          <h2 id="nb-cleptoparasite-heading">Roughly 900 North American bee species do not collect pollen</h2>
+          <p>
+            Cleptoparasitic bees — called cuckoo bees — reproduce by laying their eggs inside the
+            provisioned nests of other bee species. They have no pollen baskets. They do not
+            excavate burrows or forage for their offspring. A cuckoo bee female spends her adult life
+            locating active host nests by smell, waiting for the host to leave, entering, and
+            depositing a single egg in a freshly provisioned cell.
+          </p>
+          <p>
+            The cuckoo bee larva hatches first. It kills the host egg or young larva —
+            in some species the first instar is equipped with enlarged, hardened mandibles for this
+            specific purpose — and then develops alone on the pollen ball the host female packed.
+          </p>
+          <p>
+            Each cuckoo bee genus is matched to one or a few host genera. Nomada bees
+            parasitize Andrena mining bees. Stelis bees parasitize Osmia mason bees.
+            Triepeolus bees parasitize Melissodes long-horned bees. When a host population
+            collapses, its cuckoo bee collapses within one or two generations, often before
+            anyone notices the host is declining. A yard that supports a ground-nesting
+            bee population is also supporting a second guild of species that can only exist
+            because the first does.
+          </p>
+        </section>
+
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>An unmulched patch, a season of blooms, no pesticides, and stems left standing</h2>
 
@@ -128,6 +180,38 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
             Choose a Plant for Your Yard
           </button>
         </div>
+
+        <section aria-labelledby="nb-neighbors-heading">
+          <h2 id="nb-neighbors-heading">Who else tunnels into the same ground</h2>
+          <p>
+            The soil a ground-nesting bee excavates and the leaf litter above it are shared
+            by other species that need the same undisturbed, chemical-free ground to complete
+            their life cycles. Managing for one means managing for all of them.
+          </p>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('fireflies')}>
+                Fireflies
+              </button>
+              {' — '}Larvae spend one to two years hunting in the same soil layer; the grub treatments
+              that kill lawn beetles kill firefly larvae in the same application.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('toad')}>
+                American toad
+              </button>
+              {' — '}Overwinters six to twelve inches below the frost line in the same loose soil
+              and leaf litter that ground-nesting bees require for thermal stability.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('wild-bergamot')}>
+                Wild bergamot
+              </button>
+              {' — '}A single plant in full bloom can attract fifteen or more native bee species in a single day,
+              including specialist bees that collect pollen from no other plant family.
+            </li>
+          </ul>
+        </section>
       </div>
     </>
   )
