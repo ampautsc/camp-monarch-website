@@ -273,6 +273,15 @@ export default function CedarWaxwing({ onNavigate }: CedarWaxwingProps) {
               before the later-fruiting species are ready. A yard with both arrowwood and
               winterberry holds fruit from August through January.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('northern-mockingbird')}>
+                Northern Mockingbird
+              </button>
+              {' — '}Holds a winter food territory anchored to a single crabapple or winterberry.
+              When a Cedar Waxwing flock descends on the defended shrub, the mockingbird —
+              outnumbered by 20 to 60 birds — cannot hold the patch. It retreats, waits, and
+              resumes defense of whatever the flock left behind.
+            </li>
           </ul>
         </section>
       </div>
