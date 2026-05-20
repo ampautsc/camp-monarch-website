@@ -246,6 +246,10 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               <span className="neighbor-name">American Goldfinch</span>
               <span className="neighbor-note">Works the dried coneflower and goldenrod seed heads in October through January — the same plants tiger swallowtails visited for nectar in July and August; both species depend on the same native blooms running through different seasons</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
+              <span className="neighbor-name">Canada Goldenrod</span>
+              <span className="neighbor-note">Blooms August through October, feeding the late-summer generation of tiger swallowtails — the adults foraging goldenrod in September are loading fat reserves they will carry as overwintering chrysalids on bark through winter</span>
+            </button>
           </div>
         </section>
       </div>
