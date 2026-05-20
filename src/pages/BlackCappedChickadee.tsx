@@ -9,7 +9,7 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg"
           alt="Black-capped Chickadee with its distinctive black cap and bib, clinging to a branch in a suburban woodland edge"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
