@@ -157,6 +157,12 @@ export default function NewJerseyTea({ onNavigate }: NewJerseyTeaProps) {
                 — fills July and August, the window after New Jersey Tea and milkweed
               </li>
               <li>
+                <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
+                  Canada Goldenrod
+                </button>{' '}
+                — blooms August through October, the late end of the five-plant sequence that New Jersey Tea opens in May; a goldenrod stand in September is feeding the same migrating monarchs that passed New Jersey Tea flowers in late May
+              </li>
+              <li>
                 <button className="link-button" onClick={() => onNavigate('native-bees')}>
                   Native Bees
                 </button>{' '}
