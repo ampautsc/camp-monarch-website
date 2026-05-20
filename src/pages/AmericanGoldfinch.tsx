@@ -135,18 +135,54 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
         </div>
 
         <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The connection to monarchs</h2>
+          <h2 id="connection-heading">Milkweed in July: caterpillar food and nest fiber on the same plant</h2>
           <p>
-            Goldfinches and monarchs overlap strongly in plant needs. Goldenrod and native asters
-            fuel monarch migration with nectar, then feed goldfinches with seeds through fall and
-            winter. Milkweed supports monarch breeding and contributes nesting material for
-            goldfinches.
+            A female goldfinch builds her nest in late July using milkweed pod fibers — the same
+            soft white strands she pulls from plants where monarch caterpillars are still feeding
+            on the leaves. Nest construction and caterpillar feeding happen on the same milkweed
+            stem, a few feet apart, in the same July week.
           </p>
           <p>
-            This is the Camp Monarch pattern in practice: one native plant community supporting
-            multiple species with different life cycles. When a yard shifts from turf to layered
-            native habitat, it does not just look better. It functions better.
+            Goldenrod blooms through September. Monarch adults drink the nectar and convert it
+            into abdominal fat during the pre-diapause period before the Mexico crossing. The
+            nectar flow ends in October as the flowers fade — and goldfinches move onto the same
+            stalks to pull seeds through November and December. The plant runs both schedules
+            in sequence.
           </p>
+          <p>
+            A purple coneflower head carries ray petals through August and feeds monarch adults
+            seeking nectar. By October those heads have hardened into brown ridged seed cones,
+            and goldfinches cling to the dried stalks extracting seeds through January.
+          </p>
+          <div className="connections">
+            <h3>Species and plants connected to the American Goldfinch</h3>
+            <ul>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('monarch-life')}>
+                  Monarch Butterfly
+                </button>{' '}
+                — uses milkweed for caterpillar food and goldenrod for pre-migration nectar, the same plants goldfinches use for nest fiber and winter seeds
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
+                  Canada Goldenrod
+                </button>{' '}
+                — monarchs drink goldenrod nectar in September; goldfinches eat goldenrod seeds on the same stalks from October through December
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('purple-coneflower')}>
+                  Purple Coneflower
+                </button>{' '}
+                — monarch nectar source in July and August; goldfinch seed source from October through January on the same dried heads
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('native-bees')}>
+                  Native Bees
+                </button>{' '}
+                — share goldenrod and coneflower foraging with goldfinches during peak summer and fall bloom
+              </li>
+            </ul>
+          </div>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
