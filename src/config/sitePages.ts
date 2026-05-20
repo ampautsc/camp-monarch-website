@@ -40,6 +40,7 @@ export const ALL_PAGE_SLUGS = [
   'northern-flicker',
   'baltimore-oriole',
   'northern-cardinal',
+  'northern-mockingbird',
   'eastern-bluebird',
   'plants',
   'plants-finder',
