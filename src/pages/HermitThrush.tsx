@@ -282,6 +282,15 @@ export default function HermitThrush({ onNavigate }: HermitThrushProps) {
               strip heavily on fall arrival. Fruits out three months before winterberry begins,
               bridging the October arrival window to the late-season winterberry coverage.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('northern-mockingbird')}>
+                Northern Mockingbird
+              </button>
+              {' — '}Also holds a solitary winter territory on the same fruiting shrubs —
+              and defends it against the Hermit Thrush. When both arrive at the same
+              winterberry, the mockingbird claims the upper branches and drives the thrush
+              back; the thrush works the edges and waits.
+            </li>
           </ul>
         </section>
 
