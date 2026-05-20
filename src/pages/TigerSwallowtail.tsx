@@ -242,6 +242,10 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               <span className="neighbor-name">Purple Coneflower</span>
               <span className="neighbor-note">Blooms July–August during peak tiger swallowtail activity; the same dense patch of 8–12 plants that supports specialist longhorn bees also draws swallowtails and fritillaries working adjacent flower heads</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('american-goldfinch')}>
+              <span className="neighbor-name">American Goldfinch</span>
+              <span className="neighbor-note">Works the dried coneflower and goldenrod seed heads in October through January — the same plants tiger swallowtails visited for nectar in July and August; both species depend on the same native blooms running through different seasons</span>
+            </button>
           </div>
         </section>
       </div>
