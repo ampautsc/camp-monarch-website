@@ -56,6 +56,7 @@ import DarkEyedJunco from './pages/DarkEyedJunco'
 import AmericanTreeSparrow from './pages/AmericanTreeSparrow'
 import EasternChipmunk from './pages/EasternChipmunk'
 import SpringPeeper from './pages/SpringPeeper'
+import WoodFrog from './pages/WoodFrog'
 import AmericanToad from './pages/AmericanToad'
 import LittleBrownBat from './pages/LittleBrownBat'
 import WoodThrush from './pages/WoodThrush'
@@ -207,6 +208,7 @@ export default function App() {
       case 'american-tree-sparrow': return <AmericanTreeSparrow onNavigate={navigateTo} />
       case 'eastern-chipmunk': return <EasternChipmunk onNavigate={navigateTo} />
       case 'spring-peeper': return <SpringPeeper onNavigate={navigateTo} />
+      case 'wood-frog':     return <WoodFrog onNavigate={navigateTo} />
       case 'toad': return <AmericanToad onNavigate={navigateTo} />
       case 'little-brown-bat': return <LittleBrownBat onNavigate={navigateTo} />
       case 'wood-thrush': return <WoodThrush onNavigate={navigateTo} />
