@@ -9,7 +9,7 @@ export default function SpringPeeper({ onNavigate }: SpringPeeperProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/ad/H_crucifer_USGS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/ad/H_crucifer_USGS.jpg"
           alt="Spring Peeper frog showing distinctive X marking on back — this dime-sized frog's call is the first sound of the year that reaches you from a pond two lots away"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
