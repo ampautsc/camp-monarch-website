@@ -9,7 +9,7 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg"
           alt="Native bumblebee covered in pollen foraging on a purple coneflower — one of 4,000 native bee species that existed before the honeybee arrived in North America"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
