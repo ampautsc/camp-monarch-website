@@ -742,6 +742,30 @@ const SPECIES: Species[] = [
     page: 'yellow-rumped-warbler',
     habitatTags: ['woodland', 'shrub-edge', 'garden'],
   },
+  {
+    id: 'northern-mockingbird',
+    name: 'Northern Mockingbird',
+    scientificName: 'Mimus polyglottos',
+    emoji: '🐦',
+    shortDesc: "A single male sings 150 to 200 distinct song patterns per hour — each phrase borrowed from a different species, repeated three or four times, then replaced by the next. In May, unmated males continue singing from 11 pm until 2 or 3 am. The song is a direct inventory of the bird species the male has heard within half a mile, accumulated over his lifetime.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Mimus_polyglottos_adult.jpg/960px-Mimus_polyglottos_adult.jpg',
+    photoCredit: 'Ken Thomas / Public domain via Wikimedia Commons',
+    page: 'northern-mockingbird',
+    habitatTags: ['garden', 'shrub-edge', 'open-land'],
+  },
+  {
+    id: 'wood-frog',
+    name: 'Wood Frog',
+    scientificName: 'Rana sylvatica',
+    emoji: '🐸',
+    shortDesc: "Spends roughly 5 months frozen solid in the leaf litter — heart stopped, lungs stopped, 65 percent of its body water as ice — then thaws in March and walks to the vernal pool where it was born. If you hear duck-like quacking from a low wet area in late March, that is Wood Frogs.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rana_sylvatica.jpg/960px-Rana_sylvatica.jpg',
+    photoCredit: 'Rasbak / CC BY-SA 3.0',
+    page: 'wood-frog',
+    habitatTags: ['vernal-pool', 'woodland', 'leaf-litter'],
+  },
 ]
 
 // ───────────────────────────────────────────────────────────────────────────────
