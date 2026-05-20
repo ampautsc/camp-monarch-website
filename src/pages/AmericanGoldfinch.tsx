@@ -9,7 +9,7 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg"
           alt="Male American Goldfinch in brilliant breeding plumage — canary yellow body, black cap and wings — perched on a native coneflower seed head"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
