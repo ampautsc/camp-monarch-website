@@ -9,7 +9,7 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Baltimore_Oriole-_dorsum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Baltimore_Oriole-_dorsum.jpg"
           alt="Male Baltimore Oriole, vivid flame-orange and black plumage, hanging from a native tree branch"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
