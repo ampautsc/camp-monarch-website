@@ -9,7 +9,7 @@ export default function BoxTurtles({ onNavigate }: BoxTurtlesProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Box_Turtle%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_71168521_%28cropped%29.jpg"
           alt="Eastern Box Turtle on forest floor showing high-domed shell with orange and yellow patterning on dark background"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
