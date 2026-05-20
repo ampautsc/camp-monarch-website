@@ -162,6 +162,12 @@ export default function NewJerseyTea({ onNavigate }: NewJerseyTeaProps) {
                 </button>{' '}
                 — bumblebee queens and small halictid bees visit the white flower clusters in May
               </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('monarch-life')}>
+                  Monarch Butterfly
+                </button>{' '}
+                — adults moving north in late May and early June need nectar before common milkweed flowers open; New Jersey Tea is blooming during that gap
+              </li>
             </ul>
           </div>
         </section>
