@@ -9,7 +9,7 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Screech_Owl.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Screech_Owl.jpg"
           alt="Eastern Screech-Owl in gray-phase plumage roosting in a tree cavity, bark-like camouflage nearly invisible against oak"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
