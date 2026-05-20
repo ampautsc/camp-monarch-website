@@ -9,7 +9,7 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Wood_thrush_%28Hylocichla_mustelina%29_Peten.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Wood_thrush_%28Hylocichla_mustelina%29_Peten.jpg"
           alt="Wood Thrush singing from a shaded forest interior, chest spots visible — its flute-like song is an indicator of forest health"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
