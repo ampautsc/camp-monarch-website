@@ -9,7 +9,7 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg"
           alt="Male Eastern Bluebird with sky-blue back and rust-orange breast perched on a wooden nest box in a pesticide-free meadow"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
