@@ -70,6 +70,7 @@ export const ALL_PAGE_SLUGS = [
   'american-tree-sparrow',
   'eastern-chipmunk',
   'spring-peeper',
+  'wood-frog',
   'toad',
   'little-brown-bat',
   'wood-thrush',
