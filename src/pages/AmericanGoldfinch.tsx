@@ -181,6 +181,12 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
                 </button>{' '}
                 — share goldenrod and coneflower foraging with goldfinches during peak summer and fall bloom
               </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('tiger-swallowtail')}>
+                  Tiger Swallowtail
+                </button>{' '}
+                — takes nectar from purple coneflower and goldenrod in July and August; goldfinches work the same coneflower seed heads in October and the same goldenrod stalks from October through December
+              </li>
             </ul>
           </div>
         </section>
