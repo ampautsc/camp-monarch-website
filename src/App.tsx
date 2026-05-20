@@ -26,6 +26,7 @@ import DownyWoodpecker from './pages/DownyWoodpecker'
 import NorthernFlicker from './pages/NorthernFlicker'
 import BaltimoreOriole from './pages/BaltimoreOriole'
 import NorthernCardinal from './pages/NorthernCardinal'
+import NorthernMockingbird from './pages/NorthernMockingbird'
 import EasternBluebird from './pages/EasternBluebird'
 import Plants from './pages/Plants'
 import PlantsGettingStarted from './pages/PlantsGettingStarted'
@@ -176,6 +177,7 @@ export default function App() {
       case 'northern-flicker': return <NorthernFlicker onNavigate={navigateTo} />
       case 'baltimore-oriole': return <BaltimoreOriole onNavigate={navigateTo} />
       case 'northern-cardinal': return <NorthernCardinal onNavigate={navigateTo} />
+      case 'northern-mockingbird': return <NorthernMockingbird onNavigate={navigateTo} />
       case 'eastern-bluebird': return <EasternBluebird onNavigate={navigateTo} />
       case 'plants':          return <Plants onNavigate={navigateTo} />
       case 'plants-finder':   return <PlantsFinder onNavigate={navigateTo} />
