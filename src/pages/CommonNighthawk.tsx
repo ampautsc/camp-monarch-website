@@ -9,7 +9,7 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Common_Nighthawk_%2814428313550%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Common_Nighthawk_%2814428313550%29.jpg"
           alt="Common Nighthawk in flight at dusk showing distinctive white wing bar patches and erratic moth-like flight pattern"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
