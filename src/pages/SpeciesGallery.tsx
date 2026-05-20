@@ -766,6 +766,18 @@ const SPECIES: Species[] = [
     page: 'wood-frog',
     habitatTags: ['vernal-pool', 'woodland', 'leaf-litter'],
   },
+  {
+    id: 'spicebush-swallowtail',
+    name: 'Spicebush Swallowtail',
+    scientificName: 'Papilio troilus',
+    emoji: '🦋',
+    shortDesc: "Folds a spicebush leaf into a silk-sealed tube in July and hides inside during the day. Black wings and blue-green hindwing scaling match the Pipevine Swallowtail — a genuinely toxic butterfly — closely enough that birds avoid both species. Both male and female carry the mimicry, unlike the tiger swallowtail where only dark-form females have it.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Papilio_troilus_male.jpg/960px-Papilio_troilus_male.jpg',
+    photoCredit: 'Derek Ramsey / CC BY-SA 2.5',
+    page: 'spicebush-swallowtail',
+    habitatTags: ['native-shrubs', 'woodland-edge', 'garden'],
+  },
 ]
 
 // ───────────────────────────────────────────────────────────────────────────────
