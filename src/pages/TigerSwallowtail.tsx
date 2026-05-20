@@ -10,13 +10,12 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
       <div className="species-hero-image-wrap">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Pristine_Eastern_Tiger_Swallowtail.jpg/960px-Pristine_Eastern_Tiger_Swallowtail.jpg"
-          alt="Eastern Tiger Swallowtail butterfly on native joe-pye weed, yellow and black striped wings spread, sipping nectar alongside a monarch butterfly"
+          alt="Eastern Tiger Swallowtail butterfly wings spread wide on a flower, showing yellow and black tiger stripes and blue-orange eyespots along the hindwing tails"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: HaarFager at English Wikipedia · <a href="https://commons.wikimedia.org/wiki/File:Pristine_Eastern_Tiger_Swallowtail.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
           Photo: HaarFager at English Wikipedia&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Pristine_Eastern_Tiger_Swallowtail.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
@@ -27,140 +26,224 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Eastern Tiger Swallowtail</h1>
         <p className="hero__lead">
-          The Eastern Tiger Swallowtail is the largest butterfly in eastern
-          North America. It is familiar, spectacular, and a perfect gateway
-          species for butterfly conservation. The same native meadow that fuels
-          monarch migration can also support tiger swallowtails when host trees
-          are nearby.
+          A male Eastern Tiger Swallowtail walks across wet mud at a puddle's edge and absorbs
+          sodium through receptors on his feet. He cannot get enough sodium from nectar alone.
+          He collects it here, from saturated soil, along with potassium and amino acids —
+          then packages a portion into a nuptial gift he transfers to a female during mating.
+          Her eggs benefit from minerals he gathered in that wet corner of a yard.
+        </p>
+        <p className="hero__lead">
+          Female tiger swallowtails from the same egg clutch can emerge in two distinct
+          color forms: yellow like males, or near-black with iridescent blue hindwings.
+          The dark form resembles the Pipevine Swallowtail, a species that sequesters toxins
+          from its pipevine host and is avoided by birds that have eaten one.
+          North of Pennsylvania, where Pipevine Swallowtails rarely appear,
+          the dark form is uncommon — predators there have never learned to reject the model,
+          so the resemblance provides no protection.
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="recognition-heading">
-          <h2 id="recognition-heading">A familiar butterfly with uncommon ecological value</h2>
+        <section aria-labelledby="caterpillar-heading">
+          <h2 id="caterpillar-heading">Three instars that look like bird droppings — then eyespots, then a forked gland that smells like turpentine</h2>
           <p>
-            Eastern Tiger Swallowtail (<em>Papilio glaucus</em>) can reach
-            a wingspan near 5.5 inches, making it the largest butterfly in the
-            eastern United States. It is also the state insect of Virginia,
-            Georgia, Alabama, Delaware, and South Carolina, which means many
-            people already recognize it before they know its name.
+            The first three caterpillar instars of the Eastern Tiger Swallowtail are dark brown
+            with white irregular patches. The pattern matches a fresh bird dropping on a leaf
+            closely enough that visual predators — birds, wasps — pass over them without
+            stopping to investigate. The caterpillar rests in the center of the leaf's upper
+            surface, exactly where a dropping would land.
+          </p>
+
+          <figure className="species-content-photo species-content-photo--right">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Papilio_glaucus_larva_1.jpg"
+              alt="Eastern Tiger Swallowtail caterpillar — late instar green form with large false eyespots near the head end, after leaving the bird-dropping camouflage of early development"
+              loading="lazy"
+            />
+            <figcaption>
+              The late-instar tiger swallowtail caterpillar has shed the bird-dropping camouflage
+              and now carries false eyespots positioned to suggest an owl or snake face when seen head-on.
+              Early instars — for the first two to three weeks — look nothing like this:
+              they are dark brown with white irregular markings, resting on the leaf's upper surface
+              where a bird dropping would fall. The transition between these two forms happens between
+              the third and fourth molts.
+              <span className="photo-credit"> Photo: Jacy Lucier · <a href="https://commons.wikimedia.org/wiki/File:Papilio_glaucus_larva_1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
+            </figcaption>
+          </figure>
+
+          <p>
+            In the fourth and fifth instars, the caterpillar shifts to bright green with two
+            large circular false eyespots positioned close behind the head.
+            When a predator approaches, the caterpillar inflates the thoracic segments behind
+            the eyespots — swelling slightly to suggest depth, completing the snake or owl face illusion.
           </p>
           <p>
-            That familiarity is useful. When people say they have seen the
-            big yellow butterfly in their yard, they are ready to learn the
-            next step: butterflies need both nectar flowers and host plants.
-            Seeing adults is not enough. Reproduction depends on caterpillar
-            host trees.
+            Touch a mature caterpillar and it deploys the osmeterium: a forked, orange-red gland
+            behind the head that everts under pressure. The gland releases terpene compounds
+            with a smell resembling turpentine. The caterpillar retracts it within seconds
+            once the threat passes. This is a physical deterrent against wasps and ants
+            that probe foliage for caterpillars to parasitize or carry off as prey.
+          </p>
+          <p>
+            Finding these caterpillars requires no special equipment — walk the branch tips of
+            a wild cherry or tulip poplar from late June through August, look for chewed leaves
+            and dark droppings on lower foliage, then examine the upper leaf surface directly.
+            Both the bird-dropping form and the eyespot form are discoverable on any morning
+            spent looking at one host tree.
           </p>
         </section>
 
-        <section aria-labelledby="life-cycle-heading">
-          <h2 id="life-cycle-heading">Host trees and remarkable adaptations</h2>
+        <section aria-labelledby="mimicry-heading">
+          <h2 id="mimicry-heading">The dark-form female and the toxic butterfly whose wing pattern she copies</h2>
           <p>
-            Tiger Swallowtail caterpillars feed on native trees including tulip
-            poplar, wild black cherry, river birch, and sweet bay magnolia.
-            Without these host trees, adults may visit flowers but cannot
-            complete the life cycle in your neighborhood.
+            The Pipevine Swallowtail (<em>Battus philenor</em>) feeds as a caterpillar on pipevines
+            and wild ginger — plants containing aristolochic acids. Adults retain enough of these
+            compounds that birds eating a Pipevine Swallowtail become ill and learn to associate
+            the iridescent blue-black wing pattern with the reaction.
+            They avoid similar-looking butterflies from that point forward.
           </p>
-              <figure className="species-content-photo">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Papilio_glaucus_larva_1.jpg"
-                  alt="Eastern Tiger Swallowtail caterpillar on a leaf — large green body with false eyespots near the head end"
-                  loading="lazy"
-                />
-                <figcaption>
-                  The young tiger swallowtail caterpillar looks exactly like a bird dropping — a defense so convincing that predators ignore it. Later instars develop false eyespots near the head and an osmeterium, a forked orange scent organ that deploys when touched. Host trees include tulip poplar, wild cherry, and native magnolia.
-                  <span className="photo-credit"> Photo: Jacy Lucier · <a href="https://commons.wikimedia.org/wiki/File:Papilio_glaucus_larva_1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
-
           <p>
-            Females are dimorphic: some are yellow like males, while dark-form
-            females are nearly black and mimic toxic Pipevine Swallowtails.
-            Males often gather on moist soil in puddling groups to absorb sodium
-            and amino acids that are later passed during mating. These behaviors
-            are visible examples of evolution and nutrient ecology in action.
+            Dark-form female tiger swallowtails carry none of these compounds. Their caterpillars
+            feed on tulip poplar and wild cherry, not pipevine. But the dark female's black body
+            and blue hindwing scaling duplicates the Pipevine Swallowtail pattern closely enough
+            that birds already conditioned on real pipevines leave her alone.
+            This is Batesian mimicry: a palatable species surviving on borrowed reputation.
+          </p>
+          <p>
+            The proportion of dark-form females in a population scales with how common Pipevine
+            Swallowtails are in the same area. In South Carolina and Georgia, where Pipevine
+            Swallowtails are common summer residents, 75–80% of female tiger swallowtails are dark form.
+            In Wisconsin and Minnesota, where Pipevine Swallowtails rarely occur, dark-form females
+            account for under 10% of the population. The geographic gradient tracks how well-taught
+            the local predators are — and how much protection the disguise actually provides.
+          </p>
+        </section>
+
+        <section aria-labelledby="overwintering-heading">
+          <h2 id="overwintering-heading">Chrysalids on bark in January — the adults that emerge in April are already in your yard</h2>
+          <p>
+            Eastern Tiger Swallowtails do not migrate. The adults flying in April spent the winter
+            as chrysalids attached to tree bark or tucked behind loose bark plates, within the canopy
+            of the host tree where they fed as caterpillars. A chrysalis attached to a wild cherry
+            in November will produce an adult in April when temperatures hold above 60°F
+            for several consecutive days.
+          </p>
+          <p>
+            The chrysalis looks like a curled dead leaf — brown, irregular, inconspicuous.
+            At eye height on a smooth-barked cherry or birch trunk, it is findable by anyone
+            looking for it in winter. Each chrysalis represents one locally-bred individual:
+            a caterpillar that spent July or August on that specific tree, in that specific yard.
+          </p>
+          <p>
+            There are two to three generations per year in the south, two in the north.
+            The late-summer generation overwinters as chrysalids; the spring generation does not.
+            Removing a host tree removes not only one season's caterpillars
+            but the overwintering chrysalids on its bark — and the locally-bred population
+            those chrysalids would have carried forward into the following spring.
           </p>
         </section>
 
         <section aria-labelledby="threats-heading">
-          <h2 id="threats-heading">The preventable threat: non-selective caterpillar sprays</h2>
+          <h2 id="threats-heading">Bt sprays, broad-spectrum pesticides, and host tree removal</h2>
           <p>
-            Broad-spectrum yard insecticides and Bt sprays used for caterpillar
-            control do not distinguish between pest species and native swallowtail
-            larvae. Applications near host trees can remove an entire season of
-            Tiger Swallowtail reproduction.
+            <em>Bacillus thuringiensis</em> var. <em>kurstaki</em> (Btk) is a bacterium sold
+            as an organic caterpillar control and widely applied to ornamental trees.
+            It produces a protein that destroys the gut lining of all lepidopteran larvae
+            that consume treated foliage. A single Btk application to a wild cherry
+            hosting tiger swallowtail eggs removes that season's caterpillar cohort
+            before they reach the fourth instar.
+            The product does not distinguish between the pest species it was intended for
+            and the tiger swallowtail caterpillar on the branch below it.
           </p>
           <p>
-            Population trend data for many butterflies remains sparse compared
-            with bird monitoring, so local observation matters. Submitting
-            sightings to iNaturalist and butterfly counts helps close the data
-            gap and reveals where habitat loss and pesticide pressure are causing
-            declines.
+            The second threat is host tree removal.
+            Tiger swallowtails use wild black cherry, tulip poplar, river birch,
+            sweet bay magnolia, and white ash as caterpillar hosts. These are native trees
+            regularly removed from residential yards for structural or aesthetic reasons.
+            A yard with no native host tree within flight range will produce no locally-bred
+            tiger swallowtails — only transient nectaring adults that completed their
+            development elsewhere.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>A host tree, a nectar corridor, no Bt near host plants, and a puddling site</h2>
+          <h2 style={{ marginTop: 0 }}>A host tree, a puddling spot, no Bt near the canopy, and nectar from June through September</h2>
 
-          <figure className="species-content-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed in bloom, attracting pollinators" loading="lazy" />
+          <figure className="species-content-photo species-content-photo--left">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg"
+              alt="Native butterfly weed in full bloom — tiger swallowtails nectar on milkweeds in June and July as part of a longer seasonal nectar corridor"
+              loading="lazy"
+            />
             <figcaption>
-              Tiger swallowtails puddle for minerals at moist soil, nectar from native flowers, and pupate in leaf litter beneath their host trees. A yard with native plantings, undisturbed soil edges, and an unraked layer provides three of the four things they need — the fourth is the tree you may already have.
+              Tiger swallowtails need nectar from June through September — the span covering
+              both the spring-summer generation and the late-summer generation that overwinters
+              as chrysalids. Native milkweeds cover June–July. Purple coneflower and wild bergamot
+              carry July–August. Joe-pye weed opens in August. Native asters extend into September
+              for the generation that will attach chrysalids to bark before winter.
               <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
             </figcaption>
           </figure>
+
           <ol className="step-list">
             <li>
-              <strong>Plant a native host tree.</strong>{' '}
-              Add tulip poplar, wild cherry, river birch, or sweet bay magnolia
-              to provide caterpillar habitat.
+              <strong>Plant or retain a native host tree.</strong>{' '}
+              Wild black cherry (<em>Prunus serotina</em>) hosts 456 species of native Lepidoptera
+              by one count — tiger swallowtails among them. Tulip poplar (<em>Liriodendron tulipifera</em>)
+              and river birch (<em>Betula nigra</em>) are two other options suited to most suburban lots.
+              A single host tree in an otherwise conventional yard produces locally-bred adults
+              for years; its chrysalids overwinter on the bark each fall.
             </li>
             <li>
-              <strong>Build a shared nectar corridor.</strong>{' '}
-              Grow milkweed, joe-pye weed, ironweed, and native phlox so monarchs
-              and tiger swallowtails can fuel in the same meadow.
+              <strong>Create a moist bare-soil puddling spot near the nectar planting.</strong>{' '}
+              Males gather at wet ground to absorb sodium and amino acids, often in groups of 5–20 individuals.
+              A dripping outdoor faucet, the wet margin of a rain garden, or a shallow sand tray kept
+              moist provides the mineral site they return to from May through August.
+              Keep it in full sun — males do not puddle in shade.
+              Several males working the same wet patch is the most visible tiger swallowtail behavior
+              in a well-planted yard.
             </li>
             <li>
-              <strong>Skip insecticides and Bt near host plants.</strong>{' '}
-              Accept some leaf damage as the sign of a functioning butterfly
-              nursery and keep reproduction intact.
+              <strong>Stop all caterpillar-control sprays within the canopy of host trees.</strong>{' '}
+              This includes Btk products, spinosad, pyrethrin, and broad-spectrum insecticides.
+              Leaf damage on a wild cherry or tulip poplar from late June through August
+              is evidence of tiger swallowtail caterpillars in residence — not a condition requiring treatment.
+              Chewed leaves and dark droppings on lower foliage are the signs to look for
+              before deciding whether to intervene.
             </li>
             <li>
-              <strong>Create a moist, bare soil puddling spot near your nectar planting.</strong>{' '}
-              Male tiger swallowtails gather at consistently wet soil to extract sodium, potassium, and amino acids — a behavior called puddling. This sodium is transferred to females during mating. A dripping outdoor faucet, the wet margin of a rain garden, or a shallow sand tray kept moist provides the mineral site males use. The same spot will concentrate multiple males in one visible location on any warm morning.
+              <strong>Plant natives that carry nectar from June through September.</strong>{' '}
+              Common milkweed and butterfly weed bloom June–July.
+              Purple coneflower and wild bergamot peak in July–August.
+              Joe-pye weed opens in August. Native asters carry into September and October.
+              Four plant species in one sunny border cover the full span that tiger swallowtails feed —
+              including the weeks the late-summer generation loads fat reserves before forming
+              chrysalids for winter.
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">One planting plan, multiple butterfly species</h2>
-          <p>
-            Camp Monarch habitat is not just for monarchs. The native wildflower
-            mix that supports monarch migration also feeds Eastern Tiger
-            Swallowtails. When one host tree is added nearby, that same site can
-            support breeding and nectaring for both iconic butterflies.
-          </p>
-          <p>
-            This is what makes native habitat restoration work: one yard can
-            support multiple life cycles at once when structure, nectar, and
-            pesticide-free management are aligned.
-          </p>
+        <section aria-labelledby="connections-heading">
+          <h2 id="connections-heading">Related pages</h2>
+          <div className="neighbor-grid">
+            <button className="neighbor-card" onClick={() => onNavigate('black-swallowtail')}>
+              <span className="neighbor-name">Black Swallowtail</span>
+              <span className="neighbor-note">Caterpillar eats carrot-family plants including wild parsnip and Queen Anne's lace; the black-and-yellow adult resembles a dark-form tiger swallowtail female but is a separate species with distinct host plant requirements</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('great-spangled-fritillary')}>
+              <span className="neighbor-name">Great Spangled Fritillary</span>
+              <span className="neighbor-note">Shares joe-pye weed and coneflower as nectar sources in July and August; its caterpillar feeds on native violets in the leaf litter below the same host trees tiger swallowtails use</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('joe-pye-weed')}>
+              <span className="neighbor-name">Joe-Pye Weed</span>
+              <span className="neighbor-note">Native perennial blooming August–September that draws tiger swallowtails, monarchs, and fritillaries to the same flower heads at the same time — one of the most consistent late-summer butterfly nectar plants in eastern North America</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('purple-coneflower')}>
+              <span className="neighbor-name">Purple Coneflower</span>
+              <span className="neighbor-note">Blooms July–August during peak tiger swallowtail activity; the same dense patch of 8–12 plants that supports specialist longhorn bees also draws swallowtails and fritillaries working adjacent flower heads</span>
+            </button>
+          </div>
         </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Ready to support swallowtails and monarchs together?</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a native plant
-            </button>
-            {' '}to build a nectar corridor, or{' '}
-            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-              plant milkweed
-            </button>
-            {' '}as part of a shared butterfly habitat plan.
-          </p>
-        </div>
       </div>
     </>
   )
