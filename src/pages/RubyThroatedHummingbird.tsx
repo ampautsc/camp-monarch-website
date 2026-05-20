@@ -20,7 +20,7 @@ export default function RubyThroatedHummingbird({ onNavigate }: RubyThroatedHumm
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Archilochus_colubris_-flying_-male-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Archilochus_colubris_-flying_-male-8.jpg"
           alt="Male Ruby-throated Hummingbird hovering at a red native tubular flower, iridescent ruby throat gorget blazing in sunlight"
           className="species-hero-image"
           style={{ objectPosition: 'top center' }}
