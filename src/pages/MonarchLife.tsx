@@ -9,7 +9,7 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Monarch_butterfly_US_migration.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+          src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Monarch_butterfly_US_migration.png"
           alt="Monarch Butterfly nectaring on native milkweed flower, showing vivid orange and black wing pattern — a species whose population has dropped 85%"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
