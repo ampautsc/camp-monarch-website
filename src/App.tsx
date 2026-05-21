@@ -125,6 +125,7 @@ import CobwebSkipper from './pages/CobwebSkipper'
 import LittleBluestem from './pages/LittleBluestem'
 import SpicebushSwallowtail from './pages/SpicebushSwallowtail'
 import HummingbirdClearwingMoth from './pages/HummingbirdClearwingMoth'
+import WhiteOak from './pages/WhiteOak'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -264,6 +265,7 @@ export default function App() {
       case 'little-bluestem':   return <LittleBluestem onNavigate={navigateTo} />
       case 'spicebush-swallowtail': return <SpicebushSwallowtail onNavigate={navigateTo} />
       case 'hummingbird-clearwing-moth': return <HummingbirdClearwingMoth onNavigate={navigateTo} />
+      case 'white-oak':         return <WhiteOak onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
