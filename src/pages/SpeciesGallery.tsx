@@ -790,6 +790,18 @@ const SPECIES: Species[] = [
     page: 'hummingbird-clearwing-moth',
     habitatTags: ['native-flowers', 'garden', 'woodland-edge'],
   },
+  {
+    id: 'white-oak',
+    name: 'White Oak',
+    scientificName: 'Quercus alba',
+    emoji: '🌳',
+    shortDesc: "The oak genus supports 557 caterpillar species — more than any other North American tree. A female black-capped chickadee needs 350 to 570 caterpillars per day to feed her nestlings. White oak acorns ripen in a single growing season and fall in October with low tannins, consumed on the spot by deer, squirrels, turkeys, and blue jays. Leaves have rounded lobes with no bristle tips. Trees can reach 600 years old.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg/960px-Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg',
+    photoCredit: 'Marty Aligata / CC BY-SA 3.0',
+    page: 'white-oak',
+    habitatTags: ['woodland-edge', 'garden', 'meadow'],
+  },
 ]
 
 // ───────────────────────────────────────────────────────────────────────────────
