@@ -894,6 +894,18 @@ const SPECIES: Species[] = [
     habitatTags: ['forest-edge', 'hoptree', 'meadow'],
   },
   {
+    id: 'red-admiral',
+    name: 'Red Admiral',
+    scientificName: 'Vanessa atalanta',
+    emoji: '🦋',
+    shortDesc: 'Some adults spend winter behind loose bark in Midwest trees. When a warm spell arrives in February, they emerge and find sap flowing from wounds in maple and elm — weeks before any flower opens. The same butterfly working goldenrod in September may be drinking tree sap while the yard still has snow on it.',
+    status: 'common' as const,
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Red_admiral_butterfly_arp.jpg',
+    photoCredit: 'Charles J. Sharp / CC BY-SA 4.0',
+    page: 'red-admiral' as Page,
+    habitatTags: ['nettles', 'meadow', 'garden'],
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
