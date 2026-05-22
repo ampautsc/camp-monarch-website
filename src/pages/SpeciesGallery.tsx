@@ -808,7 +808,6 @@ const SPECIES: Species[] = [
     scientificName: 'Prunus serotina',
     emoji: '🍒',
     shortDesc: "Supports 456 caterpillar species — second only to oaks among North American trees. Eastern tent caterpillars hatch in late March from egg masses on the bark; Baltimore Orioles and Yellow-billed Cuckoos arrive from migration in May and eat them. More than 70 bird species eat the dark drupes that ripen in August, including cedar waxwings, wood thrush, and scarlet tanager. Often volunteers at yard edges and fence lines.",
-    status: 'common',
     img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Prunus-serotina-flowers.jpg/960px-Prunus-serotina-flowers.jpg',
     page: 'black-cherry',
     habitatTags: ['woodland-edge', 'garden'],
@@ -824,6 +823,18 @@ const SPECIES: Species[] = [
     photoCredit: 'Krzysztof Ziarnek, Kenraiz / CC BY-SA 4.0',
     page: 'serviceberry',
     habitatTags: ['woodland-edge', 'garden', 'meadow'],
+  },
+  {
+    id: 'spicebush',
+    name: 'Spicebush',
+    scientificName: 'Lindera benzoin',
+    emoji: '🌿',
+    shortDesc: "Blooms in late February to April on bare branches — one of the earliest native nectar sources for overwintered queen bumblebees. In September, produces small high-fat red berries that migrating wood thrushes and hermit thrushes consume. Hosts the Spicebush Swallowtail butterfly, whose caterpillars build silk-sealed leaf tubes on the branches in July. Thrives in deep shade under maples and oaks where most native plants won't grow. Deer-resistant.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2023-03-30_13_24_41_Common_spicebush_blooming_in_the_forest_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/960px-thumbnail.jpg',
+    photoCredit: 'Famartin / CC BY-SA 4.0',
+    page: 'spicebush',
+    habitatTags: ['woodland-edge', 'woodland', 'shade-garden'],
   },
 ]
 
