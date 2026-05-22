@@ -350,7 +350,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <section aria-labelledby="neighbors-heading" style={{ marginTop: '2.5rem' }}>
           <h2 id="neighbors-heading">The firefly that lights up your yard each June spent most of its life living in your leaf litter.</h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '1.25rem' }}>
-            59 species share backyards, gardens, and suburban lots up and down the migration corridor.
+            More than 65 wildlife species share backyards, gardens, and suburban lots up and down the migration corridor.
             The four below are probably in yours.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
@@ -398,7 +398,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
             <button className="hero__cta" onClick={() => onNavigate('species-gallery')}>
-              Meet all 59 neighbors →
+              Explore the species gallery →
             </button>
           </div>
         </section>
@@ -413,15 +413,15 @@ export default function Home({ onNavigate }: HomeProps) {
         >
           <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
           <p>
-            <strong style={{ color: 'var(--monarch-orange)' }}>1,877 Monarch sightings</strong>{' '}
+            <strong style={{ color: 'var(--monarch-orange)' }}>{formatSightings(monarchSightings)} Monarch sightings</strong>{' '}
             have been logged on iNaturalist in the United States this month.
             Each sighting becomes open data that researchers can use to track the migration.
           </p>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '1rem' }}>
-            Updated May 21, 2026 · current count covers observations since 2026-05-01.
+            {hasLiveSightings ? 'Live count· ' : 'Estimated · '}current count covers observations since {monthStart}.
           </p>
           <a
-            href="https://www.inaturalist.org/observations?month=5&place_id=1&taxon_id=48662&d1=2026-05-01"
+            href={sightingsUrl}
             target="_blank"
             rel="noreferrer"
             className="hero__cta"
