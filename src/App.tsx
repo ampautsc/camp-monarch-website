@@ -133,6 +133,7 @@ import Elderberry from './pages/Elderberry'
 import VirginiaCreeper from './pages/VirginiaCreeper'
 import ButterflyWeed from './pages/ButterflyWeed'
 import PearlCrescent from './pages/PearlCrescent'
+import GiantSwallowtail from './pages/GiantSwallowtail'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -280,6 +281,7 @@ export default function App() {
       case 'virginia-creeper':  return <VirginiaCreeper onNavigate={navigateTo} />
       case 'butterfly-weed':    return <ButterflyWeed onNavigate={navigateTo} />
       case 'pearl-crescent':    return <PearlCrescent onNavigate={navigateTo} />
+      case 'giant-swallowtail': return <GiantSwallowtail onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
