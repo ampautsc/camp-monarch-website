@@ -860,6 +860,18 @@ const SPECIES: Species[] = [
     page: 'virginia-creeper',
     habitatTags: ['woodland-edge', 'edge', 'garden'],
   },
+  {
+    id: 'butterfly-weed',
+    name: 'Butterfly Weed',
+    scientificName: 'Asclepias tuberosa',
+    emoji: '🌸',
+    shortDesc: 'The only common eastern milkweed whose stem runs clear — not white — when broken. Still loads its leaves with cardiac glycosides that monarch caterpillars absorb and carry through metamorphosis into their wings. Grows from a deep taproot that makes it drought-tolerant in sandy and lean soils where other milkweeds fail. Blooms orange in June and July.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Butterfly-weed_%28Asclepias_tuberosa%29.jpg/960px-Butterfly-weed_%28Asclepias_tuberosa%29.jpg',
+    photoCredit: 'wackybadger / CC BY-SA 2.0',
+    page: 'butterfly-weed',
+    habitatTags: ['meadow', 'garden', 'dry-sunny'],
+  },
 ]
 
 // ───────────────────────────────────────────────────────────────────────────────
