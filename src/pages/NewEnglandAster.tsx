@@ -83,7 +83,12 @@ export default function NewEnglandAster({ onNavigate }: NewEnglandAsterProps) {
             on the undersides of aster leaves in late spring. Caterpillars hatch and feed
             communally through the early instars, then disperse to feed individually after
             the second molt. The pearl crescent cannot complete its life cycle on any plant
-            outside the aster genus.
+            outside the aster genus. The final summer generation overwinters as a
+            partially-grown caterpillar in the leaf litter at the stem base and completes
+            development in April.{' '}
+            <button className="link-button" onClick={() => onNavigate('pearl-crescent')}>
+              See the Pearl Crescent page.
+            </button>
           </p>
           <p>
             Harris's checkerspot (<em>Chlosyne harrisii</em>) follows the same pattern —
@@ -211,6 +216,12 @@ export default function NewEnglandAster({ onNavigate }: NewEnglandAsterProps) {
                   Monarch Butterfly
                 </button>{' '}
                 — adults nectar during fall migration, September through October
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('pearl-crescent')}>
+                  Pearl Crescent
+                </button>{' '}
+                — lays eggs on aster leaves exclusively; the final-generation caterpillar overwinters in the leaf litter at the plant base and becomes the first butterfly of April
               </li>
               <li>
                 <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
