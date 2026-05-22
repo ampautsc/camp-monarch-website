@@ -65,6 +65,18 @@ const groups: NavGroup[] = [
           { id: 'prairie-dropseed',      label: 'Prairie Dropseed' },
           { id: 'new-england-aster',     label: 'New England Aster' },
           { id: 'wild-bergamot',         label: 'Wild Bergamot' },
+          { id: 'butterfly-weed',        label: 'Butterfly Weed' },
+        ],
+      },
+      {
+        label: 'Trees & Shrubs',
+        items: [
+          { id: 'white-oak',             label: 'White Oak' },
+          { id: 'black-cherry',          label: 'Black Cherry' },
+          { id: 'serviceberry',          label: 'Serviceberry' },
+          { id: 'spicebush',             label: 'Spicebush' },
+          { id: 'elderberry',            label: 'Elderberry' },
+          { id: 'virginia-creeper',      label: 'Virginia Creeper' },
         ],
       },
     ],
