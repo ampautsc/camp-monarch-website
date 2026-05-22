@@ -802,6 +802,17 @@ const SPECIES: Species[] = [
     page: 'white-oak',
     habitatTags: ['woodland-edge', 'garden', 'meadow'],
   },
+  {
+    id: 'black-cherry',
+    name: 'Black Cherry',
+    scientificName: 'Prunus serotina',
+    emoji: '🍒',
+    shortDesc: "Supports 456 caterpillar species — second only to oaks among North American trees. Eastern tent caterpillars hatch in late March from egg masses on the bark; Baltimore Orioles and Yellow-billed Cuckoos arrive from migration in May and eat them. More than 70 bird species eat the dark drupes that ripen in August, including cedar waxwings, wood thrush, and scarlet tanager. Often volunteers at yard edges and fence lines.",
+    status: 'common',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Prunus-serotina-flowers.jpg/960px-Prunus-serotina-flowers.jpg',
+    page: 'black-cherry',
+    habitatTags: ['woodland-edge', 'garden'],
+  },
 ]
 
 // ───────────────────────────────────────────────────────────────────────────────
