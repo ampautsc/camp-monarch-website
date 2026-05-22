@@ -836,6 +836,18 @@ const SPECIES: Species[] = [
     page: 'spicebush',
     habitatTags: ['woodland-edge', 'woodland', 'shade-garden'],
   },
+  {
+    id: 'elderberry',
+    name: 'American Elderberry',
+    scientificName: 'Sambucus canadensis',
+    emoji: '🌼',
+    shortDesc: "Opens in June with flat-topped white flower clusters, each holding hundreds to thousands of individual florets with nectar at the surface — accessible to bees, flies, beetles, and wasps of any tongue length. Berries ripen in August and are consumed by 70+ bird species. Hosts Cecropia and Polyphemus moths. Grows 5–12 feet; tolerates wet soil, seasonal flooding, and part shade. Self-fertile — one plant produces fruit.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/2020-05-25_08_21_17_American_black_elderberry_blooming_along_Stone_Heather_Drive_in_the_Chantilly_Highlands_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-25_08_21_17_American_black_elderberry_blooming_along_Stone_Heather_Drive_in_the_Chantilly_Highlands_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg',
+    photoCredit: 'Famartin / CC BY-SA 4.0',
+    page: 'elderberry',
+    habitatTags: ['woodland-edge', 'garden', 'wet-area'],
+  },
 ]
 
 // ───────────────────────────────────────────────────────────────────────────────
