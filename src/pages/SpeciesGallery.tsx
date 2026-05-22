@@ -917,6 +917,19 @@ const SPECIES: Species[] = [
     page: 'painted-lady' as Page,
     habitatTags: ['thistles', 'meadow', 'garden'],
   },
+
+  {
+    id: 'mourning-cloak',
+    name: 'Mourning Cloak',
+    scientificName: 'Nymphalis antiopa',
+    emoji: '🦋',
+    shortDesc: 'One of the longest-lived adult butterflies in North America. The Mourning Cloak spends winter as an adult behind loose tree bark. In late February, while snow still sits in shaded corners, it emerges and drinks sap from wounds in maple and birch — weeks before any flower opens. The same individual you see in spring has been alive since the previous June.',
+    status: 'common' as const,
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Mourning_Cloak_Nymphalis_antiopa.jpg',
+    photoCredit: 'Benny Mazur / CC BY 2.0',
+    page: 'mourning-cloak' as Page,
+    habitatTags: ['willows', 'meadow', 'garden'],
+  },
   {
     id: 'common-milkweed',
     name: 'Common Milkweed',
