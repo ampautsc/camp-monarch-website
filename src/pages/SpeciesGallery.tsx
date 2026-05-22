@@ -885,6 +885,15 @@ const SPECIES: Species[] = [
     habitatTags: ['aster', 'leaf-litter', 'meadow'],
   },
   {
+    id: 'giant-swallowtail',
+    name: 'Giant Swallowtail',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/Giant_Swallowtail%2C_Shirleys_Bay.jpg',
+    page: 'giant-swallowtail' as Page,
+    shortDesc: 'The largest butterfly in eastern North America — up to six and a half inches across. Its caterpillar rests exposed on hoptree leaves during the day, white and brown in the proportions of a fresh bird dropping. When touched, a bright orange forked gland pushes out from behind the head and releases a smell no bird investigates twice.',
+    status: 'watch' as const,
+    habitatTags: ['forest-edge', 'hoptree', 'meadow'],
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
