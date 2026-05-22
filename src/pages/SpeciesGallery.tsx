@@ -931,6 +931,15 @@ const SPECIES: Species[] = [
     habitatTags: ['willows', 'meadow', 'garden'],
   },
   {
+    id: 'viceroy',
+    name: 'Viceroy',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/Viceroy_Butterfly_perched.jpg',
+    page: 'viceroy' as Page,
+    status: 'common' as const,
+    habitatTags: ['willows', 'meadow', 'garden'],
+    shortDesc: "Wears the Monarch's orange-and-black pattern but carries a single curved black line across the hindwing that no Monarch has; overwinters as a caterpillar sealed inside a rolled willow leaf tied to the branch with silk.",
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
