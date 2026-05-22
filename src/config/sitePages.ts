@@ -149,6 +149,7 @@ export const ALL_PAGE_SLUGS = [
   'pearl-crescent',
   'giant-swallowtail',
   'red-admiral',
+  'painted-lady',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
