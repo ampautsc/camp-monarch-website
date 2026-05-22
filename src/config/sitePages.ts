@@ -143,6 +143,7 @@ export const ALL_PAGE_SLUGS = [
   'black-cherry',
   'serviceberry',
   'spicebush',
+  'elderberry',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
