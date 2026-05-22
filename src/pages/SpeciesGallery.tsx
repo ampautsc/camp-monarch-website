@@ -906,6 +906,18 @@ const SPECIES: Species[] = [
     habitatTags: ['nettles', 'meadow', 'garden'],
   },
   {
+    id: 'painted-lady',
+    name: 'Painted Lady',
+    scientificName: 'Vanessa cardui',
+    emoji: '🦋',
+    shortDesc: 'The most widespread butterfly on Earth, found on every continent except Antarctica. In 2024, researchers confirmed Painted Ladies had flown more than 4,200 kilometers across the open Atlantic Ocean from West Africa to South America — the first confirmed ocean crossing by any insect. The caterpillar that became that butterfly hatched on a native thistle.',
+    status: 'common' as const,
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/0_Belle-dame_%28Vanessa_cardui%29_-_Echinacea_purpurea_-_Havr%C3%A9_%283%29.jpg',
+    photoCredit: 'Jean-Pol GRANDMONT / CC BY 3.0',
+    page: 'painted-lady' as Page,
+    habitatTags: ['thistles', 'meadow', 'garden'],
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
