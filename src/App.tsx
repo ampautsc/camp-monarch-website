@@ -131,6 +131,7 @@ import Serviceberry from './pages/Serviceberry'
 import Spicebush from './pages/Spicebush'
 import Elderberry from './pages/Elderberry'
 import VirginiaCreeper from './pages/VirginiaCreeper'
+import ButterflyWeed from './pages/ButterflyWeed'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -276,6 +277,7 @@ export default function App() {
       case 'spicebush':         return <Spicebush onNavigate={navigateTo} />
       case 'elderberry':        return <Elderberry onNavigate={navigateTo} />
       case 'virginia-creeper':  return <VirginiaCreeper onNavigate={navigateTo} />
+      case 'butterfly-weed':    return <ButterflyWeed onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
