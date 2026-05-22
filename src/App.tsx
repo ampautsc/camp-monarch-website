@@ -129,6 +129,7 @@ import WhiteOak from './pages/WhiteOak'
 import BlackCherry from './pages/BlackCherry'
 import Serviceberry from './pages/Serviceberry'
 import Spicebush from './pages/Spicebush'
+import Elderberry from './pages/Elderberry'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -272,6 +273,7 @@ export default function App() {
       case 'black-cherry':      return <BlackCherry onNavigate={navigateTo} />
       case 'serviceberry':      return <Serviceberry onNavigate={navigateTo} />
       case 'spicebush':         return <Spicebush onNavigate={navigateTo} />
+      case 'elderberry':        return <Elderberry onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
