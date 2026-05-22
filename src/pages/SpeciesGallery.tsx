@@ -873,6 +873,18 @@ const SPECIES: Species[] = [
     habitatTags: ['meadow', 'garden', 'dry-sunny'],
   },
   {
+    id: 'pearl-crescent',
+    name: 'Pearl Crescent',
+    scientificName: 'Phyciodes tharos',
+    emoji: '🦋',
+    shortDesc: 'Lays eggs in batches on the underside of aster leaves — on no other plant. The third-instar caterpillar overwinters in the leaf litter at the base of the aster stem and becomes the first butterfly of April.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/5/56/Pearl_crescent_%2830350%29.jpg',
+    photoCredit: 'Rhododendrites / CC BY-SA 4.0',
+    page: 'pearl-crescent',
+    habitatTags: ['aster', 'leaf-litter', 'meadow'],
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
