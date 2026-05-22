@@ -146,6 +146,7 @@ export const ALL_PAGE_SLUGS = [
   'elderberry',
   'virginia-creeper',
   'butterfly-weed',
+  'pearl-crescent',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
