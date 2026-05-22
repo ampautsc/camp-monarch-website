@@ -813,6 +813,18 @@ const SPECIES: Species[] = [
     page: 'black-cherry',
     habitatTags: ['woodland-edge', 'garden'],
   },
+  {
+    id: 'serviceberry',
+    name: 'Serviceberry',
+    scientificName: 'Amelanchier arborea',
+    emoji: '🌸',
+    shortDesc: "Flowers in April on bare branches before any other native tree, then produces berries in June — the first native fruit of the season — when wood thrushes and robins are still feeding nestlings. Cedar waxwings strip a loaded tree within days. Hosts more than 100 caterpillar species including the Red-spotted Purple butterfly, whose caterpillars overwinter as tiny rolled-leaf bundles at twig tips. Grows 15 to 25 feet; tolerates part shade.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Amelanchier_arborea_kz02.jpg/960px-Amelanchier_arborea_kz02.jpg',
+    photoCredit: 'Krzysztof Ziarnek, Kenraiz / CC BY-SA 4.0',
+    page: 'serviceberry',
+    habitatTags: ['woodland-edge', 'garden', 'meadow'],
+  },
 ]
 
 // ───────────────────────────────────────────────────────────────────────────────
