@@ -848,6 +848,18 @@ const SPECIES: Species[] = [
     page: 'elderberry',
     habitatTags: ['woodland-edge', 'garden', 'wet-area'],
   },
+  {
+    id: 'virginia-creeper',
+    name: 'Virginia Creeper',
+    scientificName: 'Parthenocissus quinquefolia',
+    emoji: '🍇',
+    shortDesc: "Climbs by adhesive disc-tipped tendrils that grip walls and fences without boring into mortar. Five leaflets per stem — not three like poison ivy. Blue-black berries ripen in October when the leaves turn scarlet; cedar waxwings, American robins, and northern flickers return to the same vine each year and strip the crop within a day. Hosts Virginia Creeper Sphinx Moth and Eight-spotted Forester Moth; both lay eggs on the leaves in June and July. Tolerates full shade to full sun.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Virginia_Creeper_%28Parthenocissus_quinquefolia%29_8073.jpg/960px-Virginia_Creeper_%28Parthenocissus_quinquefolia%29_8073.jpg',
+    photoCredit: 'Chris Light / CC BY-SA 4.0',
+    page: 'virginia-creeper',
+    habitatTags: ['woodland-edge', 'edge', 'garden'],
+  },
 ]
 
 // ───────────────────────────────────────────────────────────────────────────────
