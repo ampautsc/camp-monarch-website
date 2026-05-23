@@ -138,6 +138,7 @@ import RedAdmiral from './pages/RedAdmiral'
 import PaintedLady from './pages/PaintedLady'
 import MourningCloak from './pages/MourningCloak'
 import Viceroy from './pages/Viceroy'
+import QuestionMark from './pages/QuestionMark'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -290,6 +291,7 @@ export default function App() {
       case 'painted-lady':      return <PaintedLady onNavigate={navigateTo} />
       case 'mourning-cloak':    return <MourningCloak onNavigate={navigateTo} />
       case 'viceroy':           return <Viceroy onNavigate={navigateTo} />
+      case 'question-mark':     return <QuestionMark onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
