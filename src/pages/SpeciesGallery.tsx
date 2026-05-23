@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import type { Page } from '../App'
 
 // Photo data — Wikimedia Commons (CC BY-SA / CC BY / Public Domain) and iNaturalist open-data.
@@ -938,6 +937,15 @@ const SPECIES: Species[] = [
     status: 'common' as const,
     habitatTags: ['willows', 'meadow', 'garden'],
     shortDesc: "Wears the Monarch's orange-and-black pattern but carries a single curved black line across the hindwing that no Monarch has; overwinters as a caterpillar sealed inside a rolled willow leaf tied to the branch with silk.",
+  },
+  {
+    id: 'question-mark',
+    name: 'Question Mark',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Question_Mark_Butterfly%2C_Polygonia_interrogationis%2C_dorsal_%28cropped%29.jpg',
+    page: 'question-mark' as Page,
+    status: 'common' as const,
+    habitatTags: ['woodland-edge', 'garden', 'meadow'],
+    shortDesc: 'Adult overwinters as a butterfly behind loose bark on large-diameter trees from October through March. A silver curved line and dot on the hindwing underside form the question mark it was named for. Caterpillars use stinging nettle, American elm, and hops.',
   },
   {
     id: 'common-milkweed',
