@@ -1426,6 +1426,18 @@ const SPECIES: Species[] = [
     habitatTags: ['woodland-edge', 'garden', 'understory'],
   },
   {
+    id: 'pawpaw',
+    name: 'Pawpaw',
+    scientificName: 'Asimina triloba',
+    emoji: '🌳',
+    shortDesc: 'The only host plant for the Zebra Swallowtail — a female presses her feet against the leaf surface to detect acetogenins, the same compounds that make pawpaw leaves resistant to most insect feeding. The largest edible fruit native to North America, and one of the few native understory trees that deer consistently leave untouched.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/592543131/large.jpg',
+    photoCredit: 'roadside_rambler / CC BY-NC via iNaturalist',
+    page: 'pawpaw' as Page,
+    habitatTags: ['understory', 'woodland-edge', 'garden'],
+  },
+  {
     id: 'spicebush',
     name: 'Northern Spicebush',
     scientificName: 'Lindera benzoin',
