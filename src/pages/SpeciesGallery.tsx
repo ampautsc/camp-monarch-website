@@ -190,6 +190,18 @@ const SPECIES: Species[] = [
     habitatTags: ['woodland-edge', 'garden', 'suburban'],
   },
   {
+    id: 'striped-skunk',
+    name: 'Striped Skunk',
+    scientificName: 'Mephitis mephitis',
+    emoji: '🦨',
+    shortDesc: 'Drills conical extraction holes in lawns to reach Japanese beetle grubs 2–5 inches underground — each hole marks a larva removed from the root zone where it was killing grass. The same grub a lawn-chemical treatment targets, extracted for free overnight.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/186427674/large.jpeg',
+    photoCredit: 'Ali Campbell / CC BY via iNaturalist',
+    page: 'striped-skunk',
+    habitatTags: ['woodland-edge', 'garden', 'suburban'],
+  },
+  {
     id: 'little-brown-bat',
     name: 'Little Brown Bat',
     scientificName: 'Myotis lucifugus',
