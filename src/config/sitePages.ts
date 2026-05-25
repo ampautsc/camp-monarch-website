@@ -69,6 +69,7 @@ export const ALL_PAGE_SLUGS = [
   'dark-eyed-junco',
   'american-tree-sparrow',
   'eastern-chipmunk',
+  'eastern-gray-squirrel',
   'spring-peeper',
   'wood-frog',
   'toad',
