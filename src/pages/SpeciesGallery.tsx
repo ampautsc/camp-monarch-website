@@ -260,4 +260,1134 @@ const SPECIES: Species[] = [
     photoCredit: 'Rmartin1952 / CC BY-SA 3.0',
     page: 'luna-moth',
     habitatTags: ['woodland', 'garden', 'canopy'],
-  }
+  },
+  {
+    id: 'polyphemus-moth',
+    name: 'Polyphemus Moth',
+    scientificName: 'Antheraea polyphemus',
+    emoji: '🦋',
+    shortDesc: "Adults have no functional mouths — they emerge, mate, and die without eating, living entirely on energy stored during the caterpillar stage. A single native oak supports Polyphemus caterpillars across multiple generations.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyphemus_Moth_Antheraea_polyphemus.JPG',
+    photoCredit: 'USGS / Public Domain',
+    page: 'polyphemus-moth',
+    habitatTags: ['woodland', 'garden', 'canopy'],
+  },
+  {
+    id: 'cecropia-moth',
+    name: 'Cecropia Moth',
+    scientificName: 'Hyalophora cecropia',
+    emoji: '🦋',
+    shortDesc: "North America's largest native moth — wingspan up to 7 inches. Adults cannot eat; they live roughly two weeks on caterpillar-stored energy while searching for a mate. A parasitoid fly introduced from Europe in 1906 now attacks over 80% of Cecropia cocoons in some parts of its range.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Hyalophora_cecropia_adult_female_sjh.JPG',
+    photoCredit: 'Steven Katovich / CC BY 3.0',
+    page: 'cecropia-moth',
+    habitatTags: ['woodland', 'garden', 'canopy'],
+  },
+  {
+    id: 'common-nighthawk',
+    name: 'Common Nighthawk',
+    scientificName: 'Chordeiles minor',
+    emoji: '🦅',
+    shortDesc: 'Nests on bare gravel rooftops — no nest at all, just eggs laid on the surface. The move from gravel-bed rivers to flat commercial rooftops happened as the bird tracked the substrate it originally evolved on. Population has declined 61% since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Common_Nighthawk_%2814428313550%29.jpg',
+    photoCredit: 'Andy Reago & Chrissy McClarren / CC BY 2.0',
+    page: 'common-nighthawk',
+    habitatTags: ['open-sky', 'rooftop', 'edge'],
+  },
+  {
+    id: 'whip-poor-will',
+    name: 'Eastern Whip-poor-will',
+    scientificName: 'Antrostomus vociferus',
+    emoji: '🦅',
+    shortDesc: 'Perches motionless on a mossy log at dusk, then launches short sallies at moths passing within a few feet. The call — three syllables, repeated hundreds of times without stopping — carries a quarter mile on a still night. Down 57% since 1970.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/2/20/Caprimulgus_vociferusAAP065B.jpg',
+    photoCredit: 'Francesco Veronesi / CC BY-SA 2.0',
+    page: 'whip-poor-will',
+    habitatTags: ['woodland', 'shrub-edge'],
+  },
+  {
+    id: 'chimney-swift',
+    name: 'Chimney Swift',
+    scientificName: 'Chaetura pelagica',
+    emoji: '🦅',
+    shortDesc: "Cannot perch — its feet are shaped only for clinging to vertical surfaces. It spends almost its entire life airborne, landing only inside chimneys or hollow trees to roost and nest. Population has dropped 72% since 1966 as capped chimneys eliminated its nesting sites.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Chaetura_pelagica%2C_by_Lake_Erie%2C_Cleveland%2C_Ohio%2C_USA_339593191.jpg',
+    photoCredit: 'Dan Pancamo / CC BY-SA 2.0',
+    page: 'chimney-swift',
+    habitatTags: ['open-sky', 'chimney', 'near-water'],
+  },
+  {
+    id: 'purple-martin',
+    name: 'Purple Martin',
+    scientificName: 'Progne subis',
+    emoji: '🦅',
+    shortDesc: 'East of the Rockies, Purple Martins now nest almost exclusively in human-supplied housing — they have essentially abandoned natural tree cavities. Native Americans strung hollow gourds to attract them centuries ago; the dependency has continued and deepened.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Purple_Martin_%28Progne_subis%29_%287885320572%29.jpg/960px-Purple_Martin_%28Progne_subis%29_%287885320572%29.jpg',
+    photoCredit: 'Andy Reago & Chrissy McClarren / CC BY 2.0',
+    page: 'purple-martin',
+    habitatTags: ['open-sky', 'near-water', 'garden'],
+  },
+  {
+    id: 'ruby-throated-hummingbird',
+    name: 'Ruby-throated Hummingbird',
+    scientificName: 'Archilochus colubris',
+    emoji: '🐦',
+    shortDesc: 'Crosses the Gulf of Mexico nonstop — 500 miles in roughly 18 hours, fueled entirely by fat stored in the days before departure. A bird weighing less than a nickel burns the caloric equivalent of 155,000 calories per pound during the crossing.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Archilochus_colubris_-flying_-male-8.jpg',
+    photoCredit: 'Andrew Weitzel / CC BY-SA 2.0',
+    page: 'ruby-throated-hummingbird',
+    habitatTags: ['garden', 'edge', 'woodland'],
+  },
+  {
+    id: 'northern-flicker',
+    name: 'Northern Flicker',
+    scientificName: 'Colaptes auratus',
+    emoji: '🐦',
+    shortDesc: 'A woodpecker that feeds on the ground — hunting ants with a tongue that wraps around the back of its skull and extends two inches beyond its bill. Population has declined 49% since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Northern_Flicker_%28Red-shafted%29.jpg/960px-Northern_Flicker_%28Red-shafted%29.jpg',
+    photoCredit: 'Alan D. Wilson / CC BY-SA 3.0',
+    page: 'northern-flicker',
+    habitatTags: ['open-woodland', 'edge', 'garden'],
+  },
+  {
+    id: 'downy-woodpecker',
+    name: 'Downy Woodpecker',
+    scientificName: 'Dryobates pubescens',
+    emoji: '🐦',
+    shortDesc: 'Excavates beetle larvae from dead wood by hammering at speeds exceeding 20 strikes per second. Nest cavities in snags become winter roost holes for small owls and flying squirrels after the woodpecker abandons them.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dryobates_pubescens_UL_03.jpg/960px-Dryobates_pubescens_UL_03.jpg',
+    photoCredit: 'Wolfgang Wander / CC BY-SA 3.0',
+    page: 'downy-woodpecker',
+    habitatTags: ['woodland', 'snag', 'garden'],
+  },
+  {
+    id: 'eastern-screech-owl',
+    name: 'Eastern Screech-Owl',
+    scientificName: 'Megascops asio',
+    emoji: '🦉',
+    shortDesc: 'Nests in cavities — natural tree hollows, abandoned woodpecker holes, or nest boxes — and cannot excavate its own. Rodenticide contamination from eating poisoned mice and voles has been found in 50–80% of sampled screech-owls in suburban areas.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Screech_Owl.jpg',
+    photoCredit: 'Peterwchen / CC BY-SA 3.0',
+    page: 'eastern-screech-owl',
+    habitatTags: ['woodland', 'garden', 'snag'],
+  },
+  {
+    id: 'red-tailed-hawk',
+    name: 'Red-tailed Hawk',
+    scientificName: 'Buteo jamaicensis',
+    emoji: '🦅',
+    shortDesc: 'Hunts by scanning from a perch or circling above open ground — locating a mouse or vole before the prey is visible to human observers from the same distance. Rodenticide poisoning from eating contaminated prey is the leading cause of mortality in suburban populations.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Red-tailed_Hawk_ad.jpg/960px-Red-tailed_Hawk_ad.jpg',
+    photoCredit: 'Walter Siegmund / CC BY-SA 3.0',
+    page: 'red-tailed-hawk',
+    habitatTags: ['open-woodland', 'edge', 'meadow'],
+  },
+  {
+    id: 'american-kestrel',
+    name: 'American Kestrel',
+    scientificName: 'Falco sparverius',
+    emoji: '🦅',
+    shortDesc: 'Hunts voles by detecting their urine trails in ultraviolet light — rodent urine reflects UV, making their paths visible from 60 feet. Population has dropped 47% since 1966; rodenticide contamination is found in 50–80% of sampled birds.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Falco-sparverius-001.jpg/960px-Falco-sparverius-001.jpg',
+    photoCredit: 'Accipiter / CC BY-SA 3.0',
+    page: 'american-kestrel',
+    habitatTags: ['meadow', 'open-land', 'edge'],
+  },
+  {
+    id: 'wood-thrush',
+    name: 'Wood Thrush',
+    scientificName: 'Hylocichla mustelina',
+    emoji: '🐦',
+    shortDesc: 'Sings two notes simultaneously — its syrinx has two independent voice boxes that produce overlapping harmonics at once. Population has declined 59% since 1966, one of the steepest drops of any forest songbird in North America.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Wood_thrush_%28Hylocichla_mustelina%29_Peten.jpg',
+    photoCredit: 'Francesco Veronesi / CC BY-SA 2.0',
+    page: 'wood-thrush',
+    habitatTags: ['woodland', 'leaf-litter', 'near-water'],
+  },
+  {
+    id: 'scarlet-tanager',
+    name: 'Scarlet Tanager',
+    scientificName: 'Piranga olivacea',
+    emoji: '🐦',
+    shortDesc: "Arrives in May burning crimson; by September, every red feather on the male's body has been replaced by olive-green for migration. Needs at least 10 hectares of contiguous forest to breed — in smaller fragments, cowbird parasitism rates reach 60–80%.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Scarlet_tanager_in_GWC_%2850867%29.jpg/1280px-Scarlet_tanager_in_GWC_%2850867%29.jpg',
+    photoCredit: 'Rhododendrites / CC BY-SA 4.0',
+    page: 'scarlet-tanager',
+    habitatTags: ['forest-interior', 'canopy', 'woodland'],
+  },
+  {
+    id: 'hermit-thrush',
+    name: 'Hermit Thrush',
+    scientificName: 'Catharus guttatus',
+    emoji: '🐦',
+    shortDesc: 'The only spotted thrush that winters in the eastern US — its gut shifts in autumn to digest berry wax that would otherwise pass through undigested. Raises its rufous tail in a slow upward pump, a behavior no other common thrush makes.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hermit_Thrush_0777vv_%28cloudy%29.jpg/960px-Hermit_Thrush_0777vv_%28cloudy%29.jpg',
+    photoCredit: 'Dan Pancamo / CC BY-SA 2.0',
+    page: 'hermit-thrush',
+    habitatTags: ['woodland', 'shrub-edge', 'leaf-litter'],
+  },
+  {
+    id: 'ovenbird',
+    name: 'Ovenbird',
+    scientificName: 'Seiurus aurocapilla',
+    emoji: '🐦',
+    shortDesc: 'Builds a domed nest inside the leaf litter — covered with dead leaves so precisely that a person can walk within two feet and not see it. Walks the forest floor rather than hopping. Down 52% since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Ovenbird_RWD2.jpg',
+    photoCredit: 'Dick Daniels / CC BY-SA 3.0',
+    page: 'ovenbird',
+    habitatTags: ['woodland', 'leaf-litter'],
+  },
+  {
+    id: 'cedar-waxwing',
+    name: 'Cedar Waxwing',
+    scientificName: 'Bombycilla cedrorum',
+    emoji: '🐦',
+    shortDesc: 'Roams in nomadic flocks of 10 to 100 with no fixed territory — a flock descends on a fruiting shrub, strips it in 12 minutes, and is gone. The red waxy droplets on its wing feathers grow one per molt; a bird with six tips has survived three winters.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Cedar_Waxwing.jpg/960px-Cedar_Waxwing.jpg',
+    photoCredit: 'Kevin Cole / CC BY 2.0',
+    page: 'cedar-waxwing',
+    habitatTags: ['winter-visitor', 'fruiting-shrubs', 'garden'],
+  },
+  {
+    id: 'eastern-wood-pewee',
+    name: 'Eastern Wood-Pewee',
+    scientificName: 'Contopus virens',
+    emoji: '🐦',
+    shortDesc: 'Sings its name from the midstory of eastern forests at dawn and dusk — one of the most consistent sounds of a mature woodland in summer. Population has fallen over 30% since 1970, tracking loss of both forest interior breeding habitat and South American wintering grounds.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Contopus_virens_-Eastern_Wood-Pewee_-_Canada.jpg/960px-Contopus_virens_-Eastern_Wood-Pewee_-_Canada.jpg',
+    photoCredit: 'D. Gordon E. Robertson / CC BY-SA 3.0',
+    page: 'eastern-wood-pewee',
+    habitatTags: ['woodland', 'forest-interior', 'canopy'],
+  },
+  {
+    id: 'brown-creeper',
+    name: 'Brown Creeper',
+    scientificName: 'Certhia americana',
+    emoji: '🐦',
+    shortDesc: 'Starts at the base of a trunk, spirals upward reading every inch of bark for beetle larvae and spider eggs, then drops to the base of the next tree. Never descends the trunk it just climbed. Population has declined 40% since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Certhia_americana_CT2.jpg/960px-Certhia_americana_CT2.jpg',
+    photoCredit: 'i_got_the_fever / CC BY 2.0',
+    page: 'brown-creeper',
+    habitatTags: ['woodland', 'snag', 'bark'],
+  },
+  {
+    id: 'baltimore-oriole',
+    name: 'Baltimore Oriole',
+    scientificName: 'Icterus galbula',
+    emoji: '🐦',
+    shortDesc: 'Weaves a hanging nest — a tightly woven pouch suspended from the tip of an outer branch — using plant fibers, bark strips, and synthetic material found in the yard. The pendulum motion of the finished nest makes it difficult for many predators to access.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Baltimore_Oriole-_dorsum.jpg',
+    photoCredit: 'Alan D. Wilson / CC BY-SA 3.0',
+    page: 'baltimore-oriole',
+    habitatTags: ['open-woodland', 'edge', 'garden'],
+  },
+  {
+    id: 'black-capped-chickadee',
+    name: 'Black-capped Chickadee',
+    scientificName: 'Poecile atricapillus',
+    emoji: '🐦',
+    shortDesc: 'Remembers the exact locations of thousands of individual food caches stored across hundreds of separate sites over periods of months. Studies measuring memory found the hippocampus grows measurably in autumn when caching peaks.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg',
+    photoCredit: 'Cephas / CC BY-SA 3.0',
+    page: 'black-capped-chickadee',
+    habitatTags: ['woodland', 'garden', 'snag'],
+  },
+  {
+    id: 'eastern-bluebird',
+    name: 'Eastern Bluebird',
+    scientificName: 'Sialia sialis',
+    emoji: '🐦',
+    shortDesc: 'Population crashed across the eastern US by the 1960s as European Starlings displaced it from every natural cavity it depended on for nesting. The nest box program that followed is one of the most documented bird recovery stories in North American ornithology.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg',
+    photoCredit: 'Sandysphotos2009 / CC BY 2.0',
+    page: 'eastern-bluebird',
+    habitatTags: ['open-woodland', 'edge', 'meadow'],
+  },
+  {
+    id: 'northern-cardinal',
+    name: 'Northern Cardinal',
+    scientificName: 'Cardinalis cardinalis',
+    emoji: '🐦',
+    shortDesc: 'Feeds nestlings almost exclusively on caterpillars — soft-bodied larvae chicks can digest. A yard that has replaced native oaks with ornamental trees produces a fraction of the caterpillar biomass the same canopy area of native trees would generate across the six-week nesting window.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg',
+    photoCredit: 'Rhododendrites / CC BY-SA 4.0',
+    page: 'northern-cardinal',
+    habitatTags: ['shrub-edge', 'garden', 'woodland'],
+  },
+  {
+    id: 'american-robin',
+    name: 'American Robin',
+    scientificName: 'Turdus migratorius',
+    emoji: '🐦',
+    shortDesc: 'Detects earthworms underground by sound and vibration — the head-tilt posture before a lunge positions an ear to the ground, not an eye. A robin feeding in a lawn treated with pesticides shows measurable tremors and egg-shell thinning within days of exposure.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg',
+    photoCredit: 'Rhododendrites / CC BY-SA 4.0',
+    page: 'american-robin',
+    habitatTags: ['lawn', 'woodland', 'edge'],
+  },
+  {
+    id: 'american-goldfinch',
+    name: 'American Goldfinch',
+    scientificName: 'Spinus tristis',
+    emoji: '🐦',
+    shortDesc: 'Delays nesting until mid-summer — later than almost any other songbird — timed to the peak availability of thistle and milkweed seeds. Feeds nestlings entirely on seeds rather than insects, unusual among North American songbirds.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg',
+    photoCredit: 'Sandysphotos2009 / CC BY 2.0',
+    page: 'american-goldfinch',
+    habitatTags: ['meadow', 'garden', 'edge'],
+  },
+  {
+    id: 'indigo-bunting',
+    name: 'Indigo Bunting',
+    scientificName: 'Passerina cyanea',
+    emoji: '🐦',
+    shortDesc: 'Male breeding plumage contains no blue pigment — the color comes entirely from feather microstructure that scatters light. Migrates at night, navigating by the stars using a star map calibrated in its first weeks of life.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Indigo_Bunting_by_Dan_Pancamo_4.jpg',
+    photoCredit: 'Dan Pancamo / CC BY-SA 2.0',
+    page: 'indigo-bunting',
+    habitatTags: ['shrub-edge', 'meadow', 'garden'],
+  },
+  {
+    id: 'dark-eyed-junco',
+    name: 'Dark-eyed Junco',
+    scientificName: 'Junco hyemalis',
+    emoji: '🐦',
+    shortDesc: 'Spends winters in the same suburban yards year after year — individual birds return to the same feeders, the same brush piles, the same patches of bare ground within 50 meters of where they fed in previous winters.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg',
+    photoCredit: 'Cephas / CC BY-SA 3.0',
+    page: 'dark-eyed-junco',
+    habitatTags: ['shrub-edge', 'woodland', 'garden'],
+  },
+  {
+    id: 'american-tree-sparrow',
+    name: 'American Tree Sparrow',
+    scientificName: 'Spizelloides arborea',
+    emoji: '🐦',
+    shortDesc: "Arrives from subarctic nesting grounds in October carrying a bi-colored bill — dark above, yellow below — that separates it from every other small winter sparrow. Forages in flocks of 10 to 40 through standing Little Bluestem and goldenrod seed heads from November to March. Down 53% since 1966.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Spizelloides_arborea_CT1.jpg/960px-Spizelloides_arborea_CT1.jpg',
+    photoCredit: 'Cephas / CC BY-SA 3.0',
+    page: 'american-tree-sparrow',
+    habitatTags: ['winter-visitor', 'garden', 'open-meadow'],
+  },
+  {
+    id: 'eastern-meadowlark',
+    name: 'Eastern Meadowlark',
+    scientificName: 'Sturnella magna',
+    emoji: '🐦',
+    shortDesc: 'Nests on the ground in grassland — a cup of grass concealed in dense cover where the entrance is on the side, not the top. Requires at least 10 acres of contiguous grassland for successful breeding. Population has dropped 75% since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sturnella_magna1.jpg/960px-Sturnella_magna1.jpg',
+    photoCredit: 'Ómar Runólfsson / CC BY 2.0',
+    page: 'eastern-meadowlark',
+    habitatTags: ['meadow', 'grassland', 'open-land'],
+  },
+  {
+    id: 'brown-thrasher',
+    name: 'Brown Thrasher',
+    scientificName: 'Toxostoma rufum',
+    emoji: '🐦',
+    shortDesc: 'Has the largest song repertoire of any North American bird — over 1,000 distinct phrase types, each sung twice in sequence before moving to the next. Population has declined 45% since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Toxostoma_rufum_CT2.jpg/960px-Toxostoma_rufum_CT2.jpg',
+    photoCredit: 'i_got_the_fever / CC BY 2.0',
+    page: 'brown-thrasher',
+    habitatTags: ['shrub-edge', 'woodland', 'garden'],
+  },
+  {
+    id: 'eastern-towhee',
+    name: 'Eastern Towhee',
+    scientificName: 'Pipilo erythrophthalmus',
+    emoji: '🐦',
+    shortDesc: "Scratches through leaf litter with a simultaneous backward double-hop — raking both feet at once to uncover what's underneath. Needs dense shrub thickets with intact leaf litter below, a combination disappearing from suburban landscapes as they are cleared and raked.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pipilo_erythrophthalmus_CT2.jpg/960px-Pipilo_erythrophthalmus_CT2.jpg',
+    photoCredit: 'i_got_the_fever / CC BY 2.0',
+    page: 'eastern-towhee',
+    habitatTags: ['shrub-edge', 'leaf-litter', 'woodland'],
+  },
+  {
+    id: 'carolina-wren',
+    name: 'Carolina Wren',
+    scientificName: 'Thryothorus ludovicianus',
+    emoji: '🐦',
+    shortDesc: 'Sings louder, relative to body weight, than almost any other bird in North America. Nests in almost anything — flower pots, old boots, open tool shelves. Does not migrate; extended cold snaps that freeze its insect supply can eliminate local populations overnight.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg/960px-Carolina_Wren_%28Thryothorus_ludovicianus%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg',
+    photoCredit: 'Andy Reago & Chrissy McClarren / CC BY 2.0',
+    page: 'carolina-wren',
+    habitatTags: ['shrub-edge', 'woodland', 'garden'],
+  },
+  {
+    id: 'gray-catbird',
+    name: 'Gray Catbird',
+    scientificName: 'Dumetella carolinensis',
+    emoji: '🐦',
+    shortDesc: 'Can produce hundreds of distinct sounds — mimicking other birds, frogs, and mechanical noises — but returns between sequences to the mewing call that named it. Rejects cowbird eggs from its nest at a rate higher than almost any other host species.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gray_catbird_%2885315%29.jpg/960px-Gray_catbird_%2885315%29.jpg',
+    photoCredit: 'Rhododendrites / CC BY-SA 4.0',
+    page: 'gray-catbird',
+    habitatTags: ['shrub-edge', 'garden', 'woodland'],
+  },
+  {
+    id: 'mourning-dove',
+    name: 'Mourning Dove',
+    scientificName: 'Zenaida macroura',
+    emoji: '🐦',
+    shortDesc: 'Produces crop milk — a protein-rich secretion from the lining of its crop that both parents feed to nestlings for the first week of life. The only North American bird that drinks by suction, lifting its head only when it stops.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mourning_Dove_in_North_Florida.jpg/960px-Mourning_Dove_in_North_Florida.jpg',
+    photoCredit: 'Judy Gallagher / CC BY 2.0',
+    page: 'mourning-dove',
+    habitatTags: ['open-land', 'edge', 'garden'],
+  },
+  {
+    id: 'song-sparrow',
+    name: 'Song Sparrow',
+    scientificName: 'Melospiza melodia',
+    emoji: '🐦',
+    shortDesc: 'Males learn songs from neighbors and modify them throughout their lives, creating local dialects that vary between populations just a few miles apart. Each male knows 8 to 12 distinct song types and switches between them in patterns that signal identity and territory status.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Song_Sparrow_Melospiza_melodia.jpg/960px-Song_Sparrow_Melospiza_melodia.jpg',
+    photoCredit: 'Mdf / CC BY-SA 3.0',
+    page: 'song-sparrow',
+    habitatTags: ['shrub-edge', 'near-water', 'garden'],
+  },
+  {
+    id: 'wild-turkey',
+    name: 'Wild Turkey',
+    scientificName: 'Meleagris gallopavo',
+    emoji: '🦃',
+    shortDesc: 'Can run 12 miles per hour and fly in short bursts at up to 55. Roosts in trees at night — often the same trees, in the same order, for years. A flock scratching through leaf litter in a single morning can expose and consume thousands of invertebrates.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tom_turkey_strutting.jpg/960px-Tom_turkey_strutting.jpg',
+    photoCredit: 'USFWS / Public Domain',
+    page: 'wild-turkey',
+    habitatTags: ['woodland', 'edge', 'open-land'],
+  },
+  {
+    id: 'eastern-phoebe',
+    name: 'Eastern Phoebe',
+    scientificName: 'Sayornis phoebe',
+    emoji: '🐦',
+    shortDesc: 'Among the earliest migrants to return in spring — present in the northern US by late March, before most insects are flying. Waits on a low perch, dips its tail rhythmically, and sallies out to catch individual flying insects one at a time.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Eastern_Phoebe-27527-2.jpg/960px-Eastern_Phoebe-27527-2.jpg',
+    photoCredit: 'Mdf / CC BY-SA 3.0',
+    page: 'eastern-phoebe',
+    habitatTags: ['woodland-edge', 'near-water', 'garden'],
+  },
+  {
+    id: 'yellow-warbler',
+    name: 'Yellow Warbler',
+    scientificName: 'Setophaga petechia',
+    emoji: '🐦',
+    shortDesc: 'Responds to cowbird eggs by building a new floor over the parasitized nest — sometimes producing a multi-story structure 5 or 6 layers deep, each covering a cowbird egg laid in the previous one. Population has declined 27% since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Setophaga_petechia_-Ithaca%2C_New_York%2C_USA-8.jpg/960px-Setophaga_petechia_-Ithaca%2C_New_York%2C_USA-8.jpg',
+    photoCredit: 'Mdf / CC BY-SA 2.0',
+    page: 'yellow-warbler',
+    habitatTags: ['shrub-edge', 'near-water', 'garden'],
+  },
+  {
+    id: 'ruby-crowned-kinglet',
+    name: 'Ruby-crowned Kinglet',
+    scientificName: 'Regulus calendula',
+    emoji: '🐦',
+    shortDesc: "One of the smallest birds in North America — 4.3 inches and less than 6 grams. Its song is proportionally 25 times louder than a rooster's crow relative to body mass. Passes through eastern gardens each spring and fall on migration between boreal breeding forests and southern wintering grounds.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ruby-crowned_Kinglet_%28Corthylio_calendula%29_%2814349226095%29.jpg/960px-Ruby-crowned_Kinglet_%28Corthylio_calendula%29_%2814349226095%29.jpg',
+    photoCredit: 'Andy Reago & Chrissy McClarren / CC BY 2.0',
+    page: 'ruby-crowned-kinglet',
+    habitatTags: ['woodland', 'garden', 'edge'],
+  },
+  {
+    id: 'yellow-rumped-warbler',
+    name: 'Yellow-rumped Warbler',
+    scientificName: 'Setophaga coronata',
+    emoji: '🐦',
+    shortDesc: 'The only warbler that regularly overwinters in the eastern US — it can digest waxy berries that other warblers cannot. When bayberry and wax myrtle ripen in late summer, its gut microbiome shifts to handle the wax, a metabolic switch documented in laboratory studies.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Setophaga_coronata_coronata_CT1.jpg/960px-Setophaga_coronata_coronata_CT1.jpg',
+    photoCredit: 'Cephas / CC BY-SA 3.0',
+    page: 'yellow-rumped-warbler',
+    habitatTags: ['woodland', 'shrub-edge', 'garden'],
+  },
+  {
+    id: 'northern-mockingbird',
+    name: 'Northern Mockingbird',
+    scientificName: 'Mimus polyglottos',
+    emoji: '🐦',
+    shortDesc: "A single male sings 150 to 200 distinct song patterns per hour — each phrase borrowed from a different species, repeated three or four times, then replaced by the next. In May, unmated males continue singing from 11 pm until 2 or 3 am. The song is a direct inventory of the bird species the male has heard within half a mile, accumulated over his lifetime.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Mimus_polyglottos_adult.jpg/960px-Mimus_polyglottos_adult.jpg',
+    photoCredit: 'Ken Thomas / Public domain via Wikimedia Commons',
+    page: 'northern-mockingbird',
+    habitatTags: ['garden', 'shrub-edge', 'open-land'],
+  },
+  {
+    id: 'wood-frog',
+    name: 'Wood Frog',
+    scientificName: 'Rana sylvatica',
+    emoji: '🐸',
+    shortDesc: "Spends roughly 5 months frozen solid in the leaf litter — heart stopped, lungs stopped, 65 percent of its body water as ice — then thaws in March and walks to the vernal pool where it was born. If you hear duck-like quacking from a low wet area in late March, that is Wood Frogs.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rana_sylvatica.jpg/960px-Rana_sylvatica.jpg',
+    photoCredit: 'Rasbak / CC BY-SA 3.0',
+    page: 'wood-frog',
+    habitatTags: ['vernal-pool', 'woodland', 'leaf-litter'],
+  },
+  {
+    id: 'spicebush-swallowtail',
+    name: 'Spicebush Swallowtail',
+    scientificName: 'Papilio troilus',
+    emoji: '🦋',
+    shortDesc: "Folds a spicebush leaf into a silk-sealed tube in July and hides inside during the day. Black wings and blue-green hindwing scaling match the Pipevine Swallowtail — a genuinely toxic butterfly — closely enough that birds avoid both species. Both male and female carry the mimicry, unlike the tiger swallowtail where only dark-form females have it.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Papilio_troilus_male.jpg/960px-Papilio_troilus_male.jpg',
+    photoCredit: 'Derek Ramsey / CC BY-SA 2.5',
+    page: 'spicebush-swallowtail',
+    habitatTags: ['native-shrubs', 'woodland-edge', 'garden'],
+  },
+  {
+    id: 'hummingbird-clearwing-moth',
+    name: 'Hummingbird Clearwing Moth',
+    scientificName: 'Hemaris thysbe',
+    emoji: '🦋',
+    shortDesc: "Hovers in full daylight at bee balm and phlox with wings beating too fast to see. A sphinx moth that independently evolved the same hovering nectar-feeding strategy as the Ruby-throated Hummingbird — two unrelated lineages arriving at the same solution. Caterpillars feed on arrowwood viburnum, hawthorn, and wild cherry and overwinter as pupae in the leaf litter.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Hummingbird_Clearwing_-_Hemaris_thysbe%2C_Occoquan_Bay_National_Wildlife_Refuge%2C_Woodbridge%2C_Virginia%2C_September_3%2C_2019_%2853240099446%29.jpg/960px-Hummingbird_Clearwing_-_Hemaris_thysbe%2C_Occoquan_Bay_National_Wildlife_Refuge%2C_Woodbridge%2C_Virginia%2C_September_3%2C_2019_%2853240099446%29.jpg',
+    photoCredit: 'Judy Gallagher / CC BY 2.0',
+    page: 'hummingbird-clearwing-moth',
+    habitatTags: ['native-flowers', 'garden', 'woodland-edge'],
+  },
+  {
+    id: 'white-oak',
+    name: 'White Oak',
+    scientificName: 'Quercus alba',
+    emoji: '🌳',
+    shortDesc: "The oak genus supports 557 caterpillar species — more than any other North American tree. A female black-capped chickadee needs 350 to 570 caterpillars per day to feed her nestlings. White oak acorns ripen in a single growing season and fall in October with low tannins, consumed on the spot by deer, squirrels, turkeys, and blue jays. Leaves have rounded lobes with no bristle tips. Trees can reach 600 years old.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg/960px-Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg',
+    photoCredit: 'Marty Aligata / CC BY-SA 3.0',
+    page: 'white-oak',
+    habitatTags: ['woodland-edge', 'garden', 'meadow'],
+  },
+  {
+    id: 'black-cherry',
+    name: 'Black Cherry',
+    scientificName: 'Prunus serotina',
+    emoji: '🍒',
+    shortDesc: "Supports 456 caterpillar species — second only to oaks among North American trees. Eastern tent caterpillars hatch in late March from egg masses on the bark; Baltimore Orioles and Yellow-billed Cuckoos arrive from migration in May and eat them. More than 70 bird species eat the dark drupes that ripen in August, including cedar waxwings, wood thrush, and scarlet tanager. Often volunteers at yard edges and fence lines.",
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Prunus-serotina-flowers.jpg/960px-Prunus-serotina-flowers.jpg',
+    page: 'black-cherry',
+    habitatTags: ['woodland-edge', 'garden'],
+  },
+  {
+    id: 'serviceberry',
+    name: 'Serviceberry',
+    scientificName: 'Amelanchier arborea',
+    emoji: '🌸',
+    shortDesc: "Flowers in April on bare branches before any other native tree, then produces berries in June — the first native fruit of the season — when wood thrushes and robins are still feeding nestlings. Cedar waxwings strip a loaded tree within days. Hosts more than 100 caterpillar species including the Red-spotted Purple butterfly, whose caterpillars overwinter as tiny rolled-leaf bundles at twig tips. Grows 15 to 25 feet; tolerates part shade.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Amelanchier_arborea_kz02.jpg/960px-Amelanchier_arborea_kz02.jpg',
+    photoCredit: 'Krzysztof Ziarnek, Kenraiz / CC BY-SA 4.0',
+    page: 'serviceberry',
+    habitatTags: ['woodland-edge', 'garden', 'meadow'],
+  },
+  {
+    id: 'spicebush',
+    name: 'Spicebush',
+    scientificName: 'Lindera benzoin',
+    emoji: '🌿',
+    shortDesc: "Blooms in late February to April on bare branches — one of the earliest native nectar sources for overwintered queen bumblebees. In September, produces small high-fat red berries that migrating wood thrushes and hermit thrushes consume. Hosts the Spicebush Swallowtail butterfly, whose caterpillars build silk-sealed leaf tubes on the branches in July. Thrives in deep shade under maples and oaks where most native plants won't grow. Deer-resistant.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2023-03-30_13_24_41_Common_spicebush_blooming_in_the_forest_within_Ann_M._Banchoff_Park_in_the_Mountainview_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/960px-thumbnail.jpg',
+    photoCredit: 'Famartin / CC BY-SA 4.0',
+    page: 'spicebush',
+    habitatTags: ['woodland-edge', 'woodland', 'shade-garden'],
+  },
+  {
+    id: 'elderberry',
+    name: 'American Elderberry',
+    scientificName: 'Sambucus canadensis',
+    emoji: '🌼',
+    shortDesc: "Opens in June with flat-topped white flower clusters, each holding hundreds to thousands of individual florets with nectar at the surface — accessible to bees, flies, beetles, and wasps of any tongue length. Berries ripen in August and are consumed by 70+ bird species. Hosts Cecropia and Polyphemus moths. Grows 5–12 feet; tolerates wet soil, seasonal flooding, and part shade. Self-fertile — one plant produces fruit.",
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/662396820/large.jpeg',
+    photoCredit: 'airlynn / iNaturalist · CC0',
+    page: 'elderberry',
+    habitatTags: ['woodland-edge', 'garden', 'wet-area'],
+  },
+  {
+    id: 'virginia-creeper',
+    name: 'Virginia Creeper',
+    scientificName: 'Parthenocissus quinquefolia',
+    emoji: '🍇',
+    shortDesc: "Climbs by adhesive disc-tipped tendrils that grip walls and fences without boring into mortar. Five leaflets per stem — not three like poison ivy. Blue-black berries ripen in October when the leaves turn scarlet; cedar waxwings, American robins, and northern flickers return to the same vine each year and strip the crop within a day. Hosts Virginia Creeper Sphinx Moth and Eight-spotted Forester Moth; both lay eggs on the leaves in June and July. Tolerates full shade to full sun.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Virginia_Creeper_%28Parthenocissus_quinquefolia%29_8073.jpg/960px-Virginia_Creeper_%28Parthenocissus_quinquefolia%29_8073.jpg',
+    photoCredit: 'Chris Light / CC BY-SA 4.0',
+    page: 'virginia-creeper',
+    habitatTags: ['woodland-edge', 'edge', 'garden'],
+  },
+  {
+    id: 'butterfly-weed',
+    name: 'Butterfly Weed',
+    scientificName: 'Asclepias tuberosa',
+    emoji: '🌸',
+    shortDesc: 'The only common eastern milkweed whose stem runs clear — not white — when broken. Still loads its leaves with cardiac glycosides that monarch caterpillars absorb and carry through metamorphosis into their wings. Grows from a deep taproot that makes it drought-tolerant in sandy and lean soils where other milkweeds fail. Blooms orange in June and July.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Butterfly-weed_%28Asclepias_tuberosa%29.jpg/960px-Butterfly-weed_%28Asclepias_tuberosa%29.jpg',
+    photoCredit: 'wackybadger / CC BY-SA 2.0',
+    page: 'butterfly-weed',
+    habitatTags: ['meadow', 'garden', 'dry-sunny'],
+  },
+  {
+    id: 'pearl-crescent',
+    name: 'Pearl Crescent',
+    scientificName: 'Phyciodes tharos',
+    emoji: '🦋',
+    shortDesc: 'Lays eggs in batches on the underside of aster leaves — on no other plant. The third-instar caterpillar overwinters in the leaf litter at the base of the aster stem and becomes the first butterfly of April.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/5/56/Pearl_crescent_%2830350%29.jpg',
+    photoCredit: 'Rhododendrites / CC BY-SA 4.0',
+    page: 'pearl-crescent',
+    habitatTags: ['aster', 'leaf-litter', 'meadow'],
+  },
+  {
+    id: 'giant-swallowtail',
+    name: 'Giant Swallowtail',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/Giant_Swallowtail%2C_Shirleys_Bay.jpg',
+    page: 'giant-swallowtail' as Page,
+    shortDesc: 'The largest butterfly in eastern North America — up to six and a half inches across. Its caterpillar rests exposed on hoptree leaves during the day, white and brown in the proportions of a fresh bird dropping. When touched, a bright orange forked gland pushes out from behind the head and releases a smell no bird investigates twice.',
+    status: 'watch' as const,
+    habitatTags: ['forest-edge', 'hoptree', 'meadow'],
+  },
+  {
+    id: 'red-admiral',
+    name: 'Red Admiral',
+    scientificName: 'Vanessa atalanta',
+    emoji: '🦋',
+    shortDesc: 'Some adults spend winter behind loose bark in Midwest trees. When a warm spell arrives in February, they emerge and find sap flowing from wounds in maple and elm — weeks before any flower opens. The same butterfly working goldenrod in September may be drinking tree sap while the yard still has snow on it.',
+    status: 'common' as const,
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Red_admiral_butterfly_arp.jpg',
+    photoCredit: 'Charles J. Sharp / CC BY-SA 4.0',
+    page: 'red-admiral' as Page,
+    habitatTags: ['nettles', 'meadow', 'garden'],
+  },
+  {
+    id: 'painted-lady',
+    name: 'Painted Lady',
+    scientificName: 'Vanessa cardui',
+    emoji: '🦋',
+    shortDesc: 'The most widespread butterfly on Earth, found on every continent except Antarctica. In 2024, researchers confirmed Painted Ladies had flown more than 4,200 kilometers across the open Atlantic Ocean from West Africa to South America — the first confirmed ocean crossing by any insect. The caterpillar that became that butterfly hatched on a native thistle.',
+    status: 'common' as const,
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/0_Belle-dame_%28Vanessa_cardui%29_-_Echinacea_purpurea_-_Havr%C3%A9_%283%29.jpg',
+    photoCredit: 'Jean-Pol GRANDMONT / CC BY 3.0',
+    page: 'painted-lady' as Page,
+    habitatTags: ['thistles', 'meadow', 'garden'],
+  },
+
+  {
+    id: 'mourning-cloak',
+    name: 'Mourning Cloak',
+    scientificName: 'Nymphalis antiopa',
+    emoji: '🦋',
+    shortDesc: 'One of the longest-lived adult butterflies in North America. The Mourning Cloak spends winter as an adult behind loose tree bark. In late February, while snow still sits in shaded corners, it emerges and drinks sap from wounds in maple and birch — weeks before any flower opens. The same individual you see in spring has been alive since the previous June.',
+    status: 'common' as const,
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Mourning_Cloak_Nymphalis_antiopa.jpg',
+    photoCredit: 'Benny Mazur / CC BY 2.0',
+    page: 'mourning-cloak' as Page,
+    habitatTags: ['willows', 'meadow', 'garden'],
+  },
+  {
+    id: 'viceroy',
+    name: 'Viceroy',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/Viceroy_Butterfly_perched.jpg',
+    page: 'viceroy' as Page,
+    status: 'common' as const,
+    habitatTags: ['willows', 'meadow', 'garden'],
+    shortDesc: "Wears the Monarch's orange-and-black pattern but carries a single curved black line across the hindwing that no Monarch has; overwinters as a caterpillar sealed inside a rolled willow leaf tied to the branch with silk.",
+  },
+  {
+    id: 'question-mark',
+    name: 'Question Mark',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Question_Mark_Butterfly%2C_Polygonia_interrogationis%2C_dorsal_%28cropped%29.jpg',
+    page: 'question-mark' as Page,
+    status: 'common' as const,
+    habitatTags: ['woodland-edge', 'garden', 'meadow'],
+    shortDesc: 'Adult overwinters as a butterfly behind loose bark on large-diameter trees from October through March. A silver curved line and dot on the hindwing underside form the question mark it was named for. Caterpillars use stinging nettle, American elm, and hops.',
+  },
+  {
+    id: 'eastern-comma',
+    name: 'Eastern Comma',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/334405655/large.jpg',
+    page: 'eastern-comma' as Page,
+    status: 'common' as const,
+    habitatTags: ['woodland-edge', 'garden', 'meadow'],
+    shortDesc: 'Adult overwinters as a butterfly behind loose bark on large-diameter trees from October through March. A single silver curved line on the hindwing underside — a comma without the dot of the Question Mark — is the only field mark separating this species from its closest relative. Caterpillars use stinging nettle and hops.',
+  },
+  {
+    id: 'baltimore-checkerspot',
+    name: 'Baltimore Checkerspot',
+    scientificName: 'Euphydryas phaeton',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/210425087/large.jpg',
+    photoCredit: 'Alan Kneidel / CC BY via iNaturalist',
+    page: 'baltimore-checkerspot' as Page,
+    status: 'endangered' as const,
+    habitatTags: ['wetland', 'turtlehead', 'stream-edge'],
+    shortDesc: "Maryland's state insect lays 300 to 700 eggs in a single clutch on white turtlehead — no other plant supports a colony. Caterpillars overwinter as a group inside a communal silk nest at the base of the plant from August through April. Listed as threatened or endangered in several states.",
+  },
+  {
+    id: 'cloudless-sulphur',
+    name: 'Cloudless Sulphur',
+    scientificName: 'Phoebis sennae',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/3711606/large.jpg',
+    photoCredit: 'Laura Gaudette / CC BY via iNaturalist',
+    page: 'cloudless-sulphur' as Page,
+    status: 'declining' as const,
+    habitatTags: ['meadow', 'garden', 'migratory'],
+    shortDesc: "The male is pure lemon-yellow with no border markings — the most saturated yellow of any common North American butterfly. In late August, adults fly south toward the Gulf Coast, stopping briefly at garden flowers. The host plant is Partridge Pea, a native annual legume that also feeds Wild Turkey through its seed pods in fall.",
+  },
+
+  {
+    id: 'american-lady',
+    name: 'American Lady',
+    scientificName: 'Vanessa virginiensis',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/2124214/large.jpg',
+    photoCredit: 'Susan Elliott / CC BY-NC via iNaturalist',
+    page: 'american-lady' as Page,
+    status: 'declining' as const,
+    habitatTags: ['meadow', 'dry-garden', 'migratory'],
+    shortDesc: "When the wings close, two large eyespots with blue centers appear on the hindwing underside — the field mark that separates American Lady from Painted Lady every time. The caterpillar builds a silk tent around a single leaf of pearly everlasting and feeds inside it. Host plants include pearly everlasting and pussytoes, two dry-meadow composites that tolerate thin soil where most garden plants fail.",
+  },
+
+  {
+    id: 'common-buckeye',
+    name: 'Common Buckeye',
+    scientificName: 'Junonia coenia',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/25328482/large.jpg',
+    photoCredit: 'Erika Mitchell / CC BY-NC via iNaturalist',
+    page: 'common-buckeye' as Page,
+    status: 'declining' as const,
+    habitatTags: ['meadow', 'dry-garden', 'migratory'],
+    shortDesc: "Four eyespots face outward when the wings flatten in the sun — one large blue-ringed circle on each forewing, two smaller ones on the hindwing. Males perch on bare soil and hold territory for hours, lifting off to investigate anything that moves. The caterpillar feeds openly on plantain and carries two orange false-eye spots near its head.",
+  },
+  {
+    id: 'silvery-checkerspot',
+    name: 'Silvery Checkerspot',
+    scientificName: 'Chlosyne nycteis',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/157842354/large.jpg',
+    photoCredit: 'Chrissy McClarren and Andy Reago / CC0 via iNaturalist',
+    page: 'silvery-checkerspot' as Page,
+    status: 'declining' as const,
+    habitatTags: ['meadow', 'leaf-litter', 'garden'],
+    shortDesc: "The female lays 100 to 200 eggs in a single cluster on the underside of one black-eyed Susan leaf. The caterpillars hatch together, feed side by side through summer, then stop growing in August while still half-sized. They crawl into the dead leaves at the plant's base and spend five months dormant — the same leaves raked away each autumn.",
+  },
+  {
+    id: 'common-milkweed',
+    name: 'Common Milkweed',
+    scientificName: 'Asclepias syriaca',
+    emoji: '🌿',
+    shortDesc: 'Between 1999 and 2010, an estimated 850 million milkweed stems disappeared from Midwestern farm fields when glyphosate-tolerant crops made clean-field herbicide spraying possible. A female monarch lays 300 to 500 eggs over her adult lifespan — each one placed on the underside of a milkweed leaf, and no other plant will do.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg',
+    photoCredit: 'Derek Ramsey / CC BY-SA 2.5',
+    page: 'common-milkweed',
+    habitatTags: ['meadow', 'garden', 'sunny'],
+  },
+  {
+    id: 'swamp-milkweed',
+    name: 'Swamp Milkweed',
+    scientificName: 'Asclepias incarnata',
+    emoji: '🌸',
+    shortDesc: 'Swamp milkweed grows in wet corners where Common Milkweed dies — rain garden edges, stream banks, low spots that hold water through spring. A monarch caterpillar spends 14 days eating milkweed leaves, growing from 2 mm to 2 inches through five instars, and swamp milkweed carries that larval stage in the sites where other milkweeds fail.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/21590017/large.jpg',
+    photoCredit: 'aarongunnar / iNaturalist · CC BY',
+    page: 'swamp-milkweed',
+    habitatTags: ['wetland', 'rain-garden', 'moist'],
+  },
+  {
+    id: 'purple-coneflower',
+    name: 'Purple Coneflower',
+    scientificName: 'Echinacea purpurea',
+    emoji: '🌸',
+    shortDesc: 'The two-spotted longhorn bee (Melissodes bimaculata) collects pollen exclusively from Echinacea flowers and no other plant family. She visits 30 to 40 coneflower heads to fill a single pollen load, then provisions one larval cell in a ground nest beneath the plants. A planting of 8 to 12 plants gives her a complete territory.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Echinacea_purpurea.jpg/960px-Echinacea_purpurea.jpg',
+    photoCredit: 'Petar Milošević / CC BY-SA 4.0',
+    page: 'purple-coneflower',
+    habitatTags: ['meadow', 'garden', 'dry-sunny'],
+  },
+  {
+    id: 'canada-goldenrod',
+    name: 'Canada Goldenrod',
+    scientificName: 'Solidago canadensis',
+    emoji: '🌼',
+    shortDesc: 'A monarch butterfly feeding on Canada goldenrod in late September is converting flower nectar into abdominal fat for a 2,500-mile flight to Mexico. Goldenrod is insect-pollinated — its pollen is sticky and heavy and never reaches your sinuses. Most homeowners pull it in the same weeks it serves as the migration\'s primary fuel stop.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Solidago_canadensis_20050815_04.jpg/960px-Solidago_canadensis_20050815_04.jpg',
+    photoCredit: 'Christian Fischer / CC BY-SA 3.0',
+    page: 'canada-goldenrod',
+    habitatTags: ['meadow', 'edge', 'garden'],
+  },
+  {
+    id: 'new-england-aster',
+    name: 'New England Aster',
+    scientificName: 'Symphyotrichum novae-angliae',
+    emoji: '💜',
+    shortDesc: 'New England aster blooms from late August through hard frost — later than almost every other native perennial. Monarchs migrating through the Midwest in early October may have hundreds of miles left to the Gulf Coast; the aster is still producing nectar during those weeks. Pearl Crescent caterpillars eat aster leaves exclusively and cannot use any other genus.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/322745074/large.jpg',
+    photoCredit: 'glennberry / iNaturalist · CC0',
+    page: 'new-england-aster',
+    habitatTags: ['meadow', 'garden', 'edge'],
+  },
+  {
+    id: 'wild-bergamot',
+    name: 'Wild Bergamot',
+    scientificName: 'Monarda fistulosa',
+    emoji: '🪻',
+    shortDesc: 'Anthophora montana collects pollen exclusively from Monarda flowers — no other genus will do. She fills each nest cell with bergamot pollen, lays one egg, and seals it. Hummingbird clearwing moths hover at the same flower heads through July, reaching nectar in tubes too deep for most bees.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/55366263/large.jpg',
+    photoCredit: 'dekalbcountyfpd / iNaturalist · CC0',
+    page: 'wild-bergamot',
+    habitatTags: ['meadow', 'garden', 'dry-sunny'],
+  },
+  {
+    id: 'black-eyed-susan',
+    name: 'Black-eyed Susan',
+    scientificName: 'Rudbeckia hirta',
+    emoji: '🌻',
+    shortDesc: 'American Goldfinches nest in late July and August — weeks after most songbirds — timed to when seeds ripen. Black-eyed Susan seed heads mature in August and persist into fall. The Silvery Checkerspot butterfly lays 20 to 200 eggs in a cluster on Rudbeckia leaves in July; caterpillars hatch and feed communally before dispersing.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/309136118/large.jpeg',
+    photoCredit: 'tim_kirsten / iNaturalist · CC0',
+    page: 'black-eyed-susan',
+    habitatTags: ['meadow', 'garden', 'dry-sunny'],
+  },
+  {
+    id: 'joe-pye-weed',
+    name: 'Joe Pye Weed',
+    scientificName: 'Eutrochium purpureum',
+    emoji: '🌸',
+    shortDesc: 'The eupatorium borer moth lays eggs at the base of Joe Pye Weed stems in late summer; her larvae bore inside the hollow stalks and overwinter there through April. The same plant feeds monarchs, tiger swallowtails, and bumblebees from late July through September — the weeks between coneflower\'s finish and goldenrod\'s peak.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Eutrochium_purpureum_kz01.jpg/960px-Eutrochium_purpureum_kz01.jpg',
+    photoCredit: 'Krzysztof Ziarnek (Kenraiz) / CC BY-SA 4.0',
+    page: 'joe-pye-weed',
+    habitatTags: ['wetland-edge', 'garden', 'moist'],
+  },
+  {
+    id: 'arrowwood-viburnum',
+    name: 'Arrowwood Viburnum',
+    scientificName: 'Viburnum dentatum',
+    emoji: '🌿',
+    shortDesc: 'Arrowwood viburnum sets blue-black drupes in August, hidden under summer foliage. When leaves drop in October, Cedar Waxwing flocks arrive and can strip a loaded plant in two days. Each drupe runs approximately 28% fat by dry weight — one of the higher-fat native fruits available to birds during fall migration.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/662396820/large.jpeg',
+    photoCredit: 'airlynn / iNaturalist · CC0',
+    page: 'arrowwood-viburnum',
+    habitatTags: ['woodland-edge', 'garden', 'shrub'],
+  },
+  {
+    id: 'buttonbush',
+    name: 'Buttonbush',
+    scientificName: 'Cephalanthus occidentalis',
+    emoji: '⚪',
+    shortDesc: 'Buttonbush opens spherical white flower heads in July — each one 200 or more florets with pollen-bearing anthers protruding from the surface, accessible without probing a tube. Its roots grow in standing water. A low corner that holds water for weeks after rain is the right planting site.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/86076649/large.jpeg',
+    photoCredit: 'mikeburdsall / iNaturalist · CC0',
+    page: 'buttonbush',
+    habitatTags: ['wetland', 'rain-garden', 'moist'],
+  },
+  {
+    id: 'ironweed',
+    name: 'Ironweed',
+    scientificName: 'Vernonia fasciculata',
+    emoji: '💜',
+    shortDesc: 'Ironweed blooms from late July through September with flat-topped clusters of disc florets — no ray petals, uninterrupted deep purple. A monarch emerging from chrysalis in late August carries almost no fat; it builds to roughly 125 milligrams of abdominal fat before leaving for Mexico. Ironweed peaks during the departure window.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/148204368/large.jpg',
+    photoCredit: 'crwrcwamt / iNaturalist · CC0',
+    page: 'ironweed',
+    habitatTags: ['meadow', 'moist-prairie', 'garden'],
+  },
+  {
+    id: 'golden-alexanders',
+    name: 'Golden Alexanders',
+    scientificName: 'Zizia aurea',
+    emoji: '🌼',
+    shortDesc: 'Andrena ziziae is a small mining bee named after this plant. She collects pollen exclusively from Zizia flowers and emerges from her underground nest in April, timed to when Golden Alexanders opens. Black Swallowtail butterflies lay eggs on its leaves — the same caterpillar that appears on garden dill, here on its native host plant.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/269029704/large.jpeg',
+    photoCredit: 'benclary1 / iNaturalist · CC0',
+    page: 'golden-alexanders',
+    habitatTags: ['woodland-edge', 'garden', 'moist'],
+  },
+  {
+    id: 'partridge-pea',
+    name: 'Partridge Pea',
+    scientificName: 'Chamaecrista fasciculata',
+    emoji: '🌿',
+    shortDesc: 'Partridge Pea carries nectar glands on its leaf stems, not inside its flowers — ants drink from them and then patrol the foliage. Cloudless Sulphur caterpillars eat the leaves and can only complete their larval development on Chamaecrista; no other plant substitutes. The caterpillar shifts color to match the plant part it is eating.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/41097500/large.jpg',
+    photoCredit: 'rrcreech52 / iNaturalist · CC0',
+    page: 'partridge-pea',
+    habitatTags: ['meadow', 'dry-sunny', 'disturbed'],
+  },
+  {
+    id: 'prairie-dropseed',
+    name: 'Prairie Dropseed',
+    scientificName: 'Sporobolus heterolepis',
+    emoji: '🌾',
+    shortDesc: 'Prairie Dropseed seeds ripen in September inside a thin, oily husk — walking past the plant on a warm afternoon releases a fragrance that smells like coriander or buttered popcorn. Leonard\'s Skipper, a grass butterfly that flies only in late August and September, lays eggs on its blades; the larvae hatch and overwinter at the crown.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/570092674/large.jpg',
+    photoCredit: 'omcelroy / iNaturalist · CC0',
+    page: 'prairie-dropseed',
+    habitatTags: ['meadow', 'prairie', 'dry-sunny'],
+  },
+  {
+    id: 'virginia-bluebell',
+    name: 'Virginia Bluebell',
+    scientificName: 'Mertensia virginica',
+    emoji: '💙',
+    shortDesc: 'Virginia Bluebell flowers in April, turns yellow by May, and disappears by June — a spring ephemeral that stores the season\'s energy underground and goes dormant. Ruby-throated Hummingbirds arrive in mid-April; before Wild Columbine opens, this is often the only native nectar source in a woodland garden that week.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/364590990/large.jpg',
+    photoCredit: 'lemasney / iNaturalist · CC0',
+    page: 'virginia-bluebell',
+    habitatTags: ['woodland', 'moist', 'spring'],
+  },
+  {
+    id: 'wild-columbine',
+    name: 'Wild Columbine',
+    scientificName: 'Aquilegia canadensis',
+    emoji: '🌺',
+    shortDesc: 'Wild Columbine opens red, downward-facing spurred flowers in April — bees see poorly in red wavelengths, but Ruby-throated Hummingbirds see them clearly. The Columbine Duskywing skipper lays eggs on its leaves and flies in a single annual generation of only a few weeks, with no substitute host plant in the eastern United States.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/488878925/large.jpg',
+    photoCredit: 'ryman56 / iNaturalist · CC0',
+    page: 'wild-columbine',
+    habitatTags: ['woodland-edge', 'rocky', 'part-shade'],
+  },
+  {
+    id: 'new-jersey-tea',
+    name: 'New Jersey Tea',
+    scientificName: 'Ceanothus americanus',
+    emoji: '🌿',
+    shortDesc: 'The Mottled Duskywing lays her eggs on New Jersey Tea leaves — the only native Ceanothus in eastern North America — and her caterpillars eat that plant and no other. New Jersey Tea blooms from late May through June, before Common Milkweed opens, providing nectar when early-summer butterflies are foraging but most native plants have not started.',
+    status: 'declining',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/522976006/large.jpg',
+    photoCredit: 'kent_ozment / iNaturalist · CC0',
+    page: 'new-jersey-tea',
+    habitatTags: ['woodland-edge', 'dry-sunny', 'shrub'],
+  },
+  {
+    id: 'winterberry-holly',
+    name: 'Winterberry Holly',
+    scientificName: 'Ilex verticillata',
+    emoji: '🔴',
+    shortDesc: 'Winterberry drops its leaves in October and exposes clusters of red berries that were hidden all summer. Cedar Waxwing flocks can strip a fruiting plant in 15 to 20 minutes; the Hermit Thrush moves in after the flock leaves and works the stems they bypassed. A female plant sets no fruit without a male plant within 50 feet.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/333013046/large.jpeg',
+    photoCredit: 'terrikoontz / iNaturalist · CC0',
+    page: 'winterberry-holly',
+    habitatTags: ['wetland', 'shrub', 'moist'],
+  },
+]
+
+// ───────────────────────────────────────────────────────────────────────────────
+// Sub-components
+// ───────────────────────────────────────────────────────────────────────────────
+
+const STATUS_STYLES: Record<Status, { badge: string; label: string }> = {
+  common:     { badge: 'bg-emerald-100 text-emerald-800', label: 'Stable' },
+  declining:  { badge: 'bg-amber-100 text-amber-800',     label: 'Declining' },
+  endangered: { badge: 'bg-red-100 text-red-800',         label: 'Endangered' },
+}
+
+function SpeciesCard({
+  species,
+  onNavigate,
+}: {
+  species: Species
+  onNavigate: (page: Page) => void
+}) {
+  const { badge, label } = STATUS_STYLES[species.status]
+
+  return (
+    <article className="bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-200">
+      <div className="relative h-36 overflow-hidden bg-stone-100">
+        <img
+          src={species.photo}
+          alt={species.name}
+          onError={(e) => {
+            ;(e.target as HTMLImageElement).src = PHOTO_FALLBACK
+          }}
+          className="w-full h-full object-cover object-center"
+          loading="lazy"
+        />
+        <span
+          className={`absolute top-2 right-2 px-2 py-0.5 rounded-full text-xs font-semibold ${badge}`}
+        >
+          {label}
+        </span>
+      </div>
+
+      <div className="p-4 flex flex-col flex-1 gap-3">
+        <div>
+          <h3 className="text-base font-semibold text-stone-900 leading-snug">
+            {species.emoji} {species.name}
+          </h3>
+          <p className="text-xs italic text-stone-400 mt-0.5">{species.scientificName}</p>
+        </div>
+
+        <p className="text-sm text-stone-600 leading-relaxed flex-1">{species.shortDesc}</p>
+
+        <ul className="flex flex-wrap gap-1.5" aria-label="Habitat tags">
+          {species.habitatTags.map((tag) => (
+            <li
+              key={tag}
+              className="px-2 py-0.5 bg-green-50 text-green-700 rounded-full text-xs font-medium"
+            >
+              {tag}
+            </li>
+          ))}
+        </ul>
+
+        {species.page ? (
+          <button
+            onClick={() => onNavigate(species.page as Page)}
+            className="mt-auto w-full py-2 px-4 rounded-lg bg-green-700 hover:bg-green-800 text-white text-sm font-semibold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700"
+          >
+            Learn more →
+          </button>
+        ) : (
+          <div className="mt-auto w-full py-2 px-4 rounded-lg bg-stone-100 text-stone-400 text-sm font-semibold text-center cursor-not-allowed">
+            Page coming soon
+          </div>
+        )}
+      </div>
+    </article>
+  )
+}
+
+// ───────────────────────────────────────────────────────────────────────────────
+// Main page
+// ───────────────────────────────────────────────────────────────────────────────
+
+type FilterValue = Status | 'all'
+
+const DECLINING_COUNT  = SPECIES.filter(s => s.status === 'declining').length
+const ENDANGERED_COUNT = SPECIES.filter(s => s.status === 'endangered').length
+const COMMON_COUNT     = SPECIES.filter(s => s.status === 'common').length
+
+const FILTER_OPTIONS: { value: FilterValue; label: string }[] = [
+  { value: 'all',        label: `All (${SPECIES.length})` },
+  { value: 'declining',  label: `Declining (${DECLINING_COUNT})` },
+  { value: 'endangered', label: `Endangered (${ENDANGERED_COUNT})` },
+  { value: 'common',     label: `Stable (${COMMON_COUNT})` },
+]
+
+export default function SpeciesGallery({ onNavigate }: { onNavigate: (page: Page) => void }) {
+  const [filter, setFilter] = useState<FilterValue>('all')
+
+  const displayed = filter === 'all' ? SPECIES : SPECIES.filter((s) => s.status === filter)
+
+  return (
+    <div className="max-w-5xl mx-auto px-4 py-12 space-y-10">
+      <header className="text-center space-y-3">
+        <h1 className="text-3xl md:text-4xl font-bold text-stone-900">
+          Wildlife Worth Protecting
+        </h1>
+        <p className="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
+          These species live — or once lived — in backyards across the eastern United States.
+          Each one tells you something about the health of the land around it.
+        </p>
+      </header>
+
+      <div className="flex flex-wrap gap-2 justify-center" role="group" aria-label="Filter by conservation status">
+        {FILTER_OPTIONS.map(({ value, label }) => (
+          <button
+            key={value}
+            onClick={() => setFilter(value)}
+            className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-colors duration-150 ${
+              filter === value
+                ? 'bg-green-700 text-white border-green-700'
+                : 'bg-white text-stone-600 border-stone-200 hover:border-green-400'
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      <section aria-label="Species gallery">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
+          {displayed.map((species) => (
+            <li key={species.id}>
+              <SpeciesCard species={species} onNavigate={onNavigate} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-label="Photo credits" className="border-t border-stone-200 pt-8">
+        <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wide mb-3">
+          Photo Credits
+        </h2>
+        <ul className="text-xs text-stone-400 space-y-1">
+          {SPECIES.filter((s) => s.photo !== PHOTO_FALLBACK).map((s) => (
+            <li key={s.id}>
+              <strong>{s.name}</strong>: {s.photoCredit}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4 text-xs text-stone-400">
+          All photographs are sourced from Wikimedia Commons or iNaturalist under Creative Commons
+          licenses (CC BY 2.0, CC BY-SA 3.0, CC BY-SA 4.0, or CC BY-NC 4.0). No modifications were made.
+        </p>
+      </section>
+    </div>
+  )
+}
