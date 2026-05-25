@@ -1318,6 +1318,18 @@ const SPECIES: Species[] = [
     habitatTags: ['legume-garden', 'open-meadow', 'woodland-edge'],
   },
   {
+    id: 'wild-indigo-duskywing',
+    name: 'Wild Indigo Duskywing',
+    scientificName: 'Erynnis baptisiae',
+    emoji: '🦋',
+    shortDesc: 'A dark brown skipper butterfly on the wing from late April through July. The female finds Baptisia leaves by tasting the surface with chemoreceptors in her feet — she lays one egg per leaflet across several plants rather than concentrating on one. When Wild Blue Indigo disappears from a county, the Wild Indigo Duskywing disappears with it.',
+    status: 'uncommon',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/227093239/large.jpg',
+    photoCredit: 'tezster / CC BY-NC via iNaturalist',
+    page: 'wild-indigo-duskywing' as Page,
+    habitatTags: ['open-meadow', 'garden', 'woodland-edge'],
+  },
+  {
     id: 'prairie-dropseed',
     name: 'Prairie Dropseed',
     scientificName: 'Sporobolus heterolepis',
