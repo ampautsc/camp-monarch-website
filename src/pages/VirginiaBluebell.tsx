@@ -160,6 +160,12 @@ export default function VirginiaBluebell({ onNavigate }: VirginiaBluebellProps) 
                 — blooms two to four weeks after Virginia Bluebell, carrying the early-spring nectar sequence forward for hummingbirds and Spring Azures
               </li>
               <li>
+                <button className="link-button" onClick={() => onNavigate('golden-alexanders')}>
+                  Golden Alexanders
+                </button>{' '}
+                — co-blooms through April and May; while Virginia Bluebell draws hummingbirds and bumblebee queens to the woodland edge, Golden Alexanders opens in sunnier spots for Black Swallowtail larvae and the specialist mining bee <em>Andrena ziziae</em> — two plants covering the same weeks in different microhabitats
+              </li>
+              <li>
                 <button className="link-button" onClick={() => onNavigate('native-bees')}>
                   Native Bees
                 </button>{' '}
