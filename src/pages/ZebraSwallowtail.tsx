@@ -245,7 +245,11 @@ export default function ZebraSwallowtail({ onNavigate }: ZebraSwallowtailProps) 
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a Plant
             </button>
-            {' '}or explore all the butterflies the gallery contains in{' '}
+            , learn what makes the host tree work in{' '}
+            <button className="link-button" onClick={() => onNavigate('pawpaw')}>
+              Pawpaw
+            </button>
+            , or explore all the butterflies the gallery contains in{' '}
             <button className="link-button" onClick={() => onNavigate('species-gallery')}>
               Species Gallery
             </button>
