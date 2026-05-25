@@ -1306,6 +1306,18 @@ const SPECIES: Species[] = [
     habitatTags: ['legume-garden', 'open-meadow', 'woodland-edge'],
   },
   {
+    id: 'maryland-senna',
+    name: 'Maryland Senna',
+    scientificName: 'Senna marilandica',
+    emoji: '🌿',
+    shortDesc: 'A native perennial legume that blooms in July with yellow flower clusters. Cloudless Sulphur caterpillars are green when eating the leaves and yellow when eating the flowers — the same caterpillar, on the same stem, depending on what it is currently digesting. Maryland Senna extends into the Southeast where Wild Senna does not reach, hosting the same three sulphur species.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/24375937/large.jpg',
+    photoCredit: 'sandywolkenberg / CC BY via iNaturalist',
+    page: 'maryland-senna' as Page,
+    habitatTags: ['legume-garden', 'open-meadow', 'woodland-edge'],
+  },
+  {
     id: 'prairie-dropseed',
     name: 'Prairie Dropseed',
     scientificName: 'Sporobolus heterolepis',
