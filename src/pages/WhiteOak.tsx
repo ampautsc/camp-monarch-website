@@ -148,7 +148,10 @@ export default function WhiteOak({ onNavigate }: WhiteOakProps) {
         <section aria-labelledby="caterpillars-heading">
           <h2 id="caterpillars-heading">Juvenal&apos;s Duskywing and 556 other caterpillar species that need this tree to complete their life cycle</h2>
           <p>
-            Juvenal&apos;s Duskywing (<em>Erynnis juvenalis</em>) is a small brown skipper
+            <button className="link-button" onClick={() => onNavigate('juvenals-duskywing')}>
+              Juvenal&apos;s Duskywing
+            </button>{' '}
+            (<em>Erynnis juvenalis</em>) is a small brown skipper
             butterfly whose caterpillars feed almost exclusively on oak leaves. In the
             eastern US, a Duskywing caterpillar rolls a white oak leaf into a tube, anchors
             it at the base with silk, and eats from inside while retreating into the tube
@@ -226,6 +229,14 @@ export default function WhiteOak({ onNavigate }: WhiteOakProps) {
               &mdash; arrives at the oak the week new leaves expand in April; the pair&apos;s
               350 to 570 daily caterpillar trips to the nest draw almost entirely from
               oak-feeding moth larvae during the May nestling window
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('juvenals-duskywing')}>
+                Juvenal&apos;s Duskywing
+              </button>{' '}
+              &mdash; a spring skipper whose caterpillars roll white oak leaves into silk
+              tubes from May through summer and overwinter as larvae inside fallen rolled
+              leaves; raking the leaf layer beneath the oak removes the overwintering cohort
             </li>
             <li>
               <button className="neighbor-link" onClick={() => onNavigate('cecropia-moth')}>
