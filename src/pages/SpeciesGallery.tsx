@@ -1079,6 +1079,18 @@ const SPECIES: Species[] = [
     shortDesc: 'The Olympia Marble flies for six weeks each spring — April to early June — on limestone outcrops, cedar glades, and alvar pavements. By July, not a single adult remains anywhere in its range. The species exists through summer and winter as a pupa on a rock cress stem, waiting for the following April.',
   },
   {
+    id: 'orange-sulphur',
+    name: 'Orange Sulphur',
+    scientificName: 'Colias eurytheme',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/2457189/large.jpg',
+    photoCredit: 'Bill Keim / CC BY via iNaturalist',
+    page: 'orange-sulphur' as Page,
+    status: 'stable' as const,
+    habitatTags: ['open-meadow', 'clover-field'],
+    shortDesc: 'Before 1850, the Orange Sulphur was primarily a western species. Alfalfa farming spread east across North America, and the butterfly followed the crop. Today it is one of the most common butterflies in the eastern United States, breeding in clover patches and legume fields from March to November.',
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
@@ -1296,7 +1308,7 @@ const SPECIES: Species[] = [
   },
 ]
 
-// ───────────────────────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────00─────────────────────────────────────
 // Sub-components
 // ───────────────────────────────────────────────────────────────────────────────
 
