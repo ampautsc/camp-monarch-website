@@ -240,6 +240,16 @@ export default function MourningCloak({ onNavigate }: MourningCloakProps) {
               winter roosts in the bark crevices and screech-owl nesting in the cavities
               at the same time
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry')}>
+                Hackberry
+              </button>{' '}
+              &mdash; a documented caterpillar host in Midwest yards alongside willow and
+              birch; Mourning Cloak females lay egg rings on hackberry twigs in May and
+              June; adult Mourning Cloaks and Hackberry Emperor caterpillars overwinter on
+              the same large-diameter hackberry trunks — the Mourning Cloak in bark crevices,
+              the Hackberry Emperor in the leaf litter below
+            </li>
           </ul>
         </section>
 
