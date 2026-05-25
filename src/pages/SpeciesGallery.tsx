@@ -957,6 +957,18 @@ const SPECIES: Species[] = [
     shortDesc: 'Adult overwinters as a butterfly behind loose bark on large-diameter trees from October through March. A single silver curved line on the hindwing underside — a comma without the dot of the Question Mark — is the only field mark separating this species from its closest relative. Caterpillars use stinging nettle and hops.',
   },
   {
+    id: 'baltimore-checkerspot',
+    name: 'Baltimore Checkerspot',
+    scientificName: 'Euphydryas phaeton',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/210425087/large.jpg',
+    photoCredit: 'Alan Kneidel / CC BY via iNaturalist',
+    page: 'baltimore-checkerspot' as Page,
+    status: 'endangered' as const,
+    habitatTags: ['wetland', 'turtlehead', 'stream-edge'],
+    shortDesc: "Maryland's state insect lays 300 to 700 eggs in a single clutch on white turtlehead — no other plant supports a colony. Caterpillars overwinter as a group inside a communal silk nest at the base of the plant from August through April. Listed as threatened or endangered in several states.",
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
