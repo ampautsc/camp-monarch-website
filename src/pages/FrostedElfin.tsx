@@ -208,6 +208,16 @@ export default function FrostedElfin({ onNavigate }: FrostedElfinProps) {
               carry several caterpillars simultaneously
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('wild-lupine')}>
+                Wild Lupine
+              </button>{' '}
+              &mdash; the primary host plant in northeast pine barrens; populations in New Jersey,
+              Long Island, and coastal New England use <em>Lupinus perennis</em> flowers and pods
+              in the same role that Wild Blue Indigo plays in the midwest; grows in sandy, acidic
+              full-sun soils; also the only host plant for the Karner Blue, a federally endangered
+              butterfly
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('wild-indigo-duskywing')}>
                 Wild Indigo Duskywing
               </button>{' '}
@@ -249,10 +259,14 @@ export default function FrostedElfin({ onNavigate }: FrostedElfinProps) {
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>More than 25 states list the Frosted Elfin as endangered — and the remaining populations are in places where someone kept the host plant in the ground.</strong>{' '}
-            Plant Wild Blue Indigo, let it bloom, and leave the litter beneath it alone. Find the
-            host plant at{' '}
+            Plant Wild Blue Indigo or Wild Lupine, let it bloom, and leave the litter beneath it alone. Find the
+            host plants at{' '}
             <button className="link-button" onClick={() => onNavigate('wild-blue-indigo')}>
               Wild Blue Indigo
+            </button>
+            {' '}and{' '}
+            <button className="link-button" onClick={() => onNavigate('wild-lupine')}>
+              Wild Lupine
             </button>
             {' '}or browse the full species network in the{' '}
             <button className="link-button" onClick={() => onNavigate('species-gallery')}>
