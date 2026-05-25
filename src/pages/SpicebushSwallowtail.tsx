@@ -254,6 +254,10 @@ export default function SpicebushSwallowtail({ onNavigate }: SpicebushSwallowtai
         <section aria-labelledby="connections-heading">
           <h2 id="connections-heading">Related pages</h2>
           <div className="neighbor-grid">
+            <button className="neighbor-card" onClick={() => onNavigate('spicebush')}>
+              <span className="neighbor-name">Spicebush</span>
+              <span className="neighbor-note">The preferred host plant — a native understory shrub that blooms yellow in March before the canopy leafs out, hosts Spicebush Swallowtail caterpillars in their silk-sealed leaf tubes in July, and feeds migrating thrushes on high-fat red berries in September</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('tiger-swallowtail')}>
               <span className="neighbor-name">Eastern Tiger Swallowtail</span>
               <span className="neighbor-note">Also a Batesian mimic of the Pipevine Swallowtail — but only dark-form females carry the pattern, not males or yellow-form females. Both species puddle at wet soil for minerals and overlap on native nectar plants from June through September</span>
