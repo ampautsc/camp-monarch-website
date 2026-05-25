@@ -1509,6 +1509,18 @@ const SPECIES: Species[] = [
     page: null,
     habitatTags: ['floodplain', 'woodland', 'spring-ephemeral'],
   },
+  {
+    id: 'juvenals-duskywing',
+    name: "Juvenal's Duskywing",
+    scientificName: 'Erynnis juvenalis',
+    emoji: '🦋',
+    shortDesc: "A dark brown skipper on the wing in a single brood from late April through June — gone by midsummer. The caterpillar rolls a white oak leaf into a silk tube and feeds inside it through summer, then overwinters as a larva in fallen rolled leaves on the forest floor. Raking those leaves in autumn removes the overwintering cohort before it can pupate in spring.",
+    status: 'declining',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/17117409/large.jpg',
+    photoCredit: 'mellis / CC BY via iNaturalist',
+    page: 'juvenals-duskywing' as Page,
+    habitatTags: ['woodland', 'woodland-edge', 'leaf-litter'],
+  },
 ]
 
 interface SpeciesGalleryProps {
