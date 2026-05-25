@@ -164,6 +164,7 @@ export const ALL_PAGE_SLUGS = [
   'spring-azure',
   'checkered-white',
   'olympia-marble',
+  'orange-sulphur',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
