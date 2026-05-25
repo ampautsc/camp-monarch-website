@@ -160,6 +160,7 @@ import LittleYellow from './pages/LittleYellow'
 import ZebraSwallowtail from './pages/ZebraSwallowtail'
 import CoralHairstreak from './pages/CoralHairstreak'
 import WildBlueIndigo from './pages/WildBlueIndigo'
+import MarylandSenna from './pages/MarylandSenna'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -355,6 +356,7 @@ function App() {
       case 'zebra-swallowtail':     return <ZebraSwallowtail onNavigate={navigateTo} />
       case 'coral-hairstreak':      return <CoralHairstreak onNavigate={navigateTo} />
       case 'wild-blue-indigo':      return <WildBlueIndigo onNavigate={navigateTo} />
+      case 'maryland-senna':        return <MarylandSenna onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
