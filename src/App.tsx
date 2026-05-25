@@ -151,6 +151,7 @@ import SpringAzure from './pages/SpringAzure'
 import CheckeredWhite from './pages/CheckeredWhite'
 import OrangeSulphur from './pages/OrangeSulphur'
 import CloudedSulphur from './pages/CloudedSulphur'
+import WildSenna from './pages/WildSenna'
 import OlympiaMarble from './pages/OlympiaMarble'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
@@ -237,7 +238,7 @@ export default function App() {
       case 'american-tree-sparrow': return <AmericanTreeSparrow onNavigate={navigateTo} />
       case 'eastern-chipmunk': return <EasternChipmunk onNavigate={navigateTo} />
       case 'spring-peeper': return <SpringPeeper onNavigate={navigateTo} />
-      case 'wood-frog':     return <WoodFrog onNavigate={navigateTo} />
+case 'wood-frog':     return <WoodFrog onNavigate={navigateTo} />
       case 'toad': return <AmericanToad onNavigate={navigateTo} />
       case 'little-brown-bat': return <LittleBrownBat onNavigate={navigateTo} />
       case 'wood-thrush': return <WoodThrush onNavigate={navigateTo} />
@@ -317,6 +318,7 @@ export default function App() {
       case 'checkered-white':  return <CheckeredWhite onNavigate={navigateTo} />
       case 'orange-sulphur': return <OrangeSulphur onNavigate={navigateTo} />
       case 'clouded-sulphur': return <CloudedSulphur onNavigate={navigateTo} />
+      case 'wild-senna':   return <WildSenna onNavigate={navigateTo} />
       case 'olympia-marble':    return <OlympiaMarble onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
