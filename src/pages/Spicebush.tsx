@@ -285,6 +285,16 @@ export default function Spicebush({ onNavigate }: SpicebushProps) {
               serviceberry ripens in June, spicebush ripens in September &mdash; the two planted
               together cover fruiting across the entire breeding and migration season
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('sassafras')}>
+                Sassafras
+              </button>{' '}
+              &mdash; grows in the same dry-to-mesic forest edges and shrubby yard margins as
+              spicebush; its leaves carry an anise scent that draws spicebush swallowtails for
+              egg-laying — the same caterpillar that feeds on spicebush will switch to sassafras
+              leaves when both shrubs grow in proximity, effectively doubling the available host
+              material in a single planting
+            </li>
           </ul>
         </section>
       </div>
