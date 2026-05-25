@@ -247,6 +247,13 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
             </button>
             {' '}forages the same yard at the same hours &mdash; a ground-level tick predator
             working the brush pile while the owl hunts canopy edges.
+            {' '}The{' '}
+            <button className="link-button" onClick={() => onNavigate('striped-skunk')}>
+              striped skunk
+            </button>
+            {' '}covers the same ground on the same schedule, drilling turf for Japanese
+            beetle grubs and excavating yellowjacket nests — its thick fur absorbs the
+            stings that would stop any other mammal at that nest entrance.
           </p>
         </div>
       </div>
