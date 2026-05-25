@@ -1294,6 +1294,18 @@ const SPECIES: Species[] = [
     habitatTags: ['legume-garden', 'woodland-edge', 'meadow'],
   },
   {
+    id: 'wild-blue-indigo',
+    name: 'Wild Blue Indigo',
+    scientificName: 'Baptisia australis',
+    emoji: '🌿',
+    shortDesc: 'A native legume that blooms in May with blue-violet flower spikes before most native wildflowers open. The Wild Indigo Duskywing lays its eggs on Baptisia leaves and on no other plant — its population in any county tracks how much Wild Blue Indigo remains. The taproot reaches several feet deep and the same crown returns each spring for decades.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/8193465/large.jpg',
+    photoCredit: 'aarongunnar / CC BY via iNaturalist',
+    page: 'wild-blue-indigo' as Page,
+    habitatTags: ['legume-garden', 'open-meadow', 'woodland-edge'],
+  },
+  {
     id: 'prairie-dropseed',
     name: 'Prairie Dropseed',
     scientificName: 'Sporobolus heterolepis',
