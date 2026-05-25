@@ -58,7 +58,11 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
             comb-like serrations on the leading edge of their primary feathers
             that break up turbulence before it becomes audible. Their prey list
             is long: mice, voles, shrews, small birds, earthworms, crayfish,
-            large insects, and occasionally small fish. They cache surplus prey
+            large insects, occasionally small fish, and juvenile{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-cottontail')}>
+              cottontails
+            </button>
+            {' '}in their first weeks above ground. They cache surplus prey
             in tree cavities for lean nights, returning to the same hollow the
             way a person returns to a pantry.
           </p>
