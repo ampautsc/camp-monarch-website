@@ -158,6 +158,7 @@ import GrayHairstreak from './pages/GrayHairstreak'
 import SleepyOrange from './pages/SleepyOrange'
 import LittleYellow from './pages/LittleYellow'
 import ZebraSwallowtail from './pages/ZebraSwallowtail'
+import CoralHairstreak from './pages/CoralHairstreak'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -330,6 +331,7 @@ export default function App() {
       case 'sleepy-orange': return <SleepyOrange onNavigate={navigateTo} />
       case 'little-yellow': return <LittleYellow onNavigate={navigateTo} />
       case 'zebra-swallowtail': return <ZebraSwallowtail onNavigate={navigateTo} />
+      case 'coral-hairstreak': return <CoralHairstreak onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
