@@ -128,6 +128,7 @@ import HummingbirdClearwingMoth from './pages/HummingbirdClearwingMoth'
 import WhiteOak from './pages/WhiteOak'
 import BlackCherry from './pages/BlackCherry'
 import Serviceberry from './pages/Serviceberry'
+import Pawpaw from './pages/Pawpaw'
 import Spicebush from './pages/Spicebush'
 import Elderberry from './pages/Elderberry'
 import VirginiaCreeper from './pages/VirginiaCreeper'
@@ -328,6 +329,7 @@ case 'little-brown-bat':      return <LittleBrownBat onNavigate={navigateTo} />
       case 'white-oak':             return <WhiteOak onNavigate={navigateTo} />
       case 'black-cherry':          return <BlackCherry onNavigate={navigateTo} />
       case 'serviceberry':          return <Serviceberry onNavigate={navigateTo} />
+      case 'pawpaw':                return <Pawpaw onNavigate={navigateTo} />
       case 'spicebush':             return <Spicebush onNavigate={navigateTo} />
       case 'elderberry':            return <Elderberry onNavigate={navigateTo} />
       case 'virginia-creeper':      return <VirginiaCreeper onNavigate={navigateTo} />
