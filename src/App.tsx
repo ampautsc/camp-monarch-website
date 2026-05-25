@@ -143,6 +143,7 @@ import EasternComma from './pages/EasternComma'
 import BaltimoreCheckerspot from './pages/BaltimoreCheckerspot'
 import CloudlessSulphur from './pages/CloudlessSulphur'
 import AmericanLady from './pages/AmericanLady'
+import CommonBuckeye from './pages/CommonBuckeye'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -300,6 +301,7 @@ export default function App() {
       case 'baltimore-checkerspot': return <BaltimoreCheckerspot onNavigate={navigateTo} />
       case 'cloudless-sulphur': return <CloudlessSulphur onNavigate={navigateTo} />
       case 'american-lady':     return <AmericanLady onNavigate={navigateTo} />
+      case 'common-buckeye':    return <CommonBuckeye onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
