@@ -1067,6 +1067,18 @@ const SPECIES: Species[] = [
     shortDesc: 'Before 1860, the Checkered White was the native white butterfly of eastern fields and gardens. Cabbage White arrived and spread from Quebec to California in forty years. The Checkered White retreated to coastal barrens and dry prairie remnants — where it still flies.',
   },
   {
+    id: 'olympia-marble',
+    name: 'Olympia Marble',
+    scientificName: 'Euchloe olympia',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/9829593/large.jpeg',
+    photoCredit: 'Alexander Harman / CC BY-NC via iNaturalist',
+    page: 'olympia-marble' as Page,
+    status: 'declining' as const,
+    habitatTags: ['rocky-outcrop', 'cedar-glade'],
+    shortDesc: 'The Olympia Marble flies for six weeks each spring — April to early June — on limestone outcrops, cedar glades, and alvar pavements. By July, not a single adult remains anywhere in its range. The species exists through summer and winter as a pupa on a rock cress stem, waiting for the following April.',
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
