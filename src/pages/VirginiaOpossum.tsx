@@ -254,6 +254,50 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
           </p>
         </section>
 
+        <section aria-labelledby="connections-heading">
+          <h2 id="connections-heading">The raptor above, the snake at ground level, and the brush pile they all share</h2>
+          <ul className="neighbor-list">
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('red-tailed-hawk')}>
+                Red-tailed Hawk
+              </button>{' '}
+              &mdash; red-tails and opossums move through the same suburban food chain &mdash;
+              the hawk hunts mice and voles in daylight from elevated perches, the opossum hunts
+              the ground layer at night; both accumulate anticoagulant rodenticide from the same
+              suburban mouse population, and both can be killed by a single week of bait-station
+              use in a neighboring yard
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('eastern-screech-owl')}>
+                Eastern Screech Owl
+              </button>{' '}
+              &mdash; the screech owl hunts the same yard the opossum forages each night,
+              working canopy edges and fence lines from dusk while the opossum works the ground;
+              both are nocturnal, both rely on a chemical-free prey base, and both face secondary
+              rodenticide poisoning from the same contaminated mice and voles in the same yard
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('garter-snake')}>
+                Garter Snake
+              </button>{' '}
+              &mdash; garter snakes and opossums both forage the leaf litter and brush pile zone
+              at the yard&apos;s ground level; the snake tracks earthworms and slugs by chemical
+              trace, the opossum cleans ticks and invertebrates from the same surface layer; a
+              yard with active garter snakes and opossums is carrying an intact invertebrate food
+              web in the top few inches of soil
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('eastern-cottontail')}>
+                Eastern Cottontail
+              </button>{' '}
+              &mdash; cottontails and opossums share the same brush piles and dense shrub edges
+              as cover; the cottontail uses them as daytime escape structure and nesting ground,
+              the opossum uses them as nighttime den sites; a yard with a brush pile and unmowed
+              edges supports both simultaneously, with no competing resource needs
+            </li>
+          </ul>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Want to build habitat that brings opossums back?</strong>{' '}
