@@ -9,21 +9,20 @@ export default function EasternComma({ onNavigate }: EasternCommaProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Eastern_Comma_%28Polygonia_comma%29.jpg"
-          alt="Eastern Comma butterfly (Polygonia comma) with wings open — orange and black upper wings with ragged, scalloped margins, resting on rough bark"
+          src="https://inaturalist-open-data.s3.amazonaws.com/photos/334405655/large.jpg"
+          alt="Eastern Comma butterfly (Polygonia comma) with wings open — orange and black upper wings with irregular dark spots and ragged, scalloped outer wing margins"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
           loading="eager"
           onError={(e) => {
             const img = e.currentTarget
             img.onerror = null
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Eastern_Comma_%28Polygonia_comma%29.jpg/960px-Eastern_Comma_%28Polygonia_comma%29.jpg'
+            img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/52520976/large.jpg'
           }}
         />
         <div className="species-hero-image-credit">
-          Photo: D. Gordon E. Robertson&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Eastern_Comma_(Polygonia_comma).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
-          &nbsp;via Wikimedia Commons
+          Photo: Richard Littauer&nbsp;·&nbsp;
+          <a href="https://www.inaturalist.org/photos/334405655" target="_blank" rel="noopener noreferrer">CC BY via iNaturalist</a>
         </div>
       </div>
 
@@ -77,13 +76,13 @@ export default function EasternComma({ onNavigate }: EasternCommaProps) {
           <h2 id="caterpillar-heading">Stinging nettle and hops — the caterpillar builds a leaf tent and feeds inside it</h2>
           <figure className="species-content-photo species-content-photo--right">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Eastern_Comma_%28Polygonia_comma%29.jpg/480px-Eastern_Comma_%28Polygonia_comma%29.jpg"
-              alt="Eastern Comma butterfly (Polygonia comma) showing the cryptic underside — mottled brown and gray with the silver comma mark visible on the hindwing"
+              src="https://inaturalist-open-data.s3.amazonaws.com/photos/52520986/large.jpg"
+              alt="Eastern Comma butterfly (Polygonia comma) with wings folded showing the cryptic mottled gray-brown underside — the silver comma mark on the hindwing underside is a single curved line with no dot beneath it"
               loading="lazy"
               onError={(e) => {
                 const img = e.currentTarget
                 img.onerror = null
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Eastern_Comma_%28Polygonia_comma%29.jpg'
+                img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/52520976/large.jpg'
               }}
             />
             <figcaption>
@@ -91,7 +90,7 @@ export default function EasternComma({ onNavigate }: EasternCommaProps) {
               dead bark and wood grain. The silver comma on the hindwing underside — a single
               curved line with no dot beneath it — is visible only in direct light at close
               range. An identical-looking butterfly with a dot below the comma is a Question Mark.
-              <span className="photo-credit"> Photo: D. Gordon E. Robertson · CC BY-SA 3.0 via Wikimedia Commons</span>
+              <span className="photo-credit"> CC0 public domain via iNaturalist</span>
             </figcaption>
           </figure>
           <p>
