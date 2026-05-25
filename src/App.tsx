@@ -56,6 +56,7 @@ import DarkEyedJunco from './pages/DarkEyedJunco'
 import AmericanTreeSparrow from './pages/AmericanTreeSparrow'
 import EasternChipmunk from './pages/EasternChipmunk'
 import EasternGraySquirrel from './pages/EasternGraySquirrel'
+import EasternCottontail from './pages/EasternCottontail'
 import SpringPeeper from './pages/SpringPeeper'
 import WoodFrog from './pages/WoodFrog'
 import AmericanToad from './pages/AmericanToad'
@@ -266,6 +267,7 @@ case 'plants':                return <Plants onNavigate={navigateTo} />
       case 'american-tree-sparrow': return <AmericanTreeSparrow onNavigate={navigateTo} />
       case 'eastern-chipmunk':      return <EasternChipmunk onNavigate={navigateTo} />
       case 'eastern-gray-squirrel': return <EasternGraySquirrel onNavigate={navigateTo} />
+      case 'eastern-cottontail':      return <EasternCottontail onNavigate={navigateTo} />
       case 'spring-peeper':         return <SpringPeeper onNavigate={navigateTo} />
       case 'wood-frog':             return <WoodFrog onNavigate={navigateTo} />
       case 'toad':                  return <AmericanToad onNavigate={navigateTo} />
