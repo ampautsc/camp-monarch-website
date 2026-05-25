@@ -186,8 +186,11 @@ export default function AmericanBumbleBee({ onNavigate }: AmericanBumbleBeeProps
           <ol className="step-list">
             <li>
               <strong>Plant native flowers that bloom from April through October.</strong>{' '}
-              Early-season queens need early bloom: native willows, wild columbine, and
-              redbud flower when queens first emerge. Mid-season workers need
+              Early-season queens need early bloom: native willows, wild columbine, and{' '}
+              <button className="link-button" onClick={() => onNavigate('redbud')}>
+                Eastern Redbud
+              </button>{' '}
+              flower when queens first emerge. Mid-season workers need
               July&ndash;August peak: milkweed, wild bergamot, coneflowers, black-eyed
               Susan. Late-season new queens need fall fuel: goldenrod and native asters.
               Mix species across bloom times so the colony has protein every week of the season.
