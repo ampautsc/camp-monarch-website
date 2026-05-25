@@ -238,7 +238,7 @@ export default function App() {
       case 'american-tree-sparrow': return <AmericanTreeSparrow onNavigate={navigateTo} />
       case 'eastern-chipmunk': return <EasternChipmunk onNavigate={navigateTo} />
       case 'spring-peeper': return <SpringPeeper onNavigate={navigateTo} />
-case 'wood-frog':     return <WoodFrog onNavigate={navigateTo} />
+      case 'wood-frog':     return <WoodFrog onNavigate={navigateTo} />
       case 'toad': return <AmericanToad onNavigate={navigateTo} />
       case 'little-brown-bat': return <LittleBrownBat onNavigate={navigateTo} />
       case 'wood-thrush': return <WoodThrush onNavigate={navigateTo} />
