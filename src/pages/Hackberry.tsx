@@ -235,6 +235,25 @@ export default function Hackberry({ onNavigate }: HackberryProps) {
           <h2 id="connections-heading">What uses the hackberry leaf, the bark crevice, and the fruit</h2>
           <ul className="neighbor-list">
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry-emperor')}>
+                Hackberry Emperor
+              </button>{' '}
+              &mdash; an obligate hackberry specialist whose caterpillar has never been
+              documented on any other plant; adults seek dissolved minerals from sap flows,
+              rotting fruit, and human skin rather than nectar; a yard with hackberry and
+              undisturbed leaf litter at its base can support the full breeding cycle
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('american-snout')}>
+                American Snout
+              </button>{' '}
+              &mdash; the second obligate hackberry specialist; caterpillar develops only on
+              hackberry; the elongated labial palps that give the butterfly its name become the
+              stem of a dead leaf when the wings fold, making the resting butterfly disappear
+              against a hackberry twig; in peak migration years, October movements through Texas
+              reach six million individuals per hour
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('question-mark')}>
                 Question Mark
               </button>{' '}
