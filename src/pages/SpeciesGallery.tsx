@@ -1330,6 +1330,18 @@ const SPECIES: Species[] = [
     habitatTags: ['open-meadow', 'garden', 'woodland-edge'],
   },
   {
+    id: 'frosted-elfin',
+    name: 'Frosted Elfin',
+    scientificName: 'Callophrys irus',
+    emoji: '🦋',
+    shortDesc: 'A thumbnail-sized hairstreak butterfly that lays its eggs inside Baptisia flower buds — the caterpillar feeds on the flowers and developing seed pods, not leaves. Adults fly for three weeks in late April and May, then disappear underground for eleven months. NatureServe rates the species globally imperiled, and more than 25 states list it as endangered.',
+    status: 'endangered',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/11499071/large.jpg',
+    photoCredit: 'tpalmer / CC BY-NC via iNaturalist',
+    page: 'frosted-elfin' as Page,
+    habitatTags: ['open-meadow', 'garden', 'dry-barrens'],
+  },
+  {
     id: 'prairie-dropseed',
     name: 'Prairie Dropseed',
     scientificName: 'Sporobolus heterolepis',
