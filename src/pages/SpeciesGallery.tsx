@@ -1342,6 +1342,18 @@ const SPECIES: Species[] = [
     habitatTags: ['open-meadow', 'garden', 'dry-barrens'],
   },
   {
+    id: 'wild-lupine',
+    name: 'Wild Lupine',
+    scientificName: 'Lupinus perennis',
+    emoji: '🌿',
+    shortDesc: 'A native perennial legume of sandy, acidic soils that blooms in May with blue-violet flower spikes. Wild Lupine is the only larval host plant for the federally endangered Karner Blue and the primary northeastern host for Frosted Elfin — when Lupine disappears from a site, both butterflies disappear with it.',
+    status: 'declining',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/18285247/large.jpg',
+    photoCredit: 'bouteloua / CC BY-NC via iNaturalist',
+    page: 'wild-lupine' as Page,
+    habitatTags: ['dry-barrens', 'open-meadow', 'legume-garden'],
+  },
+  {
     id: 'prairie-dropseed',
     name: 'Prairie Dropseed',
     scientificName: 'Sporobolus heterolepis',
