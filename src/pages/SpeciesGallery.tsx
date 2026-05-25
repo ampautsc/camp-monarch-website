@@ -198,7 +198,7 @@ const SPECIES: Species[] = [
     status: 'declining',
     photo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/Northern_Flicker_%28Red-shafted%29.jpg',
     photoCredit: 'Elaine R. Wilson / CC BY-SA 2.5',
-    page: 'northern-flicker',
+page: 'northern-flicker',
     habitatTags: ['open-woodland', 'edge', 'lawn'],
   },
   {
@@ -398,7 +398,7 @@ const SPECIES: Species[] = [
     name: 'Chimney Swift',
     scientificName: 'Chaetura pelagica',
     emoji: '🐦',
-    shortDesc: 'Cannot perch — its feet grip vertical surfaces only. It eats, drinks, mates, and collects nesting material entirely in flight. A swift that lands on a flat surface cannot take off again.',
+shortDesc: 'Cannot perch — its feet grip vertical surfaces only. It eats, drinks, mates, and collects nesting material entirely in flight. A swift that lands on a flat surface cannot take off again.',
     status: 'declining',
     photo: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Chaetura_pelagica_-_chimney_swift.JPG',
     photoCredit: 'Googie man / CC BY-SA 3.0',
@@ -598,7 +598,7 @@ const SPECIES: Species[] = [
     habitatTags: ['woodland', 'edge', 'open-woodland'],
   },
   {
-    id: 'ovenbird',
+id: 'ovenbird',
     name: 'Ovenbird',
     scientificName: 'Seiurus aurocapilla',
     emoji: '🐦',
@@ -798,7 +798,7 @@ const SPECIES: Species[] = [
     status: 'common',
     photo: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Vanessa_cardui_DSC_0001.jpg',
     photoCredit: 'Quartl / CC BY-SA 3.0',
-    page: 'painted-lady',
+page: 'painted-lady',
     habitatTags: ['meadow', 'garden', 'open-land'],
   },
   {
@@ -998,7 +998,7 @@ const SPECIES: Species[] = [
     scientificName: 'Cupido comyntas',
     emoji: '🦋',
     photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/49773696/large.jpg',
-    photoCredit: 'petrichor / CC BY-NC via iNaturalist',
+photoCredit: 'petrichor / CC BY-NC via iNaturalist',
     page: 'eastern-tailed-blue' as Page,
     status: 'common' as const,
     habitatTags: ['meadow', 'clover-field', 'open-land'],
@@ -1198,7 +1198,7 @@ const SPECIES: Species[] = [
   },
   {
     id: 'wild-columbine',
-    name: 'Wild Columbine',
+name: 'Wild Columbine',
     scientificName: 'Aquilegia canadensis',
     emoji: '🌸',
     shortDesc: 'The nodding red-and-yellow flowers match the tongue length of Ruby-throated Hummingbirds almost exactly — the flower tube is shaped to deposit pollen on the hummingbird\'s forehead as it hovers to drink nectar.',
@@ -1397,7 +1397,7 @@ const SPECIES: Species[] = [
     status: 'common',
     photo: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Quercus_alba.jpg',
     photoCredit: 'James St. John / CC BY 2.0',
-    page: 'white-oak',
+page: 'white-oak',
     habitatTags: ['woodland', 'canopy', 'garden'],
   },
   {
@@ -1593,6 +1593,19 @@ const SPECIES: Species[] = [
     photoCredit: 'mnerrie / CC BY-NC via iNaturalist',
     page: 'american-snout' as Page,
     habitatTags: ['woodland', 'woodland-edge', 'edge'],
+  },
+  {
+    id: 'tawny-emperor',
+    name: 'Tawny Emperor',
+    scientificName: 'Asterocampa clyton',
+emoji: '🦋',
+    shortDesc:
+      "The near-twin of the Hackberry Emperor — both are obligate hackberry specialists, both drink sodium from human skin instead of visiting flowers, both overwinter as caterpillars in the leaf litter at the base of the host tree. The single field mark: Tawny Emperors carry no white spots near the forewing tip; Hackberry Emperors do. Females stack 100 to 500 eggs in a compact cylinder on one hackberry leaf.",
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/187806544/large.jpeg',
+    photoCredit: 'Ainsley / CC BY via iNaturalist',
+    page: 'tawny-emperor' as Page,
+    habitatTags: ['woodland', 'woodland-edge', 'edge', 'leaf-litter'],
   },
 ]
 
