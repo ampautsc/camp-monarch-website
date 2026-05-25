@@ -254,6 +254,10 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               <span className="neighbor-name">Sassafras</span>
               <span className="neighbor-note">Host tree for tiger swallowtail caterpillars — females seek out sassafras during oviposition flights alongside tulip poplar and wild cherry; a single small tree in a woodland edge planting produces locally-bred adults and overwinters chrysalids on its bark each fall</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('redbud')}>
+              <span className="neighbor-name">Eastern Redbud</span>
+              <span className="neighbor-note">Flowers open directly on bare branches in early April, before the leaves, giving the first spring generation of tiger swallowtails an early nectar source at the same moment the first adults are emerging from their overwintering chrysalids</span>
+            </button>
           </div>
         </section>
       </div>
