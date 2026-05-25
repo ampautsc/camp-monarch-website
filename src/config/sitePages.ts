@@ -191,6 +191,7 @@ export const ALL_PAGE_SLUGS = [
   'tawny-emperor',
   'eastern-cottontail',
   'striped-skunk',
+  'red-fox',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
@@ -209,4 +210,5 @@ export const PAGE_LABEL_OVERRIDES: Partial<Record<PageSlug, string>> = {
   'henrys-elfin': "Henry's Elfin",              // apostrophe lost in slug
   'cobweb-skipper': 'Cobweb Skipper',       // no override needed but added for clarity
   'little-bluestem': 'Little Bluestem',     // no override needed but added for clarity
+  'red-fox': 'Red Fox',                     // ensure proper capitalization
 }
