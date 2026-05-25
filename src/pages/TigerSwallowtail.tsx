@@ -230,6 +230,10 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               <span className="neighbor-name">Black Swallowtail</span>
               <span className="neighbor-note">Caterpillar eats carrot-family plants including wild parsnip and Queen Anne's lace; the black-and-yellow adult resembles a dark-form tiger swallowtail female but is a separate species with distinct host plant requirements</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('golden-alexanders')}>
+              <span className="neighbor-name">Golden Alexanders</span>
+              <span className="neighbor-note">Tiger swallowtails nectar on the flat-topped yellow umbels in April and May — adults visiting Golden Alexanders in spring may be the same individuals that overwintered as chrysalids on nearby tree bark and emerged weeks earlier</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('great-spangled-fritillary')}>
               <span className="neighbor-name">Great Spangled Fritillary</span>
               <span className="neighbor-note">Shares joe-pye weed and coneflower as nectar sources in July and August; its caterpillar feeds on native violets in the leaf litter below the same host trees tiger swallowtails use</span>
