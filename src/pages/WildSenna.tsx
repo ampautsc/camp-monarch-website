@@ -229,6 +229,24 @@ export default function WildSenna({ onNavigate }: WildSennaProps) {
               hosted their larval development weeks earlier
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('sleepy-orange')}>
+                Sleepy Orange
+              </button>{' '}
+              &mdash; uses Wild Senna as a primary host plant in the central and southern parts
+              of the range; a female presses her tarsi to the same leaflets a Cloudless Sulphur
+              female is evaluating in the same hour; both species may deposit eggs on the same
+              Wild Senna stem in the same week in July
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('little-yellow')}>
+                Little Yellow
+              </button>{' '}
+              &mdash; the smallest of the three sulphur species that use Senna as a host plant;
+              caterpillars may be developing alongside Cloudless Sulphur and Sleepy Orange on
+              the same Wild Senna stems from June through September; females arrive from the
+              south each summer and need legume leaflets already growing when they arrive
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('partridge-pea')}>
                 Partridge Pea
               </button>{' '}
