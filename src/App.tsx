@@ -172,6 +172,7 @@ import Redbud from './pages/Redbud'
 import HenrysElfin from './pages/HenrysElfin'
 import Hackberry from './pages/Hackberry'
 import HackberryEmperor from './pages/HackberryEmperor'
+import AmericanSnout from './pages/AmericanSnout'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -379,6 +380,7 @@ case 'brown-thrasher':        return <BrownThrasher onNavigate={navigateTo} />
       case 'henrys-elfin':        return <HenrysElfin onNavigate={navigateTo} />
       case 'hackberry':           return <Hackberry onNavigate={navigateTo} />
       case 'hackberry-emperor':   return <HackberryEmperor onNavigate={navigateTo} />
+      case 'american-snout':      return <AmericanSnout onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
