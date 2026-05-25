@@ -969,6 +969,18 @@ const SPECIES: Species[] = [
     shortDesc: "Maryland's state insect lays 300 to 700 eggs in a single clutch on white turtlehead — no other plant supports a colony. Caterpillars overwinter as a group inside a communal silk nest at the base of the plant from August through April. Listed as threatened or endangered in several states.",
   },
   {
+    id: 'cloudless-sulphur',
+    name: 'Cloudless Sulphur',
+    scientificName: 'Phoebis sennae',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/3711606/large.jpg',
+    photoCredit: 'Laura Gaudette / CC BY via iNaturalist',
+    page: 'cloudless-sulphur' as Page,
+    status: 'declining' as const,
+    habitatTags: ['meadow', 'garden', 'migratory'],
+    shortDesc: "The male is pure lemon-yellow with no border markings — the most saturated yellow of any common North American butterfly. In late August, adults fly south toward the Gulf Coast, stopping briefly at garden flowers. The host plant is Partridge Pea, a native annual legume that also feeds Wild Turkey through its seed pods in fall.",
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
