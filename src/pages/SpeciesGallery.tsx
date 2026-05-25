@@ -1517,7 +1517,7 @@ const SPECIES: Species[] = [
     status: 'common',
     photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Virginia-Bluebells.jpg/960px-Virginia-Bluebells.jpg',
     photoCredit: 'Famartin / CC BY-SA 4.0',
-    page: null,
+    page: 'virginia-bluebell',
     habitatTags: ['floodplain', 'woodland', 'spring-ephemeral'],
   },
   {
