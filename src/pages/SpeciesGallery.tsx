@@ -1031,6 +1031,18 @@ const SPECIES: Species[] = [
     shortDesc: "Before 1860, no white butterfly of this kind existed in North America. A ship arrived at Quebec and within forty years the species had reached every state — the fastest recorded continental colonization by a butterfly. It is now the most abundant butterfly on the continent by individual count, and its prevalence is a direct measure of how much introduced Brassica habitat has replaced native plantings.",
   },
   {
+    id: 'west-virginia-white',
+    name: 'West Virginia White',
+    scientificName: 'Pieris virginiensis',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/665281065/large.jpg',
+    photoCredit: 'jrcagle / CC BY via iNaturalist',
+    page: 'west-virginia-white' as Page,
+    status: 'declining' as const,
+    habitatTags: ['woodland', 'spring-ephemerals'],
+    shortDesc: 'A small, spotless white butterfly of moist deciduous woodland. Its only host plant is native toothwort — and garlic mustard chemically traps females into laying on it, killing the caterpillars that hatch.',
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
