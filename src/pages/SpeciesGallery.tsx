@@ -1450,6 +1450,18 @@ const SPECIES: Species[] = [
     habitatTags: ['understory', 'woodland-edge', 'moist-soil'],
   },
   {
+    id: 'sassafras',
+    name: 'Sassafras',
+    scientificName: 'Sassafras albidum',
+    emoji: '🌿',
+    shortDesc: "Produces three distinct leaf shapes on the same branch — oval, mitten-shaped, and three-lobed. Root sprouts that appear along fence lines each spring are exactly the leaf size a Spicebush Swallowtail female searches for in June. Eastern Tiger Swallowtail also uses the leaves as larval host. Female trees fruit in August with blue-black berries on red stalks that wood thrushes, vireos, and flickers eat before migration.",
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Sassafras_albidum.jpg',
+    photoCredit: 'Dcrjsr / CC BY 3.0 via Wikimedia Commons',
+    page: 'sassafras' as Page,
+    habitatTags: ['woodland', 'woodland-edge', 'edge'],
+  },
+  {
     id: 'elderberry',
     name: 'American Elderberry',
     scientificName: 'Sambucus canadensis',
