@@ -222,6 +222,16 @@ export default function PartridgePea({ onNavigate }: PartridgePeaProps) {
                 against the foliage; found nectaring on the flowers in July while their own
                 larvae feed on the stems below
               </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('eastern-cottontail')}>
+                  Eastern Cottontail
+                </button>{' '}
+                &mdash; browses partridge pea foliage through July and August; the plant&apos;s
+                low spreading growth keeps tender leaves at ground level through the weeks
+                when cottontail kits are dispersing from the nest at 3&ndash;4 weeks of age and
+                ranging for food on their own; both the ant patrol drawn by the petiolar nectaries
+                and the young rabbits returning to browse at dusk use the same leaves
+              </li>
             </ul>
           </div>
         </section>
