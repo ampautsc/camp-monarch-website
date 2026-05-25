@@ -241,7 +241,12 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a Plant
             </button>
-            .
+            . The{' '}
+            <button className="link-button" onClick={() => onNavigate('virginia-opossum')}>
+              Virginia opossum
+            </button>
+            {' '}forages the same yard at the same hours &mdash; a ground-level tick predator
+            working the brush pile while the owl hunts canopy edges.
           </p>
         </div>
       </div>
