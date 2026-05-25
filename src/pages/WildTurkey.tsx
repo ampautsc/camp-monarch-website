@@ -92,6 +92,16 @@ export default function WildTurkey({ onNavigate }: WildTurkeyProps) {
             week from November through March. A yard where every leaf is blown and bagged does not.
           </p>
           <p>
+            In September, before the first hard frost, turkeys move through woodland edges where{' '}
+            <button className="link-button" onClick={() => onNavigate('pawpaw')}>
+              Pawpaw
+            </button>
+            {' '}fruit lies on the ground. The fallen pawpaw softens within two to four days of
+            ripening — no scratching required. Turkey bill marks and track impressions are visible
+            in the leaf litter at the base of trees in a grove that has produced a full crop.
+            Opossums and raccoons work the same ground at night during this same September window.
+          </p>
+          <p>
             The scratch also acts as disturbance in the long-grass sense. Research in eastern
             hardwood forests documents that turkey foraging shreds the leaf mat, redistributes
             seeds from the understory plants growing above, and exposes bare mineral soil in small
