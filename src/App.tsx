@@ -164,6 +164,7 @@ import MarylandSenna from './pages/MarylandSenna'
 import WildIndigoDuskywing from './pages/WildIndigoDuskywing'
 import FrostedElfin from './pages/FrostedElfin'
 import WildLupine from './pages/WildLupine'
+import KarnerBlue from './pages/KarnerBlue'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -257,7 +258,7 @@ function App() {
       case 'spring-peeper':         return <SpringPeeper onNavigate={navigateTo} />
       case 'wood-frog':             return <WoodFrog onNavigate={navigateTo} />
       case 'toad':                  return <AmericanToad onNavigate={navigateTo} />
-      case 'little-brown-bat':      return <LittleBrownBat onNavigate={navigateTo} />
+case 'little-brown-bat':      return <LittleBrownBat onNavigate={navigateTo} />
       case 'wood-thrush':           return <WoodThrush onNavigate={navigateTo} />
       case 'eastern-screech-owl':   return <EasternScreechOwl onNavigate={navigateTo} />
       case 'polyphemus-moth':       return <PolyphemusMoth onNavigate={navigateTo} />
@@ -363,6 +364,7 @@ function App() {
       case 'wild-indigo-duskywing': return <WildIndigoDuskywing onNavigate={navigateTo} />
       case 'frosted-elfin':        return <FrostedElfin onNavigate={navigateTo} />
       case 'wild-lupine':           return <WildLupine onNavigate={navigateTo} />
+      case 'karner-blue':           return <KarnerBlue onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
