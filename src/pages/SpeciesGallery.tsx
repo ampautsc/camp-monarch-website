@@ -1091,6 +1091,18 @@ const SPECIES: Species[] = [
     shortDesc: 'Before 1850, the Orange Sulphur was primarily a western species. Alfalfa farming spread east across North America, and the butterfly followed the crop. Today it is one of the most common butterflies in the eastern United States, breeding in clover patches and legume fields from March to November.',
   },
   {
+    id: 'clouded-sulphur',
+    name: 'Clouded Sulphur',
+    scientificName: 'Colias philodice',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/40270934/large.jpg',
+    photoCredit: 'Heather Pickard / CC BY-NC via iNaturalist',
+    page: 'clouded-sulphur' as Page,
+    status: 'stable' as const,
+    habitatTags: ['open-meadow', 'clover-field'],
+    shortDesc: 'The Clouded Sulphur is the yellow butterfly in every clover patch — its range covers all contiguous states and most of Canada, making it one of the most widely distributed butterflies on the continent. It uses the same legume host plants as the Orange Sulphur and hybridizes freely with it; a yellow-orange intermediate in a meadow is most likely the offspring of both.',
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
