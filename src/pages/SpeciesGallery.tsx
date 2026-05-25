@@ -1054,6 +1054,18 @@ const SPECIES: Species[] = [
     shortDesc: 'The Zebra Swallowtail is the only swallowtail in eastern North America with hindwing tails nearly as long as the hindwing itself. Its caterpillar feeds exclusively on pawpaw leaves — no other plant is accepted. A female presses her front feet against a leaf to read its chemistry; if it is not pawpaw, she lifts off and keeps searching. Spring-form adults emerge in April with shorter tails; summer-form adults emerge in June with longer tails and more blue-green in the bands.',
   },
   {
+    id: 'coral-hairstreak',
+    name: 'Coral Hairstreak',
+    scientificName: 'Satyrium titus',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/210898298/large.jpg',
+    photoCredit: 'bevlynn99 / CC BY-NC via iNaturalist',
+    page: 'coral-hairstreak' as Page,
+    status: 'stable' as const,
+    habitatTags: ['woodland-edge', 'open-meadow'],
+    shortDesc: 'The Coral Hairstreak is the only hairstreak in the eastern United States without tails at the hindwing rear corner. In their place, a row of coral-orange spots spans the full lower hindwing edge. It produces one brood per year, flying for six weeks in July. The female lays a single egg on wild plum or black cherry bark in August; that egg overwinters on the bark and hatches when the plum flowers open the following May.',
+  },
+  {
     id: 'leonards-skipper',
     name: "Leonard's Skipper",
     scientificName: 'Hesperia leonardus',
