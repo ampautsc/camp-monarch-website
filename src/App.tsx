@@ -69,6 +69,7 @@ import CommonNighthawk from './pages/CommonNighthawk'
 import CecropiaMoth from './pages/CecropiaMoth'
 import VirginiaOpossum from './pages/VirginiaOpossum'
 import StripedSkunk from './pages/StripedSkunk'
+import RedFox from './pages/RedFox'
 import AmericanBumbleBee from './pages/AmericanBumbleBee'
 import ChimneySwift from './pages/ChimneySwift'
 import PurpleMartin from './pages/PurpleMartin'
@@ -281,6 +282,7 @@ case 'little-brown-bat':      return <LittleBrownBat onNavigate={navigateTo} />
 case 'cecropia-moth':         return <CecropiaMoth onNavigate={navigateTo} />
       case 'virginia-opossum':      return <VirginiaOpossum onNavigate={navigateTo} />
       case 'striped-skunk':         return <StripedSkunk onNavigate={navigateTo} />
+      case 'red-fox':             return <RedFox onNavigate={navigateTo} />
       case 'american-bumble-bee':   return <AmericanBumbleBee onNavigate={navigateTo} />
       case 'chimney-swift':         return <ChimneySwift onNavigate={navigateTo} />
       case 'purple-martin':         return <PurpleMartin onNavigate={navigateTo} />
