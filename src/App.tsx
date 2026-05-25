@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import WhyMonarchs from './pages/WhyMonarchs'
 import PlantMilkweed from './pages/PlantMilkweed'
 import TheMigration from './pages/TheMigration'
-import Firefly from './pages/Firefly'
+import Fireflies from './pages/Fireflies'
 import BoxTurtle from './pages/BoxTurtle'
 import Monarch from './pages/Monarch'
 import Pesticides from './pages/Pesticides'
@@ -154,7 +154,7 @@ type Page =
   | 'why-monarchs'
   | 'plant-milkweed'
   | 'the-migration'
-  | 'firefly'
+  | 'fireflies'
   | 'box-turtle'
   | 'monarch'
   | 'pesticides'
@@ -318,7 +318,7 @@ function App() {
       case 'why-monarchs': return <WhyMonarchs onNavigate={navigateTo} />
       case 'plant-milkweed': return <PlantMilkweed onNavigate={navigateTo} />
       case 'the-migration': return <TheMigration onNavigate={navigateTo} />
-      case 'firefly': return <Firefly onNavigate={navigateTo} />
+      case 'fireflies': return <Fireflies onNavigate={navigateTo} />
       case 'box-turtle': return <BoxTurtle onNavigate={navigateTo} />
       case 'monarch': return <Monarch onNavigate={navigateTo} />
       case 'pesticides': return <Pesticides onNavigate={navigateTo} />
