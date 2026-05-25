@@ -280,6 +280,15 @@ export default function WhiteOak({ onNavigate }: WhiteOakProps) {
               mature white oak and a nest box provides both the food source and the
               nesting site
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry')}>
+                Hackberry
+              </button>{' '}
+              &mdash; the other large native canopy tree that combines caterpillar
+              biomass with persistent fall fruit; hackberry and white oak together
+              cover more than 500 caterpillar species between them and both produce
+              food that carries wildlife from late fall into winter
+            </li>
           </ul>
         </section>
       </div>
