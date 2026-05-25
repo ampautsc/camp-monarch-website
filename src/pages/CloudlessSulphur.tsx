@@ -93,10 +93,13 @@ export default function CloudlessSulphur({ onNavigate }: CloudlessSulphurProps) 
           </p>
           <p>
             The caterpillar is yellow-green with a yellow lateral stripe and a row of black-dotted yellow
-            bands across each segment. It feeds on Partridge Pea, Wild Senna (<em>Senna hebecarpa</em>),
-            Maryland Senna (<em>Senna marilandica</em>), and related legume species. Multiple broods cycle
-            through summer in the South; northern populations are typically single-brooded, producing one
-            generation before the autumn migration.
+            bands across each segment. It feeds on Partridge Pea,{' '}
+            <button className="link-button" onClick={() => onNavigate('wild-senna')}>
+              Wild Senna
+            </button>{' '}
+            (<em>Senna hebecarpa</em>), Maryland Senna (<em>Senna marilandica</em>), and related legume
+            species. Multiple broods cycle through summer in the South; northern populations are typically
+            single-brooded, producing one generation before the autumn migration.
           </p>
           <p>
             The chrysalis is compressed front-to-back with a prominent keel running down its back and a
@@ -155,7 +158,11 @@ export default function CloudlessSulphur({ onNavigate }: CloudlessSulphurProps) 
               .
             </li>
             <li>
-              <strong>Add Maryland Senna (<em>Senna marilandica</em>) or Wild Senna (<em>Senna hebecarpa</em>) as a perennial companion.</strong>{' '}
+              <strong>Add{' '}
+              <button className="link-button" onClick={() => onNavigate('wild-senna')}>
+                Wild Senna
+              </button>{' '}
+              (<em>Senna hebecarpa</em>) or Maryland Senna (<em>Senna marilandica</em>) as a perennial companion.</strong>{' '}
               Both species grow 4 to 6 feet tall, bloom with yellow flowers in midsummer, and are
               native across the eastern United States. They emerge earlier in spring than Partridge Pea
               and extend the period when host plant material is available, giving early-season females
@@ -191,6 +198,15 @@ export default function CloudlessSulphur({ onNavigate }: CloudlessSulphurProps) 
               &mdash; the annual legume host plant without which a Cloudless Sulphur cannot complete
               a northern breeding cycle; the same plant produces seed pods that Wild Turkey and Bobwhite
               eat through fall and winter; one planting supports two species groups simultaneously
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('wild-senna')}>
+                Wild Senna
+              </button>{' '}
+              &mdash; the perennial companion legume that returns from the same root crown each spring
+              and provides host plant material before Partridge Pea has germinated; Cloudless Sulphur
+              caterpillars are green when feeding on the leaves and shift toward yellow when feeding
+              on the flowers — the color determined by which plant part is in the diet
             </li>
             <li>
               <button className="neighbor-link" onClick={() => onNavigate('tiger-swallowtail')}>
@@ -237,6 +253,10 @@ export default function CloudlessSulphur({ onNavigate }: CloudlessSulphurProps) 
             See the full native plant profile with{' '}
             <button className="link-button" onClick={() => onNavigate('partridge-pea')}>
               Partridge Pea
+            </button>
+            , pair it with the perennial{' '}
+            <button className="link-button" onClick={() => onNavigate('wild-senna')}>
+              Wild Senna
             </button>
             , find a local nursery source with{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
