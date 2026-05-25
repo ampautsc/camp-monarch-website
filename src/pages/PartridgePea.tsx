@@ -196,6 +196,32 @@ export default function PartridgePea({ onNavigate }: PartridgePeaProps) {
                 while Partridge Pea hosts butterfly larvae in the same weeks, the two plants
                 serving different groups of insects simultaneously
               </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('cloudless-sulphur')}>
+                  Cloudless Sulphur
+                </button>{' '}
+                — the caterpillar shifts body color to match the plant part it is eating: green
+                when consuming leaves, yellow when consuming flowers; a Partridge Pea patch in
+                bloom in July can hold both color forms on the same stem at the same time
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('sleepy-orange')}>
+                  Sleepy Orange
+                </button>{' '}
+                — lays eggs on Partridge Pea leaflets from July through September; the caterpillar
+                feeds on the same foliage that the ant guards patrol; adults do not migrate south
+                in autumn — they stay active through warm spells and overwinter as adults in the
+                southern states
+              </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('little-yellow')}>
+                  Little Yellow
+                </button>{' '}
+                — the smallest of the three Partridge Pea-dependent butterflies; females lay eggs
+                singly on young leaflets and the caterpillars are pale green, nearly invisible
+                against the foliage; found nectaring on the flowers in July while their own
+                larvae feed on the stems below
+              </li>
             </ul>
           </div>
         </section>
