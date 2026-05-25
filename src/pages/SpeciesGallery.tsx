@@ -1019,6 +1019,18 @@ const SPECIES: Species[] = [
     shortDesc: "The female lays 100 to 200 eggs in a single cluster on the underside of one black-eyed Susan leaf. The caterpillars hatch together, feed side by side through summer, then stop growing in August while still half-sized. They crawl into the dead leaves at the plant's base and spend five months dormant — the same leaves raked away each autumn.",
   },
   {
+    id: 'cabbage-white',
+    name: 'Cabbage White',
+    scientificName: 'Pieris rapae',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/1179645/large.jpg',
+    photoCredit: 'Jon Sullivan / CC BY via iNaturalist',
+    page: 'cabbage-white' as Page,
+    status: 'common' as const,
+    habitatTags: ['meadow', 'garden', 'introduced'],
+    shortDesc: "Before 1860, no white butterfly of this kind existed in North America. A ship arrived at Quebec and within forty years the species had reached every state — the fastest recorded continental colonization by a butterfly. It is now the most abundant butterfly on the continent by individual count, and its prevalence is a direct measure of how much introduced Brassica habitat has replaced native plantings.",
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
