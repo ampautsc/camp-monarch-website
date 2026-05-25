@@ -948,6 +948,15 @@ const SPECIES: Species[] = [
     shortDesc: 'Adult overwinters as a butterfly behind loose bark on large-diameter trees from October through March. A silver curved line and dot on the hindwing underside form the question mark it was named for. Caterpillars use stinging nettle, American elm, and hops.',
   },
   {
+    id: 'eastern-comma',
+    name: 'Eastern Comma',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/334405655/large.jpg',
+    page: 'eastern-comma' as Page,
+    status: 'common' as const,
+    habitatTags: ['woodland-edge', 'garden', 'meadow'],
+    shortDesc: 'Adult overwinters as a butterfly behind loose bark on large-diameter trees from October through March. A single silver curved line on the hindwing underside — a comma without the dot of the Question Mark — is the only field mark separating this species from its closest relative. Caterpillars use stinging nettle and hops.',
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
