@@ -301,6 +301,17 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
             first robins that land. When the full flock arrives, the mockingbird cannot hold
             the patch and retreats. The shrub it defended all January is stripped in 20 minutes.
           </p>
+          <p>
+            American Robins take{' '}
+            <button className="link-button" onClick={() => onNavigate('hackberry')}>
+              hackberry
+            </button>
+            {' '}fruit in October and into winter wherever the drupes persist into the cold
+            season. In late fall, robin foraging flocks work between hackberry, crabapple, and
+            winterberry in sequence as each stand gets depleted. A yard with hackberry alongside
+            winter-persistent fruiting shrubs extends the window that holds migratory robin
+            flocks by several weeks past the crabapple-only yard across the street.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
