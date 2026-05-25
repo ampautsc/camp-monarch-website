@@ -152,9 +152,14 @@ export default function OrangeSulphur({ onNavigate }: OrangeSulphurProps) {
               <strong>Add native legumes to a sunny border or meadow patch.</strong>{' '}
               Partridge pea (<em>Chamaecrista fasciculata</em>) is a native annual legume
               that grows knee-high in a sunny border and blooms yellow in July through
-              September. Wild senna (<em>Senna hebecarpa</em>) grows four to six feet and
-              provides large, conspicuous host plant material for Orange Sulphur females.
-              Wild blue indigo (<em>Baptisia australis</em>) is a long-lived perennial used
+              September.{' '}
+              <button className="link-button" onClick={() => onNavigate('wild-senna')}>
+                Wild Senna
+              </button>{' '}
+              (<em>Senna hebecarpa</em>) is a perennial that grows four to six feet and
+              returns each spring from a long-lived root crown, providing large-leafed
+              host plant material for Orange Sulphur females season after season. Wild
+              blue indigo (<em>Baptisia australis</em>) is a long-lived perennial used
               by Orange Sulphur and other sulphur species. All three are native to the
               eastern United States and require no fertilizer or watering once established.
             </li>
