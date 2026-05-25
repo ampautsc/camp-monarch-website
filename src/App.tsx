@@ -146,6 +146,7 @@ import AmericanLady from './pages/AmericanLady'
 import CommonBuckeye from './pages/CommonBuckeye'
 import SilveryCheckerspot from './pages/SilveryCheckerspot'
 import CabbageWhite from './pages/CabbageWhite'
+import WestVirginiaWhite from './pages/WestVirginiaWhite'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -306,6 +307,7 @@ export default function App() {
       case 'common-buckeye':    return <CommonBuckeye onNavigate={navigateTo} />
       case 'silvery-checkerspot': return <SilveryCheckerspot onNavigate={navigateTo} />
       case 'cabbage-white':     return <CabbageWhite onNavigate={navigateTo} />
+      case 'west-virginia-white': return <WestVirginiaWhite onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
