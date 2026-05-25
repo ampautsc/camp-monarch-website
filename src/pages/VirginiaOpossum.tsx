@@ -150,6 +150,17 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
             is very little to sustain them.
           </p>
           <p>
+            In September, yards and woodland edges where{' '}
+            <button className="link-button" onClick={() => onNavigate('pawpaw')}>
+              Pawpaw
+            </button>
+            {' '}trees are growing become a reliable nightly foraging stop. Ripe pawpaw
+            fruit softens and drops over two to three weeks, and opossums work the
+            ground beneath the trees each night while the fallen fruit remains.
+            Raccoons and foxes forage the same grove — in groves with heavy crops,
+            black bears arrive from adjacent woodland.
+          </p>
+          <p>
             Opossums can survive bites from copperheads, cottonmouths, and several
             rattlesnake species, and will eat venomous snakes when
             encountered. Researchers have identified a peptide in opossum
