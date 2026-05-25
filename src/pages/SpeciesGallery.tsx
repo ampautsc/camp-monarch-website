@@ -980,6 +980,19 @@ const SPECIES: Species[] = [
     habitatTags: ['meadow', 'garden', 'migratory'],
     shortDesc: "The male is pure lemon-yellow with no border markings — the most saturated yellow of any common North American butterfly. In late August, adults fly south toward the Gulf Coast, stopping briefly at garden flowers. The host plant is Partridge Pea, a native annual legume that also feeds Wild Turkey through its seed pods in fall.",
   },
+
+  {
+    id: 'american-lady',
+    name: 'American Lady',
+    scientificName: 'Vanessa virginiensis',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/2124214/large.jpg',
+    photoCredit: 'Susan Elliott / CC BY-NC via iNaturalist',
+    page: 'american-lady' as Page,
+    status: 'declining' as const,
+    habitatTags: ['meadow', 'dry-garden', 'migratory'],
+    shortDesc: "When the wings close, two large eyespots with blue centers appear on the hindwing underside — the field mark that separates American Lady from Painted Lady every time. The caterpillar builds a silk tent around a single leaf of pearly everlasting and feeds inside it. Host plants include pearly everlasting and pussytoes, two dry-meadow composites that tolerate thin soil where most garden plants fail.",
+  },
   {
     id: 'common-milkweed',
     name: 'Common Milkweed',
