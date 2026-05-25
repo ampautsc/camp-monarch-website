@@ -993,6 +993,19 @@ const SPECIES: Species[] = [
     habitatTags: ['meadow', 'dry-garden', 'migratory'],
     shortDesc: "When the wings close, two large eyespots with blue centers appear on the hindwing underside — the field mark that separates American Lady from Painted Lady every time. The caterpillar builds a silk tent around a single leaf of pearly everlasting and feeds inside it. Host plants include pearly everlasting and pussytoes, two dry-meadow composites that tolerate thin soil where most garden plants fail.",
   },
+
+  {
+    id: 'common-buckeye',
+    name: 'Common Buckeye',
+    scientificName: 'Junonia coenia',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/25328482/large.jpg',
+    photoCredit: 'Erika Mitchell / CC BY-NC via iNaturalist',
+    page: 'common-buckeye' as Page,
+    status: 'declining' as const,
+    habitatTags: ['meadow', 'dry-garden', 'migratory'],
+    shortDesc: "Four eyespots face outward when the wings flatten in the sun — one large blue-ringed circle on each forewing, two smaller ones on the hindwing. Males perch on bare soil and hold territory for hours, lifting off to investigate anything that moves. The caterpillar feeds openly on plantain and carries two orange false-eye spots near its head.",
+  },
   {
     id: 'common-milkweed',
     name: 'Common Milkweed',
