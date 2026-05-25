@@ -250,6 +250,10 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               <span className="neighbor-name">Canada Goldenrod</span>
               <span className="neighbor-note">Blooms August through October, feeding the late-summer generation of tiger swallowtails — the adults foraging goldenrod in September are loading fat reserves they will carry as overwintering chrysalids on bark through winter</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('sassafras')}>
+              <span className="neighbor-name">Sassafras</span>
+              <span className="neighbor-note">Host tree for tiger swallowtail caterpillars — females seek out sassafras during oviposition flights alongside tulip poplar and wild cherry; a single small tree in a woodland edge planting produces locally-bred adults and overwinters chrysalids on its bark each fall</span>
+            </button>
           </div>
         </section>
       </div>
