@@ -1055,6 +1055,18 @@ const SPECIES: Species[] = [
     shortDesc: 'One of the first butterflies of spring — small, pale blue, and timed exactly to the blooming of flowering dogwood.',
   },
   {
+    id: 'checkered-white',
+    name: 'Checkered White',
+    scientificName: 'Pontia protodice',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/655817929/large.jpg',
+    photoCredit: 'Kristin Sweeney / CC BY-NC via iNaturalist',
+    page: 'checkered-white' as Page,
+    status: 'declining' as const,
+    habitatTags: ['open-ground', 'dry-prairie'],
+    shortDesc: 'Before 1860, the Checkered White was the native white butterfly of eastern fields and gardens. Cabbage White arrived and spread from Quebec to California in forty years. The Checkered White retreated to coastal barrens and dry prairie remnants — where it still flies.',
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
