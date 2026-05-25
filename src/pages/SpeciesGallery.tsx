@@ -1354,6 +1354,18 @@ const SPECIES: Species[] = [
     habitatTags: ['dry-barrens', 'open-meadow', 'legume-garden'],
   },
   {
+    id: 'karner-blue',
+    name: 'Karner Blue',
+    scientificName: 'Plebejus samuelis',
+    emoji: '🦋',
+    shortDesc: 'A thumbnail-sized butterfly, cerulean blue in males, that flies only in May–June and July–August along Wild Lupine stands. Federally endangered since 1992. The egg overwinters at the lupine root crown from August through April — when the plant is cleared in autumn, the next generation hatches onto bare ground.',
+    status: 'endangered',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/205496077/large.jpg',
+    photoCredit: 'sarahjomin / CC BY-NC via iNaturalist',
+    page: 'karner-blue' as Page,
+    habitatTags: ['dry-barrens', 'open-meadow', 'pine-barren'],
+  },
+  {
     id: 'prairie-dropseed',
     name: 'Prairie Dropseed',
     scientificName: 'Sporobolus heterolepis',
