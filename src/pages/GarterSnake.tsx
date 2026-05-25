@@ -155,32 +155,82 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
           </p>
         </section>
 
+        <section aria-labelledby="neighbors-heading">
+          <h2 id="neighbors-heading">The ground layer, the leaf litter, and who forages the same zone</h2>
+          <ul className="neighbor-list">
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('striped-skunk')}>
+                Striped Skunk
+              </button>{'  '}
+              &mdash; skunks and garter snakes both forage the leaf-litter and
+              ground-level invertebrate layer; the snake reads earthworm and slug
+              scent trails by tongue-flicking through the same soil surface the
+              skunk follows by nose; both species concentrate in the same
+              unmowed lawn edges, brush piles, and dense ground cover through
+              the summer months
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('toad')}>
+                American Toad
+              </button>{'  '}
+              &mdash; toads are primary garter snake prey from April through
+              October — a yard with a moist mulched garden bed, water source,
+              or leaf-litter accumulation holds toads, and the garter snakes
+              follow; both species concentrate in shaded ground-layer zones
+              under native shrubs, in compost borders, and along the edges
+              of stone walls
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('eastern-cottontail')}>
+                Eastern Cottontail
+              </button>{'  '}
+              &mdash; garter snakes and cottontails occupy the same brush-pile
+              and leaf-litter habitat without competing; the snake hunts
+              earthworms in the same dense cover the cottontail uses for
+              concealment; a brush pile maintained for cottontail escape
+              structure also provides the thermal refugium a garter snake
+              needs to warm up on a cool morning
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('red-fox')}>
+                Red Fox
+              </button>{'  '}
+              &mdash; red foxes are among the garter snake&apos;s primary
+              predators in suburban settings; a fox patrolling the leaf-litter
+              zone along a shrub edge will take a garter snake encountered
+              during routine rodent hunting; a yard that supports garter snakes
+              is producing the intact ground-layer food web that also supports
+              the foxes, hawks, and herons that sit above it
+            </li>
+          </ul>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
-            <strong>Ready to build a yard good enough for garter snakes and monarchs?</strong>{' '}
-            Eliminate rodenticide with the{' '}
+            <strong>Ready to build a yard good enough for garter snakes and monarchs?</strong>{'  '}
+            Eliminate rodenticide with the{'  '}
             <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
               Pesticide Guide
             </button>
-            {' '}— anticoagulant compounds accumulate through the earthworm and rodent prey
-            garter snakes eat. The{' '}
+            {'  '}— anticoagulant compounds accumulate through the earthworm and rodent prey
+            garter snakes eat. The{'  '}
             <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
               Leave the Leaves guide
             </button>
-            {' '}covers the leaf accumulations and brush piles garter snakes use as shelter —
-            the same brush pile an{' '}
+            {'  '}covers the leaf accumulations and brush piles garter snakes use as shelter —
+            the same brush pile an{'  '}
             <button className="link-button" onClick={() => onNavigate('eastern-cottontail')}>
               Eastern Cottontail
             </button>
-            {' '}sprints to when flushed from the lawn. Or{' '}
+            {'  '}sprints to when flushed from the lawn. Or{'  '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               choose a native plant
             </button>
-            {' '}to restore the food web they both need, or{' '}
+            {'  '}to restore the food web they both need, or{'  '}
             <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
               plant milkweed
             </button>
-            {' '}to add monarch habitat in the same chemical-free ground layer.
+            {'  '}to add monarch habitat in the same chemical-free ground layer.
           </p>
         </div>
       </div>
