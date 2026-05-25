@@ -190,6 +190,16 @@ export default function QuestionMark({ onNavigate }: QuestionMarkProps) {
           <h2 id="neighbors-heading">Who shares the bark in October and the sap flow in March</h2>
           <ul className="neighbor-list">
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry')}>
+                Hackberry
+              </button>{' '}
+              &mdash; a secondary caterpillar host for Question Marks alongside stinging nettle;
+              in yards where nettle is absent, hackberry becomes the primary available host for
+              the spring and summer broods; the Hackberry Emperor butterfly overwinters as a
+              caterpillar in the leaf litter at the base of the same hackberry trees where
+              Question Marks overwinter as adults in the bark
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('mourning-cloak')}>
                 Mourning Cloak
               </button>{' '}
