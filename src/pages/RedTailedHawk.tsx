@@ -263,6 +263,14 @@ export default function RedTailedHawk({ onNavigate }: RedTailedHawkProps) {
               garter snake
             </button>{' '}
             provides a smaller-scale version of the same mouse-and-vole predation service.
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('striped-skunk')}>
+              striped skunk
+            </button>{' '}
+            adds a third layer: drilling conical holes through lawn turf to extract Japanese
+            beetle grubs at night, excavating yellowjacket nests, and catching the same mice
+            and voles the hawk hunts from above — all without any poison and at no cost to the
+            homeowner who leaves a section of the yard alone.
             Together these species form a layered predator community that manages rodent
             populations continuously, at no cost, with no toxic residues — if the yard
             gives them a reason to be there.
