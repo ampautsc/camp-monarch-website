@@ -154,6 +154,7 @@ export const ALL_PAGE_SLUGS = [
   'viceroy',
   'question-mark',
   'eastern-comma',
+  'baltimore-checkerspot',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
