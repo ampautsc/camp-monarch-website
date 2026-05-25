@@ -212,6 +212,16 @@ export default function GrayHairstreak({ onNavigate }: GrayHairstreakProps) {
               on the static pattern; both species appear in legume gardens from May through October
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('coral-hairstreak')}>
+                Coral Hairstreak
+              </button>{' '}
+              &mdash; flies the same July woodland-edge habitat but has no tails at the hindwing
+              rear corner — a row of coral-orange spots runs along the lower hindwing edge instead;
+              lays eggs only on wild plum and black cherry bark, one genus versus the Gray
+              Hairstreak&apos;s 200+ host plant families; both species nectar on milkweed and
+              coneflower in the same July afternoons
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('wild-senna')}>
                 Wild Senna
               </button>{' '}
