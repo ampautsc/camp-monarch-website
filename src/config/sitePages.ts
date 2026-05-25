@@ -178,6 +178,7 @@ export const ALL_PAGE_SLUGS = [
   'wild-indigo-duskywing',
   'frosted-elfin',
   'wild-lupine',
+  'karner-blue',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
