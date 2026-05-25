@@ -1259,6 +1259,18 @@ const SPECIES: Species[] = [
     habitatTags: ['meadow', 'dry-sunny', 'disturbed'],
   },
   {
+    id: 'wild-senna',
+    name: 'Wild Senna',
+    scientificName: 'Senna hebecarpa',
+    emoji: '🌿',
+    shortDesc: 'Wild Senna blooms in July with yellow flowers that hold no nectar — bumblebees grip the anthers and vibrate at 400 hertz to shake pollen loose. Cloudless Sulphur caterpillars feed on the leaves and flowers; on leaves they are green, on flowers they are yellow, the color set by which plant part is in the diet.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/47750663/large.jpeg',
+    photoCredit: 'sanguinaria33 / iNaturalist · CC BY-NC',
+    page: 'wild-senna',
+    habitatTags: ['meadow', 'moist', 'sunny'],
+  },
+  {
     id: 'prairie-dropseed',
     name: 'Prairie Dropseed',
     scientificName: 'Sporobolus heterolepis',
