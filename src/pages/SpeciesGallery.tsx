@@ -1043,6 +1043,18 @@ const SPECIES: Species[] = [
     shortDesc: 'A small, spotless white butterfly of moist deciduous woodland. Its only host plant is native toothwort — and garlic mustard chemically traps females into laying on it, killing the caterpillars that hatch.',
   },
   {
+    id: 'spring-azure',
+    name: 'Spring Azure',
+    scientificName: 'Celastrina ladon',
+    emoji: '🦋',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/643023766/large.jpg',
+    photoCredit: 'Arlo Sitimans / CC BY via iNaturalist',
+    page: 'spring-azure' as Page,
+    status: 'stable' as const,
+    habitatTags: ['woodland-edge', 'spring-ephemerals'],
+    shortDesc: 'One of the first butterflies of spring — small, pale blue, and timed exactly to the blooming of flowering dogwood.',
+  },
+  {
     id: 'common-milkweed',
     name: 'Common Milkweed',
     scientificName: 'Asclepias syriaca',
