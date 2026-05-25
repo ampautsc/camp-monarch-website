@@ -170,6 +170,7 @@ export const ALL_PAGE_SLUGS = [
   'eastern-tailed-blue',
   'gray-hairstreak',
   'sleepy-orange',
+  'little-yellow',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
