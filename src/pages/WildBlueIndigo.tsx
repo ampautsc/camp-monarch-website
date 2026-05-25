@@ -204,7 +204,9 @@ export default function WildBlueIndigo({ onNavigate }: WildBlueIndigoProps) {
           <h2 id="neighbors-heading">Who finds Wild Blue Indigo — the specialists whose range tracks this plant, and the generalists who add it to a longer list</h2>
           <ul className="neighbor-list">
             <li>
-              <strong>Wild Indigo Duskywing</strong>{' '}
+              <button className="neighbor-link" onClick={() => onNavigate('wild-indigo-duskywing')}>
+                Wild Indigo Duskywing
+              </button>{' '}
               (<em>Erynnis baptisiae</em>)
               &mdash; a skipper that finds host plants by tasting the leaf surface with its
               feet; caterpillars feed inside rolled leaflets from late May through summer;
@@ -212,7 +214,9 @@ export default function WildBlueIndigo({ onNavigate }: WildBlueIndigoProps) {
               absent from landscapes where Wild Blue Indigo is absent
             </li>
             <li>
-              <strong>Frosted Elfin</strong>{' '}
+              <button className="neighbor-link" onClick={() => onNavigate('frosted-elfin')}>
+                Frosted Elfin
+              </button>{' '}
               (<em>Callophrys irus</em>)
               &mdash; a small hairstreak butterfly that lays on Wild Blue Indigo flower
               buds and developing seed pods in May; caterpillar feeds on floral tissue and
