@@ -282,6 +282,16 @@ export default function CedarWaxwing({ onNavigate }: CedarWaxwingProps) {
               outnumbered by 20 to 60 birds — cannot hold the patch. It retreats, waits, and
               resumes defense of whatever the flock left behind.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('hackberry')}>
+                Hackberry
+              </button>
+              {' — '}Native large-canopy tree; small dark purple drupes ripen in September
+              and October and Cedar Waxwing flocks consume them in the same window as
+              winterberry and crabapple; waxwings deposit hackberry seeds in droppings wherever
+              they perch, placing new hackberry seedlings in fence rows and property edges
+              throughout their range.
+            </li>
           </ul>
         </section>
       </div>
