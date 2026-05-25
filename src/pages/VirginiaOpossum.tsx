@@ -295,6 +295,16 @@ export default function VirginiaOpossum({ onNavigate }: VirginiaOpossumProps) {
               the opossum uses them as nighttime den sites; a yard with a brush pile and unmowed
               edges supports both simultaneously, with no competing resource needs
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('striped-skunk')}>
+                Striped Skunk
+              </button>{' '}
+              &mdash; skunks and opossums are both nocturnal omnivores using the same brush pile
+              and under-deck den sites; both eat mice and voles from the same suburban population
+              and both accumulate rodenticide through the same contaminated prey; a yard that
+              supports one almost always supports the other, foraging the same ground layer
+              through the same nights
+            </li>
           </ul>
         </section>
 
