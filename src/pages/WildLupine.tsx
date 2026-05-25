@@ -195,6 +195,15 @@ export default function WildLupine({ onNavigate }: WildLupineProps) {
           <h2 id="neighbors-heading">Who depends on Wild Lupine — the specialist butterflies whose presence anywhere in the landscape requires this plant to be present</h2>
           <ul className="neighbor-list">
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('karner-blue')}>
+                Karner Blue
+              </button>{' '}
+              &mdash; a federally endangered butterfly whose caterpillar feeds only on Wild Lupine
+              leaves; the egg overwinters at the root crown from August through April, so clearing
+              the plant in autumn removes the next generation before it hatches; remaining
+              populations exist only at managed preserve sites where lupine is kept in open sun
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('frosted-elfin')}>
                 Frosted Elfin
               </button>{' '}
