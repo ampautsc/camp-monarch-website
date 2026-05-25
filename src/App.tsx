@@ -141,6 +141,7 @@ import Viceroy from './pages/Viceroy'
 import QuestionMark from './pages/QuestionMark'
 import EasternComma from './pages/EasternComma'
 import BaltimoreCheckerspot from './pages/BaltimoreCheckerspot'
+import CloudlessSulphur from './pages/CloudlessSulphur'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -296,6 +297,7 @@ export default function App() {
       case 'question-mark':     return <QuestionMark onNavigate={navigateTo} />
       case 'eastern-comma':     return <EasternComma onNavigate={navigateTo} />
       case 'baltimore-checkerspot': return <BaltimoreCheckerspot onNavigate={navigateTo} />
+      case 'cloudless-sulphur': return <CloudlessSulphur onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
