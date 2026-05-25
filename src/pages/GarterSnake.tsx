@@ -167,8 +167,12 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
             <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
               Leave the Leaves guide
             </button>
-            {' '}covers the leaf accumulations and brush piles garter snakes use as shelter.
-            Or{' '}
+            {' '}covers the leaf accumulations and brush piles garter snakes use as shelter —
+            the same brush pile an{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-cottontail')}>
+              Eastern Cottontail
+            </button>
+            {' '}sprints to when flushed from the lawn. Or{' '}
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               choose a native plant
             </button>
