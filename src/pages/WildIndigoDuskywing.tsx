@@ -212,7 +212,9 @@ export default function WildIndigoDuskywing({ onNavigate }: WildIndigoDuskywingP
               is absent from a landscape, the duskywing is absent too
             </li>
             <li>
-              <strong>Frosted Elfin</strong>{' '}
+              <button className="neighbor-link" onClick={() => onNavigate('frosted-elfin')}>
+                Frosted Elfin
+              </button>{' '}
               (<em>Callophrys irus</em>)
               &mdash; a second Baptisia specialist that lays on flower buds and developing seed
               pods rather than leaves; its caterpillar feeds on floral tissue in May and June;
