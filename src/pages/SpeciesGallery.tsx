@@ -626,7 +626,7 @@ const SPECIES: Species[] = [
     name: 'Hermit Thrush',
     scientificName: 'Catharus guttatus',
     emoji: '🐦',
-    shortDesc: 'The only spotted thrush that winters in the US. Its song was described by Whitman as "spiritual, wondrous" — but what is measurable about it is the structure: the bird sings each phrase at a different pitch from the one before, creating a sequence that never directly repeats.',
+    shortDesc: 'The only spotted thrush that winters in the US. Its song was described by Whitman as “spiritual, wondrous” — but what is measurable about it is the structure: the bird sings each phrase at a different pitch from the one before, creating a sequence that never directly repeats.',
     status: 'common',
     photo: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Catharus_guttatus_3.jpg',
     photoCredit: 'Manjith Kainickara / CC BY-SA 2.0',
@@ -1555,6 +1555,18 @@ const SPECIES: Species[] = [
     photoCredit: 'Neal Kelso / CC BY via iNaturalist',
     page: 'henrys-elfin' as Page,
     habitatTags: ['woodland', 'woodland-edge', 'leaf-litter'],
+  },
+  {
+    id: 'hackberry',
+    name: 'Hackberry',
+    scientificName: 'Celtis occidentalis',
+    emoji: '🌿',
+    shortDesc: "Bark develops irregular corky ridges that distinguish it from every other eastern tree. The Hackberry Emperor butterfly lays eggs exclusively on hackberry — the caterpillar overwinters in fallen leaves at the base of the host tree from October through May. More than 85 caterpillar species feed on hackberry leaves, including the American Snout, an obligate specialist. Small dark purple drupes ripen in October and are consumed by cedar waxwings, robins, and flickers during fall migration.",
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/58704048/large.jpeg',
+    photoCredit: 'DeKalb County Forest Preserve District / CC0 via iNaturalist',
+    page: 'hackberry' as Page,
+    habitatTags: ['woodland', 'woodland-edge', 'edge'],
   },
 ]
 
