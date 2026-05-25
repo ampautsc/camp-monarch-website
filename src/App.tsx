@@ -152,6 +152,7 @@ import CheckeredWhite from './pages/CheckeredWhite'
 import OrangeSulphur from './pages/OrangeSulphur'
 import CloudedSulphur from './pages/CloudedSulphur'
 import WildSenna from './pages/WildSenna'
+import EasternTailedBlue from './pages/EasternTailedBlue'
 import OlympiaMarble from './pages/OlympiaMarble'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
@@ -319,6 +320,7 @@ export default function App() {
       case 'orange-sulphur': return <OrangeSulphur onNavigate={navigateTo} />
       case 'clouded-sulphur': return <CloudedSulphur onNavigate={navigateTo} />
       case 'wild-senna':   return <WildSenna onNavigate={navigateTo} />
+      case 'eastern-tailed-blue': return <EasternTailedBlue onNavigate={navigateTo} />
       case 'olympia-marble':    return <OlympiaMarble onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
