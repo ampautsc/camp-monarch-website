@@ -269,6 +269,24 @@ export default function BlackCherry({ onNavigate }: BlackCherryProps) {
               hangs its leaf-wrapped cocoons from the branches through winter
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('coral-hairstreak')}>
+                Coral Hairstreak
+              </button>{' '}
+              &mdash; lays a single flattened egg pressed directly against black cherry bark
+              in late July or August; the egg overwinters on the bark through nine months and
+              hatches in May when flower buds open; the caterpillar feeds on those buds before
+              pupating in leaf litter at the base of the tree in late June
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('spring-azure')}>
+                Spring Azure
+              </button>{' '}
+              &mdash; lays eggs on black cherry flower clusters in April; the caterpillar
+              feeds on the pollen and developing seeds inside the flowers &mdash; not the
+              leaves &mdash; and pupates in leaf litter below the tree; the adult overwinters
+              as a pupa and emerges the following March or April timed to cherry bloom
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('white-oak')}>
                 White Oak
               </button>{' '}
