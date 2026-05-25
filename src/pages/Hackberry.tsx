@@ -244,10 +244,19 @@ export default function Hackberry({ onNavigate }: HackberryProps) {
               undisturbed leaf litter at its base can support the full breeding cycle
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('tawny-emperor')}>
+                Tawny Emperor
+              </button>{' '}
+              &mdash; the near-twin obligate hackberry specialist; adults drink sodium from human
+              skin and sap flows, never visiting flowers; the single visible difference from
+              Hackberry Emperor is the forewing tip &mdash; no white spots on Tawny Emperor;
+              females stack 100 to 500 eggs in a compact cylinder on one hackberry leaf
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('american-snout')}>
                 American Snout
               </button>{' '}
-              &mdash; the second obligate hackberry specialist; caterpillar develops only on
+              &mdash; the third obligate hackberry butterfly; caterpillar develops only on
               hackberry; the elongated labial palps that give the butterfly its name become the
               stem of a dead leaf when the wings fold, making the resting butterfly disappear
               against a hackberry twig; in peak migration years, October movements through Texas
