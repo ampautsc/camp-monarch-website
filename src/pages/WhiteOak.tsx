@@ -272,6 +272,17 @@ export default function WhiteOak({ onNavigate }: WhiteOakProps) {
               can consume most of the acorn drop from a mature tree within two weeks
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('eastern-gray-squirrel')}>
+                Eastern Gray Squirrel
+              </button>{' '}
+              &mdash; buries white oak acorns individually in the soil at depths of roughly
+              2 centimeters, up to a half mile from the source tree, at a rate of roughly
+              10,000 separate caches per squirrel per fall; the approximately 25 percent
+              never retrieved become oak seedlings in fence rows, lawn edges, and neighbor
+              yards &mdash; the oaks growing at property edges across eastern suburbs arrived
+              there in a squirrel cache
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('eastern-screech-owl')}>
                 Eastern Screech-Owl
               </button>{' '}
