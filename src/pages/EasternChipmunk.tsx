@@ -197,6 +197,17 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
             reading a monarch makes when she lands on your milkweed in June and decides
             whether to lay.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-cottontail')}>
+              eastern cottontail
+            </button>
+            {' '}in the same yard uses the same brush pile and unmowed grass margins that
+            protect chipmunk burrow entrances. A cottontail nest scrape is 10 centimeters
+            across and sits in the same kind of dense, undisturbed low cover where chipmunk
+            burrow entrances are hidden. Both face the same secondary rodenticide risk when
+            hawks and owls hunting the same yard absorb accumulated doses from poisoned prey.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
