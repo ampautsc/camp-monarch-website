@@ -173,13 +173,19 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
               hanging tube.
             </li>
             <li>
-              <strong>Plant native fruiting shrubs for summer food and nesting cover.</strong>{' '}
+              <strong>Plant native fruiting shrubs and trees for summer food and nesting cover.</strong>{' '}
               Native viburnums (<em>Viburnum</em> spp.), native dogwoods (<em>Cornus</em>{' '}
               spp.), and native serviceberries (<em>Amelanchier</em> spp.) produce fruit
               cardinals eat across the season and support the insect populations that
-              nestlings require. Native shrubs attract and sustain the caterpillars, beetles,
-              and other invertebrates that a breeding pair needs to feed two to four broods
-              of young through a long summer.
+              nestlings require.{' '}
+              <button className="link-button" onClick={() => onNavigate('redbud')}>
+                Eastern Redbud
+              </button>{' '}
+              produces persistent seed pods that cardinals and grosbeaks crack open from
+              late summer through winter — a seed source still hanging in the yard when
+              the feeder runs dry. Native shrubs attract and sustain the caterpillars,
+              beetles, and other invertebrates that a breeding pair needs to feed two to
+              four broods of young through a long summer.
             </li>
             <li>
               <strong>Stop cutting shrubs and hedges back in April and May.</strong>{' '}
