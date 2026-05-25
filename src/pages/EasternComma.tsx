@@ -97,10 +97,10 @@ export default function EasternComma({ onNavigate }: EasternCommaProps) {
             The female lays pale green eggs singly on the underside of host plant leaves,
             usually near the growing tip. Stinging nettle (<em>Urtica dioica</em>) is the
             most commonly used host, followed by hops (<em>Humulus lupulus</em>), false
-            nettle (<em>Boehmeria cylindrica</em>), and less frequently elm. A patch of
-            stinging nettle in a sunny disturbed corner — along a fence, at the edge of a
-            brushy area — is used by Eastern Commas, Question Marks, and Red Admirals
-            through the same season. Three different butterfly species, one plant.
+            nettle (<em>Boehmeria cylindrica</em>), hackberry, and less frequently elm.
+            A patch of stinging nettle in a sunny disturbed corner — along a fence, at
+            the edge of a brushy area — is used by Eastern Commas, Question Marks, and
+            Red Admirals through the same season. Three different butterfly species, one plant.
           </p>
           <p>
             The caterpillar constructs a leaf shelter by pulling the edges of a leaf
@@ -194,6 +194,17 @@ export default function EasternComma({ onNavigate }: EasternCommaProps) {
         <section aria-labelledby="neighbors-heading">
           <h2 id="neighbors-heading">Who shares the bark in October and the nettle patch in July</h2>
           <ul className="neighbor-list">
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry')}>
+                Hackberry
+              </button>{' '}
+              &mdash; a secondary caterpillar host for Eastern Commas alongside stinging nettle;
+              in yards where nettle is absent, hackberry is the primary available host for the
+              spring and summer broods; the Hackberry Emperor butterfly overwinters as a
+              caterpillar in the leaf litter at the base of hackberry trees while Eastern Commas
+              overwinter as adults in the bark above — two overwintering strategies on the same
+              tree
+            </li>
             <li>
               <button className="neighbor-link" onClick={() => onNavigate('question-mark')}>
                 Question Mark
