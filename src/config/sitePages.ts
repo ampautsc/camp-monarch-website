@@ -189,6 +189,8 @@ export const ALL_PAGE_SLUGS = [
   'hackberry-emperor',
   'american-snout',
   'tawny-emperor',
+  'eastern-cottontail',
+  'striped-skunk',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
