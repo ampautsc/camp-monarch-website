@@ -148,12 +148,15 @@ export default function CloudedSulphur({ onNavigate }: CloudedSulphurProps) {
             <li>
               <strong>Add native legumes to a sunny border.</strong>{' '}
               Partridge pea (<em>Chamaecrista fasciculata</em>) is a native annual legume
-              that establishes from seed in one season in full sun. Wild senna
-              (<em>Senna hebecarpa</em>) grows three to five feet and provides large-leafed
-              host plant material. Wild blue indigo (<em>Baptisia australis</em>) is a
-              long-lived perennial used by several sulphur species and also by the
-              Wild Indigo Duskywing skipper. All three require no supplemental watering
-              once established in the eastern United States.
+              that establishes from seed in one season in full sun.{' '}
+              <button className="link-button" onClick={() => onNavigate('wild-senna')}>
+                Wild Senna
+              </button>{' '}
+              (<em>Senna hebecarpa</em>) is a perennial legume that grows three to five
+              feet and returns from the same root crown each spring. Wild blue indigo
+              (<em>Baptisia australis</em>) is a long-lived perennial used by several
+              sulphur species and also by the Wild Indigo Duskywing skipper. All three
+              require no supplemental watering once established in the eastern United States.
             </li>
             <li>
               <strong>Do not spray clover patches with broadleaf herbicide.</strong>{' '}
