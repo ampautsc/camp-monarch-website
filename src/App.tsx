@@ -168,6 +168,8 @@ import WildLupine from './pages/WildLupine'
 import KarnerBlue from './pages/KarnerBlue'
 import JuvenalsDuskywing from './pages/JuvenalsDuskywing'
 import Sassafras from './pages/Sassafras'
+import Redbud from './pages/Redbud'
+import HenrysElfin from './pages/HenrysElfin'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -371,6 +373,8 @@ case 'little-brown-bat':      return <LittleBrownBat onNavigate={navigateTo} />
       case 'karner-blue':           return <KarnerBlue onNavigate={navigateTo} />
       case 'juvenals-duskywing':    return <JuvenalsDuskywing onNavigate={navigateTo} />
       case 'sassafras':             return <Sassafras onNavigate={navigateTo} />
+      case 'redbud':              return <Redbud onNavigate={navigateTo} />
+      case 'henrys-elfin':        return <HenrysElfin onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
