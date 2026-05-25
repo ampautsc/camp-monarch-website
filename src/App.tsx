@@ -155,6 +155,7 @@ import WildSenna from './pages/WildSenna'
 import OlympiaMarble from './pages/OlympiaMarble'
 import EasternTailedBlue from './pages/EasternTailedBlue'
 import GrayHairstreak from './pages/GrayHairstreak'
+import SleepyOrange from './pages/SleepyOrange'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -324,6 +325,7 @@ export default function App() {
       case 'olympia-marble':    return <OlympiaMarble onNavigate={navigateTo} />
       case 'eastern-tailed-blue': return <EasternTailedBlue onNavigate={navigateTo} />
       case 'gray-hairstreak': return <GrayHairstreak onNavigate={navigateTo} />
+      case 'sleepy-orange': return <SleepyOrange onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
