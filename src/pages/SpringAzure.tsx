@@ -199,6 +199,16 @@ export default function SpringAzure({ onNavigate }: SpringAzureProps) {
           <h2 id="neighbors-heading">April woodland-edge neighbors — who flies and blooms alongside the Spring Azure</h2>
           <ul className="neighbor-list">
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('henrys-elfin')}>
+                Henry's Elfin
+              </button>{' '}
+              &mdash; another small March–April butterfly whose caterpillar eats only the
+              flowers and seed pods of Eastern Redbud; adults fly the same early-spring
+              window as Spring Azures and overwinter as pupae in the leaf litter;
+              planting native redbud alongside flowering dogwood brings both species to the
+              same early-spring yard
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('west-virginia-white')}>
                 West Virginia White
               </button>{' '}
