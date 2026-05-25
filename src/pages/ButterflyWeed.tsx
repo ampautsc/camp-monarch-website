@@ -240,6 +240,16 @@ export default function ButterflyWeed({ onNavigate }: ButterflyWeedProps) {
               this plant in full sun
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('coral-hairstreak')}>
+                Coral Hairstreak
+              </button>{' '}
+              &mdash; nectars on butterfly weed and dogbane during its six-week July flight window;
+              a patch of butterfly weed planted within 50 feet of a wild plum or black cherry
+              keeps adults foraging in the range where females lay eggs on bark in late July;
+              the Coral Hairstreak has no tails &mdash; in their place, a row of coral-orange
+              spots runs the full lower hindwing edge
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('common-milkweed')}>
                 Common Milkweed
               </button>{' '}
