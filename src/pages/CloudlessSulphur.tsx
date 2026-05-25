@@ -162,7 +162,11 @@ export default function CloudlessSulphur({ onNavigate }: CloudlessSulphurProps) 
               <button className="link-button" onClick={() => onNavigate('wild-senna')}>
                 Wild Senna
               </button>{' '}
-              (<em>Senna hebecarpa</em>) or Maryland Senna (<em>Senna marilandica</em>) as a perennial companion.</strong>{' '}
+              (<em>Senna hebecarpa</em>) or{' '}
+              <button className="link-button" onClick={() => onNavigate('maryland-senna')}>
+                Maryland Senna
+              </button>{' '}
+              (<em>Senna marilandica</em>) as a perennial companion.</strong>{' '}
               Both species grow 4 to 6 feet tall, bloom with yellow flowers in midsummer, and are
               native across the eastern United States. They emerge earlier in spring than Partridge Pea
               and extend the period when host plant material is available, giving early-season females
@@ -207,6 +211,16 @@ export default function CloudlessSulphur({ onNavigate }: CloudlessSulphurProps) 
               and provides host plant material before Partridge Pea has germinated; Cloudless Sulphur
               caterpillars are green when feeding on the leaves and shift toward yellow when feeding
               on the flowers — the color determined by which plant part is in the diet
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('maryland-senna')}>
+                Maryland Senna
+              </button>{' '}
+              &mdash; the southern counterpart to Wild Senna, extending the host plant range into
+              Georgia, Alabama, and Arkansas; a Cloudless Sulphur female tasting leaflets with her
+              tarsal chemoreceptors cannot distinguish between the two Senna species — she lays on
+              whichever is present; the caterpillar feeding on Maryland Senna leaves turns green,
+              then shifts toward yellow when it moves to the flower clusters
             </li>
             <li>
               <button className="neighbor-link" onClick={() => onNavigate('tiger-swallowtail')}>
