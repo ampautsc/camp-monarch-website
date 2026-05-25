@@ -293,7 +293,13 @@ export default function WildTurkey({ onNavigate }: WildTurkeyProps) {
             {' '}overwinter in the same leaf layer where turkey poults will be hunting beetles in
             June &mdash; the leaf mat that survives the autumn leaf blower is the layer that
             produces fireflies the following summer and supports turkey broods the following
-            spring. See all the species working this same ground layer in the{' '}
+            spring.{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-cottontail')}>
+              Eastern Cottontails
+            </button>
+            {' '}raise their young in a shallow scrape tucked at the base of the same dense shrubs
+            a turkey hen selects for her nest — the brushy back corner that gives a hen a hidden
+            nesting site is the same thicket a cottontail runs to when flushed from the lawn. See all the species working this same ground layer in the{' '}
             <button className="link-button" onClick={() => onNavigate('species-gallery')}>
               Species Gallery
             </button>
