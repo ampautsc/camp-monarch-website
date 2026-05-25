@@ -166,6 +166,18 @@ const SPECIES: Species[] = [
     habitatTags: ['woodland-edge', 'garden', 'suburban'],
   },
   {
+    id: 'eastern-cottontail',
+    name: 'Eastern Cottontail',
+    scientificName: 'Sylvilagus floridanus',
+    emoji: '🐇',
+    shortDesc: 'Raises its young in a grass-and-fur-lined scrape 10 centimeters wide in unmowed ground — the mother nurses twice per night for 3 minutes each visit, then leaves. Kits leave the nest at 4 weeks. Lawn mowing during May–August accounts for most suburban nest losses.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/91229197/large.jpg',
+    photoCredit: 'Bill Keim / CC BY via iNaturalist',
+    page: 'eastern-cottontail',
+    habitatTags: ['woodland-edge', 'garden', 'suburban'],
+  },
+  {
     id: 'virginia-opossum',
     name: 'Virginia Opossum',
     scientificName: 'Didelphis virginiana',
