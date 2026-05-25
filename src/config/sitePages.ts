@@ -159,6 +159,7 @@ export const ALL_PAGE_SLUGS = [
   'american-lady',
   'common-buckeye',
   'silvery-checkerspot',
+  'cabbage-white',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
