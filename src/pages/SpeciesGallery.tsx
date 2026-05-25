@@ -1581,6 +1581,19 @@ const SPECIES: Species[] = [
     page: 'hackberry-emperor' as Page,
     habitatTags: ['woodland', 'woodland-edge', 'edge', 'leaf-litter'],
   },
+  {
+    id: 'american-snout',
+    name: 'American Snout',
+    scientificName: 'Libytheana carinenta',
+    emoji: '🦋',
+    shortDesc:
+      "The only butterfly in North America with elongated labial palps projecting forward like a beak — the caterpillar is an obligate hackberry specialist. Perched with wings folded on a twig, the palps become the stem and the wings become the blade of a dead hackberry leaf. In peak migration years, Texas counting stations have recorded six million individuals per hour moving southwest in October.",
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/244576271/large.jpeg',
+    photoCredit: 'mnerrie / CC BY-NC via iNaturalist',
+    page: 'american-snout' as Page,
+    habitatTags: ['woodland', 'woodland-edge', 'edge'],
+  },
 ]
 
 interface SpeciesGalleryProps {
