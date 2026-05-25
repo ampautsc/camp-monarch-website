@@ -142,6 +142,7 @@ export const ALL_PAGE_SLUGS = [
   'white-oak',
   'black-cherry',
   'serviceberry',
+  'pawpaw',
   'spicebush',
   'elderberry',
   'virginia-creeper',
