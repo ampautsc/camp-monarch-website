@@ -90,7 +90,11 @@ export default function RedTailedHawk({ onNavigate }: RedTailedHawkProps) {
           </p>
           <p>
             The diet is 85 to 90 percent small mammals in most parts of the range: voles,
-            mice, cotton rats, ground squirrels, rabbits, and eastern chipmunks. The remainder
+            mice, cotton rats, ground squirrels,{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-cottontail')}>
+              eastern cottontails
+            </button>
+            {', and eastern chipmunks. The remainder'}
             is birds, reptiles, and occasionally large invertebrates. A mated pair defends a
             territory of one to two square miles through the nesting season. They build large
             stick nests in the crown of tall trees — often the highest available point in the
