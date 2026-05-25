@@ -1568,6 +1568,19 @@ const SPECIES: Species[] = [
     page: 'hackberry' as Page,
     habitatTags: ['woodland', 'woodland-edge', 'edge'],
   },
+  {
+    id: 'hackberry-emperor',
+    name: 'Hackberry Emperor',
+    scientificName: 'Asterocampa celtis',
+    emoji: '🦋',
+    shortDesc:
+      "An obligate hackberry specialist — no Hackberry Emperor caterpillar has ever been documented developing on any other plant. Adults seek dissolved minerals from sap, rotting fruit, and human skin rather than nectar; they land on people working near hackberry trees and stay for several minutes while drinking. The late-summer caterpillar overwinters in leaf litter at the base of the host tree from October through May.",
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/43334140/large.jpeg',
+    photoCredit: 'Carolyn Gritzmaker / CC BY-NC via iNaturalist',
+    page: 'hackberry-emperor' as Page,
+    habitatTags: ['woodland', 'woodland-edge', 'edge', 'leaf-litter'],
+  },
 ]
 
 interface SpeciesGalleryProps {
