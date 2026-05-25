@@ -66,10 +66,17 @@ export default function HackberryEmperor({ onNavigate }: HackberryEmperorProps) 
             and parked vehicles in yards near hackberry.
           </p>
           <p>
-            The closely related Tawny Emperor (<em>Asterocampa clyton</em>) also uses hackberry
-            exclusively but lacks the white forewing spots and has stronger tawny-orange tones.
-            In yards with hackberry, both species may be present through summer. The American
-            Snout (<em>Libytheana carinenta</em>) — the third hackberry-only butterfly — carries
+            The closely related{' '}
+            <button className="link-button" onClick={() => onNavigate('tawny-emperor')}>
+              Tawny Emperor
+            </button>{' '}
+            (<em>Asterocampa clyton</em>) also uses hackberry exclusively but lacks the white
+            forewing spots and has stronger tawny-orange tones. In yards with hackberry, both
+            species may be present through summer. The{' '}
+            <button className="link-button" onClick={() => onNavigate('american-snout')}>
+              American Snout
+            </button>{' '}
+            (<em>Libytheana carinenta</em>) — the third hackberry-only butterfly — carries
             two elongated labial palps projecting forward from the face, giving the butterfly
             a distinctive long-nosed profile visible from three feet away.
           </p>
@@ -207,6 +214,15 @@ export default function HackberryEmperor({ onNavigate }: HackberryEmperorProps) 
               &mdash; the exclusive caterpillar host; no Hackberry Emperor egg has been
               documented on any other plant; a property without hackberry will not produce
               a breeding Hackberry Emperor regardless of what else grows there
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('tawny-emperor')}>
+                Tawny Emperor
+              </button>{' '}
+              &mdash; the near-twin that flies the same hackberry at the same time; both
+              species are obligate hackberry specialists that drink dissolved minerals rather
+              than nectar; the single visible difference is the forewing tip &mdash; white
+              spots on Hackberry Emperor, none on Tawny Emperor
             </li>
             <li>
               <button className="neighbor-link" onClick={() => onNavigate('question-mark')}>
