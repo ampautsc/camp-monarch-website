@@ -154,6 +154,18 @@ const SPECIES: Species[] = [
     habitatTags: ['woodland-edge', 'garden', 'edge'],
   },
   {
+    id: 'eastern-gray-squirrel',
+    name: 'Eastern Gray Squirrel',
+    scientificName: 'Sciurus carolinensis',
+    emoji: '🐿️',
+    shortDesc: 'Buries roughly 10,000 acorns per fall in individual caches scattered across a half-mile radius, located by smell through snow and frozen soil the following winter. The oak seedlings growing along suburban fence rows arrived there in squirrel caches that were never retrieved.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/176023576/large.jpeg',
+    photoCredit: 'Mila C. / CC BY via iNaturalist',
+    page: 'eastern-gray-squirrel',
+    habitatTags: ['woodland-edge', 'garden', 'suburban'],
+  },
+  {
     id: 'virginia-opossum',
     name: 'Virginia Opossum',
     scientificName: 'Didelphis virginiana',
