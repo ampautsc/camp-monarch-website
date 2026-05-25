@@ -148,6 +148,7 @@ import SilveryCheckerspot from './pages/SilveryCheckerspot'
 import CabbageWhite from './pages/CabbageWhite'
 import WestVirginiaWhite from './pages/WestVirginiaWhite'
 import SpringAzure from './pages/SpringAzure'
+import CheckeredWhite from './pages/CheckeredWhite'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 export type Page = PageSlug
@@ -310,6 +311,7 @@ export default function App() {
       case 'cabbage-white':     return <CabbageWhite onNavigate={navigateTo} />
       case 'west-virginia-white': return <WestVirginiaWhite onNavigate={navigateTo} />
       case 'spring-azure':       return <SpringAzure onNavigate={navigateTo} />
+      case 'checkered-white':  return <CheckeredWhite onNavigate={navigateTo} />
       case 'seasonal-calendar': return <SeasonalCalendar onNavigate={navigateTo} />
       case 'species-gallery': return <SpeciesGallery onNavigate={navigateTo} />
       case 'habitat-transformation': return <HabitatTransformation onNavigate={navigateTo} />
