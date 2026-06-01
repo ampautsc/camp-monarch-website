@@ -220,6 +220,17 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
             and a fox that catches it during that window absorbs the accumulated tissue load
             directly.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
+              Wood Thrush
+            </button>
+            {' '}forages the same leaf-litter layer the chipmunk caches in — walking slowly
+            through the duff, flicking leaves aside with its bill to reach the beetles,
+            earthworms, and caterpillars underneath. A yard with deep intact litter is a
+            functioning habitat unit for both at the same time: the chipmunk running cache
+            routes, the thrush hunting a few feet behind.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
