@@ -250,6 +250,16 @@ export default function WestVirginiaWhite({ onNavigate }: WestVirginiaWhiteProps
               substrate for the pupa and for the firefly larvae, ovenbird nests, and dozens of
               other species that use the forest floor through winter
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('olympia-marble')}>
+                Olympia Marble
+              </button>{' '}
+              &mdash; another single-brood spring pierid; while the West Virginia White flies in
+              forest understory in April and depends on toothwort in the mustard family, the
+              Olympia Marble flies in open limestone outcrops and dry cedar glade margins in April
+              and May using native rock cress in the same plant family; both are absent as adults
+              by early June and are listed as rare or threatened in several eastern states
+            </li>
           </ul>
         </section>
 
