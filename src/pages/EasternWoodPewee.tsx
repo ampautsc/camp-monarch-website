@@ -188,6 +188,72 @@ export default function EasternWoodPewee({ onNavigate }: EasternWoodPeweeProps) 
           </p>
         </section>
 
+        <section aria-labelledby="connections-heading">
+          <h2 id="connections-heading">Who hunts the same air, shares the same dead wood, and needs the same forty-year-old forest</h2>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('eastern-phoebe')}>
+                Eastern Phoebe
+              </button>
+              {' — '}The other flycatcher of the woodland edge, perching at 5 to 15 feet rather
+              than 40, with no wing bars and a steady downward tail bob the pewee never makes.
+              The phoebe arrives in March — six weeks before the pewee — and nests under bridge
+              supports and building ledges, not in a lichen-camouflaged cup on an open branch.
+              Both birds hunt by sallying from a stationary perch into the air; the phoebe works
+              below the canopy where the pewee hunts from above it.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('chimney-swift')}>
+                Chimney Swift
+              </button>
+              {' — '}Hunts the same air column the pewee watches from below, but from above and
+              without ever landing — the swift catches beetles, ants, and midges in continuous
+              flight, never stopping on any horizontal surface. In a yard where pesticide
+              applications have reduced flying insect density, both birds lose the same prey
+              from the same airspace.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('common-nighthawk')}>
+                Common Nighthawk
+              </button>
+              {' — '}Works the same aerial hunting territory at dusk and dawn rather than through
+              midday, catching moths and flying beetles in long slow passes over canopy gaps.
+              In May, a Wood-Pewee may still be calling from a dead oak branch while a nighthawk
+              is already sweeping the sky overhead in the same airspace the pewee watched all
+              afternoon.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('scarlet-tanager')}>
+                Scarlet Tanager
+              </button>
+              {' — '}Same 60-year-old oaks and maples, same mature forest canopy that both species
+              require and both have lost to suburban fragmentation. The tanager gleans caterpillars
+              from the leaves directly above the pewee&apos;s perch. Both arrive in May, both
+              winter in South America, and both populations have declined more than 30% since 1966
+              as contiguous mature forest has been replaced by edge-heavy development.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('downy-woodpecker')}>
+                Downy Woodpecker
+              </button>
+              {' — '}Excavates nest cavities into the same standing dead branches the pewee uses
+              as foraging perches. A dead limb at 35 feet may have a Downy Woodpecker cavity
+              carved into it by April and a Wood-Pewee sitting at its tip by May, each using
+              the same piece of dead wood for a different purpose in the same spring.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
+                Wood Thrush
+              </button>
+              {' — '}Shares the same mature deciduous forest, the same spring arrival from
+              Central America, and the same population trajectory. Where forest has been cut
+              into small isolated patches, the Wood Thrush and the Wood-Pewee both disappear
+              from the same fragments at the same threshold — when the patch drops below the
+              minimum area each species needs to nest successfully.
+            </li>
+          </ul>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Want to support the Wood-Pewee?</strong>{' '}
