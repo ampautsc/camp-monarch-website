@@ -284,6 +284,36 @@ export default function EasternTowhee({ onNavigate }: EasternTowheeProps) {
             which a visitor will never identify by name — that depend on the structural complexity
             that disappears when that corner gets mowed, raked, and cleared.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('american-robin')}>
+              American Robin
+            </button>{' '}
+            hunts the open lawn and bare garden-bed edge at the margin of the shrub — pulling
+            earthworms from loose soil, running forward, stopping, cocking its head to listen for
+            movement below. The towhee never goes there. It works the thicket floor — the deep
+            litter under the shrub where the robin stops and the towhee takes over. Both are
+            reading the same soil invertebrate community from different access points. When the
+            leaf litter is intact and the earthworm population is healthy, the robin is on the
+            lawn edge and the towhee is ten feet away in the thicket, each working the same
+            underground food web from a different angle.
+          </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-meadowlark')}>
+              Eastern Meadowlark
+            </button>{' '}
+            holds its territory in open grassland — a minimum of 25 to 30 acres of tall native
+            grass where it nests on the surface and hunts grasshoppers and beetles by probing
+            the soil with its bill. The towhee never uses open grassland. It works the shrubby
+            edge where the grass gives way to native shrubs — the brushy margin, the hedgerow,
+            the tangled transition zone where the meadowlark&apos;s territory ends and towhee
+            territory begins. A native meadow bordered by a row of native shrubs serves both:
+            the meadowlark finds its insect base in the open strip; the towhee finds nesting
+            cover and leaf-litter foraging substrate in the shrubs at the margin. Both are losing
+            the same unmanaged edge — the transitional zone that once existed wherever old fields
+            were left alone and now exists almost nowhere.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
