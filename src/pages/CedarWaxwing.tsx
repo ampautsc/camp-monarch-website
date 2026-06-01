@@ -292,6 +292,24 @@ export default function CedarWaxwing({ onNavigate }: CedarWaxwingProps) {
               they perch, placing new hackberry seedlings in fence rows and property edges
               throughout their range.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('hackberry-emperor')}>
+                Hackberry Emperor
+              </button>
+              {' — '}Breeds only on hackberry — the same tree Cedar Waxwings seed into fence rows by depositing the pits in droppings wherever they perch; caterpillars overwinter in the leaf litter at the base of the trunk that waxwings planted; the butterfly's range follows the waxwing's planting range.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('tawny-emperor')}>
+                Tawny Emperor
+              </button>
+              {' — '}Near-twin of the Hackberry Emperor on the same host tree; lays eggs in stacks of 100 to 500 on a single hackberry leaf, with caterpillars that overwinter in the leaf litter under the same trees that Cedar Waxwings seeded from a droppings-stop on a fence rail.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('american-snout')}>
+                American Snout
+              </button>
+              {' — '}A third butterfly that breeds only on hackberry; Cedar Waxwings deposit hackberry seeds in droppings wherever the flock perches after eating the fruit — each new seedling extends the range of the Snout into yards that had no hackberry before the flock came through.
+            </li>
           </ul>
         </section>
       </div>
