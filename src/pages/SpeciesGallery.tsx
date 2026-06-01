@@ -248,5 +248,249 @@ const SPECIES: Species[] = [
     photoCredit: 'Elaine R. Wilson / CC BY-SA 2.5',
     page: 'northern-flicker',
     habitatTags: ['open-woodland', 'edge', 'lawn'],
+  },
+  {
+    id: 'hackberry',
+    name: 'Hackberry',
+    scientificName: 'Celtis occidentalis',
+    emoji: '🌳',
+    shortDesc: 'Bark develops irregular corky ridges — thick warty projections unlike any other common eastern tree. More than 80 native caterpillar species feed on its leaves, including the Hackberry Emperor, the Tawny Emperor, and the American Snout, none of which can complete their life cycle on any other plant.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Hackberry_bark_%28Celtis_occidentalis%29.jpg',
+    photoCredit: 'Adam Shaw / CC BY-SA 3.0',
+    page: 'hackberry',
+    habitatTags: ['woodland-edge', 'suburban', 'garden'],
+  },
+  {
+    id: 'hackberry-emperor',
+    name: 'Hackberry Emperor',
+    scientificName: 'Asterocampa celtis',
+    emoji: '🦋',
+    shortDesc: 'Adults drink sodium from human sweat and never visit flowers. The caterpillar feeds exclusively on hackberry leaves June through September, then overwinters in the leaf litter at the base of that same tree. Rake those leaves in fall and this butterfly cannot complete its life cycle.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/43334140/large.jpeg',
+    photoCredit: 'Carolyn Gritzmaker / CC BY-NC via iNaturalist',
+    page: 'hackberry-emperor',
+    habitatTags: ['woodland-edge', 'suburban', 'garden'],
+  },
+  {
+    id: 'american-snout',
+    name: 'American Snout',
+    scientificName: 'Libytheana carinenta',
+    emoji: '🦋',
+    shortDesc: 'Carries elongated palps that project forward past the head for roughly half the wingspan — no other eastern butterfly has this structure. When it folds its wings on a stem, the palps mimic a dead leaf petiole. Hackberry is the only caterpillar host.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/340891791/large.jpeg',
+    photoCredit: 'John Flannery / CC BY via iNaturalist',
+    page: 'american-snout',
+    habitatTags: ['woodland-edge', 'suburban', 'garden'],
+  },
+  {
+    id: 'tawny-emperor',
+    name: 'Tawny Emperor',
+    scientificName: 'Asterocampa clyton',
+    emoji: '🦋',
+    shortDesc: 'Uses hackberry as its only host plant, sharing it with the Hackberry Emperor. The single visible difference: Hackberry Emperors carry white spots near the forewing tip; Tawny Emperors carry none. Females stack eggs in a compact cylinder of 100 to 500 on a single hackberry leaf.',
+    status: 'common',
+    photo: 'https://inaturalist-open-data.s3.amazonaws.com/photos/187806544/large.jpeg',
+    photoCredit: 'Ainsley / CC BY via iNaturalist',
+    page: 'tawny-emperor',
+    habitatTags: ['woodland-edge', 'suburban', 'garden'],
+  },
+  {
+    id: 'eastern-bluebird',
+    name: 'Eastern Bluebird',
+    scientificName: 'Sialia sialis',
+    emoji: '🐦',
+    shortDesc: 'Hunts insects by watching from a low perch and dropping to the ground — requires open lawn or short vegetation to see prey. European starlings, introduced to New York in 1890, occupy natural tree cavities before bluebirds can nest in them. A mounted nest box with a 1.5-inch entrance hole is too small for a starling.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg',
+    photoCredit: 'Sandysphotos2009 / CC BY 2.0',
+    page: 'eastern-bluebird',
+    habitatTags: ['open-woodland', 'lawn', 'edge'],
+  },
+  {
+    id: 'black-capped-chickadee',
+    name: 'Black-Capped Chickadee',
+    scientificName: 'Poecile atricapillus',
+    emoji: '🐦',
+    shortDesc: 'To raise one brood, a nesting pair needs between 6,000 and 9,000 caterpillars. Those caterpillars come almost entirely from native trees and shrubs — non-native ornamental plantings support between 1 and 14 caterpillar species compared to 300 or more on a native oak.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg',
+    photoCredit: 'Mdf / CC BY-SA 3.0',
+    page: 'black-capped-chickadee',
+    habitatTags: ['woodland', 'woodland-edge', 'garden'],
+  },
+  {
+    id: 'northern-cardinal',
+    name: 'Northern Cardinal',
+    scientificName: 'Cardinalis cardinalis',
+    emoji: '🐦',
+    shortDesc: 'The male brings food to the female on the nest, passing it beak to beak through incubation and early chick-rearing. Nestlings receive protein almost exclusively from soft insects and caterpillars for their first 10 days — not the seeds adults eat year-round.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Male_northern_cardinal_in_Central_Park_%2852612%29.jpg',
+    photoCredit: 'Rhododendrites / CC BY-SA 4.0',
+    page: 'northern-cardinal',
+    habitatTags: ['woodland-edge', 'garden', 'suburban'],
+  },
+  {
+    id: 'american-robin',
+    name: 'American Robin',
+    scientificName: 'Turdus migratorius',
+    emoji: '🐦',
+    shortDesc: 'Hunts earthworms with a stop-start run, tilting its head 90 degrees to detect prey by sound or vibration. Raises two to three broods per summer; chicks receive protein almost exclusively from earthworms and caterpillars during their 13-day nestling phase.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/9/97/American_robin_%2871307%29.jpg',
+    photoCredit: 'Rhododendrites / CC BY-SA 4.0',
+    page: 'american-robin',
+    habitatTags: ['lawn', 'garden', 'woodland-edge'],
+  },
+  {
+    id: 'american-kestrel',
+    name: 'American Kestrel',
+    scientificName: 'Falco sparverius',
+    emoji: '🐦',
+    shortDesc: "North America's smallest falcon — about the size of a robin — can detect ultraviolet light and uses it to track vole urine trails invisible to human eyes. The population has fallen 47 percent since 1966, correlated with loss of open grassland and reduction in large insects.",
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Falco-sparverius-001.jpg/960px-Falco-sparverius-001.jpg',
+    photoCredit: 'Simon Pierre Barrette / CC BY-SA 3.0',
+    page: 'american-kestrel',
+    habitatTags: ['open-woodland', 'edge', 'lawn'],
+  },
+  {
+    id: 'eastern-screech-owl',
+    name: 'Eastern Screech-Owl',
+    scientificName: 'Megascops asio',
+    emoji: '🦉',
+    shortDesc: 'Smaller than a coffee mug. Camouflage precise enough to disappear against bark in daylight. One is probably roosting in your neighborhood right now — most people who share a yard with one have never seen it.',
+    status: 'common',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Eastern_Screech_Owl.jpg',
+    photoCredit: 'Wolfgang Wander / CC BY-SA 3.0',
+    page: 'eastern-screech-owl',
+    habitatTags: ['woodland', 'woodland-edge', 'suburban'],
+  },
+  {
+    id: 'chimney-swift',
+    name: 'Chimney Swift',
+    scientificName: 'Chaetura pelagica',
+    emoji: '🐦',
+    shortDesc: 'Lives almost entirely in the air — bathes, drinks, and gathers nesting material on the wing. Its feet grip vertical surfaces only to roost or tend a nest; they cannot support the bird on a horizontal perch. Each bird consumes roughly 1,000 insects per day. The population has fallen 65 percent since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Chaetura_pelagica%2C_by_Lake_Erie%2C_Cleveland%2C_Ohio%2C_USA_339593191.jpg',
+    photoCredit: 'Adam Jackson / CC0 via iNaturalist',
+    page: 'chimney-swift',
+    habitatTags: ['open-woodland', 'edge', 'suburban'],
+  },
+  {
+    id: 'eastern-towhee',
+    name: 'Eastern Towhee',
+    scientificName: 'Pipilo erythrophthalmus',
+    emoji: '🐦',
+    shortDesc: 'Forages by jumping forward and kicking backward with both feet simultaneously — a double-scratch that launches leaf litter to expose invertebrates and seeds underneath. Nests and forages exclusively in dense shrubby undergrowth; mowing and shrub removal eliminate its habitat directly.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pipilo_erythrophthalmus_CT2.jpg/960px-Pipilo_erythrophthalmus_CT2.jpg',
+    photoCredit: 'DickDaniels / CC BY-SA 3.0',
+    page: 'eastern-towhee',
+    habitatTags: ['woodland-edge', 'edge', 'leaf-litter'],
   }
 ]
+
+interface SpeciesGalleryProps {
+  onNavigate: (page: Page) => void
+}
+
+const HABITAT_TAGS = [
+  { id: 'all', label: 'All Habitats' },
+  { id: 'meadow', label: 'Meadow & Prairie' },
+  { id: 'woodland', label: 'Woodland' },
+  { id: 'woodland-edge', label: 'Woodland Edge' },
+  { id: 'wetland', label: 'Wetland' },
+  { id: 'garden', label: 'Garden' },
+  { id: 'edge', label: 'Edge Habitat' },
+  { id: 'leaf-litter', label: 'Leaf Litter' },
+  { id: 'open-land', label: 'Open Land' },
+]
+
+const STATUS_LABELS: Record<Status, string> = {
+  common: 'Common',
+  declining: 'Declining',
+  endangered: 'Endangered',
+}
+
+const STATUS_COLORS: Record<Status, string> = {
+  common: '#2e7d32',
+  declining: '#f57c00',
+  endangered: '#c62828',
+}
+
+export default function SpeciesGallery({ onNavigate }: SpeciesGalleryProps) {
+  return (
+    <div className="page">
+      <section className="hero" style={{ paddingBottom: '1rem' }}>
+        <div className="hero__eyebrow">All Species</div>
+        <h1>The Species Gallery</h1>
+        <p className="hero__lead">
+          Every species on this site — butterflies, birds, frogs, mammals, and plants — with a
+          short description of what makes each one worth noticing. Click any card to read the
+          full profile.
+        </p>
+      </section>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginTop: '2rem' }}>
+        {SPECIES.filter(s => s.page !== null).map((species) => (
+          <div
+            key={species.id}
+            className="species-card"
+            onClick={() => species.page && onNavigate(species.page)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if ((e.key === 'Enter' || e.key === ' ') && species.page) {
+                onNavigate(species.page)
+              }
+            }}
+            style={{ cursor: 'pointer' }}
+          >
+            <div className="species-card__image-wrap">
+              <img
+                src={species.photo}
+                alt={species.name}
+                className="species-card__image"
+                loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.src = PHOTO_FALLBACK
+                }}
+              />
+            </div>
+            <div className="species-card__body">
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', flexWrap: 'wrap' }}>
+                <h3 className="species-card__name">{species.emoji} {species.name}</h3>
+                <span
+                  className="species-card__status"
+                  style={{ color: STATUS_COLORS[species.status] }}
+                >
+                  {STATUS_LABELS[species.status]}
+                </span>
+              </div>
+              <p className="species-card__sci-name">{species.scientificName}</p>
+              <p className="species-card__desc">{species.shortDesc}</p>
+              <div className="species-card__tags">
+                {species.habitatTags.map(tag => (
+                  <span key={tag} className="species-card__tag">{tag}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <section style={{ marginTop: '3rem' }} aria-labelledby="photo-credits-heading">
+        <h2 id="photo-credits-heading">Photo Credits</h2>
+        <p>
+          All photographs are sourced from Wikimedia Commons or iNaturalist under Creative Commons
+          licenses (CC BY 2.0, CC BY-SA 3.0, CC BY-SA 4.0, or CC BY-NC 4.0). No modifications were made.
+        </p>
+      </section>
+    </div>
+  )
+}
