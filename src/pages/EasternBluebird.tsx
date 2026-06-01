@@ -214,6 +214,22 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
             support it, the monarch habitat follows. The species are not separate causes.
             They are the same cause in different colors.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('american-kestrel')}>
+              American Kestrel
+            </button>{' '}
+            faces the same hole-size problem bluebirds solved. European Starlings —
+            introduced to North America in 1890 — claim any cavity they find suitable,
+            evicting the original occupant. The entrance diameter determines who keeps the
+            site: a 1.5-inch hole admits a bluebird and a starling cannot fit through it;
+            a 3-inch hole admits a kestrel. The monitoring routine that bluebird trail
+            volunteers built in the 1970s — checking boxes weekly, removing invasive nests
+            before they become established — is the same routine kestrel recovery programs
+            now recommend for the same reason. A yard already running a bluebird box program
+            has the skill the kestrel needs. The kestrel&apos;s population has fallen 47
+            percent since 1966; it has not yet had its bluebird-trail moment.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
