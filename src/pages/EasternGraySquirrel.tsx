@@ -234,6 +234,16 @@ export default function EasternGraySquirrel({ onNavigate }: EasternGraySquirrelP
               to oak regeneration through unretrieved caches, but the squirrel moves seeds
               farther from the source tree
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('red-fox')}>
+                Red Fox
+              </button>{' '}
+              &mdash; red foxes take gray squirrels during the ground caching window — early
+              morning and late afternoon when squirrels are working farthest from trunk cover;
+              a fox kit den active in May or June depends heavily on squirrels and chipmunks
+              because the kits require protein at 4 to 6 hour intervals during the nursing
+              and weaning period
+            </li>
           </ul>
         </section>
       </div>
