@@ -392,6 +392,30 @@ const SPECIES: Species[] = [
     photoCredit: 'DickDaniels / CC BY-SA 3.0',
     page: 'eastern-towhee',
     habitatTags: ['woodland-edge', 'edge', 'leaf-litter'],
+  },
+  {
+    id: 'wood-thrush',
+    name: 'Wood Thrush',
+    scientificName: 'Hylocichla mustelina',
+    emoji: '🐦',
+    shortDesc: 'Produces two notes simultaneously from separate chambers in its syrinx — the female evaluates repertoire size to gauge male survival history and territory quality. A breeding pair requires 6,000 to 9,000 caterpillars over the nesting season; Norway maple and Bradford pear host fewer than 10 caterpillar species combined, while a native oak hosts more than 500. Down 62 percent since 1966.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Wood_thrush_%28Hylocichla_mustelina%29_Peten.jpg',
+    photoCredit: 'Charles J. Sharp / CC BY-SA 4.0',
+    page: 'wood-thrush',
+    habitatTags: ['woodland', 'woodland-edge', 'leaf-litter'],
+  },
+  {
+    id: 'eastern-meadowlark',
+    name: 'Eastern Meadowlark',
+    scientificName: 'Sturnella magna',
+    emoji: '🐦',
+    shortDesc: 'The male knows 50 to 100 distinct song types and delivers them at rates exceeding 200 songs per hour at dawn during peak breeding season — singing from fence posts with the yellow breast flashing while the streaked back disappears into dry grass. The population has fallen 75 percent since 1966, driven by loss of the 25-to-30-acre grassland blocks the species needs to breed.',
+    status: 'declining',
+    photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sturnella_magna1.jpg/960px-Sturnella_magna1.jpg',
+    photoCredit: 'USFWS / Public Domain',
+    page: 'eastern-meadowlark',
+    habitatTags: ['meadow', 'open-land', 'edge'],
   }
 ]
 
