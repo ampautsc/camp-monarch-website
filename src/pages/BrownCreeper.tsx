@@ -210,7 +210,7 @@ export default function BrownCreeper({ onNavigate }: BrownCreeperProps) {
         </div>
 
         <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Who else works this bark</h2>
+          <h2 id="connections-heading">Who else works this bark — and the forest around it</h2>
           <p>
             The bark surface the Brown Creeper reads going up is shared with
             several species that work it differently. Downy Woodpeckers excavate
@@ -220,7 +220,12 @@ export default function BrownCreeper({ onNavigate }: BrownCreeperProps) {
             the same crevices. Carolina Wrens probe bark close to the ground in
             dense shrub edges. The same dead snag that hosts a Brown Creeper nest
             under its bark also provides a Downy Woodpecker cavity above it, and
-            feeds a nuthatch on its surface year-round.
+            feeds a nuthatch on its surface year-round. And above all of it, the
+            same mature native-tree trunks the creeper spirals also anchor the
+            territory of Scarlet Tanagers in the canopy, Wood Thrushes on the
+            forest floor, and Eastern Wood-Pewees on dead branches at 30 feet —
+            species that arrive in spring and leave in fall while the creeper
+            works the same bark year-round.
           </p>
           <ul>
             <li>
@@ -240,6 +245,24 @@ export default function BrownCreeper({ onNavigate }: BrownCreeperProps) {
                 Carolina Wren
               </button>
               {' — '}Probes bark and deadwood at ground level where the creeper starts each trunk spiral.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('scarlet-tanager')}>
+                Scarlet Tanager
+              </button>
+              {' — '}Gleans caterpillars from canopy leaves directly above the trunks the creeper spirals; both species disappear from landscapes where large old native trees have been removed and replaced with smooth-barked ornamentals.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
+                Wood Thrush
+              </button>
+              {' — '}Forages the forest floor below the trunks the creeper reads; same mature deciduous forest dependency, same disappearance from fragmented suburban woodlots where snags and large trees are cleared.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('eastern-wood-pewee')}>
+                Eastern Wood-Pewee
+              </button>
+              {' — '}Perches on dead branches at 30 to 50 feet above the trunks the creeper reads going up; both species nest in or on the dead wood of the same standing snag — the pewee builds a lichen-camouflaged cup on a dead limb, the creeper tucks its nest under a bark flap on the same tree.
             </li>
           </ul>
         </section>
