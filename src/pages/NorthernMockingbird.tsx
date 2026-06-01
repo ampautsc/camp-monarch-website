@@ -245,6 +245,17 @@ export default function NorthernMockingbird({ onNavigate }: NorthernMockingbirdP
               where they no longer breed.
             </li>
             <li>
+              <button className="link-button" onClick={() => onNavigate('northern-cardinal')}>
+                Northern Cardinal
+              </button>
+              {' — '}A year-round resident in the same shrub layer. The cardinal&apos;s sharp
+              metallic &ldquo;chip&rdquo; alarm call and its melodic whistled song both appear
+              in mockingbird repertoires in any neighborhood where cardinals breed. In winter,
+              a mockingbird defends its berry territory against most competitors — including
+              cardinals, which are large enough and persistent enough to return to the defended
+              shrub despite repeated displacement.
+            </li>
+            <li>
               <button className="link-button" onClick={() => onNavigate('winterberry-holly')}>
                 Winterberry Holly
               </button>
