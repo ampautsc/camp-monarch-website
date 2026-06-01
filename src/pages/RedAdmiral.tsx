@@ -242,6 +242,12 @@ export default function RedAdmiral({ onNavigate }: RedAdmiralProps) {
               for a long flight — but the Monarch is flying 2,500 miles to Michoacán while
               the Red Admiral may spend the winter a hundred yards away behind bark on a nearby elm
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry-emperor')}>
+                Hackberry Emperor
+              </button>{' '}
+              &mdash; fuels on sap flows and fermenting fruit rather than nectar — the same resources Red Admirals use in late summer; a Hackberry Emperor and a Red Admiral on the same fallen apple in September are using the same food by different routes; the Hackberry Emperor overwinters as a caterpillar in leaf litter while the Red Admiral overwinters as an adult behind bark in the same yard
+            </li>
           </ul>
         </section>
 
