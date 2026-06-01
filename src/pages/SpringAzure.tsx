@@ -254,6 +254,16 @@ export default function SpringAzure({ onNavigate }: SpringAzureProps) {
               grows in woodland-edge beds in the same partial-shade conditions where native
               dogwoods thrive
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('olympia-marble')}>
+                Olympia Marble
+              </button>{' '}
+              &mdash; a small white butterfly that appears on the same warm April days as the Spring
+              Azure, on limestone outcrops and dry rocky exposures; adults nectar on wild columbine
+              and produce a single annual brood before disappearing by early June; the Spring Azure
+              and Olympia Marble share April nectar sources in regions where rocky outcrops and
+              woodland edges border the same property
+            </li>
           </ul>
         </section>
 
