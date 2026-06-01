@@ -251,6 +251,17 @@ export default function EasternWoodPewee({ onNavigate }: EasternWoodPeweeProps) 
               from the same fragments at the same threshold — when the patch drops below the
               minimum area each species needs to nest successfully.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('brown-creeper')}>
+                Brown Creeper
+              </button>
+              {' — '}Hunts the same dead bark in the same tall trees, spiraling upward from
+              the base of each trunk in tight clockwise circles, probing for beetles and
+              larvae tucked under loose bark. The creeper works the bark surface at low to
+              mid-height while the pewee watches from the dead branch tips above — two birds
+              extracting invertebrates from different surfaces of the same standing dead wood
+              in the same old-growth oak canopy.
+            </li>
           </ul>
         </section>
 
