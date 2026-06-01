@@ -208,6 +208,18 @@ export default function EasternChipmunk({ onNavigate }: EasternChipmunkProps) {
             burrow entrances are hidden. Both face the same secondary rodenticide risk when
             hawks and owls hunting the same yard absorb accumulated doses from poisoned prey.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('red-fox')}>
+              red fox
+            </button>
+            {' '}that patrols the same yard digs up chipmunk burrow entrances and takes
+            chipmunks at ground level during caching runs. Secondary rodenticide contamination
+            reaches the fox through the same pathway it reaches hawks and owls: a chipmunk
+            carrying bait toxin in its tissue remains mobile for 48 to 72 hours after ingestion,
+            and a fox that catches it during that window absorbs the accumulated tissue load
+            directly.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
