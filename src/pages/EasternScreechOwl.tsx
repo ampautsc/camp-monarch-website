@@ -226,6 +226,31 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
           </p>
         </section>
 
+        <section aria-labelledby="excavator-heading">
+          <h2 id="excavator-heading">The woodpecker that supplies the cavity</h2>
+          <p>
+            Eastern Screech Owls cannot excavate their own nest holes. Every
+            cavity they use was made by someone else — heartwood decay in an
+            old hardwood, or a woodpecker. In eastern suburbs, the{' '}
+            <button className="link-button" onClick={() => onNavigate('northern-flicker')}>
+              Northern Flicker
+            </button>{' '}
+            is the most productive supplier. The Flicker drills a 3-inch
+            entrance hole 13 to 16 inches deep each spring, raises its chicks
+            through July, and then abandons the cavity permanently. That opening
+            persists in the snag for years — the same 3-inch diameter a
+            screech owl needs.
+          </p>
+          <p>
+            A yard that keeps one standing dead snag and supports a resident
+            Flicker pair generates screech owl nest sites without any hardware.
+            The Flicker excavates, vacates, and moves on. The screech owl
+            arrives the following spring to claim what was left behind. This
+            succession runs on dead wood alone — the same snag that looks like
+            a maintenance problem is the mechanism the cavity web depends on.
+          </p>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Build the habitat Screech Owls depend on.</strong>{' '}
