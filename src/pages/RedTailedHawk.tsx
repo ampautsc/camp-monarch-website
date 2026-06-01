@@ -276,6 +276,30 @@ export default function RedTailedHawk({ onNavigate }: RedTailedHawkProps) {
             gives them a reason to be there.
           </p>
           <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('red-fox')}>
+              red fox
+            </button>{' '}
+            hunts the same mouse and vole populations from the lawn edge that the red-tail
+            watches from the fence post above. In a neighborhood where rodenticide bait stations
+            are active, brodifacoum from a contaminated mouse enters the hawk&apos;s liver when
+            the hawk catches it at 40 feet, and enters the fox&apos;s liver when the fox catches
+            it at ground level — the same toxin, the same mouse, two predators dosed from a
+            single bait station the homeowner placed under a deck.
+          </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('american-kestrel')}>
+              American Kestrel
+            </button>{' '}
+            — North America&apos;s smallest falcon — scans the same open-ground terrain from
+            utility wires and dead branch tips, hovering over vole runways in the same meadow
+            edges that red-tails work from higher vantage points. Studies of rehabilitated
+            kestrels in northeastern states find anticoagulant rodenticide in 50 to 80 percent
+            of tested birds — the same contamination pathway running through the red-tail
+            population. The kestrel&apos;s breeding population has fallen 47 percent since 1966.
+          </p>
+          <p>
             For a full picture of what you can do for birds of prey and the yard that supports them,
             see the{' '}
             <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
