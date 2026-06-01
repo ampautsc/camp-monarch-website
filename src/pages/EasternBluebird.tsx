@@ -215,6 +215,18 @@ export default function EasternBluebird({ onNavigate }: EasternBluebirdProps) {
             They are the same cause in different colors.
           </p>
           <p>
+            The dead wood that a{' '}
+            <button className="link-button" onClick={() => onNavigate('downy-woodpecker')}>
+              Downy Woodpecker
+            </button>{' '}
+            excavates is the original source of the cavities bluebirds depend on. Before European
+            Starlings claimed natural nest sites across the continent and before nest box programs
+            rebuilt the supply, bluebirds nested in abandoned woodpecker holes in standing dead
+            trees. The 1.5-inch entrance specification of a bluebird box was not chosen
+            arbitrarily — it approximates the size of a Downy nest hole. A yard with standing
+            dead wood and breeding Downies supplies natural bluebird nest sites without any hardware.
+          </p>
+          <p>
             The{' '}
             <button className="link-button" onClick={() => onNavigate('american-kestrel')}>
               American Kestrel
