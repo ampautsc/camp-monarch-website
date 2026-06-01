@@ -245,6 +245,21 @@ export default function LittleBrownBat({ onNavigate }: LittleBrownBatProps) {
             The bat does not know what a bat house is. It knows whether your
             yard is worth returning to.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('chimney-swift')}>
+              Chimney Swift
+            </button>{' '}
+            hunts the same crepuscular window — the 30 to 60 minutes around sunset when flying
+            insect density peaks. The swift works that window by daylight, the bat takes over
+            as full darkness sets in. A block that still supports one often still supports the
+            other, because the aerial insect base they share has not yet collapsed to the point
+            where either can find enough prey. Both have declined 65 percent or more since
+            1966, for the same overlapping reasons: aerial insect loss, artificial light
+            disrupting foraging timing, and cavity nesting structure disappearing — masonry
+            chimneys and hollow trees for the swift, warm attic spaces and tree cavities for
+            the bat.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
