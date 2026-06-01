@@ -16,7 +16,6 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
           loading="eager"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Dan Pancamo · <a href="https://commons.wikimedia.org/wiki/File:Indigo_Bunting_by_Dan_Pancamo_4.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons */}
           Photo: Dan Pancamo&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Indigo_Bunting_by_Dan_Pancamo_4.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
           &nbsp;via Wikimedia Commons
@@ -156,21 +155,67 @@ export default function IndigoBunting({ onNavigate }: IndigoBuntingProps) {
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">Shared habitat with monarchs in fall</h2>
+        <section aria-labelledby="connections-heading">
+          <h2 id="connections-heading">Goldenrod in September — who else arrives when the bunting does</h2>
           <p>
-            Indigo Buntings and monarch butterflies use the same brushy native meadow edges
-            as staging and migratory habitat in fall. Both species move through goldenrod,
-            native seed heads, and wildflower corridors at the same time of year.
-            One habitat installation — a brushy edge featuring goldenrod, native asters,
-            and native shrubs — can serve migrating monarchs nectaring on flowers and
-            migrating buntings eating seeds from the same plants simultaneously.
+            Indigo Buntings move through native brushy meadow edges in September and October —
+            eating seeds from goldenrod and native grasses, fueling the Gulf crossing. Monarch
+            butterflies move through the same corridor at the same time, nectaring on the same
+            goldenrod flowers, sometimes on the same stem the bunting is working for seeds.
+            A yard with native goldenrod, asters, and shrubby edges in fall feeds both simultaneously,
+            not because it was planted for either one specifically, but because the fall-blooming
+            native plant community runs multiple functions at once.
           </p>
-          <p>
-            This is the core argument Camp Monarch makes visible: when you restore
-            habitat functions, you do not choose between species. You build a system
-            that supports dozens of them at once.
-          </p>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('the-migration')}>
+                The Monarch Migration
+              </button>
+              {' — '}Monarchs moving south through the eastern US from mid-August through October
+              follow the same corridor of native goldenrod and asters that migrating Indigo
+              Buntings use for seed fueling. Both species pass through the same late-summer
+              meadow edges on the same September afternoon — the monarch nectaring on flowers,
+              the bunting pulling seeds from the dry heads beside it.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('american-goldfinch')}>
+                American Goldfinch
+              </button>
+              {' — '}Seeds goldenrod, native sunflowers, and coneflowers in the same brushy
+              edges the bunting stages through in fall. The goldfinch stays through winter;
+              the bunting leaves for Central America in September. In late summer, both
+              can be working the same Canada Goldenrod seed heads from different approaches
+              at the same time.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('scarlet-tanager')}>
+                Scarlet Tanager
+              </button>
+              {' — '}Also migrates from Central America, also requires breeding habitat that has
+              fragmented across the eastern US, and also overwinters in countries where forest
+              clearing has accelerated since 1966. The tanager's 30%+ decline runs on the same
+              two-front pressure the bunting faces: winter deforestation and summer habitat loss.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
+                Canada Goldenrod
+              </button>
+              {' — '}The native wildflower Indigo Buntings eat seeds from in late August and
+              September, while monarchs nectar on its flowers and American Goldfinches pull
+              seeds from the same dry heads in October. A single goldenrod plant feeds three
+              species in sequence across three months.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('yellow-warbler')}>
+                Yellow Warbler
+              </button>
+              {' — '}Breeds in the same brushy riparian and shrubby edge habitat, nests in
+              dense shrubs within 6 feet of the ground, and faces the same Brown-headed Cowbird
+              parasitism that runs highest in fragmented suburban edges. The Yellow Warbler
+              departs by August — a full month before the bunting starts its own southward
+              movement.
+            </li>
+          </ul>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
