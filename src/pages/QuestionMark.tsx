@@ -246,6 +246,24 @@ export default function QuestionMark({ onNavigate }: QuestionMarkProps) {
               adults in bark — the Viceroy's rolled leaf hibernaculum and the Question Mark's
               bark-gap roost are both destroyed by the same late-autumn yard cleanup
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry-emperor')}>
+                Hackberry Emperor
+              </button>{' '}
+              &mdash; uses hackberry as its only caterpillar host; adult Hackberry Emperors and Question Marks both shelter on the same large hackberry through winter — the Emperor caterpillar in the leaf litter at the base of the trunk, the Question Mark adult in a bark crevice above it; raking the leaf layer removes one roost, moving the loose-barked log removes the other
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('tawny-emperor')}>
+                Tawny Emperor
+              </button>{' '}
+              &mdash; a near-twin of the Hackberry Emperor on the same host tree; adult Tawny Emperors drink from sap flows and fermenting fruit alongside Question Marks in late summer; the Tawny Emperor caterpillar descends to leaf litter at the base of hackberry in fall while the Question Mark adult seals into bark above the same trunk
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('american-snout')}>
+                American Snout
+              </button>{' '}
+              &mdash; breeds exclusively on hackberry; unlike the Emperor species, adults visit goldenrod and asters for nectar; a Snout nectaring at goldenrod in late August and a Question Mark working the same blooms are both loading fat before separating for different winters
+            </li>
           </ul>
         </section>
 
