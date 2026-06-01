@@ -202,6 +202,17 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
               is producing the intact ground-layer food web that also supports
               the foxes, hawks, and herons that sit above it
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('eastern-meadowlark')}>
+                Eastern Meadowlark
+              </button>{'  '}
+              &mdash; both species require intact native grassland or large unmowed meadow patches
+              to hold a population; garter snakes hunt earthworms and frogs along the damp
+              grassland margin while meadowlarks forage the open interior for beetles,
+              grasshoppers, and earthworms; the 75% meadowlark decline since 1966 and the
+              garter snake&apos;s retreat from suburban lawns share a common driver — the
+              conversion of native grassland structure to managed turf
+            </li>
           </ul>
         </section>
 
