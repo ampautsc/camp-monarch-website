@@ -265,6 +265,17 @@ export default function CheckeredWhite({ onNavigate }: CheckeredWhiteProps) {
               Bergamot adjacent to open dry ground with pepperweed makes both breeding
               and adult feeding habitat available within a small yard
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('olympia-marble')}>
+                Olympia Marble
+              </button>{' '}
+              &mdash; a native spring-only pierid that flies on limestone outcrops and cedar glade
+              margins from April into early June on a single annual brood; it uses native rock cress
+              in the mustard family as its sole host plant, so a Checkered White on dry weedy ground
+              and an Olympia Marble on a nearby rocky ledge can be flying on the same April morning
+              using the same glucosinolate-detection chemistry to locate host plants in completely
+              different microhabitats
+            </li>
           </ul>
         </section>
 
