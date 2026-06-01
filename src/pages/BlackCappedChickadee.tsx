@@ -232,6 +232,18 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
             claim the following year. A yard with standing dead wood and active Downies generates
             cavity sites on its own — the same sites chickadees used before anyone built a nest box.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('brown-creeper')}>
+              Brown Creeper
+            </button>
+            {' '}works the same dead wood from a different angle. While the chickadee ranges the
+            canopy, the creeper starts at the base of each trunk and spirals upward, pressing its
+            bill into bark furrows to extract the same overwintering beetle larvae and spider eggs
+            that chickadees cache between visits. A yard with standing dead snags and rough-barked
+            native trees holds both species through winter on the same bark-surface invertebrate
+            community.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
