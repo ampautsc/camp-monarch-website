@@ -264,6 +264,16 @@ export default function CabbageWhite({ onNavigate }: CabbageWhiteProps) {
               covers identification, pull timing, and disposal for the most commonly established
               invasive species in eastern yards
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('olympia-marble')}>
+                Olympia Marble
+              </button>{' '}
+              &mdash; the third native white butterfly described above: a spring-only species of
+              limestone outcrops and cedar glade margins with marbled green hindwing undersides, a
+              single annual brood, and a flight window that closes by early June; while the Cabbage
+              White flies all season on weedy mustards, the Olympia Marble makes one brief April
+              appearance on native rock cress and then its adult generation is gone until next year
+            </li>
           </ul>
         </section>
 
