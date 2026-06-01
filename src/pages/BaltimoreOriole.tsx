@@ -215,6 +215,34 @@ export default function BaltimoreOriole({ onNavigate }: BaltimoreOrioleProps) {
           </p>
         </section>
 
+        <section aria-labelledby="neighbors-heading">
+          <h2 id="neighbors-heading">Two migrants that share the same native oak and the same May window</h2>
+          <p>
+            Several species that arrive on the same late-April to early-May timeline depend on
+            the same pesticide-free, caterpillar-rich native canopy through the breeding season.
+            Both of the following have shown population declines that track the same habitat
+            pressures driving the oriole's 24% loss.
+          </p>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
+                Wood Thrush
+              </button>
+              {' — '}Returns from Central American wintering grounds on the same schedule; a pair
+              raising one brood needs 6,000 to 9,000 caterpillars from native trees over the
+              breeding season, the same food web the oriole draws from for its nestlings.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('scarlet-tanager')}>
+                Scarlet Tanager
+              </button>
+              {' — '}Crosses the Gulf on the same spring timeline; depends on native fruiting
+              shrubs — elderberry, serviceberry, native dogwood — ripening in late summer before
+              the southbound crossing to South America.
+            </li>
+          </ul>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to take the next step?</strong>{' '}
