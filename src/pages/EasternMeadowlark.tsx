@@ -260,6 +260,21 @@ export default function EasternMeadowlark({ onNavigate }: EasternMeadowlarkProps
             it functions as habitat infrastructure for every ground-layer species in the system.
           </p>
           <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
+              Eastern Towhee
+            </button>
+            {' '}works the shrubby edge immediately adjacent to the meadowlark&apos;s open
+            grassland — the dense thicket where the grass gives way to shrubs. The meadowlark
+            needs 25 to 30 acres of open ground; the towhee needs a dense hedge or brush pile.
+            A native meadow bordered by a row of native shrubs serves both: the meadowlark
+            finds its grasshopper and beetle base in the open strip; the towhee finds nesting
+            cover and leaf-litter foraging substrate in the shrubs at the margin. Both species
+            are losing the same transitional landscape — the unmanaged edge between grass and
+            shrub that once existed wherever old fields were left alone, and is now gone from
+            most suburban properties entirely.
+          </p>
+          <p>
             The actions that help the meadowlark — native plantings, delayed mowing, no
             broadcast pesticides, land conservation support — are the same actions that move
             the needle for grassland insects, ground-foraging birds, and reptiles across the
