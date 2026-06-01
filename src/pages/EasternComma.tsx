@@ -255,6 +255,24 @@ export default function EasternComma({ onNavigate }: EasternCommaProps) {
               strategies in the same late-summer yard, each requiring a different physical
               structure to work
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry-emperor')}>
+                Hackberry Emperor
+              </button>{' '}
+              &mdash; breeds only on hackberry; the caterpillar overwinters in leaf litter at the base of hackberry trunks while Eastern Commas overwinter as adults in the bark above — the Hackberry Emperor's overwintering site and the Eastern Comma's winter roost are separated by less than the length of a rake stroke on the same tree
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('tawny-emperor')}>
+                Tawny Emperor
+              </button>{' '}
+              &mdash; stacks 100 to 500 eggs in one mass on a single hackberry leaf; the hatching cohort feeds as a group through the early instars, then scatters to individual leaves and overwinters in the same leaf litter where Eastern Comma adults roost above in the bark; both species fuel on fermenting fruit and sap flows as adults in late summer
+            </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('american-snout')}>
+                American Snout
+              </button>{' '}
+              &mdash; a third hackberry-only butterfly that visits goldenrod and asters for nectar in the same late-summer window when Eastern Commas fuel before winter roost; in wet years, Snout adults build to migration-size populations and move south in October while Eastern Commas remain in the same yard behind bark until spring
+            </li>
           </ul>
         </section>
 
