@@ -225,6 +225,25 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
             you grow for both.
           </p>
           <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('american-robin')}>
+              American Robin
+            </button>
+            {' '}works the same yard from the soil layer upward — earthworms and invertebrates
+            beneath the native-shrub understory the cardinal nests in above. When both species
+            breed in the same yard, the proportion of mosquito bites landing on competent West
+            Nile reservoir hosts drops: the robin sustains the transmission cycle and the
+            cardinal does not, so a yard with both is a different disease ecology than a yard
+            with robins alone. The{' '}
+            <button className="link-button" onClick={() => onNavigate('northern-mockingbird')}>
+              Northern Mockingbird
+            </button>
+            {' '}adds the cardinal&apos;s song to its repertoire in any yard where cardinals have
+            bred consistently — the sharp metallic &ldquo;chip&rdquo; alarm call and the
+            melodic whistled phrases appear in mockingbird songs as a record of which neighbors
+            have been present long enough to be heard and learned.
+          </p>
+          <p>
             The cardinal is not an endangered indicator. It does not require heroic
             intervention. But its ability to breed, rather than simply visit, is the measure.
             A pair that successfully raises young in your yard in August is evidence that the
