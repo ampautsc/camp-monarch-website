@@ -271,6 +271,18 @@ export default function BrownThrasher({ onNavigate }: BrownTrasherProps) {
           </p>
           <p>
             The{' '}
+            <button className="link-button" onClick={() => onNavigate('gray-catbird')}>
+              Gray Catbird
+            </button>
+            {' '}shares the same dense shrub layer — nesting 2 to 5 feet off the ground in
+            tangled vegetation and foraging in the same leaf litter beneath it. The thrasher
+            holds its territory loudly, repeating each phrase twice; the catbird sings a
+            rambling improvised stream and calls a flat nasal mewing note the thrasher never
+            makes. Both species arrive from the south in May and require the same structural
+            habitat. A thicket edge that supports one will almost always support the other.
+          </p>
+          <p>
+            The{' '}
             <button className="link-button" onClick={() => onNavigate('fireflies')}>
               firefly
             </button>{' '}

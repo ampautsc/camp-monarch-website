@@ -244,6 +244,18 @@ export default function NorthernCardinal({ onNavigate }: NorthernCardinalProps) 
             have been present long enough to be heard and learned.
           </p>
           <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('gray-catbird')}>
+              Gray Catbird
+            </button>
+            {' '}nests in the same dense native shrub layer — 2 to 5 feet above the ground
+            in tangled vegetation the cardinal also chooses for nesting cover. Both species
+            select the same native berry-producing shrubs for food. A native viburnum or
+            serviceberry thicket that a cardinal pair nests in during June is likely to have
+            a catbird pair 10 feet away in the same planting, both feeding nestlings on the
+            same beetle and caterpillar populations.
+          </p>
+          <p>
             The cardinal is not an endangered indicator. It does not require heroic
             intervention. But its ability to breed, rather than simply visit, is the measure.
             A pair that successfully raises young in your yard in August is evidence that the

@@ -251,6 +251,18 @@ export default function EasternTowhee({ onNavigate }: EasternTowheeProps) {
           </p>
           <p>
             The{' '}
+            <button className="link-button" onClick={() => onNavigate('gray-catbird')}>
+              Gray Catbird
+            </button>
+            {' '}nests in the same 2-to-5-foot shrub layer the towhee selects and forages
+            through the same leaf litter the towhee double-scratches. The catbird gleans
+            berries and insects from mid-shrub stems; the towhee works the ground below.
+            The catbird&apos;s flat mewing call and the towhee&apos;s &ldquo;Drink your
+            tea&rdquo; are often audible from the same shrub patch at the same time —
+            two birds working the same 3-foot vertical slice of habitat from different levels.
+          </p>
+          <p>
+            The{' '}
             <button className="link-button" onClick={() => onNavigate('fireflies')}>
               firefly
             </button>{' '}
