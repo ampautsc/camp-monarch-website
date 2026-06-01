@@ -175,6 +175,16 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
             Where dead wood remains in the landscape, bluebirds sometimes bypass the nest box
             entirely and use the original.
           </p>
+          <p>
+            <button className="link-button" onClick={() => onNavigate('scarlet-tanager')}>
+              Scarlet Tanagers
+            </button>{' '}
+            nest in the same 60-year-old oaks and maples where Downy Woodpeckers find their
+            standing dead snags. The tanager gleans caterpillars from the live upper canopy;
+            the Downy drills into the dead branches below. Both require the same mature forest
+            structure — large-diameter trees with dead limbs still attached — that has steadily
+            decreased in suburban neighborhoods since the 1960s.
+          </p>
         </section>
 
         <section aria-labelledby="connection-heading">
