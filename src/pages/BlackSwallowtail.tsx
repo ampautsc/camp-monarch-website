@@ -183,6 +183,10 @@ export default function BlackSwallowtail({ onNavigate }: BlackSwallowtailProps) 
               <span className="neighbor-name">Native Bees</span>
               <span className="neighbor-note">Andrena ziziae also depends on Golden Alexanders flowers in April</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
+              <span className="neighbor-name">Leonard's Skipper</span>
+              <span className="neighbor-note">Another August–September butterfly with one flight window per year; Leonard's Skipper lays eggs on native bunchgrasses, Black Swallowtail lays on Apiaceae — both caterpillars overwinter at the base of their host plant and both adults fly for less than two weeks each fall</span>
+            </button>
           </div>
         </section>
       </div>
