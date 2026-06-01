@@ -229,6 +229,10 @@ export default function GreatSpangledFritillary({ onNavigate }: GreatSpangledFri
               <span className="neighbor-name">Ironweed</span>
               <span className="neighbor-note">Opens in August alongside goldenrod; named in the same late-summer native flowers where fritillaries and monarchs both nectar</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
+              <span className="neighbor-name">Cobweb Skipper</span>
+              <span className="neighbor-note">A spring skipper that lays eggs on native bunchgrasses in April and May; like the fritillary, it produces one brood per year and its larva overwinters at the crown of the host plant</span>
+            </button>
           </div>
         </section>
       </div>
