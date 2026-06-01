@@ -284,6 +284,17 @@ export default function AmericanKestrel({ onNavigate }: AmericanKestrelProps) {
             box at the meadow edge and a screech owl box in the tree line creates nesting
             habitat for two native cavity-nesting raptors from the same afternoon of work.
           </p>
+          <p>
+            The natural supply of 3-inch cavities across eastern North America comes almost
+            entirely from the{' '}
+            <button className="link-button" onClick={() => onNavigate('northern-flicker')}>
+              Northern Flicker
+            </button>
+            . The Flicker excavates a new hole each spring and abandons it in July. Where
+            suburban dead-wood removal has eliminated Flicker excavations, a kestrel nest
+            box is the replacement. Where a standing dead snag and a resident Flicker pair
+            remain, the kestrel may not need one.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
