@@ -196,6 +196,46 @@ export default function NorthernFlicker({ onNavigate }: NorthernFlickerProps) {
           </p>
         </section>
 
+        <section aria-labelledby="cavity-web-heading">
+          <h2 id="cavity-web-heading">Who moves into a Flicker hole</h2>
+          <p>
+            A Northern Flicker excavates a new cavity each spring — a 3-inch
+            entrance hole driven 13 to 16 inches into a standing dead snag.
+            After the chicks fledge in July, the pair abandons the hole. The
+            opening does not close. Over the following seasons it is claimed by
+            species that cannot excavate their own.
+          </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-screech-owl')}>
+              Eastern Screech Owl
+            </button>{' '}
+            requires a 3-inch cavity entrance — the same diameter a Flicker
+            drills. In eastern suburbs where old-growth decay cavities are gone
+            and{' '}
+            <button className="link-button" onClick={() => onNavigate('downy-woodpecker')}>
+              Downy Woodpecker
+            </button>{' '}
+            holes are too small, Flicker excavations in standing dead snags
+            are the main source of naturally occurring screech owl nest sites.
+            A yard that keeps one dead snag and supports a resident Flicker
+            pair produces screech owl cavities without any box installation.
+          </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('american-kestrel')}>
+              American Kestrel
+            </button>{' '}
+            also requires a 3-inch entrance, and also cannot excavate.
+            Kestrel pairs search each spring for cavities made by woodpeckers
+            or decay — then lose them to European Starlings if not claimed
+            quickly. Where suburban dead-wood removal has eliminated Flicker
+            excavations, the kestrel nest box is the only replacement. Where
+            a standing dead snag and a resident Flicker pair remain, the
+            kestrel may not need one.
+          </p>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Ready to take the next step?</strong>{' '}
