@@ -258,12 +258,14 @@ export default function ScarletTanager({ onNavigate }: ScarletTanagerProps) {
         </section>
 
         <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Who shares this canopy</h2>
+          <h2 id="connections-heading">Who shares this canopy — above and below</h2>
           <p>
             The Scarlet Tanager breeds in the same large-forest-interior tracts
             that several other declining species require — species that
             disappear from fragmented suburban landscapes for the same
-            cowbird and caterpillar reasons.
+            cowbird and caterpillar reasons. Some work the layers below the
+            canopy. Others share the same breeding-ground-to-wintering-ground
+            trajectory across two continents.
           </p>
           <ul>
             <li>
@@ -275,15 +277,33 @@ export default function ScarletTanager({ onNavigate }: ScarletTanagerProps) {
             </li>
             <li>
               <button className="link-button" onClick={() => onNavigate('eastern-wood-pewee')}>
-                Eastern Wood Pewee
+                Eastern Wood-Pewee
               </button>
-              {' — '}Flycatches in the midstory of the same continuous forest interior; population has fallen over 30% since 1970.
+              {' — '}Flycatches in the midstory of the same continuous forest interior; population has fallen over 37% since 1966.
             </li>
             <li>
               <button className="link-button" onClick={() => onNavigate('brown-creeper')}>
                 Brown Creeper
               </button>
               {' — '}Spirals up the same large tree trunks reading bark crevices while the tanager reads the canopy leaves above.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('ovenbird')}>
+                Ovenbird
+              </button>
+              {' — '}Nests on the forest floor directly below the tanager&apos;s canopy territory; both require patches of 10 or more acres of unbroken forest — below that threshold, cowbird parasitism rates climb past 60% for both species simultaneously.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('indigo-bunting')}>
+                Indigo Bunting
+              </button>
+              {' — '}Shares the same two-front population pressure: breeding habitat fragmented in the eastern US, wintering habitat in Central America converted to agriculture. The tanager winters in the Andes foothills; the bunting winters in the Caribbean lowlands — different destinations, same trajectory.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('downy-woodpecker')}>
+                Downy Woodpecker
+              </button>
+              {' — '}Excavates nest cavities into the same dead oaks and maples the tanager forages for caterpillars; the woodpecker creates the snag structure the tanager&apos;s whole guild depends on — dead wood at height, available year-round.
             </li>
           </ul>
         </section>
