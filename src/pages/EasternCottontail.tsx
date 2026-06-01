@@ -222,6 +222,16 @@ export default function EasternCottontail({ onNavigate }: EasternCottontailProps
               cottontails rest during the day
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('red-fox')}>
+                Red Fox
+              </button>{' '}
+              &mdash; red foxes hunt cottontails year-round; kit losses concentrate from May
+              through June when young foxes are learning to hunt the shrub edges and lawn
+              margins where cottontail nests are active; a hunting fox follows the same dusk
+              patrol route that cottontails use for feeding, which is why both animals appear
+              in the same yard at the same hour and in the same patches of dense cover
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('eastern-chipmunk')}>
                 Eastern Chipmunk
               </button>{' '}
