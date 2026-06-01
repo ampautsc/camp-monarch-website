@@ -250,6 +250,12 @@ export default function MourningCloak({ onNavigate }: MourningCloakProps) {
               the same large-diameter hackberry trunks — the Mourning Cloak in bark crevices,
               the Hackberry Emperor in the leaf litter below
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('hackberry-emperor')}>
+                Hackberry Emperor
+              </button>{' '}
+              &mdash; both adults fuel on fermenting fruit and sap flows rather than nectar in late summer; a Hackberry Emperor and a Mourning Cloak on the same rotting crabapple in September are preparing for different winters from the same food source — the Emperor descending to leaf litter at the base of hackberry in fall, the Mourning Cloak sealing into bark above the same trunk
+            </li>
           </ul>
         </section>
 
