@@ -259,6 +259,21 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
             now, that density is falling. The boom at dusk is what a functioning
             summer sky sounds like. It is worth preserving.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('chimney-swift')}>
+              Chimney Swift
+            </button>{' '}
+            hunts the same mid-level airspace at the same hour — the crepuscular window above
+            roof lines and tree canopies where nighthawks and swifts overlap at dusk. Both have
+            declined in parallel since 1966, and for the same reasons: aerial insect collapse,
+            artificial light disrupting the crepuscular hunting window, and the loss of nesting
+            structure — flat gravel rooftops for the nighthawk, open masonry chimneys and hollow
+            trees for the swift. A neighborhood where nighthawks are still calling{' '}
+            <em>peent</em> over the rooftops at dusk often still has chimney swifts chittering
+            in the same airspace. Both are reading the insect density of a summer sky that has
+            fewer insects in it than it did sixty years ago.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
