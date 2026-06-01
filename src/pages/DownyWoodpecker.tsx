@@ -151,6 +151,32 @@ export default function DownyWoodpecker({ onNavigate }: DownyWoodpeckerProps) {
           </ol>
         </div>
 
+        <section aria-labelledby="neighbors-heading">
+          <h2 id="neighbors-heading">The neighbors who move into the holes</h2>
+          <p>
+            After a Downy Woodpecker pair fledges its young, the nest cavity stays open.
+            Most secondary tenants arrive the following spring.{' '}
+            <button className="link-button" onClick={() => onNavigate('black-capped-chickadee')}>
+              Black-capped Chickadees
+            </button>{' '}
+            are among the first to claim an abandoned Downy hole — they need a cavity with
+            a 1-to-1.25-inch entrance and cannot make their own. A Downy pair producing young
+            in your yard is simultaneously creating the nest site a chickadee pair will need
+            in twelve months.
+          </p>
+          <p>
+            <button className="link-button" onClick={() => onNavigate('eastern-bluebird')}>
+              Eastern Bluebirds
+            </button>{' '}
+            use cavities in the same size range. Before nest box programs reversed the bluebird
+            decline in the 1970s, the natural cavity supply came almost entirely from woodpeckers
+            working dead wood. The 1.5-inch entrance specification that bluebird trail volunteers
+            use was derived from the size of holes woodpeckers naturally leave in standing snags.
+            Where dead wood remains in the landscape, bluebirds sometimes bypass the nest box
+            entirely and use the original.
+          </p>
+        </section>
+
         <section aria-labelledby="connection-heading">
           <h2 id="connection-heading">A Downy nest is a monarch readiness signal</h2>
           <p>
