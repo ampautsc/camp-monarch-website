@@ -195,6 +195,16 @@ export default function CanadaGoldenrod({ onNavigate }: CanadaGoldenrodProps) {
               on September goldenrod produce the queens that overwinter and start the following
               year's colony; a yard without late-season goldenrod breaks this provisioning window.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('leonards-skipper')}>
+                Leonard's Skipper
+              </button>
+              {' — '}Adults emerge in late August and nectar on goldenrod through the ten days of
+              their adult flight window. Male Leonard's Skippers perch on native grass stems in
+              the same sunny border where goldenrod grows, watching for females while she nectars
+              between egg-laying flights — goldenrod serves as the fuel source and the rendezvous
+              landmark at the same time.
+            </li>
           </ul>
         </section>
 
