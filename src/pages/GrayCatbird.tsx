@@ -231,6 +231,43 @@ export default function GrayCatbird({ onNavigate }: GrayCatbirdProps) {
           </p>
         </section>
 
+        <section aria-labelledby="connections-heading">
+          <h2 id="connections-heading">Who shares the thicket — same shrub, same season</h2>
+          <p>
+            The dense native shrubs a catbird nests inside support a community of species
+            that use the same structure at different heights and different times. The shrub
+            the catbird sings from in May is the same shrub a Brown Thrasher is building
+            a nest in, the same shrub an Eastern Towhee works at its base in June, and the
+            same shrub whose leaf litter shelters firefly larvae from November through March.
+          </p>
+          <ul>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('brown-thrasher')}>
+                Brown Thrasher
+              </button>
+              {' — '}Nests at the same 3-to-6-foot height in the same dense thickets the catbird uses; the two species sometimes nest within feet of each other in the same hawthorn or viburnum — both relying on the branch-fork density that spring pruning removes.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
+                Eastern Towhee
+              </button>
+              {' — '}Scratches through leaf litter at the base of the same shrubs the catbird nests in above; both species require the combination of dense branching structure overhead and intact leaf-litter layer below — a yard that rakes the base and prunes the top eliminates both birds from the same planting.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('northern-cardinal')}>
+                Northern Cardinal
+              </button>
+              {' — '}Nests in the same dense native shrubs and feeds on the same fruiting plants through fall and winter; a yard with one well-established native shrub thicket often holds a catbird through summer and a cardinal pair through the following winter — different seasons, same structure.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('spicebush')}>
+                Spicebush
+              </button>
+              {' — '}Native shrub the catbird uses for nesting and fruit; the red berries ripen in September just before the catbird leaves for the Caribbean, providing the fat reserves the bird needs for the crossing. A single spicebush at 6 to 8 feet, left unpruned, is enough to support a nesting attempt.
+            </li>
+          </ul>
+        </section>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>The catbird&apos;s shrub thicket is shared habitat.</strong>{' '}
