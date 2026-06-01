@@ -221,6 +221,17 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
             nest box with young in it may be the thing that opens the door. The species are not
             separate causes. They share a yard, a food web, and an enemy.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('downy-woodpecker')}>
+              Downy Woodpecker
+            </button>{' '}
+            is the cavity excavator that supplies the natural nest sites chickadees evolved to use.
+            A Downy pair drills a new hole each spring, raises its young, and then vacates the
+            cavity. The 1-to-1.25-inch entrance that remains is the right size for a chickadee to
+            claim the following year. A yard with standing dead wood and active Downies generates
+            cavity sites on its own — the same sites chickadees used before anyone built a nest box.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
