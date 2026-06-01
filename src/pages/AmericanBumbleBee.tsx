@@ -267,6 +267,18 @@ export default function AmericanBumbleBee({ onNavigate }: AmericanBumbleBeeProps
             what she needs to start the colony depends on what your yard looks
             like in the first weeks of spring.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-meadowlark')}>
+              Eastern Meadowlark
+            </button>
+            {' '}follows the same decline curve. The meadowlark population has fallen 75 percent
+            since 1966, driven by the conversion of native grasslands and diverse meadows to
+            monoculture agriculture — the same loss that removed the continuous wildflower bloom
+            the bumble bee colony needs from April through October. A yard with native wildflower
+            meadow plantings, unmowed and pesticide-free, builds habitat for both in the same
+            square footage.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
