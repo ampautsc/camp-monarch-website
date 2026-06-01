@@ -287,6 +287,23 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
               Wood Thrushes have been gone for twenty years, young mockingbirds never hear that
               phrase — the repertoire reflects the neighbor list, and the neighbor list has changed.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('baltimore-oriole')}>
+                Baltimore Oriole
+              </button>
+              {' — '}Another neotropical migrant arriving from across the Gulf of Mexico in early
+              May; both depend on caterpillar-rich native oaks through the breeding season, and
+              both carry measurable body mass penalties when wintering habitat in Central America
+              is reduced.
+            </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('scarlet-tanager')}>
+                Scarlet Tanager
+              </button>
+              {' — '}Breeds in the same large forest-interior tracts; cowbird parasitism rates
+              in fragmented suburban patches exceed 60% for both species, reducing per-pair
+              fledgling production toward zero.
+            </li>
           </ul>
         </section>
 
