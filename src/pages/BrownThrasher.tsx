@@ -256,6 +256,21 @@ export default function BrownThrasher({ onNavigate }: BrownTrasherProps) {
           </p>
           <p>
             The{' '}
+            <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
+              Eastern Towhee
+            </button>
+            {' '}works the same shrubby thicket using a different technique — a two-footed backward
+            kick called the double-scratch that flings leaf litter several inches in both directions
+            to expose beetles, earthworms, and ants underneath. The thrasher sweeps its bill in
+            wide arcs through the debris; the towhee kicks. Both require the same structural
+            elements: dense native shrubs at the 1-to-7-foot level and an undisturbed layer of
+            leaf litter at the base. When both species occupy the same thicket edge, you can
+            often hear the thrasher&apos;s paired-phrase song from the top of the shrub and the
+            towhee&apos;s &ldquo;Drink your tea&rdquo; call from the edge below it — two birds
+            working the same patch of habitat at different heights.
+          </p>
+          <p>
+            The{' '}
             <button className="link-button" onClick={() => onNavigate('fireflies')}>
               firefly
             </button>{' '}
