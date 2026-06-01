@@ -174,6 +174,14 @@ export default function WildColumbine({ onNavigate }: WildColumbineProps) {
                 </button>{' '}
                 — bumblebee queens emerge in late April and visit columbine; some cut the spur base to reach nectar without entering the flower
               </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('olympia-marble')}>
+                  Olympia Marble
+                </button>{' '}
+                — adult Olympia Marbles nectar on Wild Columbine where it grows near limestone
+                outcrops and rocky slopes in April and May; the butterfly's single annual brood
+                flies exactly during Columbine's bloom window and is gone before the plant sets seed
+              </li>
             </ul>
           </div>
         </section>
