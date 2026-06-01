@@ -312,6 +312,19 @@ export default function AmericanRobin({ onNavigate }: AmericanRobinProps) {
             winter-persistent fruiting shrubs extends the window that holds migratory robin
             flocks by several weeks past the crabapple-only yard across the street.
           </p>
+          <p>
+            The{' '}
+            <button className="link-button" onClick={() => onNavigate('northern-cardinal')}>
+              Northern Cardinal
+            </button>
+            {' '}is a dead-end host for West Nile virus — a mosquito that bites an infected
+            cardinal does not reliably pick up virus it can transmit onward. Robins sustain
+            the transmission cycle: a mosquito biting an infected robin can carry the virus
+            to the next host. A yard holding both species has a higher proportion of mosquito
+            bites landing on birds that interrupt the cycle rather than continue it. The
+            mechanism runs on bird diversity; what supports that diversity is the same
+            native-plant and untreated-soil structure the robin requires for breeding.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
