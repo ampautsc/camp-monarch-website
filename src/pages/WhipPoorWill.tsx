@@ -233,6 +233,14 @@ export default function WhipPoorWill({ onNavigate }: WhipPoorWillProps) {
               {' '} — shares the forest-interior habitat and declines for the same fragmentation
               and insect-loss reasons.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('american-woodcock')}>
+                American Woodcock
+              </button>
+              {' '} — another dusk-displaying bird of shrubby forest edges, down 40% since 1968;
+              the same thicket clearings where woodcocks peent at nightfall are the borders the
+              whip-poor-will hunts from perches just inside the tree line.
+            </li>
           </ul>
         </section>
 
