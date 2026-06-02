@@ -193,6 +193,7 @@ export const ALL_PAGE_SLUGS = [
   'striped-skunk',
   'red-fox',
   'american-woodcock',
+  'tree-swallow',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
