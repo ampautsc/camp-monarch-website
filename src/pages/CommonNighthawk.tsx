@@ -274,6 +274,16 @@ export default function CommonNighthawk({ onNavigate }: CommonNighthawkProps) {
             in the same airspace. Both are reading the insect density of a summer sky that has
             fewer insects in it than it did sixty years ago.
           </p>
+          <p>
+            While the nighthawk hunts the open sky above the treetops,{' '}
+            <button className="link-button" onClick={() => onNavigate('american-woodcock')}>
+              American Woodcock
+            </button>{' '}
+            work the clearing floor below — probing moist soil for earthworms during the same
+            dusk window in spring. Both species time their activity to warm March and April
+            evenings. Both have declined as suburban development cleared the moist thickets
+            and brushy edges where nighthawks display and woodcocks feed.
+          </p>
         </section>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
