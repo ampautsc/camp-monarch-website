@@ -226,6 +226,12 @@ export default function Fireflies({ onNavigate }: FirefliesProps) {
               </button>
               {' — '}Caterpillars descend from host trees in fall to pupate in the same leaf-litter layer.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('american-woodcock')}>
+                American Woodcock
+              </button>
+              {' — '}Probes the same moist soil for earthworms each night; both species require pesticide-free, undisturbed ground through fall and winter to survive into the following spring.
+            </li>
           </ul>
         </section>
 
