@@ -226,6 +226,10 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
         <section aria-labelledby="connections-heading">
           <h2 id="connections-heading">Related pages</h2>
           <div className="neighbor-grid">
+            <button className="neighbor-card" onClick={() => onNavigate('pipevine-swallowtail')}>
+              <span className="neighbor-name">Pipevine Swallowtail</span>
+              <span className="neighbor-note">The model species — dark-form female tiger swallowtails copy its iridescent blue-black wing pattern; the proportion of dark-form females in a population tracks how common real Pipevine Swallowtails are in the same area and how well local birds have been conditioned to avoid the pattern</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('black-swallowtail')}>
               <span className="neighbor-name">Black Swallowtail</span>
               <span className="neighbor-note">Caterpillar eats carrot-family plants including wild parsnip and Queen Anne's lace; the black-and-yellow adult resembles a dark-form tiger swallowtail female but is a separate species with distinct host plant requirements</span>
