@@ -182,6 +182,7 @@ import HackberryEmperor from './pages/HackberryEmperor'
 import AmericanSnout from './pages/AmericanSnout'
 import TawnyEmperor from './pages/TawnyEmperor'
 import BlackWalnut from './pages/BlackWalnut'
+import AmericanBeech from './pages/AmericanBeech'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -401,6 +402,7 @@ function App() {
       case 'american-snout':        return <AmericanSnout onNavigate={navigateTo} />
       case 'tawny-emperor':         return <TawnyEmperor onNavigate={navigateTo} />
       case 'black-walnut':           return <BlackWalnut onNavigate={navigateTo} />
+      case 'american-beech':         return <AmericanBeech onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
