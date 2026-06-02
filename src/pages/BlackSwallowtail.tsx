@@ -187,6 +187,10 @@ export default function BlackSwallowtail({ onNavigate }: BlackSwallowtailProps) 
               <span className="neighbor-name">Leonard's Skipper</span>
               <span className="neighbor-note">Another August–September butterfly with one flight window per year; Leonard's Skipper lays eggs on native bunchgrasses, Black Swallowtail lays on Apiaceae — both caterpillars overwinter at the base of their host plant and both adults fly for less than two weeks each fall</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('pipevine-swallowtail')}>
+              <span className="neighbor-name">Pipevine Swallowtail</span>
+              <span className="neighbor-note">The model whose iridescent blue-black wing pattern the female Black Swallowtail mimics — the Pipevine carries aristolochic acids in its wing scales from caterpillar feeding; the female Black Swallowtail carries the pattern without the toxins</span>
+            </button>
           </div>
         </section>
       </div>
