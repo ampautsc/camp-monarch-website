@@ -261,6 +261,14 @@ export default function Elderberry({ onNavigate }: ElderberryProps) {
               thrushes; planted with elderberry, the two shrubs cover the bloom and fruit
               sequence from early spring through fall migration in the same shaded yard edge
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('american-woodcock')}>
+                American Woodcock
+              </button>{' '}
+              &mdash; nests in thicket edges of the kind elderberry forms; the shrub's dense
+              multi-stem clumps provide the low branchy cover the woodcock uses during the day
+              and the moist soil nearby keeps earthworms accessible after dark
+            </li>
           </ul>
         </section>
       </div>
