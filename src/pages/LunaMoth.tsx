@@ -157,8 +157,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
 
         <div className="action-panel">
           <h2 style={{ marginTop: 0 }}>Four things that support Luna Moths</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
+<figure className="species-content-photo species-content-photo--left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves lying on garden ground" loading="lazy" />
             <figcaption>
               Luna moth cocoons spin onto twigs above the leaf litter, and the pupae overwinter inside. Removing autumn leaves removes the insulating layer those pupae depend on to survive below-zero nights. The simplest intervention is also the most complete: don't rake here.
@@ -249,6 +248,10 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
           <button className="neighbor-card" onClick={() => onNavigate('american-beech')}>
             <span className="neighbor-name">American Beech</span>
             <span className="neighbor-note">American Beech is a primary larval host for Luna Moth alongside black walnut and hickory — females lay eggs on beech leaves in late May, caterpillars feed through July, descend to overwinter as pupae in the slow-decomposing beech leaf litter, and emerge as non-feeding adults the following spring; the fat built on beech leaves is the only fuel for the adult's entire seven-day life</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('shagbark-hickory')}>
+            <span className="neighbor-name">Shagbark Hickory</span>
+            <span className="neighbor-note">Shagbark hickory is a primary larval host for Luna Moth alongside black walnut — females deposit eggs on hickory leaves in late May, caterpillars feed for six weeks, and descend to overwinter as pupae in the leaf litter below the tree; hickory and black walnut are the two trees that appear consistently on every range-wide host-plant list for this species</span>
           </button>
           <button className="neighbor-card" onClick={() => onNavigate('white-oak')}>
             <span className="neighbor-name">White Oak</span>
