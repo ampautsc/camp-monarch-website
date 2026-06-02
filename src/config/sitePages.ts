@@ -198,6 +198,7 @@ export const ALL_PAGE_SLUGS = [
   'pipevine-swallowtail',
   'tulip-poplar',
   'black-walnut',
+  'american-beech',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
