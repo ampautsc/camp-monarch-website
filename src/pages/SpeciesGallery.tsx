@@ -1,4 +1,3 @@
-import type { Page } from '../App'
 
 type Status = 'Common' | 'Declining' | 'Endangered'
 
@@ -159,6 +158,7 @@ const SPECIES: SpeciesItem[] = [
   // ── NATIVE PLANTS — TREES & SHRUBS ────────────────────────────────────────
   { name: 'White Oak', scientificName: 'Quercus alba', emoji: '🌳', summary: 'A single mature white oak supports over 500 caterpillar species — every one replaced by a non-native removes this food from the local food web.', status: 'Common', page: 'white-oak', habitats: ['woodland', 'woodland edge', 'suburban'] },
   { name: 'Black Cherry', scientificName: 'Prunus serotina', emoji: '🌳', summary: 'The highest-value caterpillar host tree in the eastern United States — supports 456 species of native Lepidoptera larvae on its leaves.', status: 'Common', page: 'black-cherry', habitats: ['woodland', 'woodland edge', 'edge'] },
+  { name: 'Tulip Poplar', scientificName: 'Liriodendron tulipifera', emoji: '🌳', summary: 'Tulip-shaped flowers open in the canopy in May, producing nectar that Ruby-throated Hummingbirds follow northward — Tiger Swallowtail, Cecropia Moth, and Polyphemus Moth caterpillars feed on the leaves through summer.', status: 'Common', page: 'tulip-poplar', habitats: ['woodland', 'woodland edge', 'suburban'] },
   { name: 'Serviceberry', scientificName: 'Amelanchier spp.', emoji: '🌳', summary: 'Produces berries in May when returning neotropical migrants arrive hungry — the same window when most other native fruit has not yet ripened.', status: 'Common', page: 'serviceberry', habitats: ['woodland edge', 'garden', 'edge'] },
   { name: 'Pawpaw', scientificName: 'Asimina triloba', emoji: '🌳', summary: 'The only host plant for Zebra Swallowtail caterpillars — produces the largest edible fruit native to North America in September.', status: 'Declining', page: 'pawpaw', habitats: ['woodland', 'stream edge', 'thicket'] },
   { name: 'Spicebush', scientificName: 'Lindera benzoin', emoji: '🌳', summary: 'Hosts Spicebush Swallowtail and Promethea Moth caterpillars — one of the first shrubs to leaf out each spring, giving larvae an early start.', status: 'Common', page: 'spicebush', habitats: ['woodland', 'woodland edge', 'stream edge'] },
