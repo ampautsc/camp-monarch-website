@@ -197,6 +197,17 @@ export default function EasternGraySquirrel({ onNavigate }: EasternGraySquirrelP
               squirrel caches
             </li>
             <li>
+              <button className="neighbor-link" onClick={() => onNavigate('black-walnut')}>
+                Black Walnut
+              </button>{' '}
+              &mdash; gray squirrels cache black walnuts using the same scatter-hoard method as
+              acorns, burying each nut in a separate hole up to several hundred meters from the
+              source tree; the thick outer hull stains the squirrel&apos;s paws and surrounding
+              soil black as it oxidizes; squirrels that cannot crack the shell immediately bury
+              the nut intact, and black walnut shells persist in the soil for years as locatable
+              cache sites long after the nut has been consumed or germinated
+            </li>
+            <li>
               <button className="neighbor-link" onClick={() => onNavigate('hackberry')}>
                 Hackberry
               </button>{' '}
