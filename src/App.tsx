@@ -183,6 +183,7 @@ import AmericanSnout from './pages/AmericanSnout'
 import TawnyEmperor from './pages/TawnyEmperor'
 import BlackWalnut from './pages/BlackWalnut'
 import AmericanBeech from './pages/AmericanBeech'
+import ShagbarkHickory from './pages/ShagbarkHickory'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -252,7 +253,7 @@ function App() {
       case 'plants-by-purpose':     return <PlantsByPurpose onNavigate={navigateTo} />
       case 'plants-by-conditions':  return <PlantsByConditions onNavigate={navigateTo} />
       case 'plants-milkweeds':      return <PlantsMilkweeds onNavigate={navigateTo} />
-      case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo} />
+case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo} />
       case 'plants-species-index':  return <PlantsSpeciesIndex onNavigate={navigateTo} />
       case 'plants-getting-started':return <PlantsGettingStarted onNavigate={navigateTo} />
       case 'plants-host-plants':    return <PlantsHostPlants onNavigate={navigateTo} />
@@ -337,7 +338,7 @@ function App() {
       case 'swamp-milkweed':        return <SwampMilkweed onNavigate={navigateTo} />
       case 'wild-bergamot':         return <WildBergamot onNavigate={navigateTo} />
       case 'new-jersey-tea':        return <NewJerseyTea onNavigate={navigateTo} />
-      case 'wild-columbine':        return <WildColumbine onNavigate={navigateTo} />
+case 'wild-columbine':        return <WildColumbine onNavigate={navigateTo} />
       case 'black-eyed-susan':      return <BlackEyedSusan onNavigate={navigateTo} />
       case 'virginia-bluebell':     return <VirginiaBluebell onNavigate={navigateTo} />
       case 'buttonbush':            return <Buttonbush onNavigate={navigateTo} />
@@ -403,6 +404,7 @@ function App() {
       case 'tawny-emperor':         return <TawnyEmperor onNavigate={navigateTo} />
       case 'black-walnut':           return <BlackWalnut onNavigate={navigateTo} />
       case 'american-beech':         return <AmericanBeech onNavigate={navigateTo} />
+      case 'shagbark-hickory':        return <ShagbarkHickory onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
