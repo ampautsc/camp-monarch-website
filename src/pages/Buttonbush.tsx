@@ -186,6 +186,14 @@ export default function Buttonbush({ onNavigate }: ButtonbushProps) {
                 — probes Buttonbush floret tubes in July and August; the short tube length allows
                 contact with the protruding anthers, transferring pollen to the bill between visits
               </li>
+              <li>
+                <button className="link-button" onClick={() => onNavigate('american-woodcock')}>
+                  American Woodcock
+                </button>{' '}
+                — uses moist thicket edges where Buttonbush grows as daytime cover and nesting
+                habitat; the wet margins and standing-water zones that suit Buttonbush are the same
+                ground the woodcock probes at night for earthworms
+              </li>
             </ul>
           </div>
         </section>
