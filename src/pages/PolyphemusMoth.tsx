@@ -158,7 +158,7 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
           <ol className="step-list">
             <li>
               <strong>Plant native oaks and maples.</strong>{' '}
-              A single native oak supports more caterpillar biomass than any other
+A single native oak supports more caterpillar biomass than any other
               tree genus in eastern North America. Even a young oak sapling
               produces host value within a few seasons of planting. Native red
               maple, silver maple, and sugar maple are similarly productive hosts.
@@ -238,7 +238,7 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
             <span className="neighbor-name">Cecropia Moth</span>
             <span className="neighbor-note">North America&apos;s largest moth, same family (Saturniidae), same suburban pressures — introduced parasitoid flies reduced both species across the northeast; both overwinter as cocoons in the same leaf layer and emerge within weeks of each other in May and June to navigate by pheromone through yards that still have native canopy</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('black-cherry')}>
+<button className="neighbor-card" onClick={() => onNavigate('black-cherry')}>
             <span className="neighbor-name">Black Cherry</span>
             <span className="neighbor-note">A secondary Polyphemus host alongside oaks and maples — and at 456 caterpillar species supported, the second most productive native tree after the oak genus; a black cherry and a native oak together create the host foundation for most of the lepidoptera that insectivorous songbirds depend on for nestling protein</span>
           </button>
@@ -253,6 +253,10 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
           <button className="neighbor-card" onClick={() => onNavigate('american-beech')}>
             <span className="neighbor-name">American Beech</span>
             <span className="neighbor-note">American Beech is a documented larval host for Polyphemus Moth — caterpillars develop on beech leaves through summer alongside their more common oak and maple hosts; beech marcescent leaves stay on the tree through winter, and the slow-decomposing leaf litter beneath a beech creates the insulating layer where Polyphemus cocoons overwinter on the forest floor</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('shagbark-hickory')}>
+            <span className="neighbor-name">Shagbark Hickory</span>
+            <span className="neighbor-note">Polyphemus Moth uses hickory as a larval host alongside oaks and maples — both Polyphemus and Luna caterpillars build fat reserves in the same hickory canopy through the same summer weeks, and both overwinter as pupae in the leaf layer below the host tree; undisturbed leaf litter from October through May protects both species simultaneously</span>
           </button>
         </div>
 
