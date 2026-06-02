@@ -72,6 +72,7 @@ import StripedSkunk from './pages/StripedSkunk'
 import RedFox from './pages/RedFox'
 import AmericanWoodcock from './pages/AmericanWoodcock'
 import TreeSwallow from './pages/TreeSwallow'
+import PipevineSwallowtail from './pages/PipevineSwallowtail'
 import AmericanBumbleBee from './pages/AmericanBumbleBee'
 import ChimneySwift from './pages/ChimneySwift'
 import PurpleMartin from './pages/PurpleMartin'
@@ -287,6 +288,7 @@ function App() {
       case 'red-fox':               return <RedFox onNavigate={navigateTo} />
       case 'american-woodcock':     return <AmericanWoodcock onNavigate={navigateTo} />
       case 'tree-swallow':          return <TreeSwallow onNavigate={navigateTo} />
+      case 'pipevine-swallowtail':   return <PipevineSwallowtail onNavigate={navigateTo} />
       case 'american-bumble-bee':   return <AmericanBumbleBee onNavigate={navigateTo} />
       case 'chimney-swift':         return <ChimneySwift onNavigate={navigateTo} />
       case 'purple-martin':         return <PurpleMartin onNavigate={navigateTo} />
