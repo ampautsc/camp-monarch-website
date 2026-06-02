@@ -391,34 +391,32 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
         </section>
 
-        {/* iNaturalist Monarch count widget — start */}
+                {/* iNaturalist Monarch count widget — start */}
         <div
           className="action-panel"
           style={{
             marginTop: '2rem',
             background: 'linear-gradient(135deg, rgba(255, 247, 237, 0.95) 0%, rgba(255, 251, 235, 0.95) 100%)',
-            border: '1px solid rgba(217, 119, 6, 0.2)',
+            border: '1px solid rgba(249, 115, 22, 0.24)',
           }}
         >
-          <h2 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>
-            {hasLiveSightings ? 'Right now' : `So far in ${monthName} ${year}`}: monarch sightings in the US
-          </h2>
-          <p style={{ margin: '0 0 1rem', fontSize: '2rem', fontWeight: '700', color: 'var(--color-accent)' }}>
-            {formatSightings(monarchSightings)}
+          <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
+          <p>
+            <strong style={{ color: 'var(--monarch-orange)' }}>98 Monarch sightings</strong>{' '}
+            have been logged on iNaturalist in the United States this month.
+            Each sighting becomes open data that researchers can use to track the migration.
           </p>
-          <p style={{ margin: '0 0 1rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-            {hasLiveSightings
-              ? `Live from iNaturalist — ${formatSightings(monarchSightings)} research-grade observations logged in the US since ${monthName} 1, ${year}.`
-              : `Saved count from iNaturalist — ${formatSightings(FALLBACK_MONARCH_SIGHTINGS)} research-grade observations logged in the US in a recent month.`}
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '1rem' }}>
+            Updated June 2, 2026 · current count covers observations since 2026-06-01.
           </p>
           <a
-            href={sightingsUrl}
+            href="https://www.inaturalist.org/observations?month=6&place_id=1&taxon_id=48662&d1=2026-06-01"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
             className="hero__cta"
             style={{ display: 'inline-block' }}
           >
-            View observations on iNaturalist →
+            See this month's sightings on iNaturalist →
           </a>
         </div>
         {/* iNaturalist Monarch count widget — end */}
