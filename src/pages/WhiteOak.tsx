@@ -221,98 +221,52 @@ export default function WhiteOak({ onNavigate }: WhiteOakProps) {
 
         <section aria-labelledby="connections-heading">
           <h2 id="connections-heading">Who depends on a white oak across all four seasons</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('black-capped-chickadee')}>
-                Black-capped Chickadee
-              </button>{' '}
-              &mdash; arrives at the oak the week new leaves expand in April; the pair&apos;s
-              350 to 570 daily caterpillar trips to the nest draw almost entirely from
-              oak-feeding moth larvae during the May nestling window
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('juvenals-duskywing')}>
-                Juvenal&apos;s Duskywing
-              </button>{' '}
-              &mdash; a spring skipper whose caterpillars roll white oak leaves into silk
-              tubes from May through summer and overwinter as larvae inside fallen rolled
-              leaves; raking the leaf layer beneath the oak removes the overwintering cohort
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('cecropia-moth')}>
-                Cecropia Moth
-              </button>{' '}
-              &mdash; one of North America&apos;s largest moths; caterpillars feed on white
-              oak through late summer, reaching 4 inches before spinning a silk cocoon on
-              a branch; the oak is the host plant that makes the adult moth&apos;s single
-              reproductive flight possible
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('polyphemus-moth')}>
-                Polyphemus Moth
-              </button>{' '}
-              &mdash; lime-green caterpillars feed on oak leaves through August and
-              pupate in the leaf litter at the base of the tree; removing that leaf layer
-              in fall removes the cocoons before they emerge the following May
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('luna-moth')}>
-                Luna Moth
-              </button>{' '}
-              &mdash; pale green caterpillars consume white oak foliage through summer;
-              two generations per year in the south, one in the north; both pupate in
-              leaf litter directly below the host tree
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('wild-turkey')}>
-                Wild Turkey
-              </button>{' '}
-              &mdash; moves through yards with white oaks in October and November,
-              scratching leaf litter aside to reach acorns; a flock of six turkeys
-              can consume most of the acorn drop from a mature tree within two weeks
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('eastern-gray-squirrel')}>
-                Eastern Gray Squirrel
-              </button>{' '}
-              &mdash; buries white oak acorns individually in the soil at depths of roughly
-              2 centimeters, up to a half mile from the source tree, at a rate of roughly
-              10,000 separate caches per squirrel per fall; the approximately 25 percent
-              never retrieved become oak seedlings in fence rows, lawn edges, and neighbor
-              yards &mdash; the oaks growing at property edges across eastern suburbs arrived
-              there in a squirrel cache
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('eastern-screech-owl')}>
-                Eastern Screech-Owl
-              </button>{' '}
-              &mdash; nests in natural cavities in large oaks and hunts the insects
-              that emerge from the bark and leaf litter at night; a yard with a
-              mature white oak and a nest box provides both the food source and the
-              nesting site
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('hackberry')}>
-                Hackberry
-              </button>{' '}
-              &mdash; the other large native canopy tree that combines caterpillar
-              biomass with persistent fall fruit; hackberry and white oak together
-              cover more than 500 caterpillar species between them and both produce
-              food that carries wildlife from late fall into winter
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('black-walnut')}>
-                Black Walnut
-              </button>{' '}
-              &mdash; black walnut and white oak in the same yard draw cecropia and
-              polyphemus moths to two separate host trees during the same May and June
-              egg-laying nights; the black walnut&apos;s juglone &mdash; released from roots,
-              hulls, and leaf litter &mdash; affects plants at ground level within the root
-              zone but does not reach the oak canopy where the moths fly; gray squirrels
-              cache both acorns and walnuts in the same scatter-hoarded grid across
-              the yard, with both nut types overwintering in the same soil layer
-            </li>
-          </ul>
+          <div className="neighbor-grid">
+            <button className="neighbor-card" onClick={() => onNavigate('black-capped-chickadee')}>
+              <span className="neighbor-name">Black-capped Chickadee</span>
+              <span className="neighbor-note">arrives at the oak the week new leaves expand in April; the pair&apos;s 350 to 570 daily caterpillar trips to the nest draw almost entirely from oak-feeding moth larvae during the May nestling window</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('juvenals-duskywing')}>
+              <span className="neighbor-name">Juvenal&apos;s Duskywing</span>
+              <span className="neighbor-note">a spring skipper whose caterpillars roll white oak leaves into silk tubes from May through summer and overwinter as larvae inside fallen rolled leaves; raking the leaf layer beneath the oak removes the overwintering cohort</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('cecropia-moth')}>
+              <span className="neighbor-name">Cecropia Moth</span>
+              <span className="neighbor-note">one of North America&apos;s largest moths; caterpillars feed on white oak through late summer, reaching 4 inches before spinning a silk cocoon on a branch; the oak is the host plant that makes the adult moth&apos;s single reproductive flight possible</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('polyphemus-moth')}>
+              <span className="neighbor-name">Polyphemus Moth</span>
+              <span className="neighbor-note">lime-green caterpillars feed on oak leaves through August and pupate in the leaf litter at the base of the tree; removing that leaf layer in fall removes the cocoons before they emerge the following May</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('luna-moth')}>
+              <span className="neighbor-name">Luna Moth</span>
+              <span className="neighbor-note">pale green caterpillars consume white oak foliage through summer; two generations per year in the south, one in the north; both pupate in leaf litter directly below the host tree</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('wild-turkey')}>
+              <span className="neighbor-name">Wild Turkey</span>
+              <span className="neighbor-note">moves through yards with white oaks in October and November, scratching leaf litter aside to reach acorns; a flock of six turkeys can consume most of the acorn drop from a mature tree within two weeks</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('eastern-gray-squirrel')}>
+              <span className="neighbor-name">Eastern Gray Squirrel</span>
+              <span className="neighbor-note">buries white oak acorns individually in the soil at depths of roughly 2 centimeters, up to a half mile from the source tree, at a rate of roughly 10,000 separate caches per squirrel per fall; the approximately 25 percent never retrieved become oak seedlings in fence rows, lawn edges, and neighbor yards &mdash; the oaks growing at property edges across eastern suburbs arrived there in a squirrel cache</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('eastern-screech-owl')}>
+              <span className="neighbor-name">Eastern Screech-Owl</span>
+              <span className="neighbor-note">nests in natural cavities in large oaks and hunts the insects that emerge from the bark and leaf litter at night; a yard with a mature white oak and a nest box provides both the food source and the nesting site</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('hackberry')}>
+              <span className="neighbor-name">Hackberry</span>
+              <span className="neighbor-note">the other large native canopy tree that combines caterpillar biomass with persistent fall fruit; hackberry and white oak together cover more than 500 caterpillar species between them and both produce food that carries wildlife from late fall into winter</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('black-walnut')}>
+              <span className="neighbor-name">Black Walnut</span>
+              <span className="neighbor-note">black walnut and white oak in the same yard draw cecropia and polyphemus moths to two separate host trees during the same May and June egg-laying nights; the black walnut&apos;s juglone &mdash; released from roots, hulls, and leaf litter &mdash; affects plants at ground level within the root zone but does not reach the oak canopy where the moths fly; gray squirrels cache both acorns and walnuts in the same scatter-hoarded grid across the yard, with both nut types overwintering in the same soil layer</span>
+            </button>
+            <button className="neighbor-card" onClick={() => onNavigate('shagbark-hickory')}>
+              <span className="neighbor-name">Shagbark Hickory</span>
+              <span className="neighbor-note">supports 235 caterpillar species including Luna Moth, Polyphemus Moth, and Cecropia Moth &mdash; the same silk moths that use white oak; a yard with both trees runs two simultaneous caterpillar cohorts through the same summer weeks; shagbark&apos;s exfoliating bark plates create warm crevice roost sites for Little Brown Bat that white oak&apos;s plated bark does not</span>
+            </button>
+          </div>
         </section>
       </div>
     </>
