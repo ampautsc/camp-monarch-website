@@ -304,6 +304,15 @@ export default function WoodThrush({ onNavigate }: WoodThrushProps) {
               in fragmented suburban patches exceed 60% for both species, reducing per-pair
               fledgling production toward zero.
             </li>
+            <li>
+              <button className="link-button" onClick={() => onNavigate('american-woodcock')}>
+                American Woodcock
+              </button>
+              {' — '}Uses the same moist thicket edges and young forest habitat; the woodcock
+              probes earthworms in the same soft, undisturbed soil that produces the leaf-litter
+              invertebrate community Wood Thrush forages through; both are down roughly 40% since
+              the late 1960s.
+            </li>
           </ul>
         </section>
 
