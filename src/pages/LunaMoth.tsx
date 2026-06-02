@@ -246,6 +246,10 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
             <span className="neighbor-name">Black Walnut</span>
             <span className="neighbor-note">The primary larval host for Luna Moth — caterpillars feed on black walnut leaves from late May through July, descend to overwinter as pupae in the leaf litter below the tree, and emerge as non-feeding adults the following May; the fat built on these leaves is the only fuel for the adult's entire seven-day life</span>
           </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-beech')}>
+            <span className="neighbor-name">American Beech</span>
+            <span className="neighbor-note">American Beech is a primary larval host for Luna Moth alongside black walnut and hickory — females lay eggs on beech leaves in late May, caterpillars feed through July, descend to overwinter as pupae in the slow-decomposing beech leaf litter, and emerge as non-feeding adults the following spring; the fat built on beech leaves is the only fuel for the adult's entire seven-day life</span>
+          </button>
           <button className="neighbor-card" onClick={() => onNavigate('white-oak')}>
             <span className="neighbor-name">White Oak</span>
             <span className="neighbor-note">Luna caterpillars develop on white oak leaves through late summer — white oak is among the host tree genera the species uses across its eastern range; an oak that carries Polyphemus caterpillars in August may carry Luna caterpillars in the same canopy three weeks earlier</span>
