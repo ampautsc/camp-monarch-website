@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { I18nextProvider } from 'react-i18next'
 import i18n from './i18n'
 import Nav from './components/Nav'
@@ -74,6 +73,7 @@ import AmericanWoodcock from './pages/AmericanWoodcock'
 import TreeSwallow from './pages/TreeSwallow'
 import PipevineSwallowtail from './pages/PipevineSwallowtail'
 import Aristolochia from './pages/Aristolochia'
+import TulipPoplar from './pages/TulipPoplar'
 import AmericanBumbleBee from './pages/AmericanBumbleBee'
 import ChimneySwift from './pages/ChimneySwift'
 import PurpleMartin from './pages/PurpleMartin'
@@ -291,6 +291,7 @@ function App() {
       case 'tree-swallow':          return <TreeSwallow onNavigate={navigateTo} />
       case 'pipevine-swallowtail':   return <PipevineSwallowtail onNavigate={navigateTo} />
       case 'dutchmans-pipe':          return <Aristolochia onNavigate={navigateTo} />
+      case 'tulip-poplar':            return <TulipPoplar onNavigate={navigateTo} />
       case 'american-bumble-bee':   return <AmericanBumbleBee onNavigate={navigateTo} />
       case 'chimney-swift':         return <ChimneySwift onNavigate={navigateTo} />
       case 'purple-martin':         return <PurpleMartin onNavigate={navigateTo} />
