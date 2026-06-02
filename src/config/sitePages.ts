@@ -147,6 +147,7 @@ export const ALL_PAGE_SLUGS = [
   'spicebush',
   'elderberry',
   'virginia-creeper',
+  'dutchmans-pipe',
   'butterfly-weed',
   'pearl-crescent',
   'giant-swallowtail',
@@ -214,4 +215,5 @@ export const PAGE_LABEL_OVERRIDES: Partial<Record<PageSlug, string>> = {
   'cobweb-skipper': 'Cobweb Skipper',       // no override needed but added for clarity
   'little-bluestem': 'Little Bluestem',     // no override needed but added for clarity
   'red-fox': 'Red Fox',                     // ensure proper capitalization
+  'dutchmans-pipe': "Dutchman's Pipe",      // apostrophe lost in slug
 }
