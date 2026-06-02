@@ -267,6 +267,10 @@ export default function PipevineSwallowtail({ onNavigate }: PipevineSwallowtailP
               <span className="neighbor-name">Purple Coneflower</span>
               <span className="neighbor-note">July–August bloom that overlaps with the second Pipevine Swallowtail generation — adults nectaring coneflower in August are loading reserves before forming chrysalids for winter</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('dutchmans-pipe')}>
+              <span className="neighbor-name">Dutchman's Pipe</span>
+              <span className="neighbor-note">The native vine Pipevine Swallowtail caterpillars feed on exclusively — females detect its aromatic compounds from the air and confirm the host chemistry with tarsal chemoreceptors on landing; the ornamental Aristolochia elegans carries a different alkaloid profile that kills caterpillars before they complete their second instar</span>
+            </button>
           </div>
         </section>
       </div>
