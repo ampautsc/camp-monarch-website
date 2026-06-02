@@ -1,4 +1,3 @@
-import { I18nextProvider } from 'react-i18next'
 import i18n from './i18n'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
@@ -182,6 +181,7 @@ import Hackberry from './pages/Hackberry'
 import HackberryEmperor from './pages/HackberryEmperor'
 import AmericanSnout from './pages/AmericanSnout'
 import TawnyEmperor from './pages/TawnyEmperor'
+import BlackWalnut from './pages/BlackWalnut'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -400,6 +400,7 @@ function App() {
       case 'hackberry-emperor':     return <HackberryEmperor onNavigate={navigateTo} />
       case 'american-snout':        return <AmericanSnout onNavigate={navigateTo} />
       case 'tawny-emperor':         return <TawnyEmperor onNavigate={navigateTo} />
+      case 'black-walnut':           return <BlackWalnut onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
