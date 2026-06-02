@@ -300,6 +300,18 @@ export default function WhiteOak({ onNavigate }: WhiteOakProps) {
               cover more than 500 caterpillar species between them and both produce
               food that carries wildlife from late fall into winter
             </li>
+            <li>
+              <button className="neighbor-link" onClick={() => onNavigate('black-walnut')}>
+                Black Walnut
+              </button>{' '}
+              &mdash; black walnut and white oak in the same yard draw cecropia and
+              polyphemus moths to two separate host trees during the same May and June
+              egg-laying nights; the black walnut&apos;s juglone &mdash; released from roots,
+              hulls, and leaf litter &mdash; affects plants at ground level within the root
+              zone but does not reach the oak canopy where the moths fly; gray squirrels
+              cache both acorns and walnuts in the same scatter-hoarded grid across
+              the yard, with both nut types overwintering in the same soil layer
+            </li>
           </ul>
         </section>
       </div>
