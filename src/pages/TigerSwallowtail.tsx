@@ -266,6 +266,10 @@ export default function TigerSwallowtail({ onNavigate }: TigerSwallowtailProps) 
               <span className="neighbor-name">Eastern Redbud</span>
               <span className="neighbor-note">Flowers open directly on bare branches in early April, before the leaves, giving the first spring generation of tiger swallowtails an early nectar source at the same moment the first adults are emerging from their overwintering chrysalids</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('tulip-poplar')}>
+              <span className="neighbor-name">Tulip Poplar</span>
+              <span className="neighbor-note">A primary host tree for Tiger Swallowtail caterpillars alongside wild cherry and sassafras — females oviposit on young leaves in May; the canopy flowers in mid-May draw Ruby-throated Hummingbirds that time their northward migration to the bloom; also hosts Cecropia Moth and Polyphemus Moth caterpillars through summer</span>
+            </button>
           </div>
         </section>
       </div>
