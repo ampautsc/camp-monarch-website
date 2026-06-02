@@ -270,6 +270,10 @@ export default function SpicebushSwallowtail({ onNavigate }: SpicebushSwallowtai
               <span className="neighbor-name">Black Swallowtail</span>
               <span className="neighbor-note">Third species mimicking the Pipevine Swallowtail in the same yards — the female Black Swallowtail carries the pattern; males do not. Uses carrot-family host plants, not spicebush or sassafras, so the two species can breed in the same yard without competing for host plants</span>
             </button>
+            <button className="neighbor-card" onClick={() => onNavigate('pipevine-swallowtail')}>
+              <span className="neighbor-name">Pipevine Swallowtail</span>
+              <span className="neighbor-note">The model species whose wing pattern Spicebush Swallowtails mimic — genuinely toxic to birds that eat it, training a pattern-aversion that protects both species in the same yard; where Pipevine Swallowtails are rare locally, the mimicry provides less protection</span>
+            </button>
             <button className="neighbor-card" onClick={() => onNavigate('hermit-thrush')}>
               <span className="neighbor-name">Hermit Thrush</span>
               <span className="neighbor-note">Migrating Hermit Thrushes arrive in September and consume spicebush berries — the same shrub that hosted Spicebush Swallowtail caterpillars in July and August shifts roles and feeds a different species in a different season</span>
