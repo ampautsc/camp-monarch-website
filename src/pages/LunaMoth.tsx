@@ -241,6 +241,25 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
           </p>
         </section>
 
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('white-oak')}>
+            <span className="neighbor-name">White Oak</span>
+            <span className="neighbor-note">Luna caterpillars develop on white oak leaves through late summer — white oak is among the host tree genera the species uses across its eastern range; an oak that carries Polyphemus caterpillars in August may carry Luna caterpillars in the same canopy three weeks earlier</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('cecropia-moth')}>
+            <span className="neighbor-name">Cecropia Moth</span>
+            <span className="neighbor-note">Same family (Saturniidae), same adult-flight window, same suburban barriers — both are non-feeding giant silk moths navigating by pheromone at night in May and June; Cecropia uses black cherry and elderberry as its primary hosts rather than walnut and hickory, so both species can develop in the same yard on different trees without competing</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('polyphemus-moth')}>
+            <span className="neighbor-name">Polyphemus Moth</span>
+            <span className="neighbor-note">Shares the Saturniidae family, the same light-trap vulnerability, and the same leaf-litter overwintering stage — Polyphemus caterpillars favor tulip poplar and native oaks rather than walnut and hickory, so both silk moths can develop in a yard that includes both tree types; cocoons of both species overwinter in fallen leaves below their host trees</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('black-cherry')}>
+            <span className="neighbor-name">Wild Black Cherry</span>
+            <span className="neighbor-note">Luna caterpillars develop on wild black cherry — Prunus serotina appears on the host-plant list alongside walnut and hickory; black cherry is also the primary Cecropia Moth host, so a single black cherry tree in a yard with native walnut can carry caterpillars of two giant silk moth species through the same summer season</span>
+          </button>
+        </div>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Build a yard that supports Luna Moths and the whole food web.</strong>{' '}
