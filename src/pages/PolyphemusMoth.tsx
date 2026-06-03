@@ -258,6 +258,10 @@ A single native oak supports more caterpillar biomass than any other
             <span className="neighbor-name">Shagbark Hickory</span>
             <span className="neighbor-note">Polyphemus Moth uses hickory as a larval host alongside oaks and maples — both Polyphemus and Luna caterpillars build fat reserves in the same hickory canopy through the same summer weeks, and both overwinter as pupae in the leaf layer below the host tree; undisturbed leaf litter from October through May protects both species simultaneously</span>
           </button>
+          <button className="neighbor-card" onClick={() => onNavigate('red-maple')}>
+            <span className="neighbor-name">Red Maple</span>
+            <span className="neighbor-note">Polyphemus caterpillars develop on red maple alongside oaks and birches; the caterpillar descends from the maple canopy in late August and spins its cocoon in the leaf duff at the tree's base, where it overwinters until the adult emerges in June; red maple also flowers in late February before any leaf unfolds, providing the American Bumble Bee queen with carbohydrates the same week she emerges from underground hibernation</span>
+          </button>
         </div>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
