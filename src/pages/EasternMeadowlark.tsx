@@ -286,6 +286,13 @@ export default function EasternMeadowlark({ onNavigate }: EasternMeadowlarkProps
           </p>
         </section>
 
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
+            <span className="neighbor-name">American Bumble Bee</span>
+            <span className="neighbor-note">a bumble bee colony forages the same open meadow the meadowlark nests in — the queen emerges from underground hibernation in April and works the wildflower patches growing through the same native grass stand where meadowlarks probe the ground for grasshoppers; both species declined as the eastern meadow landscape was converted first to row crops and then to mowed lawn, and a native meadow strip that supports a nesting meadowlark pair through June sustains a bumble bee colony from April through October in the same square footage</span>
+          </button>
+        </div>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Build the native plant base that grassland birds and insects depend on.</strong>{' '}
