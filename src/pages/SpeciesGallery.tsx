@@ -1,3 +1,5 @@
+import type { Page } from '../App'
+
 type Status = 'Common' | 'Declining' | 'Endangered'
 
 type SpeciesItem = {
