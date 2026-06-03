@@ -1,4 +1,4 @@
-import i18n from './i18n'
+successfully downloaded text file (SHA: 4890aab6fc3aa39a1cbdf72f45b0d94164d08d09)import i18n from './i18n'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import FeedbackWidget from './components/FeedbackWidget'
@@ -184,6 +184,7 @@ import TawnyEmperor from './pages/TawnyEmperor'
 import BlackWalnut from './pages/BlackWalnut'
 import AmericanBeech from './pages/AmericanBeech'
 import ShagbarkHickory from './pages/ShagbarkHickory'
+import RedMaple from './pages/RedMaple'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -405,6 +406,7 @@ case 'wild-columbine':        return <WildColumbine onNavigate={navigateTo} />
       case 'black-walnut':           return <BlackWalnut onNavigate={navigateTo} />
       case 'american-beech':         return <AmericanBeech onNavigate={navigateTo} />
       case 'shagbark-hickory':        return <ShagbarkHickory onNavigate={navigateTo} />
+      case 'red-maple':              return <RedMaple onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
