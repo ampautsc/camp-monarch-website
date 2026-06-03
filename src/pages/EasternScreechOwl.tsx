@@ -251,6 +251,25 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
           </p>
         </section>
 
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('northern-flicker')}>
+            <span className="neighbor-name">Northern Flicker</span>
+            <span className="neighbor-note">drills a 3-inch entrance hole 13 to 16 inches deep each spring, raises its chicks, then abandons the cavity permanently — the same 3-inch diameter a screech owl needs; a yard with one standing dead snag and a resident Flicker pair generates screech owl nest sites without any hardware</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('red-maple')}>
+            <span className="neighbor-name">Red Maple</span>
+            <span className="neighbor-note">old red maples develop heartwood cavities that screech owls use for roosting and nesting year-round; the tree also hosts 285 caterpillar species through summer, building the insect-dense canopy edge the owl hunts from dusk onward; a mature maple with undisturbed leaf litter beneath it provides both the nesting site and a concentration of the insects and small prey the owl returns to each night</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('virginia-opossum')}>
+            <span className="neighbor-name">Virginia Opossum</span>
+            <span className="neighbor-note">forages the same yard at the same hours — a ground-level tick predator working the brush pile while the owl hunts canopy edges above; both animals are active in the same dark window and occupy different vertical zones of the same habitat</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('striped-skunk')}>
+            <span className="neighbor-name">Striped Skunk</span>
+            <span className="neighbor-note">covers the same ground on the same nocturnal schedule, drilling turf for Japanese beetle grubs and excavating yellowjacket nests — its thick fur absorbs stings that would stop any other mammal at that nest entrance; shares the same pesticide-free, prey-rich yard the screech owl depends on</span>
+          </button>
+        </div>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Build the habitat Screech Owls depend on.</strong>{' '}
@@ -266,19 +285,7 @@ export default function EasternScreechOwl({ onNavigate }: EasternScreechOwlProps
             <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
               Choose a Plant
             </button>
-            . The{' '}
-            <button className="link-button" onClick={() => onNavigate('virginia-opossum')}>
-              Virginia opossum
-            </button>
-            {' '}forages the same yard at the same hours &mdash; a ground-level tick predator
-            working the brush pile while the owl hunts canopy edges.
-            {' '}The{' '}
-            <button className="link-button" onClick={() => onNavigate('striped-skunk')}>
-              striped skunk
-            </button>
-            {' '}covers the same ground on the same schedule, drilling turf for Japanese
-            beetle grubs and excavating yellowjacket nests — its thick fur absorbs the
-            stings that would stop any other mammal at that nest entrance.
+            .
           </p>
         </div>
       </div>
