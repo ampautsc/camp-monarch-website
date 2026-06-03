@@ -54,7 +54,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
             Luna Moths are among the species most studied for anti-bat
             adaptations. The long, spiraling tails create an acoustic false
             target: when a bat hunts by echolocation, the tails return a signal
-            that mimics the moth&apos;s body. A bat attacking the tail instead
+            that mimics the moth's body. A bat attacking the tail instead
             of the thorax gives the moth a chance to escape. Studies have shown
             Luna Moths with intact tails survive bat attacks at significantly
             higher rates than those with tails removed.
@@ -66,7 +66,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
             caterpillar stage — reserves that must sustain a week to ten days
             of mate-searching, reproduction, and death. A female lays her eggs
             in small clusters on host tree leaves and dies shortly after. A
-            male spends his nights navigating toward the female&apos;s pheromone
+            male spends his nights navigating toward the female's pheromone
             plume with comb-like antennae that are among the most sensitive
             chemical detectors in the animal kingdom.
           </p>
@@ -150,7 +150,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
             be functionally eliminated from an entire region for a season.
             Ground-applied broad-spectrum insecticides create the same outcome
             at smaller scales — a single spray event on a host tree in June
-            removes that tree&apos;s contribution to the local Luna Moth
+            removes that tree's contribution to the local Luna Moth
             population for the year.
           </p>
         </section>
@@ -234,7 +234,7 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
             When a female deposits her eggs in clusters of four or five on a
             black walnut leaf on a warm May night, she is doing what Luna Moths
             have done on this continent for tens of thousands of years. The leaf
-            is the same. The chemistry of the caterpillar&apos;s digestion is the
+            is the same. The chemistry of the caterpillar's digestion is the
             same. The only thing that has changed is the landscape around the
             tree — and whether anyone thought to leave the leaf litter beneath it.
           </p>
@@ -268,6 +268,10 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
           <button className="neighbor-card" onClick={() => onNavigate('black-cherry')}>
             <span className="neighbor-name">Wild Black Cherry</span>
             <span className="neighbor-note">Luna caterpillars develop on wild black cherry — Prunus serotina appears on the host-plant list alongside walnut and hickory; black cherry is also the primary Cecropia Moth host, so a single black cherry tree in a yard with native walnut can carry caterpillars of two giant silk moth species through the same summer season</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('red-maple')}>
+            <span className="neighbor-name">Red Maple</span>
+            <span className="neighbor-note">red maple appears on the Luna Moth host-plant list alongside walnut and hickory; Luna caterpillars developing on red maple through the same summer weeks as Polyphemus caterpillars build fat reserves for the adult that will live one week with no mouth; a yard with red maple and black walnut together covers both silk moth species on separate trees without overlap</span>
           </button>
         </div>
 
