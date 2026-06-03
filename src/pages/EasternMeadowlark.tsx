@@ -1,5 +1,3 @@
-import type { Page } from '../App'
-
 interface EasternMeadowlarkProps {
   onNavigate: (page: Page) => void
 }
@@ -290,6 +288,22 @@ export default function EasternMeadowlark({ onNavigate }: EasternMeadowlarkProps
           <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
             <span className="neighbor-name">American Bumble Bee</span>
             <span className="neighbor-note">a bumble bee colony forages the same open meadow the meadowlark nests in — the queen emerges from underground hibernation in April and works the wildflower patches growing through the same native grass stand where meadowlarks probe the ground for grasshoppers; both species declined as the eastern meadow landscape was converted first to row crops and then to mowed lawn, and a native meadow strip that supports a nesting meadowlark pair through June sustains a bumble bee colony from April through October in the same square footage</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-robin')}>
+            <span className="neighbor-name">American Robin</span>
+            <span className="neighbor-note">forages in open ground using asymmetric ear placement to locate earthworms and soil invertebrates by sound — both American Robin and Eastern Meadowlark probe the ground surface and disappear from lawns treated with broadcast insecticides that collapse the soil invertebrate community; a yard that stops pesticide use and leaves native plant debris in place supports both species from the same action</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
+            <span className="neighbor-name">Dark-eyed Junco</span>
+            <span className="neighbor-note">scratches through leaf litter and open ground for seeds and invertebrates through fall and winter — a native meadow strip left standing through winter provides the seed heads and leaf-litter substrate juncos require; both junco and meadowlark are suppressed by the broadcast pesticide regimes that eliminate the ground-level invertebrate community from maintained suburban lawns</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('garter-snake')}>
+            <span className="neighbor-name">Garter Snake</span>
+            <span className="neighbor-note">thermoregulates at the boundary of tall grass and open ground in early morning and hunts the same grasshoppers, crickets, and soil invertebrates the meadowlark probes for — a native meadow strip provides both species with the grass-to-open edge that mowed lawn eliminates; the meadowlark nests in the grass, the garter snake basks at its margin, and both disappear when that transition is removed</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-towhee')}>
+            <span className="neighbor-name">Eastern Towhee</span>
+            <span className="neighbor-note">scratches in the dense thicket where native grass gives way to shrubs — exactly the habitat edge adjacent to where meadowlarks nest and forage; a native meadow strip bordered by a row of native shrubs serves both: the meadowlark works the open grass while the towhee finds nesting cover and leaf-litter invertebrates at the shrubby margin; both species are losing the same unmanaged grass-to-shrub transition that once existed at every old field edge</span>
           </button>
         </div>
 
