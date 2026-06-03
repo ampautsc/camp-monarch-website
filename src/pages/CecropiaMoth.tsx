@@ -284,6 +284,10 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
             <span className="neighbor-name">Black Walnut</span>
             <span className="neighbor-note">Cecropia caterpillars develop on black walnut leaves in July and August; after the final instar the caterpillar drops from the canopy and spins its cocoon in the leaf litter beneath the tree, where it overwinters until the adult emerges in May; a black walnut at the property edge produces host-leaf surface through the same summer weeks as black cherry and tulip poplar</span>
           </button>
+          <button className="neighbor-card" onClick={() => onNavigate('red-maple')}>
+            <span className="neighbor-name">Red Maple</span>
+            <span className="neighbor-note">Cecropia caterpillars develop on red maple leaves through July and August, building the fat reserves the non-feeding adult burns during its entire mating flight; red maple also flowers in late February before its leaves open, giving the bumblebee queen emerging from hibernation carbohydrates the same week Cecropia adults are preparing to emerge from their overwintering cocoons in April and May</span>
+          </button>
         </div>
 
         <div className="action-panel" style={{ marginTop: '2rem' }}>
