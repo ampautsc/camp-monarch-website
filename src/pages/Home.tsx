@@ -1,3 +1,4 @@
+import { useState, useEffect, useMemo } from 'react'
 import type { Page } from '../App'
 
 interface HomeProps {
@@ -317,7 +318,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 <img src={NEIGHBOR_PHOTOS.skunk} alt="Striped Skunk foraging in grass at dusk, bold black and white pattern visible from behind" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
               </div>
               <div style={{ padding: '0.9rem 1rem 1rem', flex: 1 }}>
-                <h3 style={{ margin: '0 0 0.4rem', fontSize: '1rem' }}>Striped Skunk</h3>
+<h3 style={{ margin: '0 0 0.4rem', fontSize: '1rem' }}>Striped Skunk</h3>
                 <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>She stamps her front feet as a warning before she sprays — the pattern gives you a second to back off. She uses the spray fewer than five times a year because it takes ten days to replenish.</p>
               </div>
             </div>
