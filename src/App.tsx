@@ -1,4 +1,6 @@
-successfully downloaded text file (SHA: 4890aab6fc3aa39a1cbdf72f45b0d94164d08d09)import i18n from './i18n'
+import { useState, useEffect } from 'react'
+import { I18nextProvider } from 'react-i18next'
+import i18n from './i18n'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import FeedbackWidget from './components/FeedbackWidget'
@@ -254,7 +256,7 @@ function App() {
       case 'plants-by-purpose':     return <PlantsByPurpose onNavigate={navigateTo} />
       case 'plants-by-conditions':  return <PlantsByConditions onNavigate={navigateTo} />
       case 'plants-milkweeds':      return <PlantsMilkweeds onNavigate={navigateTo} />
-case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo} />
+      case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo} />
       case 'plants-species-index':  return <PlantsSpeciesIndex onNavigate={navigateTo} />
       case 'plants-getting-started':return <PlantsGettingStarted onNavigate={navigateTo} />
       case 'plants-host-plants':    return <PlantsHostPlants onNavigate={navigateTo} />
@@ -276,7 +278,7 @@ case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo
       case 'american-tree-sparrow': return <AmericanTreeSparrow onNavigate={navigateTo} />
       case 'eastern-chipmunk':      return <EasternChipmunk onNavigate={navigateTo} />
       case 'eastern-gray-squirrel': return <EasternGraySquirrel onNavigate={navigateTo} />
-      case 'eastern-cottontail':      return <EasternCottontail onNavigate={navigateTo} />
+      case 'eastern-cottontail':    return <EasternCottontail onNavigate={navigateTo} />
       case 'spring-peeper':         return <SpringPeeper onNavigate={navigateTo} />
       case 'wood-frog':             return <WoodFrog onNavigate={navigateTo} />
       case 'toad':                  return <AmericanToad onNavigate={navigateTo} />
@@ -292,9 +294,9 @@ case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo
       case 'red-fox':               return <RedFox onNavigate={navigateTo} />
       case 'american-woodcock':     return <AmericanWoodcock onNavigate={navigateTo} />
       case 'tree-swallow':          return <TreeSwallow onNavigate={navigateTo} />
-      case 'pipevine-swallowtail':   return <PipevineSwallowtail onNavigate={navigateTo} />
-      case 'dutchmans-pipe':          return <Aristolochia onNavigate={navigateTo} />
-      case 'tulip-poplar':            return <TulipPoplar onNavigate={navigateTo} />
+      case 'pipevine-swallowtail':  return <PipevineSwallowtail onNavigate={navigateTo} />
+      case 'dutchmans-pipe':        return <Aristolochia onNavigate={navigateTo} />
+      case 'tulip-poplar':          return <TulipPoplar onNavigate={navigateTo} />
       case 'american-bumble-bee':   return <AmericanBumbleBee onNavigate={navigateTo} />
       case 'chimney-swift':         return <ChimneySwift onNavigate={navigateTo} />
       case 'purple-martin':         return <PurpleMartin onNavigate={navigateTo} />
@@ -339,7 +341,7 @@ case 'plants-starter-plants': return <PlantsStarterPlants onNavigate={navigateTo
       case 'swamp-milkweed':        return <SwampMilkweed onNavigate={navigateTo} />
       case 'wild-bergamot':         return <WildBergamot onNavigate={navigateTo} />
       case 'new-jersey-tea':        return <NewJerseyTea onNavigate={navigateTo} />
-case 'wild-columbine':        return <WildColumbine onNavigate={navigateTo} />
+      case 'wild-columbine':        return <WildColumbine onNavigate={navigateTo} />
       case 'black-eyed-susan':      return <BlackEyedSusan onNavigate={navigateTo} />
       case 'virginia-bluebell':     return <VirginiaBluebell onNavigate={navigateTo} />
       case 'buttonbush':            return <Buttonbush onNavigate={navigateTo} />
@@ -403,10 +405,10 @@ case 'wild-columbine':        return <WildColumbine onNavigate={navigateTo} />
       case 'hackberry-emperor':     return <HackberryEmperor onNavigate={navigateTo} />
       case 'american-snout':        return <AmericanSnout onNavigate={navigateTo} />
       case 'tawny-emperor':         return <TawnyEmperor onNavigate={navigateTo} />
-      case 'black-walnut':           return <BlackWalnut onNavigate={navigateTo} />
-      case 'american-beech':         return <AmericanBeech onNavigate={navigateTo} />
-      case 'shagbark-hickory':        return <ShagbarkHickory onNavigate={navigateTo} />
-      case 'red-maple':              return <RedMaple onNavigate={navigateTo} />
+      case 'black-walnut':          return <BlackWalnut onNavigate={navigateTo} />
+      case 'american-beech':        return <AmericanBeech onNavigate={navigateTo} />
+      case 'shagbark-hickory':      return <ShagbarkHickory onNavigate={navigateTo} />
+      case 'red-maple':             return <RedMaple onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
