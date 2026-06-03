@@ -281,6 +281,17 @@ export default function AmericanBumbleBee({ onNavigate }: AmericanBumbleBeeProps
           </p>
         </section>
 
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('red-maple')}>
+            <span className="neighbor-name">Red Maple</span>
+            <span className="neighbor-note">red maple flowers open in late February or early March — two to three weeks before most other canopy trees — giving the overwintering queen nectar and pollen the same week she emerges from underground hibernation without having eaten since October; a mature red maple can produce millions of flowers in a single week, accessible at lower branch tips that overhang fence lines and lawn edges where queens forage before their flight muscles warm enough for sustained flight</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-meadowlark')}>
+            <span className="neighbor-name">Eastern Meadowlark</span>
+            <span className="neighbor-note">follows the same decline curve — 75 percent population loss since 1966, driven by the conversion of native grasslands and diverse meadows to monoculture agriculture; the same shift that removed the continuous wildflower bloom a bumble bee colony needs from April through October eliminated the open-meadow nesting habitat the meadowlark depends on</span>
+          </button>
+        </div>
+
         <div className="action-panel" style={{ marginTop: '2rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Build the habitat bumble bees need alongside monarchs and every other species in the web.</strong>{' '}
