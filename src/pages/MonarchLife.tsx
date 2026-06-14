@@ -9,15 +9,18 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Monarch_Butterfly_Danaus_plexippus.jpg"
-          alt="Monarch butterfly (Danaus plexippus) on milkweed bloom with wings spread open, showing the vivid orange wing panels and black vein network — the adult that emerges from chrysalis in late August will not reproduce; instead it will fly 2,500 miles to a Mexican mountain forest it has never visited"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/20191008-NRCS-RAM-001_Monarch_on_Conoclinium_greggii_PayneCountyOklahoma_045_%2851000471693%29.jpg/1280px-20191008-NRCS-RAM-001_Monarch_on_Conoclinium_greggii_PayneCountyOklahoma_045_%2851000471693%29.jpg"
+          alt="An adult monarch butterfly with orange wings veined and bordered in black, feeding at a cluster of blue mistflower"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={857}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Derek Ramsey (Ram-Man)&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a>
+          Photo: U.S. Department of Agriculture (NRCS)&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:20191008-NRCS-RAM-001_Monarch_on_Conoclinium_greggii_PayneCountyOklahoma_045_(51000471693).jpg" target="_blank" rel="noopener noreferrer">Public domain</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -26,174 +29,132 @@ export default function MonarchLife({ onNavigate }: MonarchLifeProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>The monarch butterfly</h1>
         <p className="hero__lead">
-          It weighs less than a paper clip and navigates 3,000 miles to a mountain
-          it has never seen, guided by the sun and, researchers believe, magnetic fields.
-          No individual completes the round trip. The migration runs on inherited memory,
-          carried forward by generations that each live six weeks.
+          The monarch is a large orange-and-black butterfly found across North America. Its
+          caterpillars eat only milkweed: a female lays her eggs only on milkweed plants, and a
+          caterpillar that hatches anywhere else does not survive. Adults drink nectar from many
+          kinds of flowers, but without milkweed there is no next generation. [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="watch-heading">
-          <h2 id="watch-heading">What to look for in your yard</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem', margin: '1rem 0' }}>
-            <div className="callout callout--green" style={{ margin: 0 }}>
-              <h3 style={{ marginTop: 0, color: 'var(--monarch-green)' }}>Eggs (May-Aug)</h3>
-              <p style={{ marginBottom: 0 }}>
-                Pale yellow, ribbed, the size of a pin head. One per leaf, on the underside of milkweed.
-                Check leaves that are 6 inches or taller. The female lays 300-500 over her adult life,
-                each one alone.
-              </p>
-            </div>
-            <div className="callout callout--orange" style={{ margin: 0 }}>
-              <h3 style={{ marginTop: 0 }}>Caterpillars (Jun-Sep)</h3>
-              <p style={{ marginBottom: 0 }}>
-                Bold yellow, black, and white bands. Grows 2,000 times its hatching mass in two weeks.
-                When you see one on milkweed, leave the plant alone.
-                The caterpillar will eat the whole thing before forming a chrysalis.
-              </p>
-            </div>
-            <div className="callout callout--green" style={{ margin: 0 }}>
-              <h3 style={{ marginTop: 0, color: 'var(--monarch-green)' }}>Adults (Apr-Nov)</h3>
-              <p style={{ marginBottom: 0 }}>
-                Orange with black veining, white spots on the wing edges.
-                In spring and summer, watch for them nectaring on milkweed blooms, coneflowers, and bergamot.
-                In September, watch for southbound movement in the mornings.
-              </p>
-            </div>
-          </div>
-
-          <figure className="species-content-photo" style={{ maxWidth: '560px', margin: '1rem auto 1.5rem' }}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Butterfly weed (Asclepias tuberosa) in full bloom" loading="lazy" />
-            <figcaption>
-              Butterfly weed — a native milkweed — thrives in poor soil, tolerates drought, and attracts monarchs reliably. It is the one plant whose presence in a yard has a direct, documented effect on whether the monarch migration continues to function.
-              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <section aria-labelledby="milkweed-heading">
+          <h2 id="milkweed-heading">Milkweed and nothing else</h2>
+          <p>
+            A monarch caterpillar eats only milkweed leaves. Over about two weeks it grows through
+            five stages, shedding its skin between each one, then forms a green chrysalis and
+            emerges as an adult a week or two later. Milkweed also carries bitter toxins that the
+            caterpillar stores in its body, which makes both the caterpillar and the adult taste
+            bad to most predators. The bright orange wings are a warning. [1]
+          </p>
         </section>
 
-        <section aria-labelledby="diapause-heading">
-          <h2 id="diapause-heading">The generation that migrates</h2>
-          <p>
-            Summer monarchs live about six weeks. They mate, lay eggs, and die.
-            But the generation that hatches in late August is different.
-            This is the <em>diapause generation</em>. It does not reproduce until spring.
-            Instead it stores fat, delays sexual maturity, and flies 3,000 miles
-            to the oyamel fir forests of Michoacan, Mexico.
-          </p>
-          <figure className="species-content-photo species-content-photo--right" style={{ width: '36%' }}>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/97/Danaus_plexippus_emerging_from_chrysalis_04.jpg"
-              alt="Monarch butterfly emerging from its jade-green chrysalis — wings crumpled and soft, moments before their first unfurling"
-              loading="lazy"
-            />
-            <figcaption>
-              Inside the chrysalis, the caterpillar's tissues dissolve almost entirely — most of its cells break down into an undifferentiated biological broth. Imaginal cells dormant since the egg then organize that material into a butterfly. The monarch that emerges will navigate 2,500 miles to a Mexican mountain using a sun compass calibrated to time of day.
-              <span className="photo-credit"> Photo: Captain-tucker · <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_emerging_from_chrysalis_04.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Danaus_plexippus_caterpillar_on_milkweed.jpg/1280px-Danaus_plexippus_caterpillar_on_milkweed.jpg"
+            alt="A monarch caterpillar, banded in yellow, black, and white, feeding on a milkweed leaf"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            Monarch caterpillars feed only on milkweed. No milkweed in a landscape means no monarch
+            caterpillars there.
+            <span className="photo-credit"> Photo: Captain-tucker&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="migration-heading">
+          <h2 id="migration-heading">The long migration</h2>
           <p>
-            It overwinters there in clusters so dense that tree branches bend under the weight.
-            In February it begins the return — and dies somewhere in Texas or northern Mexico,
-            having laid the eggs of the generation that will reach Illinois and Michigan in June.
+            Monarchs breed across the United States and southern Canada through spring and summer,
+            producing several generations, each living only a few weeks. The last generation of the
+            year is different: it can live several months, and instead of breeding it flies south.
+            Eastern monarchs travel up to about 3,000 miles to a small area of oyamel fir forest in
+            the mountains of central Mexico, where they spend the winter clustered in the trees. No
+            single butterfly makes the round trip; the monarchs that return north in spring are the
+            offspring of the ones that left. Monarchs west of the Rocky Mountains follow a shorter
+            route to the California coast. [1][6]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            No individual monarch knows the full route. The navigational program runs on genetics.
-            Scientists still do not fully understand how they know where to go.
+            The eastern monarch is measured each winter by the area of Mexican forest its clusters
+            cover. In the winter of 2025&ndash;26 they occupied 2.93 hectares, up about 64% from the
+            year before, but still below the roughly 6 hectares scientists consider necessary for a
+            stable population, and well below the levels of the 1990s. [2] The western population,
+            which winters on the California coast, remains very low. The IUCN lists the migratory
+            monarch as Vulnerable. In December 2024 the U.S. Fish and Wildlife Service proposed
+            listing the monarch as Threatened under the Endangered Species Act; as of mid-2026 that
+            proposal has not been finalized. [3] The main causes of decline are the loss of milkweed
+            and other habitat, pesticides, climate change, and damage to the overwintering forests.
+            [2][4]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Milkweed, sightings, fall watch, and nectar for the crossing</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <p>
+            Monarch caterpillars can eat only milkweed, so native milkweed is the most useful plant
+            to add for them.
+          </p>
           <ol className="step-list">
             <li>
-              <strong>Plant milkweed.</strong>{' '}
-              It is the only plant monarchs can reproduce on. Any sunny spot with a native milkweed species
-              is a potential nursery. Three plants can support a full summer generation.
+              Native milkweed suited to your area is the one plant a monarch cannot reproduce
+              without. A female lays eggs on it, and the caterpillars that hatch can complete their
+              life cycle there. [5]
             </li>
             <li>
-              <strong>Log a sighting.</strong>{' '}
-              Every observation on iNaturalist adds to the data researchers use to track population recovery.
-              Eggs, caterpillars, adults in flight — all count.
+              Native flowers that bloom into fall give migrating monarchs the nectar they need for
+              the trip south. Late-season blooms such as goldenrod and asters are good sources.
             </li>
             <li>
-              <strong>Watch in September.</strong>{' '}
-              The fall migration passes through most of the US between mid-September and mid-October.
-              Roost trees near open fields, late-blooming goldenrod, and river corridors are places to look.
+              Skipping pesticides, including on the milkweed itself, spares the caterpillars
+              (insecticides kill them) and keeps the milkweed standing (herbicides remove it).
             </li>
             <li>
-              <strong>Plant native goldenrod or asters near your milkweed.</strong>{' '}
-              The diapause generation leaves breeding grounds in late August already storing fat for the
-              crossing. It fuels the 3,000-mile flight primarily by nectaring on Solidago and
-              Symphyotrichum species, which bloom precisely during the migration window — August through
-              October. A monarch working a blooming goldenrod stand in September is not simply passing
-              through. It is loading the reserves it needs to reach the overwintering site in Michoacan.
+              Reporting the monarchs you see adds to the community-science data researchers use to
+              track the population and the timing of the migration.
             </li>
           </ol>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-            <button className="hero__cta" onClick={() => onNavigate('plant-milkweed')}>
-              Find Your Milkweed Species
-            </button>
-            <button
-              onClick={() => onNavigate('log-a-sighting')}
-              style={{ background: 'none', border: '2px solid var(--monarch-orange)', color: 'var(--monarch-orange)', padding: '0.6rem 1.2rem', borderRadius: '6px', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 'bold', fontSize: '0.95rem' }}
-            >
-              Log a Sighting
-            </button>
-          </div>
+          <p>
+            For step-by-step help, see{' '}
+            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>Plant Milkweed</button>
+            {' '}and{' '}
+            <button className="link-button" onClick={() => onNavigate('raise-a-monarch')}>Raise a Monarch</button>.
+          </p>
         </div>
 
-        <section aria-labelledby="monarch-neighbors-heading">
-          <h2 id="monarch-neighbors-heading">Who shares the fall flyway and the milkweed patch</h2>
-          <p>
-            The milkweed stand in July and the goldenrod bloom in September that sustain the monarch's
-            annual cycle also sustain other species working the same landscape on similar schedules.
-          </p>
-          <ul>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
-                Canada Goldenrod
-              </button>
-              {' — '}The diapause generation departing breeding grounds in late August fuels the
-              2,500-mile Mexico crossing primarily on goldenrod and aster nectar through September
-              and October. A single monarch working a blooming goldenrod stand converts flower sugar
-              into the abdominal fat reserves that will carry it to Michoacán — the same goldenrod
-              that most homeowners pull because they assume it causes hay fever (ragweed does; goldenrod
-              is insect-pollinated and its pollen never reaches your sinuses).
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('green-darner')}>
-                Common Green Darner
-              </button>
-              {' — '}Migrates south on the same September cold fronts. Monarch counters at Atlantic
-              flyway hawk-watch stations record darner movement on the same weather days as peak
-              butterfly counts. Both species navigate to wintering locations they have never visited;
-              neither the darner nor the monarch arriving at your yard in April was there the previous October —
-              both are the offspring of the generation that departed.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('tiger-swallowtail')}>
-                Tiger Swallowtail
-              </button>
-              {' — '}Nectars on milkweed blooms in June and July alongside the summer monarch generation,
-              and feeds on wild bergamot and coneflowers through August. The tiger swallowtail on your
-              coneflowers in August will overwinter as a pupa; the monarch working the same flower heads
-              is building fat for a crossing it will complete in six weeks.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('purple-coneflower')}>
-                Purple Coneflower
-              </button>
-              {' — '}Blooms from late June through August — the exact window when the pre-diapause
-              generation of monarchs is feeding most intensively before its reproductive biology shifts
-              toward long-distance flight. A patch of coneflowers in late July carries monarch adults,
-              native bees, and fritillaries simultaneously; the monarchs working it in August belong to
-              the generation that will leave on the September cold front.
-            </li>
-          </ul>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('common-milkweed')}>
+            <span className="neighbor-name">Common Milkweed</span>
+            <span className="neighbor-note">The widespread native milkweed of fields and roadsides, and a main host plant for monarch caterpillars.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('swamp-milkweed')}>
+            <span className="neighbor-name">Swamp Milkweed</span>
+            <span className="neighbor-note">A milkweed for moist soil and garden beds; another host plant monarchs lay eggs on.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('butterfly-weed')}>
+            <span className="neighbor-name">Butterfly Weed</span>
+            <span className="neighbor-note">An orange-flowered milkweed for dry, sunny spots; a host for caterpillars and a nectar source for adults.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('native-bees')}>
+            <span className="neighbor-name">Native Bees</span>
+            <span className="neighbor-note">Share the same native flowers monarchs nectar on, and benefit from the same pesticide-free, native-plant yard.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://monarchjointventure.org/monarch-biology" target="_blank" rel="noopener noreferrer">Monarch Joint Venture — Monarch Biology</a></li>
+            <li><a href="https://www.xerces.org/press/eastern-monarch-butterfly-numbers-increase-but-remain-below-historic-levels" target="_blank" rel="noopener noreferrer">Xerces Society — Eastern Monarch numbers increase but remain below historic levels</a></li>
+            <li><a href="https://www.fws.gov/press-release/2024-12/monarch-butterfly-proposed-endangered-species-act-protection" target="_blank" rel="noopener noreferrer">U.S. Fish &amp; Wildlife Service — Monarch proposed for Endangered Species Act protection</a></li>
+            <li><a href="https://www.xerces.org/monarchs" target="_blank" rel="noopener noreferrer">Xerces Society — Monarchs (conservation overview)</a></li>
+            <li><a href="https://www.fws.gov/initiative/pollinators/save-monarch" target="_blank" rel="noopener noreferrer">U.S. Fish &amp; Wildlife Service — Save the Monarch</a></li>
+            <li><a href="https://www.fs.usda.gov/wildflowers/pollinators/Monarch_Butterfly/migration/index.shtml" target="_blank" rel="noopener noreferrer">U.S. Forest Service — Monarch Butterfly Migration and Overwintering</a></li>
+          </ol>
         </section>
       </div>
     </>
