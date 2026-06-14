@@ -9,16 +9,18 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/55/Junco_hyemalis_hyemalis_CT1_%28cropped%29.jpg"
-          alt="Dark-eyed Junco foraging in snow, showing slate-gray hood and white outer tail feathers — winter's most common feeder bird"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Dark-eyed_junco_%2821840%29.jpg/1280px-Dark-eyed_junco_%2821840%29.jpg"
+          alt="A slate-gray Dark-eyed Junco with a white belly and pale pink bill, perched on a branch"
           className="species-hero-image"
-          style={{ objectPosition: 'top center' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={940}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Cephas · <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
-          Photo: Cephas&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Junco_hyemalis_hyemalis_CT1_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          Photo: Rhododendrites&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Dark-eyed_junco_(21840).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -27,180 +29,111 @@ export default function DarkEyedJunco({ onNavigate }: DarkEyedJuncoProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Dark-eyed Junco</h1>
         <p className="hero__lead">
-          The Dark-eyed Junco is the most commonly reported bird at North
-          American winter feeders — a reliable "snowbird" that arrives each
-          October and departs by March, framing the winter season as a time
-          of active wildlife stewardship rather than absence.
+          The Dark-eyed Junco is a small sparrow, slate-gray or brown above with a white belly and
+          a pale pink bill, that flashes white outer tail feathers when it flies. Across most of
+          the United States it is a winter bird, arriving as the weather turns cold and feeding on
+          the ground beneath shrubs and feeders. [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="abundance-heading">
-          <h2 id="abundance-heading">One of North America's most abundant birds — and a climate canary</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Partners in Flight estimates the Dark-eyed Junco (<em>Junco
-            hyemalis</em>) population at approximately 630 million individuals,
-            making it one of the highest-population birds on the continent.
-            Yet despite that abundance, juncos have declined roughly 17% since
-            1966 — a trajectory driven by loss of boreal forest breeding
-            habitat and climate-driven compression of their mountain-top
-            nesting zones.
-          </p>
-          <p>
-            Juncos breed in boreal forests and at high mountain elevations
-            across North America — habitats that are contracting as
-            temperatures rise. Audubon Society models project
-            loss of more than half the winter range by 2080, with breeding habitat at mountaintops
-            becoming climatically unsuitable. A bird that 630 million strong
-            can still lose ground to climate change is one of conservation's
-            clearest early-warning signals.
+            Juncos feed on the ground, hopping and scratching through leaf litter and snow for
+            seeds, and adding insects and spiders in the breeding season. In winter they move in
+            loose flocks, often mixed with sparrows and other small birds, and rarely stray far
+            from cover. [1]
           </p>
         </section>
 
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">Winter guest, mountain specialist: the dual life of a feeder bird</h2>
-          <p>
-            The junco familiar to most people — the small, dark-hooded bird
-            scratching below a feeder from October through March — spends its
-            summers as an arctic-alpine specialist, nesting on the ground
-            under vegetation in boreal forests and at high elevations. The
-            same bird is both the most reliable winter feeder visitor in
-            suburbia and a climate-sensitive breeder in some of North America's
-            most threatened habitats.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/0/03/Dark-eyed_junco_%28Junco_hyemalis%29_nest_and_eggs_%2853006127360%29.jpg"
-                  alt="Dark-eyed Junco nest built on the ground, tucked at the base of dense vegetation, with four pale spotted eggs"
-                  loading="lazy"
-                />
-                <figcaption>
-                  Juncos nest on the ground, usually concealed against a rock, log, or the base of a dense shrub — a tight cup of grass lined with animal hair. Ground nesting means every outdoor cat, every cleared brush pile, every manicured edge costs breeding pairs directly.
-                  <span className="photo-credit"> Photo: YellowstoneNPS · <a href="https://commons.wikimedia.org/wiki/File:Dark-eyed_junco_(Junco_hyemalis)_nest_and_eggs_(53006127360).jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Dark_eyed_junco.jpg/1280px-Dark_eyed_junco.jpg"
+            alt="A Dark-eyed Junco foraging on the ground among fallen leaves"
+            width={1280}
+            height={859}
+            loading="lazy"
+          />
+          <figcaption>
+            Juncos do most of their feeding on the ground, scratching through leaf litter for
+            seeds and insects.
+            <span className="photo-credit"> Photo: Paul Danese&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Dark_eyed_junco.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            As ground foragers, juncos scratch through leaf litter and soil
-            for weed seeds, grass seeds, and small invertebrates. Intact,
-            undisturbed leaf litter is the foraging
-            substrate juncos depend on — and one that manicured, raked yards simply cannot provide.
+            Juncos breed in the conifer and mixed forests of Canada, the western mountains, and the
+            Appalachians, building a cup nest on or near the ground. In fall most of them move
+            south, which is why so much of the country knows the junco as a winter visitor, the
+            &quot;snowbird.&quot; The species comes in several regional forms that look different
+            enough that they were once treated as separate species. [1]
+          </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
+          <p>
+            The Dark-eyed Junco is one of the most abundant birds in North America. Partners in
+            Flight estimates a breeding population around 630 million. [1][2] The U.S. Breeding Bird
+            Survey shows a gradual decline, roughly 0.7% a year between 1966 and 2019, a cumulative
+            loss of about 31%. [3] The IUCN lists it as Least Concern. [4]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>White millet on bare ground, leaf litter under shrubs, a winter feeder count, and no fall soil treatments</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering the ground in a natural setting" loading="lazy" />
-            <figcaption>
-              Juncos forage by scratching through surface leaf litter for seeds and invertebrates. A mulched border or an unraked patch under shrubs supports a ground layer that functions as a year-round food source rather than decoration.
-              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Scatter white millet on the ground by October.</strong>{' '}
-              Juncos prefer foraging on the ground and rarely use tube feeders.
-              Scatter 1–2 cups of white millet (<em>Panicum miliaceum</em>)
-              directly on bare ground below existing feeders. Replenish every
-              2–3 days. During cold snaps, scatter on top of snow or use a low
-              platform feeder 6–12 inches off the ground.
+              A patch of native shrubs with leaf litter underneath gives juncos the cover and the
+              ground-level seeds and insects they forage in. [5]
             </li>
             <li>
-              <strong>Leave leaf litter under shrubs all winter.</strong>{' '}
-              Do not rake or remove leaf litter from under shrubs or at yard
-              edges in fall. These are the highest-value winter foraging zones
-              for juncos, White-throated Sparrows, Fox Sparrows, and Carolina
-              Wrens. If depth concerns you, mow litter into an adjacent lawn
-              area — do not remove it from the yard entirely.
+              Seed heads left standing on native grasses and flowers through winter feed juncos
+              when other food is scarce; a low or ground-level feeder draws them as well. [5]
             </li>
             <li>
-              <strong>Count your juncos each winter.</strong>{' '}
-              Consistent annual counts at your feeding station create a personal
-              dataset that connects directly to the Breeding Bird Survey trend —
-              local observation contributing to continental understanding of
-              whether this abundant species is holding steady or declining
-              further.
+              Keeping cats indoors protects a bird that spends almost all of its time on the
+              ground. [5]
             </li>
             <li>
-              <strong>Skip fall grub treatments and soil insecticide applications.</strong>{' '}
-              Dark-eyed Juncos scratch through the top inch of soil and leaf litter
-              from October through March, pulling up dormant beetle larvae, moth
-              pupae, and other invertebrates. A fall grub-control application —
-              whether imidacloprid, chlorantraniliprole, or trichlorfon — kills
-              invertebrates throughout that same soil zone. Juncos arriving from
-              northern breeding grounds in October land in a lawn where the surface
-              food layer has been chemically eliminated and does not recover its
-              overwintering invertebrate density within a single season. The{' '}
-              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-                pesticide guide
-              </button>
-              {' '}covers timing, alternatives, and the species that benefit when you stop.
+              Windows with screens or visible patterns on the outside prevent most collisions. [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">Juncos, leaf litter, and the insects monarchs depend on</h2>
-          <p>
-            Dark-eyed Juncos foraging through winter leaf litter are working
-            through the same habitat layer that shelters overwintering native
-            insects — including the moth pupae, beetle larvae, and native bee
-            cocoons that form the foundation of the spring insect food web
-            monarchs and other pollinators depend on.
-          </p>
-          <p>
-            Leaving leaf litter intact is not one decision for juncos and
-            another for monarchs. It is one decision that serves both — and
-            dozens of other species simultaneously. The yard that keeps its
-            leaf litter through winter is the yard that wakes up richest in
-            spring.
-          </p>
-        </section>
-
-        <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">Related pages</h2>
-          <div className="neighbor-grid">
-            <button className="neighbor-card" onClick={() => onNavigate('american-tree-sparrow')}>
-              <span className="neighbor-name">American Tree Sparrow</span>
-              <span className="neighbor-note">Arrives the same week in October from subarctic nesting grounds; travels in mixed flocks with Dark-eyed Juncos through the same winter seed patches and leaf litter; the two species often forage within 20 feet of each other from November through March</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('little-bluestem')}>
-              <span className="neighbor-name">Little Bluestem</span>
-              <span className="neighbor-note">Its copper-red stalks hold fluffy seed heads from October through January — juncos cling to the standing stems and pull seeds directly, then drop to scratch through the fallen seeds below</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('prairie-dropseed')}>
-              <span className="neighbor-name">Prairie Dropseed</span>
-              <span className="neighbor-note">Native bunchgrass holding small seeds on fine stalks through fall and winter; juncos and American Tree Sparrows forage through the same stand in the same week</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('leave-the-leaves')}>
-              <span className="neighbor-name">Leave the Leaves</span>
-              <span className="neighbor-note">The intact leaf litter that juncos scratch through in January is the same layer sheltering overwintering moth pupae, beetle larvae, and native bee cocoons the spring food web depends on</span>
-            </button>
-          </div>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Ready to build a winter yard that works for juncos and monarchs?</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a native plant
-            </button>
-            {' '}to build the leaf-litter and seed-bearing ground layer both need,{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              reduce pesticide use
-            </button>
-            {' '}to protect the soil invertebrates juncos scratch for all winter, or see how the
-            floor layer fits into the full structure of a yard in the{' '}
-            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
-              Habitat Layers guide
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('american-robin')}>
+            <span className="neighbor-name">American Robin</span>
+            <span className="neighbor-note">Works the same lawns and leaf-litter edges, pulling worms where the junco takes seeds.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-towhee')}>
+            <span className="neighbor-name">Eastern Towhee</span>
+            <span className="neighbor-note">A larger ground-scratcher in the same sparrow family, working the leaf litter under shrubs.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('northern-cardinal')}>
+            <span className="neighbor-name">Northern Cardinal</span>
+            <span className="neighbor-note">A year-round feeder neighbor that often shares the winter yard with junco flocks.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-goldfinch')}>
+            <span className="neighbor-name">American Goldfinch</span>
+            <span className="neighbor-note">Another seed-eater of yards and field edges, feeding on the same native seed heads.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Dark-eyed_Junco/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Dark-eyed Junco (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/dark-eyed-junco-junco-hyemalis" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Dark-eyed Junco</a></li>
+            <li><a href="https://www.audubon.org/field-guide/bird/dark-eyed-junco" target="_blank" rel="noopener noreferrer">Audubon Field Guide — Dark-eyed Junco</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
