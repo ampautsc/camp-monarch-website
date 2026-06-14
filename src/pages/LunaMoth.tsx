@@ -9,14 +9,16 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Actias_luna-male.jpg"
-          alt="Luna Moth resting on tree bark with pale green wings fully spread, long elegant tails trailing — wings are a single night of adult life"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Actias_luna-male.jpg/1280px-Actias_luna-male.jpg"
+          alt="A male Luna Moth at rest, pale green wings spread wide with long trailing tails on the hindwings and an eyespot on each wing"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={1281}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: David notMD · <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
           Photo: David notMD&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
@@ -27,278 +29,124 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Luna Moth</h1>
         <p className="hero__lead">
-          The Luna Moth is one of the largest moths in North America, pale green
-          with long trailing tails on the hindwings and an eyespot on each wing.
-          The adult does not feed: it has no working mouthparts and lives about a
-          week on fat stored during its caterpillar stage. It flies only at night,
-          and most of its life happens earlier, as a green caterpillar on the
-          leaves of native hardwood trees.
+          The Luna Moth is one of the largest moths in North America, pale green with long
+          trailing tails on the hindwings and an eyespot on each wing. It is active only at
+          night, and the adult does not feed: it has no working mouthparts and lives about a
+          week on fat stored during its caterpillar stage. It flies only at night, and most of
+          its life happens earlier, as a green caterpillar on the leaves of native hardwood
+          trees. [1][2]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">Named for the moon</h2>
+        <section aria-labelledby="adult-heading">
+          <h2 id="adult-heading">A week as an adult</h2>
           <p>
-            The Luna Moth (<em>Actias luna</em>) is a giant silk moth in the
-            family Saturniidae. Its wingspan reaches four to four and a half
-            inches, and its trailing hindwing tails add another inch or two of
-            rippling, translucent green. The pale celadon coloring is not
-            decoration — it is camouflage. Against the underside of a leaf or
-            a pale birch trunk, a resting Luna Moth is nearly invisible. The
-            name <em>luna</em> refers to the moon-shaped eyespots on each
-            hindwing, ringed in yellow and edged in black.
-          </p>
-          <p>
-            The hindwing tails serve a second purpose beyond visual camouflage.
-            Luna Moths are among the species most studied for anti-bat
-            adaptations. The long, spiraling tails create an acoustic false
-            target: when a bat hunts by echolocation, the tails return a signal
-            that mimics the moth's body. A bat attacking the tail instead
-            of the thorax gives the moth a chance to escape. Studies have shown
-            Luna Moths with intact tails survive bat attacks at significantly
-            higher rates than those with tails removed.
-          </p>
-          <p>
-            Like all Saturniid silk moths, adult Luna Moths have vestigial
-            mouthparts. They cannot eat or drink. From the moment the adult
-            chews through its cocoon, it lives on fat reserves built during its
-            caterpillar stage — reserves that must sustain a week to ten days
-            of mate-searching, reproduction, and death. A female lays her eggs
-            in small clusters on host tree leaves and dies shortly after. A
-            male spends his nights navigating toward the female's pheromone
-            plume with comb-like antennae that are among the most sensitive
-            chemical detectors in the animal kingdom.
+            An adult Luna Moth lives about a week and does not eat. It spends that week looking
+            for a mate. Females release a scent at night that males find with their large,
+            feathery antennae. After mating, a female lays her eggs on the leaves of host trees,
+            and the adults die soon after. [2][3]
           </p>
         </section>
 
-        <section aria-labelledby="trees-heading">
-          <h2 id="trees-heading">What the caterpillar needs</h2>
-          <p>
-            Luna Moth caterpillars are host-plant specialists. They develop on a
-            short list of native hardwood trees: black walnut, hickory,
-            sweetgum, persimmon, white birch, and American beech are the primary
-            hosts across their range. The caterpillar is brilliant green and
-            grows to nearly three inches long over five instars, feeding on
-            leaves from late spring through summer before spinning a thin,
-            papery cocoon among fallen leaves on the ground.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Actias_luna_4th_instar_sjh.JPG"
-                  alt="Luna Moth caterpillar in its fourth instar — bright green with yellow-tipped spines, preparing to spin a papery cocoon in leaf litter"
-                  loading="lazy"
-                />
-                <figcaption>
-                  The caterpillar feeds on walnut, sweet gum, persimmon, birch, and hickory for several weeks, then spins a papery cocoon in the leaf litter on the forest floor. When it emerges as an adult, it has no functional mouth. The adult lives, on average, seven days. Its only purpose is reproduction.
-                  <span className="photo-credit"> Photo: Kugamazog · <a href="https://commons.wikimedia.org/wiki/File:Actias_luna_4th_instar_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Actias_luna_4th_instar_sjh.JPG/1280px-Actias_luna_4th_instar_sjh.JPG"
+            alt="A Luna Moth caterpillar in its fourth instar, bright green with rows of small spines, on a leaf"
+            width={1280}
+            height={960}
+            loading="lazy"
+          />
+          <figcaption>
+            Most of a Luna Moth&apos;s life is spent at this stage, eating leaves and growing
+            through several molts before spinning a cocoon.
+            <span className="photo-credit"> Photo: Kugamazog&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Actias_luna_4th_instar_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">The rest of the year</h2>
           <p>
-            The dependency on native hardwoods is absolute. Like other Saturniid
-            silk moths, Luna caterpillars cannot complete development on
-            non-native ornamental trees — the phenology is wrong, the leaf
-            chemistry does not match their gut flora, and the nutritional
-            composition fails to build the fat reserves the adults will need. A
-            neighborhood replanted entirely with ornamental pears, crepe myrtles,
-            and Japanese maples supports no Luna Moth caterpillars regardless of
-            how many adults pass through on warm spring nights.
-          </p>
-          <p>
-            Native black walnut — often dismissed as a &quot;problem tree&quot;
-            because of juglone toxicity near vegetable gardens — is one of the
-            highest-value Luna Moth host trees in the eastern half of North
-            America. So are hickories, which are slow to establish but nearly
-            unsurpassed in ecological value: a single mature shagbark hickory
-            supports hundreds of caterpillar species and produces mast crops
-            that feed mammals and birds through winter. The trees that Luna Moths
-            need are the trees that hold the food web together.
+            Most of a Luna Moth&apos;s life happens in its earlier stages. The eggs hatch into
+            green caterpillars that feed on the leaves of deciduous trees, including walnut,
+            hickory, sweetgum, sumac, and birch, growing through several molts over about a
+            month. The caterpillar then spins a silk cocoon wrapped in a leaf, which usually
+            falls to the ground. In the north there is one generation a year, and the moth spends
+            the winter as a pupa in the leaf litter before emerging in late spring. Farther south
+            there can be two or three generations in a year. [1][2]
           </p>
         </section>
 
-        <section aria-labelledby="decline-heading">
-          <h2 id="decline-heading">How light and pesticides break the cycle</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Luna Moths are strongly attracted to artificial light — drawn to
-            porch lights, streetlamps, and illuminated windows with the same
-            phototactic pull that affects all giant silk moths. A male that
-            circles a light source for hours loses fat reserves irreplaceable
-            once the adult emerges. He may exhaust himself before he reaches a
-            female. In densely lit suburbs, the light density is high enough
-            that significant numbers of emerging males never successfully mate.
-          </p>
-          <p>
-            The problem is seasonal and concentrated. In the mid-Atlantic and
-            Midwest, the peak adult flight in the first brood falls in
-            April and May. A second brood in the South emerges June through July.
-            These are the windows when artificial light does the most damage to
-            mating success. Turning off or redirecting outdoor lights during
-            these weeks is not a trivial reduction in impact — it removes a
-            significant barrier during the only period that matters for that
-            generation.
-          </p>
-          <p>
-            Pesticides represent a second, often more total, threat. Aerial
-            sprays applied for spongy moth (formerly gypsy moth) control —
-            including Bt (<em>Bacillus thuringiensis</em>) formulations —
-            kill Luna caterpillars alongside their intended targets. Bt is
-            broadly promoted as &quot;safe&quot; because it is derived from a
-            bacterium, but it is non-selective for lepidopteran larvae: any
-            caterpillar that ingests treated foliage is killed. In areas under
-            active aerial spray programs, Luna Moth caterpillar populations can
-            be functionally eliminated from an entire region for a season.
-            Ground-applied broad-spectrum insecticides create the same outcome
-            at smaller scales — a single spray event on a host tree in June
-            removes that tree's contribution to the local Luna Moth
-            population for the year.
+            There is no population count for the Luna Moth. It is widespread across eastern
+            North America and is not considered rare or endangered, and the IUCN has not
+            assessed it. There are reports of local declines. The documented pressures are
+            habitat loss, pesticides, and outdoor lighting at night, which can pull the moths
+            away from mating and wear them out. An introduced parasitic fly, brought from Europe
+            in the early 1900s to control spongy moths, also attacks the caterpillars of Luna
+            Moths and other native silk moths. [2][3]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that support Luna Moths</h2>
-<figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves lying on garden ground" loading="lazy" />
-            <figcaption>
-              Luna moth cocoons spin onto twigs above the leaf litter, and the pupae overwinter inside. Removing autumn leaves removes the insulating layer those pupae depend on to survive below-zero nights. The simplest intervention is also the most complete: don't rake here.
-              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <p>
+            The Luna Moth needs leafy native trees and dark nights, both of which a yard can
+            provide.
+          </p>
           <ol className="step-list">
             <li>
-              <strong>Plant native hardwood host trees.</strong>{' '}
-              Black walnut, shagbark hickory, sweetgum, and white birch are the
-              highest-value Luna Moth hosts in eastern North America. Even a
-              young tree planted today will begin producing caterpillar habitat
-              within a few seasons. Hickories and walnuts are long-lived
-              investments — trees that will support insects, birds, and moths
-              for a century or more. If your yard has room for one new canopy
-              tree, a native walnut or hickory is among the highest-impact
-              choices you can make.
+              Native trees such as walnut, hickory, sweetgum, birch, and sumac are what the
+              caterpillars eat. A yard with even one of them can support them. [1][2]
             </li>
             <li>
-              <strong>Reduce outdoor lighting during May and June.</strong>{' '}
-              April through July is the primary Luna Moth adult flight window
-              across most of eastern North America. Switching porch lights and
-              decorative exterior fixtures to motion-activation during these
-              months significantly reduces the artificial light trap. Warm-amber
-              LED bulbs are less attractive to moths than cool-white or
-              blue-white spectra. Directing fixtures downward rather than
-              broadcasting light outward and upward reduces the total light
-              footprint without sacrificing function.
+              Turning off outdoor lights at night, or putting them on a motion sensor, keeps
+              moths from being drawn off course and worn out. Warm-colored bulbs draw fewer
+              insects than bright white ones. [3]
             </li>
             <li>
-              <strong>Stop broad-spectrum insecticide use on host trees.</strong>{' '}
-              Avoid pyrethroid, organophosphate, and Bt sprays on walnut,
-              hickory, sweetgum, and birch during the caterpillar season (May
-              through August). The large green caterpillar you find on your
-              black walnut in July is a Luna Moth larva. It will not harm the
-              tree. Leave it. If you are in an area participating in aerial
-              spray programs, consider opting out of municipal applications
-              where local programs permit exemption.
+              Leaving fallen leaves in place over winter protects the cocoons, which spend the
+              cold months in the leaf litter. Raking and bagging the leaves throws them out with
+              it. [2]
             </li>
             <li>
-              <strong>Leave leaf litter under host trees through spring.</strong>{' '}
-              Luna Moth cocoons overwinter in fallen leaves on the ground
-              beneath their host trees. Raking, blowing, and bagging leaf litter
-              in fall destroys that cohort. A circle of undisturbed leaf litter
-              beneath your walnut or hickory from October through May is
-              sufficient to protect overwintering pupae. The moths that emerge
-              from that ground in April and May are the return on that one
-              act of restraint.
+              Skipping pesticides on trees and gardens spares both the caterpillars and the
+              adults. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">Seven days, one purpose</h2>
-          <p>
-            An adult Luna Moth has approximately seven to ten days from emergence
-            to death. In that window, it must navigate a landscape increasingly
-            disrupted by artificial light, avoid bats with acoustic trickery, and
-            locate a mate entirely by scent across whatever distance the wind
-            carries the pheromone plume. It does this without eating, without
-            drinking, and without any second chance. The caterpillar that
-            fed through summer is the only fuel there is.
-          </p>
-          <p>
-            Luna Moths are not rare in the way that a bird with a 200-mile range
-            is rare. They are widespread — present in every state east of the
-            Great Plains. But &quot;present&quot; and &quot;reproducing
-            successfully&quot; are not the same thing in a landscape of porch
-            lights, ornamental trees, and annual pesticide applications. The gap
-            between where Luna Moths exist and where they can actually complete
-            their life cycle is growing. That gap is the size of a yard.
-          </p>
-          <p>
-            When a female deposits her eggs in clusters of four or five on a
-            black walnut leaf on a warm May night, she is doing what Luna Moths
-            have done on this continent for tens of thousands of years. The leaf
-            is the same. The chemistry of the caterpillar's digestion is the
-            same. The only thing that has changed is the landscape around the
-            tree — and whether anyone thought to leave the leaf litter beneath it.
-          </p>
-        </section>
-
         <div className="neighbor-grid">
           <button className="neighbor-card" onClick={() => onNavigate('black-walnut')}>
             <span className="neighbor-name">Black Walnut</span>
-            <span className="neighbor-note">The primary larval host for Luna Moth — caterpillars feed on black walnut leaves from late May through July, descend to overwinter as pupae in the leaf litter below the tree, and emerge as non-feeding adults the following May; the fat built on these leaves is the only fuel for the adult's entire seven-day life</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('american-beech')}>
-            <span className="neighbor-name">American Beech</span>
-            <span className="neighbor-note">American Beech is a primary larval host for Luna Moth alongside black walnut and hickory — females lay eggs on beech leaves in late May, caterpillars feed through July, descend to overwinter as pupae in the slow-decomposing beech leaf litter, and emerge as non-feeding adults the following spring; the fat built on beech leaves is the only fuel for the adult's entire seven-day life</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('shagbark-hickory')}>
-            <span className="neighbor-name">Shagbark Hickory</span>
-            <span className="neighbor-note">Shagbark hickory is a primary larval host for Luna Moth alongside black walnut — females deposit eggs on hickory leaves in late May, caterpillars feed for six weeks, and descend to overwinter as pupae in the leaf litter below the tree; hickory and black walnut are the two trees that appear consistently on every range-wide host-plant list for this species</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('white-oak')}>
-            <span className="neighbor-name">White Oak</span>
-            <span className="neighbor-note">Luna caterpillars develop on white oak leaves through late summer — white oak is among the host tree genera the species uses across its eastern range; an oak that carries Polyphemus caterpillars in August may carry Luna caterpillars in the same canopy three weeks earlier</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('cecropia-moth')}>
-            <span className="neighbor-name">Cecropia Moth</span>
-            <span className="neighbor-note">Same family (Saturniidae), same adult-flight window, same suburban barriers — both are non-feeding giant silk moths navigating by pheromone at night in May and June; Cecropia uses black cherry and elderberry as its primary hosts rather than walnut and hickory, so both species can develop in the same yard on different trees without competing</span>
+            <span className="neighbor-note">One of the main native trees Luna Moth caterpillars eat. A single mature walnut supports many of them.</span>
           </button>
           <button className="neighbor-card" onClick={() => onNavigate('polyphemus-moth')}>
             <span className="neighbor-name">Polyphemus Moth</span>
-            <span className="neighbor-note">Shares the Saturniidae family, the same light-trap vulnerability, and the same leaf-litter overwintering stage — Polyphemus caterpillars favor tulip poplar and native oaks rather than walnut and hickory, so both silk moths can develop in a yard that includes both tree types; cocoons of both species overwinter in fallen leaves below their host trees</span>
+            <span className="neighbor-note">Another giant silk moth in the same family. Same week-long, non-feeding adult life and the same vulnerability to outdoor lights.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('black-cherry')}>
-            <span className="neighbor-name">Wild Black Cherry</span>
-            <span className="neighbor-note">Luna caterpillars develop on wild black cherry — Prunus serotina appears on the host-plant list alongside walnut and hickory; black cherry is also the primary Cecropia Moth host, so a single black cherry tree in a yard with native walnut can carry caterpillars of two giant silk moth species through the same summer season</span>
+          <button className="neighbor-card" onClick={() => onNavigate('cecropia-moth')}>
+            <span className="neighbor-name">Cecropia Moth</span>
+            <span className="neighbor-note">The largest moth in North America, in the same family. Uses cherry and other trees, so a single yard can support both species.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('red-maple')}>
-            <span className="neighbor-name">Red Maple</span>
-            <span className="neighbor-note">red maple appears on the Luna Moth host-plant list alongside walnut and hickory; Luna caterpillars developing on red maple through the same summer weeks as Polyphemus caterpillars build fat reserves for the adult that will live one week with no mouth; a yard with red maple and black walnut together covers both silk moth species on separate trees without overlap</span>
+          <button className="neighbor-card" onClick={() => onNavigate('fireflies')}>
+            <span className="neighbor-name">Fireflies</span>
+            <span className="neighbor-note">Also overwinter in leaf litter and are hurt by outdoor lighting at night. The same yard choices help both.</span>
           </button>
         </div>
 
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Build a yard that supports Luna Moths and the whole food web.</strong>{' '}
-            Remove pesticides with the{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticides &amp; Your Habitat guide
-            </button>
-            , protect overwintering pupae with the{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves guide
-            </button>
-            , add native host trees with{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , and see what else is out there with the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
-        </div>
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.butterfliesandmoths.org/species/Actias-luna" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Luna Moth (Actias luna)</a></li>
+            <li><a href="https://animaldiversity.org/accounts/Actias_luna/" target="_blank" rel="noopener noreferrer">Animal Diversity Web — Actias luna</a></li>
+            <li><a href="https://www.britannica.com/animal/luna-moth" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica — Luna moth</a></li>
+            <li><a href="https://mdc.mo.gov/discover-nature/field-guide/luna-moth" target="_blank" rel="noopener noreferrer">Missouri Department of Conservation — Luna Moth</a></li>
+            <li><a href="https://www.fllt.org/goddess-of-the-moon-the-life-history-of-the-luna-moth/" target="_blank" rel="noopener noreferrer">Finger Lakes Land Trust — Luna Moth life history</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
