@@ -27,10 +27,12 @@ export default function LunaMoth({ onNavigate }: LunaMothProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Luna Moth</h1>
         <p className="hero__lead">
-          Pale green wings, sweeping hindwing tails, eyespots that glow like
-          moons — one of the most beautiful insects in North America. The adult
-          has no mouth. It exists for one purpose only: to find a mate in the
-          dark. Everything it needs is in the hardwood canopy of your yard.
+          The Luna Moth is one of the largest moths in North America, pale green
+          with long trailing tails on the hindwings and an eyespot on each wing.
+          The adult does not feed: it has no working mouthparts and lives about a
+          week on fat stored during its caterpillar stage. It flies only at night,
+          and most of its life happens earlier, as a green caterpillar on the
+          leaves of native hardwood trees.
         </p>
       </section>
 
