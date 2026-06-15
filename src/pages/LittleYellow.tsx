@@ -9,265 +9,160 @@ export default function LittleYellow({ onNavigate }: LittleYellowProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/305807245/large.jpeg"
-          alt="Little Yellow butterfly perched with wings open, showing lemon-yellow upper surfaces with narrow black outer borders and the short black cell-end bar on the forewing, Marais Temps Clair Conservation Area, St. Charles County, Missouri"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Little_Yellow_butterfly_%2829135101687%29.jpg/1280px-Little_Yellow_butterfly_%2829135101687%29.jpg"
+          alt="A Little Yellow butterfly with wings open showing the lemon-yellow upperwings with narrow black borders and the distinctive black cell-end bar on the forewing"
           className="species-hero-image"
-          style={{ objectPosition: 'center 50%' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={971}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/302784643/large.jpg'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: cseantracy&nbsp;&middot;&nbsp;
-          <a href="https://www.inaturalist.org/observations/175936039" target="_blank" rel="noopener noreferrer">CC BY-NC via iNaturalist</a>
+          Photo: Andy Reago &amp; Chrissy McClarren&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Little_Yellow_butterfly_(29135101687).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
-        <div className="hero__eyebrow">Butterflies</div>
-        <h1>The white female and the lemon-yellow male were recorded as separate species — naturalists named the white form <em>Eurema euterpe</em> before field observers watched paired adults and established that the color difference was sex, not species.</h1>
+        <div className="hero__eyebrow">Meet Your Neighbors</div>
+        <h1>Little Yellow</h1>
         <p className="hero__lead">
-          The Little Yellow (<em>Pyrisitia lisa</em>) is the smallest sulphur in the eastern
-          United States. Wingspan runs from about one and a quarter to one and a half inches —
-          roughly two-thirds the size of a Clouded Sulphur. Males carry lemon-yellow wings with
-          a narrow black outer border and a single short black bar crossing the outer corner of
-          the forewing cell. Females range from the same yellow to nearly white, with the black
-          markings reduced or absent. Both sexes show a small orange or reddish spot near the
-          base of the hindwing on the underside.
-        </p>
-        <p className="hero__lead">
-          The Little Yellow uses exclusively <em>Chamaecrista</em> and <em>Senna</em> — the
-          same legume genera that host the Sleepy Orange and the Cloudless Sulphur. Partridge
-          Pea (<em>Chamaecrista fasciculata</em>) is the primary host across the eastern range.
-          No population of Little Yellow persists north of the Gulf coastal plain through winter.
-          Every individual seen in Missouri or Illinois in July hatched from a caterpillar on a
-          southern plant and flew north.
+          The Little Yellow is the smallest sulphur butterfly in the eastern United States —
+          a fast, lemon-yellow butterfly about two-thirds the size of a Clouded Sulphur.
+          Wingspan is 1.25 to 1.5 inches. Males are lemon yellow with a narrow black outer
+          border and a short black bar across the outer forewing cell; females range from
+          yellow to nearly white. Both sexes show a small orange or reddish spot near the
+          hindwing base on the underside. No population survives winter north of the Gulf
+          coastal plain — every Little Yellow in the Midwest or Mid-Atlantic in July flew
+          north from the south, hatched from a caterpillar on Partridge Pea or Wild Senna. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="cell-end-bar-heading">
-          <h2 id="cell-end-bar-heading">The short black bar at the outer corner of the forewing cell — not a curve, not a border, a bar that separates this species in the field</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The diagnostic mark on the Little Yellow's upper forewing is a short black bar that
-            crosses the outer corner of the wing cell — the enclosed area formed by veins near
-            the center of the wing. In the{' '}
-            <button className="link-button" onClick={() => onNavigate('sleepy-orange')}>
-              Sleepy Orange
-            </button>
-            , the equivalent mark on the forewing is a narrow curved arc that reads as a closed
-            eye; in the Little Yellow, the mark is straight, short, and positioned squarely at
-            the cell-end. The outer forewing border on the Little Yellow is narrow compared to
-            the Sleepy Orange and the Orange Sulphur.
-          </p>
-          <p>
-            With wings closed, the Little Yellow shows pale yellow undersides with faint
-            brownish-orange stippling on the hindwing and a small orange or reddish spot near
-            the hindwing base. In fresh individuals, the costal margin of the closed hindwing
-            carries a faint dark line that does not appear on the Sleepy Orange or the{' '}
-            <button className="link-button" onClick={() => onNavigate('clouded-sulphur')}>
-              Clouded Sulphur
-            </button>
-            {' '}under the same conditions.
+            Little Yellows are fast, low fliers of open, sunny areas with native legumes.
+            Adults nectar on a variety of native wildflowers — native clovers, native
+            fleabanes, and native goldenrod are favorites. Their flight is quick and erratic,
+            making them difficult to follow. Females spend much of their adult lives pressing
+            their feet to the leaves of Partridge Pea, Wild Senna, and Maryland Senna,
+            tasting the leaf chemistry to confirm the host plant before laying a single
+            spindle-shaped egg on the underside of a leaflet. Three different sulphur
+            species — Little Yellow, Cloudless Sulphur, and Sleepy Orange — may evaluate
+            the same Partridge Pea stem on the same afternoon in July. [1]
           </p>
         </section>
 
-        <section aria-labelledby="female-dimorphism-heading">
-          <h2 id="female-dimorphism-heading">Two color forms in the same population — yellow females, white females, and the naming error corrected by watching paired adults</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://inaturalist-open-data.s3.amazonaws.com/photos/250850/large.jpg"
-              alt="Little Yellow butterfly perched with wings closed, showing the pale yellow underside with faint brownish stippling on the hindwing and the small orange spot near the hindwing base, Hornsby Bend, Austin, Texas"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/302798587/large.jpg'
-              }}
-            />
-            <figcaption>
-              A Little Yellow at rest with wings closed, showing the pale yellow underside with
-              faint brownish stippling and the small orange spot near the hindwing base. This
-              ventral pattern distinguishes the Little Yellow from the Sleepy Orange, which shows
-              brighter yellow or brick-red on the underside, and from the Clouded Sulphur, which
-              lacks the orange hindwing spot.
-              <span className="photo-credit"> greglasley &middot; CC BY-NC via iNaturalist</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Little_yellow_%28Pyrisitia_lisa%29%2C_ventral.jpg/1280px-Little_yellow_%28Pyrisitia_lisa%29%2C_ventral.jpg"
+            alt="A Little Yellow butterfly with wings closed showing the pale yellow underside with faint brownish stippling on the hindwing and the small orange-red spot near the hindwing base"
+            width={1280}
+            height={854}
+            loading="lazy"
+          />
+          <figcaption>
+            With wings closed, the Little Yellow&apos;s pale yellow underside with faint brownish
+            stippling and small orange-red spot near the hindwing base is its best field mark.
+            Female Little Yellows come in two color forms — yellow (resembling the male) and
+            white (with cream to nearly pure white wings) — both forms occurring in the same
+            population at the same time.
+            <span className="photo-credit"> Photo: Anne Toal&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Little_yellow_(Pyrisitia_lisa),_ventral.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Males are consistently lemon yellow. Females of the same species produce two color
-            forms: a yellow form that closely resembles the male, and a white form in which the
-            ground color of the wings is cream to nearly pure white with reduced black markings.
-            19th-century entomologists described the white female as <em>Eurema euterpe</em> —
-            a distinct species — before field observers documented paired adults and established
-            that the two appearances belonged to one.
-          </p>
-          <p>
-            Both female color forms occur in the same population, in the same location, at the
-            same time. The white form is more common in some regions and in certain broods;
-            the yellow form predominates in others. This is not a seasonal change — unlike the
-            Sleepy Orange, which shifts from a bright yellow summer underside to a brown winter
-            underside, the Little Yellow female's color form is fixed at eclosion and does not
-            change across the adult's lifespan.
-          </p>
-          <p>
-            The species produces multiple broods across its permanent range in the Gulf states
-            and Florida, where adults fly year-round. In Missouri and Illinois, where no
-            population overwinters, the individuals present from late June through September
-            represent the second or third generation of migrants whose parents and grandparents
-            originated from the south. A Little Yellow nectaring on clover in a St. Louis yard
-            in August is as far from its ancestral overwintering ground as a monarch in
-            mid-migration.
+            The Little Yellow has multiple broods in its permanent Gulf-state range and is
+            present there year-round. In the mid-Atlantic and midwest, it is a summer visitor
+            that arrives from May or June onward as populations from the south expand northward.
+            Northern individuals do not survive winter in any stage. Caterpillars are pale
+            green with a narrow white lateral stripe and feed on the outside of leaflets of
+            Partridge Pea, Wild Senna, Maryland Senna, and Wild Sensitive Plant, leaving
+            visible notches at the leaf edge. The caterpillars of Little Yellow and Sleepy
+            Orange are nearly identical in appearance and can develop on the same Partridge
+            Pea plant simultaneously. [1]
           </p>
         </section>
 
-        <section aria-labelledby="host-plants-heading">
-          <h2 id="host-plants-heading">Partridge Pea, Wild Sensitive Plant, and the tarsal check that reads legume chemistry by touch</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Female Little Yellows identify host plants by pressing their tarsi against leaf
-            surfaces. The tarsal chemoreceptors register the glycosides and flavonoids
-            characteristic of <em>Chamaecrista</em> and <em>Senna</em> leaves. When the signal
-            matches, the female curves her abdomen under the leaf and deposits a single
-            spindle-shaped egg on the underside of a leaflet. A grass blade or a violet leaf
-            beneath the same feet produces no signal — the female lifts off and continues
-            searching.
-          </p>
-          <p>
-            The primary host across the eastern range is{' '}
-            <button className="link-button" onClick={() => onNavigate('partridge-pea')}>
-              Partridge Pea
-            </button>
-            {' '}(<em>Chamaecrista fasciculata</em>). Wild Sensitive Plant (<em>Chamaecrista nictitans</em>),{' '}
-            <button className="link-button" onClick={() => onNavigate('wild-senna')}>
-              Wild Senna
-            </button>
-            {' '}(<em>Senna hebecarpa</em>), and Maryland Senna (<em>Senna marilandica</em>) are
-            also used where they occur. These are the same plants that host Sleepy Orange and
-            Cloudless Sulphur caterpillars. Female butterflies of all three species evaluate the
-            same Partridge Pea stem on the same afternoon in July.
-          </p>
-          <p>
-            The caterpillar is pale green with a narrow white lateral stripe — nearly identical
-            in appearance to the Sleepy Orange caterpillar on the same plant. Both species feed
-            from the outside of the leaflet, leaving visible notches at the leaf edge. A Partridge
-            Pea with active caterpillar feeding carries notches on multiple leaflets. The
-            caterpillars of both species can be developing simultaneously on the same stem,
-            eating from separate leaflets, neither visible to the other.
+            The Little Yellow is common in its resident southern range and not of conservation
+            concern. [1] In the northern part of its summer range, populations fluctuate year
+            to year based on the strength of northward migration from the south. It depends
+            entirely on native Chamaecrista and Senna species for caterpillar development.
+            In areas where these native legumes grow in sunny habitat without herbicide
+            treatment, Little Yellow is a reliable summer visitor. The same planting of
+            Partridge Pea or Wild Senna that hosts Cloudless Sulphur and Sleepy Orange
+            will attract Little Yellow as well. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Plant Partridge Pea in a dry, sunny patch — the leaflets that arrive from the south need to be waiting in June</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant Partridge Pea in a full-sun, well-drained spot.</strong>{' '}
-              Partridge Pea is a summer annual that germinates when soil warms in late spring,
-              grows quickly, and flowers from July through September. It does not tolerate shade
-              or standing water. A patch of 10–15 plants provides enough leaflet surface for
-              several caterpillars simultaneously. Start from transplants or direct-seed after
-              last frost. See the{' '}
-              <button className="link-button" onClick={() => onNavigate('partridge-pea')}>
-                Partridge Pea profile
-              </button>
-              {' '}for soil and siting details.
+              Plant native Partridge Pea (Chamaecrista fasciculata) in full sun. Partridge
+              Pea is the primary caterpillar host plant for Little Yellow across the eastern
+              range. It is a native annual that grows easily from seed in lean, well-drained
+              soil, blooms with yellow flowers all summer, and reseeds readily year after year.
+              A patch of 10-15 plants provides enough leaflets for multiple caterpillars. [2]
             </li>
             <li>
-              <strong>Let Partridge Pea reseed and return each year.</strong>{' '}
-              Partridge Pea produces large seed pods that dry and split in fall, scattering seed
-              in place or nearby. In subsequent years, seedlings emerge in late spring and read
-              as a weed until they reach 12–18 inches. Leave them undisturbed — they are the
-              next season's host plant. A single established planting that is left to seed
-              requires no replanting.
+              Plant native Wild Senna (Senna hebecarpa) in a moist, sunny spot. Wild Senna
+              is a perennial legume host for Little Yellow that returns and grows larger each
+              year. Paired with Partridge Pea — Wild Senna in the moister area, Partridge
+              Pea in the drier section — both extend host plant availability across the full
+              summer season. [2]
             </li>
             <li>
-              <strong>Leave leaflet notching undisturbed from June through September.</strong>{' '}
-              Little Yellow caterpillars are small, green, and feed at the leaflet edge,
-              leaving inward-facing notches. The plant recovers full leaf mass within weeks of
-              the larvae pupating. Caterpillars complete their full development in two to three
-              weeks. A stem with visible notching is a stem in use — not a stem that needs
-              treatment.
+              Leave visible leaflet notching undisturbed from June through September. Little
+              Yellow caterpillars feed at the leaf edge and leave visible notches in the
+              leaflets. The plant recovers full leaf mass within weeks of the larvae pupating.
+              Feeding notches on Partridge Pea or Wild Senna during this window are development
+              in progress, not damage requiring treatment. [2]
             </li>
             <li>
-              <strong>Check insecticide applications near legume beds before applying.</strong>{' '}
-              Caterpillars feeding at the leaf surface are exposed to contact sprays and to
-              systemic treatments absorbed through legume roots. A treatment applied to a
-              nearby bed for a different pest can reach Partridge Pea through soil or drift.
-              If pest management is needed in the same area, confirm whether the treatment
-              zone overlaps the Partridge Pea before applying.
+              Avoid insecticide applications on or near legume plantings from June through
+              September. Little Yellow caterpillars feed at the leaf surface and are exposed
+              to contact sprays and systemic insecticides. A treatment for another pest
+              applied near a legume bed can eliminate caterpillar development on the host
+              plants for the rest of the season. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">Who arrives at the same Partridge Pea — the butterflies and bees using the same legume for different purposes in the same afternoon</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('partridge-pea')}>
-                Partridge Pea
-              </button>{' '}
-              &mdash; the primary host plant for Little Yellow caterpillars across the eastern
-              range; also hosts Sleepy Orange and Cloudless Sulphur; female butterflies of all
-              three species evaluate the same stems by pressing their feet to the leaflets in
-              the same July afternoon
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('wild-senna')}>
-                Wild Senna
-              </button>{' '}
-              &mdash; perennial legume host used where Partridge Pea is absent or dormant;
-              Wild Senna leaflets carry the same <em>Senna</em> chemistry that Little Yellow
-              females check through tarsal contact; pairs well with Partridge Pea to extend
-              the host window from May through September
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('sleepy-orange')}>
-                Sleepy Orange
-              </button>{' '}
-              &mdash; uses the same host plants and evaluates them the same way; the Sleepy
-              Orange caterpillar is pale green with a narrow white stripe, nearly identical
-              to the Little Yellow caterpillar on the same Partridge Pea stem; both species
-              can be developing simultaneously on the same plant in August
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('cloudless-sulphur')}>
-                Cloudless Sulphur
-              </button>{' '}
-              &mdash; also uses Wild Senna and Partridge Pea; its caterpillar turns green or
-              yellow depending on what plant tissue it is eating; the Cloudless Sulphur is
-              larger than the Little Yellow, with a wingspan up to three inches, and can be
-              flying in the same legume bed in the same week
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('american-bumble-bee')}>
-                American Bumble Bee
-              </button>{' '}
-              &mdash; visits Partridge Pea flowers for pollen while Little Yellow females
-              evaluate the same plant's leaflets for egg-laying; the bumblebee grips the
-              anther cluster and vibrates its flight muscles to open the sealed pores — the
-              short audible buzz is the pollen releasing; the butterfly and the bee use the
-              same plant for different purposes in the same hour
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>The Little Yellow arrives each June from the south and needs Partridge Pea leaflets already growing.</strong>{' '}
-            Pair it with Wild Senna in the same bed to cover the full host window from May
-            through September. Browse both in{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            {' '}or see all the butterflies that use native legumes in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('cloudless-sulphur')}>
+            <span className="neighbor-name">Cloudless Sulphur</span>
+            <span className="neighbor-note">Uses the same Wild Senna and Partridge Pea host plants; the Cloudless Sulphur is much larger (wingspan to 3 inches) but both species can be developing on the same plant in the same week in late summer.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('sleepy-orange')}>
+            <span className="neighbor-name">Sleepy Orange</span>
+            <span className="neighbor-note">Uses the same host plants and evaluates them the same way; the Sleepy Orange and Little Yellow caterpillars look nearly identical on the same Partridge Pea stem, and both species can be developing simultaneously in August.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('wild-senna')}>
+            <span className="neighbor-name">Wild Senna</span>
+            <span className="neighbor-note">The perennial legume host that pairs with Partridge Pea to extend host plant availability across the full summer; Wild Senna carries the same leaf chemistry Little Yellow females detect with their feet, and both plant species host caterpillars of all three sulphurs simultaneously.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
+            <span className="neighbor-name">American Bumble Bee</span>
+            <span className="neighbor-note">Visits Partridge Pea flowers for pollen while Little Yellow females evaluate the same plant&apos;s leaflets for egg-laying; the bumblebee and the butterfly use the same plant for different purposes in the same hour on the same July afternoon.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Pyrisitia_lisa/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Little Yellow</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Pyrisitia-lisa" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Little Yellow</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
