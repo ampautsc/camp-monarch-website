@@ -9,208 +9,156 @@ export default function NativeBees({ onNavigate }: NativeBeesProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg"
-          alt="Native bumblebee covered in pollen foraging on a purple coneflower — one of 4,000 native bee species that existed before the honeybee arrived in North America"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Agapostemon_virescens_female_visiting_Opuntia.jpg/1280px-Agapostemon_virescens_female_visiting_Opuntia.jpg"
+          alt="A metallic green sweat bee (Agapostemon virescens) visiting a flower, showing its brilliant iridescent green thorax"
           className="species-hero-image"
-          style={{ objectPosition: 'top center' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={720}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Ivar Leidus · <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
-          Photo: Ivar Leidus&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          Photo: Muniche&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Agapostemon_virescens_female_visiting_Opuntia.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
-        <h1>Native bees</h1>
+        <h1>Native Bees</h1>
         <p className="hero__lead">
-          North America has more than 4,000 native bee species. Most are not honeybees.
-          Most do not sting. Most nest alone in the ground, in hollow stems, or in wood.
-          Most people have never knowingly seen one. They are everywhere,
-          and most yards have made themselves hostile to them without meaning to.
+          Most people picture the honey bee when they think of bees — but honey bees are a
+          single introduced species from Europe. North America has over 4,000 native bee
+          species, ranging from tiny metallic green sweat bees a quarter-inch long to
+          large carpenter bees with a wingspan approaching an inch. Most are solitary.
+          Most are harmless. Most are pollinators that your local plants depend on. They
+          were here long before honey bees arrived. [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="nb-who-heading">
-          <h2 id="nb-who-heading">Mulch, turf, and the 70% that live underground</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Approximately 70% of North American native bee species nest in the ground.
-            A ground-nesting bee tunnels into bare or sparsely vegetated soil, provisions each cell
-            with a ball of pollen and nectar, lays an egg, and seals it. The larva overwinters there.
-            A two-inch layer of mulch — standard in most maintained gardens — destroys these nesting sites
-            as completely as paving them over.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Xylocopa_virginica.jpg"
-                  alt="Eastern Carpenter Bee hovering near a wooden structure — this species bores nest tunnels in soft wood, not paper or hives"
-                  loading="lazy"
-                />
-                <figcaption>
-                  The Eastern Carpenter Bee is not a honeybee — it lives alone, bores nest galleries in soft wood, and raises a small brood without workers or a queen. Seventy percent of North America's 4,000 native bee species are solitary ground-nesters or wood-nesters. A yard covered entirely in turf or landscape fabric provides no habitat for the majority of native pollinators.
-                  <span className="photo-credit"> Photo: Polinizador · <a href="https://commons.wikimedia.org/wiki/File:Xylocopa_virginica.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
-
-          <p>
-            Many native bees are specialists. A sweat bee that evolved to collect goldenrod pollen
-            cannot raise its young on coneflower pollen. When a plant species disappears from a neighborhood,
-            the specialist bees that depended on it disappear with it — often within a single generation.
-            The generalist honeybee, which can use almost any flower, masks this collapse
-            because it keeps pollinating long after the specialists are gone.
-          </p>
-          <p>
-            Some flowering plants seal their pollen inside tube-shaped anthers that open only when
-            vibrated at a specific resonant frequency. Bumblebees and many solitary native bee species
-            achieve this by temporarily disconnecting their flight muscles from their wings and vibrating
-            them at around 400 Hz — a behavior called sonication. The vibration shakes loose pollen that
-            stays locked inside the anther under any gentler contact. Honeybees do not sonicate; they
-            scrape pollen from flowers where it is already exposed. Blueberries, cranberries, tomatoes,
-            and squash all require sonication to set a full crop, which is why commercial tomato
-            greenhouses rent bumblebee colonies — not honeybee hives.
+            Unlike honey bees, the vast majority of native bees are solitary — each
+            female digs or excavates her own nest, provisions it with pollen and nectar,
+            lays an egg, and seals the cell. About 70% of native bee species nest in
+            the ground, in bare or sparsely-vegetated soil. The other 30% nest in
+            hollow or pithy plant stems, beetle tunnels in dead wood, or pre-existing
+            cavities. Females forage intensively during their short active season — often
+            just a few weeks — visiting dozens of flowers per trip. Most native bees are
+            not defensive; they rarely sting unless handled directly. [1][2]
           </p>
         </section>
 
-        <section aria-labelledby="nb-lifecycle-heading">
-          <h2 id="nb-lifecycle-heading">One egg, a pollen ball, and a sealed cell she never sees hatch</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Eastern_carpenter_bee_%2831453%29.jpg/1280px-Eastern_carpenter_bee_%2831453%29.jpg"
+            alt="An Eastern Carpenter Bee (Xylocopa virginica) nectaring on a flower, showing its large black body with yellow-furred thorax"
+            width={1280}
+            height={974}
+            loading="lazy"
+          />
+          <figcaption>
+            The Eastern Carpenter Bee (Xylocopa virginica) is one of the most visible
+            native bees in the East — large, loud, and often seen hovering near wooden
+            eaves. Females drill perfectly circular nesting holes in soft wood; males
+            cannot sting and simply hover aggressively.
+            <span className="photo-credit"> Photo: Rhododendrites&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Eastern_carpenter_bee_(31453).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            A ground-nesting female spends her adult life — roughly four to six weeks for most species —
-            excavating and provisioning cells. She digs a main shaft a few inches into bare soil,
-            branches off individual brood chambers, and packs each one with a sphere of pollen
-            mixed with nectar. Collecting enough pollen for a single cell takes two to three
-            days of foraging. She lays one egg on top of the provision ball, seals the chamber
-            with packed earth or chewed vegetation, and moves on to the next cell.
-          </p>
-          <p>
-            She does not stay to raise her larvae. She dies before they hatch. Each larva develops
-            alone inside its sealed cell — eating the provision ball, growing through several instars,
-            pupating, and overwintering as a fully formed adult still inside the cell wall.
-            In spring, when soil temperature rises, it chews through the seal and emerges.
-          </p>
-          <p>
-            Stem-nesting bees follow the same pattern above ground. A mason bee cuts plant resin
-            or leaf discs to partition a hollow stem into individual cells. A leaf-cutter bee
-            uses circular sections of leaf. Each cell gets a provision ball and one egg, then a seal —
-            and the female moves to the next cavity. The standing stem stubs you leave through winter
-            are occupied galleries. More than 300 North American bee species use hollow or pithy stems
-            as brood chambers. Cutting perennial stems to the ground in October removes every nest
-            established during the growing season before the larvae inside have finished development.
+            Different native bee species are active at different times of year, which means
+            a healthy native bee community provides pollination services from the first
+            warm days of March through October. Mining bees (Andrena) and mason bees
+            (Osmia) are among the earliest, emerging in March and April when few other
+            pollinators are flying. Sweat bees (Halictus, Agapostemon, Lasioglossum)
+            are active through the summer. Bumble bees (Bombus) run colonies from
+            spring through fall; only new queens overwinter. The native bee &quot;season&quot;
+            begins and ends with the plants they depend on. [1]
           </p>
         </section>
 
-        <section aria-labelledby="nb-cleptoparasite-heading">
-          <h2 id="nb-cleptoparasite-heading">Roughly 900 North American bee species do not collect pollen</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Cleptoparasitic bees — called cuckoo bees — reproduce by laying their eggs inside the
-            provisioned nests of other bee species. They have no pollen baskets. They do not
-            excavate burrows or forage for their offspring. A cuckoo bee female spends her adult life
-            locating active host nests by smell, waiting for the host to leave, entering, and
-            depositing a single egg in a freshly provisioned cell.
-          </p>
-          <p>
-            The cuckoo bee larva hatches first. It kills the host egg or young larva —
-            in some species the first instar is equipped with enlarged, hardened mandibles for this
-            specific purpose — and then develops alone on the pollen ball the host female packed.
-          </p>
-          <p>
-            Each cuckoo bee genus is matched to one or a few host genera. Nomada bees
-            parasitize Andrena mining bees. Stelis bees parasitize Osmia mason bees.
-            Triepeolus bees parasitize Melissodes long-horned bees. When a host population
-            collapses, its cuckoo bee collapses within one or two generations, often before
-            anyone notices the host is declining. A yard that supports a ground-nesting
-            bee population is also supporting a second guild of species that can only exist
-            because the first does.
+            Native bees are in significant decline across North America. The Xerces Society
+            estimates that over half of North America&apos;s bumble bee species are in decline,
+            and some have lost more than 90% of their historical range. [2] The primary
+            drivers are the same across species: loss of native wildflowers that provide
+            pollen and nectar; pesticide exposure (especially neonicotinoids, which
+            impair navigation, foraging, and reproduction); loss of nesting habitat in
+            the form of bare ground and dead wood; and disease pressure, particularly
+            Nosema pathogen spreading from managed honey bee operations into wild bumble
+            bee populations. [2][3]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>An unmulched patch, a season of blooms, no pesticides, and stems left standing</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Native butterfly weed flowers providing nectar resources" loading="lazy" />
-            <figcaption>
-              Native milkweeds provide pollen and nectar on a schedule that aligns with native bee emergence — weeks ahead of most garden imports. A single native milkweed patch can support dozens of solitary bee species that non-native ornamentals never attract.
-              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Leave one unmulched, sunny patch of ground.</strong>{' '}
-              South-facing exposure is ideal. Even a square foot of bare soil in the right location
-              will be claimed by a ground-nesting bee within a season.
-              Sand or loam is ideal; clay works. Shade does not — bees need solar warmth to regulate nest temperature.
+              Plant native wildflowers that bloom in sequence from March through October.
+              A single planting of native wildflowers is not enough — native bees need
+              continuous bloom. A mix of early-blooming native willows and fruit trees,
+              mid-season native coneflowers and milkweeds, and late-season goldenrods
+              and native asters keeps bees fed through their full active season. [3]
             </li>
             <li>
-              <strong>Plant natives that bloom spring through fall.</strong>{' '}
-              Early-spring bees need early flowers. Fall bees need late flowers.
-              Goldenrod, native asters, wild bergamot, coneflowers, and blazing star
-              cover the season and have co-evolved with the bees that need them.
-              Three plants in a sunny spot is enough to start.
+              Leave bare ground in a sunny spot. Seventy percent of native bees nest
+              in the soil. A patch of south-facing, sparsely-vegetated ground — even
+              just a square foot of bare earth in a sunny garden bed — is potential
+              nesting habitat for dozens of solitary ground-nesting bee species. [3]
             </li>
             <li>
-              <strong>Stop applying pesticides to the yard.</strong>{' '}
-              A single pesticide application can kill a ground-nesting colony
-              that took multiple seasons to establish. Systemic pesticides
-              persist in plant tissue — neonicotinoids treated into nursery plants
-              remain in the pollen and nectar for years after planting.
-              Ask before you buy.
+              Leave dead stems standing through winter. Mason bees and leafcutter bees
+              nest in hollow or pithy plant stems. Leaving the upright dried stalks of
+              native wildflowers and grasses in place through spring gives these bees
+              both overwintering sites and nesting material. Cut stems to 18 inches
+              rather than removing them entirely. [3]
             </li>
             <li>
-              <strong>Cut native perennial stems at 12 inches, not at ground level, in fall or early spring.</strong>{' '}
-              More than 300 North American bee species are cavity nesters that lay their eggs
-              inside hollow plant stems. Goldenrod, Joe Pye weed, wild bergamot, and ironweed
-              have pithy stems that small native bees excavate or move directly into. Cutting
-              perennials to the ground each October removes every nest established in those stems
-              over the season. Cutting at 12 inches and leaving the stubs standing through winter
-              keeps those nesting sites intact. Cut the old growth back in late March when new
-              growth is already emerging — not before.
+              Stop or reduce pesticide use — especially systemic insecticides
+              (imidacloprid, clothianidin, thiamethoxam) applied to soil or plants.
+              Systemic pesticides persist in pollen and nectar for months and impair
+              bee navigation and reproduction at very low doses. If you must control
+              pests, spot-treat rather than broadcasting, and apply only in the evening
+              when bees are not foraging. [2]
             </li>
           </ol>
-          <button
-            className="hero__cta"
-            onClick={() => onNavigate('choose-a-plant')}
-            style={{ marginTop: '0.5rem' }}
-          >
-            Choose a Plant for Your Yard
+        </div>
+
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
+            <span className="neighbor-name">American Bumble Bee</span>
+            <span className="neighbor-note">One of more than 4,000 native bee species in North America and one of the most imperiled — its 89% range decline illustrates what native bees face across the board.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('great-spangled-fritillary')}>
+            <span className="neighbor-name">Great Spangled Fritillary</span>
+            <span className="neighbor-note">Nectars on the same native wildflowers native bees depend on; planting for one directly benefits the other.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('tiger-swallowtail')}>
+            <span className="neighbor-name">Eastern Tiger Swallowtail</span>
+            <span className="neighbor-note">Shares the same wildflower meadows and native garden patches; both insects respond immediately to the same habitat improvements.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-meadowlark')}>
+            <span className="neighbor-name">Eastern Meadowlark</span>
+            <span className="neighbor-note">Nests in the open meadow and grassland habitat where ground-nesting native bees are most abundant — both are indicators of healthy native grassland ecosystems.</span>
           </button>
         </div>
 
-        <section aria-labelledby="nb-neighbors-heading">
-          <h2 id="nb-neighbors-heading">Who else tunnels into the same ground</h2>
-          <p>
-            The soil a ground-nesting bee excavates and the leaf litter above it are shared
-            by other species that need the same undisturbed, chemical-free ground to complete
-            their life cycles. Managing for one means managing for all of them.
-          </p>
-          <ul>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('fireflies')}>
-                Fireflies
-              </button>
-              {' — '}Larvae spend one to two years hunting in the same soil layer; the grub treatments
-              that kill lawn beetles kill firefly larvae in the same application.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('toad')}>
-                American toad
-              </button>
-              {' — '}Overwinters six to twelve inches below the frost line in the same loose soil
-              and leaf litter that ground-nesting bees require for thermal stability.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('wild-bergamot')}>
-                Wild bergamot
-              </button>
-              {' — '}A single plant in full bloom can attract fifteen or more native bee species in a single day,
-              including specialist bees that collect pollen from no other plant family.
-            </li>
-          </ul>
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.usgs.gov/programs/science-analytics-and-synthesis/bee-monitoring" target="_blank" rel="noopener noreferrer">USGS Bee Monitoring Program</a></li>
+            <li><a href="https://xerces.org/bees" target="_blank" rel="noopener noreferrer">Xerces Society — Protecting Native Bees</a></li>
+            <li><a href="https://www.fs.usda.gov/wildflowers/pollinators/bees/index.shtml" target="_blank" rel="noopener noreferrer">USDA Forest Service — Native Bees</a></li>
+          </ol>
         </section>
       </div>
     </>
