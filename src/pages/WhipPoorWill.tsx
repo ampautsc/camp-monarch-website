@@ -9,255 +9,141 @@ export default function WhipPoorWill({ onNavigate }: WhipPoorWillProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/2/20/Caprimulgus_vociferusAAP065B.jpg"
-          alt="Eastern Whip-poor-will adult male perched on a mossy branch, mottled brown-gray-black plumage making the bird nearly invisible, large dark eye visible in the center of the face"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Caprimulgus_vociferus_Sam_Smith_Park_toronto.jpg/1280px-Caprimulgus_vociferus_Sam_Smith_Park_toronto.jpg"
+          alt="An Eastern Whip-poor-will perched on a log, showing its cryptically mottled brown and gray plumage that blends with dead leaves"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={870}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Francesco Veronesi&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Caprimulgus_vociferusAAP065B.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
+          Photo: Mykola Swarnyk&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Caprimulgus_vociferus_Sam_Smith_Park_toronto.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
-        <h1>Eastern Whip-poor-will</h1>
+        <h1>Whip-poor-will</h1>
         <p className="hero__lead">
-          A sound most adults remember from summer nights — three syllables, repeated until it
-          seemed to come from everywhere at once. Down 57% since 1970. The spray trucks
-          and the floodlights running through the night have been erasing it, yard by yard.
+          The Eastern Whip-poor-will is a nocturnal bird of open forests and forest edges,
+          cryptically camouflaged in mottled brown, black, and gray so that it is nearly
+          invisible on the ground or a branch. It is named for its call — a sharp, insistent
+          &quot;whip-poor-WILL&quot; repeated rapidly, sometimes hundreds of times without
+          pause. On summer nights in eastern woodlands, the call is one of the most
+          distinctive sounds of the season. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">A bill that looks decorative until a moth gets close</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The Eastern Whip-poor-will (<em>Antrostomus vociferus</em>) belongs to the
-            nightjar family — cousins of the Common Nighthawk, but hunting differently.
-            Where the nighthawk sweeps open sky at altitude, the whip-poor-will sits on
-            a low branch or mossy log just above the forest floor and makes short lunging
-            sallies after moths passing within a few feet.
-          </p>
-          <p>
-            The bill looks nearly vestigial — a tiny stub at the center of the face. It is
-            not. The jaw hinges open to a gape several times wider than the bill suggests,
-            and the base of the gape is lined with stiff bristle-like feathers called rictal
-            bristles that fan outward like a net. Those bristles funnel moths toward the
-            strike. The bird does not see the moth clearly at close range so much as
-            sense its approach through the bristle field and close the gape around it.
-          </p>
-          <p>
-            Whip-poor-wills hunt in near-total darkness. The eyes are set wide and slightly
-            forward, with pupils that dilate further than almost any other North American
-            songbird. On a moonless night in second-growth forest, the bird is catching moths
-            that a human standing six feet away could not see at all.
-          </p>
-          <p>
-            The call is named onomatopoetically — <em>whip-poor-will, whip-poor-will</em>,
-            three syllables with the accent on the first and last. A male defending territory
-            repeats the call in unbroken runs. One documented bird called 1,088 times
-            consecutively. The sound carries a quarter mile through still forest air. Before
-            the population declined, pairs on adjacent territories overlapped their calls
-            across summer evenings. That overlap is now audible in fewer places each decade.
+            Whip-poor-wills spend the day roosting motionless on the ground, on logs, or on
+            low branches, relying on camouflage for concealment. At dusk they begin calling
+            from perches and then take to the air, hunting moths, beetles, and large flying
+            insects with a wide, gaping mouth. Their eyes are large and reflect reddish in
+            light at night. Calling males repeat their song relentlessly — 1,088 calls
+            in a row has been documented — before pausing. [1]
           </p>
         </section>
 
-        <section aria-labelledby="lunar-heading">
-          <h2 id="lunar-heading">Eggs timed to the full moon</h2>
-          <p>
-            The lunar cycle runs through whip-poor-will breeding biology in a way that took
-            ornithologists decades to document. Adults time their egg-laying so that chicks
-            hatch approximately ten days before the full moon. That puts the hungriest phase
-            of nestling development — the last ten days before fledging, when both parents
-            must hunt every night — on the five nights centered on the full moon, when
-            ambient light is strongest and moth activity peaks.
-          </p>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Antrostomus_vociferus%2C_Lancaster%2C_Massachusetts_2.jpg/1280px-Antrostomus_vociferus%2C_Lancaster%2C_Massachusetts_2.jpg"
+            alt="An Eastern Whip-poor-will at rest on the forest floor, its plumage virtually invisible among leaf litter"
+            width={1280}
+            height={1672}
+            loading="lazy"
+            style={{ objectPosition: 'center center' }}
+          />
+          <figcaption>
+            On the ground or on bark, the mottled plumage makes the Whip-poor-will nearly
+            impossible to spot. Most people hear the call long before ever seeing the bird.
+            <span className="photo-credit"> Photo: ALAN SCHMIERER&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Antrostomus_vociferus,_Lancaster,_Massachusetts_2.jpg" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Antrostomus_vociferus_-_Eastern_Whip-poor-will_%28cropped%29.jpg"
-              alt="Eastern Whip-poor-will in close profile, showing the wide flat head, enormous dark eye, and the subtle mottled patterning of brown, black, and gray that eliminates any clear outline"
-              loading="lazy"
-            />
-            <figcaption>
-              The flat, wide head positions the eyes for binocular overlap — the forward-facing
-              field that lets the bird judge distance in darkness. The rictal bristles at the base
-              of the bill extend outward and inward simultaneously, creating a capture funnel
-              that guides moths toward the gape in the last fraction of a second before the strike.
-              <span className="photo-credit"> Photo: Andy Reago &amp; Chrissy McClarren · <a href="https://commons.wikimedia.org/wiki/File:Antrostomus_vociferus_-_Eastern_Whip-poor-will_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            This synchronization has a physical basis. Moths are ectothermic — their flight
-            activity scales with temperature and available light. On warmer, brighter nights
-            more moth species are airborne, in greater numbers, for longer windows. The
-            whip-poor-will evolved to breed on a schedule where the period of greatest caloric
-            demand aligns with the period of greatest food abundance.
-          </p>
-          <p>
-            Artificial lighting disrupts this in two directions. Moths drawn to streetlights,
-            flood lights, and security lights circle and die there rather than moving through
-            the forest edge where the whip-poor-will hunts. Some moth species suppress their
-            emergence entirely on artificially lit nights. The bird&apos;s lunar timing —
-            a calendar refined across tens of thousands of generations — now lands in a
-            landscape where the moths it was timed to hunt are being pulled off their flight
-            paths before they reach the hunting ground.
+            Whip-poor-wills arrive on their breeding grounds in April and May, timed to
+            coincide with the peak emergence of large moths shortly before the full moon —
+            bright moonlit nights increase hunting success. They lay two eggs directly on
+            leaf litter with no nest construction. After breeding, they migrate to the
+            Caribbean and Central America for the winter. Their arrival and departure are
+            closely tied to the lunar cycle. [1]
           </p>
         </section>
 
-        <section aria-labelledby="decline-heading">
-          <h2 id="decline-heading">57% gone — two things your yard is doing right now</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            The North American Breeding Bird Survey has tracked whip-poor-will numbers since
-            1966. The population has declined approximately 57% over that period. In Canada,
-            the species is listed as Threatened. In the United States it is a Bird of
-            Conservation Concern. The steepest declines run through areas with the densest
-            suburban development.
-          </p>
-          <p>
-            <strong>Pyrethroid mosquito sprays.</strong> The broad-spectrum insecticides used
-            by residential mosquito-control services — delivered as a fine mist across yards
-            and garden edges — kill adult moths, beetles, and flying insects alongside
-            mosquitoes. Mosquito populations rebound in three to five days. Moths do not:
-            adults live only a few weeks, and killing the adults removes that night&apos;s
-            cohort from the food supply permanently. Across a residential neighborhood where
-            dozens of adjacent properties are treated through the breeding season, the
-            cumulative effect is a sustained collapse of aerial insect biomass across the
-            habitat the whip-poor-will forages.
-          </p>
-          <p>
-            <strong>Outdoor lights left on overnight.</strong> A floodlight on the back of a
-            house, a security light running from dusk to dawn, ornamental string lights left
-            on through the night — each one pulls moths off their flight paths through the
-            forest edge. The moths that circle and die at the light are not available to the
-            bird hunting 50 yards into the trees. Multiply this across an entire neighborhood
-            and the light-trap effect compounds.
-          </p>
-          <p>
-            A third factor operates more slowly: the replacement of native trees with
-            ornamental plantings and turf grass. The moths the whip-poor-will eats are adult
-            insects — they were caterpillars first. Caterpillars require native plant leaves
-            to develop. A mature oak tree in the eastern United States supports the larval
-            stage of over 500 moth and butterfly species. A Norway maple — the non-native
-            ornamental planted across most American suburbs since the 1950s — supports fewer
-            than 5. A Kentucky bluegrass lawn supports essentially none. The long-term
-            result is a landscape that produces fewer moths each decade.
+            Partners in Flight estimates the breeding population at about 1.7 million. [2]
+            The U.S. Breeding Bird Survey shows a cumulative decline of approximately 69%
+            since 1970. [3] The IUCN lists it as Least Concern, though it is listed as
+            Threatened in Canada. [4] The collapse of large moth populations due to
+            pesticide use and light pollution is the most likely driver of decline. [1]
           </p>
         </section>
 
-        <section aria-labelledby="actions-heading">
-          <h2 id="actions-heading">No mosquito spray, outdoor lights off by 10 PM, one native tree planted, and leaf litter left each fall</h2>
-          <ul className="actions-list">
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <ol className="step-list">
             <li>
-              <strong>Cancel the mosquito spray service.</strong> If you use one, call and
-              stop it before May. The spray does not distinguish between mosquitoes and
-              the moths a whip-poor-will needs. For standing water, use Bti dunks — a
-              bacteria-based larvicide that kills mosquito larvae without harming adult
-              flying insects.
+              Turning off or shielding outdoor lights at night reduces light pollution that
+              disrupts large moth populations — the primary food source for Whip-poor-wills.
+              [5]
             </li>
             <li>
-              <strong>Turn outdoor lights off by 10 PM.</strong> Motion-activated fixtures
-              with amber LEDs disrupt moth navigation far less than always-on white-spectrum
-              lights. If you have flood lights or security lights running through the night,
-              switching to motion-only cuts most of the light-trap effect.
+              Skipping pesticides preserves moths and large nocturnal insects. A single
+              female feeding nestlings may catch thousands of moths per night. [5]
             </li>
             <li>
-              <strong>Plant a native oak, cherry, or birch.</strong> Not for the whip-poor-will
-              directly — it does not come into your yard. But a single native oak at maturity
-              supports 500+ moth and butterfly species through their larval stage. Those moths
-              emerge as adults and move through the forest edge. The bird hunts that edge.
+              Native trees and shrubs that support abundant caterpillar and moth populations
+              — particularly oaks, cherries, and native willows — support the insects
+              Whip-poor-wills depend on. [5]
             </li>
             <li>
-              <strong>Leave leaf litter in fall.</strong> Many moth species pupate in the duff
-              layer beneath the trees where their caterpillars fed. Autumn raking and bagging
-              removes those pupae. Leave what you can under shrubs and at the base of trees, and
-              more moths survive to emerge the following summer.
+              Maintaining forest edges and young forest adjacent to open areas — the habitat
+              Whip-poor-wills hunt over — is as important as the interior forest where they
+              roost. [5]
             </li>
-          </ul>
-
-          <figure className="species-content-photo species-content-photo--center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/e/e4/EasternWhip-poor-will.jpg"
-              alt="Eastern Whip-poor-will on the ground at Magee Marsh, Ohio — the bird is fully visible but its mottled pattern reads as a pile of dead leaves with eyes"
-              loading="lazy"
-            />
-            <figcaption>
-              Nesting whip-poor-wills lay two eggs directly on the ground among dead leaves —
-              no nest is built. The female sits on the eggs and relies entirely on camouflage
-              to avoid detection. She will not flush until a predator is within one or two steps.
-              This strategy held for millions of years. It does not protect against a lawn mower,
-              a free-roaming outdoor cat, or a yard treated with broad-spectrum insecticide.
-              <span className="photo-credit"> Photo: <a href="https://commons.wikimedia.org/wiki/File:EasternWhip-poor-will.jpg" target="_blank" rel="noopener noreferrer">via Wikimedia Commons</a></span>
-            </figcaption>
-          </figure>
-        </section>
-
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Other hunters in the same food web</h2>
-          <p>
-            The whip-poor-will shares its dependence on native caterpillars and moths with
-            several other neighbors in the gallery. Reduce the pesticide load and restore
-            the native plant base, and more than one species comes back.
-          </p>
-          <ul className="species-connections">
-            <li>
-              <button className="link-button" onClick={() => onNavigate('common-nighthawk')}>
-                Common Nighthawk
-              </button>
-              {' '} — another aerial insectivore declining for the same reasons, hunting the
-              same moths over open rooftops and fields on the same summer nights.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('little-brown-bat')}>
-                Little Brown Bat
-              </button>
-              {' '} — hunts moths and beetles at night using echolocation; mosquito spray
-              hits bat prey as directly as it hits whip-poor-will prey.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('luna-moth')}>
-                Luna Moth
-              </button>
-              {' '} — one of the large moths this bird eats; its caterpillars feed on birch,
-              walnut, and persimmon — native trees a yard can actually support.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
-                Wood Thrush
-              </button>
-              {' '} — shares the forest-interior habitat and declines for the same fragmentation
-              and insect-loss reasons.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('american-woodcock')}>
-                American Woodcock
-              </button>
-              {' '} — another dusk-displaying bird of shrubby forest edges, down 40% since 1968;
-              the same thicket clearings where woodcocks peent at nightfall are the borders the
-              whip-poor-will hunts from perches just inside the tree line.
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Mosquito spray services and outdoor lights running through the night are the two things directly cutting the food supply this bird depends on.</strong>{' '}
-            Read the full breakdown of spray alternatives at the{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticides &amp; Your Habitat guide
-            </button>
-            , and learn how leaving autumn leaf litter intact preserves moth pupae through spring at{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves
-            </button>
-            .
-          </p>
+          </ol>
         </div>
+
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('common-nighthawk')}>
+            <span className="neighbor-name">Common Nighthawk</span>
+            <span className="neighbor-note">A close relative in the nightjar family that hunts the same summer nights, above open areas rather than forest edges.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-screech-owl')}>
+            <span className="neighbor-name">Eastern Screech-Owl</span>
+            <span className="neighbor-note">Another nocturnal hunter that shares the same summer woodlands and hunts through the same dark hours.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('wood-thrush')}>
+            <span className="neighbor-name">Wood Thrush</span>
+            <span className="neighbor-note">A forest-interior bird whose evening song overlaps with the start of the Whip-poor-will&apos;s calling period.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('chimney-swift')}>
+            <span className="neighbor-name">Chimney Swift</span>
+            <span className="neighbor-note">An aerial insectivore that hunts the same dusk hours, taking over the sky just before the Whip-poor-will takes over the night.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Eastern_Whip-poor-will/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Eastern Whip-poor-will (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/eastern-whip-poor-will-antrostomus-vociferus" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Eastern Whip-poor-will</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )

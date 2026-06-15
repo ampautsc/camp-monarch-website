@@ -1,3 +1,5 @@
+import type { Page } from '../App'
+
 interface EasternMeadowlarkProps {
   onNavigate: (page: Page) => void
 }
@@ -7,15 +9,18 @@ export default function EasternMeadowlark({ onNavigate }: EasternMeadowlarkProps
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sturnella_magna1.jpg/960px-Sturnella_magna1.jpg"
-          alt="Eastern meadowlark perched on a wooden fence post showing its brilliant yellow breast and bold black V-collar — the bird whose flute-like song was the morning soundtrack of American suburbs and farmland until grassland conversion and lawn culture silenced it across most of its former range"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Eastern_meadowlark_in_CP_%2860236%29.jpg/1280px-Eastern_meadowlark_in_CP_%2860236%29.jpg"
+          alt="An Eastern Meadowlark perched on a branch, showing its brilliant yellow breast with a black V and brown streaked back"
           className="species-hero-image"
-          style={{ objectPosition: 'center 40%' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={823}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: USFWS&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Sturnella_magna1.jpg" target="_blank" rel="noopener noreferrer">Public Domain</a>
+          Photo: Rhododendrites&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Eastern_meadowlark_in_CP_(60236).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -24,307 +29,120 @@ export default function EasternMeadowlark({ onNavigate }: EasternMeadowlarkProps
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Eastern Meadowlark</h1>
         <p className="hero__lead">
-          The Eastern Meadowlark used to be the morning voice of American suburbs. Its two-note
-          flute call carried from fence posts along open lots, school athletic fields, and highway
-          margins across the eastern United States. You can still find the song in nature
-          recordings from the 1960s and 1970s, woven into suburban soundscapes before the fields
-          shrank and the grass was cut short. The population has fallen 75 percent since 1966.
-          Every one of them went quiet for the same reason.
+          The Eastern Meadowlark is a stocky, open-country bird with a brilliant yellow
+          breast crossed by a bold black V, a brown-streaked back, and a white-sided tail
+          it fans when it flies. It lives in grasslands, meadows, hayfields, and open
+          farmland, singing from fence posts and utility wires with a clear, flute-like
+          whistle. Its song carries across open ground and is one of the defining sounds of
+          pastoral landscapes in the eastern United States. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">Built to read an open field</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Despite its name, the Eastern Meadowlark is not a lark. It belongs to the blackbird
-            family — <em>Icteridae</em> — the same group as orioles, red-winged blackbirds, and
-            bobolinks. The scientific name, <em>Sturnella magna</em>, means &ldquo;great
-            starling,&rdquo; a 17th-century misclassification that stuck. What it actually is: a
-            medium-sized ground bird shaped by millions of years of open-country living, with a
-            body plan optimized for walking through tall grass, probing into the soil, and
-            disappearing into brown streaked camouflage the moment it crouches.
-          </p>
-          <p>
-            The male&apos;s spring plumage is a contradiction — invisible from above, unmistakable
-            from below. The brown-streaked back blends seamlessly into dry grass. The underparts
-            are chrome yellow with a bold black V-collar that crosses the breast. When a male
-            throws back his head to sing from a fence post, the yellow flashes against the
-            sky like a signal fire. The song itself carries far: two to eight clear, flute-like
-            whistles that descend slightly in pitch, often phrased as <em>see-you, see-yeer</em>
-            or <em>spring is here, spring is here</em> in the ornithological mnemonic tradition.
-            Each male knows 50 to 100 distinct song types and delivers them in long unbroken
-            sequences at rates exceeding 200 songs per hour at dawn during the peak breeding period
-            in May.
-          </p>
-
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sturnella_magna_-singing-8b.jpg/960px-Sturnella_magna_-singing-8b.jpg"
-              alt="Male Eastern meadowlark singing from a fence post with bill pointed skyward — the bird delivers 50-100 distinct song types at rates of 200 songs per hour during peak breeding season in May"
-              loading="lazy"
-            />
-            <figcaption>
-              A male Eastern Meadowlark at full song on a fence post. The bill pointed skyward, the
-              yellow throat fully exposed. Males sing from prominent perches at field edges, rotating
-              among several posts within their territory. The song carries 400 to 500 meters in open
-              habitat — enough to hold a 3-to-15-acre territory without ever landing near a rival.
-              This display happens every morning from April through July in healthy grassland. In most
-              eastern suburban neighborhoods, it no longer happens at all.
-              <span className="photo-credit"> Photo: Andy Reago &amp; Chrissy McClarren&nbsp;·&nbsp;<a href="https://www.flickr.com/photos/wildreturn/16811826161/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-
-          <p>
-            Nesting happens on the ground, built entirely by the female. She selects a site in
-            dense grass with a clear view in multiple directions — not for aesthetics, but
-            because she can detect an approaching predator from 20 to 30 meters. The nest is
-            a domed cup woven from dried grass stems, with a side entrance and a concealed
-            grass-covered tunnel approach that hides it from aerial view. The whole structure
-            blends so completely with the surrounding vegetation that biologists routinely walk
-            past active nests within arm&apos;s reach. Incubation takes 13 to 15 days. The
-            chicks leave the nest after 11 to 12 days but cannot fly for another week —
-            they scatter into the surrounding grass and are tended by both parents until they
-            can sustain themselves.
-          </p>
-          <p>
-            The diet reflects the open-ground niche directly. During breeding season, 70 percent
-            of the food is insects: grasshoppers, crickets, ground beetles, caterpillars, and
-            earthworms. A foraging meadowlark walks deliberately through grass, probing the
-            ground with its bill, using a behavior called &ldquo;gaping&rdquo; — inserting the
-            closed bill into soil or plant stems and forcing it open with strong jaw muscles to
-            expose hidden insects. In winter, the diet shifts to seeds and grain — milo, corn,
-            native grasses — and the birds congregate in flocks of 20 to 100 on open agricultural
-            fields and fallow grassland.
+            Eastern Meadowlarks walk through grass and low vegetation, probing the ground
+            for beetles, grasshoppers, crickets, caterpillars, and earthworms. They locate
+            food visually and by probing with their pointed bill. In winter they may join
+            mixed flocks and eat seeds. Males sing from elevated perches throughout the
+            day, especially in the morning. The song — a series of clear, descending
+            whistles — carries up to a quarter mile in open country. [1]
           </p>
         </section>
 
-        <section aria-labelledby="decline-heading">
-          <h2 id="decline-heading">Grassland is America's most endangered habitat</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Eastern_meadowlark_%28Sturnella_magna_mexicana%29_Orange_Walk.jpg/1280px-Eastern_meadowlark_%28Sturnella_magna_mexicana%29_Orange_Walk.jpg"
+            alt="An Eastern Meadowlark perched on a post showing its yellow underparts and black V on the breast"
+            width={1280}
+            height={854}
+            loading="lazy"
+          />
+          <figcaption>
+            The black V on the yellow breast is the most distinctive field mark.
+            Males and females look alike; the V is slightly brighter in males.
+            <span className="photo-credit"> Photo: Charles J. Sharp&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Eastern_meadowlark_(Sturnella_magna_mexicana)_Orange_Walk.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            The North American Breeding Bird Survey, conducted annually since 1966, documents an
-            Eastern Meadowlark decline of approximately 75 percent over that period — a loss of
-            roughly 70 million breeding individuals in six decades. The species remains common
-            enough to seem fine in parts of its range, which is part of why the decline has not
-            generated the alarm that it warrants. Partners in Flight lists the Eastern Meadowlark
-            on its Red Watch List, meaning the decline trajectory is severe enough to indicate
-            risk of extinction without course correction. The North American grassland bird
-            guild as a whole has experienced steeper collective declines than any other bird
-            group on the continent — worse than forest birds, worse than shorebirds, worse
-            than wetland birds.
+            Eastern Meadowlarks nest on the ground in dense grass, building a domed cup of
+            woven grass with a side entrance. The female lays three to five eggs and
+            incubates alone. The nest is so well hidden that it is rarely found except by
+            chance. Northern populations migrate south in fall, though some birds remain in
+            milder areas year-round. Males establish territories in March and begin singing
+            immediately on arrival. [1]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            The primary driver is habitat conversion. More than 99 percent of the original
-            tallgrass prairie of the central United States is gone — plowed for row crops or
-            developed. The shortgrass and mixed-grass prairies of the Great Plains have lost
-            50 to 70 percent of their extent. The meadow and fallow-field grasslands that once
-            occurred in the eastern United States wherever agriculture broke from forest cover
-            have largely been replaced by either intensive crops, which mow or cultivate during
-            nesting season, or suburban lawn, which provides nothing at all. Eastern Meadowlarks
-            require a minimum of 25 to 30 contiguous acres of suitable grassland habitat for a
-            viable breeding territory. A suburban yard, a park lawn, a roadside strip — none of
-            these meets the threshold.
-          </p>
-          <p>
-            The mowing calendar is a compounding factor. Traditional small-scale hay farming cut
-            once in late July, after most ground-nesting birds had finished breeding. Commercial
-            hay operations today often cut two to four times between May and September, with the
-            first cut in late May or early June — directly into peak incubation and early chick
-            development. A meadowlark nest that survived ground predators for two weeks of
-            incubation is destroyed in seconds by a mowing pass. Many pairs attempt two or
-            three nests in a season; in intensively managed agricultural fields, none succeeds.
-          </p>
-          <p>
-            Pesticide application over agricultural grassland has reduced the insect prey base
-            substantially. Grasshoppers, the meadowlark&apos;s primary summer food, are among
-            the organisms most directly impacted by systemic insecticide use. Broadcast
-            application of neonicotinoids and organophosphates on adjacent crop fields
-            suppresses grasshopper and beetle populations in the surrounding grassland matrix.
-            A meadowlark territory with suppressed insect biomass produces fewer chicks,
-            and chicks that do fledge are smaller and less likely to survive their first winter.
+            Partners in Flight estimates the breeding population at about 7.3 million. [2]
+            The U.S. Breeding Bird Survey shows a cumulative decline of approximately 49%
+            since 1966. [3] The IUCN assessed the Eastern Meadowlark as Vulnerable in 2024,
+            reflecting the severity of grassland habitat loss across its range. [4] Loss of
+            native grasslands to row crops, conversion of hayfields to other uses, and
+            changing mowing schedules during the nesting season are the primary drivers. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that help Eastern Meadowlarks</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Schizachyrium_scoparium_-_little_bluestem.jpg/960px-Schizachyrium_scoparium_-_little_bluestem.jpg"
-              alt="Little bluestem grass in autumn color — a native prairie grass that creates the dense, tall grass structure Eastern Meadowlarks and dozens of other grassland species need for nesting, foraging, and overwintering"
-              loading="lazy"
-            />
-            <figcaption>
-              Little bluestem (<em>Schizachyrium scoparium</em>), a native prairie grass that
-              grows 2 to 4 feet tall, requires no fertilizer or irrigation once established, and
-              provides the kind of dense, layered grass structure that ground-nesting birds and
-              grassland insects depend on. A 100-square-foot planting supports the insect
-              community that feeds grassland birds in surrounding areas. Let it stand through
-              the winter — the seed heads feed finches and the dried stems shelter overwintering
-              insects.
-              <span className="photo-credit"> Photo: USFWS&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Schizachyrium_scoparium_-_little_bluestem.jpg" target="_blank" rel="noopener noreferrer">Public Domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant a native meadow strip in place of turf.</strong>{' '}
-              Your yard alone cannot host a meadowlark — the territory requirement is 25 to 30 acres.
-              But a planting of little bluestem, Indian grass, native coneflowers, and black-eyed
-              Susans — even 100 to 200 square feet — builds the grasshopper, cricket, and beetle
-              population that meadowlarks and other grassland birds harvest in surrounding habitat.
-              Each native meadow patch in a neighborhood is a contribution to the regional insect
-              base. Multiple patches across a block or a road corridor start to aggregate into
-              something ecologically meaningful. Find native grasses and wildflowers for your
-              region at{' '}
-              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
-                Find Plants Near Me
-              </button>
-              .
+              Delaying mowing in meadows and field edges until late July or August allows
+              meadowlarks — which commonly raise two broods — to complete nesting without
+              nest destruction. [5]
             </li>
             <li>
-              <strong>Delay any tall-grass or meadow mowing until after July 15.</strong>{' '}
-              Eastern Meadowlarks and dozens of other ground-nesting birds — including dark-eyed
-              juncos, savannah sparrows, and grasshopper sparrows — complete their first brood by
-              mid-July. If you have an area of unmowed grass kept above 8 inches, or a field edge,
-              or a rain garden with tall native grass, hold the first cut until after July 15.
-              A second cut can happen in late August. Letting any portion stand through winter
-              provides overwintering insect habitat and seed for birds into March.
+              Maintaining or restoring native grasslands and meadows provides the open-
+              ground habitat meadowlarks require for both foraging and nesting. [5]
             </li>
             <li>
-              <strong>Eliminate broadcast insecticide application across your property.</strong>{' '}
-              Grasshoppers and ground beetles are the meadowlark&apos;s primary food source from
-              April through August. Systemic insecticide application — whether for mosquitoes,
-              grubs, or general pest suppression — reduces the invertebrate biomass available to
-              every ground-foraging bird, reptile, and amphibian in the area. See the full
-              breakdown of which pesticides are most damaging and which alternatives exist at the{' '}
-              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-                Pesticides &amp; Your Habitat guide
-              </button>
-              .
+              Skipping pesticides preserves the grasshoppers, beetles, and caterpillars
+              that meadowlarks eat through spring and summer. [5]
             </li>
             <li>
-              <strong>Support local land conservancies protecting grassland.</strong>{' '}
-              The most effective action for Eastern Meadowlark recovery is grassland preservation
-              and active management at landscape scale — 50, 500, or 5,000 acres with appropriate
-              fire or grazing regimes to maintain open structure. The National Audubon Society&apos;s
-              Important Bird Area program, The Nature Conservancy&apos;s grassland restoration
-              work, and local land trusts purchasing former farmland from retiring agricultural
-              families are where meadowlark populations stabilize and recover. Contributing to
-              those organizations or participating in local land trust work translates directly
-              into meadowlark habitat at the scale the species requires.
+              Supporting farm conservation programs that pay farmers to delay haying or
+              maintain field borders protects meadowlark nesting habitat at landscape scale.
+              [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The grassland web your neighborhood has lost</h2>
-          <p>
-            The Eastern Meadowlark is disappearing for the same reason the{' '}
-            <button className="link-button" onClick={() => onNavigate('american-bumble-bee')}>
-              American Bumble Bee
-            </button>{' '}
-            is disappearing — grassland conversion has eliminated the habitat and insect
-            communities they depend on. Both species evolved in a landscape of native grass,
-            wildflower, and open soil that covered millions of acres east of the Mississippi
-            and is now almost entirely gone. Their declines are not independent events; they
-            are the same event viewed from two different points in the food web.
-          </p>
-          <p>
-            The{' '}
-            <button className="link-button" onClick={() => onNavigate('american-robin')}>
-              American Robin
-            </button>{' '}
-            and the{' '}
-            <button className="link-button" onClick={() => onNavigate('dark-eyed-junco')}>
-              Dark-eyed Junco
-            </button>{' '}
-            both forage in open ground, both require undisturbed soil and leaf layers for
-            winter food, and both are affected by the same insecticide regimes that suppress the
-            grassland invertebrate community meadowlarks depend on. A yard that stops pesticide
-            use and leaves native plant debris in place is supporting the base of the food web
-            for all three species simultaneously.
-          </p>
-          <p>
-            The{' '}
-            <button className="link-button" onClick={() => onNavigate('garter-snake')}>
-              Garter Snake
-            </button>{' '}
-            uses meadow edges for thermoregulation — basking at the boundary of tall grass and
-            open ground in early morning — and hunts the same grasshoppers and invertebrates
-            the meadowlark eats. In a yard with a native meadow strip, the garter snake
-            community that previously had nothing to use on a mowed lawn finds structure, prey,
-            and cover concentrated in a small area. The meadow strip is not just for meadowlarks;
-            it functions as habitat infrastructure for every ground-layer species in the system.
-          </p>
-          <p>
-            The{' '}
-            <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
-              Eastern Towhee
-            </button>
-            {' '}works the shrubby edge immediately adjacent to the meadowlark&apos;s open
-            grassland — the dense thicket where the grass gives way to shrubs. The meadowlark
-            needs 25 to 30 acres of open ground; the towhee needs a dense hedge or brush pile.
-            A native meadow bordered by a row of native shrubs serves both: the meadowlark
-            finds its grasshopper and beetle base in the open strip; the towhee finds nesting
-            cover and leaf-litter foraging substrate in the shrubs at the margin. Both species
-            are losing the same transitional landscape — the unmanaged edge between grass and
-            shrub that once existed wherever old fields were left alone, and is now gone from
-            most suburban properties entirely.
-          </p>
-          <p>
-            The actions that help the meadowlark — native plantings, delayed mowing, no
-            broadcast pesticides, land conservation support — are the same actions that move
-            the needle for grassland insects, ground-foraging birds, and reptiles across the
-            eastern landscape. The meadowlark is a diagnostic species: its presence signals
-            that the grassland insect community is intact. Its absence signals the system has
-            already failed. Most eastern yards crossed that threshold decades ago. The question
-            now is whether it can be reversed, block by block and neighborhood by neighborhood,
-            before the species slides from common-but-declining to genuinely rare.
-          </p>
-        </section>
-
         <div className="neighbor-grid">
-          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
-            <span className="neighbor-name">American Bumble Bee</span>
-            <span className="neighbor-note">a bumble bee colony forages the same open meadow the meadowlark nests in — the queen emerges from underground hibernation in April and works the wildflower patches growing through the same native grass stand where meadowlarks probe the ground for grasshoppers; both species declined as the eastern meadow landscape was converted first to row crops and then to mowed lawn, and a native meadow strip that supports a nesting meadowlark pair through June sustains a bumble bee colony from April through October in the same square footage</span>
+          <button className="neighbor-card" onClick={() => onNavigate('american-kestrel')}>
+            <span className="neighbor-name">American Kestrel</span>
+            <span className="neighbor-note">A small falcon that hunts over the same open fields and meadows the meadowlark sings in.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('american-robin')}>
-            <span className="neighbor-name">American Robin</span>
-            <span className="neighbor-note">forages in open ground using asymmetric ear placement to locate earthworms and soil invertebrates by sound — both American Robin and Eastern Meadowlark probe the ground surface and disappear from lawns treated with broadcast insecticides that collapse the soil invertebrate community; a yard that stops pesticide use and leaves native plant debris in place supports both species from the same action</span>
+          <button className="neighbor-card" onClick={() => onNavigate('song-sparrow')}>
+            <span className="neighbor-name">Song Sparrow</span>
+            <span className="neighbor-note">A grassland-edge bird that nests in the dense low vegetation around the same meadow perimeters.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
-            <span className="neighbor-name">Dark-eyed Junco</span>
-            <span className="neighbor-note">scratches through leaf litter and open ground for seeds and invertebrates through fall and winter — a native meadow strip left standing through winter provides the seed heads and leaf-litter substrate juncos require; both junco and meadowlark are suppressed by the broadcast pesticide regimes that eliminate the ground-level invertebrate community from maintained suburban lawns</span>
+          <button className="neighbor-card" onClick={() => onNavigate('american-goldfinch')}>
+            <span className="neighbor-name">American Goldfinch</span>
+            <span className="neighbor-note">Forages for seeds in the same tall-grass meadows the meadowlark nests in.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('garter-snake')}>
-            <span className="neighbor-name">Garter Snake</span>
-            <span className="neighbor-note">thermoregulates at the boundary of tall grass and open ground in early morning and hunts the same grasshoppers, crickets, and soil invertebrates the meadowlark probes for — a native meadow strip provides both species with the grass-to-open edge that mowed lawn eliminates; the meadowlark nests in the grass, the garter snake basks at its margin, and both disappear when that transition is removed</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('eastern-towhee')}>
-            <span className="neighbor-name">Eastern Towhee</span>
-            <span className="neighbor-note">scratches in the dense thicket where native grass gives way to shrubs — exactly the habitat edge adjacent to where meadowlarks nest and forage; a native meadow strip bordered by a row of native shrubs serves both: the meadowlark works the open grass while the towhee finds nesting cover and leaf-litter invertebrates at the shrubby margin; both species are losing the same unmanaged grass-to-shrub transition that once existed at every old field edge</span>
+          <button className="neighbor-card" onClick={() => onNavigate('chimney-swift')}>
+            <span className="neighbor-name">Chimney Swift</span>
+            <span className="neighbor-note">A fellow aerial insect specialist that hunts over the open farmland where meadowlarks forage.</span>
           </button>
         </div>
 
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Build the native plant base that grassland birds and insects depend on.</strong>{' '}
-            Start with plants at{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , understand the full transformation from turf to habitat at{' '}
-            <button className="link-button" onClick={() => onNavigate('habitat-transformation')}>
-              From Lawn to Habitat
-            </button>
-            , and meet every other species sharing your landscape in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
-        </div>
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Eastern_Meadowlark/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Eastern Meadowlark (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/eastern-meadowlark-sturnella-magna" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Eastern Meadowlark</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )

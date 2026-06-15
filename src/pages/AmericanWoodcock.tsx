@@ -9,243 +9,143 @@ export default function AmericanWoodcock({ onNavigate }: AmericanWoodcockProps) 
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/344580602/large.jpg"
-          alt="American Woodcock standing on a woodland path in early March in Cuyahoga Falls, Ohio — the large dark eyes sit on the sides of the head near the top of the skull, and the long bill points forward and slightly down"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/American_woodcock_%2895252%29.jpg/1280px-American_woodcock_%2895252%29.jpg"
+          alt="An American Woodcock standing on leaf litter, showing its long bill, large eye set high on the head, and cryptic brown and rufous plumage"
           className="species-hero-image"
-          style={{ objectPosition: 'center 30%' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={916}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: rawcomposition&nbsp;·&nbsp;
-          <a href="https://www.inaturalist.org/observations/195811353" target="_blank" rel="noopener noreferrer">iNaturalist obs. 195811353</a>
-          &nbsp;· CC0 / No Rights Reserved
+          Photo: Rhododendrites&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:American_woodcock_(95252).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
-        <div className="hero__eyebrow">Birds</div>
-        <h1>On warm evenings in March, a male American Woodcock stands in a dark clearing and calls — then spirals 200 feet straight up on twittering wings and drops back down within three feet of where he started.</h1>
+        <div className="hero__eyebrow">Meet Your Neighbors</div>
+        <h1>American Woodcock</h1>
         <p className="hero__lead">
-          The American Woodcock (<em>Scolopax minor</em>) is a chunky, short-legged shorebird
-          that lives in the forest, not the shore. Its mottled brown-and-black plumage reads
-          as dead leaves from six feet away. Its bill is nearly as long as its head and body
-          combined. Both eyes sit on the sides of the head near the top of the skull, giving
-          the bird an almost unobstructed 360° field of view — including directly behind.
-        </p>
-        <p className="hero__lead">
-          For most of the year the woodcock is invisible: a nighttime feeder in brushy thickets
-          and moist forest edges, disappearing into cover before first light. But from late
-          February through May, at dusk and again before dawn, males come out into small openings
-          and perform a display called the sky dance. This is the one window when most people
-          ever see or hear one.
+          The American Woodcock is a plump, secretive shorebird that lives far from shore —
+          in young forests, alder thickets, and wet woodland edges across the eastern United
+          States. Its long, flexible bill probes deep into soft soil for earthworms. Its
+          eyes are set so high on its head that it has nearly 360-degree vision. Each spring
+          at dusk, males perform an aerial courtship display that is one of the most
+          remarkable spectacles in North American birdwatching. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="bill-heading">
-          <h2 id="bill-heading">The tip of the bill opens and closes underground while the base stays shut — how a woodcock grabs an earthworm it cannot see</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            A woodcock spends much of its adult life with its bill buried in soft soil, probing
-            for earthworms. The bill reaches 2 to 3 inches below the surface — but pulling a
-            worm from that depth without opening the entire bill in soil is a problem most
-            long-billed birds cannot solve. The woodcock's upper bill is flexible at the tip, a
-            condition called rhynchokinesis. Muscles allow the tip to bend upward while the
-            bill stays closed at the base. The tip acts as a prehensile forceps that grasps
-            a worm underground without excavating or retracting the bill first.
-          </p>
-          <p>
-            The sensing mechanism sits in pits at the bill tip — Herbst corpuscles, the same
-            pressure receptors that help other birds detect underwater movement. When an
-            earthworm moves anywhere within a few centimeters of the bill tip, the soil
-            displacement registers as a signal. The bird does not smell the worm or hear it.
-            It feels the worm move through the ground.
-          </p>
-          <p>
-            Because earthworms move toward the surface after rain and in warm weather, woodcock
-            feeding activity peaks on nights following rain events in spring. The same wet
-            conditions that bring earthworms within reach are why woodcocks need soft, moist
-            soil — compacted or chemically treated soil locks earthworms deeper than the bill
-            can reach or drives them away entirely.
+            American Woodcocks spend most of the day resting in dense cover, relying on
+            camouflage so effective they are rarely flushed even at arm&apos;s length.
+            At dusk they move to moist, open ground to probe for earthworms, which make up
+            most of the diet. The flexible bill tip can open underground without opening the
+            base — an adaptation for gripping worms at depth. In spring, males gather at
+            dawn and dusk on open singing grounds, calling with a nasal &quot;peent&quot;
+            before spiraling skyward on twittering wings and descending in a cascading
+            twitter. [1]
           </p>
         </section>
 
-        <figure className="species-content-photo">
+        <figure className="species-content-photo species-content-photo--right">
           <img
-            src="https://inaturalist-open-data.s3.amazonaws.com/photos/277509667/large.jpg"
-            alt="American Woodcock standing in dead leaves in Massachusetts in May, the mottled brown and black plumage breaking up the bird's outline so it reads as leaf debris rather than a bird"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/American_woodcock_in_Bryant_Park_%2854062%29.jpg/1280px-American_woodcock_in_Bryant_Park_%2854062%29.jpg"
+            alt="An American Woodcock walking on the ground, showing the large eye positioned high on the head and the mottled brown plumage"
+            width={1280}
+            height={938}
             loading="lazy"
           />
           <figcaption>
-            The woodcock's pattern fragments its own outline. The broad buff stripe across the
-            crown, the barred flanks, and the irregular dark patches across the back eliminate
-            the silhouette of a bird against the forest floor. A person walking two steps from
-            a sitting woodcock will usually not see it until it flushes — at which point it
-            makes a twittering sound and vanishes into the cover at the edge of the clearing.
-            <span className="photo-credit"> Photo: danjwilder&nbsp;·&nbsp;<a href="https://www.inaturalist.org/observations/160589960" target="_blank" rel="noopener noreferrer">iNaturalist obs. 160589960</a>&nbsp;· CC0 / No Rights Reserved</span>
+            The large eye positioned near the top of the head gives the Woodcock nearly
+            360-degree vision — useful for spotting predators while its bill is buried in the ground.
+            <span className="photo-credit"> Photo: Rhododendrites&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:American_woodcock_in_Bryant_Park_(54062).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
           </figcaption>
         </figure>
 
-        <section aria-labelledby="skydance-heading">
-          <h2 id="skydance-heading">The peenting, the spiral, the twittering descent — what the sky dance sounds like and what it means when you hear it from your yard</h2>
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Sometime in late February or early March — on the first evenings warm enough that
-            earthworm activity increases near the surface — male woodcocks move to small openings
-            near their brushy cover and begin displaying. The sequence runs identically each
-            evening from dusk until full dark, and again from before first light until sunrise.
-          </p>
-          <p>
-            The male stands in the opening and gives a buzzy, nasal call: <em>peent</em>. He
-            repeats it at roughly two-second intervals, turning slightly between calls. After
-            several minutes, he launches nearly vertically. Three narrow outer primary feathers
-            vibrate as air rushes through them on the climb, making a twittering sound not from
-            his throat but from his wings. He spirals upward to 200 to 300 feet. At the peak,
-            the twittering stops and the bird shifts to liquid chirping notes while dropping in
-            a zigzag descent. He lands back at nearly the same patch of ground — within three
-            to six feet of where he started.
-          </p>
-          <p>
-            Then he peents again and repeats the whole cycle, for 30 to 45 minutes.
-          </p>
-          <p>
-            A male that has a suitable clearing and nearby cover will use the same site for weeks
-            or months, returning each evening through the spring. If you hear a woodcock peenting
-            from a brushy margin near your yard, the bird has chosen that clearing as a territory.
-            That means suitable cover and moist soil are within 50 meters of the calling site.
+            American Woodcocks are among the earliest migrants, arriving on the breeding
+            grounds in late February and March as soon as the ground thaws enough to probe.
+            Males begin the evening display flight immediately on arrival. Females nest on
+            the forest floor, laying four eggs in a shallow scrape. Young birds can walk
+            within hours of hatching and begin probing for food within days. By fall they
+            migrate south, following the earthworm line south as ground freezes. [1]
           </p>
         </section>
 
-        <section aria-labelledby="habitat-heading">
-          <h2 id="habitat-heading">Young forest and thicket, not old growth — the weedy margins most homeowners schedule for clearing</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Woodcocks are not old-growth forest birds. They need young, shrubby habitat: thickets
-            of native dogwood, alder, elderberry, and buttonbush where the canopy is open enough
-            for the sky dance flight and the soil is moist enough to hold earthworms close to
-            the surface year-round.
-          </p>
-          <p>
-            Nesting happens in the thicket itself. The female scrapes a shallow depression at the
-            base of a shrub or against a fallen log and lays four eggs. The chicks can walk within
-            hours of hatching. She leads them each night to moist feeding areas and back to cover
-            before dawn.
-          </p>
-          <p>
-            What has been lost is not old-growth forest but the weedy, overgrown thicket edges
-            that most American suburbs have systematically eliminated since the 1950s. An
-            unmaintained hedge that escaped the lawn for a decade, a wet margin behind a garage
-            where native shrubs colonized, a brushy slope the homeowner has not gotten around to
-            clearing — each of these is candidate woodcock habitat. Clearing removes it permanently.
-          </p>
-        </section>
-
-        <figure className="species-content-photo">
-          <img
-            src="https://inaturalist-open-data.s3.amazonaws.com/photos/178456464/large.jpg"
-            alt="American Woodcock close view in North Carolina in February showing the eye positioned very high on the skull, almost at the top of the head, and the long bill extending forward"
-            loading="lazy"
-          />
-          <figcaption>
-            The eye sits so high on the skull that the woodcock has roughly 360° binocular
-            vision — including a field directly above the head while the bill is buried in
-            soil. The bird watches for aerial predators while feeding underground without
-            raising its head. The eye position is not incidental to the foraging posture;
-            both evolved together.
-            <span className="photo-credit"> Photo: gillydilly&nbsp;·&nbsp;<a href="https://www.inaturalist.org/observations/106250002" target="_blank" rel="noopener noreferrer">iNaturalist obs. 106250002</a>&nbsp;· CC0 / No Rights Reserved</span>
-          </figcaption>
-        </figure>
-
-        <section aria-labelledby="decline-heading">
-          <h2 id="decline-heading">40% gone since 1968 — the annual survey that tracks the peent count along the same roads every spring</h2>
-          <p>
-            The U.S. Fish and Wildlife Service has run the Woodcock Singing-Ground Survey since
-            1968: observers stop at fixed points along rural roads at dusk in April and count
-            calling males for the same three minutes each year. Since the survey began, the count
-            has declined approximately 1% per year across the eastern United States — more than
-            40% of the breeding population that existed when the survey started.
-          </p>
-          <p>
-            The decline tracks fastest in areas where young forest and brushy habitat have been
-            eliminated: the suburban fringe, where thickets have been replaced by maintained
-            lawns and ornamental plantings with no native shrub structure. Mature forest is also
-            unsuitable: the canopy closes off the openings the sky dance requires, and the soil
-            under a dense hardwood stand dries and compacts compared to the moist thicket floor.
-          </p>
-          <p>
-            Soil insecticide use is an additional pressure. Earthworms are the primary food
-            source for adults and the food source that chicks are led to in their first weeks.
-            Lawn treatments with imidacloprid and other systemic pesticides drive earthworms
-            deeper into the soil or kill them. A yard with chemically treated soil may have
-            no earthworms at any depth a woodcock bill can reach.
+            Partners in Flight estimates the breeding population at about 5.4 million. [2]
+            The U.S. Breeding Bird Survey shows a cumulative decline of approximately 68%
+            since 1968. [3] The IUCN lists it as Least Concern. [4] The primary driver is
+            loss of young forest habitat — the alder thickets, aspen, and early-successional
+            forest the Woodcock requires are disappearing as forests mature and shrubby
+            areas are developed or mowed. Earthworm availability in soft, moist soil is a
+            secondary limiting factor. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Stop clearing the thicket, plant three native shrubs, stop soil insecticides, and go out at dusk in March</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Stop clearing the brushy thicket edge.</strong>{' '}
-              If you have an area at the back of your yard where native shrubs or young trees
-              have colonized over the years, leave it. What looks like an overgrown area is the
-              structural combination of cover, foraging ground, and display space that a woodcock
-              needs. Mowing or clearing removes the cover element and typically eliminates the
-              moisture in the soil that keeps earthworms accessible at shallow depth through the
-              season.
+              Alder and young aspen thickets adjacent to moist openings are the most
+              valuable Woodcock habitat. Maintaining or creating shrubby, wet woodland edges
+              provides exactly what Woodcocks need for both nesting cover and food. [5]
             </li>
             <li>
-              <strong>Plant Buttonbush, Elderberry, or native dogwood in a moist corner.</strong>{' '}
-              These are the three most common native shrubs in documented woodcock thicket habitat
-              across the eastern United States. All three tolerate wet soil, grow dense enough to
-              provide cover, and need little maintenance once established. Three to five shrubs of
-              mixed species in a naturally moist corner of the yard creates the beginning of thicket
-              structure within two to three growing seasons.
+              Skipping pesticides and lawn chemicals preserves the earthworm populations
+              Woodcocks depend on. Earthworms are their primary food year-round. [5]
             </li>
             <li>
-              <strong>Stop applying soil insecticides.</strong>{' '}
-              Imidacloprid, chlorpyrifos, and other systemic soil treatments reduce earthworm
-              populations. Read labels on any grub or lawn pest control product — if the label
-              says to drench the soil, the treatment will reach earthworms at the depths a
-              woodcock probes. Biological alternatives for grubs (Milky Spore, Heterorhabditis
-              nematodes) do not harm earthworms.
+              Leaving moist low spots, seasonal pools, and wet edges in their natural state
+              — rather than draining or filling them — keeps the soft soil Woodcocks probe
+              in during migration and on the breeding grounds. [5]
             </li>
             <li>
-              <strong>Go out at dusk in late February or March and listen for the peent call.</strong>{' '}
-              Stand near any moist, shrubby area 20 to 30 minutes after sunset. The call is
-              a buzzy, nasal sound — nothing else in the same habitat makes it. Once you have
-              heard it, you will recognize it. The sky dance that follows the peenting lasts 30
-              to 45 minutes. A male peenting from the same clearing on multiple evenings has
-              chosen that site as a territory and is using cover and moist soil within 50 meters.
-              That means the habitat is there. It just needs to be left alone.
+              Visiting a local singing ground at dusk in March or early April to watch the
+              display flight raises awareness of this species and its habitat needs. Many
+              wildlife refuges host guided Woodcock walks in spring. [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Related pages</h2>
-          <div className="neighbor-grid">
-            <button className="neighbor-card" onClick={() => onNavigate('buttonbush')}>
-              <span className="neighbor-name">Buttonbush</span>
-              <span className="neighbor-note">Grows in standing water and moist thickets — the shrub that builds the wet-margin cover woodcocks use for daytime shelter and nesting</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('elderberry')}>
-              <span className="neighbor-name">Elderberry</span>
-              <span className="neighbor-note">Another thicket-forming native shrub in moist edges — provides cover structure for woodcock nesting and draws 70+ bird species with its August berries</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('wood-thrush')}>
-              <span className="neighbor-name">Wood Thrush</span>
-              <span className="neighbor-note">Shares the young forest and thicket habitat; also depends on earthworms and soil invertebrates under undisturbed leaf litter</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('whip-poor-will')}>
-              <span className="neighbor-name">Whip-poor-will</span>
-              <span className="neighbor-note">Another nocturnal bird displaying at dusk in spring at shrubby forest edges — the same habitat type, the same season, the same erasure from suburban thicket clearing</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('fireflies')}>
-              <span className="neighbor-name">Fireflies</span>
-              <span className="neighbor-note">Firefly larvae overwinter in the same moist leaf litter that keeps earthworm populations accessible near the surface — both species require the same undisturbed ground</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('common-nighthawk')}>
-              <span className="neighbor-name">Common Nighthawk</span>
-              <span className="neighbor-note">Another aerial displayer at dusk in spring — hunts open sky while the woodcock works the clearing below, both timed to the same warm March and April evenings</span>
-            </button>
-          </div>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('whip-poor-will')}>
+            <span className="neighbor-name">Whip-poor-will</span>
+            <span className="neighbor-note">A fellow nocturnal bird that uses the same forest edges and begins its evening activity at the same dusk hour.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-screech-owl')}>
+            <span className="neighbor-name">Eastern Screech-Owl</span>
+            <span className="neighbor-note">A nocturnal hunter that shares the same young woodland edge habitats through spring and summer.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('hermit-thrush')}>
+            <span className="neighbor-name">Hermit Thrush</span>
+            <span className="neighbor-note">A fellow early-arriving migrant that also requires moist forest floor and leaf litter habitat.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('ovenbird')}>
+            <span className="neighbor-name">Ovenbird</span>
+            <span className="neighbor-note">A ground-nesting forest bird that shares the woodcock&apos;s need for large forest patches and a deep leaf litter layer.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/American_Woodcock/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: American Woodcock (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/american-woodcock-scolopax-minor" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — American Woodcock</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
         </section>
       </div>
     </>

@@ -9,15 +9,18 @@ export default function ScarletTanager({ onNavigate }: ScarletTanagerProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Scarlet_tanager_in_GWC_%2850867%29.jpg/1280px-Scarlet_tanager_in_GWC_%2850867%29.jpg"
-          alt="Male Scarlet Tanager perched among spring leaves — the body is all-over crimson, the wings and tail jet black, the contrast visible from forty feet away through binoculars"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Scarlet_tanager_in_GWC_%2825303%29.jpg/1280px-Scarlet_tanager_in_GWC_%2825303%29.jpg"
+          alt="A male Scarlet Tanager perched in a tree, showing its brilliant red body and jet-black wings and tail"
           className="species-hero-image"
-          style={{ objectPosition: 'center' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={921}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
           Photo: Rhododendrites&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Scarlet_tanager_in_GWC_(50867).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          <a href="https://commons.wikimedia.org/wiki/File:Scarlet_tanager_in_GWC_(25303).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -26,310 +29,122 @@ export default function ScarletTanager({ onNavigate }: ScarletTanagerProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Scarlet Tanager</h1>
         <p className="hero__lead">
-          The male Scarlet Tanager arrives in Ohio in May burning a red so
-          saturated that most people who see one for the first time assume they
-          have seen something escaped from a zoo. By September, every red
-          feather on his body will have been replaced by olive-green. He will
-          look like his mate. He will cross the Caribbean in that disguise.
+          The male Scarlet Tanager is one of the most striking birds in eastern North
+          America — brilliant red body, jet-black wings and tail, no other markings.
+          Females are olive-yellow with dark wings. They live in the canopy of mature
+          deciduous forest, where they are heard far more often than seen. After breeding,
+          males molt into an olive-green plumage similar to the female before migrating
+          to South America for the winter. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="molt-heading">
-          <h2 id="molt-heading">Red in May, olive by September: the molt calendar</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The Scarlet Tanager (<em>Piranga olivacea</em>) is a mid-sized
-            songbird — 6.5 to 7.5 inches, weighing on average 25 grams during
-            the breeding season, roughly the weight of five nickels. The
-            breeding male is all-over crimson with jet-black wings and tail.
-            The female is olive-yellow above and yellowish below, her wings
-            slightly dusky. Both sexes sing from high in the canopy, often
-            invisible even to the binocular.
-          </p>
-          <p>
-            By late August, before migration, the male replaces every red body
-            feather with olive-green. The wings and tail remain dark, but the
-            body matches his mate exactly. The same day-length cues that
-            triggered breeding in May — detected through photoreceptors in the
-            brain — now trigger the hormonal cascade that begins molt. The bird
-            grows the disguise automatically, without reference to choice.
-          </p>
-          <p>
-            A male Scarlet Tanager in your shrubs in late September looks
-            nothing like the bird that sang from your oak canopy in May. The
-            olive bird is the same individual. He has already begun the trip
-            south.
+            Scarlet Tanagers forage in the forest canopy, picking caterpillars, beetles,
+            wasps, ants, and other insects from leaves and bark. They occasionally hawk
+            insects in the air. Their song is a series of burry, robin-like phrases —
+            a robin with a sore throat, as it is often described. The sharp &quot;chip-burr&quot;
+            call note is distinctive and useful for finding them in the canopy. They favor
+            the interior of large, intact forest patches and are rarely found in small
+            fragments. [1]
           </p>
         </section>
 
-        <section aria-labelledby="migration-heading">
-          <h2 id="migration-heading">26 grams of fat, 600 miles over open water</h2>
-          <p>
-            The Scarlet Tanager winters in the foothills of the Andes — in
-            Colombia, Ecuador, Bolivia, and Peru — 3,000 or more miles from
-            its breeding grounds in the eastern United States. The spring trip
-            from South America to Ohio requires crossing the Gulf of Mexico: 600
-            miles of open water with no land within reach.
-          </p>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/20240718_immature_scarlet_tanager_pleasant_valley_PD206172_02.jpg/1280px-20240718_immature_scarlet_tanager_pleasant_valley_PD206172_02.jpg"
+            alt="An immature Scarlet Tanager perched on a branch, showing the olive-yellow and dark-winged plumage of non-breeding birds"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            Females and immature males are olive-yellow with dark wings — a very different
+            look from the brilliant red breeding male, but equally distinctive once recognized.
+            <span className="photo-credit"> Photo: Paul Danese&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:20240718_immature_scarlet_tanager_pleasant_valley_PD206172_02.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/96/Piranga_olivacea1.jpg"
-              alt="Male Scarlet Tanager in late-summer molt transition — patches of olive-green replacing the crimson body feathers while the wings remain jet black"
-              loading="lazy"
-            />
-            <figcaption>
-              By late August, the male has begun replacing red body feathers
-              with olive-green — the same coloration as the female. The wings
-              and tail stay dark, but the body becomes indistinguishable from
-              his mate&apos;s. The molt is triggered by the same day-length
-              mechanism that ended breeding. Before migration, a healthy bird
-              can nearly double its body weight in subcutaneous fat, stored
-              in the days before departure, used entirely as fuel for the
-              Gulf crossing.
-              <span className="photo-credit"> Photo: Steve Maslowski&nbsp;·&nbsp;USFWS, public domain via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Before the spring crossing, a Scarlet Tanager can nearly double
-            its body weight in subcutaneous fat, stored in the days before
-            departure — from around 26 grams to close to 50. The fat is
-            visible under the skin above the legs of a healthy pre-migratory
-            bird. That fat is the only fuel for the Gulf crossing, completed
-            overnight in a single unbroken flight.
-          </p>
-          <p>
-            A bird that arrives on its breeding grounds lean — because it
-            could not refuel at quality stopover sites in the Southeast —
-            begins nesting later and with lower energy reserves. Research
-            tracking individuals via light-level geolocators shows that
-            tanagers from higher-quality wintering territories arrive
-            consistently earlier and produce more young per season. Studies
-            measuring this gap found differences of less than two weeks
-            between early and late arrivers — but two weeks at the start of
-            a breeding season that spans six weeks is roughly a third of it.
+            Scarlet Tanagers arrive in eastern forests in early to mid-May, one of the
+            latest spring migrants. Males arrive first and begin singing immediately to
+            establish territories. They build a shallow cup nest on a horizontal branch
+            high in the canopy. After the breeding season ends in July and August, males
+            undergo a complete molt into olive-yellow plumage. They depart for South
+            America by October, wintering in the northern Andes from Colombia to Bolivia.
+            [1]
           </p>
         </section>
 
-        <section aria-labelledby="area-heading">
-          <h2 id="area-heading">10 hectares, minimum — and why edges don&apos;t count</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            For a viable Scarlet Tanager breeding population, ornithologists
-            have established a minimum forest patch size of 10 to 12
-            hectares — about 25 to 30 acres — of contiguous forest. Multiple
-            studies measuring breeding density against forest patch size across
-            the eastern United States found that below 10 hectares, breeding
-            success dropped sharply toward zero.
-          </p>
-          <p>
-            The mechanism is brown-headed cowbird parasitism. Cowbirds are
-            brood parasites: they lay their eggs in other birds&apos; nests and
-            let the hosts raise their offspring. Cowbirds follow agricultural
-            and suburban edges. They can penetrate forest from an edge for up
-            to 300 meters. In a 10-hectare forest patch that is roughly
-            circular, almost no point is more than 175 meters from an edge.
-            Every Scarlet Tanager nest in that patch sits within cowbird range.
-          </p>
-          <p>
-            In a large, unbroken tract — 200 hectares or more — interior
-            nests are beyond the 300-meter penetration distance. Cowbird
-            parasitism rates in forest interior run under 5% for Scarlet
-            Tanager. In fragmented suburban patches, the same studies find
-            rates of 60 to 80%.
-          </p>
-          <p>
-            A pair in forest interior can produce three or four fledglings
-            from a successful nest. A pair in a fragmented suburban patch
-            facing 70% cowbird parasitism produces fewer than one per season.
-            The North American Breeding Bird Survey has tracked Scarlet
-            Tanager populations since 1966. The species has declined by
-            roughly 38% — approximately 1% per year — with the steepest
-            losses concentrated in the eastern portion of its range, where
-            forest fragmentation is most advanced.
-          </p>
-        </section>
-
-        <section aria-labelledby="oak-heading">
-          <h2 id="oak-heading">534 caterpillar species per oak, fewer than 10 per Norway maple</h2>
-          <p>
-            Scarlet Tanagers feed primarily on insects during the breeding
-            season — caterpillars, beetles, wasps, and other invertebrates
-            gleaned from leaves and bark in the canopy and midstory, plus
-            occasional aerial sallies to catch flying insects. A pair raising
-            four nestlings makes a food delivery every few minutes for 13 to
-            14 days straight. The caterpillar supply has to exist continuously
-            at scale across the entire foraging territory.
-          </p>
-          <p>
-            Native oaks (<em>Quercus</em> spp.) are the primary substrate.
-            Analysis of host-plant records from Lepidoptera literature
-            documents that a single native oak species supports 534 or more
-            caterpillar species through recorded host-plant relationships with
-            native moths and butterflies. Norway maple — one of the most
-            commonly planted suburban street and yard trees — supports fewer
-            than 10. Callery pear supports fewer than 5. A canopy layer of
-            Norway maples produces a fraction of the caterpillar biomass that
-            the same area of native oaks would generate in the same six-week
-            period.
-          </p>
-          <p>
-            In late summer, before the southbound crossing, Scarlet Tanagers
-            shift to native fruit — wild cherries, serviceberries, elderberries,
-            and flowering dogwood berries — to build the fat reserves that fuel
-            migration to South America. Yards and neighborhoods with native
-            shrubs that ripen fruit in July and August are refueling sites. A
-            yard with none of them is a yard the bird crosses without stopping.
+            Partners in Flight estimates the breeding population at about 2.7 million. [2]
+            The U.S. Breeding Bird Survey shows a cumulative decline of approximately 16%
+            since 1970. [3] The IUCN lists it as Least Concern. [4] As a forest-interior
+            specialist, it is particularly vulnerable to forest fragmentation — small
+            patches surrounded by edge habitat have much lower nesting success due to
+            Brown-headed Cowbird parasitism and increased predation. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Mature native trees kept, native oaks planted, late-summer fruiting shrubs, and no canopy insecticides</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Keep every mature native tree.</strong>{' '}
-              The Scarlet Tanager nests and forages in the canopy — it requires
-              trees tall enough to produce the closed-canopy microclimate of
-              forest interior. A mature native oak, tulip poplar, or black
-              cherry is the single most productive habitat unit for this species
-              in a suburban landscape. It cannot be replaced in a generation.
-              Do not remove it. Do not heavily prune it into a shape that
-              eliminates canopy closure.
+              Large, contiguous forest patches provide the interior habitat Scarlet Tanagers
+              require. Maintaining forest connectivity — green corridors linking patches —
+              supports both breeding success and migration staging. [5]
             </li>
             <li>
-              <strong>Plant native oaks if you don&apos;t have one.</strong>{' '}
-              A white oak (<em>Quercus alba</em>) planted today reaches
-              functioning caterpillar-producing capacity in 10 to 15 years.
-              Bur oak (<em>Q. macrocarpa</em>) tolerates compacted soil and
-              urban conditions better than most other oaks. Chinkapin oak
-              (<em>Q. muehlenbergii</em>) handles drier, limestone-influenced
-              sites. Any native oak planted now increases the caterpillar supply
-              this species depends on — not this year, but reliably across every
-              year the tree grows.
+              Native oaks support the caterpillar populations that Scarlet Tanagers depend
+              on during the energy-intensive nesting period. A single oak tree can support
+              hundreds of caterpillar species. [5]
             </li>
             <li>
-              <strong>Plant native shrubs with fruit ripening July through September.</strong>{' '}
-              Serviceberry (<em>Amelanchier</em> spp.), elderberry{' '}
-              (<em>Sambucus canadensis</em>), and native dogwoods{' '}
-              (<em>Cornus</em> spp.) all ripen fruit before or during early
-              southbound migration. Spicebush (<em>Lindera benzoin</em>) ripens
-              in September. These are the shrubs that fuel the trip to South
-              America. A yard with none of them offers the bird nothing at
-              departure. A yard with several of them is a refueling station on
-              a 3,000-mile route.
+              Skipping pesticides preserves the insects and caterpillars tanagers feed to
+              nestlings during the critical first weeks after hatching. [5]
             </li>
             <li>
-              <strong>Eliminate insecticide applications in the canopy zone.</strong>{' '}
-              Broad-spectrum sprays — mosquito services, tree injections for
-              scale insect control, lawn-care systemics — reduce caterpillar
-              populations for weeks following application. A single spray-service
-              pass can eliminate the caterpillar supply a breeding pair depends
-              on for the final days of nestling growth. The Scarlet Tanager
-              cannot supplement what the canopy has lost mid-season.
+              Supporting tropical forest conservation in the Andes protects the wintering
+              grounds where Scarlet Tanagers spend half the year. [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="neighborhood-heading">
-          <h2 id="neighborhood-heading">Why a neighborhood matters when a single yard doesn&apos;t</h2>
-          <p>
-            A typical suburban yard is 0.1 to 0.25 acres — far smaller than
-            the 25 acres of contiguous forest a Scarlet Tanager pair needs to
-            breed successfully. A single yard, however well planted, is not
-            breeding habitat for this species. But a neighborhood is not a
-            collection of single yards.
-          </p>
-          <p>
-            A block of 50 adjacent suburban properties, each maintaining
-            mature trees and native understory, covers 5 to 12 connected acres.
-            A dozen such blocks, loosely connected by corridors of yard trees
-            and green spaces, approaches the minimum threshold. The cumulative
-            decisions of homeowners along a forest edge — which trees to
-            remove, which to keep, whether to plant oaks or ornamentals —
-            determine whether the landscape functions as connected forest or
-            as isolated fragments too small to support breeding.
-          </p>
-          <p>
-            The Scarlet Tanager does not know what a backyard is. It reads
-            canopy density, caterpillar supply, and the distance between its
-            nest and the nearest clearing where cowbirds wait. The aggregate
-            of what homeowners plant and remove determines what it finds.
-          </p>
-        </section>
-
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Who shares this canopy — above and below</h2>
-          <p>
-            The Scarlet Tanager breeds in the same large-forest-interior tracts
-            that several other declining species require — species that
-            disappear from fragmented suburban landscapes for the same
-            cowbird and caterpillar reasons. Some work the layers below the
-            canopy. Others share the same breeding-ground-to-wintering-ground
-            trajectory across two continents.
-          </p>
-          <ul>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
-                Wood Thrush
-              </button>
-              {' — '}Forages the forest floor below the canopy where Scarlet Tanager feeds above;
-              shares the same cowbird pressure and caterpillar supply.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('eastern-wood-pewee')}>
-                Eastern Wood-Pewee
-              </button>
-              {' — '}Flycatches in the midstory of the same continuous forest interior; population has fallen over 37% since 1966.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('brown-creeper')}>
-                Brown Creeper
-              </button>
-              {' — '}Spirals up the same large tree trunks reading bark crevices while the tanager reads the canopy leaves above.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('ovenbird')}>
-                Ovenbird
-              </button>
-              {' — '}Nests on the forest floor directly below the tanager&apos;s canopy territory; both require patches of 10 or more acres of unbroken forest — below that threshold, cowbird parasitism rates climb past 60% for both species simultaneously.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('indigo-bunting')}>
-                Indigo Bunting
-              </button>
-              {' — '}Shares the same two-front population pressure: breeding habitat fragmented in the eastern US, wintering habitat in Central America converted to agriculture. The tanager winters in the Andes foothills; the bunting winters in the Caribbean lowlands — different destinations, same trajectory.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('downy-woodpecker')}>
-                Downy Woodpecker
-              </button>
-              {' — '}Excavates nest cavities into the same dead oaks and maples the tanager forages for caterpillars; the woodpecker creates the snag structure the tanager&apos;s whole guild depends on — dead wood at height, available year-round.
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Ready to build canopy habitat?</strong>{' '}
-            Stop canopy insecticides first with the{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticides &amp; Your Habitat guide
-            </button>
-            , then add native trees and shrubs using{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , understand what makes forest interior different from forest edge in the{' '}
-            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
-              Habitat Layers guide
-            </button>
-            , and remove the invasive understory shrubs that fragment the forest floor with the{' '}
-            <button className="link-button" onClick={() => onNavigate('invasive-plants')}>
-              Invasive Plants guide
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('wood-thrush')}>
+            <span className="neighbor-name">Wood Thrush</span>
+            <span className="neighbor-note">A fellow mature-forest specialist that arrives the same week in May and faces the same fragmentation pressures.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('ovenbird')}>
+            <span className="neighbor-name">Ovenbird</span>
+            <span className="neighbor-note">A ground-level forest bird that shares the same interior woodland and the same cowbird pressure in small patches.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-wood-pewee')}>
+            <span className="neighbor-name">Eastern Wood-Pewee</span>
+            <span className="neighbor-note">A neotropical migrant that hunts the same canopy airspace and migrates the same corridor south.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('baltimore-oriole')}>
+            <span className="neighbor-name">Baltimore Oriole</span>
+            <span className="neighbor-note">Another brilliant canopy neotropical migrant that arrives the same May week in the same tall trees.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Scarlet_Tanager/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Scarlet Tanager (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/scarlet-tanager-piranga-olivacea" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Scarlet Tanager</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
