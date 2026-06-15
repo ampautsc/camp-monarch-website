@@ -9,19 +9,19 @@ export default function CedarWaxwing({ onNavigate }: CedarWaxwingProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Cedar_Waxwing.jpg/960px-Cedar_Waxwing.jpg"
-          alt="Adult Cedar Waxwing perched on a branch — sleek gray-brown plumage grading to a yellow-tipped tail, raised brown crest, black mask from bill to nape, and small red waxy droplets on the secondary wing feathers"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/20230608_cedar_waxwing_PD26635.jpg/1280px-20230608_cedar_waxwing_PD26635.jpg"
+          alt="A Cedar Waxwing with sleek brown plumage, a pointed crest, black mask, and yellow-tipped tail, perched on a branch"
           className="species-hero-image"
-          style={{ objectPosition: 'center 30%' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={854}
           loading="eager"
-          onError={e => {
-            const img = e.currentTarget
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cedar_Waxwing_%28Bombycilla_cedrorum%29_%286756999697%29.jpg/960px-Cedar_Waxwing_%28Bombycilla_cedrorum%29_%286756999697%29.jpg'
-            img.onerror = null
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Kevin Cole&nbsp;&middot;&nbsp;CC BY 2.0 via Wikimedia Commons
+          Photo: Paul Danese&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:20230608_cedar_waxwing_PD26635.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
@@ -29,288 +29,117 @@ export default function CedarWaxwing({ onNavigate }: CedarWaxwingProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Cedar Waxwing</h1>
         <p className="hero__lead">
-          In late October a flock of 20 or 30 sleek crested birds descends on a backyard
-          serviceberry. They don&apos;t scatter — they work through the branches in sequence,
-          each bird picking berries and occasionally passing one beak-to-beak to the bird
-          beside it. They strip the shrub in 12 minutes. Then they lift off together and
-          are gone. You might not see them again for three weeks — or at all that winter.
-        </p>
-        <p className="hero__lead">
-          The Cedar Waxwing — <em>Bombycilla cedrorum</em> — holds no winter territory. It
-          roams in nomadic flocks of 10 to 100, tracking fruit availability across hundreds
-          of miles through fall and winter. Whether your yard falls in the flock&apos;s route
-          depends entirely on whether it has anything worth stopping for.
+          The Cedar Waxwing is a sleek, crested, brown bird with a black mask, a yellow band
+          at the tip of the tail, and small waxy red tips on several wing feathers. It travels
+          in flocks that follow ripe fruit, appearing in a yard one morning and gone the next.
+          It is one of the most specialized fruit-eating birds in North America, and its
+          movements through the year are shaped almost entirely by where berries are
+          available. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="wax-tips-heading">
-          <h2 id="wax-tips-heading">Red droplets on the secondary feathers, earned one winter at a time</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cedar_Waxwing_%28Bombycilla_cedrorum%29_%286756999697%29.jpg/960px-Cedar_Waxwing_%28Bombycilla_cedrorum%29_%286756999697%29.jpg"
-              alt="Cedar Waxwing close-up showing the full face and wing — brown crest, black mask with white border, bright yellow tail-band edge, and the small red waxy droplets visible on the folded secondary feathers"
-              loading="lazy"
-              onError={e => {
-                const img = e.currentTarget
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Cedar_Waxwing.jpg/480px-Cedar_Waxwing.jpg'
-                img.onerror = null
-              }}
-            />
-            <figcaption>
-              The Cedar Waxwing&apos;s plumage blends so smoothly that the bird
-              looks poured rather than assembled — warm brown fading to gray at
-              the wings, lemon yellow at the tail tip. The red droplets on the
-              folded secondary feathers are visible at close range. A bird with
-              six red tips has survived at least three full molts and three winters.
-              <span className="photo-credit"> Photo: Channel City Camera Club&nbsp;·&nbsp;CC BY 2.0 / Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Four field marks read cleanly at 20 feet: a raised brown crest; a black mask
-            running from the bill through and behind the eye; a bright yellow terminal band
-            on the tail; and the one that gives the bird its name — small red droplets sealed
-            to the tips of the secondary wing feathers. These droplets are not wax in the
-            household sense. The feather shaft extends past the vane and extrudes a hardened
-            secretion of keratin and red pigment, which cements to the feather tip like a wax
-            seal on a letter. The number of tips grows with each annual molt. A Cedar Waxwing
-            in its first fall carries none. A bird with eight tips has come through four
-            winters and four complete molt cycles.
-          </p>
-          <p>
-            Nest studies and captive-choice experiments have found that female Cedar Waxwings
-            pair more readily with males carrying more wax tips. The signal cannot be
-            counterfeited — a bird has exactly as many tips as it has survived molt cycles.
-            No first-year bird can wear the pattern of a five-year survivor. The tips function
-            as a ledger of continued existence displayed on the folded wing.
+            Cedar Waxwings eat fruit year-round, plucking berries whole and swallowing them
+            quickly. A flock can strip a berry-laden shrub in minutes. They also catch insects
+            on the wing during the breeding season, sallying out from a perch and returning.
+            Their call is a thin, high-pitched trill that a flock keeps up steadily while
+            feeding and in flight. [1]
           </p>
         </section>
 
-        <section aria-labelledby="nomadic-heading">
-          <h2 id="nomadic-heading">No fixed address — the flock follows whatever is ripe across hundreds of miles</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Cedar_waxwing_eating_a_mulberry_%2812175%29.jpg/1280px-Cedar_waxwing_eating_a_mulberry_%2812175%29.jpg"
+            alt="A Cedar Waxwing eating a mulberry, with the berry visible in its bill"
+            width={1280}
+            height={939}
+            loading="lazy"
+          />
+          <figcaption>
+            Cedar Waxwings eat berries whole and in quantity. A flock moving through a fruiting
+            tree or shrub can clear it in a single visit.
+            <span className="photo-credit"> Photo: Rhododendrites&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Cedar_waxwing_eating_a_mulberry_(12175).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Almost every songbird species familiar from backyard feeders holds a fixed winter
-            home range. The male Northern Cardinal in January is the same male Northern Cardinal
-            that nested in May. The Black-capped Chickadee working the same branch every morning
-            knows that branch — its location in the neighborhood flock hierarchy, the bark
-            crevices that reliably hold insect eggs, the order of shrubs worth visiting after a
-            snowfall. It returns because it remembers.
-          </p>
-          <p>
-            Cedar Waxwings accumulate none of this. Outside breeding season they form flocks
-            with no consistent membership, no fixed daily circuit, and no winter home. A flock
-            descends on a fruiting shrub, strips it, and moves on. The same flock may have been
-            in a city park 40 miles north the week before and will shift to a different property
-            — or a different county — within days. They do not learn your yard. They encounter
-            it, assess it, and either stop or don&apos;t. Their presence in any given yard in
-            November is not a sign of residency. It is a sign that your yard contained something
-            the flock&apos;s route happened across.
-          </p>
-          <p>
-            Within the flock, Cedar Waxwings pass berries beak-to-beak down a perched line —
-            a behavior documented even when all birds have equal access to the fruit. Researchers
-            studying the behavior under controlled conditions found that passing continues when
-            food is plentiful, which rules out a purely competitive foraging explanation.
-            The current interpretation is that it functions as pair-bond maintenance between
-            established mates — a way of reinforcing the social connection during the months
-            when breeding cues are absent.
+            Cedar Waxwings nest later than most songbirds, in June through August, timed to the
+            summer fruit crop. They build a loose cup of twigs, grass, and plant fibers in a
+            tree, often 6 to 20 feet up. Five to six eggs per clutch. Their movements are
+            nomadic rather than strictly migratory. Flocks shift north and south following fruit
+            availability, and they can appear in large numbers one winter and be absent the
+            next, depending on the berry crop. [1]
           </p>
         </section>
 
-        <section aria-labelledby="fermentation-heading">
-          <h2 id="fermentation-heading">Sixteen minutes from berry to seed — and, occasionally, longer</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cedar_Waxwing_-_Bombycilla_cedrorum_%286832789561%29.jpg/960px-Cedar_Waxwing_-_Bombycilla_cedrorum_%286832789561%29.jpg"
-              alt="Cedar Waxwing perched in a fruiting shrub, reaching toward a cluster of small red berries with bill extended"
-              loading="lazy"
-              onError={e => {
-                const img = e.currentTarget
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Cedar_Waxwing.jpg/480px-Cedar_Waxwing.jpg'
-                img.onerror = null
-              }}
-            />
-            <figcaption>
-              Cedar Waxwings move berries through the gut in as little as 16 minutes
-              — fast enough to process a large berry crop while still foraging. This
-              throughput rate also makes them one of the most effective seed
-              dispersers in temperate North America: seeds from a stripped
-              winterberry shrub may be deposited a mile away by nightfall.
-              <span className="photo-credit"> Photo: Channel City Camera Club&nbsp;·&nbsp;CC BY 2.0 / Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Cedar Waxwings move fruit through the digestive tract in as little as 16 minutes
-            from ingestion to seed excretion. This throughput rate allows a flock to process
-            the full caloric content of a berry crop while continuing to forage. They eat
-            until there is nothing left — not because they are greedy in any evaluative sense,
-            but because their digestive system is calibrated for volume rather than selectivity.
-          </p>
-          <p>
-            This becomes a problem with berries that have overripened or begun to ferment.
-            The sugars in mountain ash, pyracantha, or crabapple fruit that have been through
-            multiple freeze-thaw cycles produce enough ethanol to impair a bird weighing 30
-            grams. Cedar Waxwings have been found lying beneath berry trees in late fall —
-            alive but unable to fly, sitting on the ground under the same shrub that knocked
-            them down. In most documented cases the birds recover once the fermented material
-            clears their gut. Wildlife rehabilitators receiving Cedar Waxwings in October and
-            November regularly identify fermented berry ingestion as the cause of admission.
-          </p>
-          <p>
-            Through the breeding season — May into July — adults shift to insects. Nestlings
-            in the first days of life cannot digest raw fruit; they require the protein that
-            only insects deliver. Adult Cedar Waxwings in late May catch insects on the wing
-            by sallying from a perch, exactly like a flycatcher. By the time nestlings fledge
-            and begin foraging on their own, midsummer berries are ripening and the adults
-            have already moved back to fruit.
+            Partners in Flight estimates the breeding population at about 64 million. [2] The
+            U.S. Breeding Bird Survey shows a stable or slightly increasing population since
+            1966, likely helped by the spread of fruiting ornamental trees and the regrowth of
+            shrubby habitat in parts of the range. [3] The IUCN lists it as Least Concern. [4]
           </p>
         </section>
 
-        <section aria-labelledby="actions-heading">
-          <h2 id="actions-heading">What makes a yard visible to a nomadic flock in November</h2>
-          <p>
-            A Cedar Waxwing flock finds fruit by sight while moving. The plants that stop a
-            flock on a property are those carrying fruit in volume through November and into
-            January — after the earlier-fruiting shrubs have been stripped by September
-            migrants, and before the deep winter when crabapple and winterberry represent the
-            last food available in the landscape.
-          </p>
-          <ol className="action-list">
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <ol className="step-list">
             <li>
-              <strong>Winterberry holly (<em>Ilex verticillata</em>)</strong> — native shrub,
-              6 to 10 feet, tolerates wet to moist soils, bright red berries holding from
-              October through January or later. Requires both male and female plants; one male
-              pollinates up to five females within about 50 feet. A well-fruited winterberry
-              in December draws Cedar Waxwings, Hermit Thrushes, and American Robins to the
-              same branch.
+              Native fruit-bearing trees and shrubs such as serviceberry, dogwood, winterberry
+              holly, and cedar (eastern red cedar) draw waxwing flocks when the fruit
+              ripens. [5]
             </li>
             <li>
-              <strong>Arrowwood viburnum (<em>Viburnum dentatum</em>)</strong> — native shrub,
-              6 to 8 feet, blue-black berries ripening in August and September. The early
-              timing catches fall migration waxwing flocks before the later-fruiting species
-              come in. A property with both arrowwood and winterberry has fruit available from
-              August through January — the full migration-and-wintering window.
+              A mix of species that fruit at different times, from early summer serviceberry
+              through winter-persistent winterberry, extends the window when waxwings have
+              reason to visit. [5]
             </li>
             <li>
-              <strong>Pagoda dogwood (<em>Cornus alternifolia</em>)</strong> — native understory
-              tree, 15 to 25 feet, dark blue-black berries in August. Dogwood berries are among
-              the highest-fat native fruits — roughly 35% fat by dry weight. A migrant bird
-              stopping in a yard with pagoda dogwood in late August can double its fat reserves
-              in three to four days of feeding.
+              Windows near fruiting trees are a collision risk for fast-flying flocks. Visible
+              patterns or external screens on glass within 30 feet of a berry-producing tree
+              reduce strikes. [5]
             </li>
             <li>
-              <strong>Native crabapple (<em>Malus</em> species)</strong> — small tree, 15 to 20
-              feet, fruit persisting through December. Crabapples that hold through hard freezes
-              serve as the last food standing for Cedar Waxwings and Northern Mockingbirds once
-              everything else is gone. Choose a variety with small persistent fruit under 1 inch
-              — large-fruited ornamental crabapples tend to drop too early to serve as winter food.
+              Avoiding pesticides on fruit-bearing plants protects a bird that eats berries
+              whole and in large quantities. [5]
             </li>
           </ol>
-        </section>
+        </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Who else strips the same winter shrubs</h2>
-          <p>
-            A yard with winterberry, native viburnum, and crabapple in November is not waiting
-            for one species. Cedar Waxwings, Hermit Thrushes, American Robins, and
-            Yellow-rumped Warblers use the same fruiting shrubs, often on the same days. Each
-            arrives differently — the waxwing in a nomadic flock that will not return on any
-            schedule, the thrush as a quiet individual that wintered on the same block last year,
-            the robin in loose migratory flocks following the fruit south, the warbler alone
-            or in small groups, working the shrub surface for berries the others missed.
-          </p>
-          <ul>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('hermit-thrush')}>
-                Hermit Thrush
-              </button>
-              {' — '}Establishes a small individual winter territory anchored to a native
-              fruiting shrub and returns to the same yard in consecutive winters. When a Cedar
-              Waxwing flock strips the winterberry in 12 minutes, the thrush — too small and
-              too solitary to compete — watches from the adjacent brush and waits.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('yellow-rumped-warbler')}>
-                Yellow-rumped Warbler
-              </button>
-              {' — '}The only warbler that overwinters regularly in the eastern US, because it
-              produces digestive enzymes that crack the wax coating on bayberry and myrtle
-              berries — a food source other warblers cannot use. The waxwing and the warbler
-              overlap on the same winter shrub patches by different chemical routes.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('american-robin')}>
-                American Robin
-              </button>
-              {' — '}Does not fully migrate in winter so much as relocate to wherever fruit
-              persists. Flocks of 50 to 200 robins descend on a crabapple or winterberry in
-              January and can clear it within a day. Cedar Waxwing and robin flocks often
-              move through an area in loose association, both tracking the same fruit
-              concentrations.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('buttonbush')}>
-                Buttonbush
-              </button>
-              {' — '}Native shrub for wet edges and rain gardens; seed heads persist through
-              fall and draw waxwings along with other species. Pairs naturally with winterberry
-              in any yard where drainage is slow.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('winterberry-holly')}>
-                Winterberry Holly
-              </button>
-              {' — '}Native deciduous holly; red berries hold through January on bare stems
-              in wet-edge sites — the last food source in the landscape when everything else
-              has been stripped.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('arrowwood-viburnum')}>
-                Arrowwood Viburnum
-              </button>
-              {' — '}Native shrub; blue-black drupes ripen in August and September — three
-              months before winterberry. Fall migration waxwing flocks hit arrowwood first,
-              before the later-fruiting species are ready. A yard with both arrowwood and
-              winterberry holds fruit from August through January.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('northern-mockingbird')}>
-                Northern Mockingbird
-              </button>
-              {' — '}Holds a winter food territory anchored to a single crabapple or winterberry.
-              When a Cedar Waxwing flock descends on the defended shrub, the mockingbird —
-              outnumbered by 20 to 60 birds — cannot hold the patch. It retreats, waits, and
-              resumes defense of whatever the flock left behind.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('hackberry')}>
-                Hackberry
-              </button>
-              {' — '}Native large-canopy tree; small dark purple drupes ripen in September
-              and October and Cedar Waxwing flocks consume them in the same window as
-              winterberry and crabapple; waxwings deposit hackberry seeds in droppings wherever
-              they perch, placing new hackberry seedlings in fence rows and property edges
-              throughout their range.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('hackberry-emperor')}>
-                Hackberry Emperor
-              </button>
-              {' — '}Breeds only on hackberry — the same tree Cedar Waxwings seed into fence rows by depositing the pits in droppings wherever they perch; caterpillars overwinter in the leaf litter at the base of the trunk that waxwings planted; the butterfly's range follows the waxwing's planting range.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('tawny-emperor')}>
-                Tawny Emperor
-              </button>
-              {' — '}Near-twin of the Hackberry Emperor on the same host tree; lays eggs in stacks of 100 to 500 on a single hackberry leaf, with caterpillars that overwinter in the leaf litter under the same trees that Cedar Waxwings seeded from a droppings-stop on a fence rail.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('american-snout')}>
-                American Snout
-              </button>
-              {' — '}A third butterfly that breeds only on hackberry; Cedar Waxwings deposit hackberry seeds in droppings wherever the flock perches after eating the fruit — each new seedling extends the range of the Snout into yards that had no hackberry before the flock came through.
-            </li>
-          </ul>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('american-robin')}>
+            <span className="neighbor-name">American Robin</span>
+            <span className="neighbor-note">Another fruit-eating thrush that shares the same berry shrubs, especially in winter.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('hermit-thrush')}>
+            <span className="neighbor-name">Hermit Thrush</span>
+            <span className="neighbor-note">Winters on the same native viburnum and winterberry shrubs, foraging alone where the waxwing arrives in flocks.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('northern-cardinal')}>
+            <span className="neighbor-name">Northern Cardinal</span>
+            <span className="neighbor-note">A year-round seed-and-fruit eater that shares many of the same native shrubs.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-goldfinch')}>
+            <span className="neighbor-name">American Goldfinch</span>
+            <span className="neighbor-note">Another late nester of yards and field edges, though it eats seeds where the waxwing eats fruit.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Cedar_Waxwing/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Cedar Waxwing (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/cedar-waxwing-bombycilla-cedrorum" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Cedar Waxwing</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
         </section>
       </div>
     </>
