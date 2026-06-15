@@ -9,20 +9,19 @@ export default function AmericanLady({ onNavigate }: AmericanLadyProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/2124214/large.jpg"
-          alt="American Lady butterfly (Vanessa virginiensis) — orange and brown butterfly with wings open on a flower, showing white spots near the forewing tip"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/366_American_Lady_-_Vanessa_virginiensis%2C_Merrimac_Farm_Wildlife_Management_Area%2C_Aden%2C_Virginia.jpg/1280px-366_American_Lady_-_Vanessa_virginiensis%2C_Merrimac_Farm_Wildlife_Management_Area%2C_Aden%2C_Virginia.jpg"
+          alt="An American Lady butterfly with wings fully open showing its orange and black upperwing pattern with the distinctive white spot on the forewing orange area"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={818}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/45554477/large.jpg'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Susan Elliott&nbsp;·&nbsp;
-          <a href="https://www.inaturalist.org/photos/2124214" target="_blank" rel="noopener noreferrer">CC BY-NC via iNaturalist</a>
+          Photo: Judy Gallagher&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:366_American_Lady_-_Vanessa_virginiensis,_Merrimac_Farm_Wildlife_Management_Area,_Aden,_Virginia.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
@@ -30,193 +29,133 @@ export default function AmericanLady({ onNavigate }: AmericanLadyProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>American Lady</h1>
         <p className="hero__lead">
-          An orange butterfly lands on a coneflower and holds its wings open in the sun. It looks like
-          a Painted Lady — the same warm orange, the same dark pattern across the upper wing surface.
-          Turn it over in your mind and look for one thing: when the wings close, two large circular
-          eyespots appear on the hindwing underside. Not four small ones, not a row of dots — two large
-          circles, each with a pale blue pupil, looking back at you. That is the American Lady.
-          The caterpillar that became this butterfly built a silk tent around a single leaf of pearly
-          everlasting and ate its way out from inside.
+          The American Lady is a close relative of the Painted Lady, with similar orange
+          and black patterning — but the two are easy to tell apart on the underside:
+          the American Lady has two large eyespots on the hindwing underside while the
+          Painted Lady has four small ones. On the upperwing, the American Lady has a
+          distinctive small white spot inside the orange area of the forewing that the
+          Painted Lady lacks. Wingspan is 1.75 to 2.6 inches. It is common in open,
+          sunny areas across eastern North America. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="fieldmarks-heading">
-          <h2 id="fieldmarks-heading">Two large eyespots on the hindwing underside, not four small ones — the one field mark that separates American Lady from Painted Lady every time</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The American Lady (<em>Vanessa virginiensis</em>) and the Painted Lady (<em>Vanessa cardui</em>)
-            are among the most commonly confused butterflies in eastern North America. Both are orange with
-            dark patterning on the upper surface, both nectar at the same flowers, and both can be present
-            in the same garden on the same afternoon. The underside of the hindwing settles the question
-            immediately: the American Lady has two large eyespots with blue centers; the Painted Lady has
-            four small eyespots arranged in a row.
-          </p>
-          <p>
-            On the upper surface, the American Lady carries two white spots near the tip of the forewing
-            against an orange background — the top spot sits in a field of orange, not against the dark
-            border the way Painted Lady's spots do. The hindwing above is orange with dark patterning and
-            a row of blue spots along the outer margin. Wingspan runs from 1.75 to 2.25 inches. Both sexes
-            look similar from above.
-          </p>
-          <p>
-            The American Lady is a permanent resident throughout the southeastern United States and moves
-            north each spring as far as southern Canada. Populations in the northern part of the range do
-            not overwinter — the adults that appear in northern gardens in June arrived from the south
-            within the previous few weeks. A second generation flies in late summer before the adults
-            move south again in September and October.
+            American Ladies are fast, energetic fliers of open sunny areas. Adults
+            nectar on a variety of native wildflowers — native asters, native thistles,
+            milkweeds, goldenrod, and native clovers are favorites. They are among the
+            most common butterflies at native wildflower gardens through summer. Males
+            perch on the ground or low vegetation in sunny spots, sometimes for hours,
+            challenging any other butterfly that flies through. The two large eyespots
+            on the hindwing underside are the most reliable field mark: they resemble
+            owl eyes and have been documented as a predator-startling defense. [1]
           </p>
         </section>
 
-        <section aria-labelledby="host-heading">
-          <h2 id="host-heading">Pearly everlasting, a white-flowered meadow plant that most homeowners have never grown — the caterpillar builds a silk tent around a single leaf and feeds inside</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://inaturalist-open-data.s3.amazonaws.com/photos/303642323/large.jpg"
-              alt="American Lady caterpillar (Vanessa virginiensis) — a dark caterpillar with white spots and yellow banding on the side, resting on a plant"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/96166954/large.jpg'
-              }}
-            />
-            <figcaption>
-              The American Lady caterpillar is dark with a row of white spots along the back and bright
-              yellow banding on the sides. It feeds on pearly everlasting (<em>Anaphalis margaritacea</em>)
-              and pussytoes (<em>Antennaria</em> spp.) — two native composites that tolerate dry, disturbed
-              soil where most garden plants fail.
-              <span className="photo-credit"> CC0 via iNaturalist</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/American_lady_on_purple_coneflower_%2874770%29.jpg/1280px-American_lady_on_purple_coneflower_%2874770%29.jpg"
+            alt="An American Lady butterfly nectaring on purple coneflower showing the orange and black wing pattern from above"
+            width={1280}
+            height={948}
+            loading="lazy"
+          />
+          <figcaption>
+            American Ladies are highly attracted to native coneflowers (Echinacea),
+            which bloom at the peak of the summer flight period. The combination of
+            open landing platform and abundant nectar makes coneflowers one of the
+            most productive butterfly-watching plants in the native garden.
+            <span className="photo-credit"> Photo: Rhododendrites&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:American_lady_on_purple_coneflower_(74770).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            The American Lady's primary host plants are pearly everlasting (<em>Anaphalis margaritacea</em>)
-            and pussytoes (<em>Antennaria</em> spp.) — two low-growing composites in the aster family
-            with white or silvery flower heads. Both grow in dry, open conditions: roadsides, old fields,
-            disturbed edges, thin rocky soil. They are not plants typically sold in garden centers. A
-            homeowner who adds them to a dry sunny slope is providing something most cultivated gardens
-            cannot offer.
+            American Ladies overwinter as adults in the South and migrate north in
+            spring; they cannot reliably survive cold northern winters. Two to three
+            generations are produced each year, with adults present from April through
+            October. Caterpillars feed on pussytoes (Antennaria), pearly everlasting
+            (Anaphalis), and other plants in the aster family — typically making silk
+            nests of tied leaves that are the easiest way to locate caterpillars.
+            Unlike the Painted Lady, which uses dozens of host plants, the American
+            Lady specializes on this narrow group of plants with woolly leaves. [1]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            The caterpillar does not feed openly on the host plant. It draws silk threads across a single
-            leaf, pulling the leaf edges inward until the leaf curls into a loose tent around its body.
-            Inside the tent, the caterpillar feeds on the leaf surface and the surrounding tissue,
-            expanding the structure as it grows. Each instar builds a new tent on a fresh leaf. A plant
-            with American Lady caterpillars shows a scatter of curled, silk-bound leaves — the architecture
-            is visible, but the caterpillar inside is not.
-          </p>
-          <p>
-            The pupal stage lasts approximately 10 to 14 days. The chrysalis is formed outside the tent,
-            suspended by a silk pad from a stem or other support near the host plant. It is pale green
-            to brownish with gold-tipped bumps along the dorsal surface — the same metallic points found
-            on monarch and fritillary chrysalises.
+            The American Lady is common and not of conservation concern. [1] Its
+            population varies year to year depending on spring immigration from southern
+            overwintering populations. It is less abundant in the north than the Painted
+            Lady in most years but far more regular. The most significant limitation in
+            the suburban landscape is loss of pussytoes and pearly everlasting — native
+            plants of old fields and dry, open ground that are declining as developed
+            landscapes mature. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Plant pearly everlasting in a sunny dry spot — it will spread slowly and host American Lady caterpillars in season</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant pearly everlasting (<em>Anaphalis margaritacea</em>) in full sun with dry to medium, well-drained soil.</strong>{' '}
-              Pearly everlasting grows 1 to 2 feet tall with woolly white stems and clusters of small
-              papery white flower heads that hold their shape after the plant dries. It spreads by
-              rhizome into a loose colony over several years and tolerates sandy or gravelly soil where
-              more demanding plants fail. The white flower clusters attract multiple bee species, and the
-              dried stems hold seeds through winter. Find it with{' '}
-              <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-                Choose a Plant
-              </button>
-              .
+              Plant pussytoes (Antennaria plantaginifolia or A. neglecta). Pussytoes
+              is the primary caterpillar host plant for American Lady. It is a low-growing
+              native groundcover for dry, sunny, well-drained soil — perfect for dry
+              slopes, rock gardens, and thin lawn margins. It rarely grows in standard
+              garden beds but thrives in the spare corners where little else grows. [2]
             </li>
             <li>
-              <strong>Add pussytoes (<em>Antennaria plantaginifolia</em> or <em>Antennaria neglecta</em>) as a low-growing companion in lean soil.</strong>{' '}
-              Pussytoes form a dense mat of grey-green rosettes that rarely exceeds 6 inches when not
-              in flower. They grow in dry, sunny, nutrient-poor soil — the kind of spot where grass
-              struggles and mulch is unnecessary. American Lady females will oviposit on both pearly
-              everlasting and pussytoes, and the two plants together extend the period when suitable
-              host material is available, since pussytoes emerges slightly earlier in spring.
+              Plant pearly everlasting (Anaphalis margaritacea). Pearly everlasting is
+              an alternative host plant, slightly taller than pussytoes, native to dry
+              open areas and disturbed ground. Its white papery flowers are also a
+              nectar source and dry beautifully for arrangements. [2]
             </li>
             <li>
-              <strong>Leave the white flower heads standing through September.</strong>{' '}
-              American Lady adults nectar at pearly everlasting flowers in late summer, during the same
-              weeks when second-generation females are laying eggs on the plant. Cutting the plant back
-              before September removes both the nectar source and the active oviposition substrate. The
-              dried flower heads hold structure well through winter and can be left standing as overwintering
-              cover for small insects before removing them in early spring.
+              Plant native purple coneflower (Echinacea purpurea). Coneflower is one
+              of the most reliable nectar plants for American Ladies and many other
+              summer butterflies. Its flat, open flower heads are easy landing platforms
+              and it blooms for weeks in July and August. [2]
             </li>
             <li>
-              <strong>Do not disturb the curled, silk-bound leaves on the host plant from June through September.</strong>{' '}
-              Each curled leaf contains a caterpillar in one of its five instars. Pulling the leaves
-              open — even out of curiosity — exposes the caterpillar before it is ready to pupate. If
-              the plant looks untidy because of the tents, that is the correct appearance for a plant
-              doing its job. The tents will be abandoned by October.
+              Allow old-field plants to grow on dry, sunny margins. American Lady host
+              plants — pussytoes, everlastings — are old-field natives that thrive
+              where the soil is thin, dry, and compacted. A dry sunny bank or slope
+              that is mowed only once a year in late fall can support these plants
+              and the butterflies that depend on them. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">Who else uses dry meadow and the white-flowered composite family in late summer</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('painted-lady')}>
-                Painted Lady
-              </button>{' '}
-              &mdash; the butterfly most often confused with American Lady; four small eyespots on
-              the hindwing underside instead of two large ones; uses thistles and mallows as host
-              plants rather than everlastings; a global migrant that appears across the continent
-              in some years in high numbers when conditions drive northward movement from the southwest
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('pearl-crescent')}>
-                Pearl Crescent
-              </button>{' '}
-              &mdash; another orange butterfly that uses dry meadow and sunny openings; uses native
-              asters as host plants; smaller than American Lady but occupies the same habitat edges
-              and blooming roadsides from late spring through fall; both species nectar at composites
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('purple-coneflower')}>
-                Purple Coneflower
-              </button>{' '}
-              &mdash; American Lady adults nectar heavily at coneflower from July through September;
-              a yard with coneflower near a patch of pearly everlasting places the adult food source
-              and the larval host plant within a few feet of each other; coneflower also hosts native
-              bees and goldfinches on the seed heads through fall
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('black-eyed-susan')}>
-                Black-Eyed Susan
-              </button>{' '}
-              &mdash; another late-summer composite that American Lady adults visit for nectar; blooms
-              at roughly the same time as pearly everlasting and grows in similar dry, sunny conditions;
-              planting both together gives adults multiple nectar sources while keeping them close to
-              the host plant colony
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('great-spangled-fritillary')}>
-                Great Spangled Fritillary
-              </button>{' '}
-              &mdash; a larger orange butterfly that shares the same nectar plants in midsummer;
-              uses violets as host plants rather than composites; adults of both species appear on
-              coneflower and bergamot from July onward, giving a yard with multiple native composites
-              two species of orange butterfly through the same weeks
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>A dry sunny slope with pearly everlasting, pussytoes, and coneflower hosts the whole cycle.</strong>{' '}
-            Browse the full plant collection with{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , find what is blooming now in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            , and see which other visitors share the summer composite patch with the orange butterflies.
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('painted-lady')}>
+            <span className="neighbor-name">Painted Lady</span>
+            <span className="neighbor-note">The closest relative and lookalike — tell them apart by the hindwing underside (2 large eyespots = American Lady; 4 small = Painted Lady) and the small white spot inside the orange forewing area of the American Lady.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('red-admiral')}>
+            <span className="neighbor-name">Red Admiral</span>
+            <span className="neighbor-note">A fellow Vanessa butterfly often seen in the same open gardens; Red Admirals visit the same native wildflowers and share the fast, territorial flight style common to all Vanessa species.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('purple-coneflower')}>
+            <span className="neighbor-name">Purple Coneflower</span>
+            <span className="neighbor-note">One of the most reliable nectar plants for American Ladies — a native garden with purple coneflower in bloom in July reliably draws American Ladies, Painted Ladies, and many other summer butterflies.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
+            <span className="neighbor-name">Canada Goldenrod</span>
+            <span className="neighbor-note">A premier late-summer and fall nectar source for American Ladies nectaring before fall departure; goldenrod blooming in September is essential fuel for many migrating and late-season butterfly species.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Vanessa_virginiensis/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: American Lady</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Vanessa-virginiensis" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — American Lady</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
