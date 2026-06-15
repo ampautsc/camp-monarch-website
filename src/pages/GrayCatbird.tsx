@@ -9,20 +9,18 @@ export default function GrayCatbird({ onNavigate }: GrayCatbirdProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gray_catbird_%2885315%29.jpg/960px-Gray_catbird_%2885315%29.jpg"
-          alt="Adult gray catbird perched among vegetation showing slate-gray plumage, black cap, long tail, and rust-colored undertail coverts"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/20240622_gray_catbird_casa_PD201816.jpg/1280px-20240622_gray_catbird_casa_PD201816.jpg"
+          alt="A Gray Catbird perched on a branch, showing its slate-gray plumage, darker cap, and long tail"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={853}
           loading="eager"
-          onError={e => {
-            const img = e.currentTarget
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gray_Catbird_in_the_grass.jpg/960px-Gray_Catbird_in_the_grass.jpg'
-            img.onerror = null
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Rhododendrites&nbsp;&middot;&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Gray_catbird_(85315).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          Photo: Paul Danese&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:20240622_gray_catbird_casa_PD201816.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -31,271 +29,115 @@ export default function GrayCatbird({ onNavigate }: GrayCatbirdProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Gray Catbird</h1>
         <p className="hero__lead">
-          The sound from the hawthorn at the back of the yard in May is not a cat. A gray
-          catbird &mdash; slate gray, black-capped, smaller than a robin &mdash; has landed
-          inside the thicket and is singing from somewhere within it. The bird is audible from
-          ten feet away and invisible. That is deliberate. The catbird positions itself inside
-          the shrub&apos;s leaf canopy, where foliage breaks line-of-sight in every direction.
-          The genus name is <em>Dumetella</em> &mdash; Latin for &ldquo;small thornbush-dweller.&rdquo;
-        </p>
-        <p className="hero__lead">
-          A female catbird arriving from the Caribbean in early May looks at the thickest
-          available shrub, approaches from below, and presses upward through the branching
-          structure at three to six feet. She is measuring whether the branch forks are dense
-          enough to anchor a nest cup. A hedge pruned to vertical stubs in April has no such
-          forks. She passes it over and moves on.
+          The Gray Catbird is a slim, slate-gray bird with a darker cap and a patch of
+          chestnut under the tail, found in dense shrubs and thickets across the eastern
+          United States and southern Canada. It is named for its flat, nasal &quot;mew&quot;
+          call. It is the third eastern member of the mimid family, alongside the Northern
+          Mockingbird and the Brown Thrasher, and it sings a long rambling stream of notes and
+          phrases, each one used once before moving on. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="song-heading">
-          <h2 id="song-heading">The phrase sung once</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Dumetella_carolinensis-calling.jpg/960px-Dumetella_carolinensis-calling.jpg"
-              alt="Gray catbird with bill open mid-call perched among green foliage, showing slate-gray plumage and black cap"
-              loading="lazy"
-              onError={e => {
-                const img = e.currentTarget
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gray_catbird_%2885315%29.jpg/960px-Gray_catbird_%2885315%29.jpg'
-                img.onerror = null
-              }}
-            />
-            <figcaption>
-              A gray catbird calling from inside a shrub. The catbird almost never sings from
-              an exposed branch &mdash; it positions itself within the canopy where foliage
-              scatters the sound and makes locating the singer difficult even from close range.
-              <span className="photo-credit"> Photo: Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The gray catbird&apos;s song differs from its two closest relatives in one
-            structural way. A northern mockingbird repeats each phrase three to four times
-            before moving to the next. A brown thrasher repeats each phrase exactly twice.
-            The catbird sings each phrase once and moves immediately to the next. The result
-            is a continuous, non-repeating stream of squeaks, whistles, raspy mews, and
-            mimicry that can run uninterrupted for ten minutes or more.
-          </p>
-          <p>
-            <em>Dumetella carolinensis</em> is a mimic: it draws phrases from other birds
-            it has heard, from tree frogs, from mechanical sounds &mdash; and assembles them
-            in a running sequence that differs across individuals and is never repeated within
-            a single bird&apos;s performances. The catlike mew that gives the species its name
-            is one phrase among many, woven into the song and also delivered standalone as an
-            alarm call when a predator approaches the nest.
-          </p>
-          <p>
-            Because the catbird sings from inside the shrub, the sound arrives from no clear
-            direction. It bounces off leaf mass and branch structure in a way that makes
-            triangulating the source difficult even from a few feet away. A pair can carry out
-            an entire nesting season in a yard hawthorn and go unnoticed by the homeowner
-            except as a meowing sound from the direction of the hedge.
+            Gray Catbirds forage in dense shrubs and in the leaf litter beneath them, eating
+            insects, spiders, and berries. They glean insects from leaves and branches at
+            mid-shrub height and pick fruit directly from stems. They tend to stay hidden
+            inside tangles of vegetation, and the cat-like call from inside a bush is often
+            the first sign one is present. [1]
           </p>
         </section>
 
-        <section aria-labelledby="nesting-heading">
-          <h2 id="nesting-heading">What the female finds inside the thicket</h2>
-          <figure className="species-content-photo species-content-photo--left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gray_Catbird_nest_and_egg.jpg/960px-Gray_Catbird_nest_and_egg.jpg"
-              alt="Gray catbird nest woven into a cedar shrub four feet above the ground, holding one smooth light-blue egg"
-              loading="lazy"
-            />
-            <figcaption>
-              A gray catbird nest inside a cedar shrub at four feet, holding a single light-blue
-              egg. The nest is built over five to six days and woven directly into a branching
-              fork &mdash; not resting on a flat surface, but anchored in the crook of multiple
-              living stems. Without that fork structure, the nest cannot be built at that height.
-              <span className="photo-credit"> Photo: Wikimedia Commons / Public domain</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gray_catbird_with_a_berry_%2816665%29.jpg/1280px-Gray_catbird_with_a_berry_%2816665%29.jpg"
+            alt="A Gray Catbird holding a berry in its bill"
+            width={1280}
+            height={947}
+            loading="lazy"
+          />
+          <figcaption>
+            Catbirds eat both insects and berries, shifting toward fruit in late summer and
+            fall as native berries ripen.
+            <span className="photo-credit"> Photo: Rhododendrites&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Gray_catbird_with_a_berry_(16665).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Gray catbirds build a bulky cup of twigs, bark strips, dried grass, and leaves,
-            lined with fine rootlets and plant fiber. The outer structure looks loose from
-            below, but the nest is woven into a living branch fork so that its weight
-            distributes across multiple stems. Both birds contribute to construction over
-            five to six days. The finished cup is 4 to 5 inches across, and the eggs &mdash;
-            three to five per clutch &mdash; are plain, unmarked light blue with no pattern
-            on the shell.
+            Gray Catbirds nest in dense shrubs 3 to 10 feet off the ground, building a bulky
+            cup of twigs and leaves. Three to five eggs per clutch, and pairs often raise two
+            broods. Unlike the mockingbird and the Brown Thrasher, catbirds are one of the few
+            species that regularly recognize and eject Brown-headed Cowbird eggs from their
+            nests. They migrate in fall, wintering in the southeastern United States, the
+            Caribbean, and Central America, and return in late April and May. [1]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            The typical nesting height is 3 to 6 feet inside a dense shrub: hawthorn,
-            spicebush, native viburnum, elderberry, multiflora rose, or bramble. The female
-            selects the site by approaching from below and pressing upward into the branching
-            layer. She is testing whether stems fork and cross with enough density that the
-            nest cup can be anchored without resting on a single branch that might flex or
-            bend under weight.
-          </p>
-          <p>
-            Most spring hedge pruning in the upper Midwest and Northeast happens between
-            late March and mid-May. Gray catbirds arrive on their breeding grounds between
-            late April and mid-May. A shrub pruned to primary stubs in April has only
-            dead-end cuts at the 3-to-6-foot height &mdash; not the forking branch structure
-            the female tests for. A shrub that grew through the previous season undisturbed
-            has dozens of eligible forks at the right height. The pruning schedule and the
-            catbird&apos;s arrival window coincide at almost exactly the same week every year.
+            Partners in Flight estimates the breeding population at about 29 million. [2] The
+            U.S. Breeding Bird Survey shows a stable population since 1966. [3] The IUCN lists
+            it as Least Concern. [4]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>No spring pruning before mid-July, one unpruned native shrub, fruit through October, and leaf litter at the base</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gray_Catbird_in_the_grass.jpg/960px-Gray_Catbird_in_the_grass.jpg"
-              alt="Gray catbird standing in grass near a shrub edge, showing the full slate-gray body, black cap, and rufous undertail coverts"
-              loading="lazy"
-            />
-            <figcaption>
-              A gray catbird at a shrub edge. Catbirds forage between berry-producing native
-              shrubs and the leaf-litter zones where beetles and earthworms are accessible.
-              The shrub edge &mdash; not the lawn interior or the tree canopy &mdash; is the
-              catbird&apos;s operating zone. Where that edge disappears, so does the bird.
-              <span className="photo-credit"> Photo: Wikimedia Commons / Public domain</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Hold spring pruning on dense shrubs until mid-July.</strong>{' '}
-              Gray catbirds arrive in late April or early May and begin nesting within two
-              weeks of arrival. By mid-July most pairs have completed their second brood and
-              the young have fledged. Pruning after July 15 removes no active nesting
-              structure. Pruning in April removes the branch forks the female inspects before
-              she commits to the site. In yards where dense shrubs are pruned every April,
-              catbirds may be heard singing but will not produce young.
+              Dense native shrubs such as viburnum, dogwood, elderberry, and spicebush provide
+              the tangled nesting cover catbirds need and the berries they eat in late summer
+              and fall. [5]
             </li>
             <li>
-              <strong>Plant at least one dense native shrub and leave it unpruned.</strong>{' '}
-              Spicebush (<em>Lindera benzoin</em>), native viburnums (<em>Viburnum lentago</em>,{' '}
-              <em>Viburnum prunifolium</em>), elderberry (<em>Sambucus canadensis</em>), and
-              native hawthorns (<em>Crataegus</em> spp.) grow to the right height and density
-              and produce fruit catbirds eat through summer and fall. A single unpruned
-              spicebush reaching 6 to 8 feet is enough to support a nesting attempt. Find
-              what grows in your region at{' '}
-              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
-                Find Plants Near Me
-              </button>
-              .
+              Leaving leaf litter under shrubs supports the insects and spiders catbirds forage
+              on at ground level. [5]
             </li>
             <li>
-              <strong>Leave fruit on native shrubs through October.</strong>{' '}
-              Gray catbirds eat heavily from elderberries, native viburnums, dogwood drupes,
-              and serviceberries before and during fall migration. Approximately half their
-              summer diet is fruit, and the berry crop on native shrubs in August and September
-              is the catbird&apos;s primary pre-migration fuel. Shrubs cut for tidiness before
-              fruiting removes this resource at the point catbirds need it most.
+              Keeping cats indoors protects a bird that forages low in dense cover and moves
+              close to the ground. [5]
             </li>
             <li>
-              <strong>Leave the leaf litter at the base of dense shrubs year-round.</strong>{' '}
-              Gray catbirds forage in the shrub-base zone for beetles, earthworms, and other
-              invertebrates — the same zone where the nest is anchored a few feet overhead.
-              A raked or mulched bed under a hawthorn or spicebush removes both the substrate
-              the birds probe and the invertebrate community that makes it productive. Leaves
-              left undisturbed decompose into soil, sustain the beetle and earthworm
-              populations, and give catbirds a foraging zone right beside the nest. Read the
-              full case at{' '}
-              <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-                Leave the Leaves
-              </button>
-              .
+              Reducing or eliminating pesticide use preserves the insect populations catbirds
+              depend on during the breeding season when they are feeding young. [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="cowbird-heading">
-          <h2 id="cowbird-heading">The egg it will not raise</h2>
-          <p>
-            Brown-headed cowbirds lay single eggs in the nests of other songbirds. The cowbird
-            chick hatches early, grows fast, and outcompetes the host species&apos; own young
-            for parental feeding. Most small songbirds cannot recognize the cowbird egg and
-            raise the cowbird chick in place of their own.
-          </p>
-          <p>
-            Gray catbirds reject cowbird eggs at rates documented as among the highest for
-            any host species in North America. In field studies where cowbird eggs were placed
-            experimentally in catbird nests, catbirds removed or pecked open the majority
-            within 24 to 48 hours. The mechanism is exact-match recognition: a catbird learns
-            the precise color, size, and surface texture of its own eggs, which are plain,
-            unmarked light blue. A cowbird egg &mdash; slightly different in size, ground
-            color, or speckle pattern &mdash; fails the match, and the catbird rolls or
-            pecks it out.
-          </p>
-          <p>
-            The nest&apos;s position inside a dense thicket further reduces cowbird
-            parasitism rates. Cowbirds locate host nests by watching from elevated perches
-            while the host birds carry nesting material. A catbird nest inside a hawthorn
-            at four feet, with multiple layers of foliage blocking sightlines, is harder
-            to observe than an open-cup nest in a tree with clear sight angles from above.
-            The catbird&apos;s insistence on interior nesting provides passive protection
-            that works alongside the active egg-recognition behavior.
-          </p>
-        </section>
-
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Who shares the thicket — same shrub, same season</h2>
-          <p>
-            The dense native shrubs a catbird nests inside support a community of species
-            that use the same structure at different heights and different times. The shrub
-            the catbird sings from in May is the same shrub a Brown Thrasher is building
-            a nest in, the same shrub an Eastern Towhee works at its base in June, and the
-            same shrub whose leaf litter shelters firefly larvae from November through March.
-          </p>
-          <ul>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('brown-thrasher')}>
-                Brown Thrasher
-              </button>
-              {' — '}Nests at the same 3-to-6-foot height in the same dense thickets the catbird uses; the two species sometimes nest within feet of each other in the same hawthorn or viburnum — both relying on the branch-fork density that spring pruning removes.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('eastern-towhee')}>
-                Eastern Towhee
-              </button>
-              {' — '}Scratches through leaf litter at the base of the same shrubs the catbird nests in above; both species require the combination of dense branching structure overhead and intact leaf-litter layer below — a yard that rakes the base and prunes the top eliminates both birds from the same planting.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('northern-cardinal')}>
-                Northern Cardinal
-              </button>
-              {' — '}Nests in the same dense native shrubs and feeds on the same fruiting plants through fall and winter; a yard with one well-established native shrub thicket often holds a catbird through summer and a cardinal pair through the following winter — different seasons, same structure.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('spicebush')}>
-                Spicebush
-              </button>
-              {' — '}Native shrub the catbird uses for nesting and fruit; the red berries ripen in September just before the catbird leaves for the Caribbean, providing the fat reserves the bird needs for the crossing. A single spicebush at 6 to 8 feet, left unpruned, is enough to support a nesting attempt.
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>The catbird&apos;s shrub thicket is shared habitat.</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('brown-thrasher')}>
-              Brown Thrashers
-            </button>{' '}
-            nest at the same height in the same shrubs.{' '}
-            <button className="link-button" onClick={() => onNavigate('fireflies')}>
-              Firefly larvae
-            </button>{' '}
-            overwinter in the leaf litter at the base of those shrubs. The same dense native
-            planting that brings a catbird in May supports a community of species through
-            all four seasons. See how the shrub layer connects to the floor, canopy, and edge
-            airspace in the{' '}
-            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
-              Habitat Layers guide
-            </button>
-            , start the shrub layer at{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            {' '}or meet more yard neighbors in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('brown-thrasher')}>
+            <span className="neighbor-name">Brown Thrasher</span>
+            <span className="neighbor-note">A fellow mimid that shares the same dense shrub layer, singing paired phrases where the catbird sings each one once.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('northern-mockingbird')}>
+            <span className="neighbor-name">Northern Mockingbird</span>
+            <span className="neighbor-note">The third eastern mimid, singing copied phrases from exposed perches where the catbird stays hidden in the thicket.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('wood-thrush')}>
+            <span className="neighbor-name">Wood Thrush</span>
+            <span className="neighbor-note">Shares the same shrubby understory in eastern forests, foraging in the same leaf litter for the same invertebrates.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-robin')}>
+            <span className="neighbor-name">American Robin</span>
+            <span className="neighbor-note">Shares the same yards and berry shrubs, foraging in the open where the catbird stays in cover.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Gray_Catbird/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Gray Catbird (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/grey-catbird-dumetella-carolinensis" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Gray Catbird</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
