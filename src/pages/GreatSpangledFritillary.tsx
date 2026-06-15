@@ -9,15 +9,18 @@ export default function GreatSpangledFritillary({ onNavigate }: GreatSpangledFri
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Speyeria_cybele_Great_Spangled_Fritillary_8.9.2008.jpg/960px-Speyeria_cybele_Great_Spangled_Fritillary_8.9.2008.jpg"
-          alt="Great Spangled Fritillary butterfly showing tawny orange wings with black markings resting on vegetation"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Great_spangled_fritillary_%28Speyeria_cybele%29_in_Cades_Cove%2C_GSMNP%2C_TN.jpg/1280px-Great_spangled_fritillary_%28Speyeria_cybele%29_in_Cades_Cove%2C_GSMNP%2C_TN.jpg"
+          alt="A Great Spangled Fritillary butterfly nectaring on a flower, wings open showing its bright orange and black pattern"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={851}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: MONGO&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Speyeria_cybele_Great_Spangled_Fritillary_8.9.2008.jpg" target="_blank" rel="noopener noreferrer">Public domain</a>
+          Photo: David Ratledge&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Great_spangled_fritillary_(Speyeria_cybele)_in_Cades_Cove,_GSMNP,_TN.jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -26,214 +29,127 @@ export default function GreatSpangledFritillary({ onNavigate }: GreatSpangledFri
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Great Spangled Fritillary</h1>
         <p className="hero__lead">
-          A great spangled fritillary female lays her eggs in August — not on violet leaves,
-          but on bark fragments, dry stems, and soil in the vicinity of wherever violets grow.
-          The egg hatches in fall. The larva immediately crawls into dead leaves and stops moving.
-          It does not eat. It waits through November, December, January, February. In March or
-          April it wakes up and begins searching for a violet leaf. That first meal has to arrive
-          within a few days. If the violets are gone — killed by herbicide the previous autumn, or
-          not yet regrown after an early-spring mow — the larva starves during its first week out
-          of dormancy.
-        </p>
-        <p className="hero__lead">
-          The common blue violet growing in your lawn corner is the only food source for that
-          larva. Broadleaf herbicide labels list it as a target weed. The two facts exist in the
-          same yard at the same time.
+          The Great Spangled Fritillary is one of the most spectacular common butterflies
+          in eastern North America. It is large — wingspan up to 4 inches — and bright
+          orange with black spots and irregular black lines on the upperwing. The
+          undersides of the hindwings carry large silver-metallic spots, the &quot;spangling&quot;
+          that gives it its name. It flies in open meadows and forest edges from late
+          June through September. Its caterpillars eat only violets. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="egg-biology-heading">
-          <h2 id="egg-biology-heading">The egg laid in August, the search in April</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            <em>Speyeria cybele</em>, the great spangled fritillary, is one of the largest
-            fritillaries in North America, with a wingspan between 2.5 and 4 inches. Adults fly
-            from June through September across most of the eastern and central United States.
-            They are the big tawny-orange butterflies that show up on milkweed, joe-pye weed, and
-            purple coneflower through midsummer — often noticed but rarely named.
-          </p>
-          <p>
-            The female produces one generation per year. In late summer she seeks out areas where
-            violets grow and deposits eggs individually on nearby plant material — bark, dead stems,
-            loose soil — not on the violet leaf itself. When the egg hatches in September or October,
-            the newly emerged larva does something unusual: it moves toward leaf litter and enters
-            diapause before it has eaten anything at all. The entire winter passes in this state.
-            The larva is alive but inactive, fueled only by the yolk it absorbed inside the egg.
-          </p>
-          <p>
-            In March or April, as temperatures rise, the larva breaks dormancy and immediately
-            begins moving. It needs to locate a violet leaf before its energy reserves run out.
-            Viola sororia, the common blue violet, is the primary host. The larva feeds nocturnally,
-            concealing itself in leaf litter during the day. It passes through six instars between
-            April and June, then pupates. The adult emerges in late June and the pattern repeats.
+            Great Spangled Fritillaries are strong, fast fliers that patrol meadows,
+            roadsides, and open woodland edges. Adults nectar heavily on native
+            milkweeds, coneflower, joe-pye weed, ironweed, and native thistles.
+            Females spend late summer sipping nectar to build energy reserves for
+            egg-laying; they lay eggs near (but not on) violet plants in July and
+            August. Males emerge before females each year and patrol open areas
+            for females; they can sometimes be seen gliding directly toward any
+            orange object that might be a newly-emerged female. [1]
           </p>
         </section>
 
-        <section aria-labelledby="violet-heading">
-          <h2 id="violet-heading">Common blue violet: lawn weed or the only larval food</h2>
-          <figure className="species-content-photo species-content-photo--left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Viola_sororia_in_Wisconsin.jpg/960px-Viola_sororia_in_Wisconsin.jpg"
-              alt="Common blue violet Viola sororia blooming in a Wisconsin yard — low purple flowers and heart-shaped leaves growing among lawn grasses"
-              loading="lazy"
-            />
-            <figcaption>
-              Common blue violet (<em>Viola sororia</em>) is the primary larval host plant of the great
-              spangled fritillary. The same plant appears in most broadleaf herbicide guides as a
-              target weed. Where lawn herbicides eliminate violet patches, the larva that overwinters
-              nearby wakes in spring to find nothing to eat.
-              <span className="photo-credit"> Photo: James Steakley&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Speyeria_cybele_Great_Spangled_Fritillary_8.9.2008.jpg/1280px-Speyeria_cybele_Great_Spangled_Fritillary_8.9.2008.jpg"
+            alt="A Great Spangled Fritillary butterfly with wings half-open showing the silver-spangled underside of the hindwing"
+            width={1280}
+            height={1024}
+            loading="lazy"
+          />
+          <figcaption>
+            The silver spots on the underside of the hindwing — the &quot;spangling&quot;
+            — are distinctive in flight. No other common large orange butterfly in
+            the East has this reflective silver pattern on the underwing.
+            <span className="photo-credit"> Photo: MONGO&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Speyeria_cybele_Great_Spangled_Fritillary_8.9.2008.jpg" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Viola sororia is native to eastern North America and grows in lawns, roadsides, woodland
-            edges, and disturbed ground. Most homeowners encounter it as a low-growing plant that
-            spreads into turfgrass and resists mowing. Lawn herbicide programs treat it as a
-            broadleaf weed to eliminate. Autumn is the recommended application window — September or
-            October — because the plant is actively translocating nutrients then and herbicide
-            penetrates most effectively.
+            Great Spangled Fritillaries have one of the most unusual lifecycles of
+            any eastern butterfly. Females lay eggs in July and August not on violet
+            plants but scattered nearby in leaf litter. Eggs hatch in fall; the tiny
+            first-instar caterpillars immediately go dormant without eating, overwintering
+            in the litter where they hatched. In March and April they emerge, find
+            violet plants, and begin feeding — exclusively on violet leaves, usually
+            at night. Adults emerge mid-June and fly through September. There is one
+            generation per year. [1]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            That same window is when the fritillary egg has just hatched and the larva is settling
-            into dormancy in the leaf litter nearby. The herbicide treatment kills the violet before
-            the larva even takes its first bite. In spring the larva emerges from dormancy and
-            searches the ground where the plant was. There is nothing there. The larva cannot
-            relocate to a different yard.
-          </p>
-          <p>
-            Other fritillary species — variegated fritillary, meadow fritillary, and aphrodite
-            fritillary — also use violets as larval host plants. A single patch of common blue
-            violet growing undisturbed through spring can support multiple species simultaneously.
+            The Great Spangled Fritillary is not listed by the IUCN and is common
+            across much of eastern North America. [1] It is entirely dependent on
+            native violets as a caterpillar host plant — there is no substitute.
+            The widespread use of weed killers on lawns and the systematic removal
+            of &quot;lawn weeds&quot; including violets has reduced caterpillar habitat in
+            many suburban areas. It also needs rich native wildflower patches for
+            the adult to nectar through summer and fall. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Violets untreated, mowing delayed through April, leaf litter through winter, and tall native nectar within 50 feet</h2>
-
-          <figure className="species-content-photo">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Spinus-great-spangled-fritillary-2015-07-n048074-w.jpg/960px-Spinus-great-spangled-fritillary-2015-07-n048074-w.jpg"
-              alt="Great Spangled Fritillary butterfly nectaring on a native wildflower in a meadow setting"
-              loading="lazy"
-            />
-            <figcaption>
-              Great spangled fritillary adults nectar on milkweed, joe-pye weed, ironweed, purple
-              coneflower, and black-eyed Susan from June through September. They share these native
-              flowers with monarchs, tiger swallowtails, and native bees. The same yard that supports
-              a monarch fueling stop also supports a fritillary.
-              <span className="photo-credit"> Photo: Spinus Nature Photography&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Leave common blue violet in at least one untreated area.</strong>{' '}
-              Even a corner patch of 4–6 square feet that receives no herbicide treatment can function
-              as a larval nursery. Violets spread slowly by rhizome; an untreated patch will not take
-              over a lawn in a season.
+              Allow native violets to grow in your lawn. Violets are the sole host
+              plant for Great Spangled Fritillary caterpillars — without violets in
+              the landscape there is no breeding. Common blue violet (Viola sororia)
+              and other native violets are the ones that matter; violets in a lawn
+              can be the last remaining host plant in a suburban neighborhood. [2]
             </li>
             <li>
-              <strong>Delay any mowing near violet patches until after mid-April.</strong>{' '}
-              Larvae feed nocturnally on violet leaves from March through May. Early mowing that cuts
-              the violet canopy before larvae finish feeding removes the food source during the active
-              growth stage. Mowing after mid-April, when larvae have had several weeks to feed and
-              grow, reduces the loss.
+              Plant large patches of native milkweed for late-summer nectar. In August
+              and September, Great Spangled Fritillaries build fat reserves on milkweed
+              before egg-laying; a large milkweed patch can host dozens at once. [2]
             </li>
             <li>
-              <strong>Leave a light layer of leaf litter near violet patches through March.</strong>{' '}
-              Fritillary larvae overwinter inside fallen leaves and loose organic matter directly on the
-              soil surface. Raking this layer in autumn removes the overwintering microhabitat. Leaving
-              a thin layer — even just an inch of loose leaves — in the areas where violets grow gives
-              the dormant larvae shelter through the cold months.
+              Add joe-pye weed, native ironweed, and native coneflower. These tall
+              native wildflowers bloom in mid- to late summer — exactly when adult
+              fritillaries are most active and need nectar most. [2]
             </li>
             <li>
-              <strong>Plant milkweed, ironweed, or Joe-Pye weed within 50 feet of the violet patch.</strong>{' '}
-              Female Great Spangled Fritillaries emerge in June and spend four to six weeks nectaring
-              on tall native wildflowers before returning to lay eggs on violets in August and September.
-              A female nectaring on common milkweed 40 feet from a violet patch encounters the violets
-              while foraging. The same milkweed patch that attracts monarchs in July attracts fritillary
-              females at the same time, on the same flowers. A yard with tall summer nectar but no
-              violet patch pulls females in without giving them a place to complete their life cycle;
-              a violet patch with no nectar nearby may not hold a female long enough for egg deposition.
+              Do not rake all leaf litter in fall. Great Spangled Fritillary eggs
+              hatch in October and the tiny caterpillars overwinter in the leaf layer.
+              Removing all leaves removes the overwintering caterpillars. Leave at
+              least some areas of undisturbed leaf litter under trees and shrubs. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="underwing-heading">
-          <h2 id="underwing-heading">Silver spots on the underwing</h2>
-          <figure className="species-content-photo" style={{ margin: '1rem 0 2rem' }}>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Argynne.jpg/960px-Argynne.jpg"
-              alt="Great Spangled Fritillary showing its hindwing underside with distinctive silver spots in a pale yellowish-buff band"
-              loading="lazy"
-            />
-            <figcaption>
-              The hindwing underside of the great spangled fritillary carries a row of large silver
-              spots in a pale buff band — the field mark that separates this species from the
-              several similar fritillaries flying at the same time. When a fritillary lands on a
-              flower and closes its wings, the silver spots become visible.
-              <span className="photo-credit"> Photo: Dreamdan&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-          <p>
-            When a great spangled fritillary lands on a flower and closes its wings, the
-            hindwing underside shows a distinctive pattern: large, metallic silver spots arranged in
-            a broad pale band near the outer margin. This is the identification mark that separates
-            it from aphrodite fritillary and other similar species flying in July and August. On the
-            upper side, both sexes show the tawny orange base color with black postmedian spots.
-            Females are slightly darker than males.
-          </p>
-          <p>
-            Sightings submitted to iNaturalist help document where breeding populations persist
-            and where they have disappeared. In many parts of the Midwest, fritillary reports have
-            dropped noticeably over the past 20 years as suburban lawns have expanded and native
-            meadow edges have been converted to maintained turf. An observation from your yard
-            — particularly a female — is evidence that violets and leaf litter nearby are still
-            functional habitat.
-          </p>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Great spangled fritillaries nectar on the same plants monarchs use.</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-              Plant milkweed
-            </button>
-            {' '}to build a shared summer fueling station,{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              choose native nectar plants
-            </button>
-            {' '}that serve both species from June through September, keep the larval overwintering layer intact with{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves
-            </button>
-            , and stop the broadleaf herbicide that kills violet host plants with the{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticides &amp; Your Habitat guide
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('monarch-life')}>
+            <span className="neighbor-name">Monarch Butterfly</span>
+            <span className="neighbor-note">Nectars on the same native milkweeds in summer and fall; the two large butterflies are often seen on the same milkweed patch in August.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('tiger-swallowtail')}>
+            <span className="neighbor-name">Eastern Tiger Swallowtail</span>
+            <span className="neighbor-note">Shares the same native wildflower meadows as a nectar source through summer; both are large, showy butterflies that peak on joe-pye weed and ironweed.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
+            <span className="neighbor-name">American Bumble Bee</span>
+            <span className="neighbor-note">Shares the same native wildflower patches; goldenrods, asters, and coneflowers planted for fritillaries directly benefit bumble bees as well.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-meadowlark')}>
+            <span className="neighbor-name">Eastern Meadowlark</span>
+            <span className="neighbor-note">Nests in the open meadow habitat where fritillaries patrol — both are declining indicators of healthy native meadow ecosystems in eastern North America.</span>
+          </button>
         </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Related pages</h2>
-          <div className="neighbor-grid">
-            <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
-              <span className="neighbor-name">Leonard's Skipper</span>
-              <span className="neighbor-note">Flies August to September — the window that opens just as the fritillary season closes; both species overwinter as larvae in the ground layer through winter</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('joe-pye-weed')}>
-              <span className="neighbor-name">Joe-Pye Weed</span>
-              <span className="neighbor-note">Opens mid-July through September; fritillary adults nectar on it during the same window they are flying and laying their fall eggs</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('ironweed')}>
-              <span className="neighbor-name">Ironweed</span>
-              <span className="neighbor-note">Opens in August alongside goldenrod; named in the same late-summer native flowers where fritillaries and monarchs both nectar</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
-              <span className="neighbor-name">Cobweb Skipper</span>
-              <span className="neighbor-note">A spring skipper that lays eggs on native bunchgrasses in April and May; like the fritillary, it produces one brood per year and its larva overwinters at the crown of the host plant</span>
-            </button>
-          </div>
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Speyeria_cybele/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Great Spangled Fritillary</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Speyeria-cybele" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Great Spangled Fritillary</a></li>
+          </ol>
         </section>
       </div>
     </>
