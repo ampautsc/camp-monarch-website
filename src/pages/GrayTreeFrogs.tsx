@@ -9,16 +9,18 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg"
-          alt="Gray Tree Frog clinging to a rain-wet window with adhesive toe pads, camouflage skin matching bark texture"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Gray_Treefrog_%28Hyla_versicolor%29_-_Flickr_-_2ndPeter.jpg/1280px-Gray_Treefrog_%28Hyla_versicolor%29_-_Flickr_-_2ndPeter.jpg"
+          alt="A Gray Tree Frog clinging to a branch, showing its rough gray skin with green patches and bright orange inner thighs"
           className="species-hero-image"
-          style={{ objectPosition: 'top center' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={863}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Randidawn · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons */}
-          Photo: Randidawn&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog_in_arboreal_forest_habitat%2C_MA.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          Photo: Peter Paplanus&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Gray_Treefrog_(Hyla_versicolor)_-_Flickr_-_2ndPeter.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -27,193 +29,128 @@ export default function GrayTreeFrogs({ onNavigate }: GrayTreeFrogsProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Gray Tree Frogs</h1>
         <p className="hero__lead">
-          On warm summer evenings after rain, a trill carrying over 300 feet rings out from
-          somewhere in the trees. You may never see who is calling. But if you hear it, you know
-          your yard is free of the systemic pesticides that would have
-          silenced them — the same pesticide-free conditions monarchs need to survive.
+          The Gray Tree Frog is a small (1.5–2 inch) treefrog found throughout eastern
+          North America. It is a master of camouflage, shifting its color from pale gray
+          to mottled green to brown over the course of minutes. Its sticky toe pads let
+          it cling to glass. In May and June, males produce a loud, bird-like trill from
+          vegetation near any pond, ditch, or puddle. It is one of only a few vertebrates
+          that can survive being partially frozen. [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="indicator-heading">
-          <h2 id="indicator-heading">What the sound means</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The Gray Tree Frog (<em>Hyla versicolor</em>) is an indicator species.
-            It cannot live in a yard treated with glyphosate or atrazine — herbicides common
-            enough to be sold at any hardware store. Glyphosate at near-label concentrations
-            kills tadpoles outright. Atrazine disrupts sex determination during tadpole development,
-            acting as an endocrine disruptor even at low concentrations. When these chemicals
-            reach a breeding pond through runoff or drift, the tadpoles die before they emerge.
-          </p>
-          <p>
-            A yard where Gray Tree Frogs are calling in July has been free of these chemicals
-            long enough for tadpoles to survive a full season — from May through metamorphosis.
-            That is a measurable threshold. It is the same chemical and habitat profile
-            that monarch butterflies need to safely feed, lay eggs, and complete their
-            breeding cycle.
+            Gray Tree Frogs spend most of the day hidden — pressed flat against bark,
+            tucked into a tree cavity, or resting on a leaf where their mottled skin
+            disappears against the background. They hunt at night: moths, beetles,
+            ants, spiders, and smaller frogs. Their large, forward-facing eyes give
+            them accurate depth perception for striking prey. During the breeding season
+            (May through August) males call from elevated perches near water, especially
+            on warm rainy nights when choruses can be heard from hundreds of feet away.
+            [1]
           </p>
         </section>
 
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">The frog you hear but rarely see</h2>
-          <p>
-            Gray Tree Frogs spend most of their adult lives in trees and shrubs, not on the ground.
-            Adhesive toe pads allow them to cling to bark, window screens, and smooth-sided branches —
-            they are true climbers. Their skin shifts between gray, green, and brown
-            depending on temperature and background, making them nearly invisible against bark even
-            at close range. The bright yellow-orange flash of color on their inner thighs,
-            visible only when they leap, is thought to startle predators mid-flight.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Gray_tree_frog.jpg"
-                  alt="Gray Tree Frog clinging to a branch, showing the bright yellow-orange coloring on the inner thighs — a flash display used to startle predators"
-                  loading="lazy"
-                />
-                <figcaption>
-                  The gray tree frog hides its brightest colors on the inside of its thighs, invisible at rest. When threatened, it flashes those vivid patches as it leaps — a brief burst of yellow-orange that startles the predator and allows escape. A yard that can't hold standing water through June has no frogs calling in July.
-                  <span className="photo-credit"> Photo: Robert A. Coggeshall · <a href="https://commons.wikimedia.org/wiki/File:Gray_tree_frog.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Gray_Tree_Frog_-_Hyla_versicolor_or_chrysoscelis_and_Gary%2C_Occoquan_Bay_National_Wildlife_Refuge%2C_Woodbridge%2C_Virginia_%2837503327391%29.jpg/1280px-Gray_Tree_Frog_-_Hyla_versicolor_or_chrysoscelis_and_Gary%2C_Occoquan_Bay_National_Wildlife_Refuge%2C_Woodbridge%2C_Virginia_%2837503327391%29.jpg"
+            alt="A Gray Tree Frog perched on vegetation showing its adhesive toe pads and mottled gray-green coloration"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            Gray Tree Frogs spend the non-breeding months high in trees, rarely seen
+            near the ground. The hidden orange patches on the inner thighs flash when
+            the frog jumps — possibly startling predators.
+            <span className="photo-credit"> Photo: Judy Gallagher&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Gray_Tree_Frog_-_Hyla_versicolor_or_chrysoscelis_and_Gary,_Occoquan_Bay_National_Wildlife_Refuge,_Woodbridge,_Virginia_(37503327391).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            They are also freeze-tolerant in a way almost no other vertebrate is.
-            In autumn, they produce glycerol as a cryoprotectant, allowing ice to form in
-            the spaces between cells while the cells themselves remain protected.
-            Frozen stiff under leaf litter in November, they thaw in April and resume life
-            exactly where they left off. This mechanism requires undisturbed leaf litter
-            in your garden beds through the winter — remove the leaves, remove the frogs.
+            Gray Tree Frogs overwinter in leaf litter, beneath bark, or in shallow
+            soil. They survive temperatures below freezing by producing glycerol as
+            a natural antifreeze — up to 40% of their body water can freeze without
+            cell damage. They emerge in April when nights consistently stay above
+            50°F. Females lay 1,000 to 2,000 eggs in small clusters on the water
+            surface; eggs hatch in three to seven days. Tadpoles metamorphose in
+            45 to 65 days. Young frogs disperse into trees and shrubs for the summer
+            and fall. [1][2]
           </p>
         </section>
 
-        <section aria-labelledby="breeding-heading">
-          <h2 id="breeding-heading">Breeding — later than you might expect</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            While spring peepers call in March and April, Gray Tree Frogs do not begin calling
-            until late May, and they continue through August. Males call from trees and shrubs
-            near water — not from the water itself — after warm rains. Females approach
-            and choose among calling males. Eggs and tadpoles develop in the shallows of
-            small ponds and water features.
-          </p>
-          <p>
-            One hard requirement: no fish. Fish eat both eggs and tadpoles with near-complete
-            efficiency and will eliminate a breeding population in a single season.
-            Even a small ornamental pond stocked with goldfish cannot support Gray Tree Frog
-            breeding. A fishless pond — even a half-barrel or shallow tub — can.
+            The Gray Tree Frog is listed as Least Concern by the IUCN and remains
+            common across eastern North America. [2] Locally it is affected by the
+            draining of small wetlands — even a small roadside ditch can serve as
+            critical breeding habitat. Atrazine and other herbicides affect amphibian
+            hormone development at very low concentrations. Globally, chytrid fungus
+            (Batrachochytrium dendrobatidis) threatens amphibian populations; gray
+            tree frogs appear to be less susceptible than many species. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>A fishless water feature, a pesticide-free buffer, native shrubs, and leaf litter through winter</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Garden_bird_bath_Nuthurst_West_Sussex_England_01.jpg" alt="Shallow stone water feature in a garden" loading="lazy" />
-            <figcaption>
-              Gray tree frogs breed in any standing fresh water — a garden pond, a rain barrel, even a large container. A single season of breeding success in a yard-scale water feature can produce hundreds of juveniles that disperse into the surrounding neighborhood.
-              <span className="photo-credit"> Photo: Acabashi&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Add a small fishless water feature.</strong>{' '}
-              It does not need to be large — a half-barrel or shallow tub works.
-              The water must have no fish, must be at least partly shaded, and must have
-              shallow edges where tadpoles can develop. Native emergent plants —
-              cattail, pickerelweed, blue flag iris — add tadpole cover and are
-              well-suited to wet edges throughout eastern North America.
+              Install a small backyard pond — even a 6-foot diameter water feature
+              with no fish and some emergent plants at the edge can support gray tree
+              frog breeding. Fish eat tadpoles; a fish-free pond is essential. [3]
             </li>
             <li>
-              <strong>Keep a 50-foot pesticide-free buffer around any water.</strong>{' '}
-              Atrazine and glyphosate travel in runoff. Applications on a lawn uphill
-              from a pond will reach the water within a few rain cycles.
-              A no-spray buffer around any water feature is the action that most directly determines tadpole survival.
+              Leave leaf litter on garden beds through winter. Gray Tree Frogs
+              hibernate in leaf litter and shallow soil. Blowing leaves away in fall
+              or early spring removes the insulating layer they depend on to survive
+              hard freezes. [3]
             </li>
             <li>
-              <strong>Keep native shrubs and trees near the water.</strong>{' '}
-              Adult frogs spend their non-breeding time in the canopy, not at the pond.
-              They need shrubs and small trees within reach of the water for foraging,
-              calling perches, and summer shelter. Buttonbush, elderberry, and native
-              viburnums thrive at wet edges and support both the frogs and the insects
-              they hunt.
+              Avoid herbicides and pesticides near ponds and wet areas. Atrazine in
+              particular disrupts amphibian development at concentrations far below
+              what is considered safe for humans. [1]
             </li>
             <li>
-              <strong>Leave leaf litter in garden beds undisturbed through winter.</strong>{' '}
-              In autumn, Gray Tree Frogs produce glycerol that moves into the spaces between
-              cells, preventing ice crystals from forming inside the cell walls as temperatures
-              drop below freezing. The frogs freeze solid — no heartbeat, no breathing — under
-              the leaf mat from November through March, then thaw and resume activity when
-              temperatures rise in April. The leaf litter must remain intact through this period:
-              raking garden beds in October or blowing leaves off beds in November removes the
-              frogs before they can emerge the following spring. A garden bed with leaf litter
-              left through April is the same bed where adults will be calling from the trees
-              above it the following June.
+              Plant dense shrubby native plants around yard edges and pond margins.
+              Gray Tree Frogs spend most of their adult life far from water in woody
+              cover — the shrubby transition zone between pond and lawn is where most
+              of their foraging and sheltering happens. [3]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The connection to monarchs</h2>
-          <p>
-            A yard that supports Gray Tree Frog tadpoles through a full season — May through August —
-            is a yard without significant pesticide use during that same window.
-            That is also the exact period when monarch caterpillars are feeding on milkweed.
-            These two species do not interact directly, but their requirements overlap almost
-            completely. Create conditions for one and you create conditions for the other.
-          </p>
-          <p>
-            This is what indicator species do: they tell you something true about the whole system.
-            A summer trill from the tree line at dusk is not just a pleasant sound.
-            It is evidence that the habitat has reached a threshold — the chemistry is right,
-            the food web is intact, and conditions that once sustained this place have been
-            partially restored. That is what the work of habitat gardening sounds like.
-          </p>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Ready to take the next step?</strong>{' '}
-            Glyphosate reaches a breeding pond within a few rain cycles from uphill applications
-            — the{' '}
-            <button
-              className="link-button"
-              onClick={() => onNavigate('pesticide-guide')}
-            >
-              Pesticide Guide
-            </button>
-            {' '}covers what those concentrations do to tadpoles. Build or maintain a fishless
-            water feature with the{' '}
-            <button
-              className="link-button"
-              onClick={() => onNavigate('water-for-wildlife')}
-            >
-              Water for Wildlife guide
-            </button>
-            . The{' '}
-            <button
-              className="link-button"
-              onClick={() => onNavigate('leave-the-leaves')}
-            >
-              Leave the Leaves guide
-            </button>
-            {' '}covers the leaf litter that gray tree frogs freeze inside every winter. Or{' '}
-            <button
-              className="link-button"
-              onClick={() => onNavigate('plant-milkweed')}
-            >
-              plant milkweed
-            </button>
-            {' '}alongside your water feature, or{' '}
-            <button
-              className="link-button"
-              onClick={() => onNavigate('choose-a-plant')}
-            >
-              choose a native plant
-            </button>
-            {' '}for the wet edge of your pond.
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-screech-owl')}>
+            <span className="neighbor-name">Eastern Screech-Owl</span>
+            <span className="neighbor-note">A predator of tree frogs that hunts the same shrubby wetland edges and listens for frog calls to locate prey in the dark.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('wood-thrush')}>
+            <span className="neighbor-name">Wood Thrush</span>
+            <span className="neighbor-note">Shares the same moist wooded habitat; both species are indicators of structurally complex forests with healthy understories.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('garter-snake')}>
+            <span className="neighbor-name">Garter Snake</span>
+            <span className="neighbor-note">The most common predator of gray tree frogs near ponds and stream edges; frogs call and snakes hunt in the same damp margin habitat.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('carolina-wren')}>
+            <span className="neighbor-name">Carolina Wren</span>
+            <span className="neighbor-note">Nests in the same dense shrubby cover near water where tree frogs spend their summer months; both are heard more often than seen.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Hyla_versicolor/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Gray Tree Frog</a></li>
+            <li><a href="https://www.iucnredlist.org/species/55614/11335003" target="_blank" rel="noopener noreferrer">IUCN Red List — Gray Tree Frog</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds (and Wildlife)</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )

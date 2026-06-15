@@ -9,241 +9,146 @@ export default function GarterSnake({ onNavigate }: GarterSnakeProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Thamnophis_sirtalis_sirtalis_Wooster.jpg"
-          alt="Common Garter Snake emerging from leaf litter showing yellow dorsal stripe — a beneficial predator of garden pests and slug populations"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Common_Garter_Snake_-_Thamnophis_sirtalis_%2846916271911%29.jpg/1280px-Common_Garter_Snake_-_Thamnophis_sirtalis_%2846916271911%29.jpg"
+          alt="A Common Garter Snake resting on a log, showing its dark body with three yellow stripes running from head to tail"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={853}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Wilson44691 · <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_sirtalis_Wooster.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons */}
-          Photo: Wilson44691&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_sirtalis_Wooster.jpg" target="_blank" rel="noopener noreferrer">Public domain</a>
+          Photo: Christina Butler&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Common_Garter_Snake_-_Thamnophis_sirtalis_(46916271911).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
-        <h1>Common Garter Snake</h1>
+        <h1>Garter Snake</h1>
         <p className="hero__lead">
-          The Common Garter Snake is the most widely distributed reptile in
-          North America — present from Alaska to Florida, coast to coast. It is
-          the snake most people encounter first in a backyard or garden, and
-          converting that encounter from fear to tolerance is one of the most
-          impactful things Camp Monarch can accomplish.
+          The Common Garter Snake is the most widespread snake in North America, found
+          in every habitat from suburban gardens to prairie to forest. It is slender,
+          typically 2 to 3 feet long, and striped in yellow, green, or red on a darker
+          background — though color varies widely by region. It is harmless to people,
+          controls slugs, earthworms, frogs, and small rodents, and is active during
+          the day. It is the snake most likely to be seen in any eastern yard. [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="pest-control-heading">
-          <h2 id="pest-control-heading">Free, targeted pest control — no chemicals required</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Common Garter Snakes (<em>Thamnophis sirtalis</em>) eat frogs,
-            toads, earthworms, slugs, salamanders, and occasionally voles and
-            mice — consuming the organisms that homeowners most commonly target
-            with chemical pest control. Their presence is a service certificate:
-            confirmation the yard is ecologically intact enough to support a
-            complete food web.
-          </p>
-          <p>
-            Garter snakes also occupy a junction in the food web,
-            connecting aquatic prey (frogs, small fish) to terrestrial prey
-            (earthworms, voles) while serving as prey for Red-tailed Hawks,
-            Great Blue Herons, raccoons, and Red Foxes. Removing this link
-            disrupts connections that no other species can fully replace.
+            Garter snakes emerge in the morning to bask and raise their body
+            temperature, then spend the day hunting. They follow earthworm trails
+            through moist soil, hunt frogs and toads along pond and stream edges, and
+            take salamanders and small fish in shallow water. They swim readily.
+            When alarmed, a garter snake will flatten and musk — releasing a foul-
+            smelling cloacal secretion — before biting. Their saliva is mildly toxic
+            to amphibians and small prey but causes no significant reaction in people.
+            They are preyed on by red-tailed hawks, herons, raccoons, and larger snakes.
+            [1]
           </p>
         </section>
 
-        <section aria-labelledby="threats-heading">
-          <h2 id="threats-heading">The preventable threats: rodenticide and persecution</h2>
-          <p>
-            The Common Garter Snake is entirely non-venomous and harmless to
-            humans — yet it is the most frequently deliberately killed harmless
-            wildlife in North America. Every individual lost removes a keystone
-            predator from the local food web.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Thamnophis_sirtalis_parietalis.jpg"
-                  alt="Eastern Garter Snake in typical foraging posture — tongue flicking to sample chemical traces in the air"
-                  loading="lazy"
-                />
-                <figcaption>
-                  The garter snake finds prey entirely by chemosensory detection — its flickering tongue collects scent molecules and delivers them to a sensory organ in the roof of its mouth. An average adult consumes dozens of slugs, earthworms, and small rodents per season. It is one of the garden's most effective pest-control agents.
-                  <span className="photo-credit"> Photo: National Park Service · <a href="https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_parietalis.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Common_Garter_Snake_%28Thamnophis_sirtalis%29_-_Flickr_-_GregTheBusker.jpg/1280px-Common_Garter_Snake_%28Thamnophis_sirtalis%29_-_Flickr_-_GregTheBusker.jpg"
+            alt="A Common Garter Snake moving through grass, its tongue extended, showing its characteristic striped pattern"
+            width={1280}
+            height={960}
+            loading="lazy"
+          />
+          <figcaption>
+            The flickering tongue collects chemical particles from the air and delivers
+            them to the Jacobson&apos;s organ in the roof of the mouth — a sense organ
+            that gives garter snakes a detailed chemical picture of their surroundings.
+            <span className="photo-credit"> Photo: Greg Schechter&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Common_Garter_Snake_(Thamnophis_sirtalis)_-_Flickr_-_GregTheBusker.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Rodenticide compounds the problem silently: garter snakes eating
-            earthworms that have absorbed rodenticide from treated soil, or
-            eating rodents that consumed bait, accumulate anticoagulant
-            concentrations that cause internal hemorrhage. These deaths are
-            invisible to homeowners but represent a direct toxicity cascade from
-            pest control products to beneficial predators.
+            Garter snakes hibernate from October to April in communal dens — rock
+            crevices, mammal burrows, or building foundations — sometimes with hundreds
+            of individuals. Spring emergence triggers mating, with multiple males
+            pursuing a single female in a writhing mating ball. Young are born live —
+            10 to 40 per litter — from July through September, after a roughly three-
+            month gestation. Newborns are 5 to 8 inches long and fully independent.
+            Adult females typically breed every other year. [1]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Road mortality during spring and fall movement, and the destruction
-            of communal overwintering dens (hibernacula), round out the
-            mortality picture. Hibernacula are site-faithful across generations
-            — once destroyed, they cannot be recolonized.
+            The Common Garter Snake is listed as Least Concern by the IUCN and remains
+            locally abundant through most of its range. [2] Mortality from vehicles and
+            from deliberate killing by people who misidentify them as dangerous are
+            significant threats. Garter snakes bioaccumulate pesticides from the prey
+            they eat — worms, frogs, and insects — making them sensitive indicators
+            of pesticide load in the local environment. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>A south-facing rock pile, no rodenticide, and the patience to leave them alone</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves and garden debris on the ground" loading="lazy" />
-            <figcaption>
-              Garter snakes use rock piles, leaf accumulations, and compost borders as thermal refugia — warming up in morning sun and retreating when temperatures spike. A yard with a few structured corners provides a hunting territory; a bare lawn offers nothing but transit.
-              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Build a rock pile and brush pile.</strong>{' '}
-              Stack flat fieldstones in a south-facing pile 12–18 inches tall
-              and add a brush pile adjacent to any hedgerow. These create the
-              thermal shelter garter snakes need to bask, forage, and overwinter.
+              Never kill a garter snake. They eat slugs, cutworm moths, and
+              voles that damage gardens, and they control frog populations near
+              ponds. A garter snake in the garden is providing active pest
+              control. [3]
             </li>
             <li>
-              <strong>Eliminate all rodenticide.</strong>{' '}
-              Remove every bait station from the yard. Rodenticide kills garter
-              snakes through their earthworm and rodent prey — preventing
-              secondary poisoning is the most direct way to stop invisible
-              mortality.
+              Leave brush piles, flat rocks, and loose boards at yard edges. Garter
+              snakes use these for thermoregulation (warming up in the morning) and
+              for shelter between foraging bouts. [3]
             </li>
             <li>
-              <strong>Leave them undisturbed.</strong>{' '}
-              A garter snake found in a warm, sheltered spot in mid-summer may
-              be preparing to give birth to 10–40 live young. Leave it
-              completely alone and you may witness one of the most remarkable
-              events a backyard can offer.
+              Reduce pesticide use, especially near wet areas. Garter snakes sit
+              high enough in the food chain to bioaccumulate toxins from every worm,
+              frog, and insect they eat through the season. [3]
             </li>
             <li>
-              <strong>Plant native groundcover between your rock pile and garden beds.</strong>{' '}
-              Garter snakes track earthworms, slugs, and salamanders by scent, working the soil
-              surface between their shelter and foraging areas. Bare ground under sun exposure
-              desiccates the top inch of soil and drives earthworms two to four inches deeper,
-              below the zone the snake can reach with its tongue. Native low groundcovers —
-              wild ginger (<em>Asarum canadense</em>), golden groundsel (<em>Packera aurea</em>),
-              or mayapple (<em>Podophyllum peltatum</em>) — keep that surface layer moist and
-              cool. Avoid herbicide applications in the zone between shelter and plant beds:
-              the same spray that kills broadleaf plants removes the moisture cover the earthworm
-              layer requires.
+              Create or maintain a small pond or rain garden. Water attracts the
+              frogs, toads, and earthworms that garter snakes depend on as their
+              primary food sources through the summer. [3]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">A garter snake in the yard means monarchs can thrive there too</h2>
-          <p>
-            A yard where garter snakes forage has the intact ground layer —
-            leaf litter, native plants, chemical-free soil, and a functioning
-            food web from earthworms to frogs — that monarchs also need for
-            safe nectaring and oviposition. If garter snakes are present, the
-            chemical and structural conditions monarchs require are present too.
-          </p>
-          <p>
-            Use garter snake presence as a ground-level habitat quality signal:
-            if one is foraging in your yard, the soil food web is intact and
-            chemical-free. That is the yard monarchs come back to.
-          </p>
-        </section>
-
-        <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">The ground layer, the leaf litter, and who forages the same zone</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('striped-skunk')}>
-                Striped Skunk
-              </button>{'  '}
-              &mdash; skunks and garter snakes both forage the leaf-litter and
-              ground-level invertebrate layer; the snake reads earthworm and slug
-              scent trails by tongue-flicking through the same soil surface the
-              skunk follows by nose; both species concentrate in the same
-              unmowed lawn edges, brush piles, and dense ground cover through
-              the summer months
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('toad')}>
-                American Toad
-              </button>{'  '}
-              &mdash; toads are primary garter snake prey from April through
-              October — a yard with a moist mulched garden bed, water source,
-              or leaf-litter accumulation holds toads, and the garter snakes
-              follow; both species concentrate in shaded ground-layer zones
-              under native shrubs, in compost borders, and along the edges
-              of stone walls
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('eastern-cottontail')}>
-                Eastern Cottontail
-              </button>{'  '}
-              &mdash; garter snakes and cottontails occupy the same brush-pile
-              and leaf-litter habitat without competing; the snake hunts
-              earthworms in the same dense cover the cottontail uses for
-              concealment; a brush pile maintained for cottontail escape
-              structure also provides the thermal refugium a garter snake
-              needs to warm up on a cool morning
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('red-fox')}>
-                Red Fox
-              </button>{'  '}
-              &mdash; red foxes are among the garter snake&apos;s primary
-              predators in suburban settings; a fox patrolling the leaf-litter
-              zone along a shrub edge will take a garter snake encountered
-              during routine rodent hunting; a yard that supports garter snakes
-              is producing the intact ground-layer food web that also supports
-              the foxes, hawks, and herons that sit above it
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('eastern-meadowlark')}>
-                Eastern Meadowlark
-              </button>{'  '}
-              &mdash; both species require intact native grassland or large unmowed meadow patches
-              to hold a population; garter snakes hunt earthworms and frogs along the damp
-              grassland margin while meadowlarks forage the open interior for beetles,
-              grasshoppers, and earthworms; the 75% meadowlark decline since 1966 and the
-              garter snake&apos;s retreat from suburban lawns share a common driver — the
-              conversion of native grassland structure to managed turf
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Ready to build a yard good enough for garter snakes and monarchs?</strong>{'  '}
-            Eliminate rodenticide with the{'  '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticide Guide
-            </button>
-            {'  '}— anticoagulant compounds accumulate through the earthworm and rodent prey
-            garter snakes eat. The{'  '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves guide
-            </button>
-            {'  '}covers the leaf accumulations and brush piles garter snakes use as shelter —
-            the same brush pile an{'  '}
-            <button className="link-button" onClick={() => onNavigate('eastern-cottontail')}>
-              Eastern Cottontail
-            </button>
-            {'  '}sprints to when flushed from the lawn. Or{'  '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              choose a native plant
-            </button>
-            {'  '}to restore the food web they both need, or{'  '}
-            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-              plant milkweed
-            </button>
-            {'  '}to add monarch habitat in the same chemical-free ground layer.
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-chipmunk')}>
+            <span className="neighbor-name">Eastern Chipmunk</span>
+            <span className="neighbor-note">Shares the same forest floor and is occasionally taken as prey; both species are most active along the same rocky and brushy edges.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('red-tailed-hawk')}>
+            <span className="neighbor-name">Red-tailed Hawk</span>
+            <span className="neighbor-note">One of the most important predators of garter snakes, hunting them from perches over the same open and edge habitats where snakes bask.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('gray-tree-frogs')}>
+            <span className="neighbor-name">Gray Tree Frogs</span>
+            <span className="neighbor-note">A primary prey species for garter snakes near ponds and wet edges — the same breeding choruses that attract birds also draw in hunting snakes.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('virginia-opossum')}>
+            <span className="neighbor-name">Virginia Opossum</span>
+            <span className="neighbor-note">Shares the same ground-level suburban and forest edge habitat; opossums are largely immune to pit viper venom, and garter snakes are completely harmless to them.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Thamnophis_sirtalis/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Common Garter Snake</a></li>
+            <li><a href="https://www.iucnredlist.org/species/62320/12594598" target="_blank" rel="noopener noreferrer">IUCN Red List — Common Garter Snake</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds (and Wildlife)</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
