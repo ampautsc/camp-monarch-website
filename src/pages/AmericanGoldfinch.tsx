@@ -9,16 +9,18 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg"
-          alt="Male American Goldfinch in brilliant breeding plumage — canary yellow body, black cap and wings — perched on a native coneflower seed head"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/American_Goldfinch_%28Spinus_tristis%29%2C_Male_-_Guelph%2C_Ontario.jpg/1280px-American_Goldfinch_%28Spinus_tristis%29%2C_Male_-_Guelph%2C_Ontario.jpg"
+          alt="A bright yellow male American Goldfinch with a black cap and black-and-white wings, perched on a stem"
           className="species-hero-image"
-          style={{ objectPosition: 'top center' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={720}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: Rodney Campbell · <a href="https://commons.wikimedia.org/wiki/File:Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons */}
-          Photo: Rodney Campbell&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          Photo: Ryan Hodnett&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:American_Goldfinch_(Spinus_tristis),_Male_-_Guelph,_Ontario.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -27,191 +29,113 @@ export default function AmericanGoldfinch({ onNavigate }: AmericanGoldfinchProps
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>American Goldfinch</h1>
         <p className="hero__lead">
-          The American Goldfinch is one of the strictest vegetarians in North American birds.
-          Its bright yellow summer color is built directly from pigments in the seeds it eats.
-          If your yard grows seed-rich native plants, goldfinches have food through winter,
-          nesting material in summer, and safer breeding habitat year-round.
+          The American Goldfinch is a small finch of weedy fields, roadsides, and backyards. In
+          summer the male is bright yellow with a black cap and black-and-white wings; in winter
+          both sexes fade to a soft olive-brown. It is one of the strictest seed-eaters among
+          songbirds, with a bouncing, up-and-down flight and a call often written as
+          &quot;po-ta-to-chip.&quot; [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">A seed specialist with visible nutrition</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            American goldfinches (<em>Spinus tristis</em>) are famous for yellow plumage, but
-            that color is not cosmetic. Males build that brightness from carotenoids in seeds
-            and plant material. The quality of local seed plants shows up directly in what you
-            can see on the bird. In practical terms: plant diversity becomes visible biology.
-          </p>
-          <p>
-            Goldfinches are unusual among songbirds because they rely almost entirely on seeds.
-            They feed heavily on goldenrod, native asters, native sunflowers, coneflower,
-            black-eyed Susan, and dandelion seed. They even resist most cowbird parasitism
-            because their seed-focused diet does not support cowbird nestlings.
-          </p>
-          <p>
-            Population estimates remain high, but trend direction matters: this species is
-            expected to be decreasing where seed-bearing plants are removed from roadsides,
-            field edges, and yards. "Weed control" can become food control for goldfinches.
+            Goldfinches eat almost nothing but seeds, favoring those of thistles, sunflowers, and
+            other composite flowers, and pulling them straight from the seed head. At feeders they
+            go for nyjer (thistle seed) and sunflower hearts. They travel in loose, twittering
+            flocks and feed acrobatically, often hanging upside down to reach a seed. [1]
           </p>
         </section>
 
-        <section aria-labelledby="lifecycle-heading">
-          <h2 id="lifecycle-heading">Late nesting timed to plant cycles</h2>
-          <p>
-            American goldfinches are among the latest nesters in North America, often beginning
-            breeding in late July. That timing aligns with peak availability of seeds and soft
-            plant down. Females line nests with fibers and down from plants such as milkweed
-            and thistle.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/7b/American_Goldfinch-27527-2.jpg"
-                  alt="American Goldfinch perched on a coneflower seed head, extracting seeds with its specialized bill"
-                  loading="lazy"
-                />
-                <figcaption>
-                  Goldfinches are specialist seed-eaters — they delay nesting until late summer so caterpillar-fed nestlings can transition directly to ripe thistle and coneflower seeds. A garden with native composites still standing in August is exactly what triggers breeding.
-                  <span className="photo-credit"> Photo: Ken Thomas · <a href="https://commons.wikimedia.org/wiki/File:American_Goldfinch-27527-2.jpg" target="_blank" rel="noopener noreferrer">Public domain</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spinus_tristis_m_thistle_Humber_Bay_Park_E.jpg/1280px-Spinus_tristis_m_thistle_Humber_Bay_Park_E.jpg"
+            alt="A male American Goldfinch feeding on a thistle seed head"
+            width={1280}
+            height={1106}
+            loading="lazy"
+          />
+          <figcaption>
+            Thistle is the goldfinch&apos;s favorite seed. It eats the seed and later uses the
+            plant&apos;s down to line its nest.
+            <span className="photo-credit"> Photo: Ryan Hodnett&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Spinus_tristis_m_thistle_Humber_Bay_Park_E.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            This creates a clear yard-management signal: if milkweed and other seed plants are
-            cut before they mature, both food and nesting material disappear. Letting plants
-            complete their full life cycle supports monarchs and goldfinches at the same time.
+            Goldfinches nest later than almost any other songbird, in July and August, timed to the
+            summer flush of thistle and other seeds. The female builds a tight cup of plant fibers
+            bound with spider silk and lined with thistle down, and lays her eggs while the seed is
+            plentiful. They molt their body feathers twice a year, which is why the brilliant summer
+            male turns a plain brown by winter. [1]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Goldfinches also complete a full molt twice each year, including a dramatic shift
-            from olive-brown winter plumage to bright breeding yellow. That seasonal change is
-            energy-intensive and tightly tied to food availability.
+            The American Goldfinch is common across the United States and southern Canada. Surveys
+            put the population around 43 million, and the IUCN lists it as Least Concern. [1][2][4]
+            The U.S. Breeding Bird Survey shows a slow decline since 1966, roughly 0.6% a year,
+            though numbers are steady or rising in parts of the Northeast. [3]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Seed heads, native plantings, milkweed, and no neonicotinoids</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Asclepias_tuberosa_2.jpg" alt="Butterfly weed (Asclepias tuberosa) with bright orange flowers" loading="lazy" />
-            <figcaption>
-              Butterfly weed and other native asters carry goldfinch-quality seeds well into autumn. Skipping the fall tidy-out — leaving seed heads standing — is the single most direct action a yard can offer.
-              <span className="photo-credit"> Photo: Tortie tude&nbsp;·&nbsp;<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Leave seedheads standing through winter.</strong>{' '}
-              Keep stems from native asters, goldenrod, coneflower, rudbeckia, and sunflowers
-              in place until spring cleanup. Those seedheads are winter food.
+              Native seed-bearing plants such as coneflowers, black-eyed Susans, sunflowers, and
+              asters feed goldfinches straight from the seed head. [5]
             </li>
             <li>
-              <strong>Plant native seed-bearing species and tolerate some "weeds."</strong>{' '}
-              Add goldenrod, native asters, liatris, echinacea, and native sunflowers. Consider
-              reducing herbicide use on dandelions, which provide early-season seed resources.
+              Leaving seed heads standing into fall and winter keeps food available after the
+              blooms are gone; a nyjer feeder draws them as well. [5]
             </li>
             <li>
-              <strong>Protect milkweed through seed set.</strong>{' '}
-              Milkweed supports monarch caterpillars and also provides soft down used in
-              goldfinch nests. One planting decision can serve both species.
+              Holding off on fall cleanup leaves the plant down goldfinches use to line their late
+              nests, along with the seeds. [5]
             </li>
             <li>
-              <strong>Skip systemic insecticides on seed-bearing native plants.</strong>{' '}
-              Neonicotinoids are taken up through plant roots and distributed into leaves,
-              stems, pollen, and seeds — including the goldenrod and sunflower seeds
-              goldfinches return to repeatedly across a feeding territory. University of
-              Saskatchewan researchers found that white-crowned sparrows consuming small
-              quantities of imidacloprid-treated seeds lost 25% of their body mass and
-              showed impaired migratory orientation within three days. A goldfinch cycling
-              through treated seed heads over multiple weeks receives the dose in
-              fractions. See the{' '}
-              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-                Pesticide Guide
-              </button>
-              {' '}for alternatives when pest pressure is severe.
+              Skipping herbicides keeps the thistles and other weedy plants that are among their
+              most important foods. [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">Milkweed in July: caterpillar food and nest fiber on the same plant</h2>
-          <p>
-            A female goldfinch builds her nest in late July using milkweed pod fibers — the same
-            soft white strands she pulls from plants where monarch caterpillars are still feeding
-            on the leaves. Nest construction and caterpillar feeding happen on the same milkweed
-            stem, a few feet apart, in the same July week.
-          </p>
-          <p>
-            Goldenrod blooms through September. Monarch adults drink the nectar and convert it
-            into abdominal fat during the pre-diapause period before the Mexico crossing. The
-            nectar flow ends in October as the flowers fade — and goldfinches move onto the same
-            stalks to pull seeds through November and December. The plant runs both schedules
-            in sequence.
-          </p>
-          <p>
-            A purple coneflower head carries ray petals through August and feeds monarch adults
-            seeking nectar. By October those heads have hardened into brown ridged seed cones,
-            and goldfinches cling to the dried stalks extracting seeds through January.
-          </p>
-          <div className="connections">
-            <h3>Species and plants connected to the American Goldfinch</h3>
-            <ul>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('monarch-life')}>
-                  Monarch Butterfly
-                </button>{' '}
-                — uses milkweed for caterpillar food and goldenrod for pre-migration nectar, the same plants goldfinches use for nest fiber and winter seeds
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
-                  Canada Goldenrod
-                </button>{' '}
-                — monarchs drink goldenrod nectar in September; goldfinches eat goldenrod seeds on the same stalks from October through December
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('purple-coneflower')}>
-                  Purple Coneflower
-                </button>{' '}
-                — monarch nectar source in July and August; goldfinch seed source from October through January on the same dried heads
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('native-bees')}>
-                  Native Bees
-                </button>{' '}
-                — share goldenrod and coneflower foraging with goldfinches during peak summer and fall bloom
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('tiger-swallowtail')}>
-                  Tiger Swallowtail
-                </button>{' '}
-                — takes nectar from purple coneflower and goldenrod in July and August; goldfinches work the same coneflower seed heads in October and the same goldenrod stalks from October through December
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Ready to support goldfinches?</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a plant
-            </button>
-            {' '}for seed-rich native species by region,{' '}
-            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-              plant milkweed
-            </button>
-            {' '}for shared monarch and goldfinch habitat,{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticide Guide
-            </button>
-            {' '}to check which products are safe around seed plants, and{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves
-            </button>
-            {' '}for why standing seedheads matter through winter.
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('black-eyed-susan')}>
+            <span className="neighbor-name">Black-eyed Susan</span>
+            <span className="neighbor-note">A native flower whose seed heads goldfinches feed on; leave them standing and the birds will come.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('northern-cardinal')}>
+            <span className="neighbor-name">Northern Cardinal</span>
+            <span className="neighbor-note">A year-round seed-eater that shares the same feeders and native seed plants.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
+            <span className="neighbor-name">Dark-eyed Junco</span>
+            <span className="neighbor-note">A winter seed-eater that takes the same native seed heads, mostly from the ground.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('indigo-bunting')}>
+            <span className="neighbor-name">Indigo Bunting</span>
+            <span className="neighbor-note">Another small seed-and-field bird of brushy edges, here in summer where the goldfinch stays all year.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/American_Goldfinch/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: American Goldfinch (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/american-goldfinch-spinus-tristis" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — American Goldfinch</a></li>
+            <li><a href="https://www.audubon.org/field-guide/bird/american-goldfinch" target="_blank" rel="noopener noreferrer">Audubon Field Guide — American Goldfinch</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
