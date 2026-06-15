@@ -9,19 +9,19 @@ export default function MourningDove({ onNavigate }: MourningDoveProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mourning_Dove_in_North_Florida.jpg/960px-Mourning_Dove_in_North_Florida.jpg"
-          alt="Adult mourning dove standing on the ground, showing the soft pink-brown plumage, small rounded head, black spot below the eye, and long tapered tail"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Mourning_dove_perched_%2861179%29.jpg/1280px-Mourning_dove_perched_%2861179%29.jpg"
+          alt="A Mourning Dove with soft gray-brown plumage, a small head, and a long pointed tail, perched on a branch"
           className="species-hero-image"
-          style={{ objectPosition: 'center 40%' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={970}
           loading="eager"
-          onError={e => {
-            const img = e.currentTarget
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Mourning_Dove_%28Zenaida_macroura%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg/960px-Mourning_Dove_%28Zenaida_macroura%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg'
-            img.onerror = null
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: USFWS&nbsp;&middot;&nbsp;Public domain via Wikimedia Commons
+          Photo: Rhododendrites&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Mourning_dove_perched_(61179).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
@@ -29,247 +29,119 @@ export default function MourningDove({ onNavigate }: MourningDoveProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Mourning Dove</h1>
         <p className="hero__lead">
-          The bird on the driveway is walking, not hopping. Mourning doves have feet built for
-          walking on flat surfaces &mdash; they set one foot in front of the other and move in
-          a straight line toward the seed they spotted ten feet back. The bowed head and slow
-          deliberate pace are the mechanics of a ground forager picking seeds individually off a
-          hard surface. A finch takes seeds from a stem. A mourning dove takes seeds that have
-          already fallen.
-        </p>
-        <p className="hero__lead">
-          <em>Zenaida macroura</em> &mdash; the name means &ldquo;long tail&rdquo; &mdash; has
-          a population near 350 million in North America. That number is possible because of one
-          mechanism: a mated pair can raise five or six broods in a single season, sometimes
-          cycling back through the same nest for back-to-back clutches, sometimes building
-          directly on the stick platform of an abandoned robin nest. A single nest does not need
-          to last. Enough of them do.
+          The Mourning Dove is a slender, soft gray-brown bird with a small head, a long
+          pointed tail edged in white, and a low, mournful cooing call. It is one of the most
+          abundant and widespread birds in North America, found in open habitats from southern
+          Canada to Central America. The U.S. Fish and Wildlife Service estimated about 346
+          million in the United States as of 2023. [1][6]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="nest-heading">
-          <h2 id="nest-heading">The nest a crow can see through</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mourning_Dove_Nest_-_Zenaida_macroura_%2826744948832%29.jpg/960px-Mourning_Dove_Nest_-_Zenaida_macroura_%2826744948832%29.jpg"
-              alt="Mourning dove nest — a flat, loose platform of thin twigs resting in a shrub fork, holding two white eggs visible through gaps in the platform from below"
-              loading="lazy"
-              onError={e => {
-                const img = e.currentTarget
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mourning_Dove_in_North_Florida.jpg/480px-Mourning_Dove_in_North_Florida.jpg'
-                img.onerror = null
-              }}
-            />
-            <figcaption>
-              A mourning dove nest in a shrub fork &mdash; two white eggs on a loose stick
-              platform with gaps wide enough to see through from below. The male collects
-              sticks and delivers them one at a time; the female sets them in place from the
-              center of the platform. Construction takes two to three days. The finished
-              platform has no cup, no walls, and no rain protection beyond whatever canopy
-              is directly above it.
-              <span className="photo-credit"> Photo: Wikimedia Commons / CC BY 2.0</span>
-            </figcaption>
-          </figure>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            A mourning dove nest is a loose platform of twigs &mdash; thin, flat, and so sparsely
-            constructed that the two eggs inside are visible through the gaps from below. The male
-            collects sticks and delivers them one at a time; the female weaves or sets them in from
-            a position at the center of the platform. The result is not a cup but a shelf: a 6-to-8-inch
-            platform that rests in a branch fork or on a horizontal limb, with no walls, no raised
-            edge, and no weather protection beyond whatever canopy is directly above.
-          </p>
-          <p>
-            The eggs sit on this platform for 14 days while both parents take turns incubating,
-            trading off at dawn and dusk. The male sits the day shift; the female takes the night.
-            If the branch flexes in wind, the eggs shift. If the canopy overhead is thin, rain falls
-            directly onto the eggs. Nest failures are common. The pair typically begins building the
-            next nest while still carrying seeds back to the squabs from the previous clutch.
-          </p>
-          <p>
-            Mourning doves nest at almost any height from ground level to 40 feet, in trees, shrubs,
-            on building ledges, and on the ground where no branch is available. The pair returns to
-            the same yard and often the same shrub across multiple years &mdash; not because of
-            territorial attachment, but because the site produced successful broods and the birds
-            have memory of that. A yard where the only trees are ornamentals pruned to bare primary
-            limbs has few branch forks at nest height. A yard with a dense native shrub layer has
-            dozens.
+            Mourning Doves eat almost nothing but seeds, foraging on the ground in open areas
+            such as fields, lawns, roadsides, and below feeders. They fill their crop quickly,
+            then fly to a perch to digest. Their wings produce a distinctive whistling sound on
+            takeoff. They drink by inserting their bill into water and sucking continuously,
+            unlike most birds that tip their head back to swallow. [1]
           </p>
         </section>
 
-        <section aria-labelledby="crop-milk-heading">
-          <h2 id="crop-milk-heading">Three days on crop milk, then seeds</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/20240405_mourning_dove_casa_PD207113.jpg/1280px-20240405_mourning_dove_casa_PD207113.jpg"
+            alt="A Mourning Dove on the ground, showing its soft plumage and small head"
+            width={1280}
+            height={1280}
+            loading="lazy"
+          />
+          <figcaption>
+            Mourning Doves forage on the ground, eating seeds almost exclusively. They fill
+            their crop in a short feeding bout and then rest on a perch to digest.
+            <span className="photo-credit"> Photo: Paul Danese&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:20240405_mourning_dove_casa_PD207113.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            When the eggs hatch, both parents feed the squabs from the crop &mdash; a specialized
-            storage pouch in the esophagus that, during breeding season, produces a secretion called
-            crop milk. Crop milk is not a liquid. It is a dense, cheese-like material sloughed
-            from the crop lining and regurgitated directly into the squab&apos;s open bill. For
-            the first three to four days, the squabs eat nothing else.
+            Mourning Doves nest on a flimsy platform of twigs, often in a tree or on a ledge,
+            sometimes on the ground. Two white eggs per clutch, and pairs can raise up to six
+            broods in a single season in warm climates, more than almost any other North
+            American bird. Both parents produce crop milk to feed the young. Northern
+            populations migrate south in fall; southern birds stay year-round. [1]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Crop milk is higher in protein and fat than either cow&apos;s or human milk, and it is
-            produced by both parents &mdash; unlike mammals, where only females produce milk. The
-            male and female alternate feedings through the day, each regurgitating from a crop that
-            has been partially digesting the secretion since the previous feeding. On day four or
-            five, the parents begin mixing seeds into the deliveries. By day 13 or 14 the squabs are
-            feathered and capable of short flight, and the pair has typically already begun
-            incubating the next clutch.
-          </p>
-          <p>
-            Six broods per season means a pair can raise up to 12 young in a single year under
-            favorable conditions. Most years the actual number is lower &mdash; nests fail to storms,
-            predators, and branch collapse &mdash; but the biological capacity for that output is
-            built into the species. A yard that supports one successful brood in May can support
-            another in June and another in August from the same pair.
+            The Mourning Dove is one of the most abundant birds in North America, with the
+            U.S. Fish and Wildlife Service estimating roughly 346 million in the United States
+            as of 2023. [6] Partners in Flight estimates a global breeding population of about
+            150 million mature individuals. [2] The U.S. Breeding Bird Survey shows a slight
+            decline over recent decades. [3] The IUCN lists it as Least Concern. [4] The
+            Mourning Dove is a legal game bird in most states, with an annual harvest of about
+            20 million, and the population sustains this largely because of its high
+            reproductive rate. [6]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Native seed-head plants standing through winter, bare ground near seeds, one unpruned native shrub, and no herbicides in the back section</h2>
-
-          <figure className="species-content-photo">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Mourning_Dove_%28Zenaida_macroura%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg/960px-Mourning_Dove_%28Zenaida_macroura%29_-_Flickr_-_Andy_Reago_%26_Chrissy_McClarren.jpg"
-              alt="Mourning dove perched on a branch showing the full body — soft pinkish-brown plumage, pale gray-blue head, delicate black spot on the cheek, and the long pointed tail folded tight"
-              loading="lazy"
-              onError={e => {
-                const img = e.currentTarget
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mourning_Dove_in_North_Florida.jpg/640px-Mourning_Dove_in_North_Florida.jpg'
-                img.onerror = null
-              }}
-            />
-            <figcaption>
-              A mourning dove perched between foraging runs. Doves fill their crop &mdash; large
-              enough to hold close to 17,000 small seeds at once &mdash; then retreat to a sheltered
-              perch and sit motionless while their digestive system works. What looks like
-              resting on a wire is a crop full of seeds being processed.
-              <span className="photo-credit"> Photo: Andy Reago &amp; Chrissy McClarren / CC BY 2.0 / Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Let native seed-head plants stand through winter.</strong>{' '}
-              Purple coneflower, black-eyed Susan, wild sunflower, and native grasses drop seeds
-              throughout late summer and autumn. Those seeds accumulate on the ground under the
-              plant and persist through early winter under light snow cover. This is the mourning
-              dove&apos;s food source from October through March. A bed cut to the ground in October
-              removes it. A bed left standing deposits it. Find what grows in your region at{' '}
-              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
-                Find Plants Near Me
-              </button>
-              .
+              A platform feeder or an area of bare ground below a hanging feeder suits a bird
+              that feeds exclusively on the ground. Black-oil sunflower seed and millet are
+              favorites. [5]
             </li>
             <li>
-              <strong>Leave a patch of bare or leaf-littered ground near seed plants.</strong>{' '}
-              Mourning doves pick seeds individually off hard surfaces, sweeping their bill in a
-              small arc as they walk. Dense turf grass is difficult to forage in &mdash; the seeds
-              are too small and the blades too close together. A bare patch under a bird feeder,
-              or the leaf-littered ground under a native shrub, gives doves the flat, open surface
-              they need to feed efficiently. Without it, they pass the yard over for a neighboring
-              driveway or gravel path.
+              Native seed-bearing grasses and flowers left standing through fall and winter
+              provide food directly from the plant. [5]
             </li>
             <li>
-              <strong>Plant at least one dense native shrub and leave it unpruned.</strong>{' '}
-              Mourning doves return to yards where previous nesting attempts succeeded. A native
-              viburnum, elderberry, or hawthorn with branch forks at 4 to 8 feet gives the pair
-              a site to build the loose stick platform the female assembles from the inside out.
-              A shrub pruned to bare primary limbs in spring has no suitable forks. See{' '}
-              <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-                Choose a Plant
-              </button>{' '}
-              for native shrubs that serve both nesting structure and fall seed production.
+              A shallow water source at ground level serves a bird that drinks by sustained
+              suction and visits water regularly. [5]
             </li>
             <li>
-              <strong>Avoid herbicide use in the back section of the yard.</strong>{' '}
-              The mourning dove&apos;s diet is nearly 100% seeds gathered from the ground,
-              including seeds from ragweed, foxtail, pigweed, and smartweed &mdash; plants that
-              pre-emergent herbicide eliminates from the seed bank before they sprout in spring.
-              A back corner treated with weed control in March produces far fewer seeds on the
-              ground by October. That same corner left untreated accumulates seeds through the
-              fall that doves work through from September to February. See{' '}
-              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-                Pesticide Guide
-              </button>{' '}
-              for which products reduce ground-level seed production.
+              Keeping cats indoors protects a bird that spends most of its feeding time on
+              the ground and nests on low, exposed platforms. [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="seeds-heading">
-          <h2 id="seeds-heading">17,000 seeds and a safe place to digest</h2>
-          <p>
-            A mourning dove&apos;s crop can hold close to 17,000 small weed seeds at one load. The
-            bird spends 20 to 30 minutes walking across bare ground or thin leaf litter, picking
-            seeds individually, filling the crop. Then it walks or flies to a sheltered perch
-            &mdash; a wire, a fence post, the branch of an evergreen &mdash; and sits motionless
-            for 20 to 40 minutes while the crop and gizzard process the load. What looks like
-            a dove resting on a wire at midday is a dove digesting.
-          </p>
-          <p>
-            The seed menu is broad: black-eyed Susan, purple coneflower, wild sunflower, native
-            grasses, sedges, and dozens of weed species including ragweed, foxtail, pigweed, and
-            smartweed. Mourning doves eat almost no animal matter &mdash; no insects, no caterpillars,
-            no berries. The diet is nearly 100% seeds, gathered from the ground. A yard with a
-            lawn treated with pre-emergent weed control and mowed to two inches has very few seeds
-            on the ground in winter. A yard with a back section left unmowed past October and a
-            few native seed-head plants standing has seeds available from September through February.
-          </p>
-          <p>
-            The mournful four-note call the species is named for &mdash; <em>ooh-ah-oo-oo-oo</em>,
-            heard from a perch or from inside a tree canopy &mdash; is a territorial and contact call
-            produced by the male. The sound carries a long distance at low frequency. A yard with
-            mourning doves calling in March is a yard where the pair has already identified a
-            nesting site and is establishing their territory before migration brings competing
-            individuals back through.
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('northern-cardinal')}>
+            <span className="neighbor-name">Northern Cardinal</span>
+            <span className="neighbor-note">Shares the same feeders and yard edges, cracking seeds while the dove picks them whole from the ground.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
+            <span className="neighbor-name">Dark-eyed Junco</span>
+            <span className="neighbor-note">Another ground-feeding seed-eater that forages below feeders alongside doves in winter.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-robin')}>
+            <span className="neighbor-name">American Robin</span>
+            <span className="neighbor-note">Shares the same lawns and open ground, eating worms and fruit where the dove eats seeds.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('song-sparrow')}>
+            <span className="neighbor-name">Song Sparrow</span>
+            <span className="neighbor-note">A fellow ground-feeding seed-eater that forages in the same brushy edges and beneath feeders.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Mourning_Dove/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Mourning Dove (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/mourning-dove-zenaida-macroura" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Mourning Dove</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+            <li><a href="https://www.fws.gov/media/mourning-dove-population-status-2025" target="_blank" rel="noopener noreferrer">U.S. Fish and Wildlife Service — Mourning Dove Population Status</a></li>
+          </ol>
         </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>The mourning dove&apos;s ground foraging overlaps with other yard residents.</strong>{' '}
-            <button className="link-button" onClick={() => onNavigate('dark-eyed-junco')}>
-              Dark-eyed Juncos
-            </button>{' '}
-            scratch through leaf litter for the same seeds from October through April.{' '}
-            <button className="link-button" onClick={() => onNavigate('american-robin')}>
-              American Robins
-            </button>{' '}
-            use the same bare ground patches for earthworm foraging. The back corner of the
-            yard &mdash; unmowed, leaf-littered, seeded with native plants &mdash; is
-            operating as habitat for multiple species at once. Start the seed-head layer at{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            {' '}or meet more ground-foraging neighbors in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
-        </div>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            {' '}has native seed-head plants and shrubs that provide both the winter food supply
-            and the branch forks the pair returns to for nesting.{' '}
-            <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
-              Find Plants Near Me
-            </button>
-            {' '}shows what seed-producing natives grow in your specific region.{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves
-            </button>
-            {' '}explains why the leaf-littered ground under shrubs is the same surface doves
-            pick seeds from through winter.{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticide Guide
-            </button>
-            {' '}covers herbicide use and what it does to the weed seed bank doves forage from
-            September through February.
-          </p>
-        </div>
       </div>
     </>
   )

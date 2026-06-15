@@ -9,16 +9,18 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Poecile-atricapilla-001.jpg"
-          alt="Black-capped Chickadee with its distinctive black cap and bib, clinging to a branch in a suburban woodland edge"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/20240314_black_capped_chickadee_earle_park_PD203908.jpg/1280px-20240314_black_capped_chickadee_earle_park_PD203908.jpg"
+          alt="A Black-capped Chickadee with a black cap and bib, white cheeks, and gray back, perched on a branch"
           className="species-hero-image"
-          style={{ objectPosition: 'top center' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={853}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: No machine-readable author provided. Mdf assumed (based on copyright claims). · <a href="https://commons.wikimedia.org/wiki/File:Poecile-atricapilla-001.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
-          Photo: No machine-readable author provided. Mdf assumed (based on copyright claims).&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Poecile-atricapilla-001.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          Photo: Paul Danese&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:20240314_black_capped_chickadee_earle_park_PD203908.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -27,255 +29,116 @@ export default function BlackCappedChickadee({ onNavigate }: BlackCappedChickade
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Black-capped Chickadee</h1>
         <p className="hero__lead">
-          You know the call. <em>Chick-a-dee-dee-dee.</em> It comes from the hedge in February
-          when nothing else is moving, and from the feeder post in June when the yard is full
-          of sound. The Black-capped Chickadee is one of the most familiar birds in North
-          America — and one of the most quietly demanding. To raise a single brood, a breeding
-          pair needs between 6,000 and 9,000 caterpillars. That number is either easy to
-          provide or nearly impossible, depending entirely on what you have planted.
+          The Black-capped Chickadee is a small, active bird with a black cap and bib, white
+          cheeks, a gray back, and buff flanks. It lives year-round across the northern half
+          of the United States and southern Canada, in forests, woodlands, parks, and
+          backyards. Its two-note &quot;fee-bee&quot; whistle and its buzzy &quot;chick-a-dee-
+          dee-dee&quot; call are among the most recognizable bird sounds in North
+          America. [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">The bird that doesn&apos;t leave</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Black-capped Chickadees (<em>Poecile atricapillus</em>) are year-round, non-migratory
-            residents across most of the northern United States and Canada. The bird at your
-            feeder in January is the same individual that nested in your neighborhood last April.
-            It knows your yard. It has mapped every cavity, every food source, every predator
-            perch within its territory.
-          </p>
-          <p>
-            They are cavity nesters. They cannot excavate their own holes and require either
-            natural cavities in dead wood or nest boxes with a precisely sized 1.125-inch entrance
-            hole — large enough for chickadees, small enough to exclude House Sparrows. Each spring,
-            a breeding pair raises one brood of six to eight eggs. Incubation takes twelve to thirteen
-            days; the young fledge at about sixteen days. Both parents feed the nestlings, and what
-            they feed them is almost exclusively caterpillars.
-          </p>
-          <p>
-            Approximately 68 million Black-capped Chickadees occupy North America — a number that
-            appears stable and suggests no conservation urgency.{' '}
-            <sup>
-              <a
-                href="https://pif.birdconservancy.org/bird-vulnerability/scorecard/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cite"
-              >
-                [1]
-              </a>
-            </sup>{' '}
-            That appearance is misleading. The chickadee&apos;s abundance as an adult feeder visitor
-            is not the same as its health as a breeding species. Adults can subsist on seeds
-            through winter. Nestlings cannot. A yard full of feeders can sustain adult chickadees
-            indefinitely while failing to produce a single fledgling, because the caterpillars that
-            nestlings require are simply not available.
-          </p>
-          <p>
-            They also cache. A Black-capped Chickadee will hide thousands of individual food items
-            — seeds, insect larvae, small pieces of frozen fat — in separate locations across its
-            territory, and retrieve them months later using spatial memory precise enough to locate
-            each cache. When you find a cache, you are looking at a small act of cognition that
-            most people never think to attribute to a bird they consider ordinary.
+            Black-capped Chickadees eat insects, seeds, and berries, gleaning caterpillars and
+            insect eggs from twigs and bark and visiting feeders for sunflower seed and suet.
+            They cache food in hundreds of different locations and can remember where they put
+            each item for weeks. In winter they form mixed-species flocks with nuthatches,
+            Downy Woodpeckers, and creepers, moving through the woods as a group. [1]
           </p>
         </section>
 
-        <section aria-labelledby="caterpillar-heading">
-          <h2 id="caterpillar-heading">The caterpillar problem</h2>
-          <p>
-            To raise one brood, a chickadee pair delivers between 6,000 and 9,000 caterpillars to
-            the nest.{' '}
-            <sup>
-              <a
-                href="https://www.pnas.org/doi/10.1073/pnas.1809259115"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cite"
-              >
-                [2]
-              </a>
-            </sup>{' '}
-            That is not a rough estimate. It is the measured feeding rate observed across breeding
-            pairs, documented in long-term studies of nesting success relative to native tree cover.
-            The number is large enough to make feeder supplementation irrelevant to breeding outcomes.
-            Seeds do not substitute for caterpillars when nestlings are in the nest.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Black-capped_chickadee_4-13.jpg"
-                  alt="Black-capped Chickadee clinging to a branch, hunting insects in the bark crevices"
-                  loading="lazy"
-                />
-                <figcaption>
-                  A single chickadee brood requires an estimated 6,000 to 9,000 caterpillars between hatching and fledging. That number is not met by visiting one or two plants — it requires a landscape with enough native tree canopy to sustain a functioning caterpillar population through May and June.
-                  <span className="photo-credit"> Photo: Owebb44 · <a href="https://commons.wikimedia.org/wiki/File:Black-capped_chickadee_4-13.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Black-capped_chickadee_%2831171%29.jpg/1280px-Black-capped_chickadee_%2831171%29.jpg"
+            alt="A Black-capped Chickadee clinging to a small branch"
+            width={1280}
+            height={984}
+            loading="lazy"
+          />
+          <figcaption>
+            Chickadees forage acrobatically on small twigs and branches, often hanging upside
+            down to reach insects and seeds.
+            <span className="photo-credit"> Photo: Rhododendrites&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Black-capped_chickadee_(31171).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            The source of those caterpillars is native trees. A native oak (<em>Quercus</em> spp.)
-            supports 557 species of caterpillars. The most common non-native ornamental trees —
-            Norway maple, Bradford pear, Callery pear — support fewer than five.{' '}
-            <sup>
-              <a
-                href="https://www.pnas.org/doi/10.1073/pnas.1809259115"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cite"
-              >
-                [2]
-              </a>
-            </sup>{' '}
-            A yard with ornamental trees and active feeders is a yard that attracts adult chickadees
-            and fails to produce young. The feeders are not helping breeding birds. They are masking
-            the underlying habitat failure.
+            Chickadees do not migrate. Pairs excavate a nest cavity in soft, rotting wood or
+            use an existing hole or nest box, lining the cavity with moss, animal fur, and
+            plant fibers. Six to eight eggs per clutch, incubated by the female for about
+            twelve days. In winter they enter a state of regulated hypothermia on cold nights,
+            lowering their body temperature by up to 12°F to conserve energy. [1]
           </p>
+        </section>
+
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Neonicotinoid insecticides applied to trees for cosmetic pest control — common products
-            used for emerald ash borer, aphids, and scale insects — move systemically through plant
-            tissue. The caterpillars feeding on treated leaves carry those compounds. A chickadee
-            delivering contaminated caterpillars to nestlings across a full breeding season accumulates
-            sublethal doses that reduce nesting success. The box is occupied. Young are hatched.
-            Fewer fledge. The mechanism is not dramatic. It does not kill adults at feeders. It
-            quietly empties nests.
+            Partners in Flight estimates the breeding population at about 43 million. [2] The
+            U.S. Breeding Bird Survey shows a slight overall increase since 1966, with eastern
+            populations growing while western populations have declined somewhat. [3] The IUCN
+            lists it as Least Concern. [4]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>A native tree, a nest box, no systemic pesticides, and one standing dead snag</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Nest_box.jpg" alt="Wooden bird nest box mounted on a post" loading="lazy" />
-            <figcaption>
-              A nest box with a 1⅛-inch entrance hole, placed 5–15 feet up on a tree or post, provides a cavity that chickadees can claim before the season opens. Pair it with a nearby native oak and the breeding territory completes itself.
-              <span className="photo-credit"> Photo: Svdmolen&nbsp;·&nbsp;<a href="https://creativecommons.org/licenses/by/2.5" target="_blank" rel="noopener noreferrer">CC BY 2.5</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant a native tree that hosts caterpillars.</strong>{' '}
-              A native oak is the highest-impact choice in most of the eastern and central US —
-              it supports more caterpillar species than any other native tree. Native black cherry
-              (<em>Prunus serotina</em>), willows (<em>Salix</em> spp.), birch (<em>Betula</em> spp.),
-              and serviceberry (<em>Amelanchier</em> spp.) also host hundreds of caterpillar species.
-              Replacing one Norway maple or Bradford pear with any of these is not a small decision
-              for chickadees. It is a change in whether they can reproduce in your neighborhood.
+              Dead trees and dead branches left standing provide the soft, rotting wood
+              chickadees excavate for nest cavities. A nest box with a 1 1/8-inch entry hole
+              is an alternative. [5]
             </li>
             <li>
-              <strong>Install a nest box with a 1.125-inch entrance hole.</strong>{' '}
-              That precise diameter matters: it admits chickadees and excludes House Sparrows.
-              Mount it 5 to 15 feet high on a tree trunk or wooden post, facing east or northeast,
-              away from prevailing weather. Put it up by February — chickadees begin territory
-              establishment early. Monitor it weekly once eggs appear: remove House Sparrow
-              nests immediately (they are not protected and will displace chickadees). A monitored
-              box in a yard with native trees is actual breeding habitat, not decoration.
+              Native trees and shrubs, especially oaks, birches, and willows, host the
+              caterpillars that make up the majority of the diet during nesting season. A
+              single clutch of chickadees requires 6,000 to 9,000 caterpillars to reach
+              fledging. [5]
             </li>
             <li>
-              <strong>Stop systemic pesticide treatment of your trees.</strong>{' '}
-              Products containing imidacloprid, dinotefuran, or clothianidin — sold under brand
-              names for ash borer, aphid, and scale insect control — move into leaf tissue where
-              caterpillars feed. Accept cosmetic caterpillar damage on your trees. That damage is
-              the food web functioning correctly. A tree with chewed leaves in June is a tree that
-              is feeding the neighborhood. If tree health genuinely requires intervention, ask your
-              arborist about systemic-free alternatives.
+              A feeder with black-oil sunflower seed or suet provides reliable food in
+              winter. [5]
             </li>
             <li>
-              <strong>Leave at least one standing dead snag or dead branch on the property.</strong>{' '}
-              Natural cavities in dead wood are where Black-capped Chickadees nested before anyone
-              manufactured a nest box. A standing dead tree 8 to 15 feet tall — or a dead branch
-              with intact bark remaining on a living tree — produces beetle larvae throughout its
-              decay: the same beetle larvae that a breeding pair delivers to nestlings alongside
-              caterpillars all summer. A natural cavity in that wood gives a breeding pair a site
-              they do not have to compete with House Sparrows for. If the snag requires removal for
-              safety, leave the stump: a stump still hosts the ground beetles, sowbugs, and
-              fungus-feeding larvae that chickadees cache and retrieve from the soil surface through
-              winter.
+              Skipping pesticides preserves the caterpillar populations chickadees depend on
+              to feed their young. [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The connection to monarchs</h2>
-          <p>
-            Monarchs need milkweed and nectar wildflowers. Chickadees need caterpillars from
-            native trees. These are different plants and different food chains, but they share
-            the same constraint: both collapse in the presence of systemic insecticides, and both
-            recover in yards that have committed to pesticide-free native planting.
-          </p>
-          <p>
-            A yard with a native oak canopy, native wildflowers in open beds, and no systemic
-            pesticide applications is simultaneously monarch breeding habitat and chickadee
-            breeding habitat. The wildflower bed supports monarchs and the caterpillar food web
-            that oaks supply supports chickadees. These are not separate investments. They are
-            the same investment in a native plant community.
-          </p>
-          <p>
-            Chickadees are also, for many people, the easier entry point. A chickadee landing in
-            your open palm to take a seed is a direct tactile wildlife encounter that changes the
-            relationship between a person and their yard faster than almost any educational
-            program. If someone you know isn&apos;t yet moved by monarch conservation, a chickadee
-            nest box with young in it may be the thing that opens the door. The species are not
-            separate causes. They share a yard, a food web, and an enemy.
-          </p>
-          <p>
-            The{' '}
-            <button className="link-button" onClick={() => onNavigate('downy-woodpecker')}>
-              Downy Woodpecker
-            </button>{' '}
-            is the cavity excavator that supplies the natural nest sites chickadees evolved to use.
-            A Downy pair drills a new hole each spring, raises its young, and then vacates the
-            cavity. The 1-to-1.25-inch entrance that remains is the right size for a chickadee to
-            claim the following year. A yard with standing dead wood and active Downies generates
-            cavity sites on its own — the same sites chickadees used before anyone built a nest box.
-          </p>
-          <p>
-            The{' '}
-            <button className="link-button" onClick={() => onNavigate('brown-creeper')}>
-              Brown Creeper
-            </button>
-            {' '}works the same dead wood from a different angle. While the chickadee ranges the
-            canopy, the creeper starts at the base of each trunk and spirals upward, pressing its
-            bill into bark furrows to extract the same overwintering beetle larvae and spider eggs
-            that chickadees cache between visits. A yard with standing dead snags and rough-barked
-            native trees holds both species through winter on the same bark-surface invertebrate
-            community.
-          </p>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Ready to take the next step?</strong>{' '}
-            <button
-              className="link-button"
-              onClick={() => onNavigate('plant-milkweed')}
-            >
-              Plant milkweed
-            </button>
-            {' '}to add monarch breeding habitat in the open ground around your native trees, or{' '}
-            <button
-              className="link-button"
-              onClick={() => onNavigate('choose-a-plant')}
-            >
-              choose a native plant
-            </button>
-            {' '}to find the caterpillar-hosting trees and wildflowers that serve chickadees and monarchs together. To see how the canopy layer &mdash; where caterpillar production happens &mdash; connects to the floor and shrub layers below it,{' '}
-            <button
-              className="link-button"
-              onClick={() => onNavigate('habitat-layers')}
-            >
-              The Four Layers
-            </button>
-            {' '}maps the full vertical structure of a functioning habitat yard.
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('downy-woodpecker')}>
+            <span className="neighbor-name">Downy Woodpecker</span>
+            <span className="neighbor-note">Joins the same mixed winter flocks, working the trunk while the chickadee works the outer branches.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
+            <span className="neighbor-name">Dark-eyed Junco</span>
+            <span className="neighbor-note">A winter ground-feeder that forages below the trees where chickadee flocks are working above.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('northern-cardinal')}>
+            <span className="neighbor-name">Northern Cardinal</span>
+            <span className="neighbor-note">A year-round feeder neighbor that takes seeds from the platform while the chickadee takes one at a time and flies off to eat it.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-goldfinch')}>
+            <span className="neighbor-name">American Goldfinch</span>
+            <span className="neighbor-note">Another small year-round bird that shares feeders and backyards.</span>
+          </button>
         </div>
 
-        <section className="cite-list" aria-label="Sources">
-          <p>[1] Partners in Flight. <a href="https://pif.birdconservancy.org/bird-vulnerability/scorecard/" target="_blank" rel="noreferrer">Species Assessment Database 2020.</a> Bird Conservancy of the Rockies. Accessed May 2026.</p>
-          <p>[2] Narango, D.L.; Tallamy, D.W.; Marra, P.P. <a href="https://www.pnas.org/doi/10.1073/pnas.1809259115" target="_blank" rel="noreferrer">Nonnative plants reduce population growth of an insectivorous bird.</a> <em>Proceedings of the National Academy of Sciences</em>, 2018.</p>
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Black-capped_Chickadee/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Black-capped Chickadee (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/black-capped-chickadee-poecile-atricapillus" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Black-capped Chickadee</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
         </section>
       </div>
     </>
