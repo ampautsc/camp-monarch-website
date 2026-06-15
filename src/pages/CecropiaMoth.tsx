@@ -9,15 +9,17 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Hyalophora_cecropia_adult_female_sjh.JPG"
-          alt="Cecropia Moth at rest with wings fully spread, revealing dinner-plate wingspan with red-banded body and eye spots — North America's largest native moth"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hyalophora_cecropia_adult_female_sjh.JPG/1280px-Hyalophora_cecropia_adult_female_sjh.JPG"
+          alt="A Cecropia Moth resting with wings spread, showing its red and brown banded wings with white kidney-shaped spots and red body"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={960}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: No machine-readable author provided. Kugamazog~commonswiki assumed (based on cop · <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_adult_female_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons */}
-          Photo: No machine-readable author provided. Kugamazog~commonswiki assumed (based on cop&nbsp;·&nbsp;
+          Photo: Kugamazog&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_adult_female_sjh.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a>
           &nbsp;via Wikimedia Commons
         </div>
@@ -27,291 +29,130 @@ export default function CecropiaMoth({ onNavigate }: CecropiaMothProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Cecropia Moth</h1>
         <p className="hero__lead">
-          Wings spanning seven inches. A body banded in red and white. Eyes that
-          never open to eat — because the adult has no mouth. North America&apos;s
-          largest native moth emerges in May, finds a mate by scent across a mile
-          of darkness, and dies within two weeks. The wild cherry tree in your
-          yard is the reason it exists at all.
+          The Cecropia Moth is the largest native moth in North America, with a
+          wingspan that can reach 6 inches (15 cm). Its wings are deep red-brown
+          with white and red banding, and each wing has a prominent crescent-shaped
+          white spot. Adults have no functional mouths and cannot eat — they live
+          only one to two weeks, surviving entirely on energy stored as caterpillars,
+          and spend that time entirely on finding a mate. [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">The largest moth in North America</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            <em>Hyalophora cecropia</em> is a giant silk moth in the family
-            Saturniidae — the same family as the Luna and Polyphemus moths. Its
-            wingspan reaches five to seven inches, making it the largest native
-            moth on the continent. The wings are brown and brick-red, each
-            marked with a white crescent and bands of red, white, and tan that
-            form a pattern unlike anything else in the forest. The abdomen is
-            banded in alternating red and white, with a white collar at the
-            base of the thorax. When a Cecropia Moth lands on a window screen
-            in May, people stop and stare — many have never seen an insect this
-            large or this ornate.
-          </p>
-          <p>
-            Like all giant silk moths, the adult Cecropia has vestigial
-            mouthparts and cannot eat or drink. From the moment it chews through
-            its cocoon, it runs entirely on fat reserves accumulated during its
-            caterpillar stage. Males emerge first and spend their nights
-            navigating by scent, following pheromone plumes emitted by females
-            with comb-like antennae that can detect a single molecule per cubic
-            meter of air. Studies have shown males can locate a female from a
-            mile or more away on a still night. A female mates once, lays
-            her eggs in small clusters on host tree leaves over several nights,
-            and is dead within two weeks.
-          </p>
-          <p>
-            The caterpillar is extraordinary: bright lime-green, growing to
-            nearly four inches long over five instars, studded with rows of
-            colorful spiky tubercles — yellow, orange, and blue — that catch
-            the light and look almost artificial. It feeds steadily through late
-            summer, building the fat reserves the adult will depend on entirely.
-            In autumn the caterpillar spins a large papery-silk cocoon attached
-            lengthwise to a branch or trunk. The cocoon overwinters, and the
-            moth chews free in late April or May.
+            Cecropia Moths are entirely nocturnal. Females emerge from their cocoons
+            in late May or June and release pheromones from a gland at the tip of
+            the abdomen. Males detect these signals through large, feathery antennae
+            and can follow a pheromone trail from more than a mile away. Mating
+            occurs before dawn. After mating, females lay flattened oval eggs in
+            rows on the leaves of host trees — black cherry, sugar maple, white
+            birch, elderberry, and many others. An adult cecropia&apos;s entire life is
+            a single task: find a mate and lay eggs. [1]
           </p>
         </section>
 
-        <section aria-labelledby="trees-heading">
-          <h2 id="trees-heading">What the caterpillar needs</h2>
-          <p>
-            Cecropia Moth caterpillars are among the less host-restricted of the
-            giant silk moths. Their primary hosts are wild cherry
-            (<em>Prunus serotina</em>), chokecherry, and other native
-            <em>Prunus</em> species. They also develop on elderberry, box elder,
-            maple, birch, sassafras, apple, plum, lilac, and several other
-            native and introduced woody plants. This relative flexibility makes
-            Cecropia Moths better positioned than Luna or Polyphemus Moths to
-            persist in suburban landscapes — but only if those landscapes still
-            contain some native canopy or shrub layer.
-          </p>
-              <figure className="species-content-photo species-content-photo--right">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/91/Hyalophora_cecropia_caterpillar.jpg"
-                  alt="Cecropia Moth caterpillar — a large green caterpillar with blue, yellow, and red tubercles, one of North America's largest"
-                  loading="lazy"
-                />
-                <figcaption>
-                  The caterpillar that becomes a Cecropia Moth grows to four inches — one of the largest in North America. It feeds on cherry, maple, birch, and apple. The adult that emerges has no functional mouth and will not eat again. Its entire adult life — seven to ten days — is devoted to finding a mate.
-                  <span className="photo-credit"> Photo: Michael Hodge · <a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_caterpillar.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hyalophora_cecropia_adult.jpg/1280px-Hyalophora_cecropia_adult.jpg"
+            alt="A Cecropia Moth with wings fully spread showing the detailed red, brown, and white wing pattern and feathery antennae"
+            width={1280}
+            height={960}
+            loading="lazy"
+          />
+          <figcaption>
+            The large feathery antennae visible on male Cecropia Moths are organs for
+            detecting pheromones — they can perceive a single molecule of a female&apos;s
+            scent from more than a mile away.
+            <span className="photo-credit"> Photo: Jacy Lucier&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Hyalophora_cecropia_adult.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Wild black cherry is the highest-value Cecropia host tree in the
-            eastern United States. It is also one of the most ecologically
-            productive native trees on the continent: the Tallamy lab at the
-            University of Delaware found wild black cherry supports more
-            caterpillar species (456) than any other native tree except oaks.
-            Cherry also provides fruit for dozens of bird species and is a major
-            nectar source early in the season. A yard with a wild cherry tree
-            is a yard with a functioning food web — and a yard where Cecropia
-            caterpillars can complete their development.
-          </p>
-          <p>
-            Elderberry is a second high-value Cecropia host that is accessible
-            to homeowners with less canopy space. Native elderberry
-            (<em>Sambucus canadensis</em>) is a large shrub rather than a tree,
-            produces flowers that support bees and butterflies in June and July,
-            and provides berries eaten by more than 45 bird species in late
-            summer. It can grow in part shade, tolerates wet soil, and
-            establishes quickly. Planting a native elderberry along a fence line
-            or at the edge of a yard creates Cecropia habitat without requiring
-            a large tree.
+            Cecropia caterpillars hatch in June and feed through August, reaching
+            about 4 inches (10 cm) in length — bright green with rows of red, yellow,
+            and blue knobbed tubercles. In late summer they spin a large, tough silk
+            cocoon fastened lengthwise to a branch or twig, where they spend the
+            winter as a pupa. Adults emerge in late May through June. There is one
+            generation per year. The entire adult life — from emergence to egg-laying —
+            lasts one to two weeks. [1]
           </p>
         </section>
 
-        <section aria-labelledby="parasitoid-heading">
-          <h2 id="parasitoid-heading">The 1906 introduction that changed everything</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            In 1906, scientists introduced a parasitoid fly — <em>Compsilura
-            concinnata</em> — from Europe into New England. The goal was to
-            suppress the spongy moth (then called gypsy moth) and the browntail
-            moth, two introduced pest species defoliating trees across the
-            region. <em>Compsilura</em> was a proven parasitoid of those
-            targets in its native range. It seemed like a useful tool.
-          </p>
-          <p>
-            What was not understood in 1906 was that <em>Compsilura</em> is a
-            generalist. It does not restrict itself to spongy moths. It attacks
-            more than 200 species of lepidopteran larvae. And unlike many
-            parasitoids that track their host&apos;s population density,
-            <em>Compsilura</em> is highly mobile and persistent. It does not
-            disappear when target densities fall.
-          </p>
-          <p>
-            In 2000, a study published in <em>Conservation Biology</em> by
-            Boettner, Elkinton, and Boettner reported direct field measurements
-            of the damage. Laboratory-reared Cecropia, Polyphemus, and Promethea
-            moth caterpillars were released at field sites across Massachusetts
-            and monitored for parasitism. Parasitism rates by <em>Compsilura</em>
-            and related introduced flies were extremely high — exceeding 80% for
-            Cecropia in some sites. The authors concluded that introduced
-            parasitoids are likely responsible for the marked decline of native
-            silk moths in New England, where all three species were once
-            abundant and are now rarely encountered.
-          </p>
-          <p>
-            This is not a historical footnote. <em>Compsilura</em> is still
-            present and active across its introduced range in the northeastern
-            United States. Populations of Cecropia, Polyphemus, and Promethea
-            moths have not recovered. The fly introduced to solve one ecological
-            problem created a second one that has persisted for 120 years and is
-            not reversible. The lesson — that biological control agents
-            introduced without understanding nontarget effects can cause
-            long-term collateral damage to native communities — remains one of
-            the clearest examples of unintended consequences in conservation
-            history.
+            Cecropia Moths have no formal IUCN listing but have declined dramatically
+            since the 1980s and are now rarely seen where they were once common. The
+            primary cause is a parasitoid fly, Compsilura concinnata, that was
+            deliberately introduced across North America between 1906 and 1986 to
+            control the gypsy moth. The fly now attacks more than 180 non-target
+            species, parasitizing Cecropia caterpillars before they can reach the
+            cocoon stage. Light pollution also disrupts mating: male moths following
+            pheromone trails at night are diverted by bright artificial lights,
+            circling the light instead of finding females. [1][2]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that support Cecropia Moths</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves on the ground" loading="lazy" />
-            <figcaption>
-              Cecropia cocoons spin onto branches just above the leaf litter and overwinter there until spring. Raking and removing autumn leaves removes the thermal layer those cocoons depend on. Leaving the leaves — just here — is the whole intervention.
-              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant wild cherry or native elderberry.</strong>{' '}
-              Wild black cherry (<em>Prunus serotina</em>) is the single
-              highest-value Cecropia host tree and one of the most ecologically
-              productive native trees in the eastern United States. Elderberry
-              (<em>Sambucus canadensis</em>) is a fast-establishing native shrub
-              that provides Cecropia larval habitat alongside flowers for bees
-              and fruit for birds. Either plant is a meaningful addition to a
-              suburban yard. Find both species at native plant nurseries using{' '}
-              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
-                Find Plants Near Me
-              </button>
-              .
+              Plant host trees — black cherry (Prunus serotina), sugar maple, white
+              birch, elderberry, and lilac are all used by Cecropia caterpillars.
+              Native host trees near the house make it possible for eggs laid on the
+              foliage to survive to the cocoon stage. [2]
             </li>
             <li>
-              <strong>Turn off outdoor lights during May and June.</strong>{' '}
-              Cecropia adults fly from late April through June in the northern
-              part of their range, with peak activity in May. Males navigating
-              toward pheromone plumes are deflected by bright outdoor light,
-              spending hours circling a porch light instead of finding a female.
-              Motion-activated lighting, warm-amber LED bulbs, and downward-directed
-              fixtures reduce the light trap during the only weeks that matter
-              for the annual Cecropia generation. See the full picture of how
-              light affects native insects on the{' '}
-              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-                Pesticides &amp; Your Habitat page
-              </button>
-              .
+              Turn off or put outdoor lights on motion sensors in late May and June.
+              Male moths searching for mates at night are pulled off course by
+              bright white lights; even a single porch light can prevent a male from
+              locating the female that produced the pheromone trail it was following.
+              [2]
             </li>
             <li>
-              <strong>Protect the cocoon through winter.</strong>{' '}
-              Cecropia cocoons are large — two to three inches long — and
-              wrapped lengthwise along a small branch or twig. They are brown
-              and papery, resembling a crumpled leaf cluster. If you find one
-              during fall or winter pruning, leave it attached to its branch or
-              relocate it carefully to a protected outdoor spot (it must
-              experience cold temperatures to complete development). Do not
-              bring it indoors. The moth inside requires a full winter at
-              outdoor temperatures before it can emerge in spring.
+              Leave dead branches on trees through spring. Cecropia cocoons are
+              attached to branches, and winter or early spring pruning removes
+              overwintering pupae before they can emerge as adults. [2]
             </li>
             <li>
-              <strong>Stop broad-spectrum insecticide applications on host trees.</strong>{' '}
-              Pyrethroid and organophosphate sprays on wild cherry, elderberry,
-              maple, and birch during the caterpillar season (June through
-              September) kill Cecropia larvae directly. The large, colorful
-              caterpillar you find on your wild cherry in August is a Cecropia
-              Moth larva. It will not harm the tree. Leave it. Avoid
-              participation in aerial Bt spray programs on properties containing
-              Cecropia host trees when local opt-out programs permit.
+              If you find a large silk cocoon attached to a branch in fall or winter,
+              leave it undisturbed. It contains a cecropia, polyphemus, or luna moth
+              pupa. Moving or cutting it detaches it from the branch and kills the
+              insect inside. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">A yard that supports Cecropia supports the whole web</h2>
-          <p>
-            The wild cherry tree that Cecropia caterpillars need is the same
-            tree that supports 456 caterpillar species, 49 species of nesting
-            birds, and the fruit-eating migrants passing through in July and
-            August. The elderberry that hosts Cecropia larvae also feeds the
-            cedar waxwings and thrushes that need fruit in late summer before
-            migration. The pesticide-free, native-planted yard that gives a
-            Cecropia caterpillar a chance to complete its life cycle is the same
-            yard that supports monarchs, wood thrushes, fireflies, and bats.
-          </p>
-          <p>
-            A Cecropia Moth finding a mate on a warm May night is not a separate
-            conservation story from the monarch finding milkweed, or the firefly
-            larvae overwintering in leaf litter, or the little brown bat
-            emerging to hunt at dusk. These are threads in the same fabric.
-            When the fabric holds, they all persist. When a yard stops applying
-            pesticides and adds one native cherry or elderberry, it strengthens
-            that fabric across the entire block.
-          </p>
-          <p>
-            When a seven-inch moth rests on a windowpane in May — wings spread,
-            abdomen banded red and white, the night it has left to find a mate
-            already half gone — it is doing what Cecropia Moths have done on
-            this continent for millions of years. The question is whether the
-            yard it lands on still has what it needs to finish.
-          </p>
-        </section>
-
         <div className="neighbor-grid">
-          <button className="neighbor-card" onClick={() => onNavigate('tulip-poplar')}>
-            <span className="neighbor-name">Tulip Poplar</span>
-            <span className="neighbor-note">Cecropia caterpillars develop on tulip poplar leaves in July and August, eating to build the fat reserves the non-feeding adult burns during its entire mating flight; a single mature tulip poplar at 100 feet produces more host-leaf surface than most suburban lots contain in total native canopy</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('black-cherry')}>
-            <span className="neighbor-name">Black Cherry</span>
-            <span className="neighbor-note">Wild black cherry is the highest-value Cecropia host tree and the same tree that supports 456 other caterpillar species; the promethea moth, a related silk moth, uses black cherry as its primary host and hangs leaf-wrapped cocoons from the branches through winter</span>
+          <button className="neighbor-card" onClick={() => onNavigate('luna-moth')}>
+            <span className="neighbor-name">Luna Moth</span>
+            <span className="neighbor-note">A sister giant silk moth with the same lifecycle, the same host trees, and the same parasitoid threat from the introduced fly Compsilura concinnata.</span>
           </button>
           <button className="neighbor-card" onClick={() => onNavigate('polyphemus-moth')}>
             <span className="neighbor-name">Polyphemus Moth</span>
-            <span className="neighbor-note">Shares the same family (Saturniidae) and faces the same suburban pressures — introduced parasitoid flies, artificial light traps during the mating flight, and broad-spectrum pesticides during caterpillar season; both species overwinter as cocoons in the same leaf layer beneath native canopy trees</span>
+            <span className="neighbor-note">Another giant silk moth, North America&apos;s second largest, sharing the same nocturnal world, the same woodland habitat, and the same threats.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('luna-moth')}>
-            <span className="neighbor-name">Luna Moth</span>
-            <span className="neighbor-note">Another Saturniidae — a non-feeding adult navigating by pheromone plume through the same May and June nights; luna caterpillars use native walnuts and hickories rather than cherry and elderberry, so both moth species can develop in the same yard without competing for the same host trees</span>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-screech-owl')}>
+            <span className="neighbor-name">Eastern Screech-Owl</span>
+            <span className="neighbor-note">A nocturnal predator of the same woodland edges that Cecropia Moths navigate in darkness; large moths are significant prey for screech-owls.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('black-walnut')}>
-            <span className="neighbor-name">Black Walnut</span>
-            <span className="neighbor-note">Cecropia caterpillars develop on black walnut leaves in July and August; after the final instar the caterpillar drops from the canopy and spins its cocoon in the leaf litter beneath the tree, where it overwinters until the adult emerges in May; a black walnut at the property edge produces host-leaf surface through the same summer weeks as black cherry and tulip poplar</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('red-maple')}>
-            <span className="neighbor-name">Red Maple</span>
-            <span className="neighbor-note">Cecropia caterpillars develop on red maple leaves through July and August, building the fat reserves the non-feeding adult burns during its entire mating flight; red maple also flowers in late February before its leaves open, giving the bumblebee queen emerging from hibernation carbohydrates the same week Cecropia adults are preparing to emerge from their overwintering cocoons in April and May</span>
+          <button className="neighbor-card" onClick={() => onNavigate('scarlet-tanager')}>
+            <span className="neighbor-name">Scarlet Tanager</span>
+            <span className="neighbor-note">Feeds on caterpillars in the same mature forest canopy where Cecropia caterpillars spend the summer on cherry, maple, and birch.</span>
           </button>
         </div>
 
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Build a yard that supports Cecropia Moths and the food web they anchor.</strong>{' '}
-            Add native host plants with{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , reduce pesticides with the{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticides &amp; Your Habitat guide
-            </button>
-            , protect overwintering cocoons with the{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves guide
-            </button>
-            , and see what else shares your yard in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
-        </div>
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Hyalophora_cecropia/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Cecropia Moth</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Hyalophora-cecropia" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Cecropia Moth</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )

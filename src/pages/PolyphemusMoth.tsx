@@ -9,16 +9,18 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyphemus_Moth_Antheraea_polyphemus.JPG"
-          alt="Polyphemus Moth with wings spread revealing large eyespot on hindwings — a 6-inch wingspan predator-deterrent evolved over millions of years"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Polyphemus_Moth_%28Antheraea_polyphemus%29_-3.JPG/1280px-Polyphemus_Moth_%28Antheraea_polyphemus%29_-3.JPG"
+          alt="A Polyphemus Moth resting with wings spread, showing its brown wings with large blue, yellow, and black eyespots on the hindwings"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={850}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          {/* Photo: [User:Kadoka1]Template:Stephen Lody Photography · <a href="https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_Antheraea_polyphemus.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> via Wikimedia Commons */}
-          Photo: [User:Kadoka1]Template:Stephen Lody Photography&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_Antheraea_polyphemus.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          Photo: The High Fin Sperm Whale&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_(Antheraea_polyphemus)_-3.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -27,261 +29,127 @@ export default function PolyphemusMoth({ onNavigate }: PolyphemusMothProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Polyphemus Moth</h1>
         <p className="hero__lead">
-          One of the largest moths in North America — a six-inch wingspan, four
-          enormous eyespots, and a life so brief the adult never eats. It hatches,
-          finds a mate, lays eggs, and is gone in a week or two. Everything it needs
-          is in the trees outside your window.
+          The Polyphemus Moth is one of North America&apos;s largest moths, with a wingspan
+          up to 6 inches (15 cm). Its brown wings are marked with four large eyespots —
+          the hindwing spots are ringed in blue, black, and yellow and are unveiled
+          suddenly when the moth is disturbed, mimicking owl eyes. Named for the one-eyed
+          Cyclops of Greek myth, adults have no functional mouths and live only one week,
+          spending that time solely on reproduction. [1]
         </p>
       </section>
 
-      
-
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">Named for the Cyclops</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The Polyphemus Moth (<em>Antheraea polyphemus</em>) is a giant silk moth,
-            member of the family Saturniidae. Its wingspan reaches four to six inches,
-            making it one of the most visually commanding insects in North America.
-            The name comes from Polyphemus, the one-eyed Cyclops of Greek mythology —
-            a reference to the single large eyespot on each hindwing, surrounded by a
-            ring of blue, black, and yellow that mimics the eye of a large vertebrate
-            predator well enough to startle a bird into dropping the moth mid-attack.
-          </p>
-          <p>
-            The wings themselves are a study in camouflage. At rest with wings closed,
-            the moth disappears into bark or leaf litter — brown, tan, and russet in
-            patterns that break up its outline against any woody surface. Open the
-            wings and the eyespots flash. The combination of cryptic rest posture and
-            sudden aposematic display is among the most sophisticated anti-predator
-            strategies in the insect world.
-          </p>
-          <p>
-            Adult Polyphemus Moths have vestigial mouthparts. They cannot eat. From the
-            moment they emerge from the cocoon, they live entirely on fat reserves
-            accumulated during their caterpillar stage — reserves that must last long
-            enough to find a mate, produce eggs, and die. The females emit a
-            pheromone plume detectable by males over distances of a mile or more,
-            using feathered antennae that are among the most sensitive chemical
-            receptors in the animal kingdom. A male can locate a female
-            in complete darkness across an open field. The urgency encoded in those
-            antennae is the urgency of an animal with one week left to live.
+            Polyphemus Moths are nocturnal, resting motionless through the day — their
+            mottled brown coloring makes them nearly invisible against bark or leaf
+            litter. After dark, males use large, feathery antennae to track pheromones
+            released by females. They can detect a female from a mile away and fly
+            a zigzag course upwind to find her. Mating occurs before dawn. Females lay
+            oval, flat-topped eggs individually on the leaves of host trees: oak, maple,
+            birch, elm, willow, and many others. An adult Polyphemus Moth does not eat —
+            its mouth is non-functional, and it lives entirely on energy stored during
+            its caterpillar phase. [1]
           </p>
         </section>
 
-        <section aria-labelledby="trees-heading">
-          <h2 id="trees-heading">What the caterpillar needs</h2>
-          <p>
-            The caterpillar stage is where the Polyphemus Moth&apos;s fate is decided.
-            The larvae feed on a broad range of native hardwood trees and shrubs:
-            oaks, maples, birches, cherries, willows, and sweetgum are among the
-            preferred hosts. The caterpillar is bright green with metallic silver
-            spots and grows to nearly three inches long before spinning its dense
-            papery cocoon, often secured to a twig or wrapped in a leaf that falls
-            to the ground in autumn.
-          </p>
-              <figure className="species-content-photo">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Antheraea_polyphemus.jpg"
-                  alt="Polyphemus Moth wings fully spread, showing the large hindwing eyespots that mimic the eyes of a much larger animal"
-                  loading="lazy"
-                />
-                <figcaption>
-                  The Polyphemus Moth keeps its eyespots hidden beneath its forewings at rest. When a predator disturbs it, it drops the forewings suddenly — the flash of two large "eyes" startles most birds long enough for escape. The adult has no functional mouth and lives only long enough to find a mate. Its caterpillar feeds exclusively on native oaks, maples, and birches.
-                  <span className="photo-credit"> Photo: Mike Boone · <a href="https://commons.wikimedia.org/wiki/File:Antheraea_polyphemus.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.5</a> via Wikimedia Commons</span>
-                </figcaption>
-              </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Polyphemus_Moth_%28Antheraea_polyphemus%29.JPG/1280px-Polyphemus_Moth_%28Antheraea_polyphemus%29.JPG"
+            alt="A Polyphemus Moth from above showing the full wing span and the prominent eyespots on both pairs of wings"
+            width={1280}
+            height={741}
+            loading="lazy"
+          />
+          <figcaption>
+            The large eyespots on the hindwings are normally hidden beneath the forewings.
+            When threatened, the moth flares its wings to suddenly reveal the &quot;eyes&quot;
+            — a startle display that mimics an owl face.
+            <span className="photo-credit"> Photo: The High Fin Sperm Whale&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_(Antheraea_polyphemus).JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            The connection to native trees is not incidental. Polyphemus caterpillars,
-            like most Saturniid silk moths, cannot complete development on non-native
-            ornamental trees — the chemistry is wrong, the leaf timing is mismatched,
-            the nutritional profile does not fit. A yard or neighborhood planted
-            entirely with Bradford pears, burning bush, and Japanese maples supports
-            a Polyphemus caterpillar population near zero, regardless of how many
-            moths are passing through as adults. The tree list matters: native oaks
-            and maples are not interchangeable with ornamental substitutes.
-          </p>
-          <p>
-            The same canopy trees that host Polyphemus caterpillars host hundreds of
-            other native moth and butterfly species. A single native oak supports
-            over 500 caterpillar species. That caterpillar biomass is the
-            foundation of the food web that supports every insectivorous bird in the
-            neighborhood — Wood Thrushes, Baltimore Orioles, Black-capped Chickadees,
-            and Eastern Screech Owls all depend on the insects that only native trees
-            can produce at sufficient scale.
+            Polyphemus caterpillars hatch in June and feed through August on oak, maple,
+            birch, and other tree leaves, reaching about 3 inches (8 cm) in length and
+            bright green with a golden sheen. In late summer they spin an oval silk
+            cocoon wrapped in a leaf and attached to the tree or fallen to the ground.
+            Adults emerge the following May through June; there is one generation per year
+            in the north, occasionally two in the south. The adult lifespan is about
+            four to seven days. [1]
           </p>
         </section>
 
-        <section aria-labelledby="decline-heading">
-          <h2 id="decline-heading">Light is destroying the mating system</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Polyphemus Moths and other giant silk moths are strongly phototactic —
-            drawn to artificial light sources with a pull they cannot override. This
-            is not a minor behavioral quirk. A moth that encounters a porch light or
-            streetlamp will circle it for hours, sometimes until dawn, expending the
-            fat reserves that were meant to power a week of mate-searching. It may
-            never reach a female. Males drawn to lights in residential areas
-            frequently die there — wings tattered, fat stores exhausted — before
-            contributing to the next generation.
-          </p>
-          <p>
-            The problem compounds at the population level. In suburban and urban
-            landscapes, artificial light is everywhere. Moths emerging into a
-            neighborhood grid of porch lights, streetlamps, and illuminated buildings
-            face a mating landscape where the artificial signals drown out the
-            pheromone plumes they evolved to follow. The result is reduced mating
-            success, lower egg output, and declining populations in areas that still
-            have the host trees the caterpillars need.
-          </p>
-          <p>
-            Pesticides add a second layer of pressure. Broad-spectrum insecticides —
-            including Bt-based products applied for gypsy moth control — kill
-            Saturniid caterpillars alongside their intended targets. The caterpillars
-            are large, slow-moving, and highly visible on foliage; they are also
-            exquisitely sensitive to the neurotoxic compounds in common yard
-            pesticides. A single spray event in June can eliminate an entire local
-            cohort of Polyphemus larvae before any reproduce.
+            Polyphemus Moths have no formal IUCN listing but have declined significantly
+            since the 1980s. The same parasitoid fly that has devastated Cecropia and
+            Luna Moth populations — Compsilura concinnata, introduced to control gypsy
+            moth — also attacks Polyphemus caterpillars in large numbers. Light pollution
+            interferes with the pheromone-guided mating of both sexes, and habitat loss
+            reduces the number of host trees available in many suburban areas. [1][2]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that support Polyphemus Moths</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg" alt="Autumn leaves covering ground beneath trees" loading="lazy" />
-            <figcaption>
-              Polyphemus cocoons fall to the ground in autumn and overwinter in the leaf layer beneath their host oaks and maples. A single unraked section beneath a mature tree is enough. The insulating depth that keeps them viable through winter is built from what you choose not to remove.
-              <span className="photo-credit"> Photo: Public domain&nbsp;·&nbsp;<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant native oaks and maples.</strong>{' '}
-A single native oak supports more caterpillar biomass than any other
-              tree genus in eastern North America. Even a young oak sapling
-              produces host value within a few seasons of planting. Native red
-              maple, silver maple, and sugar maple are similarly productive hosts.
-              If you have space for one new tree, make it a native oak or maple —
-              the investment pays dividends in insects, birds, and moths for
-              decades.
+              Plant native oaks, maples, birches, and willows. These are the primary
+              host trees for Polyphemus caterpillars, and a single large native oak
+              can support dozens of caterpillars during its peak summer season. [2]
             </li>
             <li>
-              <strong>Turn off or redirect outdoor lights during moth season.</strong>{' '}
-              June through August is peak Polyphemus emergence in most of eastern
-              North America. Switching porch lights and decorative exterior lights
-              to motion-activation during these months reduces the artificial light
-              trap effect. Warm-spectrum (amber/yellow) LEDs are less attractive to
-              moths than cool-white or blue-spectrum lights. Directing fixtures
-              downward instead of broadcasting light upward and outward also
-              substantially reduces moth attraction.
+              Turn outdoor lights off or use motion-activated switches in late May
+              through June. Artificial light at night disrupts the pheromone-following
+              flight of male Polyphemus Moths and draws them away from the females they
+              would otherwise find. [2]
             </li>
             <li>
-              <strong>Stop broad-spectrum pesticide use.</strong>{' '}
-              Caterpillars are the most vulnerable stage. Avoid pyrethroid, organophosphate,
-              and neonicotinoid applications to trees and shrubs during the June
-              through August caterpillar season. If you are managing for a specific
-              pest, use targeted controls and avoid broadcast sprays that contact
-              foliage where Saturniid caterpillars feed. The large green caterpillar
-              you find on your oak in July is worth keeping — it will become something
-              extraordinary.
+              Leave leaf litter and fallen leaves under trees undisturbed from fall
+              through early June. Polyphemus cocoons that fall to the ground overwinter
+              in the leaf layer; raking or blowing leaves in fall removes and kills them.
+              [2]
             </li>
             <li>
-              <strong>Leave cocoons and leaf litter in place through winter.</strong>{' '}
-              Polyphemus cocoons overwinter attached to twigs or in leaf litter on
-              the ground. Raking all leaves, blowing debris out of garden beds,
-              and removing fallen leaves bagged to the curb removes the overwintering
-              habitat of every moth in that cohort. Leave a section of your yard
-              undisturbed from October through May. The moths that emerge from that
-              litter in June are the return on that single act of restraint.
+              If you find a large caterpillar (bright green, with raised yellow or gold
+              spots) on an oak or maple in July or August, leave it — it is likely a
+              Polyphemus or other silk moth caterpillar completing the one feeding stage
+              of its two-year lifecycle. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connection-heading">
-          <h2 id="connection-heading">The week that accounts for everything</h2>
-          <p>
-            An adult Polyphemus Moth lives approximately one week. In that week, it
-            must navigate by pheromone across a landscape increasingly saturated with
-            artificial light. It must find a mate without eating, without resting for
-            long, without the margin that a longer life would provide. Everything that
-            will sustain the next generation depends on the conditions in that week
-            and the trees that supported the caterpillar for the six weeks before it.
-          </p>
-          <p>
-            The gap between what a Polyphemus Moth needs and what most suburban
-            landscapes provide is not large. It needs native canopy trees, reduced
-            artificial light in summer, and an absence of broad-spectrum pesticides
-            during caterpillar season. None of those require extraordinary effort.
-            They require knowing that the moth exists, knowing what it needs, and
-            making the modest choices that follow from that knowledge.
-          </p>
-          <p>
-            When a Polyphemus Male crosses your yard in late June on his way toward
-            a female a quarter-mile away, he is using the same olfactory map his
-            ancestors used in forests that once covered this continent. He does not
-            know about your porch light. He only knows the direction of the signal —
-            and whether the night is dark enough to follow it.
-          </p>
-        </section>
-
         <div className="neighbor-grid">
-          <button className="neighbor-card" onClick={() => onNavigate('tulip-poplar')}>
-            <span className="neighbor-name">Tulip Poplar</span>
-            <span className="neighbor-note">Polyphemus caterpillars develop on tulip poplar leaves through late summer, eating to build the fat reserves the non-feeding adult lives on for its entire week; a mature tulip poplar at 100 feet provides more host-leaf surface than most suburban lots contain in native canopy — one tree can support multiple caterpillar cohorts simultaneously</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('white-oak')}>
-            <span className="neighbor-name">White Oak</span>
-            <span className="neighbor-note">Oaks are the primary Polyphemus host genus — the caterpillars develop on any native oak species, and a single mature oak supports more caterpillar species (500+) than any other tree genus on the continent; Polyphemus and several other giant silk moths share the same oak canopy without competing, using different leaf cohorts</span>
-          </button>
           <button className="neighbor-card" onClick={() => onNavigate('cecropia-moth')}>
             <span className="neighbor-name">Cecropia Moth</span>
-            <span className="neighbor-note">North America&apos;s largest moth, same family (Saturniidae), same suburban pressures — introduced parasitoid flies reduced both species across the northeast; both overwinter as cocoons in the same leaf layer and emerge within weeks of each other in May and June to navigate by pheromone through yards that still have native canopy</span>
-          </button>
-<button className="neighbor-card" onClick={() => onNavigate('black-cherry')}>
-            <span className="neighbor-name">Black Cherry</span>
-            <span className="neighbor-note">A secondary Polyphemus host alongside oaks and maples — and at 456 caterpillar species supported, the second most productive native tree after the oak genus; a black cherry and a native oak together create the host foundation for most of the lepidoptera that insectivorous songbirds depend on for nestling protein</span>
+            <span className="neighbor-note">North America&apos;s largest moth, sharing the same lifecycle, host trees, and decline story — both were once commonly seen at porch lights.</span>
           </button>
           <button className="neighbor-card" onClick={() => onNavigate('luna-moth')}>
             <span className="neighbor-name">Luna Moth</span>
-            <span className="neighbor-note">Shares the Saturniidae family and the same overwintering strategy — Luna caterpillars use native walnuts, hickories, and white oak rather than tulip poplar and cherry, so both silk moths can complete their life cycles in a yard with different native canopy trees; both species pupate in leaf litter beneath their host trees and emerge as non-feeding adults that survive only long enough to mate</span>
+            <span className="neighbor-note">The third giant silk moth of eastern North America, sharing the same nocturnal forest world and facing the same introduced parasitoid threat.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('black-walnut')}>
-            <span className="neighbor-name">Black Walnut</span>
-            <span className="neighbor-note">Polyphemus caterpillars develop on black walnut leaves in summer alongside oaks and maples; the caterpillar drops from the canopy after its final instar and spins its cocoon in the leaf duff beneath the host tree, where it overwinters from late August through the following May; a black walnut in the yard produces host-leaf surface through the weeks the caterpillar needs most calories before spinning</span>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-screech-owl')}>
+            <span className="neighbor-name">Eastern Screech-Owl</span>
+            <span className="neighbor-note">A nocturnal predator that hunts in the same woodland edges where Polyphemus Moths navigate in darkness; large moths are significant owl prey.</span>
           </button>
-          <button className="neighbor-card" onClick={() => onNavigate('american-beech')}>
-            <span className="neighbor-name">American Beech</span>
-            <span className="neighbor-note">American Beech is a documented larval host for Polyphemus Moth — caterpillars develop on beech leaves through summer alongside their more common oak and maple hosts; beech marcescent leaves stay on the tree through winter, and the slow-decomposing leaf litter beneath a beech creates the insulating layer where Polyphemus cocoons overwinter on the forest floor</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('shagbark-hickory')}>
-            <span className="neighbor-name">Shagbark Hickory</span>
-            <span className="neighbor-note">Polyphemus Moth uses hickory as a larval host alongside oaks and maples — both Polyphemus and Luna caterpillars build fat reserves in the same hickory canopy through the same summer weeks, and both overwinter as pupae in the leaf layer below the host tree; undisturbed leaf litter from October through May protects both species simultaneously</span>
-          </button>
-          <button className="neighbor-card" onClick={() => onNavigate('red-maple')}>
-            <span className="neighbor-name">Red Maple</span>
-            <span className="neighbor-note">Polyphemus caterpillars develop on red maple alongside oaks and birches; the caterpillar descends from the maple canopy in late August and spins its cocoon in the leaf duff at the tree's base, where it overwinters until the adult emerges in June; red maple also flowers in late February before any leaf unfolds, providing the American Bumble Bee queen with carbohydrates the same week she emerges from underground hibernation</span>
+          <button className="neighbor-card" onClick={() => onNavigate('wood-thrush')}>
+            <span className="neighbor-name">Wood Thrush</span>
+            <span className="neighbor-note">Forages for caterpillars in the same mature forest understory where Polyphemus caterpillars feed on oak and maple through the summer.</span>
           </button>
         </div>
 
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Build habitat that supports Polyphemus Moths and all native insects.</strong>{' '}
-            Eliminate pesticides with the{' '}
-            <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-              Pesticides &amp; Your Habitat guide
-            </button>
-            , restore native canopy with{' '}
-            <button className="link-button" onClick={() => onNavigate('habitat-transformation')}>
-              From Lawn to Habitat
-            </button>
-            , and find the right native trees to plant with{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            .
-          </p>
-        </div>
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Antheraea_polyphemus/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Polyphemus Moth</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Antheraea-polyphemus" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Polyphemus Moth</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
