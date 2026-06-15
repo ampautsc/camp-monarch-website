@@ -9,16 +9,14 @@ export default function PearlCrescent({ onNavigate }: PearlCrescentProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/56/Pearl_crescent_%2830350%29.jpg"
-          alt="Pearl Crescent butterfly (Phyciodes tharos) with wings open, showing vivid orange wing panels with black borders, black spot clusters, and the intricate black vein network — wingspan just over one inch, one of the most common butterflies east of the Rockies"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pearl_crescent_%2830350%29.jpg/1280px-Pearl_crescent_%2830350%29.jpg"
+          alt="A Pearl Crescent butterfly resting with wings open, showing its bright orange wings with black borders and intricate black patterning"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={947}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/5/52/Pearl_crescent_%2830227%29.jpg'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
           Photo: Rhododendrites&nbsp;·&nbsp;
@@ -31,238 +29,134 @@ export default function PearlCrescent({ onNavigate }: PearlCrescentProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Pearl Crescent</h1>
         <p className="hero__lead">
-          One inch of wingspan. The female lands on an aster leaf, presses her feet against the surface
-          to taste the chemistry, and lays her eggs in a stack on the underside — on no other plant.
-          The caterpillar that hatches from the last summer batch does not die when frost arrives.
-          It tunnels into the leaf litter at the base of the aster stem and waits there through winter.
-          That caterpillar becomes the first Pearl Crescent of April.
+          The Pearl Crescent is one of the most abundant small butterflies in eastern
+          North America — a 1- to 1.5-inch orange-and-black butterfly that appears
+          in virtually every habitat from roadsides to gardens to forest clearings
+          from spring through fall. Its caterpillars eat aster leaves, making it
+          directly dependent on the native asters that are among the most valuable
+          wildflowers you can grow. The name comes from a pale crescent-shaped spot
+          on the underside of the hindwing. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">Phyciodes tharos: one inch, orange and black, two to three generations per summer</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The Pearl Crescent spans just over an inch from wingtip to wingtip — small enough that
-            a handful can nectar simultaneously on a single aster head. The wings are vivid orange
-            with black borders, black spot clusters, and a black vein network crossing the orange
-            panels. On the underside of the hindwing, near the outer edge, sits a pale silver
-            crescent marking: the mark the species is named for, visible when the butterfly rests
-            with wings closed.
-          </p>
-          <p>
-            Males perch on low vegetation or bare soil and dart at any passing insect — other
-            butterflies, flies, bees — returning to the same spot within seconds to wait again.
-            A male Pearl Crescent working a sunny garden corner in September returns to the same
-            perch dozens of times per hour. Females move more slowly through open areas, pausing
-            frequently to press their feet against leaf surfaces before committing to a plant.
-          </p>
-          <p>
-            Two to three generations fly each summer in the upper Midwest, with the first adults
-            on the wing in late April or May. Successive generations follow in June, July, and late
-            August into September. The final generation of the year — the one that hatches in late
-            August — does not complete its development before winter. It overwinters as a
-            partially-grown caterpillar in the leaf litter.
+            Pearl Crescents fly low and fast, darting between patches of open ground
+            and wildflowers. Males are highly territorial — they select a prominent low
+            perch and aggressively chase away other butterflies and insects that pass
+            through their territory, returning to the same spot after each chase. Both
+            sexes nectar on a wide range of low-growing wildflowers: native asters,
+            fleabane, and clovers are favorites. Females fly low over asters, tasting
+            the leaves with sensors in their feet before laying small clusters of eggs
+            on the underside of the leaves. [1]
           </p>
         </section>
 
-        <section aria-labelledby="aster-heading">
-          <h2 id="aster-heading">The caterpillar feeds only on native asters — not coneflower, not goldenrod, no other genus</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://inaturalist-open-data.s3.amazonaws.com/photos/322745074/large.jpg"
-              alt="New England aster (Symphyotrichum novae-angliae) in full bloom — dense clusters of purple ray florets surrounding yellow disk flowers"
-              loading="lazy"
-            />
-            <figcaption>
-              New England aster (<em>Symphyotrichum novae-angliae</em>), one of the Pearl Crescent's primary
-              host plants. The female tastes the leaf chemistry through receptors in her feet before laying;
-              she lays only on <em>Symphyotrichum</em> and closely related native asters, nowhere else.
-              The same plant that feeds the caterpillar feeds the adult on its flowers in September and October.
-              <span className="photo-credit"> Photo: glennberry&nbsp;·&nbsp;<a href="https://www.inaturalist.org/observations/184861115" target="_blank" rel="noopener noreferrer">iNaturalist obs. 184861115</a>&nbsp;· CC0</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Phyciodes_tharos_4.jpg/1280px-Phyciodes_tharos_4.jpg"
+            alt="A Pearl Crescent butterfly resting with wings slightly open on a plant, showing the intricate orange and black pattern of the upperwing"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            The upperwing pattern of the Pearl Crescent is highly variable — males
+            (shown) typically have less black than females, and individuals within
+            the same population can look strikingly different from one another.
+            <span className="photo-credit"> Photo: Kenneth Dwain Harrelson&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Phyciodes_tharos_4.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Female Pearl Crescents lay eggs exclusively on native asters in the genus{' '}
-            <em>Symphyotrichum</em> — New England aster (<em>S. novae-angliae</em>), smooth aster
-            (<em>S. laeve</em>), heart-leaved aster (<em>S. cordifolium</em>), calico aster
-            (<em>S. lateriflorum</em>), and several others. The caterpillars will not develop on
-            coneflowers, goldenrod, black-eyed Susans, or any other composite. The host requirement
-            is specific to the genus.
-          </p>
-          <p>
-            A female identifies a suitable plant through chemoreceptors in her tarsi — the foot
-            segments that contact the leaf surface when she lands. She may visit several plants,
-            pressing her feet against leaves on each before finding one she accepts. Once she
-            commits, she deposits a clutch of 20 to 60 eggs stacked in two to three layers on the
-            underside of a lower leaf. A female may lay multiple clutches on adjacent asters within
-            a few feet of the first.
-          </p>
-          <p>
-            The eggs hatch in five to seven days. First- and second-instar caterpillars feed in
-            groups — ten to twenty siblings eating from the same leaf, skeletonizing it from the
-            underside before moving on together. By the third instar they disperse, each feeding
-            individually on adjacent leaves and stems. The caterpillar is dark brownish-black with
-            pale yellow spots and short bristles — on the dark soil under an aster, nearly
-            invisible from above.
+            Pearl Crescents produce two to three generations per year across most of
+            their range, with adults on the wing from April through October. The last
+            generation of the year overwinters as young caterpillars at the base of
+            aster plants, resuming feeding in early spring. This means asters that are
+            present through fall are not just nectar sources — they also serve as
+            overwintering habitat for next year&apos;s caterpillars. Males emerge slightly
+            before females each generation. The three generations together keep Pearl
+            Crescents visible for a longer continuous season than most larger
+            butterflies. [1]
           </p>
         </section>
 
-        <section aria-labelledby="overwintering-heading">
-          <h2 id="overwintering-heading">The third-instar caterpillar survives winter in the leaf litter at the base of the aster stem</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            In the northern Midwest — Ohio, Michigan, Illinois, Wisconsin — the final Pearl Crescent
-            generation hatches in late August or early September. After two to three weeks of feeding
-            on aster leaves, before reaching its full pre-pupal size, the caterpillar descends the
-            stem and enters the leaf litter at the plant's base. It spins a small silken mat,
-            presses itself into it, and stops feeding.
-          </p>
-          <p>
-            The caterpillar remains there through October, November, December, January, February, and
-            March. Its metabolic processes slow to near zero. In laboratory freezing trials, Pearl
-            Crescent larvae at this stage survive temperatures at or below 0°C through supercooling —
-            the accumulation of compounds that lower the freezing point of body fluids below the
-            ambient temperature. The leaf litter itself provides insulation, keeping the actual
-            temperature around the caterpillar several degrees warmer than the air above.
-          </p>
-          <p>
-            When soil temperatures rise above 10°C in April, the caterpillar resumes feeding on the
-            aster's first new leaf growth. It completes its remaining instars through April and May,
-            pupates, and emerges as the first Pearl Crescent adult of the season — the butterfly
-            you see nectaring on dandelions and early spring flowers while the asters are still
-            bare stems.
+            The Pearl Crescent is one of the most common butterflies in eastern North
+            America and is not of conservation concern. [1] Its use of many native
+            aster species as host plants — wherever asters grow, Pearl Crescents can
+            breed — makes it broadly resilient. The most significant pressure on local
+            populations is the widespread removal of native asters from suburban
+            lawns and gardens, often because asters are perceived as weedy. In gardens
+            and roadsides where native asters are allowed to grow, Pearl Crescents
+            are reliably present from spring through fall. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Plant asters, leave the leaves at their base, and let the stems stand until April</h2>
-          <figure className="species-content-photo species-content-photo--left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/25/Fallen_leaves.jpg"
-              alt="Autumn leaves on the ground forming a layer of leaf litter"
-              loading="lazy"
-            />
-            <figcaption>
-              The Pearl Crescent overwintering caterpillar is in the leaf layer at the base of the aster
-              stem. Raking those leaves in October removes the caterpillar and its silken mat together.
-              Leaving a two-foot ring of undisturbed leaves around each aster plant is the entire
-              intervention — the rest of the yard can be managed as usual.
-              <span className="photo-credit"> Photo: Public domain via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant at least two native asters.</strong>{' '}
-              Pearl Crescents reproduce only on <em>Symphyotrichum</em> asters. New England aster
-              (<em>S. novae-angliae</em>) is the most widely available at native plant nurseries and
-              blooms from late August through hard frost — the window when fall Pearl Crescent
-              adults are nectaring and last-generation caterpillars are feeding before overwintering.
-              A second aster species — smooth aster, heart-leaved aster, or calico aster — extends
-              the bloom window and the egg-laying period. Find native asters with{' '}
-              <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
-                Find Plants Near Me
-              </button>
-              .
+              Plant native asters. More than any other single action, planting native
+              asters (Symphyotrichum species — New England aster, smooth aster, calico
+              aster, etc.) directly creates Pearl Crescent breeding habitat. The
+              caterpillars will only eat native asters, not introduced ornamental asters
+              from garden centers. A patch of native asters also provides nectar for
+              adults late into fall. [2]
             </li>
             <li>
-              <strong>Leave the leaf litter at the base of your asters through April.</strong>{' '}
-              The overwintering caterpillar is in that leaf layer, in a silken mat at the crown of the
-              plant. Rake it away in October and the caterpillar goes with it — exposed, composted,
-              or removed from the yard. Leave a two-foot ring of undisturbed leaves around each aster
-              plant; rake the rest of the yard as usual. That ring is the habitat the caterpillar
-              is depending on from September through April.
+              Leave asters standing through winter. Pearl Crescent caterpillars
+              overwinter at the base of aster plants. Cutting asters to the ground in
+              fall removes both the overwintering caterpillars and the structure they
+              shelter in. Leave stems standing until April. [2]
             </li>
             <li>
-              <strong>Let the aster stems stand until late April.</strong>{' '}
-              Dead aster stems host overwintering bees inside the hollow centers — small carpenter
-              bees and sweat bees seal sections of stem with plant material and spend winter inside.
-              The Pearl Crescent caterpillar is at the base of the stem, not inside it, but leaving
-              the whole plant standing through winter protects both. Cut stems to 8 inches in late
-              April, before the aster sends up its first new growth.
+              Allow low-growing wildflowers in the lawn margin. Pearl Crescents nectar
+              on small flowers close to the ground — native fleabane, clover, and
+              low asters at the edge of the mowed area provide critical nectar without
+              requiring a full meadow garden. [2]
             </li>
             <li>
-              <strong>Skip insecticide applications on aster plants in August and September.</strong>{' '}
-              Pyrethroid and neonicotinoid applications during the peak Pearl Crescent egg-laying and
-              early-instar feeding period — late July through September — kill the caterpillars before
-              they reach the overwintering stage. The clutch of caterpillars feeding on the underside
-              of an aster leaf in late August is not visible from a standing position. Treating the
-              plant eliminates that cohort entirely, including the individuals that would have
-              overwintered and become the first spring adults.
+              Reduce or eliminate broad-spectrum insecticide use. Pearl Crescent
+              caterpillars feed openly on aster leaves and are highly exposed to any
+              insecticide applied to or near the plant. A caterpillar-friendly garden
+              requires some tolerance for leaves with small holes in them. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">What shares the aster bloom in September and the leaf layer in January</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('new-england-aster')}>
-                New England Aster
-              </button>{' '}
-              &mdash; the primary Pearl Crescent host plant in the northern Midwest; the female deposits
-              her egg clutches on its leaves in August and September, the caterpillars feed on those
-              same leaves for two to three weeks, and then the final-generation larva descends and
-              overwinters at the stem base; the plant blooms through the first hard frost, giving
-              adult Pearl Crescents the latest available nectar in the yard
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('canada-goldenrod')}>
-                Canada Goldenrod
-              </button>{' '}
-              &mdash; blooms alongside asters in August and September and draws the same assembly of
-              fall Pearl Crescent adults, migrating Monarchs, American Bumble Bees, and late-season
-              migrant butterflies at once; a corner with both goldenrod and aster blooming in September
-              carries more species simultaneously than either plant alone
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('fireflies')}>
-                Fireflies
-              </button>{' '}
-              &mdash; larvae spend two years hunting prey in leaf litter and loose soil before their
-              single summer of flight; leaving the leaf layer intact under asters and shrubs in October
-              benefits Pearl Crescent caterpillars and firefly larvae simultaneously — both are killed
-              by the same raking operation most homeowners consider routine autumn cleanup
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('great-spangled-fritillary')}>
-                Great Spangled Fritillary
-              </button>{' '}
-              &mdash; lays eggs in late summer near violet plants; the newly hatched first-instar
-              caterpillar overwinters immediately in the leaf litter before it has taken a single bite,
-              surviving winter the same way the Pearl Crescent's third-instar does; both butterflies
-              use the same aster-and-leaf-litter habitat structure in overlapping stages through the
-              same autumn and spring
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('monarch-life')}>
-                Monarch Butterfly
-              </button>{' '}
-              &mdash; nectars on asters during the fall migration in September and October, building
-              the fat reserves the 2,500-mile flight to Michoacán requires; a yard with New England
-              aster blooming in mid-October is providing fuel to the same migration that aster-eating
-              Pearl Crescent caterpillars are feeding beside on the leaves below
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Build a yard that supports Pearl Crescents and the community they share it with.</strong>{' '}
-            Add native asters with{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , understand what leaf litter contains with the{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves guide
-            </button>
-            , and see what else shares your yard in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('great-spangled-fritillary')}>
+            <span className="neighbor-name">Great Spangled Fritillary</span>
+            <span className="neighbor-note">Nectars on the same native wildflowers; both are abundant orange butterflies in native wildflower gardens through summer — fritillaries larger, Pearl Crescents smaller.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
+            <span className="neighbor-name">American Bumble Bee</span>
+            <span className="neighbor-note">Forages the same native aster patches that Pearl Crescents depend on; asters planted for one species directly feed the other.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-meadowlark')}>
+            <span className="neighbor-name">Eastern Meadowlark</span>
+            <span className="neighbor-note">Shares open meadow and field-edge habitat where Pearl Crescents are most abundant; native wildflower meadows support both.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('black-swallowtail')}>
+            <span className="neighbor-name">Black Swallowtail</span>
+            <span className="neighbor-note">Uses the same open garden and meadow habitat; both butterflies visit the same native wildflower patches and respond to the same habitat improvements.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Phyciodes_tharos/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Pearl Crescent</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Phyciodes-tharos" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Pearl Crescent</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )

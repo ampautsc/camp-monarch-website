@@ -9,20 +9,18 @@ export default function Viceroy({ onNavigate }: ViceroyProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Viceroy_Butterfly_perched.jpg"
-          alt="Viceroy butterfly (Limenitis archippus) with wings open — orange with black veins, a broad black border with white spots, and a single curved black postmedian line crossing the hindwing that no Monarch carries"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Limenitis_archippus_%28viceroy_butterfly%29_%28Kentucky%2C_USA%29_%2817257469602%29.jpg/1280px-Limenitis_archippus_%28viceroy_butterfly%29_%28Kentucky%2C_USA%29_%2817257469602%29.jpg"
+          alt="A Viceroy butterfly with wings open on vegetation, showing its orange wings with black veins and borders resembling a Monarch, plus the distinctive black line crossing the hindwing"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={833}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/8/87/Viceroy_butterfly.jpg'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Andy Reago &amp; Chrissy McClarren&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Viceroy_Butterfly_perched.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          Photo: James St. John&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Limenitis_archippus_(viceroy_butterfly)_(Kentucky,_USA)_(17257469602).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -31,244 +29,132 @@ export default function Viceroy({ onNavigate }: ViceroyProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Viceroy</h1>
         <p className="hero__lead">
-          You see an orange butterfly crossing your yard in August. Orange wings, black veins,
-          a broad black border with white spots — it looks like a Monarch. Then you notice a
-          single thin black line curving across the hindwing, from front edge to back edge, in
-          a place no Monarch has one. That line is a Viceroy. The butterfly spent its winter
-          sealed inside a rolled willow leaf tied to a branch with silk, emerged in April when
-          the willows leafed out, and is now flying the same airspace as the Monarchs passing
-          through your yard because birds cannot tell them apart.
+          The Viceroy is orange with black veins and borders, a wingspan of 2.5 to
+          3.5 inches, and looks strikingly like a Monarch — but it is a completely
+          different butterfly species. Look for the black line crossing the hindwing:
+          Monarchs do not have it, Viceroys do. For over a century textbooks called
+          the Viceroy a harmless mimic riding the Monarch&apos;s toxic reputation. A 1991
+          study proved the Viceroy is also unpalatable to birds — both species warn
+          predators, benefiting each other. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">The postmedian line across the hindwing — one curved black stripe that separates every Viceroy from every Monarch</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            From above, the Viceroy and Monarch share the same ground plan: orange wing surface,
-            black veins running across both forewings and hindwings, a broad black border along
-            the outer margins, and two rows of white spots inside that border. The resemblance is
-            close enough that many people who glance and move on will call both species Monarchs.
-            The field mark that separates them is a single curved black line — the postmedian
-            band — running from the front edge to the rear edge of the hindwing. No Monarch carries
-            this line. Every Viceroy does.
-          </p>
-          <p>
-            Viceroy wingspans run 2.5 to 3.5 inches; the Monarch runs 3.5 to 4.5. The Viceroy is
-            smaller, and its flight pattern is different: faster wingbeats, with a flap-flap-glide
-            cadence rather than the Monarch's steadier soaring. A Viceroy moving between willows
-            along a creek stays low, dipping below the shrub line. A Monarch in the same area
-            rides higher, often above the canopy. Once both flight patterns are familiar, they
-            separate without a field mark.
-          </p>
-          <p>
-            Two broods fly most Midwest years. Adults from the overwintered generation emerge in
-            late May and June. A second generation flies from late July through September.
-            Viceroy adults nectar on goldenrod, asters, Joe Pye weed, and other late-summer flowers.
-            They also feed on fermenting fruit, wet soil, and occasionally carrion — the sponging
-            behavior that Monarchs, which take only flower nectar, do not share.
+            Viceroys are butterflies of open, moist habitats — willow thickets, stream
+            banks, meadow edges, and open shrubland where willows and poplars grow.
+            Males perch on shrub tops and low vegetation, watching for females and
+            chasing other butterflies. Flight is distinctive: several rapid wingbeats
+            followed by a flat-winged glide — nearly identical to a Monarch in flight.
+            Adults nectar on native wildflowers including goldenrod, asters, thistles,
+            and native milkweeds; they also feed on aphid honeydew, dung, and carrion.
+            [1]
           </p>
         </section>
 
-        <section aria-labelledby="mimicry-heading">
-          <h2 id="mimicry-heading">The Monarch eats milkweed, stores cardiac glycosides that make birds sick — the Viceroy eats willows, carries no toxin, and wears the same warning colors anyway</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Male_2664px.jpg"
-              alt="Monarch butterfly (Danaus plexippus) with wings open — the same orange-and-black pattern worn by the Viceroy, but without the postmedian line across the hindwing; the Monarch's pattern is an honest signal of cardiac glycoside toxicity; the Viceroy borrows the signal without the toxin"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Monarch_In_May.jpg'
-              }}
-            />
-            <figcaption>
-              The Monarch butterfly (<em>Danaus plexippus</em>) — the species the Viceroy mimics.
-              A Monarch caterpillar ingests cardiac glycosides from milkweed tissue and retains
-              them through metamorphosis into the adult. A Blue Jay that eats a Monarch vomits
-              within minutes and avoids the orange pattern for years afterward. The Viceroy
-              carries none of this toxin but wears the same advertisement.
-              <span className="photo-credit"> Photo: Kenneth Dwain Harrelson · CC BY-SA 3.0 via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Limenitis_archippus_-_Viceroy_butterfly_-_Oklahoma.jpg/1280px-Limenitis_archippus_-_Viceroy_butterfly_-_Oklahoma.jpg"
+            alt="A Viceroy butterfly resting on vegetation at rest, clearly showing the postmedian black line on the hindwing that distinguishes it from the Monarch"
+            width={1280}
+            height={854}
+            loading="lazy"
+          />
+          <figcaption>
+            The key field mark that separates a Viceroy from a Monarch is this black
+            line running across the middle of the hindwing. In the field, the Viceroy
+            is also noticeably smaller than a Monarch and has a slightly different
+            flight pattern.
+            <span className="photo-credit"> Photo: Thomas Shahan 3&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Limenitis_archippus_-_Viceroy_butterfly_-_Oklahoma.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Monarch caterpillars eat milkweed. Milkweed produces cardiac glycosides — compounds
-            that disrupt heart muscle function in vertebrates. The caterpillar sequesters these
-            compounds in its tissues rather than breaking them down, and carries them into the
-            adult butterfly. A Blue Jay that eats a Monarch vomits within minutes. The bird
-            remembers the orange-and-black pattern and avoids it for years. This is aposematism —
-            an animal displaying its toxicity through color.
-          </p>
-          <p>
-            The Viceroy caterpillar eats willows, cottonwoods, and poplars. None of these plants
-            contain cardiac glycosides. The adult Viceroy carries no toxin at all. But it wears
-            the same orange-and-black pattern, and birds that learned to avoid orange from a
-            Monarch encounter extend that avoidance to the Viceroy. The Viceroy gains predator
-            protection through the Monarch's reputation rather than through its own chemistry.
-          </p>
-          <p>
-            This mechanism — a palatable species mimicking an unpalatable one — is called Batesian
-            mimicry. It holds as long as the model (Monarch) outnumbers the mimic (Viceroy) enough
-            that most predator encounters are with the toxic species. Where Monarch populations
-            have collapsed and Viceroys are common, birds encounter more mimics than models and
-            the deterrent weakens. A yard with milkweed hosting Monarch caterpillars each summer
-            produces adults that teach the orange-means-sick lesson to local birds — and those
-            same birds extend the learned avoidance to every Viceroy in the same landscape.
+            Viceroys produce two or three generations per year. They overwinter as
+            young caterpillars inside a rolled willow or poplar leaf, sealed shut
+            with silk and tied to the twig so it won&apos;t fall in autumn wind. In spring
+            the tiny caterpillar resumes feeding as soon as leaves emerge. Mature
+            caterpillars look like bird droppings — mottled olive-brown with white
+            blotches — a camouflage strategy shared with several other butterfly species.
+            Adults are on the wing from May through September, with two or three
+            generations overlapping. [1]
           </p>
         </section>
 
-        <section aria-labelledby="hibernaculum-heading">
-          <h2 id="hibernaculum-heading">In October, the caterpillar rolls a willow leaf around itself, ties the roll to the branch with silk, and stays sealed inside until April</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            Female Viceroys lay eggs singly on the tips of willow, cottonwood, poplar, or aspen
-            leaves — one egg per leaf, placed on the upper surface near the tip. The newly hatched
-            caterpillar feeds from the tip inward, leaving the midrib intact. Early instars are
-            brown and cream, resembling bird droppings — a camouflage that functions against
-            predators scanning for insect-shaped objects on leaf surfaces. As the caterpillar
-            grows, it constructs a silk-lined resting shelter by partially rolling a leaf.
-          </p>
-          <p>
-            In late September or October, before the leaves fall, the third-instar caterpillar
-            constructs a hibernaculum. It selects a still-attached willow leaf, rolls it
-            lengthwise around itself, stuffs the interior with chewed leaf material and frass,
-            and wraps the leaf petiole with silk threads that fasten the rolled leaf to the branch.
-            Then it crawls inside the roll, seals the open end with more silk, and enters diapause.
-            The leaf dries, turns brown, and hangs on the bare branch through winter — a small
-            cylinder, roughly an inch long, tied at the stem.
-          </p>
-          <p>
-            In April, when willows break bud and temperatures hold above freezing, the caterpillar
-            chews through the silk seal and emerges. It resumes feeding on fresh willow leaves,
-            completes its development over three to four weeks, and pupates for about two weeks.
-            Adults from the overwintered generation emerge in late May and June.
-          </p>
-          <p>
-            A willow branch cut in October that has small brown rolled-leaf cylinders tied to
-            its twigs contains Viceroy caterpillars sealed inside those cylinders. Once the
-            branch is cut and dries out, the caterpillar inside cannot survive the winter. The
-            hibernaculum is attached to the living branch by silk threads; it depends on the
-            branch remaining attached and structurally intact through winter. Pruning willows
-            in October or November removes the overwintering generation.
+            The Viceroy is common across eastern North America and is not of conservation
+            concern. [1] It is dependent on willows, poplars, and aspens — host plants
+            that are widespread and not under pressure. The primary threat to local
+            populations is loss of the moist open habitats — willow thickets, wet
+            meadow edges, riparian shrubland — where these host plants naturally grow.
+            Drainage of wet areas and conversion of stream banks to manicured lawns
+            eliminates both host plants and the open structure Viceroys need for
+            patrolling and breeding. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Keep willows from October through April, plant milkweed, and leave late goldenrod standing</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Leave willows, cottonwoods, and poplars unpruned from October through April.</strong>{' '}
-              Any pruning of these trees in fall removes branches with potential hibernacula
-              attached. The rolled-leaf cylinders are not distinguishable from dead leaf debris
-              at a glance — they hang on bare winter branches, one inch long, fastened at the
-              petiole. If structural pruning is necessary, do it in late May or June after
-              overwintered caterpillars have emerged and before the next generation of eggs
-              has hatched. A cut branch left on the ground in late winter may let
-              caterpillars on it survive if temperatures stay above freezing.
+              Plant native willows along wet areas, drainage swales, or pond edges.
+              Willows (Salix species) are the primary Viceroy host plant; pussy willow
+              and shrub willows available from native plant nurseries establish quickly
+              in moist soil. A single large willow can support many caterpillars.
+              Willows also host hundreds of moth and butterfly species. [2]
             </li>
             <li>
-              <strong>Plant a native willow near a downspout, rain garden, or low wet corner.</strong>{' '}
-              Black willow (<em>Salix nigra</em>), pussy willow (<em>Salix discolor</em>), and
-              sandbar willow (<em>Salix interior</em>) are native to most of the Midwest and grow
-              fast from live stakes — a six-inch cutting pushed into wet soil in spring roots
-              without added treatment. A willow eight feet tall at a yard's wet edge supports
-              Viceroy caterpillars each summer. Find willow availability by region with{' '}
-              <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-                Choose a Plant
-              </button>
-              .
+              Allow willow or poplar saplings to grow naturally along stream banks or
+              wet areas. The young growth of these trees is most attractive to egg-laying
+              Viceroys; mature plantings with dense understory are less used than
+              patchy, open willow thickets. [2]
             </li>
             <li>
-              <strong>Plant common milkweed, swamp milkweed, or butterfly weed to keep Monarchs present.</strong>{' '}
-              The protection the Viceroy's appearance provides depends on Monarchs flying the
-              same airspace and teaching birds that orange means toxic. A yard with milkweed
-              hosting Monarch caterpillars each summer produces adults that reinforce the
-              learned avoidance that every Viceroy in the neighborhood benefits from. See
-              host plant options in the{' '}
-              <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-                Plant Milkweed guide
-              </button>
-              .
+              Plant native goldenrod and native milkweed for adult nectar. Viceroys
+              and Monarchs visit the same native wildflowers; a planting designed
+              for Monarchs also directly supports Viceroys. [2]
             </li>
             <li>
-              <strong>Leave late-blooming goldenrod and asters standing through September.</strong>{' '}
-              Second-brood adult Viceroys are loading fat reserves in August and September before
-              the overwintering caterpillar generation hatches. A yard with goldenrod blooming
-              into October provides nectar for Viceroys during the same window when Monarchs
-              are fueling for migration and Red Admirals are loading reserves before winter
-              dormancy — three orange butterflies working the same flower heads the same afternoon.
+              Do not clear vegetation from stream banks and pond edges in late summer.
+              Viceroy caterpillars are constructing their overwintering leaf-tubes on
+              willow twigs in September. Cutting willows to the ground in fall destroys
+              the overwintering generation. Leave willow thickets uncut until May. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">Who shares the willows in spring and the goldenrod in September</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('monarch-life')}>
-                Monarch Butterfly
-              </button>{' '}
-              &mdash; the species the Viceroy mimics; every Monarch caterpillar eating milkweed
-              in your yard becomes an adult that teaches local birds the orange-means-sick lesson;
-              that lesson is what keeps Blue Jays from eating the Viceroys flying the same
-              airspace — the Monarch's toxicity is an asset the Viceroy inherits for free
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('mourning-cloak')}>
-                Mourning Cloak
-              </button>{' '}
-              &mdash; also uses willows as a primary caterpillar host; a willow in a Midwest yard
-              in May holds Mourning Cloak egg rings circling small twigs and Viceroy eggs on
-              leaf tips at the same time; Mourning Cloak adults overwinter behind bark on nearby
-              trees while Viceroy caterpillars overwinter in sealed leaf rolls on the willow branches
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('tiger-swallowtail')}>
-                Eastern Tiger Swallowtail
-              </button>{' '}
-              &mdash; also uses cottonwood and poplar as larval hosts, overlapping with the
-              Viceroy's tree preferences; both species nectar on milkweed, ironweed, and Joe Pye
-              weed in midsummer, often on the same flower heads in the same afternoon
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('red-admiral')}>
-                Red Admiral
-              </button>{' '}
-              &mdash; shares fermenting fruit in October; a rotten crabapple on the ground in
-              late September draws Red Admirals and Viceroys to the same spot; both species are
-              loading reserves before overwintering — the Viceroy as a sealed caterpillar inside
-              a willow leaf, the Red Admiral as an adult behind bark in the same yard
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('canada-goldenrod')}>
-                Canada Goldenrod
-              </button>{' '}
-              &mdash; a patch of goldenrod blooming in late August draws both Viceroys and
-              Monarchs to the same flower heads; watching them side by side is the best way
-              to see the postmedian line on the Viceroy hindwing — the one mark that separates
-              the mimic from the model
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Willows and milkweed together support both the mimic and the model it depends on.</strong>{' '}
-            Find native willow and milkweed options with{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , see the Monarch's host plant requirements in the{' '}
-            <button className="link-button" onClick={() => onNavigate('plant-milkweed')}>
-              Plant Milkweed guide
-            </button>
-            , and explore what else uses the same late-summer goldenrod in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('monarch-life')}>
+            <span className="neighbor-name">Monarch Butterfly</span>
+            <span className="neighbor-note">The species the Viceroy is often mistaken for — and whose warning coloration it shares. Both benefit from being hard for birds to tell apart, a relationship called Müllerian mimicry.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('mourning-cloak')}>
+            <span className="neighbor-name">Mourning Cloak</span>
+            <span className="neighbor-note">Shares willows as a host plant and the same moist woodland-edge habitats; both are medium-sized, distinctive butterflies of the same shrubland and stream-bank areas.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('red-admiral')}>
+            <span className="neighbor-name">Red Admiral</span>
+            <span className="neighbor-note">Uses the same open, moist habitats along stream banks and forest edges; both are territorial perching butterflies that can be seen in the same patches of vegetation.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-phoebe')}>
+            <span className="neighbor-name">Eastern Phoebe</span>
+            <span className="neighbor-note">Nests along the same stream banks and open woodland edges where Viceroys patrol; phoebes have learned to recognize and avoid both Monarchs and Viceroys.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Limenitis_archippus/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Viceroy</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Limenitis-archippus" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Viceroy</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
