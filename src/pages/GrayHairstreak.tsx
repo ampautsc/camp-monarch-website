@@ -9,264 +9,157 @@ export default function GrayHairstreak({ onNavigate }: GrayHairstreakProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/382627539/large.jpg"
-          alt="Gray Hairstreak butterfly perched with wings closed, showing the pale gray underside, dark crossband, and the two white-tipped tails and orange eyespot at the hindwing corner that form a false head"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Gray_Hairstreak_%28Strymon_melinus%29.jpg/1280px-Gray_Hairstreak_%28Strymon_melinus%29.jpg"
+          alt="A Gray Hairstreak butterfly perched on a flower with wings closed showing the gray underwing with the black and white striped line and the orange spot near the hindwing tail"
           className="species-hero-image"
-          style={{ objectPosition: 'center 50%' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={853}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/148454606/large.jpg'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: dhasdf&nbsp;&middot;&nbsp;
-          <a href="https://www.inaturalist.org/observations/216356415" target="_blank" rel="noopener noreferrer">CC BY via iNaturalist</a>
+          Photo: Anne Toal&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Gray_Hairstreak_(Strymon_melinus).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
-        <div className="hero__eyebrow">Butterflies</div>
-        <h1>When a Gray Hairstreak lands and closes its wings, it rubs them slowly together — the two white-tipped tails at the hindwing rear corner oscillate like antennae against an orange-capped dark spot — and a predator that strikes at that apparent head takes detachable wing tissue while the butterfly continues flying.</h1>
+        <div className="hero__eyebrow">Meet Your Neighbors</div>
+        <h1>Gray Hairstreak</h1>
         <p className="hero__lead">
-          The Gray Hairstreak (<em>Strymon melinus</em>) is the most widely distributed hairstreak
-          butterfly in North America, ranging from southern Canada through Central America and west
-          to the Pacific Coast. Its wingspan runs from just under an inch to just over an inch and
-          a quarter. The upper wing surface is a uniform slate gray-blue; the underside is pale
-          gray crossed by a narrow dark line edged in white, with the two-tailed false-head structure
-          at the hindwing's rear corner.
-        </p>
-        <p className="hero__lead">
-          In a yard or garden, the Gray Hairstreak appears on flowering legumes, on hollyhock,
-          on ornamental beans, and on white clover. It is small enough that most people see it
-          every summer without registering what they are looking at. The butterfly's host plant
-          range spans over 200 recorded species — wider than any other native hairstreak — which
-          is why it appears in yards where nothing has been planted deliberately for butterflies.
+          The Gray Hairstreak is the most common and widespread hairstreak butterfly in
+          North America — a small, fast, gray butterfly with fine hindwing tails and a
+          vivid orange spot near each tail tip. Wingspan is 0.75 to 1.25 inches.
+          It is a generalist of open and disturbed habitats — fields, gardens, roadsides,
+          and forest edges — and uses an enormous range of native host plants, making it
+          one of the few small butterflies that thrives in varied and even weedy conditions.
+          The upper wing is gray-blue in males; the underside is pale gray with a black and
+          white striped line crossing both wings. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="false-head-heading">
-          <h2 id="false-head-heading">Two tails, one orange spot, and a rocking motion that animates the decoy — the false head the Gray Hairstreak operates on every perch</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            When a Gray Hairstreak perches and closes its wings, it immediately begins a slow
-            rocking of the hindwings. The two tails — one longer, one shorter, each tipped in
-            white — oscillate together. The movement tracks the way an antenna would move on a
-            living head. Beside the base of the tails, an orange spot sits above a smaller
-            dark-capped spot. From the angle a small bird approaches first, the rear corner of
-            the butterfly reads as a head: two antennae in motion, one eye positioned below them.
-          </p>
-          <p>
-            A bird that strikes at that corner contacts the hindwing tip, not the thorax. The
-            tails and surrounding wing tissue detach under minimal force. The butterfly loses
-            a small piece of its hindwing and continues flying. Individuals collected in late
-            summer regularly show tails that are broken, shortened, or absent — the hindwing
-            corner sustains damage at higher rates than any comparable wing region on butterflies
-            of similar size that lack false-head structure.
-          </p>
-          <p>
-            The orange spot is not warning coloration. The Gray Hairstreak is neither toxic nor
-            distasteful to birds. The spot's function is positional: it marks where an eye would
-            sit, adjacent to where an antenna would attach, at precisely the spot a predator
-            reading "head" would target. The Eastern Tailed-Blue has a nearly identical structure.
-            The difference is the wing-rubbing — the Gray Hairstreak pumps its hindwings to animate
-            the false head rather than relying on the static pattern alone.
+            Gray Hairstreaks are quick and agile in flight, moving rapidly between flowers
+            in sunny, open areas. Adults nectar on a very wide variety of native and
+            non-native wildflowers, with particular preference for native milkweeds, native
+            goldenrod, native clovers, and small composites. While nectaring, they often
+            rub their hindwings together slowly — this makes the hindwing tails move in a
+            way that mimics antennae, directing predators&apos; attention to a false head at
+            the back of the butterfly rather than the real head at the front. The orange
+            eyespot near each tail reinforces the illusion. Males perch on prominent twigs
+            and dart at passing butterflies to defend territory. [1]
           </p>
         </section>
 
-        <section aria-labelledby="host-plants-heading">
-          <h2 id="host-plants-heading">Beans, hollyhock, clover, Wild Blue Indigo — a caterpillar that bores into seed pods and never touches the leaves</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://inaturalist-open-data.s3.amazonaws.com/photos/78371599/large.jpg"
-              alt="Gray Hairstreak butterfly nectaring on a small flower with wings angled open, showing the slate gray upper surface and the orange-tipped tails at the hindwing corner"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/36241171/large.jpg'
-              }}
-            />
-            <figcaption>
-              A Gray Hairstreak nectaring with wings angled open. The upper surface is a uniform
-              slate gray-blue; the false-head tails and orange spot are visible at the hindwing
-              corner even from this angle. In flight the butterfly appears as a rapid gray blur.
-              The full false-head structure is only visible when the wings close on a perch.
-              <span className="photo-credit"> Edward Perry IV &middot; CC BY-NC via iNaturalist</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/57/Gray_Hairstreak_%28Strymon_melinus%29_%287883583564%29.jpg"
+            alt="A Gray Hairstreak butterfly with wings spread open showing the dull gray-blue upper wing surface and the distinctive orange spot near the hindwing tail"
+            width={1148}
+            height={972}
+            loading="lazy"
+          />
+          <figcaption>
+            The Gray Hairstreak&apos;s generalist diet is remarkable: over 200 plant species
+            across dozens of plant families have been recorded as caterpillar hosts. Native
+            legumes, native mints, native mallows, and native composites are among the most
+            common. This flexibility is why the Gray Hairstreak is one of the few small
+            butterflies still regularly seen in heavily modified landscapes.
+            <span className="photo-credit"> Photo: Aaron Carlson&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Gray_Hairstreak_(Strymon_melinus)_(7883583564).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Gray Hairstreak females identify host plants by pressing their feet to flower bud
-            surfaces — tarsal chemoreceptors register the plant's chemical signature on contact.
-            The female then lays a single egg on the bud itself, not on a leaf. The caterpillar
-            does not eat foliage. It bores directly into the flower bud or developing seed pod
-            and consumes the seeds inside. On a bean plant, it tunnels into the pod and eats
-            the developing beans. On hollyhock, it enters the seed capsule after the flower
-            drops. On white clover, it feeds on seeds inside the dense flower head.
-          </p>
-          <p>
-            Common host plants in suburban yards span two main families: legumes — garden beans
-            (<em>Phaseolus</em> spp.), white clover (<em>Trifolium repens</em>), vetches
-            (<em>Vicia</em> spp.), Wild Blue Indigo (<em>Baptisia australis</em>), and{' '}
-            <button className="link-button" onClick={() => onNavigate('partridge-pea')}>
-              Partridge Pea
-            </button>
-            {' '}(<em>Chamaecrista fasciculata</em>) — and mallows: hollyhock (<em>Alcea rosea</em>),
-            common mallow (<em>Malva neglecta</em>), and rose mallow (<em>Hibiscus moscheutos</em>).
-            St. John's wort, hops, and strawberry have also been documented. Over 200 plant
-            species across these and other families appear in the host plant record.
-          </p>
-          <p>
-            Gray Hairstreak caterpillars carry the same ant-recruiting structures as the Eastern
-            Tailed-Blue: a dorsal nectary organ that secretes a fluid ants find attractive, and
-            vibratory organs on the prolegs that produce substrate-borne signals ants respond to.
-            Ants attracted to the nectary organ patrol the pod or capsule surface while the
-            caterpillar feeds inside. Field studies on attended hairstreak larvae show lower rates
-            of parasitoid wasp attack compared to unattended individuals of the same species.
+            Gray Hairstreaks produce two to three generations per year in the east and
+            overwinter as pupae. Adults are present from April through October. Caterpillars
+            are variable in color — green, pink, or brown — matching the flower or seed
+            head they feed on. Unlike many butterflies that feed only on leaves, Gray
+            Hairstreak caterpillars bore into flowers, seed pods, and fruits of the host
+            plant, eating from the inside. The wide host plant range reflects a diet of
+            reproductive plant parts rather than foliage — wherever a caterpillar can
+            bore into a flower or pod, it finds nutrition. [1]
           </p>
         </section>
 
-        <section aria-labelledby="broods-heading">
-          <h2 id="broods-heading">May through October, overwintering as a pupa — and males that hold a perch on a raised branch until another male challenges them</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            The Gray Hairstreak produces two to three broods per year across most of the eastern
-            United States, with adults on the wing from mid-May through early October. In Georgia,
-            Florida, and Texas a fourth brood is possible and adults appear as early as late March.
-            The northern range produces two distinct flight periods — May through June, then August
-            through September — with occasional adults in July between them.
-          </p>
-          <p>
-            Unlike the Eastern Tailed-Blue, which overwinters as an egg in the north, the Gray
-            Hairstreak overwinters as a pupa in leaf litter or shallow soil at the base of host
-            plants. The pupa is dark-surfaced and smooth. It survives hard freezes across the
-            upper Midwest and New England. Adults emerge in May when the first legumes and mallows
-            begin budding.
-          </p>
-          <p>
-            Males perch on raised branches or fence lines and defend small territories from other
-            males, pursuing intruders in rapid spiraling flights before returning to the same perch
-            point. This behavior makes males visible in a way that feeding females are not. Females
-            stay close to host plant surfaces, pressing feet to stems and buds for long periods
-            before committing to an egg. Adults nectar on wild bergamot, milkweed, goldenrod,
-            aster, dogbane, white clover, and common garden flowers including coneflower and zinnia.
+            The Gray Hairstreak is abundant and not of conservation concern. [1] Its broad
+            host plant tolerance and ability to use disturbed, weedy habitat make it one
+            of the most resilient small butterflies in the face of landscape change. It
+            is common in suburban gardens wherever native wildflowers bloom in sunny spots.
+            Its main limitation is the availability of open, sunny habitat with diverse
+            native wildflowers — it is less common in deep shade or in areas where
+            herbicides eliminate the native wildflower understory. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Plant beans or hollyhock, leave some pods on the vine — the Gray Hairstreak is already in yards that have legumes</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant a short row of garden beans and leave some pods on the vine past harvest.</strong>{' '}
-              The Gray Hairstreak female lays eggs on bean flower buds and developing pods.
-              Caterpillars bore into pods and eat seeds inside — invisible from outside. Bean
-              plants allowed to complete their seed cycle, left on the vine past the eating window,
-              provide host plant access from June through September without changing how you
-              harvest the beans you want.
+              Plant native milkweeds. Gray Hairstreaks are frequent visitors to common
+              milkweed (Asclepias syriaca) and butterfly weed (Asclepias tuberosa) for
+              nectar, and milkweeds are recorded caterpillar host plants as well. A
+              milkweed patch in a sunny area draws hairstreaks alongside monarchs and
+              many native bees. [2]
             </li>
             <li>
-              <strong>Add hollyhock to a dry, south-facing bed.</strong>{' '}
-              Hollyhock (<em>Alcea rosea</em>) germinates readily from seed in lean, well-drained
-              soil and produces dozens of seed capsules per plant from July through September.
-              The caterpillar bores into each capsule after the flower drops, feeding on seeds
-              inside the husk, invisible from outside. A single plant in a dry sunny corner
-              provides host plant access across two to three broods.
+              Plant native mountain mints (Pycnanthemum spp.). Native mountain mints are
+              superb wildflowers for hairstreaks — as nectar plants and as recorded
+              caterpillar hosts. They bloom over a long season, spread slowly from
+              rhizomes, and attract an extraordinary range of native pollinators. [2]
             </li>
             <li>
-              <strong>Leave white clover in the lawn or reseed a section.</strong>{' '}
-              White clover is one of the most reliable Gray Hairstreak host plants in suburban
-              yards. Females detect its chemical signature by foot and lay on dense flower heads,
-              where the caterpillar feeds on seeds packed inside. A section 6 to 10 feet wide
-              with clover mixed in supports two to three broods from May through September.
+              Maintain sunny, open areas with diverse native wildflowers. Gray Hairstreaks
+              need sunny open habitat with flowers at all heights — from low clover to tall
+              goldenrod. A mixed native wildflower planting in full sun that blooms from
+              April through October provides adult nectar and larval host plants throughout
+              the season. [2]
             </li>
             <li>
-              <strong>Hold pesticide spray on beans and hollyhock during July and August.</strong>{' '}
-              Gray Hairstreak caterpillars feed inside seed pods and capsules, not on leaf surfaces,
-              so they are invisible when a plant looks infested from outside. Broad-spectrum
-              insecticide applied to bean plants in response to surface pest pressure will kill
-              caterpillars feeding inside pods that appear undamaged. If bean pest management is
-              needed, check whether pods are set before spraying July through August.
+              Reduce or eliminate herbicide use in garden edges. Gray Hairstreaks use
+              native composites, native mints, and native legumes — plants frequently
+              killed by herbicide applications. Letting native vegetation grow in sunny
+              areas of the yard provides the diverse host plant base this generalist
+              butterfly needs. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">Who shares the legumes and mallows — the other species connected through the same garden plant network</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('partridge-pea')}>
-                Partridge Pea
-              </button>{' '}
-              &mdash; Gray Hairstreak females lay eggs on Partridge Pea flower buds and developing
-              pods; the same plant hosts Eastern Tailed-Blue larvae on the flower heads and Cloudless
-              Sulphur larvae on the leaflets; a single Partridge Pea patch supports all three butterfly
-              species simultaneously through late summer
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('eastern-tailed-blue')}>
-                Eastern Tailed-Blue
-              </button>{' '}
-              &mdash; shares white clover, vetches, and Partridge Pea as host plants; both have
-              false-head hindwing structures with tails and an orange eyespot; the Gray Hairstreak
-              actively pumps its hindwings to animate the decoy while the Eastern Tailed-Blue relies
-              on the static pattern; both species appear in legume gardens from May through October
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('coral-hairstreak')}>
-                Coral Hairstreak
-              </button>{' '}
-              &mdash; flies the same July woodland-edge habitat but has no tails at the hindwing
-              rear corner — a row of coral-orange spots runs along the lower hindwing edge instead;
-              lays eggs only on wild plum and black cherry bark, one genus versus the Gray
-              Hairstreak&apos;s 200+ host plant families; both species nectar on milkweed and
-              coneflower in the same July afternoons
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('wild-senna')}>
-                Wild Senna
-              </button>{' '}
-              &mdash; a legume in the same family as Partridge Pea, used by multiple sulphur
-              butterflies and the Eastern Tailed-Blue; a yard with Wild Senna, white clover, and
-              hollyhock covers three separate host plant families the Gray Hairstreak uses, extending
-              host plant availability from May through October
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('clouded-sulphur')}>
-                Clouded Sulphur
-              </button>{' '}
-              &mdash; uses white clover and vetches as host plants in the same lawn patches where
-              Gray Hairstreak lays eggs on clover flower heads; both species nectar on clover
-              simultaneously; the Clouded Sulphur's wingspan is roughly three times that of the
-              Gray Hairstreak, making them easy to separate when both land in the same patch
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('american-bumble-bee')}>
-                American Bumble Bee
-              </button>{' '}
-              &mdash; visits hollyhock and bean flowers for pollen and nectar while the Gray
-              Hairstreak lays eggs on the same buds; both depend on the legume and mallow flower
-              cycle — the bumblebee needs the pollen, the hairstreak needs the developing seed —
-              and both are present in the same garden bed from June through August
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>The Gray Hairstreak is already in yards that have beans, hollyhock, or clover.</strong>{' '}
-            It needs no dedicated planting — only the absence of broad-spectrum spray on the
-            host plants already present and a few pods left on the vine past harvest. Browse its
-            host plant families in{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            {' '}or see the full gallery of butterflies that use garden plants as larval hosts in the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-tailed-blue')}>
+            <span className="neighbor-name">Eastern Tailed-Blue</span>
+            <span className="neighbor-note">The other common small gossamer-wing butterfly of open areas; Eastern Tailed-Blues are sky-blue above rather than gray, share native legume host plants, and are often found nectaring alongside Gray Hairstreaks in sunny fields.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('coral-hairstreak')}>
+            <span className="neighbor-name">Coral Hairstreak</span>
+            <span className="neighbor-note">A related hairstreak that flies at the same time in June and July; the Coral Hairstreak lacks tails but has vivid coral-red spots on the hindwing underside and is found in similar open-field and forest-edge habitats.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('native-bees')}>
+            <span className="neighbor-name">Native Bees</span>
+            <span className="neighbor-note">Share native wildflower patches for nectar; Gray Hairstreaks and native bees are frequently found together on the same native milkweed and mountain mint blooms, visiting for nectar and pollen respectively.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
+            <span className="neighbor-name">American Bumble Bee</span>
+            <span className="neighbor-note">The American Bumble Bee and Gray Hairstreak are reliable co-visitors on native milkweed and native mountain mint; both indicate a healthy native wildflower community in a sunny garden.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Strymon_melinus/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Gray Hairstreak</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Strymon-melinus" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Gray Hairstreak</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
