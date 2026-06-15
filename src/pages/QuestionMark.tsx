@@ -9,20 +9,18 @@ export default function QuestionMark({ onNavigate }: QuestionMarkProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Question_Mark_Butterfly%2C_Polygonia_interrogationis%2C_dorsal_%28cropped%29.jpg"
-          alt="Question Mark butterfly (Polygonia interrogationis) with wings open — orange-yellow upper wings with irregular dark spots, scalloped and ragged outer wing margins, resting on rough bark in October"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Polygonia_interrogationis_bastrop_co_tx.jpg/1280px-Polygonia_interrogationis_bastrop_co_tx.jpg"
+          alt="A Question Mark butterfly with wings spread open showing its orange upperwing with black spots and the ragged wing margin that makes it look like a dead leaf"
           className="species-hero-image"
           style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={853}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Polygonia_interrogationis_P1410392a.jpg'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: D. Gordon E. Robertson&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Question_Mark_Butterfly,_Polygonia_interrogationis,_dorsal_(cropped).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          Photo: Larry D. Moore&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Polygonia_interrogationis_bastrop_co_tx.jpg" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -31,260 +29,131 @@ export default function QuestionMark({ onNavigate }: QuestionMarkProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Question Mark</h1>
         <p className="hero__lead">
-          On a fence post in October, wings folded flat against the wood, this butterfly looks
-          like a torn piece of dead oak leaf wedged into a crack. The outer wing edges are
-          scalloped and ragged — not the smooth curve of a Monarch. The underside is mottled
-          gray-brown, bark-colored. If the wings open for a moment, orange and black appear;
-          when they close, the butterfly is invisible again. Look at the underside of the hindwing
-          in direct light: a small silver curved line sits above a silver dot. The butterfly was
-          named for that mark. It is resting in that spot because in three or four weeks, it will
-          seal itself into a gap beneath loose bark on a nearby oak and spend the winter there.
+          The Question Mark is an anglewing butterfly — its wings have a ragged, irregular
+          margin that makes a resting butterfly look like a torn dead leaf. On the underside
+          of the hindwing is a small silver punctuation mark: a curved line with a dot below
+          it, forming a question mark. This is what gives the species its name. Wingspan is
+          2.25 to 2.75 inches. It is one of the earliest butterflies seen in spring, because
+          adults overwinter and emerge on warm days as early as February. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="fieldmarks-heading">
-          <h2 id="fieldmarks-heading">Orange wings with scalloped margins — the silver question mark on the hindwing underside</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The Question Mark's upper wings are orange-yellow with irregular dark spots along
-            the costal margin and toward the outer edges. The wing margins are scalloped and
-            angular — the outer edge makes a jagged, irregular profile, not the rounded arc of
-            a Painted Lady or the tapered point of a Tiger Swallowtail. A short violet-blue
-            blush often traces along the hindwing upper surface. Wingspan runs 2.25 to 3 inches.
-          </p>
-          <p>
-            The underside tells a different story. Both wings are mottled gray-brown and tan,
-            with thin dark lines that trace a pattern matching dead leaf veins and bark grain.
-            On the underside of the hindwing alone, in polished silver, sits a curved line above
-            a separate round dot — a question mark roughly the size of a grain of rice. No other
-            butterfly in North America carries this exact mark. The closely related Eastern Comma
-            carries only the curve, without the dot beneath it.
-          </p>
-          <p>
-            Two seasonal color forms exist. Adults that emerge in June and July have hindwings
-            that are mostly black on the upper surface, with a narrow orange border. Adults that
-            emerge in late summer and overwinter have hindwings that are largely orange, matching
-            the forewing color. The butterfly on your fence post in October and the butterfly
-            visiting a maple sap wound in April are the same individual, in the same body,
-            seven months apart.
+            Question Marks are not primarily nectar feeders. Adults feed on tree sap,
+            rotting fruit, dung, and carrion — energy sources that are available early
+            in spring before most wildflowers bloom, and late in fall when flowers are
+            gone. They locate sap from woodpecker drillings and damaged bark, and can
+            often be found around compost piles and fermenting fruit. Males are
+            territorial, perching on tree trunks and branches with wings partly open,
+            watching for females and rivals. The wing undersides are mottled gray-brown,
+            making resting individuals nearly impossible to spot on bark or dead leaves.
+            [1]
           </p>
         </section>
 
-        <section aria-labelledby="caterpillar-heading">
-          <h2 id="caterpillar-heading">Stinging nettle, hops, and elm — the caterpillar builds a leaf shelter and feeds inside it</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/48/Polygonia_interrogationis_-_question_mark_-_XL.jpg"
-              alt="Question Mark butterfly (Polygonia interrogationis) with wings folded showing the cryptic mottled gray-brown underside — the silver question mark is visible on the hindwing as a curved line above a round dot"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Question_Mark_Butterfly%2C_Polygonia_interrogationis%2C_dorsal_%28cropped%29.jpg'
-              }}
-            />
-            <figcaption>
-              Wings folded, the Question Mark disappears against bark, wood, and dead leaves.
-              The silver question mark on the hindwing underside — a curved line above a round
-              dot — is visible only in direct light at close range. This cryptic pattern is
-              why a butterfly resting on a log ten feet away reads as bark, not animal.
-              <span className="photo-credit"> Photo: USGS Bee Inventory · public domain via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Question_Mark_-_Polygonia_interrogationis%2C_Natchez_Trace%2C_Natchez%2C_Mississippi_-_17250539661.jpg/1280px-Question_Mark_-_Polygonia_interrogationis%2C_Natchez_Trace%2C_Natchez%2C_Mississippi_-_17250539661.jpg"
+            alt="A Question Mark butterfly resting with wings partially open on bark, showing the orange and black upperwing pattern"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            Question Marks have two seasonal forms: the &quot;winter form&quot; (most adults
+            seen in spring and fall) has vivid orange hindwings; the &quot;summer form&quot;
+            (bred in early summer) has mostly black hindwings. Both forms have the
+            silver question mark punctuation on the hindwing underside.
+            <span className="photo-credit"> Photo: Judy Gallagher&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Question_Mark_-_Polygonia_interrogationis,_Natchez_Trace,_Natchez,_Mississippi_-_17250539661.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            The female lays single pale green eggs on the underside of leaves, usually near the
-            growing tip of the host plant. Stinging nettle (<em>Urtica dioica</em>) is the most
-            commonly used host across the range, followed by American elm, hackberry, false nettle
-            (<em>Boehmeria cylindrica</em>), and hops (<em>Humulus lupulus</em>). In Midwest
-            yards, a patch of stinging nettle in a sunny disturbed corner — along a fence, at
-            the edge of a brushy area — is used across multiple generations through summer.
-          </p>
-          <p>
-            The caterpillar builds a leaf shelter. It pulls the edges of a leaf together with
-            silk threads and feeds from inside the folded structure. Early instars are pale with
-            rows of branching spines. Later instars darken to a yellowish or cream body with
-            reddish-brown or black spines. The caterpillar reaches approximately 1.25 inches
-            before leaving the host plant to form a spiny brown chrysalis on a twig or vertical
-            structure nearby.
-          </p>
-          <p>
-            Two broods develop in the upper Midwest. A spring brood (April–May) comes from
-            eggs laid by overwintering adults. A summer brood (July–August) produces the
-            winter-form adults — orange-winged, carrying the silver mark — that will spend the
-            next seven months roosting in bark and emerging again the following spring.
+            Question Marks overwinter as adults and are among the first butterflies
+            of the year. Breeding adults lay eggs on elm, hackberry, nettle, and hops.
+            The caterpillar feeds alone (unlike the gregarious Mourning Cloak caterpillar
+            from the same host plants), sheltering in a folded leaf. There are two
+            generations per year: a summer generation that produces the darker summer-form
+            adults, and a late-summer generation that produces the brighter winter-form
+            adults that overwinter and are the ones visible in spring. [1]
           </p>
         </section>
 
-        <section aria-labelledby="overwintering-heading">
-          <h2 id="overwintering-heading">Behind loose bark from October through March — glycerol in the blood, wings flat against the wood</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            In September and October, Question Mark adults shift away from nectar and toward
-            higher-calorie resources: fermenting fruit on the ground, sap seeping from bark
-            wounds, and occasionally carrion. These provide the fuel for winter fat storage.
-            By late October in the upper Midwest, adults have found roost sites.
-          </p>
-          <p>
-            The roost is a gap — the space beneath a plate of loose bark on a large oak, hickory,
-            or elm trunk; the inside of a hollow tree; a crevice in stacked firewood. Closed wings
-            flush against the surface, bark-colored underside facing out. Body fluids with elevated
-            glycerol concentration lower the freezing point below that of pure water, protecting
-            cells during hard freezes. On mild midwinter days, a roost adult may briefly emerge
-            to search for a sap flow or rotting fruit, then return to the same gap before
-            temperatures drop again at night.
-          </p>
-          <p>
-            When daytime temperatures hold reliably above 50°F in March or April, adults emerge
-            and seek early resources. Tree sap running from wounds in maple, elm, and birch
-            is the first available carbohydrate — a southern Wisconsin yard in early April
-            has no open flowers yet. The butterfly drinking sap from a wound on a maple trunk
-            in late March spent the winter three feet below, in the bark.
+            The Question Mark is common across eastern North America and is not of
+            conservation concern. [1] It uses a variety of host trees — elms, hackberry,
+            and nettles are all widespread and common — and its preference for tree sap
+            and fermenting fruit over nectar means it is less dependent on wildflower
+            habitat than most butterflies. Its main vulnerability is loss of old woodland
+            trees with sap wounds and hollow cavities used for both feeding and
+            overwintering. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Four things that carry a Question Mark from October through April</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Leave loose-barked logs and leaf piles in place through April.</strong>{' '}
-              Question Marks roost inside bark crevices and hollow sections of large-diameter
-              trunks. A loose-barked log at the back of the yard, or a pile of leaves against a
-              fence base, provides the insulated gap that separates a live butterfly from a dead
-              one in January. Moving or shredding this material in November, or again in March
-              before daytime temperatures have consistently reached 50°F, disturbs adults that
-              have not yet emerged.
+              Leave standing dead wood and old trees with bark wounds. Question Marks
+              feed at sap flows from damaged bark and woodpecker holes; they overwinter
+              in tree cavities and under loose bark. Removing old trees eliminates both
+              food and shelter. [2]
             </li>
             <li>
-              <strong>Leave fermenting fruit on the ground in late fall and again in early spring.</strong>{' '}
-              Rotting apples, crabapples, and pears on the ground in October give Question Marks
-              and Mourning Cloaks carbohydrates for overwintering fat storage. The same fruit,
-              re-fermenting after months on the ground, is available in March before the first
-              flower opens. Raking this fruit in November removes the resource during the two
-              weeks it is most needed.
+              Allow hackberry trees to grow naturally. Hackberry (Celtis occidentalis
+              and related species) is a native tree that supports Question Marks,
+              Eastern Commas, Mourning Cloaks, and several other butterfly and moth
+              species as a host plant. It is often treated as a weed tree and removed
+              from landscapes, reducing local butterfly diversity. [2]
             </li>
             <li>
-              <strong>Don't remove stinging nettle from fence lines and disturbed corners.</strong>{' '}
-              Stinging nettle is the primary caterpillar host for Question Marks, Eastern Commas,
-              and Red Admirals across the Midwest. A patch in a sunny disturbed corner supports
-              multiple generations of all three species through a single summer. Gloves and long
-              sleeves handle the sting; the nettle can be cut back to the ground after August to
-              keep it contained.
+              Leave some fallen or overripe fruit on the ground. Question Marks feed
+              heavily on fermenting fruit, especially in late summer and fall. Leaving a
+              few fallen apples, pears, or plums to ferment provides late-season energy
+              for adults preparing to overwinter. [2]
             </li>
             <li>
-              <strong>Don't seal tree wounds in late winter.</strong>{' '}
-              Sap running from wounds in maple, elm, and birch in March is the first available
-              carbohydrate for adults emerging from winter roost. Question Marks, Mourning Cloaks,
-              Eastern Commas, and Red Admirals all use these flows before any flower opens.
-              Wound sealants stop the flow. Modern arboricultural practice does not recommend
-              sealing most injuries — trees compartmentalize wounds more effectively without
-              sealant — so letting sap run in spring costs nothing. Find native nectar plants for
-              later in the season with{' '}
-              <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-                Choose a Plant
-              </button>
-              .
+              Allow native nettles in a back corner. Stinging nettles (Urtica dioica)
+              are host plants for Question Mark, Eastern Comma, and Red Admiral caterpillars.
+              A contained patch in a moist, partly shaded area supports multiple
+              anglewing species. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">Who shares the bark in October and the sap flow in March</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('hackberry')}>
-                Hackberry
-              </button>{' '}
-              &mdash; a secondary caterpillar host for Question Marks alongside stinging nettle;
-              in yards where nettle is absent, hackberry becomes the primary available host for
-              the spring and summer broods; the Hackberry Emperor butterfly overwinters as a
-              caterpillar in the leaf litter at the base of the same hackberry trees where
-              Question Marks overwinter as adults in the bark
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('mourning-cloak')}>
-                Mourning Cloak
-              </button>{' '}
-              &mdash; overwinters as an adult in the same bark crevices and hollow trees; both
-              species emerge on the same mild late-winter days and visit the same sap flows and
-              rotting fruit in March and April before any flower opens; Mourning Cloaks lay their
-              caterpillar eggs on willow and birch rather than nettle, so a yard with both plants
-              supports both species through egg, caterpillar, and adult
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('red-admiral')}>
-                Red Admiral
-              </button>{' '}
-              &mdash; shares stinging nettle as the primary caterpillar host; Question Marks and
-              Red Admirals lay eggs on the same nettle patches through the same brood windows
-              in May and July; both fuel on fermenting fruit and sap in early spring; a single
-              nettle patch in a sunny disturbed corner produces both species through a single summer
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('canada-goldenrod')}>
-                Canada Goldenrod
-              </button>{' '}
-              &mdash; winter-form adults fuel on goldenrod in late August and September before
-              entering overwintering roost; Question Marks appear in the late-summer goldenrod
-              community alongside Monarchs, Painted Ladies, and American Bumble Bees; the goldenrod
-              is the last significant nectar source before the species shifts to fermenting fruit
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('pearl-crescent')}>
-                Pearl Crescent
-              </button>{' '}
-              &mdash; also orange-and-black with a mottled underwing; also fuels on goldenrod in
-              late summer; the Pearl Crescent is smaller with smooth wing margins and passes
-              winter as a caterpillar inside leaf litter rather than as an adult behind bark —
-              two overwintering strategies in the same late-summer yard that each require a
-              different physical structure to work
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('viceroy')}>
-                Viceroy
-              </button>{' '}
-              &mdash; also orange-and-black and also found in yards with willows and wet corners;
-              Viceroys overwinter as caterpillars inside a rolled willow leaf rather than as
-              adults in bark — the Viceroy's rolled leaf hibernaculum and the Question Mark's
-              bark-gap roost are both destroyed by the same late-autumn yard cleanup
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('hackberry-emperor')}>
-                Hackberry Emperor
-              </button>{' '}
-              &mdash; uses hackberry as its only caterpillar host; adult Hackberry Emperors and Question Marks both shelter on the same large hackberry through winter — the Emperor caterpillar in the leaf litter at the base of the trunk, the Question Mark adult in a bark crevice above it; raking the leaf layer removes one roost, moving the loose-barked log removes the other
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('tawny-emperor')}>
-                Tawny Emperor
-              </button>{' '}
-              &mdash; a near-twin of the Hackberry Emperor on the same host tree; adult Tawny Emperors drink from sap flows and fermenting fruit alongside Question Marks in late summer; the Tawny Emperor caterpillar descends to leaf litter at the base of hackberry in fall while the Question Mark adult seals into bark above the same trunk
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('american-snout')}>
-                American Snout
-              </button>{' '}
-              &mdash; breeds exclusively on hackberry; unlike the Emperor species, adults visit goldenrod and asters for nectar; a Snout nectaring at goldenrod in late August and a Question Mark working the same blooms are both loading fat before separating for different winters
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Build the winter survival structure alongside the nectar sequence.</strong>{' '}
-            Understand why leaf piles and bark logs protect overwintering adults with the{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves guide
-            </button>
-            , find native host plants and nectar sources with{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , and see which butterflies share the late-summer goldenrod with the{' '}
-            <button className="link-button" onClick={() => onNavigate('species-gallery')}>
-              Species Gallery
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-comma')}>
+            <span className="neighbor-name">Eastern Comma</span>
+            <span className="neighbor-note">The close relative with a silver comma (instead of a question mark) on its hindwing underside — both species overwinter as adults, use the same host plants, and feed on sap and fermenting fruit.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('mourning-cloak')}>
+            <span className="neighbor-name">Mourning Cloak</span>
+            <span className="neighbor-note">Another anglewing butterfly that overwinters as an adult, emerges in early spring, and feeds primarily on tree sap and fermenting fruit rather than nectar.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('downy-woodpecker')}>
+            <span className="neighbor-name">Downy Woodpecker</span>
+            <span className="neighbor-note">Creates the sap wells in trees that Question Marks exploit for feeding; the relationship between sap-drilling woodpeckers and anglewing butterflies is well documented.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-screech-owl')}>
+            <span className="neighbor-name">Eastern Screech-Owl</span>
+            <span className="neighbor-note">Nests in the old trees with cavities that Question Marks use for overwintering; both species depend on old-growth trees left standing in the landscape.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://animaldiversity.org/accounts/Polygonia_interrogationis/" target="_blank" rel="noopener noreferrer">University of Michigan Museum of Zoology — Animal Diversity Web: Question Mark</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Polygonia-interrogationis" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Question Mark</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
