@@ -9,15 +9,18 @@ export default function Ovenbird({ onNavigate }: OvenbirdProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Ovenbird_RWD2.jpg"
-          alt="Ovenbird standing on a mossy log, facing right — olive-brown back, white breast heavily streaked with dark brown, orange crown stripe bordered by two black stripes visible on top of the head"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ovenbird_%2848612593968%29.jpg/1280px-Ovenbird_%2848612593968%29.jpg"
+          alt="An Ovenbird walking on the forest floor, showing its olive-brown back, streaked white breast, and orange crown stripe"
           className="species-hero-image"
-          style={{ objectPosition: 'center 30%' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={838}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Dick Daniels&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Ovenbird_RWD2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          Photo: Andrew Weitzel&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Ovenbird_(48612593968).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -26,227 +29,120 @@ export default function Ovenbird({ onNavigate }: OvenbirdProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Ovenbird</h1>
         <p className="hero__lead">
-          A warbler that walks the forest floor, calls louder than anything else in the
-          woods, and builds a domed nest invisible in the leaf litter — one that cannot
-          move when the mower comes through. Down 52% since 1966. The line where your
-          lawn meets the trees is where the problem begins.
+          The Ovenbird is a ground-walking warbler of mature deciduous forest, olive-brown
+          above with a heavily streaked white breast and a bold orange crown stripe bordered
+          by dark lines. It walks — it does not hop — through the leaf litter on pink legs.
+          Its loud, ringing &quot;TEACH-er, TEACH-er, TEACH-er&quot; call, rising in volume
+          with each repetition, carries through the forest and is one of the most recognized
+          sounds of eastern summer woodlands. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="biology-heading">
-          <h2 id="biology-heading">A nest built inside the leaf litter, not on top of it</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The ovenbird (<em>Seiurus aurocapilla</em>) belongs to the wood-warbler
-            family despite looking nothing like one. Where most warblers glean insects
-            from branches overhead, the ovenbird walks — does not hop — across the
-            forest floor, turning over dead leaves with its bill and picking up beetles,
-            earthworms, pill bugs, and snails from the duff layer beneath.
-          </p>
-          <p>
-            The crown has three stripes: a broad orange-rust band down the center,
-            bordered on each side by a narrower black line. The back is olive-brown,
-            the chest white with dense dark streaking — a pattern that reads as forest-floor
-            shadow when the bird stands still. The orange crown is often half-hidden
-            unless the bird raises it in alarm or display.
-          </p>
-          <p>
-            The nest is on the ground, inside the leaf litter. The female carries grass
-            stems, rootlets, dead leaves, and bark fiber and weaves them into a domed
-            structure roughly the size of a softball, with a low side entrance that opens
-            toward the ground. She then covers the outside with additional dead leaves
-            from the surrounding forest floor, matching the texture and color of the duff
-            so precisely that a person can walk within two feet of a nest and not see it.
-            Nineteenth-century naturalists named the bird for this nest: the curved roof
-            and side door resemble the clay ovens Dutch colonists used to bake bread.
-          </p>
-          <p>
-            The call is "teacher teacher teacher teacher teacher," each repetition louder
-            than the last, audible from over 200 meters in still air. The male sings from
-            low perches or from the ground itself, sometimes for hours through a May morning.
-            In a patch of mature forest with a breeding pair, the call dominates everything else.
+            Ovenbirds forage entirely on the ground, walking deliberately through leaf litter
+            and probing for beetles, ants, earthworms, caterpillars, and other invertebrates.
+            Males sing persistently from an elevated perch in the mid-canopy, then descend
+            to the ground to forage. They are named for their domed ground nest, which
+            resembles a Dutch oven in shape. The nest entrance faces to the side and the
+            structure is so well camouflaged that it is rarely found. [1]
           </p>
         </section>
 
-        <section aria-labelledby="cowbird-heading">
-          <h2 id="cowbird-heading">The cowbird waits at every edge you mow to</h2>
-          <p>
-            Brown-headed cowbirds do not build nests. The female finds other birds&apos;
-            active nests, watches from a nearby perch until the owners leave, flies in,
-            removes one host egg, and lays one of her own in under 60 seconds. The host
-            raises the cowbird chick, which hatches a day earlier than ovenbird nestlings
-            and grows faster, outcompeting or displacing the host&apos;s own young.
-          </p>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ovenbird_-20_100-_%2834128007436%29.jpg/1280px-Ovenbird_-20_100-_%2834128007436%29.jpg"
+            alt="An Ovenbird on the forest floor among leaf litter, showing its upright posture and streaked breast"
+            width={1280}
+            height={1280}
+            loading="lazy"
+          />
+          <figcaption>
+            Ovenbirds walk rather than hop, moving deliberately through leaf litter on
+            the forest floor. The bold eye ring and orange crown stripe are visible at close range.
+            <span className="photo-credit"> Photo: Tim Sackton&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Ovenbird_-20_100-_(34128007436).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Ovenbird%281%29.jpg"
-              alt="Ovenbird standing on the forest floor among dead leaves, showing the streaked breast and walking posture — the bird is low to the ground, feet slightly spread, mid-step"
-              loading="lazy"
-            />
-            <figcaption>
-              The ovenbird walks rather than hops, picking through the duff layer for
-              earthworms, snails, and insects. This ground-level life — foraging on the
-              forest floor, nesting in the leaf litter — is also what makes the bird most
-              exposed to mowing at the treeline, autumn raking, and the cowbirds that
-              patrol from every mowed edge.
-              <span className="photo-credit"> Photo: Mdf · <a href="https://commons.wikimedia.org/wiki/File:Ovenbird(1).jpg" target="_blank" rel="noopener noreferrer">Public Domain</a> via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Cowbirds are edge specialists. They forage in open areas — lawns, pastures,
-            roadsides — and patrol into adjacent woodland from those openings to look for
-            host nests. In unbroken forest interior, more than 150 meters from the nearest
-            edge, cowbird parasitism of ovenbird nests runs 5 to 10 percent. In fragmented
-            suburban forest, where edges occur every few hundred feet, parasitism rates
-            reach 60 to 70 percent.
-          </p>
-          <p>
-            A lawn mowed to the treeline gives cowbirds a staging area immediately
-            adjacent to ovenbird nesting territory. A buffer of tall grass, shrubs, and
-            undisturbed leaf litter 15 to 20 feet wide between the lawn edge and the
-            forest pulls the cowbird&apos;s entry point back from the nesting area and
-            reduces how far it can efficiently patrol into the interior. The nest
-            does not move. The edge does.
+            Ovenbirds arrive on the breeding grounds in May, among the neotropical migrants
+            that reach eastern forests in the second wave of spring migration. Males
+            establish territories in mature forest with open understory and a deep layer of
+            leaf litter. After breeding, they depart by September for wintering grounds in
+            the Caribbean, Central America, and northern South America. About 49% of the
+            North American population breeds in Canada&apos;s boreal forest. [1]
           </p>
         </section>
 
-        <section aria-labelledby="decline-heading">
-          <h2 id="decline-heading">52% gone — forest patches too small to hold interior</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            North American Breeding Bird Survey data shows a 52 percent decline in
-            ovenbird numbers from 1966 to the present. The steepest drops run through
-            the mid-Atlantic and Great Lakes regions — areas where woodlands exist as
-            isolated fragments surrounded by residential and agricultural land.
-          </p>
-          <p>
-            Forest fragmentation removes interior. An ovenbird pair requires a patch of
-            contiguous forest large enough to put their nest more than 100 meters from
-            any edge. Researchers estimate the minimum territory size at 5 to 20 acres
-            of unbroken canopy, depending on how much surrounding development contributes
-            to the edge effect. Most suburban woodlots fall below this threshold. The
-            trees are there. The interior is not.
-          </p>
-          <p>
-            Acid rain, which peaked across the northeastern United States in the 1970s
-            and 1980s, leached calcium from forest soils and collapsed snail populations
-            across large areas of the Appalachians. Snails and the calcium-rich
-            invertebrates in the duff layer are a primary food source for breeding
-            ovenbirds and the shell material their nestlings need for bone development.
-            Experiments adding calcium back to depleted soils through lime application
-            have increased ovenbird territory density in treated plots — evidence that
-            soil chemistry reaches from the ground into the nest.
+            Partners in Flight rates the Ovenbird 9 out of 20 on the Continental Concern
+            Score, indicating relatively low conservation concern. [2] The U.S. Breeding
+            Bird Survey shows a stable overall population. [3] The IUCN lists it as Least
+            Concern. [4] As a forest interior specialist, it is vulnerable to forest
+            fragmentation — small forest patches increase nest parasitism by Brown-headed
+            Cowbirds and predation rates near forest edges. [1]
           </p>
         </section>
 
-        <section aria-labelledby="actions-heading">
-          <h2 id="actions-heading">Four things that widen or narrow the edge</h2>
-          <ul className="actions-list">
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <ol className="step-list">
             <li>
-              <strong>Leave a buffer at the treeline.</strong> A strip of unmowed grass,
-              shrubs, and undisturbed leaf litter 15 to 20 feet wide between the lawn and
-              the forest edge narrows the cowbird staging area and leaves the duff layer
-              intact where ground-nesting birds require it. Mow it once in early spring if
-              needed for access, then leave it until after July.
+              Large, contiguous forest patches with closed canopy and a deep leaf litter
+              layer provide the breeding habitat Ovenbirds require. Connecting forested
+              areas reduces edge effects. [5]
             </li>
             <li>
-              <strong>Don&apos;t rake under trees in fall.</strong> The duff layer —
-              matted dead leaves, decaying material, and the invertebrate community living
-              inside it — is the resource ovenbirds and other ground-feeding birds work
-              through all season. Autumn raking and leaf blowing removes it entirely.
-              What it leaves behind is bare mineral soil with nothing in it.
+              Leaving leaf litter intact through fall and winter — rather than blowing or
+              raking it away — maintains the layer Ovenbirds and many other ground-foraging
+              birds depend on. [5]
             </li>
             <li>
-              <strong>Keep cats indoors May through July.</strong> A ground-nesting bird
-              that relies on camouflage rather than escape flight is taken by outdoor
-              cats at higher rates than any tree-nesting species. Ovenbird adults sit
-              motionless on the nest until a predator is within one or two steps. An
-              outdoor cat working a forest edge during breeding season will find it.
+              Skipping pesticides preserves the earthworms, beetles, and invertebrates
+              Ovenbirds forage for in the leaf litter. [5]
             </li>
             <li>
-              <strong>Stop applying grub-control products and broad-spectrum insecticides within 20 feet of the treeline.</strong>{' '}
-              Ovenbirds forage for earthworms, beetle larvae, snails, and ants from the duff
-              layer at the forest edge. Grub-control products containing imidacloprid — the most
-              widely sold residential lawn treatment — are water-soluble and move laterally
-              through the soil into the adjacent forest floor. Earthworm populations in areas
-              treated with imidacloprid drop measurably within weeks of application. The buffer
-              zone you leave unmowed should also receive no pesticide applications. See the full
-              picture at the{' '}
-              <button className="link-button" onClick={() => onNavigate('pesticide-guide')}>
-                Pesticides &amp; Your Habitat guide
-              </button>
-              .
+              Supporting boreal forest conservation in Canada directly protects nearly half
+              of the Ovenbird breeding population. [5]
             </li>
-          </ul>
-
-          <figure className="species-content-photo species-content-photo--center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ovenbird_by_Dan_Pancamo.jpg/960px-Ovenbird_by_Dan_Pancamo.jpg"
-              alt="Ovenbird in leaf litter on the forest floor, surrounded by dead leaves and debris — the natural habitat where it both nests and forages"
-              loading="lazy"
-            />
-            <figcaption>
-              The ovenbird spends most of its life within two feet of the ground. It nests
-              on the ground, forages on the ground, and during breeding season rarely
-              flies further than one low perch to the next. A lawn that runs to the treeline
-              is not a yard with a forest edge — it is a yard with a cowbird patrol route
-              running directly to the ovenbird&apos;s nest.
-              <span className="photo-credit"> Photo: Dan Pancamo · <a href="https://commons.wikimedia.org/wiki/File:Ovenbird_by_Dan_Pancamo.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-        </section>
-
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Other species working the same forest floor</h2>
-          <p>
-            The ovenbird shares its dependence on mature forest interior and intact duff
-            with several other ground-associated species. The buffer at the treeline, the
-            leaf litter left in fall, the cats kept inside — each one helps more than
-            one bird.
-          </p>
-          <ul className="species-connections">
-            <li>
-              <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
-                Wood Thrush
-              </button>
-              {' '} — ground feeder in mature forest interior; same cowbird parasitism
-              pressures, same sensitivity to fragmentation, down 62% since 1966.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('hermit-thrush')}>
-                Hermit Thrush
-              </button>
-              {' '} — forages in leaf litter for the same invertebrates; overwinters in
-              the southeastern US where the ovenbird winters; both need the duff intact.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('eastern-wood-pewee')}>
-                Eastern Wood-Pewee
-              </button>
-              {' '} — aerial insectivore hunting above the forest floor the ovenbird walks;
-              same mature-forest interior habitat, same fragmentation pressures.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('scarlet-tanager')}>
-                Scarlet Tanager
-              </button>
-              {' '} — requires intact forest canopy above the same ground the ovenbird
-              uses; both disappear from fragments below 10 acres.
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>The leaf layer the ovenbird walks is the same layer firefly larvae, box turtle hatchlings, and fritillary caterpillars depend on through winter.</strong>{' '}
-            Read why autumn raking affects a dozen species simultaneously at{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves
-            </button>
-            .
-          </p>
+          </ol>
         </div>
+
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('wood-thrush')}>
+            <span className="neighbor-name">Wood Thrush</span>
+            <span className="neighbor-note">A fellow mature-forest ground-forager that shares the same interior woodland habitat and faces similar pressures.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-wood-pewee')}>
+            <span className="neighbor-name">Eastern Wood-Pewee</span>
+            <span className="neighbor-note">A forest flycatcher that arrives the same week in May and hunts the canopy above where Ovenbirds walk below.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('hermit-thrush')}>
+            <span className="neighbor-name">Hermit Thrush</span>
+            <span className="neighbor-note">A ground-foraging thrush of similar forest interiors that passes through on migration.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-towhee')}>
+            <span className="neighbor-name">Eastern Towhee</span>
+            <span className="neighbor-note">Another ground-scratching bird of the forest edge, working the leaf litter just beyond the Ovenbird&apos;s territory.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Ovenbird/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Ovenbird (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/ovenbird-seiurus-aurocapilla" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Ovenbird</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )

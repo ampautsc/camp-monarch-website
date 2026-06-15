@@ -9,15 +9,18 @@ export default function BrownCreeper({ onNavigate }: BrownCreeperProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Certhia_americana_CT2.jpg/960px-Certhia_americana_CT2.jpg"
-          alt="Brown Creeper pressed flat against a tree trunk, decurved bill inserted into a bark crevice — camouflage so complete the bird is nearly invisible until it moves"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Brown_creeper_at_a_banding_station_%2890462%29.jpg/1280px-Brown_creeper_at_a_banding_station_%2890462%29.jpg"
+          alt="A Brown Creeper clinging to bark, showing its streaked brown plumage and long curved bill"
           className="species-hero-image"
-          style={{ objectPosition: 'center' }}
+          style={{ objectPosition: 'center center' }}
+          width={1280}
+          height={988}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: i_got_the_fever&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Certhia_americana_CT2.jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>
+          Photo: Rhododendrites&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Brown_creeper_at_a_banding_station_(90462).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
@@ -26,265 +29,121 @@ export default function BrownCreeper({ onNavigate }: BrownCreeperProps) {
         <div className="hero__eyebrow">Meet Your Neighbors</div>
         <h1>Brown Creeper</h1>
         <p className="hero__lead">
-          The Brown Creeper presses itself flat against a tree trunk and spirals
-          upward in a tight helix, probing bark crevices with a bill curved like
-          a surgeon&apos;s needle. Most people standing ten feet away see only the bark.
-          The bird is already there — has been for minutes — methodically reading
-          every fissure on its one-way trip to the canopy.
+          The Brown Creeper is a small, slender bird with streaked brown-and-buff plumage
+          that matches tree bark so precisely it can be invisible even when motionless.
+          It hitches up tree trunks in a spiral, using its stiff tail as a brace, then
+          drops to the base of the next tree and begins again. Its thin, high-pitched call
+          — a single drawn-out &quot;seeee&quot; — is easy to miss. It lives across
+          forested North America year-round. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="spiral-heading">
-          <h2 id="spiral-heading">One direction, one tree at a time</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The Brown Creeper (<em>Certhia americana</em>) is a 5.5-inch bird
-            the color of tree bark — brown above, streaked pale, with a
-            white underside and a rufous tail it uses as a prop against the
-            trunk. The bill curves down and inward, shaped to fit bark crevices
-            that a straight bill cannot reach.
-          </p>
-          <p>
-            Its foraging method is fixed: start at the base of a trunk,
-            spiral upward in a continuous helix, cover every inch of vertical
-            surface, stop at the canopy, then drop to the base of the next
-            tree and start again. It never descends the trunk it just climbed.
-            The bark on the way down is no different from the bark on the way
-            up, but the Brown Creeper does not read it twice. Each tree is a
-            single upward transaction.
-          </p>
-          <p>
-            A yard with three mature oaks is three separate spiraling
-            investigations. A yard with twenty young Norway maples, whose smooth
-            bark carries few invertebrates and whose shallow crevices offer the
-            decurved bill nothing to probe, is a yard the Brown Creeper crosses
-            without landing.
+            Brown Creepers forage by moving upward in a spiral around tree trunks, probing
+            bark crevices with a long, curved bill for insects, insect eggs, larvae, and
+            spiders. They start at the base of a tree and work upward, then fly to the base
+            of the next tree and start over. They almost never move downward on a trunk.
+            In winter they join mixed-species flocks with chickadees, nuthatches, and
+            kinglets, drifting through the woods together. [1]
           </p>
         </section>
 
-        <section aria-labelledby="decline-heading">
-          <h2 id="decline-heading">40% gone: the bark specialist loses its substrate</h2>
-          <p>
-            The North American Breeding Bird Survey has tracked Brown Creeper
-            populations since 1966. Across its range, the species has declined
-            by roughly 40%. The declines are steepest in landscapes where
-            large, old trees have been removed and where dead standing wood —
-            snags — is treated as hazard rather than habitat.
-          </p>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Brown_creeper_%2814411%29.jpg/1280px-Brown_creeper_%2814411%29.jpg"
+            alt="A Brown Creeper pressed against tree bark, its streaked plumage blending into the texture"
+            width={1280}
+            height={1594}
+            loading="lazy"
+            style={{ objectPosition: 'center center' }}
+          />
+          <figcaption>
+            Brown Creepers move only upward on trunks. When they reach the upper portion,
+            they drop to the base of a nearby tree and begin again.
+            <span className="photo-credit"> Photo: Rhododendrites&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Brown_creeper_(14411).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
 
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/42/Brown-creeper-052.jpg"
-              alt="Brown Creeper mid-spiral on a rough-barked trunk, showing the compressed posture and bark-patterned plumage that makes the bird nearly impossible to spot until it moves"
-              loading="lazy"
-            />
-            <figcaption>
-              The Brown Creeper nests under a loose flap of bark on a dead or
-              dying tree — it requires bark that is separating from the wood
-              beneath. A yard where every snag is felled and every dead branch
-              removed eliminates this nesting requirement entirely. The same
-              bark flaps shelter dozens of overwintering spiders and insect eggs
-              the creeper forages in spring.
-              <span className="photo-credit"> Photo: USFWS&nbsp;·&nbsp;Public domain via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            The Brown Creeper nests in one specific microhabitat: under a loose
-            flap of bark on a dead or dying tree, where the bark has begun to
-            separate from the wood beneath and created a pocket large enough to
-            conceal a nest cup. No loose bark flap, no nest. A yard or woodlot
-            where dead trees are removed as a matter of policy eliminates this
-            nesting requirement as completely as if the bird had never been there.
-          </p>
-          <p>
-            The bark texture of living trees determines foraging quality.
-            Shagbark hickory, mature oaks, black cherry, and black locust
-            develop deeply furrowed, rough-textured bark that accumulates a dense
-            community of invertebrates in its crevices — bark beetles, their
-            larvae, spiders, spider egg sacs, scale insects, harvestmen, and
-            ants. Smooth-barked introduced trees — Norway maple, callery pear,
-            London plane — offer negligible bark surface area and few crevices
-            to probe. A yard that replaced a shagbark hickory with an ornamental
-            pear lost the invertebrate community in both the canopy and the bark
-            simultaneously.
-          </p>
-          <p>
-            Invasive vines add another layer of damage. English ivy, Oriental
-            bittersweet, and Japanese honeysuckle, when they climb trunks, cover
-            the bark surface entirely — sealing the crevices the creeper reads,
-            closing the pantry shut. A tree wrapped in ivy to its crown is, to a
-            Brown Creeper, not a tree worth investigating.
+            Brown Creepers nest in a unique location: a hammock-shaped cup of bark strips,
+            moss, and spider silk plastered behind a piece of loose or peeling bark on a
+            dead or dying tree. The nest is nearly invisible. Five to six eggs per clutch.
+            Northern populations move south in winter, when they become more noticeable as
+            they join mixed-species flocks. In much of the eastern United States, Brown
+            Creepers are winter visitors; in the northern tier, they breed as well. [1]
           </p>
         </section>
 
-        <section aria-labelledby="bill-heading">
-          <h2 id="bill-heading">What the decurved bill reaches</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            The Brown Creeper probes for food that other species cannot reach the
-            same way. The bark crevice — a gap between overlapping bark scales,
-            a split in dry outer wood — is the only hiding place in most trees
-            that a straight bill cannot efficiently access. The creeper&apos;s bill
-            curves downward in its final few millimeters, bending around the lip
-            of a crevice to extract a spider egg sac tucked behind a bark plate.
-          </p>
-          <p>
-            The prey list reflects the niche: bark beetles and their larvae, which
-            bore into bark tissue and spend larval life inside it; spiders and
-            their eggs, overwintering behind bark scales in protected pockets;
-            scale insects attached to bark surface; harvestmen pressed into bark
-            fissures; ant colonies in shallow bark galleries. None of these are
-            visible from any angle that doesn&apos;t press the eye against the bark.
-            The Brown Creeper does this with its face, methodically, for every
-            inch of bark between the ground and the canopy.
-          </p>
-          <p>
-            The call is similarly precise: a very high, thin &ldquo;see-see-see&rdquo; —
-            one of the thinnest sounds in winter bird vocalization, easily missed
-            by ears not tuned to it. In a woodland with Carolina Wrens,
-            White-throated Sparrows, and Black-capped Chickadees, the Brown
-            Creeper&apos;s call passes through the sound field like a thread through
-            cloth. Learning it is a way of discovering a presence that has always
-            been there.
+            The global population is estimated at about 5 to 8 million. [2] The U.S.
+            Breeding Bird Survey shows a stable to slightly increasing population in
+            the eastern United States, with declines in parts of the West linked to
+            timber harvesting practices. [3] The IUCN lists it as Least Concern. [4]
+            Loss of large-diameter trees with loose, peeling bark removes the specific
+            nesting substrate this species requires. [1]
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>A standing snag, rough-barked native trees, vine-free trunks, and no bark-surface pesticides</h2>
-
-          <figure className="species-content-photo species-content-photo--left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Carya_ovata.jpg/800px-Carya_ovata.jpg"
-              alt="Shagbark hickory trunk showing deeply furrowed, plated bark — each long shaggy plate separating at top and bottom creates dozens of bark crevices per square foot"
-              loading="lazy"
-            />
-            <figcaption>
-              Shagbark hickory (<em>Carya ovata</em>) develops the most deeply
-              furrowed bark of any common native tree in eastern North America —
-              each long shaggy plate separating at top and bottom creates dozens
-              of crevices per square foot. A mature shagbark in a yard is years
-              of concentrated foraging surface for a creeper working upward from
-              its roots.
-              <span className="photo-credit"> Photo: USDA&nbsp;·&nbsp;Public domain via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
-
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Leave dead snags standing.</strong>{' '}
-              A standing dead or dying tree with bark beginning to separate is a
-              Brown Creeper nesting site. The bark flaps that make the trunk look
-              ragged are precisely the structures the creeper tucks its nest
-              behind. The same loose bark shelters overwintering spiders, beetle
-              larvae, and insect eggs the creeper forages in spring. If a snag
-              poses no safety hazard, leave it.
+              Large dead trees and dying trees with loose or peeling bark provide the
+              nesting substrate Brown Creepers require. A single large snag can support
+              years of creeper nesting. [5]
             </li>
             <li>
-              <strong>Plant rough-barked native trees.</strong>{' '}
-              Shagbark hickory, native oaks, black cherry, and black locust
-              develop the deeply furrowed, textured bark that supports a dense
-              bark-crevice invertebrate community. A single mature shagbark
-              hickory provides more Brown Creeper foraging substrate than a
-              block of ornamental pears. Smaller native trees — serviceberry,
-              native dogwood — contribute more as they age and develop bark texture.
+              Mature forest with large-diameter trunks supports the bark-dwelling insect
+              communities creepers feed on. Old-growth characteristics — large trees,
+              structural complexity — are especially valuable. [5]
             </li>
             <li>
-              <strong>Remove invasive vines from tree trunks.</strong>{' '}
-              English ivy, Oriental bittersweet, and Japanese honeysuckle
-              climbing tree trunks cover the bark surface entirely, sealing the
-              crevices the creeper forages. A vine-free trunk restores the
-              readable bark surface. Cutting vines at the base and letting them
-              die is faster than pulling them and causes less bark damage during
-              removal.
+              Skipping pesticides preserves the bark insects, larvae, and spider eggs
+              that make up the creeper&apos;s diet. [5]
             </li>
             <li>
-              <strong>Eliminate bark-surface pesticide applications.</strong>{' '}
-              Horticultural oil and systemic insecticide treatments applied to
-              bark — sold for scale insect control — reduce the bark-crevice
-              invertebrate community the creeper depends on. Scale insects on a
-              native tree are self-limiting and rarely cause structural harm. The
-              creeper and other bark-foraging birds control them without
-              intervention when the bark community is intact.
+              Suet feeders occasionally draw Brown Creepers in winter, especially when
+              natural food is scarce during ice storms or deep cold. [5]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Who else works this bark — and the forest around it</h2>
-          <p>
-            The bark surface the Brown Creeper reads going up is shared with
-            several species that work it differently. Downy Woodpeckers excavate
-            into the wood beneath, targeting larger beetle larvae at greater
-            depth. White-breasted Nuthatches descend head-first, reading the same
-            bark surface from the opposite angle and finding different prey in
-            the same crevices. Carolina Wrens probe bark close to the ground in
-            dense shrub edges. The same dead snag that hosts a Brown Creeper nest
-            under its bark also provides a Downy Woodpecker cavity above it, and
-            feeds a nuthatch on its surface year-round. And above all of it, the
-            same mature native-tree trunks the creeper spirals also anchor the
-            territory of Scarlet Tanagers in the canopy, Wood Thrushes on the
-            forest floor, and Eastern Wood-Pewees on dead branches at 30 feet —
-            species that arrive in spring and leave in fall while the creeper
-            works the same bark year-round.
-          </p>
-          <ul>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('downy-woodpecker')}>
-                Downy Woodpecker
-              </button>
-              {' — '}Excavates into wood the Brown Creeper cannot reach; nest cavities in the same snags the creeper nests under.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('black-capped-chickadee')}>
-                Black-capped Chickadee
-              </button>
-              {' — '}Gleans bark surface at branch tips and twigs; shares the canopy layer above the creeper&apos;s spiral.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('carolina-wren')}>
-                Carolina Wren
-              </button>
-              {' — '}Probes bark and deadwood at ground level where the creeper starts each trunk spiral.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('scarlet-tanager')}>
-                Scarlet Tanager
-              </button>
-              {' — '}Gleans caterpillars from canopy leaves directly above the trunks the creeper spirals; both species disappear from landscapes where large old native trees have been removed and replaced with smooth-barked ornamentals.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('wood-thrush')}>
-                Wood Thrush
-              </button>
-              {' — '}Forages the forest floor below the trunks the creeper reads; same mature deciduous forest dependency, same disappearance from fragmented suburban woodlots where snags and large trees are cleared.
-            </li>
-            <li>
-              <button className="link-button" onClick={() => onNavigate('eastern-wood-pewee')}>
-                Eastern Wood-Pewee
-              </button>
-              {' — '}Perches on dead branches at 30 to 50 feet above the trunks the creeper reads going up; both species nest in or on the dead wood of the same standing snag — the pewee builds a lichen-camouflaged cup on a dead limb, the creeper tucks its nest under a bark flap on the same tree.
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>Ready to build bark habitat?</strong>{' '}
-            Start with native trees using{' '}
-            <button className="link-button" onClick={() => onNavigate('choose-a-plant')}>
-              Choose a Plant
-            </button>
-            , remove what&apos;s sealing the bark with{' '}
-            <button className="link-button" onClick={() => onNavigate('invasive-plants')}>
-              Remove Invasive Plants
-            </button>
-            , and see how the bark layer connects to the full four-layer habitat system in the{' '}
-            <button className="link-button" onClick={() => onNavigate('habitat-layers')}>
-              Habitat Layers guide
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('downy-woodpecker')}>
+            <span className="neighbor-name">Downy Woodpecker</span>
+            <span className="neighbor-note">A fellow bark forager that joins the same mixed winter flocks, working bark from the opposite direction.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('black-capped-chickadee')}>
+            <span className="neighbor-name">Black-capped Chickadee</span>
+            <span className="neighbor-note">The social center of the mixed winter flock that Brown Creepers often travel with through the woods.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('ruby-crowned-kinglet')}>
+            <span className="neighbor-name">Ruby-crowned Kinglet</span>
+            <span className="neighbor-note">Another tiny bark and foliage gleaner that winters in the same mixed flocks.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('wood-thrush')}>
+            <span className="neighbor-name">Wood Thrush</span>
+            <span className="neighbor-note">A mature-forest bird that shares the same old-growth woodland interiors the creeper depends on.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.allaboutbirds.org/guide/Brown_Creeper/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Brown Creeper (Life History)</a></li>
+            <li><a href="https://pif.birdconservancy.org/population-estimates-database/" target="_blank" rel="noopener noreferrer">Partners in Flight — Population Estimates Database</a></li>
+            <li><a href="https://www.usgs.gov/tools/north-american-breeding-bird-survey-results-and-analysis" target="_blank" rel="noopener noreferrer">USGS — North American Breeding Bird Survey, Results and Analysis</a></li>
+            <li><a href="https://datazone.birdlife.org/species/factsheet/brown-creeper-certhia-americana" target="_blank" rel="noopener noreferrer">BirdLife International / IUCN Red List — Brown Creeper</a></li>
+            <li><a href="https://www.birds.cornell.edu/home/seven-simple-actions-to-help-birds/" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — Seven Simple Actions to Help Birds</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
