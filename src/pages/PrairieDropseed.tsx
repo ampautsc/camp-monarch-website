@@ -9,203 +9,133 @@ export default function PrairieDropseed({ onNavigate }: PrairieDropseedProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/570092674/large.jpg"
-          alt="Prairie Dropseed mound with fine arching green leaves and airy seed panicles held above the foliage on wiry stems, Split Rock Creek Trail, South Dakota, September 2025"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sporobolus_heterolepis_-_Garden_in_the_Woods_-_Massachusetts.jpg/1280px-Sporobolus_heterolepis_-_Garden_in_the_Woods_-_Massachusetts.jpg"
+          alt="Prairie Dropseed mound of fine, arching green leaves with airy seed panicles rising above the foliage"
           className="species-hero-image"
-          style={{ objectPosition: 'center 60%' }}
+          style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={720}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: omcelroy&nbsp;·&nbsp;
-          <a href="https://www.inaturalist.org/observations/315577613" target="_blank" rel="noopener noreferrer">iNaturalist obs. 315577613</a>
-          &nbsp;· CC0 / No Rights Reserved
+          Photo: Daderot&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Sporobolus_heterolepis_-_Garden_in_the_Woods_-_Massachusetts.jpg" target="_blank" rel="noopener noreferrer">CC0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Plants</div>
-        <h1>Prairie Dropseed seeds ripen in September inside a thin, oily husk — on a warm afternoon, as you walk past the plant, the volatiles release a fragrance that smells like coriander or buttered popcorn.</h1>
+        <h1>Prairie Dropseed</h1>
         <p className="hero__lead">
-          Prairie Dropseed (<em>Sporobolus heterolepis</em>) is a native bunchgrass that forms a
-          mound of hair-thin arching leaves, 18 to 24 inches tall, in full sun and dry to average
-          soil. It grows from a single crown that does not spread by runners or self-seed
-          aggressively. In late August and September it sends up airy seed-bearing panicles on
-          wiry stems that tremble in the lightest wind.
-        </p>
-        <p className="hero__lead">
-          The plant is native to the tallgrass and mixed-grass prairies of the central and eastern
-          United States. It grows slowly — the first year is a small tuft — but the crown that
-          establishes in year two persists for decades without division or replanting.
+          Prairie Dropseed (<em>Sporobolus heterolepis</em>) forms a mound of hair-thin, arching
+          leaves 18 to 24 inches tall, growing from a single crown in full sun and dry to
+          average soil. In September its ripening seeds release volatile oils that smell like
+          coriander or buttered popcorn — a fragrance with no confirmed purpose for this
+          wind-pollinated grass, since it earns nothing from passing insects. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="fragrance-heading">
-          <h2 id="fragrance-heading">The volatile oils in the seed coat — coriander, popcorn, or cilantro, depending on who is walking by</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Each Prairie Dropseed seed sits inside the pericarp, a thin translucent seed coat
-            infused with volatile compounds. As seeds ripen in September and temperatures rise
-            in afternoon sun, these volatiles off-gas into the surrounding air. The scent has
-            been described as coriander, buttered popcorn, cilantro, or a sweet-savory combination
-            of all three — the variation is real and reflects differences in individual olfactory
-            receptors rather than inconsistency in the plant.
-          </p>
-          <p>
-            Prairie Dropseed is wind-pollinated; the open panicle structure disperses pollen
-            through air movement, not through flowers that reward visiting insects. The volatile
-            compounds in the seed coat have no confirmed ecological function for the grass itself.
-            For a homeowner who has never encountered the plant in seed, the fragrance is
-            unexpected enough to stop someone on a garden path in the third week of September.
+            On a warm afternoon in the third week of September, walking past a mature clump
+            releases the scent into the air — strong enough to stop someone on a garden path who
+            has never encountered the plant in seed. The variation in how people describe it —
+            coriander, cilantro, buttered popcorn — reflects differences in individual smell
+            receptors, not inconsistency in the plant. [1]
           </p>
         </section>
 
-        <figure className="species-content-photo">
+        <figure className="species-content-photo species-content-photo--right">
           <img
-            src="https://inaturalist-open-data.s3.amazonaws.com/photos/50034840/large.jpg"
-            alt="Prairie Dropseed clump with seed panicles held above fine arching leaf mound, late summer, Stephenson County Illinois August 2019"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sporobolus_heterolepis_kz2.jpg/1280px-Sporobolus_heterolepis_kz2.jpg"
+            alt="Close view of Prairie Dropseed seed panicles on wiry stems above the arching leaf mound"
+            width={1280}
+            height={1855}
             loading="lazy"
+            style={{ objectPosition: 'center top' }}
           />
           <figcaption>
-            Prairie Dropseed in late August: seed panicles rise above the arching leaf mound on
-            stems fine enough that they are nearly invisible against the sky. The leaf texture —
-            hair-thin, mid-green, arching outward from the center — is unlike any broadleaf plant
-            in a yard. When wind moves through it, the mass shifts the way shallow water moves.
-            <span className="photo-credit"> Photo: k2018lena&nbsp;·&nbsp;<a href="https://www.inaturalist.org/observations/31936140" target="_blank" rel="noopener noreferrer">iNaturalist obs. 31936140</a>&nbsp;· CC0 / No Rights Reserved</span>
+            The seed panicles rise on stems fine enough to nearly disappear against the sky —
+            each seed wrapped in the thin, oily husk responsible for the fragrance.
+            <span className="photo-credit"> Photo: Krzysztof Ziarnek, Kenraiz&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Sporobolus_heterolepis_kz2.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
           </figcaption>
         </figure>
 
-        <section aria-labelledby="skippers-heading">
-          <h2 id="skippers-heading">Leonard's Skipper, Cobweb Skipper, and the grass blades that broadleaf plants cannot supply</h2>
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Grass skippers are a subfamily of butterflies whose larvae feed on grass blades rather
-            than broadleaf plants. Leonard's Skipper (<em>Hesperia leonardus</em>) — a small
-            orange-and-brown butterfly that flies in late August and September — is closely
-            associated with native prairie grasses across the central and eastern United States.
-            Females lay eggs on grass blades in late summer. The young larvae hatch and overwinter
-            before resuming feeding in spring on the same grass clump.
-          </p>
-          <p>
-            Cobweb Skipper (<em>Hesperia metea</em>) follows a similar pattern: it flies earlier
-            in spring and is also linked to native bunchgrasses. In a yard planted only with
-            broadleaf wildflowers, both species have nothing to complete their life cycle. Prairie
-            Dropseed is the one planting that adds the resource they cannot obtain from milkweed,
-            bergamot, or aster.
-          </p>
-          <p>
-            Beyond skippers, the dried seed heads hold seeds through November and December.
-            Dark-eyed Juncos, American Tree Sparrows, and Song Sparrows land on the stems and
-            pull seeds from the dried panicles through fall and early winter. A yard with Prairie
-            Dropseed seed heads left standing after frost extends the foraging window for
-            ground-feeding birds that have already worked through other seed sources.
+            A plug set out in spring puts down roots and appears as little more than a small
+            tuft its first year; by year three it has formed its full arching mound, and the
+            same crown will still be in that spot decades later without dividing. Through fall
+            and early winter, Dark-eyed Juncos, American Tree Sparrows, and Song Sparrows work
+            the dried seed heads, while Leonard's Skipper and Cobweb Skipper — two grass-skipper
+            butterflies whose larvae feed on grass blades rather than broadleaf plants — use it
+            as a caterpillar host. In fall the foliage turns orange-gold and the dried clump
+            persists as a small architectural form through winter. [1]
           </p>
         </section>
 
-        <section aria-labelledby="establishment-heading">
-          <h2 id="establishment-heading">Year one is a tuft. Year three is a full mound. After that, the same crown grows for decades without replanting.</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            Prairie Dropseed establishes slowly. A plug set out in May puts down deep roots
-            through its first growing season and appears above ground as little more than a small
-            grass tuft. By the end of the second year the crown has widened. By year three the
-            characteristic 18-to-24-inch arching mound is formed. After that the plant adds size
-            slowly from the same crown — it does not need dividing, does not self-seed into the
-            surrounding bed, and does not require replanting. The same clump made this spring will
-            still be in that spot in 30 years.
-          </p>
-          <p>
-            Because establishment is slow, site conditions matter more for Prairie Dropseed than
-            for annual wildflowers. Full sun is the one requirement with no workaround — the plant
-            performs poorly in more than about two hours of shade per day. Soil drainage is more
-            predictive of long-term success than fertility: Prairie Dropseed evolved on
-            well-drained prairie soils and will decline in persistently wet ground. Competition
-            from aggressive grasses — particularly tall fescue or quackgrass — can crowd a young
-            plant before its crown has space to spread. Clearing a 12-to-18-inch circle of
-            competing grass around the planting hole gives the plant room in the first two seasons.
-          </p>
-          <p>
-            In fall the foliage turns orange-gold and the dried clump persists through winter as
-            a small architectural form. Cutting it back in early spring before new growth appears
-            — not in autumn — keeps the dried seed heads and stems available through the months
-            when they are most used.
+            Prairie Dropseed is a reliable, widely available native grass once it's established
+            — the risk is almost entirely at the start. Its slow first two years lead many
+            gardeners to assume it failed and pull it before the third-year mound ever forms,
+            and competing turf grass can crowd out a young crown before it gets the chance.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Cleared ground before planting, full sun with drainage, standing through winter, and Little Bluestem as a companion in the same bed</h2>
-          <figure className="species-content-photo">
-            <img
-              src="https://inaturalist-open-data.s3.amazonaws.com/photos/11345813/large.jpg"
-              alt="Prairie Dropseed clump with golden-orange fall foliage and dried seed stems persisting into winter, Wisconsin October 2017"
-              loading="lazy"
-            />
-            <figcaption>
-              Prairie Dropseed in late October after the first frosts: foliage has turned
-              orange-gold and the dried seed panicles remain into winter. The clump does not
-              spread and needs no cutting until early spring. Dark-eyed Juncos and American Tree
-              Sparrows visit the seed heads through November and December.
-              <span className="photo-credit"> Photo: cwarneke&nbsp;·&nbsp;<a href="https://www.inaturalist.org/observations/8503172" target="_blank" rel="noopener noreferrer">iNaturalist obs. 8503172</a>&nbsp;· CC0 / No Rights Reserved</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Clear competing grass from a 12-inch radius before planting.</strong>{' '}
-              Tall fescue and quackgrass out-compete young Prairie Dropseed in the first two
-              growing seasons. Removing the sod or smothering it with cardboard and wood chips
-              for a season before planting gives the new crown room to spread without fighting
-              for ground.
+              Clear a 12-inch radius of competing grass before planting — tall fescue and
+              quackgrass outcompete a young crown in its first two seasons. [2]
             </li>
             <li>
-              <strong>Plant in full sun, in soil that drains within 24 hours of rain.</strong>{' '}
-              Prairie Dropseed declines in persistently wet soil and blooms poorly in more than
-              two hours of shade per day. A south- or west-facing border, a dry rain garden margin,
-              or an open lawn edge give it the drainage and light it needs.
+              Plant in full sun, in soil that drains within 24 hours of rain. Prairie Dropseed
+              declines in wet soil and blooms poorly with more than two hours of daily shade. [2]
             </li>
             <li>
-              <strong>Leave the dried clump standing until early spring, not autumn.</strong>{' '}
-              The seed heads hold seeds for ground-feeding birds through winter. The dried stems
-              may shelter overwintering insects. Cutting in October removes both. Cutting in
-              March, before new growth emerges from the crown, removes only what is spent.
+              Leave the dried clump standing until early spring, not fall — the seed heads feed
+              birds all winter and may shelter overwintering insects. [2]
             </li>
             <li>
-              <strong>Plant alongside Little Bluestem in the same sunny bed.</strong>{' '}
-              Both Prairie Dropseed and Little Bluestem host Cobweb Skipper and Leonard's
-              Skipper. A patrolling female that locates one grass species in a bed searches
-              the adjacent ground for more host-grass blades — a bed with both plants doubles
-              the egg-laying surface a female can inspect in the same square footage. Prairie
-              Dropseed mounds at 18 to 24 inches; Little Bluestem stands 2 to 4 feet. Both
-              species need the same dry, sunny soil and do not compete destructively once
-              their crowns are established.
+              Plant it alongside Little Bluestem in the same sunny bed. Both host the same two
+              skipper butterflies, doubling the egg-laying surface in one planting area. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Related pages</h2>
-          <div className="neighbor-grid">
-            <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
-              <span className="neighbor-name">Leonard's Skipper</span>
-              <span className="neighbor-note">Grass skipper that lays eggs on Prairie Dropseed blades in September; the male perches on seed panicle tips to defend his territory</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
-              <span className="neighbor-name">Cobweb Skipper</span>
-              <span className="neighbor-note">Spring grass skipper whose larvae overwinter in a silk shelter at the Prairie Dropseed crown — uses the same grass clump as Leonard's Skipper, seven months earlier in the year</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('little-bluestem')}>
-              <span className="neighbor-name">Little Bluestem</span>
-              <span className="neighbor-note">Sibling native bunchgrass that hosts the same two skippers; taller and more drought-tolerant, with copper-red fall color that persists through January — plant with Prairie Dropseed to double the skipper host-grass area in a sunny bed</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
-              <span className="neighbor-name">Dark-eyed Junco</span>
-              <span className="neighbor-note">Forages on dried Prairie Dropseed seed heads through fall and early winter</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('song-sparrow')}>
-              <span className="neighbor-name">Song Sparrow</span>
-              <span className="neighbor-note">Ground-feeding sparrow that works dried native grass seed heads through November</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
-              <span className="neighbor-name">Canada Goldenrod</span>
-              <span className="neighbor-note">Fellow September bloomer; goldenrod provides nectar for Leonard's Skipper adults at the same time Prairie Dropseed is in seed</span>
-            </button>
-          </div>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
+            <span className="neighbor-name">Leonard's Skipper</span>
+            <span className="neighbor-note">Lays eggs on Prairie Dropseed blades in September; a male perches on the seed panicle tip to defend his territory.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
+            <span className="neighbor-name">Cobweb Skipper</span>
+            <span className="neighbor-note">Spring counterpart to Leonard's Skipper; its larva overwinters in a silk shelter at the same crown, seven months earlier in the year.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('little-bluestem')}>
+            <span className="neighbor-name">Little Bluestem</span>
+            <span className="neighbor-note">A sibling bunchgrass hosting the same two skippers — taller, with copper-red fall color, and the same dry-soil needs.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('song-sparrow')}>
+            <span className="neighbor-name">Song Sparrow</span>
+            <span className="neighbor-note">Works the dried seed heads through fall and early winter, alongside Dark-eyed Juncos and American Tree Sparrows.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Sporobolus_heterolepis" target="_blank" rel="noopener noreferrer">Wikipedia — Sporobolus heterolepis (Prairie Dropseed)</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Hesperia-leonardus" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Leonard's Skipper</a></li>
+          </ol>
         </section>
       </div>
     </>

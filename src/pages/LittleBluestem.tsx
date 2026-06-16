@@ -9,221 +9,134 @@ export default function LittleBluestem({ onNavigate }: LittleBluestemProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/103310661/large.jpeg"
-          alt="Little Bluestem bunchgrass in fall color, copper-red blades and fluffy white seed heads persisting into November, Sauk County, Wisconsin, October 2020"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Schizachyrium_scoparium_16zz.jpg/1280px-Schizachyrium_scoparium_16zz.jpg"
+          alt="Little Bluestem bunchgrass clump with narrow arching blades growing in a garden setting"
           className="species-hero-image"
-          style={{ objectPosition: 'center 60%' }}
+          style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={853}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: jasonswanson&nbsp;·&nbsp;
-          <a href="https://www.inaturalist.org/observations/64276736" target="_blank" rel="noopener noreferrer">iNaturalist obs. 64276736</a>
-          &nbsp;· CC0 / No Rights Reserved
+          Photo: David J. Stang&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Schizachyrium_scoparium_16zz.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Plants</div>
-        <h1>Little Bluestem turns copper-red in October and holds that color through January — the same clump, at that moment, holds Leonard's Skipper and Cobweb Skipper larvae wintering inside silk shelters they built from the blades they ate in summer.</h1>
+        <h1>Little Bluestem</h1>
         <p className="hero__lead">
-          Little Bluestem (<em>Schizachyrium scoparium</em>) is a native bunchgrass that grows
-          in full sun and dry to rocky soil across the central and eastern United States. It
-          reaches 2 to 4 feet tall, forms a clump from a single crown, and does not spread by
-          rhizomes or self-seed aggressively. In late summer the narrow leaf blades begin turning
-          red at their tips; by October the entire plant is copper-red, with fluffy white seed
-          heads held above the foliage.
-        </p>
-        <p className="hero__lead">
-          Two grass-skipper butterflies — Leonard's Skipper (<em>Hesperia leonardus</em>) and
-          Cobweb Skipper (<em>Hesperia metea</em>) — use Little Bluestem as their larval host
-          plant. Females from both species lay eggs directly on the blades. The larvae that hatch
-          spend ten months eating, sheltering, and overwintering in the crown of the same plant
-          before emerging as adults the following spring or late summer.
+          Little Bluestem (<em>Schizachyrium scoparium</em>) is a native bunchgrass that grows 2
+          to 4 feet tall from a single non-spreading crown, in full sun and dry to rocky soil
+          across the central and eastern United States. Starting in late August its blades turn
+          from blue-green to copper-red, reaching full color by October and holding it through
+          January or February. Two grass-skipper butterflies — Leonard's Skipper and Cobweb
+          Skipper — lay their eggs on its blades and overwinter their larvae in its crown. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="copper-heading">
-          <h2 id="copper-heading">The red that starts at the blade tip in August and reaches the whole clump by October — and stays there until February</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            The color change in Little Bluestem begins in the leaf tips in late August as the
-            plant finishes seed production and begins pulling resources back toward the crown for
-            winter. The blades turn from blue-green to orange-red to deep copper over six to eight
-            weeks. By November the plant is a solid column of copper-red against dormant lawn
-            grass and bare soil — a color as saturated as any autumn shrub, on a plant half the
-            size and with twice the winter persistence.
-          </p>
-          <p>
-            Unlike the red in burning bush, which comes from a non-native shrub whose fall color
-            is a landscaping selling point, the red in Little Bluestem is a drying-down process.
-            The anthocyanin pigments are produced as the chlorophyll breaks down and the leaf
-            tissue desiccates. The color holds through winter because the dried blade is no longer
-            metabolically active — there is nothing left to break the pigment down. The same
-            process that makes the color appear is what makes it last.
-          </p>
-          <p>
-            The fluffy white seed heads — actually the silky hairs attached to each seed — remain
-            on the plant through winter and into spring. Dark-eyed Juncos and American Tree
-            Sparrows pull seeds from the dried seed heads in November and December. The same clump
-            that held the skipper larvae in summer, stands copper-red in October, feeds
-            seed-eating birds in November, and releases the remaining seeds into the wind in
-            January — a sequence that runs from June to April without any management intervention.
+            In late April, a female Cobweb Skipper moves through a stand of Little Bluestem
+            inspecting blades and lays a single egg on one. In late August, a female Leonard's
+            Skipper does the same. Both larvae feed briefly, then descend to the crown of the
+            clump and build a silk shelter — the structure each depends on to survive the
+            following winter. [1]
           </p>
         </section>
 
-        <figure className="species-content-photo">
+        <figure className="species-content-photo species-content-photo--right">
           <img
-            src="https://inaturalist-open-data.s3.amazonaws.com/photos/545086482/large.jpg"
-            alt="Little Bluestem bunchgrass in summer with blue-green narrow blades and emerging seed heads, Ohio, July 2025"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Little_Bluestem_P7280448.JPG/1280px-Little_Bluestem_P7280448.JPG"
+            alt="Little Bluestem grass blades in close detail, showing the narrow, fine-textured leaf structure"
+            width={1280}
+            height={1707}
             loading="lazy"
+            style={{ objectPosition: 'center top' }}
           />
           <figcaption>
-            Little Bluestem in midsummer: the blue-green leaf blades that give the species its
-            common name rise from a single crown, with seed heads beginning to extend above the
-            foliage. The narrow leaf blade — about 3 millimeters wide — is what female Cobweb
-            and Leonard's Skippers search for when choosing an egg-laying site in late spring and
-            late summer.
-            <span className="photo-credit"> Photo: waxwing_ohio&nbsp;·&nbsp;<a href="https://www.inaturalist.org/observations/302456601" target="_blank" rel="noopener noreferrer">iNaturalist obs. 302456601</a>&nbsp;· CC0 / No Rights Reserved</span>
+            The narrow leaf blade — about 3 millimeters wide — is what a female Cobweb or
+            Leonard's Skipper inspects when searching for a place to lay a single egg.
+            <span className="photo-credit"> Photo: Chris Light&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Little_Bluestem_P7280448.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
           </figcaption>
         </figure>
 
-        <section aria-labelledby="skippers-heading">
-          <h2 id="skippers-heading">Cobweb Skipper lays in late June, Leonard's Skipper lays in late August — the same clump hosts both, with larvae on offset schedules that never compete</h2>
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Cobweb Skipper females fly in late April and May, laying eggs on native bunchgrass
-            blades. The eggs hatch and the first-instar larvae build a silk shelter around a
-            folded blade — a tent they live in through the growing season. By October these larvae
-            have entered the crown to overwinter. They resume feeding in spring and pupate in
-            April, with adults emerging in late April or early May. The entire larval stage runs
-            from egg in late spring through adult emergence nearly twelve months later.
-          </p>
-          <p>
-            Leonard's Skipper females fly in late August and September, laying eggs on the same
-            grass blades. The eggs hatch in September or overwinter before hatching in spring,
-            depending on the population; the young larvae then feed through spring and early
-            summer before pupating. Adults emerge in August of the following year. The two
-            species' larvae may occupy the same grass clump simultaneously — Cobweb Skipper
-            larvae completing their overwintering stage through winter, and Leonard's Skipper
-            eggs or early-instar larvae sheltering at the base of the same crown.
-          </p>
-          <p>
-            Neither species can complete its life cycle in a yard planted only with broadleaf
-            wildflowers. Milkweed, goldenrod, and aster do not provide the grass blade tissue
-            these larvae eat. A single clump of Little Bluestem — or Prairie Dropseed — is the
-            one addition that opens the yard to both skippers.
+            The color change begins at the blade tips in late August and reaches the whole clump
+            by October — a drying-down process, not unlike non-native shrubs grown for fall
+            color, except the pigment holds because the dried tissue is no longer metabolically
+            active to break it down. The fluffy white seed heads that follow are made of silky
+            hairs attached to each seed, and Dark-eyed Juncos and American Tree Sparrows pull
+            seeds from them through November and December — the same standing clump that
+            sheltered two species of overwintering caterpillar all season. [1]
           </p>
         </section>
 
-        <section aria-labelledby="site-heading">
-          <h2 id="site-heading">Dry, rocky soil and full sun — the conditions where turf grass fails and Little Bluestem does not need supplemental care</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            Little Bluestem evolved on the dry, rocky, and often thin soils of the North American
-            prairie and barrens. It tolerates drought, low fertility, and compacted soil better
-            than most ornamental grasses, and establishes in roadside banks, gravel margins, and
-            south-facing slopes where many native wildflowers fail. In an average yard, a spot
-            that drains within 12 hours of rain and receives at least 6 hours of direct sun is
-            sufficient.
-          </p>
-          <p>
-            The plant grows from a single crown without producing runners or rhizomes. It does
-            not colonize adjacent ground the way Canada Goldenrod or Wild Bergamot can. A clump
-            stays where it was planted, widens slowly from the center over years, and does not
-            need dividing unless the center dies out — which can happen after 10 to 15 years in
-            very fertile soil. In dry, open conditions the crown persists indefinitely.
-          </p>
-          <p>
-            Competition from established lawn grass is the main establishment challenge in the
-            first season. Removing a 12-inch circle of sod before planting — or covering the
-            area with cardboard for one season — gives the crown room to spread its first roots
-            before facing competition. After the first full growing season, established Little
-            Bluestem holds its ground against most lawn grasses in dry conditions without further
-            intervention.
+            Little Bluestem is common and easy to establish, but a fall cutback — the tidy,
+            standard end-of-season yard chore — removes the copper-red color, the bird food, and
+            both skippers' overwintering shelter in one pass. None of that loss is visible from
+            the yard; the clump just looks shorter.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Full sun dry soil, standing through late April, planted in a group of three, and goldenrod in the same bed</h2>
-          <figure className="species-content-photo">
-            <img
-              src="https://inaturalist-open-data.s3.amazonaws.com/photos/331747293/large.jpg"
-              alt="Little Bluestem in fall color with copper-red blades and white fluffy seed heads against a clear sky, Uwharrie National Forest, North Carolina, October 2023"
-              loading="lazy"
-            />
-            <figcaption>
-              Little Bluestem in late October at Uwharrie National Forest, North Carolina:
-              copper-red blades and white seed heads after the first frosts. The clump stands
-              without staking or support — the crown holds the dried stems upright through winter
-              winds. At the base of this plant, Leonard's Skipper or Cobweb Skipper larvae may
-              be overwintering in silk shelters built from the same blades now turning red above
-              them.
-              <span className="photo-credit"> Photo: whiteoak&nbsp;·&nbsp;<a href="https://www.inaturalist.org/observations/189384424" target="_blank" rel="noopener noreferrer">iNaturalist obs. 189384424</a>&nbsp;· CC0 / No Rights Reserved</span>
-            </figcaption>
-          </figure>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant in full sun, in dry to rocky soil with good drainage.</strong>{' '}
-              Little Bluestem does not need fertile or amended soil — it establishes more reliably
-              in lean, dry conditions than in heavy clay or shade. A spot that receives 6 or more
-              hours of direct sun and drains within 12 hours of rain gives this plant what it
-              needs to grow without supplemental watering after the first season.
+              Plant in full sun, in dry to rocky, well-drained soil — Little Bluestem performs
+              better in lean conditions than in heavy, fertile, or shaded ground. [2]
             </li>
             <li>
-              <strong>Leave the clump standing until late April or early May each year.</strong>{' '}
-              Both Leonard's Skipper and Cobweb Skipper larvae overwinter at the plant's crown.
-              Cutting in autumn or early spring removes them before they can pupate and emerge as
-              adults. The dried copper-red blades and white seed heads are also the winter food
-              source for Dark-eyed Juncos and American Tree Sparrows. Cutting in late April —
-              after adults may have already emerged — removes only the previous year's dead
-              growth.
+              Leave the clump standing until late April or early May. Both skippers' larvae
+              overwinter at the crown, and the dried blades and seed heads feed birds all
+              winter. [2]
             </li>
             <li>
-              <strong>Plant 3 or more clumps within 10 feet of each other.</strong>{' '}
-              Female skippers patrol grass patches searching for egg-laying sites. A single
-              isolated clump may be passed over; a patch of three to five plants in a sunny
-              border gives them a target large enough to locate and return to. Planting Little
-              Bluestem alongside Prairie Dropseed gives both skipper species a combined host-grass
-              area in the same bed.
+              Plant three or more clumps within 10 feet of each other, so a patrolling female has
+              more than one target to find and return to. [2]
             </li>
             <li>
-              <strong>Plant Canada Goldenrod or a native aster within 10 feet of the grass patch.</strong>{' '}
-              Leonard's Skipper females spend two to three weeks alternating between nectaring
-              and laying eggs — they typically nectar and then search for egg-laying sites within
-              the same small area. A Canada Goldenrod blooming in the third week of August is
-              the nectar source a female visits immediately before returning to the adjacent grass
-              blades to deposit eggs. The goldenrod finishes blooming in late September, after the
-              last Leonard's Skipper females have completed egg-laying on the same grass clumps.
+              Add Canada Goldenrod or a native aster nearby — Leonard's Skipper adults need
+              nectar in the same border where they lay their eggs in late summer. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Related pages</h2>
-          <div className="neighbor-grid">
-            <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
-              <span className="neighbor-name">Leonard's Skipper</span>
-              <span className="neighbor-note">Lays eggs on Little Bluestem blades in late August; larvae overwinter at the crown; adults emerge the following late summer on the same grass clump</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
-              <span className="neighbor-name">Cobweb Skipper</span>
-              <span className="neighbor-note">First grass skipper of spring; lays eggs in late June and July; larvae overwinter at the same crown where Leonard's Skipper laid its eggs two months earlier</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('prairie-dropseed')}>
-              <span className="neighbor-name">Prairie Dropseed</span>
-              <span className="neighbor-note">Fellow native bunchgrass hosting the same two skippers; coriander-scented seeds; finer texture and slightly shorter than Little Bluestem but the same dry-soil, full-sun requirements</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('dark-eyed-junco')}>
-              <span className="neighbor-name">Dark-eyed Junco</span>
-              <span className="neighbor-note">Pulls seeds from Little Bluestem seed heads in November and December; the standing dried clump extends the seed-foraging window after other sources are exhausted</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('american-tree-sparrow')}>
-              <span className="neighbor-name">American Tree Sparrow</span>
-              <span className="neighbor-note">Arrives in October from subarctic nesting grounds; pulls seeds from standing Little Bluestem stalks and dried goldenrod heads in loose flocks of 10 to 40 birds through January — the same copper-red stalks the juncos and sparrows are both working</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
-              <span className="neighbor-name">Canada Goldenrod</span>
-              <span className="neighbor-note">Leonard's Skipper adults nectar on goldenrod in late August while the same grass blades are receiving the first Leonard's Skipper eggs — nectar source and host plant in the same border, the same week</span>
-            </button>
-          </div>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('leonards-skipper')}>
+            <span className="neighbor-name">Leonard's Skipper</span>
+            <span className="neighbor-note">Lays eggs on Little Bluestem blades in late August; the larva overwinters at the crown and the adult emerges the following year on the same clump.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('cobweb-skipper')}>
+            <span className="neighbor-name">Cobweb Skipper</span>
+            <span className="neighbor-note">The first grass skipper of spring; its larva overwinters in the same crown where a Leonard's Skipper egg was laid the previous fall.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('prairie-dropseed')}>
+            <span className="neighbor-name">Prairie Dropseed</span>
+            <span className="neighbor-note">A fellow native bunchgrass hosting the same two skippers — finer-textured and slightly shorter, with the same dry-soil, full-sun needs.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
+            <span className="neighbor-name">Canada Goldenrod</span>
+            <span className="neighbor-note">Blooms in late August at the same time Leonard's Skipper females are laying eggs on the adjacent Little Bluestem blades.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Schizachyrium_scoparium" target="_blank" rel="noopener noreferrer">Wikipedia — Schizachyrium scoparium (Little Bluestem)</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Hesperia-metea" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Cobweb Skipper</a></li>
+          </ol>
         </section>
       </div>
     </>
