@@ -9,251 +9,140 @@ export default function AmericanSnout({ onNavigate }: AmericanSnoutProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/340891791/large.jpeg"
-          alt="American Snout butterfly (Libytheana carinenta) resting on a leaf — the elongated labial palps projecting forward from the face like a snout are visible, along with orange-and-brown patterned wings"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/American_Snout_%28Nymphalidae%2C_Libytheana_carinenta%29_%2830247797595%29.jpg/1280px-American_Snout_%28Nymphalidae%2C_Libytheana_carinenta%29_%2830247797595%29.jpg"
+          alt="American Snout butterfly (Libytheana carinenta) resting with wings closed, showing the elongated labial palps projecting forward from the face like a snout"
           className="species-hero-image"
           style={{ objectPosition: 'center 45%' }}
+          width={1280}
+          height={942}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/58379019/large.jpeg'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: John Flannery&nbsp;&middot;&nbsp;
-          <a href="https://www.inaturalist.org/observations/192459380" target="_blank" rel="noopener noreferrer">CC BY via iNaturalist</a>
+          Photo: Insects Unlocked&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:American_Snout_(Nymphalidae,_Libytheana_carinenta)_(30247797595).jpg" target="_blank" rel="noopener noreferrer">CC0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Meet Your Neighbors</div>
-        <h1>In October, a mass of American Snouts moving through Texas can be counted at six million individuals per hour at roadside stations — every one of them a caterpillar that hatched on hackberry earlier that season</h1>
+        <h1>American Snout</h1>
         <p className="hero__lead">
-          The American Snout (<em>Libytheana carinenta</em>) carries a pair of elongated labial
-          palps — the sensory appendages near the mouth — that project straight forward past
-          the head for roughly half the wingspan. No other eastern butterfly has this structure.
-          When the Snout lands on a stem and folds its wings, the palps mimic a dead leaf
-          petiole; the butterfly disappears against the woody plant it&apos;s resting on.
-        </p>
-        <p className="hero__lead">
-          Hackberry is the only caterpillar host. The population in any yard is entirely
-          determined by how many hackberry leaves were available in June and July. In years
-          when hackberry blooms abundantly and June rainfall is high, caterpillar populations
-          spike — and in September and October, those adults move south and west in masses
-          that block highway visibility in south Texas.
+          The American Snout (<em>Libytheana carinenta</em>) carries a pair of elongated
+          mouthparts that project forward past the head like a twig — when it folds its wings
+          and grips a stem, the disguise is structural, not behavioral, and the butterfly
+          disappears against the woody plant it&apos;s resting on. Hackberry is its only
+          caterpillar host, and in wet years, the population it produces can move south through
+          Texas at six million individuals per hour. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="palps-heading">
-          <h2 id="palps-heading">Palps that look like a twig — the disguise is structural, not behavioral</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Most butterfly disguises involve wing pattern: eyespots, false heads, or color
-            that matches bark or leaves. The American Snout&apos;s disguise is architectural.
-            When resting, the forewing folds against the hindwing and the labial palps project
-            forward exactly where a dead leaf petiole would be. The wing undersides are mottled
-            gray-brown. The butterfly does not orient itself to maximize the effect — the shape
-            accomplishes it regardless of angle.
-          </p>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://inaturalist-open-data.s3.amazonaws.com/photos/58379019/large.jpeg"
-              alt="American Snout (Libytheana carinenta) dorsal view — orange and dark brown wing pattern visible, with the projecting labial palps extending from the face that give the species its common name"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://inaturalist-open-data.s3.amazonaws.com/photos/340891791/large.jpeg'
-              }}
-            />
-            <figcaption>
-              American Snout dorsal view. The orange, dark brown, and white wing pattern
-              is visible when the butterfly basks or nectars. When it folds its wings and
-              grips a stem, the pattern disappears and the projecting palps complete the
-              twig-end silhouette.
-              <span className="photo-credit"> Photo: NatureShutterbug&nbsp;&middot;&nbsp;
-                <a href="https://www.inaturalist.org/photos/58379019" target="_blank" rel="noopener noreferrer">CC BY via iNaturalist</a></span>
-            </figcaption>
-          </figure>
-          <p>
-            The labial palps serve a sensory function beyond camouflage &mdash; they carry
-            chemoreceptors that detect food and host plant compounds at close range. All
-            butterflies have palps, but in <em>Libytheana</em> the structure is elongated
-            to a degree found in no other North American species. The common name refers
-            to the visual effect when the butterfly is viewed from the side.
-          </p>
-          <p>
-            Adults visit flowers for nectar &mdash; goldenrod, asters, and composites through
-            late summer and fall. This distinguishes them from Hackberry Emperor and Tawny
-            Emperor, the other hackberry-specialist butterflies, which never visit flowers.
-            Snouts also drink from puddles and wet soil. Flight is fast and erratic, covering
-            ground quickly between nectaring stops.
+            Unlike its hackberry-specialist neighbors, the American Snout visits flowers —
+            goldenrod, asters, and other composites through late summer and fall — and also
+            drinks from puddles and wet soil. Flight is fast and erratic, covering ground
+            quickly between nectaring stops. At rest, the forewing folds against the hindwing
+            and the projecting palps complete a dead-leaf-petiole silhouette regardless of the
+            angle it lands at. [1]
           </p>
         </section>
 
-        <section aria-labelledby="hackberry-heading">
-          <h2 id="hackberry-heading">One host plant, one larval food source — no hackberry, no American Snout</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/American_Snout_%28Libytheana_carinenta%29_%2814828026984%29.jpg/1280px-American_Snout_%28Libytheana_carinenta%29_%2814828026984%29.jpg"
+            alt="American Snout butterfly (Libytheana carinenta) with wings open, showing the orange, dark brown, and white dorsal wing pattern"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            With wings spread for basking or nectaring, the orange-and-brown pattern is on
+            full display. Fold the wings shut against a twig and the same butterfly vanishes —
+            the palps becoming the missing leaf stem.
+            <span className="photo-credit"> Photo: Andrew C&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:American_Snout_(Libytheana_carinenta)_(14828026984).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            American Snout caterpillars feed exclusively on hackberry (<em>Celtis</em> species).
-            No caterpillar has been reared to maturity on any other plant genus. A yard without
-            hackberry will not produce a breeding Snout regardless of what else is planted there.
-            The caterpillar is pale green with yellow lateral stripes and blends into the hackberry
-            foliage through its entire development.
-          </p>
-          <p>
-            Female Snouts lay eggs on young hackberry leaves in spring and again in summer.
-            The caterpillar hatches, feeds on the leaf from the tip toward the base, and pupates
-            in a green chrysalis attached to a stem. Development from egg to adult takes roughly
-            three to four weeks in warm summer conditions. In the southern part of the range,
-            three to four generations occur per year; in the northern part, two.
-          </p>
-          <p>
-            Adults in wet years survive to migrate. In dry years, hackberry produces fewer new
-            leaves, caterpillar survival drops, and adult populations stay low. The relationship
-            is tight enough that local American Snout abundance is essentially a measure of
-            hackberry leaf availability and summer rainfall in that watershed earlier in the season.
+            Caterpillars feed exclusively on young hackberry leaves and complete egg-to-adult
+            development in three to four weeks during summer warmth, producing two generations
+            in the north and three to four in the south. Local abundance tracks hackberry leaf
+            availability and spring rainfall almost exactly — a dry spring means fewer new
+            leaves, lower caterpillar survival, and a quiet year. A wet spring sets up the
+            population spikes that trigger the species&apos; famous fall migrations south and
+            west through Texas. [1]
           </p>
         </section>
 
-        <section aria-labelledby="migration-heading">
-          <h2 id="migration-heading">Six million per hour through south Texas — the migration that follows wet years</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it&apos;s doing</h2>
           <p>
-            American Snouts do not migrate every year. In years with abundant spring rainfall
-            across Texas, Oklahoma, and adjacent states, hackberry blooms extensively and
-            caterpillar populations spike. By September, adult Snouts begin moving south and
-            southwest in waves. The largest migrations on record involved observers counting
-            individuals at fixed roadside stations; six million per hour has been documented
-            at single locations in south Texas.
-          </p>
-          <p>
-            The trigger appears to be a combination of high population density and the onset
-            of dry conditions that reduce hackberry quality. Adults that dispersed before the
-            dry period arrive in south Texas and Mexico with enough fat reserves to overwinter
-            as adults. Unlike monarchs, Snouts do not aggregate at a specific overwintering
-            site &mdash; they disperse through warm lowland areas and resume activity whenever
-            temperatures allow flight.
-          </p>
-          <p>
-            In most years outside of migration events, American Snouts are present in low to
-            moderate numbers across their range. A yard with hackberry will have Snouts
-            breeding in it through summer even in non-migration years &mdash; they simply
-            don&apos;t accumulate to numbers visible from a distance.
+            American Snout is common and not at risk, with population swings tied directly to
+            weather rather than habitat loss. But the migration spectacle that makes this
+            species famous depends entirely on ordinary, overlooked hackberry trees scattered
+            across the landscape — there is no single reserve or refuge that produces six
+            million butterflies an hour. That number is the sum of countless small, unmanaged
+            hackberries doing exactly what they always do.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Hackberry in the yard, leaf litter intact through April — the complete Snout setup</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Keep any existing hackberry on the property.</strong>{' '}
-              Hackberry self-seeds into fence rows and at property edges — placed there by
-              cedar waxwings, robins, and other birds that eat the fruit. A hackberry that
-              appears uninvited is not a weed; it is a functioning habitat node. The corky
-              bark ridges that develop as the tree matures are an identification feature
-              visible from ten feet.
+              Keep any hackberry already on the property. Birds plant them in fence rows, and
+              a tree with corky bark ridges visible from ten feet is already producing
+              caterpillars. [2]
             </li>
             <li>
-              <strong>Leave the leaf litter under hackberry from October through late April.</strong>{' '}
-              Hackberry Emperor and Tawny Emperor caterpillars overwinter in that leaf layer.
-              The Snout overwinters as an adult in mild winters, but the caterpillar generation
-              that feeds in fall may shelter in the leaf layer before completing development.
-              Raking removes the resource for all three hackberry specialists simultaneously.
+              Plant goldenrod and asters at the yard&apos;s edge. Adults need fall nectar before
+              migration, and Canada goldenrod or New England aster flower in exactly that
+              window. [2]
             </li>
             <li>
-              <strong>Plant goldenrod and asters at the yard&apos;s edge for fall nectaring.</strong>{' '}
-              American Snout adults need nectar through September and October before migration.
-              Canada goldenrod, New England aster, and aromatic aster all flower in the same
-              window the Snout needs fuel. Adults nectaring at goldenrod can be observed at
-              close range — they are less flighty when feeding than when flying between plants.
+              Leave the leaf litter under hackberry from October through April, since multiple
+              hackberry-specialist butterflies shelter there over winter. [2]
             </li>
             <li>
-              <strong>Apply no systemic insecticide to hackberry or adjacent soil during the growing season.</strong>{' '}
-              Systemic treatments absorbed through roots or bark during spring and summer
-              reach the caterpillar generation feeding on that tree&apos;s leaves. The caterpillar
-              is pale green against green leaf tissue &mdash; invisible at normal distance, dead
-              within hours of systemic treatment reaching the foliage. If pest management
-              is needed near the hackberry, verify the treatment zone doesn&apos;t reach the
-              tree before applying.
+              Apply no systemic insecticide to hackberry during the growing season — the pale
+              green caterpillar is invisible against the leaf but dies within hours of a
+              systemic treatment reaching the foliage. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">What else depends on hackberry in the same yard</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('hackberry')}>
-                Hackberry
-              </button>{' '}
-              &mdash; the only caterpillar host; no American Snout has been reared to
-              maturity on any plant outside the <em>Celtis</em> genus; a property without
-              hackberry will not produce a breeding American Snout regardless of what else
-              grows there
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('hackberry-emperor')}>
-                Hackberry Emperor
-              </button>{' '}
-              &mdash; the other butterfly whose caterpillar develops only on hackberry;
-              unlike the Snout, the Emperor never visits flowers — adults seek dissolved
-              minerals in sap flows, fermenting fruit, and human sweat; both species share
-              the same host tree but fuel on opposite resources as adults
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('tawny-emperor')}>
-                Tawny Emperor
-              </button>{' '}
-              &mdash; the third obligate hackberry butterfly; shares the same host tree,
-              the same overwintering leaf litter, and the same adult habit of drinking
-              dissolved minerals from sap flows and skin; distinguished from the Hackberry
-              Emperor by the forewing tip &mdash; Tawny Emperor carries no white spots
-              where the Hackberry Emperor carries three to five
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('question-mark')}>
-                Question Mark
-              </button>{' '}
-              &mdash; also uses hackberry as a caterpillar host alongside stinging nettle;
-              adult Question Marks and American Snouts overlap at goldenrod and aster
-              patches in late summer and at hackberry trees where multiple species gather
-              around sap flows and fermenting fruit
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('eastern-comma')}>
-                Eastern Comma
-              </button>{' '}
-              &mdash; uses hackberry alongside stinging nettle as a caterpillar host;
-              adults fuel on fermenting fruit and sap flows through late summer in the
-              same areas where American Snouts are nectaring at adjacent asters
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('cedar-waxwing')}>
-                Cedar Waxwing
-              </button>{' '}
-              &mdash; consumes hackberry fruit in large nomadic flocks during fall migration
-              and deposits hackberry seeds in droppings wherever the flock perches —
-              the waxwing is the mechanism that places new hackberry seedlings in fence
-              rows and at property edges, expanding the habitat for both Snout and Emperor
-            </li>
-          </ul>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            <strong>The American Snout and Hackberry Emperor share the same host tree.</strong>{' '}
-            Both butterflies exist on your property only if a hackberry does. See what else
-            a hackberry supports at{' '}
-            <button className="link-button" onClick={() => onNavigate('hackberry')}>
-              Hackberry
-            </button>
-            {' '}and see why the leaf litter under that tree matters at{' '}
-            <button className="link-button" onClick={() => onNavigate('leave-the-leaves')}>
-              Leave the Leaves
-            </button>
-            .
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('hackberry')}>
+            <span className="neighbor-name">Hackberry</span>
+            <span className="neighbor-note">The only caterpillar host plant; no American Snout has been reared to maturity on anything outside the Celtis genus, so the species lives or dies by this one tree.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('hackberry-emperor')}>
+            <span className="neighbor-name">Hackberry Emperor</span>
+            <span className="neighbor-note">Shares the same host tree but fuels on the opposite resource as an adult — sap, fruit, and sweat instead of nectar — so the two species rarely compete for food even while sharing every leaf.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('tawny-emperor')}>
+            <span className="neighbor-name">Tawny Emperor</span>
+            <span className="neighbor-note">The third obligate hackberry butterfly, sharing the same host tree and the same overwintering leaf litter as the Snout and the Hackberry Emperor.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('cedar-waxwing')}>
+            <span className="neighbor-name">Cedar Waxwing</span>
+            <span className="neighbor-note">Eats hackberry fruit in nomadic fall flocks and deposits the seeds wherever it perches next — the mechanism that keeps planting new host trees for the next generation of Snouts.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://www.butterfliesandmoths.org/species/Libytheana-carinenta" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — American Snout</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Celtis_occidentalis" target="_blank" rel="noopener noreferrer">Wikipedia — Celtis occidentalis (Common Hackberry)</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )
