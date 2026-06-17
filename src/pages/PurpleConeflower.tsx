@@ -9,192 +9,132 @@ export default function PurpleConeflower({ onNavigate }: PurpleConeflowerProps) 
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Echinacea_purpurea.jpg/960px-Echinacea_purpurea.jpg"
-          alt="Purple coneflower in full bloom — drooping magenta ray petals around a spiky orange-brown central disk, with a bumblebee foraging on the flower head"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/American_lady_on_purple_coneflower_%2874770%29.jpg/1280px-American_lady_on_purple_coneflower_%2874770%29.jpg"
+          alt="An American Lady butterfly nectaring on a purple coneflower, its drooping magenta petals around a spiky orange disk"
           className="species-hero-image"
-          style={{ objectPosition: 'center 60%' }}
+          style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={948}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Petar Milošević&nbsp;·&nbsp;
-          <a href="https://commons.wikimedia.org/wiki/File:Echinacea_purpurea.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          Photo: Rhododendrites&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:American_lady_on_purple_coneflower_(74770).jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Plants</div>
-        <h1>A female longhorn bee carries coneflower pollen in July.<br />No other plant will do.</h1>
+        <h1>Purple Coneflower</h1>
         <p className="hero__lead">
-          The two-spotted longhorn bee (<em>Melissodes bimaculata</em>) is an oligoletic
-          specialist — it collects pollen exclusively from <em>Echinacea</em> and closely related
-          flowers in the aster family. The branched hairs on its hind legs evolved to trap
-          echinacea pollen grains. It does not forage on any other plant family. A female working
-          in July visits 30–40 coneflower heads to fill a single pollen load, then carries it back
-          to a nest she excavated in bare soil beneath the plants and provisions one larval cell.
-        </p>
-        <p className="hero__lead">
-          With two coneflowers in a bed, she spends most of her time flying between heads.
-          With a dense patch of ten or twelve plants, she works a territory where the next flower
-          is two feet away. The density of the planting determines whether she can raise offspring
-          that year.
+          Purple coneflower (<em>Echinacea purpurea</em>) blooms from late June through August, and
+          one of its visitors will go nowhere else: the two-spotted longhorn bee (<em>Melissodes
+          bimaculata</em>) collects pollen almost exclusively from <em>Echinacea</em> and its close
+          aster-family relatives. Whether she can raise young in a given yard comes down to how many
+          coneflowers are planted — and how close together. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="disk-heading">
-          <h2 id="disk-heading">The spiky cone that feeds birds from September through January</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            After the purple ray petals drop in August and September, the central disk of each
-            coneflower head hardens into a brown, ridged cone that holds the seeds through winter.
-            The word "echinacea" comes from the Greek <em>echinos</em>, meaning sea urchin — the
-            dried seed head looks exactly like one.
-          </p>
-          <p>
-            American goldfinches cling to those stiff stalks and pull seeds out from October through
-            January. Dark-eyed juncos work the ground beneath the plants after seeds fall. A
-            coneflower patch left standing through winter provides five months of food for seed-eating
-            birds that would find nothing in a bed of deadheaded stems.
+            A female longhorn bee working in July visits 30 to 40 coneflower heads to fill a single
+            pollen load, then carries it back to a nest she dug in bare soil beneath the plants and
+            provisions one larval cell. With two coneflowers scattered in a border, she burns most of
+            her energy flying between them. With a dense patch of ten or twelve, the next flower is
+            two feet away — and she can provision cell after cell. The planting's density decides
+            whether she reproduces that year. [1]
           </p>
         </section>
 
-        <section aria-labelledby="monarchs-heading">
-          <h2 id="monarchs-heading">Monarchs in July, fritillaries in August</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Echinacea_purpurea_Spinus_tristis_JRVdH_03.jpg/1280px-Echinacea_purpurea_Spinus_tristis_JRVdH_03.jpg"
+            alt="An American Goldfinch perched on a dried, spiky coneflower seed head, a seed held in its beak"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            Once the petals drop, the disk hardens into a spiky cone — <em>echinos</em> is Greek for
+            sea urchin — that holds seed through winter. Goldfinches work those stiff stalks from
+            October into January.
+            <span className="photo-credit"> Photo: Cephas&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Echinacea_purpurea_Spinus_tristis_JRVdH_03.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Monarch butterflies emerging from chrysalises in late June and July are the first
-            generation shifting from reproduction toward fat accumulation. These adults begin
-            the behavioral changes that prefigure the fall migration — longer feeding bouts,
-            less time seeking mates. Purple coneflower blooms from late June through August
-            in most of its range, covering exactly the period when those monarchs are feeding
-            most intensively.
-          </p>
-          <p>
-            Great spangled fritillaries arrive at coneflower heads in late July and August
-            and spend 10–15 minutes on a single flower head before moving to the next. Tiger
-            swallowtails, painted ladies, and silver-spotted skippers work the flowers alongside
-            the fritillaries and the longhorn bees. A patch of twelve coneflowers in July has
-            several bee and butterfly species on it at the same time.
+            The bloom window — late June through August — covers exactly the weeks July monarchs are
+            feeding hardest before migration and great spangled fritillaries are working the heads in
+            August, a single fritillary lingering ten to fifteen minutes on one flower. After bloom,
+            the seed cones feed goldfinches and juncos from October through January. Left alone, a
+            cluster of eight plants self-seeds into fifteen or twenty over three or four years. [1]
           </p>
         </section>
 
-        <div className="callout callout--orange">
-          <h3 style={{ marginTop: 0 }}>Two coneflowers versus twelve</h3>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            Most homeowners who plant coneflowers buy one or two from a garden center and scatter
-            them through a mixed border. Each plant produces ten to thirty flower heads over the
-            season — which sounds like enough. But <em>Melissodes bimaculata</em> needs 30–40 flower
-            visits to fill a single pollen load, and she provisions multiple cells per nest.
-            She competes with bumblebees, sweat bees, and other visitors for the same flowers and
-            forages within roughly 300 meters of her ground nest.
+            Coneflower is one of the best-selling native perennials — but usually as one or two plants
+            dropped into a mixed bed, or as showy cultivars bred for petal size at the expense of
+            pollen. The specialist bee needs the opposite: a dense cluster of the straight species
+            with bare ground underneath to nest in.
           </p>
-          <p style={{ marginBottom: 0 }}>
-            A scattered planting gives her just enough to work with on a good day. A dense cluster
-            of 8 to 12 plants gives her a territory where she can forage efficiently without
-            burning most of her energy on travel. The practical rule: plant coneflowers in
-            groups, not as singles.
-          </p>
-        </div>
+        </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Dense cluster, bare soil, skip the deadheading</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant 8–12 in one location, not singles scattered through a bed.</strong>{' '}
-              A dense cluster supports specialist bees that need multiple heads per foraging trip.
-              Scattered single plants produce nectar but do not provide the density a
-              <em> Melissodes</em> female needs to provision her nest without wasting energy on
-              long-distance flight between flowers.
+              Plant 8 to 12 in one cluster rather than singles scattered through a bed — specialist
+              bees need many heads within a short flight to provision a nest. [2]
             </li>
             <li>
-              <strong>Leave bare soil near the base of the patch.</strong>{' '}
-              The two-spotted longhorn bee and other ground-nesting bees excavate nest chambers
-              in exposed soil. Mulch layered right up to the stems eliminates this nesting habitat.
-              A ring of bare soil 12 inches wide around the base of the planting is enough
-              for nest sites.
+              Leave a ring of bare soil about a foot wide at the base of the patch; ground-nesting
+              bees can't dig through mulch laid up to the stems. [2]
             </li>
             <li>
-              <strong>Do not deadhead until late February.</strong>{' '}
-              Goldfinches, juncos, and other seed-eating birds pull seeds from the dried heads
-              from October through January. Cutting back in October when seeds are still being
-              eaten removes five months of winter food. Cut in late February as new basal rosettes
-              appear.
+              Don't deadhead — leave the seed cones standing for goldfinches and juncos, and cut
+              back in late February as new basal rosettes appear. [2]
             </li>
             <li>
-              <strong>Use straight-species plants, not horticultural cultivars.</strong>{' '}
-              Varieties like 'Magnus', 'White Swan', and 'Cheyenne Spirit' were selected for
-              larger ray petals and often produce fewer pollen-rich anthers than{' '}
-              <em>Echinacea purpurea</em> straight species. Source plugs from a regional native
-              plant nursery.
+              Choose the straight species over cultivars like 'Magnus' or 'Cheyenne Spirit', which
+              often trade pollen-rich anthers for bigger petals. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="range-heading">
-          <h2 id="range-heading">Range: zones 3–9, native across eastern North America</h2>
-          <p>
-            <em>Echinacea purpurea</em> grows naturally from Ontario south to Louisiana and west
-            to the Great Plains. It tolerates full sun in average to dry soil and handles summer
-            drought once established. First-year plants from seed rarely bloom — buy plugs for
-            flowers the first summer. Each plant self-seeds moderately; a patch of 8 plants will
-            expand to 15–20 over three to four years without management.
-          </p>
-          <p>
-            Bloom time: late June through August in most locations, with some variation by latitude
-            and local conditions. The window overlaps with the July monarch feeding period and
-            continues through the early-August peak of great spangled fritillary activity.
-          </p>
-          <div className="connections">
-            <h3>Plants and species connected to Purple Coneflower</h3>
-            <ul>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('monarch-life')}>
-                  Monarch Butterfly
-                </button>{' '}
-                — feeds on coneflower blooms from late June through August during the pre-diapause fat-accumulation period before the September migration
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('tiger-swallowtail')}>
-                  Tiger Swallowtail
-                </button>{' '}
-                — works coneflower heads in late July and August alongside monarchs, fritillaries, and longhorn bees
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('american-goldfinch')}>
-                  American Goldfinch
-                </button>{' '}
-                — clings to hardened seed stalks and extracts seeds from October through January after the ray petals have dropped
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
-                  Canada Goldenrod
-                </button>{' '}
-                — picks up the bloom season in September when coneflower finishes, bridging the summer-to-fall nectar window
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('native-bees')}>
-                  Native Bees
-                </button>{' '}
-                — the two-spotted longhorn bee (<em>Melissodes bimaculata</em>) collects pollen exclusively from <em>Echinacea</em> and its close relatives in the aster family
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            Purple coneflower covers the summer bloom window between spring wildflowers and fall
-            goldenrod — from late June through August when goldenrod is still weeks from opening.
-            See how the two plants share the season in the{' '}
-            <button className="link-button" onClick={() => onNavigate('plants-bloom-calendar')}>
-              Bloom Calendar
-            </button>
-            , or find coneflower and goldenrod sources in the{' '}
-            <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
-              Native Plant Near Me
-            </button>
-            {' '}finder.
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('native-bees')}>
+            <span className="neighbor-name">Native Bees</span>
+            <span className="neighbor-note">The two-spotted longhorn bee collects pollen almost only from Echinacea and its relatives, and nests in bare soil right beneath a dense coneflower patch.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('monarch-life')}>
+            <span className="neighbor-name">Monarch Butterfly</span>
+            <span className="neighbor-note">Feeds on coneflower through July and August, the pre-migration weeks when adults shift from breeding toward building fat reserves.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-goldfinch')}>
+            <span className="neighbor-name">American Goldfinch</span>
+            <span className="neighbor-note">Clings to the hardened seed cones and pulls seed from October through January — the reason to leave the heads standing all winter.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-lady')}>
+            <span className="neighbor-name">American Lady</span>
+            <span className="neighbor-note">One of the summer butterflies that nectars at the open coneflower disk, alongside fritillaries, swallowtails, and the longhorn bees.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Echinacea_purpurea" target="_blank" rel="noopener noreferrer">Wikipedia — Echinacea purpurea (Purple Coneflower)</a></li>
+            <li><a href="https://xerces.org/bees" target="_blank" rel="noopener noreferrer">Xerces Society — Protecting Native Bees</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )

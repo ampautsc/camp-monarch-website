@@ -9,14 +9,17 @@ export default function JoePyeWeed({ onNavigate }: JoePyeWeedProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Eutrochium_purpureum_kz01.jpg/960px-Eutrochium_purpureum_kz01.jpg"
-          alt="Joe Pye weed in bloom — a tall native perennial with large dome-shaped clusters of mauve-pink flowers at the top of thick hollow stems, surrounded by whorled leaves"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Eutrochium_purpureum_kz01.jpg/1280px-Eutrochium_purpureum_kz01.jpg"
+          alt="Joe Pye weed in bloom — tall stems topped with large dome-shaped clusters of mauve-pink flowers above whorled leaves"
           className="species-hero-image"
           style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={853}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: Krzysztof Ziarnek (Kenraiz)&nbsp;·&nbsp;
+          Photo: Krzysztof Ziarnek, Kenraiz&nbsp;·&nbsp;
           <a href="https://commons.wikimedia.org/wiki/File:Eutrochium_purpureum_kz01.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
           &nbsp;via Wikimedia Commons
         </div>
@@ -24,148 +27,113 @@ export default function JoePyeWeed({ onNavigate }: JoePyeWeedProps) {
 
       <section className="hero">
         <div className="hero__eyebrow">Native Plants</div>
-        <h1>The eupatorium borer moth lays her eggs on Joe Pye Weed stalks in late summer.<br />Her larvae are inside those stalks all winter.</h1>
+        <h1>Joe Pye Weed</h1>
         <p className="hero__lead">
-          <em>Carmenta bassiformis</em> is a clearwing moth that mimics a yellowjacket in
-          coloration and flight. In July and August, females lay eggs near the base of Joe Pye
-          Weed (<em>Eutrochium purpureum</em>) stems. The larvae bore through the stem wall
-          into the hollow core, feed on pith tissue, and overwinter as partially grown
-          caterpillars inside those stalks. The stalk that looks dead in November has a
-          living larva inside it.
-        </p>
-        <p className="hero__lead">
-          This is also the plant where a migrating monarch refuels in August. The dome-shaped
-          flower clusters open from late July through September — exactly the window when adult
-          monarchs from the summer generation shift from reproduction toward fat accumulation
-          for the fall flight to Michoacán. The same plant feeds the butterfly and shelters
-          the moth larva, across a bloom window that bridges coneflower and goldenrod.
+          Joe Pye weed (<em>Eutrochium purpureum</em>) opens its dome-shaped mauve flower heads from
+          late July through September — filling the August nectar gap between common milkweed in June
+          and goldenrod in September, exactly when migrating monarchs need food most. The same
+          standing stalks shelter the eupatorium borer moth, a yellowjacket-mimic whose larvae
+          overwinter inside the hollow stems. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="fueling-heading">
-          <h2 id="fueling-heading">Late July through September — the migration fuel depot</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Monarchs in the northern US and Canada begin the behavioral shift toward migration
-            in late July or August. Adults from the summer generation stop seeking mates and
-            spend longer periods feeding. Their abdomens fill with lipid reserves — fat
-            stored as triglycerides — that will sustain a continuous flight of roughly
-            2,500 miles to overwintering sites in the mountains of central Mexico.
-          </p>
-          <p>
-            <em>Eutrochium purpureum</em> blooms from late July through September across most
-            of its range, covering this pre-migration fueling window directly. Each dome-shaped
-            flower cluster holds several hundred individual disc florets, each producing nectar.
-            Eastern tiger swallowtails, great spangled fritillaries, silver-spotted skippers,
-            and multiple bumblebee species work the flower clusters alongside the monarchs
-            during this same period. Ruby-throated hummingbirds visit in late August as
-            their own migration south begins.
+            An August monarch — already shifting from breeding toward storing fat for the 2,500-mile
+            flight to Mexico — works a Joe Pye dome that holds several hundred individual nectar-bearing
+            florets. It feeds alongside tiger swallowtails, great spangled fritillaries, silver-spotted
+            skippers, and bumblebees, with ruby-throated hummingbirds arriving in late August as their
+            own migration begins. For two months, this one plant is a crowded fuel depot. [1]
           </p>
         </section>
 
-        <section aria-labelledby="hollow-heading">
-          <h2 id="hollow-heading">The hollow stalk, October through April</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Der_Wasserdost%2C_lat._Eupatorium_%28Eupatorium_Purpureum%29_06.jpg/1280px-Der_Wasserdost%2C_lat._Eupatorium_%28Eupatorium_Purpureum%29_06.jpg"
+            alt="A bumblebee visiting the pink florets and buds of a Joe Pye weed flower cluster in close-up"
+            width={1280}
+            height={960}
+            loading="lazy"
+          />
+          <figcaption>
+            Each dome is several hundred small florets, each producing nectar — and the hollow stem
+            beneath it becomes winter shelter for small native bees and the borer moth's larva alike.
+            <span className="photo-credit"> Photo: Plenuska&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Der_Wasserdost,_lat._Eupatorium_(Eupatorium_Purpureum)_06.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            After the flowers drop, Joe Pye Weed's stalks stay standing. The inner chamber
-            of each stalk is hollow — and that hollow space is overwintering habitat.
-            Small carpenter bees (<em>Ceratina</em> spp.) and masked bees (<em>Hylaeus</em> spp.)
-            overwinter as adults inside hollow plant stems. The inner diameter of a Joe Pye
-            Weed stalk matches the body width of these small native bees, and the plant's
-            preference for wet or shaded sites means it grows in areas where bee stem banks
-            compete less with the drier-site plants.
-          </p>
-          <p>
-            The eupatorium borer larva is also inside those stalks from October through April.
-            If stalks are cut at ground level in fall — the standard autumn garden cleanup —
-            the larva has nowhere to complete its development and does not survive. A standing
-            stalk left until April is the only place this moth can finish its life cycle.
+            After the flowers fade the stalks stay standing, and their hollow cores become
+            overwintering quarters — small carpenter bees (<em>Ceratina</em>) and masked bees
+            (<em>Hylaeus</em>) shelter inside through winter, and the eupatorium borer larva feeds on
+            the pith from October through April. Cut the stalks down in fall and both life cycles end.
+            Planted with milkweed and goldenrod, Joe Pye weed completes a June-to-October bloom
+            relay that keeps a yard fueling monarchs through the entire breeding-and-migration season. [1]
           </p>
         </section>
 
-        <div className="callout callout--orange">
-          <h3 style={{ marginTop: 0 }}>Milkweed in June, Joe Pye Weed in August, goldenrod in September</h3>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            Most habitat gardens plant milkweed and goldenrod and leave August to chance.
-            Common milkweed blooms June through July and is largely finished before monarchs
-            begin their pre-migration feeding. Canada goldenrod peaks in September. Between
-            those two anchors, from late July through August, Joe Pye Weed fills the
-            nectar gap — the window when monarchs need the most food and most native perennials
-            have stopped producing.
+            Joe Pye weed isn't at risk, but two common habits work against it: the standard fall
+            cleanup that cuts stalks to the ground destroys the overwintering bees and borer larvae
+            inside them, and the popular compact cultivars like 'Little Joe' and 'Baby Joe' are shorter
+            than the full-height plant the borer and stem-nesting bees evolved with.
           </p>
-          <p style={{ marginBottom: 0 }}>
-            Three plants, three bloom windows, continuous coverage from June through October.
-            A yard with all three is a functioning monarch station from egg-laying season
-            through the tail end of fall migration.
-          </p>
-        </div>
+        </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Plant in groups, in the wet corner, and leave the stalks</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant 3–5 together, not a single specimen.</strong>{' '}
-              A single Joe Pye Weed plant at the back of a border produces blooms, but pollinators
-              moving across a yard stop at clusters. A group of three to five plants creates
-              a destination that monarchs, tiger swallowtails, and bumblebees return to for
-              multiple feeding bouts per day.
+              Plant 3 to 5 together rather than a single specimen — pollinators moving across a yard
+              stop at clusters, returning for multiple feeding bouts a day. [2]
             </li>
             <li>
-              <strong>Leave the stalks standing until April.</strong>{' '}
-              Eupatorium borer larvae overwinter inside the hollow stem from October through April.
-              Small cavity-nesting bees use the same hollow chambers through winter.
-              Cutting stalks in October or November ends both life cycles. Cut in early April
-              as new growth emerges from the base, and leave the cut stalks on the ground
-              for a few weeks to let any emerged insects disperse.
+              Use the wet corner, shady edge, or low damp spot where sun-loving natives fail; Joe Pye
+              weed grows naturally along stream banks and tolerates wet feet. [2]
             </li>
             <li>
-              <strong>Use the wet corner, the shady edge, the low spot that stays damp.</strong>{' '}
-              Joe Pye Weed grows naturally along stream banks and in moist woodland edges.
-              It tolerates wet feet in spring and partial shade in summer — conditions where
-              most sun-loving natives fail. The spots most homeowners consider unusable are
-              exactly where this plant thrives.
+              Leave the stalks standing until April, then cut and lay the cut stems aside for a few
+              weeks so any emerging insects can disperse. [2]
             </li>
             <li>
-              <strong>Buy straight species, not 'Baby Joe' or 'Little Joe'.</strong>{' '}
-              Compact cultivars reach 2–3 feet and fit small gardens, but the eupatorium borer
-              and the small bees that use hollow stems co-evolved with the full-height plant.
-              The straight species grows 4–7 feet — tall enough to anchor the back of a
-              bed and visible enough that monarchs spot it from the air during the migration.
+              Buy the straight species, not 'Little Joe' or 'Baby Joe' — the full 4-to-7-foot plant is
+              what the borer moth and hollow-stem bees depend on. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="range-heading">
-          <h2 id="range-heading">Range: zones 3–9, moist sites across eastern North America</h2>
-          <p>
-            <em>Eutrochium purpureum</em> grows naturally from Ontario and Quebec south to
-            Florida and west to Oklahoma and Nebraska. It is native to moist woods, stream
-            banks, and woodland edges throughout the eastern half of the continent.
-            The related <em>E. maculatum</em> (spotted Joe Pye weed, with flat-topped rather
-            than dome-shaped flower clusters) ranges further north and is native to wetter
-            habitats; both species are available from regional native plant nurseries.
-          </p>
-          <p>
-            Bloom time: late July through September in most locations. The window fills
-            the gap between purple coneflower (June–August) and the goldenrod peak (September),
-            providing eight weeks of continuous bloom when migrating monarchs and late-season
-            bumblebees are actively feeding.
-          </p>
-        </section>
-
-        <div className="action-panel" style={{ marginTop: '2rem' }}>
-          <p style={{ margin: 0 }}>
-            Joe Pye Weed blooms in the window between coneflower and goldenrod — see how all
-            three overlap in the{' '}
-            <button className="link-button" onClick={() => onNavigate('plants-bloom-calendar')}>
-              Bloom Calendar
-            </button>
-            , or find local sources for Joe Pye Weed, coneflower, and goldenrod in the{' '}
-            <button className="link-button" onClick={() => onNavigate('native-plant-near-me')}>
-              Native Plant Near Me
-            </button>
-            {' '}finder.
-          </p>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('monarch-life')}>
+            <span className="neighbor-name">Monarch Butterfly</span>
+            <span className="neighbor-note">Refuels on Joe Pye weed through August, the pre-migration weeks when adults are storing the fat that fuels the flight to Mexico.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('common-milkweed')}>
+            <span className="neighbor-name">Common Milkweed</span>
+            <span className="neighbor-note">The June anchor of the bloom relay — finishing just as Joe Pye weed opens, so the two cover early summer into late summer together.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
+            <span className="neighbor-name">Canada Goldenrod</span>
+            <span className="neighbor-note">Picks up in September as Joe Pye weed winds down, carrying the nectar supply through the tail end of the fall migration.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('native-bees')}>
+            <span className="neighbor-name">Native Bees</span>
+            <span className="neighbor-note">Small carpenter and masked bees overwinter inside the hollow stalks — the reason to leave them standing until spring.</span>
+          </button>
         </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Eutrochium_purpureum" target="_blank" rel="noopener noreferrer">Wikipedia — Eutrochium purpureum (Joe Pye Weed)</a></li>
+            <li><a href="https://www.xerces.org/monarchs" target="_blank" rel="noopener noreferrer">Xerces Society — Monarchs (nectar and migration)</a></li>
+          </ol>
+        </section>
       </div>
     </>
   )

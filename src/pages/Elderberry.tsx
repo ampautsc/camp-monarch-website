@@ -9,267 +9,132 @@ export default function Elderberry({ onNavigate }: ElderberryProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/2020-05-25_08_21_17_American_black_elderberry_blooming_along_Stone_Heather_Drive_in_the_Chantilly_Highlands_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-25_08_21_17_American_black_elderberry_blooming_along_Stone_Heather_Drive_in_the_Chantilly_Highlands_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg"
-          alt="American elderberry (Sambucus canadensis) in full June bloom along a path in Oak Hill, Fairfax County, Virginia — broad flat-topped white flower clusters on arching green stems against a blue sky"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/2020-05-25_08_21_17_American_black_elderberry_blooming_along_Stone_Heather_Drive_in_the_Chantilly_Highlands_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/1280px-2020-05-25_08_21_17_American_black_elderberry_blooming_along_Stone_Heather_Drive_in_the_Chantilly_Highlands_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg"
+          alt="American elderberry in full June bloom — broad flat-topped white flower clusters on arching green stems against a blue sky"
           className="species-hero-image"
-          style={{ objectPosition: 'center 60%' }}
+          style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={960}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sambucus_canadensis_004.JPG/960px-Sambucus_canadensis_004.JPG'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          American elderberry blooming, Oak Hill, Fairfax County, Virginia &middot; Famartin &middot; CC BY-SA 4.0
+          Photo: Famartin&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:2020-05-25_08_21_17_American_black_elderberry_blooming_along_Stone_Heather_Drive_in_the_Chantilly_Highlands_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Shrubs</div>
-        <h1>Elderberry opens in June with flat-topped clusters of thousands of florets — each one open at the surface, nectar sitting where any insect can reach it</h1>
+        <h1>Elderberry</h1>
         <p className="hero__lead">
-          American elderberry (<em>Sambucus canadensis</em>) blooms in June across most of
-          the eastern United States. Each bloom is a flat-topped corymb roughly the size of a
-          dinner plate — a cluster holding hundreds to thousands of individual florets, each
-          one a short open tube with the nectar sitting near the surface. There is no depth
-          to navigate. A native bee with a 2&nbsp;mm tongue harvests from an elderberry corymb
-          the same as a bumblebee does. On a warm June morning, 20 or more insect species
-          work the same cluster simultaneously.
-        </p>
-        <p className="hero__lead">
-          A mature shrub carries 30 to 50 corymbs at once. By August those clusters have
-          become hanging bunches of small dark purple berries — more than 70 bird species
-          consume them. The Cecropia moth, the largest moth in North America with a wingspan
-          up to 6&nbsp;inches, lays her eggs on elderberry leaves in late May and June while
-          the shrub is still flowering. The caterpillar that hatches feeds on the leaves
-          through July and August before spinning its cocoon on a nearby twig for the winter.
+          American elderberry (<em>Sambucus canadensis</em>) blooms in June with flat-topped clusters
+          the size of a dinner plate — thousands of tiny open florets, each holding nectar right at
+          the surface with no tube to navigate. A sweat bee with a 2mm tongue feeds as easily as a
+          bumblebee, and on a warm morning twenty insect species work a single cluster at once. By
+          August those flowers become dark purple berries eaten by more than 70 kinds of birds. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="floret-heading">
-          <h2 id="floret-heading">Open florets, nectar at the surface — what a sweat bee and a bumblebee find on the same cluster</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sambucus_canadensis_004.JPG/960px-Sambucus_canadensis_004.JPG"
-              alt="Close view of American elderberry (Sambucus canadensis) flower clusters — dense flat-topped white corymbs with hundreds of open florets on green stems"
-              loading="lazy"
-            />
-            <figcaption>
-              Elderberry corymbs in June. Each flat-topped cluster holds hundreds to thousands of
-              individual florets, each open at the top with anthers extending above the petal
-              rim. This structure allows insects of any tongue length to reach pollen and nectar
-              without entering a tube.
-              <span className="photo-credit"> Photo: H. Zell&nbsp;&middot;&nbsp;CC BY-SA 3.0 via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Most native flowers with high wildlife value have some form of restriction — a tube,
-            a pouch, a landing platform sized for certain body types. Elderberry corymbs have
-            none of these. Each floret is a few millimeters deep with the pollen-bearing anthers
-            extending above the petal rim. Any visiting insect, regardless of tongue length,
-            body size, or foraging style, can reach both nectar and pollen by landing on the
-            corymb&apos;s surface.
-          </p>
-          <p>
-            Short-tongued sweat bees, solitary mining bees, hoverflies, soldier beetles, various
-            wasps, and long-tongued bumblebees all forage elderberry corymbs at the same time.
-            Studies of insect visitation to elderberry have documented 50 or more species across
-            the full bloom period — more than most ornamental flowering shrubs attract across a
-            full season. A single shrub in full bloom, with 30 to 50 corymbs open simultaneously,
-            can function as a meeting point for the local pollinator community for three weeks
-            in June.
-          </p>
-          <p>
-            The bloom period runs roughly three weeks in late May and June. On a single shrub,
-            not all corymbs open at the same time — they progress from the outermost buds inward
-            over the course of the bloom. An individual corymb stays in active pollen production
-            for about ten days before the florets fade and small green fruits begin forming.
+            Most high-value native flowers restrict who can use them — a tube, a pouch, a landing
+            platform sized for certain bodies. Elderberry has none of that: each floret is a few
+            millimeters deep with the anthers held above the petals, so short-tongued sweat bees,
+            mining bees, hoverflies, soldier beetles, wasps, and bumblebees all forage the same
+            corymb together. Across the three-week bloom, fifty or more species have been documented
+            on a single shrub. [1]
           </p>
         </section>
 
-        <section aria-labelledby="berries-heading">
-          <h2 id="berries-heading">Dark purple berries in August — the window when fledgling birds are learning to forage</h2>
-          <figure className="species-content-photo species-content-photo--left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/American_elderberry_%28Sambucus_canadensis%29_%2823663427868%29.jpg/960px-American_elderberry_%28Sambucus_canadensis%29_%2823663427868%29.jpg"
-              alt="Clusters of ripe American elderberry (Sambucus canadensis) berries — small dark purple-black drupes hanging in flat-topped clusters on reddish stems"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Sambucus_canadensis_W_IMG_3149.jpg'
-              }}
-            />
-            <figcaption>
-              Ripe elderberry clusters. Each small berry is a drupe — a thin fleshy coat over a
-              hard seed. The clusters ripen over two to three weeks in July and August, turning
-              from green to deep purple-black. Cedar waxwings, gray catbirds, red-eyed vireos,
-              wood thrushes, and American robins are among the 70+ bird species documented
-              consuming elderberries.
-              <span className="photo-credit"> Photo: Rison Thumboor&nbsp;&middot;&nbsp;CC BY 2.0 via Wikimedia Commons</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/American_elderberry_%28Sambucus_canadensis%29_%2823663427868%29.jpg/1280px-American_elderberry_%28Sambucus_canadensis%29_%2823663427868%29.jpg"
+            alt="Hanging clusters of ripe dark purple-black elderberries on reddish stems"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            The August berries ripen during the weeks fledglings are learning to forage — and unlike
+            spicebush, elderberry self-pollinates, so a single shrub fruits on its own (a second
+            nearby just makes the crop heavier).
+            <span className="photo-credit"> Photo: Rison Thumboor&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:American_elderberry_(Sambucus_canadensis)_(23663427868).jpg" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            The berries ripen in July and August, turning from green to dark purple-black over
-            two to three weeks. More than 70 bird species consume elderberries — including species
-            that eat very little fruit otherwise, such as flickers and flycatchers, which shift
-            toward fruit during the August berry window. Cedar waxwings, which eat almost nothing
-            but fruit during summer, often strip a productive elderberry shrub within a few days
-            of peak ripeness.
-          </p>
-          <p>
-            Unlike spicebush berries (which ripen in September for migrating thrushes) or
-            serviceberry fruits (which ripen in June for nestling-feeding birds), elderberry
-            ripens in August — the window when fledgling birds from summer broods are learning
-            to forage independently. A shrub with a full berry crop in early August is a resource
-            for both experienced adults and newly independent juveniles that have just left
-            the nest.
-          </p>
-          <p>
-            Elderberry does not require a second plant for fruit production. Unlike spicebush —
-            which is dioecious and requires a male and a female — elderberry flowers contain both
-            stamens and pistil and can self-pollinate. A single plant produces fruit. A second
-            elderberry planted within 50 feet often increases the size and density of the berry
-            crop through cross-pollination.
+            While the shrub is still flowering in late May, a Cecropia moth — the largest in North
+            America, with a six-inch wingspan — lays eggs on its leaves. The caterpillar grows to four
+            inches by August, then spins a papery cocoon on a twig that stays visible all winter; the
+            adult that emerges in spring has no mouth and lives only to find a mate by scent.
+            Polyphemus moths use elderberry too. Below, the shrub spreads by root suckers into a
+            multi-stem thicket over a few years. [1]
           </p>
         </section>
 
-        <section aria-labelledby="caterpillar-heading">
-          <h2 id="caterpillar-heading">Cecropia eggs in late May, a 4-inch caterpillar in August, and a papery cocoon on the twig through winter</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            The Cecropia moth (<em>Hyalophora cecropia</em>) lays her eggs in small clusters
-            on elderberry leaves in late May and early June — the same weeks the shrub is in
-            bloom. Elderberry is one of several host plants for Cecropia; others include wild
-            cherry, plum, apple, and maple. A Cecropia female visiting an elderberry corymb
-            to nectar may deposit eggs on the same shrub.
-          </p>
-          <p>
-            The Cecropia caterpillar hatches in about ten days. Early instars are dark and
-            small. By July the caterpillar has turned bright green with rows of colored
-            tubercles running the length of its body, reaching 4&nbsp;inches before pupation.
-            It feeds on elderberry leaves through July and into August. By late August it spins
-            a large papery cocoon attached to a twig or branch — visible through winter as a
-            3-inch sealed tube on the wood. The adult moth that emerges the following spring
-            does not eat. It lives only to find a mate, which it does by following the
-            female&apos;s pheromone plume over distances up to a mile in a single night.
-          </p>
-          <p>
-            Polyphemus moth (<em>Antheraea polyphemus</em>) also uses elderberry as a host
-            plant alongside oak, maple, birch, and willow. Both giant silkmoths — Cecropia
-            and Polyphemus — have been declining in areas where yard lighting is heavy. The
-            moths navigate by pheromone during their mating flights; a bright outdoor light
-            within the flight path pulls males off course and away from waiting females. A
-            yard that produces caterpillars but runs exterior lights through the night can
-            disrupt the adult mating cycle even when the host plant is present.
+            Elderberry is fast-growing and not at risk, but two yard habits cut its value: cutting the
+            root suckers back to a single stem removes the dense thicket that catbirds, sparrows, and
+            woodcock nest in, and bright exterior lights through May and June pull the giant silkmoths
+            off their pheromone-guided mating flights even when the host plant is right there.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>Elderberry at the yard edge, a thicket over time, and lights off from May through June</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Plant elderberry at a fence line, yard edge, or low wet spot.</strong>{' '}
-              American elderberry (<em>Sambucus canadensis</em>) grows 5 to 12&nbsp;feet tall
-              and spreads by root sprouts into a multi-stem clump over several years. It
-              tolerates wet soil, seasonal flooding, part shade, and dry edges — conditions
-              where ornamental shrubs typically fail. Container plants are available at native
-              plant nurseries in spring and fall. Plant 6 to 10&nbsp;feet from other shrubs to
-              give it room to spread. It grows fast: a first-year transplant can reach 3 to
-              4&nbsp;feet in a single growing season without irrigation after the first month.
+              Plant it at a fence line, yard edge, or low wet spot — it tolerates flooding, part
+              shade, and dry edges where ornamental shrubs fail. [2]
             </li>
             <li>
-              <strong>Let the root sprouts expand into a thicket over time.</strong>{' '}
-              A single elderberry eventually sends up suckers in a 3- to 6-foot radius.
-              Gray catbirds, common yellowthroats, and song sparrows use dense shrub thickets
-              for nesting and cover — the structure that develops from a multi-stem elderberry
-              clump is exactly the low, branchy tangle these species require. Cutting the
-              sprouts each year keeps the plant as a single stem but removes that structure.
-              In a yard edge or naturalized strip, the expanding clump is the more productive
-              form.
+              Let the root sprouts expand into a thicket; the dense, branchy clump is exactly the
+              nesting cover catbirds, yellowthroats, and song sparrows need. [2]
             </li>
             <li>
-              <strong>Check the leaves in July for caterpillars before pruning.</strong>{' '}
-              Cecropia and Polyphemus caterpillars feed on elderberry leaves through July and
-              August. Both are large enough to see by mid-summer — 2 to 4&nbsp;inches — and
-              leave visible feeding damage: large sections of leaf consumed, or the leaf stripped
-              to the midrib. Before cutting back stems or clearing dead wood in summer, walk the
-              branches and look for green caterpillars with colored tubercles. Leave those stems
-              untouched until September. The larval feeding causes no lasting damage to the shrub.
+              Check the leaves for big green caterpillars before any summer pruning, and leave those
+              stems alone until September — the feeding does the shrub no lasting harm. [2]
             </li>
             <li>
-              <strong>Turn off or shield porch and garage lights from 9&nbsp;pm onward in May and June.</strong>{' '}
-              Cecropia and Polyphemus moths emerge from their cocoons between late April and
-              June. Females emit pheromones and wait; males fly toward the scent. A bright
-              outdoor light within 30&nbsp;feet of the flight path pulls males off course and
-              disrupts the mating sequence. Turning off non-essential exterior lighting between
-              9&nbsp;pm and dawn for the six weeks from mid-April through late May removes the
-              primary obstacle to successful mating in suburban habitat. The elderberry provides
-              the host plant; reduced lighting allows the adult cycle to complete.
+              Turn off or shield exterior lights from 9pm to dawn in May and June, so emerging
+              Cecropia and Polyphemus males can follow females' scent instead of your porch bulb. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">What shares the bloom, the berries, and the leaves across the growing season</h2>
-          <ul className="neighbor-list">
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('cecropia-moth')}>
-                Cecropia Moth
-              </button>{' '}
-              &mdash; lays eggs on elderberry leaves in late May and June; the caterpillar
-              feeds through July and August before spinning a large papery cocoon on a branch;
-              the adult that emerges the following spring does not eat and lives only to mate
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('polyphemus-moth')}>
-                Polyphemus Moth
-              </button>{' '}
-              &mdash; uses elderberry as a host plant alongside oak, maple, and birch;
-              caterpillars feed from June through August; both Cecropia and Polyphemus are
-              disrupted by outdoor lighting during their May&ndash;June mating flight window
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('american-bumble-bee')}>
-                American Bumble Bee
-              </button>{' '}
-              &mdash; forages elderberry corymbs in June alongside dozens of other native
-              bee species; the open floret structure allows bees of any tongue length to
-              access pollen and nectar from the corymb surface
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('cedar-waxwing')}>
-                Cedar Waxwing
-              </button>{' '}
-              &mdash; consumes elderberries heavily during the August ripening window; waxwing
-              flocks strip a productive shrub within days of peak ripeness; they return to
-              the same shrub year after year when the berry crop is reliable
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('gray-catbird')}>
-                Gray Catbird
-              </button>{' '}
-              &mdash; nests in dense shrub tangles and regularly uses elderberry thickets for
-              nesting cover; consumes the berries in August during and after the breeding season
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('spicebush')}>
-                Spicebush
-              </button>{' '}
-              &mdash; blooms in March for early bumblebees, fruits in September for migrating
-              thrushes; planted with elderberry, the two shrubs cover the bloom and fruit
-              sequence from early spring through fall migration in the same shaded yard edge
-            </li>
-            <li>
-              <button className="neighbor-link" onClick={() => onNavigate('american-woodcock')}>
-                American Woodcock
-              </button>{' '}
-              &mdash; nests in thicket edges of the kind elderberry forms; the shrub's dense
-              multi-stem clumps provide the low branchy cover the woodcock uses during the day
-              and the moist soil nearby keeps earthworms accessible after dark
-            </li>
-          </ul>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('cedar-waxwing')}>
+            <span className="neighbor-name">Cedar Waxwing</span>
+            <span className="neighbor-note">Eats almost nothing but fruit in summer and strips a productive elderberry within days of peak ripeness, returning year after year to a reliable shrub.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('cecropia-moth')}>
+            <span className="neighbor-name">Cecropia Moth</span>
+            <span className="neighbor-note">Lays eggs on elderberry leaves in June; the four-inch caterpillar feeds through summer before spinning a papery overwintering cocoon on a twig.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
+            <span className="neighbor-name">American Bumble Bee</span>
+            <span className="neighbor-note">One of dozens of bee species working the June corymbs — the open floret structure lets bees of any tongue length reach pollen from the surface.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('gray-catbird')}>
+            <span className="neighbor-name">Gray Catbird</span>
+            <span className="neighbor-note">Nests in the dense shrub tangle an elderberry clump forms, then eats the berries through August during and after the breeding season.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Sambucus_canadensis" target="_blank" rel="noopener noreferrer">Wikipedia — Sambucus canadensis (American Elderberry)</a></li>
+            <li><a href="https://xerces.org/bees" target="_blank" rel="noopener noreferrer">Xerces Society — Protecting Native Bees</a></li>
+          </ol>
         </section>
       </div>
     </>
