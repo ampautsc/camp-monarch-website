@@ -9,264 +9,133 @@ export default function WhiteOak({ onNavigate }: WhiteOakProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg/960px-Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg"
-          alt="The Keeler Oak, a massive white oak in Mansfield Township, New Jersey, photographed in May 2013 — crown spread estimated at 80 feet, trunk diameter over 5 feet, age approximately 600 years"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg/1280px-Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg"
+          alt="The Keeler Oak, a massive ~600-year-old white oak with a crown spread near 80 feet, standing alone in a field"
           className="species-hero-image"
           style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={1029}
           loading="eager"
-          onError={(e) => {
-            const img = e.currentTarget
-            img.onerror = null
-            img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Quercus-alba-white-oak-hdr-0a.jpg/960px-Quercus-alba-white-oak-hdr-0a.jpg'
-          }}
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          The Keeler Oak, Burlington County, NJ &middot; Marty Aligata &middot; CC BY-SA 3.0
+          Photo: Marty Aligata&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Keeler_Oak_Tree_-_distance_photo,_May_2013.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Trees</div>
-        <h1>A female chickadee brings 350 to 570 caterpillars a day to her nest — the oak outside is where most of them come from</h1>
+        <h1>White Oak</h1>
         <p className="hero__lead">
-          In late April and early May, a white oak&apos;s expanding buds carry thousands of
-          caterpillars on their undersides. Inchworms of more than 200 moth species hang from
-          silk threads. Hairstreak butterfly larvae chew the new leaf tissue from inside rolled
-          tubes. The branches are not still — chickadees, nuthatches, and vireos move through
-          them constantly, searching from twig to twig, returning to the nest with what they find.
-        </p>
-        <p className="hero__lead">
-          Douglas Tallamy&apos;s research at the University of Delaware identified the oak genus
-          (<em>Quercus</em>) as supporting 557 caterpillar species &mdash; more than any other
-          North American tree genus. A yard without a mature oak is a yard where the caterpillar
-          base for nesting birds drops sharply. The nearest oak half a mile away does not
-          substitute: a chickadee raising five nestlings covers a territory of 25 to 50 acres,
-          and what grows within that territory determines what the nestlings eat.
+          The oak genus supports 557 caterpillar species — more than any other tree genus in North
+          America. That matters because a nesting chickadee pair brings 350 to 570 caterpillars a day
+          to the nest, and the oak is where most of them come from. A white oak (<em>Quercus alba</em>)
+          half a mile away doesn't help: a chickadee raising five young works a 25-to-50-acre
+          territory, and only what grows inside it ends up in the nest. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="identification-heading">
-          <h2 id="identification-heading">Rounded lobes without bristle tips — the leaf key that separates white oak from red</h2>
-          <figure className="species-content-photo species-content-photo--right">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Quercus_alba_leaf_spring.jpg/960px-Quercus_alba_leaf_spring.jpg"
-              alt="White oak leaves in spring — pale green lobes with rounded tips, no bristle points, held on a short petiole, photographed against a white background"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg/960px-Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg'
-              }}
-            />
-            <figcaption>
-              White oak leaves in spring. Each lobe curves to a smooth arc with no point
-              at the tip. Running a finger along the edge of a white oak leaf from tip to
-              base produces no snag. The same motion on a red oak leaf catches on a bristle
-              at every lobe point.
-              <span className="photo-credit"> Photo: Harborsparrow &middot; Public Domain</span>
-            </figcaption>
-          </figure>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            White oak leaves have rounded lobes with no bristle-tipped points at the ends.
-            Every lobe curves to a smooth arc. Red oaks &mdash; the other major oak group
-            in the eastern US &mdash; carry a small bristle tip at each lobe point. Run a
-            fingertip along the leaf edge from tip to base: white oak is smooth the whole
-            way, red oak snags at every lobe point. The difference is consistent and testable
-            in any season the leaves are present.
-          </p>
-          <p>
-            The bark of a mature white oak is pale grayish-white, forming flat-faced plates
-            with shallow furrows between them. From a distance on a gray overcast day, a
-            white oak trunk can appear nearly silvery. Red oak bark is darker, with sharper
-            ridges and deeper, shinier furrows. Both grow throughout the eastern and central
-            United States; both produce acorns. The leaf and bark differences are visible
-            year-round and do not require a field guide.
-          </p>
-          <p>
-            White oak reaches 60 to 100 feet tall at maturity, with a crown spread of
-            60 to 80 feet &mdash; the spread often equal to or wider than the height.
-            A white oak planted as a 1-gallon seedling at 10 years old will reach the
-            roofline in 15 to 20 years and its full crown spread in 50 to 75.
-            Some specimens in the eastern US exceed 400 years. The Keeler Oak in
-            Burlington County, New Jersey, shown above, is estimated at 600 years old and
-            carries a crown spread of roughly 80 feet.
+            In late April and early May, a white oak's expanding buds are crawling with caterpillars —
+            inchworms of 200-plus moth species dangling on silk, hairstreak larvae chewing new leaf
+            tissue from inside rolled tubes. The branches are never still: chickadees, nuthatches, and
+            vireos move through them twig to twig and back to the nest. Nestlings can't be raised on
+            seed; they need insect protein, and caterpillars are the most calorie-dense, abundant
+            source spring offers. If the oak is there, the caterpillars are there. [1]
           </p>
         </section>
 
-        <section aria-labelledby="acorns-heading">
-          <h2 id="acorns-heading">One growing season, low tannins — why white oak acorns fall in October and get eaten the same week</h2>
-          <figure className="species-content-photo species-content-photo--left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Quercus_alba_acorn.jpg/960px-Quercus_alba_acorn.jpg"
-              alt="Two white oak acorns — short cap covering about one quarter of the nut, oblong shape, pale tan color — on a neutral background"
-              loading="lazy"
-              onError={(e) => {
-                const img = e.currentTarget
-                img.onerror = null
-                img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg/960px-Keeler_Oak_Tree_-_distance_photo%2C_May_2013.jpg'
-              }}
-            />
-            <figcaption>
-              White oak acorns — short cap, oblong nut, pale tan at full ripeness.
-              These drop in October and germinate within weeks if not eaten.
-              Red oak acorns, by contrast, carry a deeper cap, a shinier surface,
-              and complete their development over two growing seasons rather than one.
-              <span className="photo-credit"> Photo: Steve Hurst, USDA-NRCS Plants Database &middot; Public Domain</span>
-            </figcaption>
-          </figure>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Quercus_alba_leaf_spring.jpg"
+            alt="A white oak leaf showing rounded lobes with smooth, rounded tips and no bristle points"
+            width={1100}
+            height={825}
+            loading="lazy"
+          />
+          <figcaption>
+            The ID is in the lobes: white oak's curve to smooth, rounded tips. Run a finger down the
+            edge and it never snags — a red oak leaf catches on a bristle at every lobe point.
+            <span className="photo-credit"> Photo: Harborsparrow&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Quercus_alba_leaf_spring.jpg" target="_blank" rel="noopener noreferrer">Public domain</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Red oak acorns begin growing in spring of one year and finish the following
-            fall &mdash; a two-year cycle from pollination to ripe acorn. White oak acorns
-            begin and complete their development within a single growing season, dropping
-            by October of the same year. The result is a different chemical profile.
-            White oak acorns contain roughly 3 to 5 percent tannin by dry weight; red oak
-            acorns run 5 to 10 percent. The difference in bitterness is enough that deer,
-            squirrels, turkeys, and blue jays eat white oak acorns on the spot when they
-            fall and cache red oak acorns for winter storage. White oak acorns cached in
-            fall do not keep &mdash; they germinate within weeks of dropping.
-          </p>
-          <p>
-            More than 100 bird species and 36 mammal species use acorns as food in
-            North America. Wild turkeys move through woodland edges in October and
-            November scratching up acorns from the leaf litter. Wood ducks consume
-            them in flooded bottomlands. Blue jays carry acorns one at a time in their
-            crop &mdash; each bird can cache 2,000 to 5,000 acorns per fall, planting
-            oaks across a half-mile radius. White-tailed deer shift their movement
-            patterns in October to follow the white oak mast crop, sometimes covering
-            twice their normal daily range when the acorns are down.
-          </p>
-          <p>
-            A mature white oak in a productive year drops several thousand acorns within
-            a 30- to 50-foot radius of the trunk. The ground beneath the tree in October
-            becomes the most concentrated food source in the yard. Squirrels that have
-            been eating birdseed all summer stop coming to the feeder and eat acorns
-            instead, sometimes for weeks at a time.
+            White oak acorns ripen in a single season and run low in tannin (3 to 5%, versus 5 to 10%
+            in red oaks), so deer, turkeys, squirrels, and blue jays eat them on the spot in October
+            rather than caching them — a white oak acorn left in the ground germinates within weeks. A
+            mature tree drops thousands within a 30-to-50-foot radius, and a single blue jay may cache
+            2,000 to 5,000 acorns in a fall, planting oaks across a half-mile. White oak reaches 60 to
+            100 feet and can live three to six centuries; the Keeler Oak above is estimated at 600
+            years. [1]
           </p>
         </section>
 
-        <section aria-labelledby="caterpillars-heading">
-          <h2 id="caterpillars-heading">Juvenal&apos;s Duskywing and 556 other caterpillar species that need this tree to complete their life cycle</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            <button className="link-button" onClick={() => onNavigate('juvenals-duskywing')}>
-              Juvenal&apos;s Duskywing
-            </button>{' '}
-            (<em>Erynnis juvenalis</em>) is a small brown skipper
-            butterfly whose caterpillars feed almost exclusively on oak leaves. In the
-            eastern US, a Duskywing caterpillar rolls a white oak leaf into a tube, anchors
-            it at the base with silk, and eats from inside while retreating into the tube
-            when disturbed. The species overwinters as a larva inside this rolled leaf. A
-            yard that rakes every leaf from beneath an oak in November removes that
-            overwintering site and eliminates the Duskywing cohort that hatched there.
-          </p>
-          <p>
-            Juvenal&apos;s Duskywing is one example from the 557 Lepidoptera species &mdash;
-            moths and butterflies &mdash; that Tallamy&apos;s lab documented using the oak genus
-            as a larval host plant. The giant silk moths are among them: cecropia moth
-            caterpillars reach 4 inches by September on white oak leaves, polyphemus moth
-            caterpillars turn lime green before pupating in the leaf litter below, luna moth
-            larvae feed on white oak through August. Hundreds of small moths &mdash; geometrids,
-            noctuids, tortricids &mdash; complete their larval stage on white oak without
-            producing any visible damage to the tree. The tree feeds them. They feed the birds.
-          </p>
-          <p>
-            The path from oak leaf to bird nest runs through caterpillar. A female
-            black-capped chickadee and her mate make 350 to 570 foraging trips per day
-            during the 16-day nestling period, bringing caterpillars each time. The chickadee
-            cannot substitute seeds or berries for nestling protein &mdash; the nestlings require
-            insect protein specifically, and caterpillars are the most calorie-dense and
-            abundant insect available in spring. If the oak is there, the caterpillars are
-            there. If the oak is not there, neither are the caterpillars.
+            White oak is secure as a species but slow to establish and routinely missing from newer
+            yards — and where there's no oak within a nesting bird's territory, the spring caterpillar
+            base collapses. Raking every leaf each fall compounds it, removing the overwintering
+            Juvenal's Duskywing and the pupae of hundreds of moth species from the litter below.
           </p>
         </section>
 
         <div className="action-panel">
-          <h2 style={{ marginTop: 0 }}>One white oak, planted this spring, still feeding birds in 2075</h2>
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
           <ol className="step-list">
             <li>
-              <strong>Order a white oak seedling from a native plant nursery or state forestry
-              program.</strong>{' '}
-              Plant a 1-gallon or bareroot seedling rather than a large balled-and-burlapped
-              specimen. A small white oak spends its first few years building root mass; by
-              year 5 it outpaces a larger transplanted tree in height and doesn&apos;t carry
-              transplant shock. State forestry programs sell white oak seedlings in bundles of
-              10 to 25 at cost &mdash; typically $1 to $3 each. Plant in spring, after last
-              frost and before June, to give the root system a full growing season before winter.
+              Plant a 1-gallon or bareroot seedling rather than a big balled-and-burlapped tree — it
+              establishes faster and skips transplant shock; state forestry programs sell them cheaply
+              in bundles. [2]
             </li>
             <li>
-              <strong>Plant in full sun, well-drained soil.</strong>{' '}
-              White oak does not tolerate waterlogged ground. A lawn area that dries between
-              rains is the right site. Give the tree at least 20 feet of clearance from
-              structures in each direction &mdash; the crown will eventually need it. A tree
-              planted 15 feet from a wall will have one side of its crown removed by crowding
-              within 30 years.
+              Site it in full sun and well-drained soil, with at least 20 feet of clearance on each
+              side for the eventual crown. [2]
             </li>
             <li>
-              <strong>Protect against deer browse for the first three to four years.</strong>{' '}
-              A wire cage 4 to 5 feet tall around the seedling, or a plastic tree tube
-              anchored to a stake, keeps the terminal leader intact while the trunk thickens.
-              Deer browse white oak leading shoots repeatedly if given access &mdash; the tree
-              survives but may spend years producing side growth instead of height while the
-              main stem regrows.
+              Cage or tube the seedling against deer browse for its first three to four years, while
+              the leader is within reach. [2]
             </li>
             <li>
-              <strong>Leave the leaves under the tree each fall.</strong>{' '}
-              Juvenal&apos;s Duskywing overwinters as a larva in a rolled oak leaf on the
-              ground. The caterpillars of hundreds of other moth species pupate in the leaf
-              layer beneath oak trees. Raking this layer away and removing it removes the
-              following year&apos;s caterpillar population along with it.
+              Leave the leaves under the tree each fall — Juvenal's Duskywing overwinters in a rolled
+              oak leaf on the ground, and countless moths pupate in that layer. [2]
             </li>
           </ol>
         </div>
 
-        <section aria-labelledby="connections-heading">
-          <h2 id="connections-heading">Who depends on a white oak across all four seasons</h2>
-          <div className="neighbor-grid">
-            <button className="neighbor-card" onClick={() => onNavigate('black-capped-chickadee')}>
-              <span className="neighbor-name">Black-capped Chickadee</span>
-              <span className="neighbor-note">arrives at the oak the week new leaves expand in April; the pair&apos;s 350 to 570 daily caterpillar trips to the nest draw almost entirely from oak-feeding moth larvae during the May nestling window</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('juvenals-duskywing')}>
-              <span className="neighbor-name">Juvenal&apos;s Duskywing</span>
-              <span className="neighbor-note">a spring skipper whose caterpillars roll white oak leaves into silk tubes from May through summer and overwinter as larvae inside fallen rolled leaves; raking the leaf layer beneath the oak removes the overwintering cohort</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('cecropia-moth')}>
-              <span className="neighbor-name">Cecropia Moth</span>
-              <span className="neighbor-note">one of North America&apos;s largest moths; caterpillars feed on white oak through late summer, reaching 4 inches before spinning a silk cocoon on a branch; the oak is the host plant that makes the adult moth&apos;s single reproductive flight possible</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('polyphemus-moth')}>
-              <span className="neighbor-name">Polyphemus Moth</span>
-              <span className="neighbor-note">lime-green caterpillars feed on oak leaves through August and pupate in the leaf litter at the base of the tree; removing that leaf layer in fall removes the cocoons before they emerge the following May</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('luna-moth')}>
-              <span className="neighbor-name">Luna Moth</span>
-              <span className="neighbor-note">pale green caterpillars consume white oak foliage through summer; two generations per year in the south, one in the north; both pupate in leaf litter directly below the host tree</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('wild-turkey')}>
-              <span className="neighbor-name">Wild Turkey</span>
-              <span className="neighbor-note">moves through yards with white oaks in October and November, scratching leaf litter aside to reach acorns; a flock of six turkeys can consume most of the acorn drop from a mature tree within two weeks</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('eastern-gray-squirrel')}>
-              <span className="neighbor-name">Eastern Gray Squirrel</span>
-              <span className="neighbor-note">buries white oak acorns individually in the soil at depths of roughly 2 centimeters, up to a half mile from the source tree, at a rate of roughly 10,000 separate caches per squirrel per fall; the approximately 25 percent never retrieved become oak seedlings in fence rows, lawn edges, and neighbor yards &mdash; the oaks growing at property edges across eastern suburbs arrived there in a squirrel cache</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('eastern-screech-owl')}>
-              <span className="neighbor-name">Eastern Screech-Owl</span>
-              <span className="neighbor-note">nests in natural cavities in large oaks and hunts the insects that emerge from the bark and leaf litter at night; a yard with a mature white oak and a nest box provides both the food source and the nesting site</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('hackberry')}>
-              <span className="neighbor-name">Hackberry</span>
-              <span className="neighbor-note">the other large native canopy tree that combines caterpillar biomass with persistent fall fruit; hackberry and white oak together cover more than 500 caterpillar species between them and both produce food that carries wildlife from late fall into winter</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('black-walnut')}>
-              <span className="neighbor-name">Black Walnut</span>
-              <span className="neighbor-note">black walnut and white oak in the same yard draw cecropia and polyphemus moths to two separate host trees during the same May and June egg-laying nights; the black walnut&apos;s juglone &mdash; released from roots, hulls, and leaf litter &mdash; affects plants at ground level within the root zone but does not reach the oak canopy where the moths fly; gray squirrels cache both acorns and walnuts in the same scatter-hoarded grid across the yard, with both nut types overwintering in the same soil layer</span>
-            </button>
-            <button className="neighbor-card" onClick={() => onNavigate('shagbark-hickory')}>
-              <span className="neighbor-name">Shagbark Hickory</span>
-              <span className="neighbor-note">supports 235 caterpillar species including Luna Moth, Polyphemus Moth, and Cecropia Moth &mdash; the same silk moths that use white oak; a yard with both trees runs two simultaneous caterpillar cohorts through the same summer weeks; shagbark&apos;s exfoliating bark plates create warm crevice roost sites for Little Brown Bat that white oak&apos;s plated bark does not</span>
-            </button>
-          </div>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('black-capped-chickadee')}>
+            <span className="neighbor-name">Black-capped Chickadee</span>
+            <span className="neighbor-note">Makes 350 to 570 caterpillar runs a day during the nestling window, drawing almost entirely on the oak-feeding larvae in its small territory.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('juvenals-duskywing')}>
+            <span className="neighbor-name">Juvenal's Duskywing</span>
+            <span className="neighbor-note">An oak-specialist skipper whose caterpillars roll white oak leaves into silk tubes and overwinter as larvae inside fallen rolled leaves on the ground.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('wild-turkey')}>
+            <span className="neighbor-name">Wild Turkey</span>
+            <span className="neighbor-note">Works the leaf litter under white oaks in October and November; a flock of six can clear most of a mature tree's acorn drop in two weeks.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('eastern-gray-squirrel')}>
+            <span className="neighbor-name">Eastern Gray Squirrel</span>
+            <span className="neighbor-note">Scatter-caches acorns by the thousand each fall; the roughly quarter it never recovers become the oaks that appear along fence rows and yard edges.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Quercus_alba" target="_blank" rel="noopener noreferrer">Wikipedia — Quercus alba (White Oak)</a></li>
+            <li><a href="https://xerces.org/leave-the-leaves" target="_blank" rel="noopener noreferrer">Xerces Society — Leave the Leaves</a></li>
+          </ol>
         </section>
       </div>
     </>
