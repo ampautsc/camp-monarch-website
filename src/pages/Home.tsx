@@ -1,11 +1,10 @@
 import { useState, useEffect, useMemo } from 'react'
 import type { Page } from '../App'
 
-// Photo sources: Wikimedia Commons. Attribution at the bottom of the page.
-// All URLs verified against the live Commons API and reused from the matching
-// species pages, so they stay in sync and stay alive.
+// Hero + step images: Wikimedia Commons, verified. Attribution at the bottom of the page.
+// The hero should become a real photo of a restored home habitat when one is available.
 const HERO_PHOTO_URL =
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Angangueo_monarchs.jpg/1280px-Angangueo_monarchs.jpg'
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Monarch_butterfly_on_common_milkweed_%2848372506736%29.jpg/1280px-Monarch_butterfly_on_common_milkweed_%2848372506736%29.jpg'
 
 const INAT_MONARCH_TAXON_ID = 48662
 const INAT_US_PLACE_ID = 1
@@ -19,247 +18,84 @@ function formatSightings(count: number): string {
   return new Intl.NumberFormat('en-US').format(count)
 }
 
-// Cards that navigate somewhere. A photo is optional (quick-start cards are text-only).
-type NavCard = { page: Page; photo?: string; alt?: string; title: string; note: string }
+// The first step into making habitat. Every card is a monarch/habitat action.
+type Step = { page: Page; photo: string; alt: string; title: string; note: string }
 
-const ACTION_CARDS: NavCard[] = [
+const START_STEPS: Step[] = [
   {
     page: 'plant-milkweed',
     photo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg/960px-Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg',
-    alt: 'Monarch butterfly on butterfly weed (Asclepias tuberosa) in bloom — the host plant for monarch caterpillars',
-    title: 'Plant milkweed',
-    note: 'Monarchs lay eggs on milkweed and no other plant. One patch in your yard becomes a waystation on a 3,000-mile corridor.',
-  },
-  {
-    page: 'log-a-sighting',
-    photo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Danaus_plexippus_caterpillar_on_milkweed.jpg/960px-Danaus_plexippus_caterpillar_on_milkweed.jpg',
-    alt: 'Monarch caterpillar on milkweed — green-striped larva feeding on a leaf',
-    title: 'Log a sighting',
-    note: 'Researchers track population corridors using iNaturalist observations. A photo and a GPS pin take 60 seconds.',
+    alt: 'A monarch caterpillar feeding on a milkweed leaf',
+    title: 'Plant milkweed',
+    note: 'A monarch caterpillar eats milkweed and nothing else. One patch is where the next generation begins.',
   },
   {
     page: 'plants-finder',
     photo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Monarch_on_Goldenrod_%285230034900%29.jpg/1280px-Monarch_on_Goldenrod_%285230034900%29.jpg',
-    alt: 'Monarch butterfly nectaring on goldenrod in bloom',
-    title: 'Plant native wildflowers',
-    note: 'Native asters, goldenrod, and coneflowers feed monarchs and 400+ other native bee species. Non-native flowers often don’t.',
+    alt: 'A monarch butterfly feeding on goldenrod flowers',
+    title: 'Add native nectar plants',
+    note: 'Asters, goldenrod, and coneflowers fuel the long flight south. Find the ones suited to your soil and sun.',
+  },
+  {
+    page: 'growing-guide',
+    photo:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/American_lady_on_purple_coneflower_%2874770%29.jpg/1280px-American_lady_on_purple_coneflower_%2874770%29.jpg',
+    alt: 'A butterfly on a purple coneflower in a native planting',
+    title: 'Grow it from seed',
+    note: 'Clearing lawn, preparing soil, starting seed: the eight steps that turn a patch of ground into habitat.',
   },
 ]
 
-const MAMMAL_CARDS: NavCard[] = [
-  {
-    page: 'eastern-cottontail',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/20250708_eastern_cottontail_front_yard_PD208193.jpg/1280px-20250708_eastern_cottontail_front_yard_PD208193.jpg',
-    alt: 'Eastern Cottontail rabbit sitting in a suburban front yard, ears alert',
-    title: 'Eastern Cottontail',
-    note: 'She nests in a shallow depression in your lawn and leaves the kits alone all day — absence is how she keeps the nest invisible to predators.',
-  },
-  {
-    page: 'virginia-opossum',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Didelphis_virginiana_188111999.jpg/1280px-Didelphis_virginiana_188111999.jpg',
-    alt: 'Virginia Opossum with white-gray fur and a pink nose on the ground',
-    title: 'Virginia Opossum',
-    note: 'A single opossum eats thousands of ticks per week, grooming them off its fur before they can finish a feeding.',
-  },
-  {
-    page: 'striped-skunk',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Striped_Skunk_%28Mephitis_mephitis%29_01.jpg/1280px-Striped_Skunk_%28Mephitis_mephitis%29_01.jpg',
-    alt: 'Striped Skunk foraging, bold black-and-white stripe down its back',
-    title: 'Striped Skunk',
-    note: 'She stamps her front feet as a warning before she sprays — the pattern gives you a second to back off. She sprays fewer than five times a year because it takes ten days to replenish.',
-  },
-  {
-    page: 'eastern-gray-squirrel',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Grey_squirrel_%28Sciurus_carolinensis%29_01.jpg/1280px-Grey_squirrel_%28Sciurus_carolinensis%29_01.jpg',
-    alt: 'Eastern Gray Squirrel perched alert on a surface, fluffy tail arched over its back',
-    title: 'Eastern Gray Squirrel',
-    note: 'She buries up to 10,000 acorns each fall and recovers about 40%. The other 6,000 become seedlings — the most active tree-planting force in the eastern hardwood forest.',
-  },
-]
-
-const BIRD_INSECT_CARDS: NavCard[] = [
-  {
-    page: 'eastern-bluebird',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/0/00/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg',
-    alt: 'Eastern Bluebird pair — male with sky-blue back and rust chest, female nearby at a nest box',
-    title: 'Eastern Bluebird',
-    note: 'Nest box monitoring in the 1970s reversed a population collapse within two decades. A 1.5-inch entrance hole fits a bluebird and stops a starling.',
-  },
-  {
-    page: 'american-kestrel',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/American_kestrel_%2844273%29.jpg/1280px-American_kestrel_%2844273%29.jpg',
-    alt: 'American Kestrel perched upright — rust back, slate-blue head, scanning for prey',
-    title: 'American Kestrel',
-    note: 'Kestrels see vole urine trails in ultraviolet — they read a field by flying a slow grid, scanning for the glow of a fresh runway through the grass below.',
-  },
-  {
-    page: 'fireflies',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Eastern_firefly_%28Photinus_pyralis%29%2C_June_2025%2C_Virginia.jpg/1280px-Eastern_firefly_%28Photinus_pyralis%29%2C_June_2025%2C_Virginia.jpg',
-    alt: 'Eastern firefly (Photinus pyralis) on a leaf at dusk, lantern organ visible on its abdomen',
-    title: 'Fireflies',
-    note: 'The adult flashing in June was a larva hunting earthworms in your leaf litter last November. Grub pesticides reach the soil where larvae spend one to two years living.',
-  },
-  {
-    page: 'luna-moth',
-    photo:
-      'https://upload.wikimedia.org/wikipedia/commons/d/d6/Actias_luna-male.jpg',
-    alt: 'Luna Moth with pale green wings spread and long hindwing tails — an adult that emerges with no mouth',
-    title: 'Luna Moth',
-    note: 'The adult emerges with no functioning mouth parts. Every night it flies runs on fat stored as a caterpillar — enough for seven to ten days of searching before it dies.',
-  },
-]
-
-const QUICKSTART_CARDS: NavCard[] = [
-  {
-    page: 'plant-milkweed',
-    title: 'Milkweed: which species, where to plant',
-    note: 'The right milkweed for your soil, sun, and hardiness zone — and the one type to avoid in the Midwest.',
-  },
-  {
-    page: 'plants-bloom-calendar',
-    title: 'Native wildflowers by season',
-    note: 'Spring ephemerals through fall asters — which plants bloom when, and which native bees depend on them.',
-  },
-  {
-    page: 'log-a-sighting',
-    title: 'How to log a monarch sighting',
-    note: 'iNaturalist in 60 seconds: photo, GPS, submit. Your observation goes directly into the research database.',
-  },
-]
-
-// Seasonal right-now content — 2 items shown on the homepage.
+// Timely, monarch-specific guidance for the current month.
 type SeasonalItem = { label: string; detail: string }
 type SeasonalContent = { header: string; items: [SeasonalItem, SeasonalItem] }
 
 function getSeasonalContent(month: number): SeasonalContent {
-  // Early spring: March (2), April (3)
   if (month >= 2 && month <= 3) {
     return {
-      header: 'Spring migration: what to watch for right now',
+      header: 'Right now: spring migration is moving north',
       items: [
-        {
-          label: 'Milkweed is emerging.',
-          detail:
-            "Look for thick, gray-green leaves pushing up from bare ground. Don't mow over it. " +
-            "Monarchs arrive when it's 6 inches tall. That window opens in most of the Midwest in the next 3–5 weeks.",
-        },
-        {
-          label: 'Log any monarch you see on iNaturalist.',
-          detail:
-            'The spring migration has no organized reporting network. ' +
-            'Your observation tells researchers which corridors the population is using this year. It takes 60 seconds.',
-        },
+        { label: 'Watch for milkweed coming up.', detail: 'Thick, gray-green shoots push up from bare ground. Leaving them is the single most useful thing this month, since the first monarchs arrive when the plant is about six inches tall.' },
+        { label: 'Order or start seed.', detail: 'Native milkweed and nectar plugs sell out by mid-April. Seed started or sown now is in the ground before the breeding season begins.' },
       ],
     }
   }
-  // Late spring: May (4) — breeding monarchs arriving in the Midwest
   if (month === 4) {
     return {
-      header: 'Monarchs are arriving in the Midwest this week',
+      header: 'Right now: monarchs are arriving to breed',
       items: [
-        {
-          label: "Don't mow the milkweed.",
-          detail:
-            'A female monarch finds milkweed by landing on leaves and testing them — ' +
-            'she has chemoreceptors on her feet that detect the cardiac glycosides milkweed produces. ' +
-            'She lays a single egg on the underside of each leaf. Cut the plant now and there is nothing left to test.',
-        },
-        {
-          label: 'Log any monarch you see.',
-          detail:
-            'Spring sighting data is sparse compared to fall — fewer observers are watching in May. ' +
-            'Your iNaturalist observation tells researchers which northbound corridors the population is actually using this year.',
-        },
+        { label: 'Leave the milkweed standing.', detail: 'A female tests a leaf with her feet before laying a single egg beneath it. Cut the plant now and there is nothing left for her to find.' },
+        { label: 'Look on the undersides of leaves.', detail: 'Monarch eggs are the size of a pinhead, pale and ribbed, one per leaf, on milkweed six inches or taller.' },
       ],
     }
   }
-  // Summer: June (5), July (6), August (7)
   if (month >= 5 && month <= 7) {
     return {
-      header: 'Breeding season: caterpillars are here now',
+      header: 'Right now: caterpillars are on the milkweed',
       items: [
-        {
-          label: 'Check the underside of milkweed leaves.',
-          detail:
-            'Monarch eggs are the size of a pinhead: pale yellow, ribbed, one per leaf. ' +
-            'Look on the underside of leaves on milkweed 6 inches or taller.',
-        },
-        {
-          label: 'Log what you see on iNaturalist.',
-          detail:
-            'Every caterpillar observation adds to the breeding-range data researchers use to track recovery. ' +
-            'It takes 60 seconds.',
-        },
+        { label: 'Check milkweed for eggs and caterpillars.', detail: 'Look under the leaves for pinhead eggs and for the striped caterpillars that hatch from them. A single plant can raise several.' },
+        { label: 'Skip the insecticide near milkweed and nectar plants.', detail: 'The sprays meant for pests reach caterpillars and the bees working the same flowers.' },
       ],
     }
   }
-  // Fall: September (8), October (9), November (10)
   if (month >= 8 && month <= 10) {
     return {
-      header: 'Fall migration: the roost movement is beginning',
+      header: 'Right now: the fall migration is underway',
       items: [
-        {
-          label: 'Late-blooming nectar plants are critical.',
-          detail:
-            'Goldenrod, native asters, and ironweed keep blooming into October. ' +
-            'Monarchs need nectar to build fat reserves for the 2,500-mile flight to Mexico.',
-        },
-        {
-          label: 'Log every monarch you see.',
-          detail:
-            'Fall migration counts are sparse outside traditional corridors. ' +
-            'Your sighting on iNaturalist helps researchers understand where corridors are shifting.',
-        },
+        { label: 'Keep late nectar blooming.', detail: 'Goldenrod, native asters, and ironweed flower into October and fuel the 2,000-mile flight to Mexico. Leaving them up matters more than tidiness.' },
+        { label: 'Hold off on cutting back.', detail: 'Seed heads and standing stems feed and shelter wildlife through winter, and next year’s plants reseed from them.' },
       ],
     }
   }
-  // Winter: December (11), January (0), February (1)
   return {
-    header: 'Winter: monarchs are in Mexico right now',
+    header: 'Right now: monarchs are overwintering in Mexico',
     items: [
-      {
-        label: 'Order milkweed for spring planting.',
-        detail:
-          'Native milkweed plugs sell out by mid-April. ' +
-          'Order now from Prairie Moon Nursery, Midwest Wildflowers, or a local native plant nursery.',
-      },
-      {
-        label: "Tell someone what you're planning.",
-        detail:
-          'Habitat is a corridor, not a single yard. ' +
-          'A conversation in January turns into two milkweed patches by June.',
-      },
+      { label: 'Plan the spring planting.', detail: 'Winter is the time to decide where milkweed and nectar plants will go. A bed as small as ten feet square gives a monarch somewhere to stop.' },
+      { label: 'Cold-stratify seed.', detail: 'Many native seeds need a cold, damp spell before they sprout. Started now, they are ready to plant by spring.' },
     ],
   }
-}
-
-function NavCardButton({ card, onNavigate }: { card: NavCard; onNavigate: (page: Page) => void }) {
-  return (
-    <button
-      className={`home-card${card.photo ? '' : ' home-card--text'}`}
-      onClick={() => onNavigate(card.page)}
-    >
-      {card.photo && (
-        <span className="home-card__photo">
-          <img src={card.photo} alt={card.alt ?? ''} loading="lazy" width={640} height={420} />
-        </span>
-      )}
-      <span className="home-card__body">
-        <span className="home-card__title">{card.title}</span>
-        <span className="home-card__note">{card.note}</span>
-      </span>
-    </button>
-  )
 }
 
 interface HomeProps {
@@ -279,18 +115,14 @@ export default function Home({ onNavigate }: HomeProps) {
   )
   const [monarchSightings, setMonarchSightings] = useState(FALLBACK_MONARCH_SIGHTINGS)
   const [hasLiveSightings, setHasLiveSightings] = useState(false)
-
   const seasonal = useMemo(() => getSeasonalContent(month), [month])
 
   useEffect(() => {
     let cancelled = false
-
-    fetch(
-      `https://api.inaturalist.org/v1/observations?taxon_id=${INAT_MONARCH_TAXON_ID}&place_id=${INAT_US_PLACE_ID}&d1=${monthStart}&per_page=1`,
-    )
-      .then(response => {
-        if (!response.ok) throw new Error(`iNaturalist request failed: ${response.status}`)
-        return response.json() as Promise<{ total_results?: number }>
+    fetch(`https://api.inaturalist.org/v1/observations?taxon_id=${INAT_MONARCH_TAXON_ID}&place_id=${INAT_US_PLACE_ID}&d1=${monthStart}&per_page=1`)
+      .then(r => {
+        if (!r.ok) throw new Error(String(r.status))
+        return r.json() as Promise<{ total_results?: number }>
       })
       .then(data => {
         if (!cancelled && typeof data.total_results === 'number') {
@@ -298,9 +130,7 @@ export default function Home({ onNavigate }: HomeProps) {
           setHasLiveSightings(true)
         }
       })
-      .catch(() => {
-        // Keep the saved fallback count when the live request fails.
-      })
+      .catch(() => {})
     return () => {
       cancelled = true
     }
@@ -308,24 +138,58 @@ export default function Home({ onNavigate }: HomeProps) {
 
   return (
     <>
-      {/* Hero — full-bleed overwintering colony photo */}
+      {/* Hero: the monarch, the mission, one first step */}
       <div
         className="home-hero"
         role="img"
-        aria-label="Monarch butterflies massed on oyamel fir trees at the Angangueo overwintering colony, Mexico"
+        aria-label="A monarch butterfly feeding on common milkweed flowers"
         style={{ backgroundImage: `url(${HERO_PHOTO_URL})` }}
       >
         <div className="home-hero__panel">
-          <h1>One yard at a time</h1>
+          <h1>Bring the monarch home</h1>
           <p>
-            The monarch population has dropped 85% in 30 years. The corridors they fly are made of
-            individual yards. Start here.
+            The monarch is disappearing along with the wild places it needs. Camp Monarch helps you
+            rebuild those places where you live, starting with the ground outside your door.
           </p>
+          <div style={{ marginTop: '1.25rem' }}>
+            <button className="hero__cta" onClick={() => onNavigate('growing-guide')}>
+              Start your habitat →
+            </button>
+          </div>
         </div>
       </div>
 
       <div className="home-wrap">
-        {/* Seasonal right-now content */}
+        {/* The idea, in one move */}
+        <section className="home-section home-mission" aria-labelledby="mission-heading">
+          <h2 id="mission-heading">Habitat is the fix</h2>
+          <p>
+            The eastern monarch has fallen to about 2.9 hectares of overwintering forest, less than
+            half the area scientists consider stable. The cause is lost habitat, and so is the
+            answer: a connected network of it, rebuilt from the yards, schoolyards, farms, and small
+            plots where people already are. That network starts with one planted patch. [1]
+          </p>
+        </section>
+
+        {/* Start here: three habitat steps */}
+        <section className="home-section" aria-labelledby="start-heading">
+          <h2 id="start-heading">Start here</h2>
+          <div className="card-grid card-grid--3">
+            {START_STEPS.map(step => (
+              <button key={step.page} className="home-card" onClick={() => onNavigate(step.page)}>
+                <span className="home-card__photo">
+                  <img src={step.photo} alt={step.alt} loading="lazy" width={640} height={420} />
+                </span>
+                <span className="home-card__body">
+                  <span className="home-card__title">{step.title}</span>
+                  <span className="home-card__note">{step.note}</span>
+                </span>
+              </button>
+            ))}
+          </div>
+        </section>
+
+        {/* Timely, monarch-specific guidance */}
         <section className="home-section" aria-labelledby="seasonal-heading">
           <h2 id="seasonal-heading">{seasonal.header}</h2>
           <div className="card-grid">
@@ -338,108 +202,53 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
         </section>
 
-        {/* Three-card action strip */}
-        <section className="home-section" aria-labelledby="actions-heading">
-          <h2 id="actions-heading">Three actions that move the needle</h2>
-          <div className="card-grid">
-            {ACTION_CARDS.map(card => (
-              <NavCardButton key={card.title} card={card} onNavigate={onNavigate} />
-            ))}
-          </div>
-        </section>
-
-        {/* Mammal neighbors */}
-        <section className="home-section" aria-labelledby="neighbors-heading">
-          <h2 id="neighbors-heading">Your yard already has neighbors</h2>
-          <p className="home-section__intro">
-            Four mammals active within a quarter-mile of most suburban homes — each one running on a
-            biological clock your landscaping either supports or interrupts.
-          </p>
-          <div className="card-grid">
-            {MAMMAL_CARDS.map(card => (
-              <NavCardButton key={card.page} card={card} onNavigate={onNavigate} />
-            ))}
-          </div>
-          <div className="home-section--center">
-            <button className="hero__cta" onClick={() => onNavigate('species-gallery')}>
-              Explore the species gallery →
-            </button>
-          </div>
-        </section>
-
-        {/* Birds and insects */}
-        <section className="home-section" aria-labelledby="birds-insects-heading">
-          <h2 id="birds-insects-heading">After dark and up in the canopy</h2>
-          <p className="home-section__intro">
-            A firefly larva spends two years hunting earthworms in your leaf litter before it spends
-            three weeks flashing in the air above it. Four species active in your yard after dark or
-            at tree height — two birds, two insects — each running on a mechanism most homeowners have
-            never noticed.
-          </p>
-          <div className="card-grid">
-            {BIRD_INSECT_CARDS.map(card => (
-              <NavCardButton key={card.page} card={card} onNavigate={onNavigate} />
-            ))}
-          </div>
-        </section>
-
-        {/* iNaturalist live Monarch count */}
+        {/* Live monarch sightings */}
         <div className="home-inat">
-          <h2 style={{ marginTop: 0 }}>People are already logging Monarchs</h2>
+          <h2 style={{ marginTop: 0 }}>People are logging monarchs right now</h2>
           <p>
-            <strong className="home-inat__count">
-              {formatSightings(monarchSightings)} Monarch sightings
-            </strong>{' '}
-            have been logged on iNaturalist in the United States{' '}
-            {hasLiveSightings ? 'this month' : 'in a recent month'}. Each sighting becomes open data
-            that researchers can use to track the migration.
+            <strong className="home-inat__count">{formatSightings(monarchSightings)} monarch sightings</strong>{' '}
+            have been recorded across the United States{' '}
+            {hasLiveSightings ? 'this month' : 'in a recent month'}, each one open data that helps
+            researchers track the migration. Logging what you see is a way to help that takes a
+            minute.
           </p>
           <p className="home-inat__meta">
             {hasLiveSightings
-              ? `Live count · observations since ${monthName} 1, ${year}.`
-              : 'Showing a recent monthly total — the live count is temporarily unavailable.'}
+              ? `Live count from iNaturalist · since ${monthName} 1, ${year}.`
+              : 'Recent monthly total from iNaturalist · live count temporarily unavailable.'}
           </p>
-          <a
-            href={sightingsUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="hero__cta"
-            style={{ display: 'inline-block' }}
-          >
-            See this month's sightings on iNaturalist →
+          <a href={sightingsUrl} target="_blank" rel="noreferrer" className="hero__cta" style={{ display: 'inline-block' }}>
+            See this month's sightings →
           </a>
         </div>
 
-        {/* Quick-start guide cards */}
-        <section className="home-section" aria-labelledby="guide-heading" style={{ marginTop: '2.5rem' }}>
-          <h2 id="guide-heading">Start with what you have</h2>
-          <div className="card-grid">
-            {QUICKSTART_CARDS.map(card => (
-              <NavCardButton key={card.title} card={card} onNavigate={onNavigate} />
-            ))}
-          </div>
-        </section>
+        {/* The wider payoff → one door into the species library */}
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>Plant for the monarch, and you plant for everyone</h2>
+          <p>
+            The milkweed, nectar, and native trees a monarch needs are the same ones that feed the
+            bees, birds, frogs, and other butterflies sharing the neighborhood. Restore habitat for
+            one, and the rest come back with it.
+          </p>
+          <p style={{ marginBottom: 0 }}>
+            <button className="hero__cta" onClick={() => onNavigate('species-gallery')}>
+              Meet your neighbors →
+            </button>
+          </p>
+        </div>
 
-        {/* Attribution footer */}
+        {/* Attribution */}
         <section className="home-credits" aria-label="Photo attribution">
           <p>
             <strong>Photos:</strong>{' '}
-            Hero — <a href="https://commons.wikimedia.org/wiki/File:Angangueo_monarchs.jpg" target="_blank" rel="noopener noreferrer">Bfpage</a>, CC BY 3.0;{' '}
-            Milkweed card — <a href="https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_Danaus_plexippus_Butterfly_Weed_1650px.jpg" target="_blank" rel="noopener noreferrer">Derek Ramsey</a>, CC BY-SA 2.5;{' '}
-            Caterpillar card — <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noopener noreferrer">Derek Ramsey</a>, CC BY-SA 2.5;{' '}
-            Goldenrod — <a href="https://commons.wikimedia.org/wiki/File:Monarch_on_Goldenrod_(5230034900).jpg" target="_blank" rel="noopener noreferrer">USFWS — Northeast Region</a>, public domain;{' '}
-            Cottontail — <a href="https://commons.wikimedia.org/wiki/File:20250708_eastern_cottontail_front_yard_PD208193.jpg" target="_blank" rel="noopener noreferrer">Paul Danese</a>, CC BY-SA 4.0;{' '}
-            Opossum — <a href="https://commons.wikimedia.org/wiki/File:Didelphis_virginiana_188111999.jpg" target="_blank" rel="noopener noreferrer">Matthew Gerke</a>, CC BY 4.0;{' '}
-            Skunk — <a href="https://commons.wikimedia.org/wiki/File:Striped_Skunk_(Mephitis_mephitis)_01.jpg" target="_blank" rel="noopener noreferrer">Ryan Hodnett</a>, CC BY-SA 4.0;{' '}
-            Squirrel — <a href="https://commons.wikimedia.org/wiki/File:Grey_squirrel_(Sciurus_carolinensis)_01.jpg" target="_blank" rel="noopener noreferrer">Charles J. Sharp</a>, CC BY-SA 4.0;{' '}
-            Bluebird pair — <a href="https://commons.wikimedia.org/wiki/File:Sialia_sialis_-Michigan,_USA_-pair-8c.jpg" target="_blank" rel="noopener noreferrer">Dave Menke / USFWS</a>, public domain;{' '}
-            Kestrel — <a href="https://commons.wikimedia.org/wiki/File:American_kestrel_(44273).jpg" target="_blank" rel="noopener noreferrer">Rhododendrites</a>, CC BY-SA 4.0;{' '}
-            Firefly — <a href="https://commons.wikimedia.org/wiki/File:Eastern_firefly_(Photinus_pyralis),_June_2025,_Virginia.jpg" target="_blank" rel="noopener noreferrer">Celari817</a>, CC BY 4.0;{' '}
-            Luna Moth — <a href="https://commons.wikimedia.org/wiki/File:Actias_luna-male.jpg" target="_blank" rel="noopener noreferrer">Westonhighschool</a>, CC BY-SA 3.0.
+            Hero, monarch on common milkweed — <a href="https://commons.wikimedia.org/wiki/File:Monarch_butterfly_on_common_milkweed_(48372506736).jpg" target="_blank" rel="noopener noreferrer">USFWS Midwest Region</a>, CC BY 2.0;{' '}
+            caterpillar on milkweed — <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_caterpillar_on_milkweed.jpg" target="_blank" rel="noopener noreferrer">Derek Ramsey</a>, CC BY-SA 2.5;{' '}
+            monarch on goldenrod — <a href="https://commons.wikimedia.org/wiki/File:Monarch_on_Goldenrod_(5230034900).jpg" target="_blank" rel="noopener noreferrer">USFWS Northeast Region</a>, public domain;{' '}
+            butterfly on coneflower — <a href="https://commons.wikimedia.org/wiki/File:American_lady_on_purple_coneflower_(74770).jpg" target="_blank" rel="noopener noreferrer">Rhododendrites</a>, CC BY-SA 4.0.
           </p>
           <p>
-            Monarch count sourced from iNaturalist observations —{' '}
-            <a href="https://www.inaturalist.org/" target="_blank" rel="noopener noreferrer">iNaturalist.org</a>.
+            Monarch count from <a href="https://www.inaturalist.org/" target="_blank" rel="noopener noreferrer">iNaturalist</a>;
+            overwintering area from <a href="https://monarchjointventure.org/blog/eastern-monarch-overwintering-population-increases-from-last-year" target="_blank" rel="noopener noreferrer">Monarch Joint Venture</a> [1].
           </p>
         </section>
       </div>

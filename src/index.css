@@ -318,11 +318,36 @@
   margin-top: 1.5rem;
 }
 
+.home-mission {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+
+.home-mission p {
+  max-width: none;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
 /* Responsive card grid shared by every card row on the page */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
+}
+
+/* Fixed three-up row (e.g. the "Start here" steps) that collapses straight to
+   one column, so it never leaves an orphan card in a half-empty row. */
+.card-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 760px) {
+  .card-grid--3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Clickable card that navigates somewhere. A <button> built from phrasing
