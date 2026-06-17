@@ -210,6 +210,8 @@ export const ALL_PAGE_SLUGS = [
   'direct-sow-seeds',
   'seed-balls',
   'mulch',
+  'about',
+  'contact',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]

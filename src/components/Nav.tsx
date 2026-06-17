@@ -191,6 +191,15 @@ const groups: NavGroup[] = [
       { id: 'faq',               label: 'FAQ' },
     ],
   },
+  {
+    id: 'about-section',
+    label: 'About',
+    alignRight: true,
+    children: [
+      { id: 'about',   label: 'About Camp Monarch' },
+      { id: 'contact', label: 'Contact' },
+    ],
+  },
 ]
 
 const megaDropdownStyle = {

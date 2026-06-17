@@ -196,6 +196,8 @@ import StartSeedsIndoors from './pages/StartSeedsIndoors'
 import DirectSowSeeds from './pages/DirectSowSeeds'
 import SeedBalls from './pages/SeedBalls'
 import Mulch from './pages/Mulch'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -427,6 +429,8 @@ function App() {
       case 'direct-sow-seeds':      return <DirectSowSeeds onNavigate={navigateTo} />
       case 'seed-balls':            return <SeedBalls onNavigate={navigateTo} />
       case 'mulch':                 return <Mulch onNavigate={navigateTo} />
+      case 'about':                 return <About onNavigate={navigateTo} />
+      case 'contact':               return <Contact onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }
