@@ -261,3 +261,195 @@
     min-height: 220px;
   }
 }
+
+/* ── Home page ─────────────────────────────────────────────────────────────
+   The landing/hub page. Its own class set so the markup stays readable and
+   consistent instead of carrying dozens of inline style objects.            */
+.home-hero {
+  position: relative;
+  min-height: min(60vh, 520px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--monarch-dark);
+}
+
+.home-hero__panel {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  max-width: 540px;
+}
+
+.home-hero__panel h1 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.home-hero__panel p {
+  margin: 0;
+  max-width: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+}
+
+.home-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.home-section {
+  margin-bottom: 2.5rem;
+}
+
+.home-section__intro {
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.home-section--center {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Responsive card grid shared by every card row on the page */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/* Clickable card that navigates somewhere. A <button> built from phrasing
+   content (img + spans) so it is valid and keyboard-accessible.            */
+.home-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  background: var(--card-background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+  transition: transform 0.1s, box-shadow 0.15s;
+}
+
+.home-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.home-card:focus-visible {
+  outline: 2px solid var(--monarch-orange);
+  outline-offset: 2px;
+}
+
+.home-card__photo {
+  display: block;
+  height: 180px;
+  overflow: hidden;
+  background: var(--monarch-light);
+}
+
+.home-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-card__body {
+  display: block;
+  padding: 0.9rem 1.25rem 1.25rem;
+  flex: 1;
+}
+
+.home-card--text .home-card__body {
+  padding: 1.25rem 1.5rem;
+}
+
+.home-card__title {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--monarch-green);
+}
+
+.home-card__note {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/* Seasonal "right now" cards */
+.home-seasonal-card {
+  border-left: 4px solid var(--monarch-green);
+  background: rgba(45, 90, 39, 0.06);
+  padding: 1.1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.home-seasonal-card__label {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+
+.home-seasonal-card__detail {
+  margin: 0;
+  max-width: none;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* iNaturalist live count panel */
+.home-inat {
+  margin-top: 2rem;
+  background: linear-gradient(135deg, var(--monarch-light) 0%, var(--monarch-cream) 100%);
+  border: 1px solid rgba(241, 175, 85, 0.4);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+}
+
+.home-inat__count {
+  color: var(--monarch-orange);
+}
+
+.home-inat__meta {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+}
+
+/* Photo attribution footer */
+.home-credits {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.home-credits p {
+  max-width: none;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    padding: 1.25rem;
+  }
+  .home-inat {
+    padding: 1.5rem;
+  }
+}
