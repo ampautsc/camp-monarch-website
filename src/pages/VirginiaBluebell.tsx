@@ -9,170 +9,131 @@ export default function VirginiaBluebell({ onNavigate }: VirginiaBluebellProps) 
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/364590990/large.jpg"
-          alt="Virginia Bluebell in bloom — nodding clusters of blue flowers with pink buds at McIntire Park, Charlottesville, Virginia, April 2024"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Mertensia_virginica_colony%2C_2022-04-29%2C_Trillium_Trail%2C_01.jpg/1280px-Mertensia_virginica_colony%2C_2022-04-29%2C_Trillium_Trail%2C_01.jpg"
+          alt="A woodland colony of Virginia Bluebell with nodding blue flowers and pink buds"
           className="species-hero-image"
-          style={{ objectPosition: 'center 50%' }}
+          style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={960}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: lemasney&nbsp;·&nbsp;
-          <a href="https://www.inaturalist.org/observations/206152960" target="_blank" rel="noopener noreferrer">iNaturalist obs. 206152960</a>
-          &nbsp;· CC0 / No Rights Reserved
+          Photo: Cbaile19&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Mertensia_virginica_colony,_2022-04-29,_Trillium_Trail,_01.jpg" target="_blank" rel="noopener noreferrer">CC0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Plants</div>
-        <h1>Virginia Bluebell flowers in April, turns yellow by May, and disappears by June.<br />The bare soil it leaves behind is not empty ground.</h1>
+        <h1>Virginia Bluebell</h1>
         <p className="hero__lead">
-          Virginia Bluebell (<em>Mertensia virginica</em>) is a spring ephemeral — a plant that
-          completes its entire visible life in 8 to 10 weeks each year, then stores the season's
-          energy in an underground rhizome and goes dormant until the following March. The leaves
-          turn yellow and fall. The soil above looks empty all summer. The plant is alive below
-          ground.
-        </p>
-        <p className="hero__lead">
-          Most homeowners who see the leaves yellowing in May assume the plant is dying and dig
-          it up. That removes the rhizome. The plant does not return the following spring.
+          Virginia Bluebell (<em>Mertensia virginica</em>) is a spring ephemeral that completes
+          its entire visible life in 8 to 10 weeks each spring, then stores the season's energy
+          in an underground rhizome and goes dormant until the following March. Its nodding
+          flower clusters open pink in bud and shift to blue as they mature — a pH change inside
+          each petal's cells — so a single cluster at peak bloom shows both colors at once. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="senescence-heading">
-          <h2 id="senescence-heading">Yellow leaves in May — the plant pulling energy back into its root</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Virginia Bluebell pushes above the soil in late March, before most deciduous trees
-            have leafed out. At that point, the forest floor receives 60 to 80 percent of full
-            sunlight. By late May, when the canopy has closed, that figure drops to 5 to 15
-            percent. The plant's entire photosynthetic window is the six weeks between those
-            two dates.
-          </p>
-          <p>
-            When the flowers have finished and the seeds have formed, the plant begins pulling
-            carbon from its leaves back into the rhizome below ground. This process —
-            senescence — is visible as yellowing. By the time the leaves fall, that transfer
-            is complete. The rhizome holds all the reserves the plant will need to send up new
-            growth in March. What looks like a dying plant is a plant that just finished its year.
-          </p>
-          <p>
-            If you dig into the soil beneath a vanished bluebell patch in July or August and
-            find a fleshy, carrot-shaped root, the plant is alive. If you disturb that root —
-            by digging, by planting annuals on top of the patch, or by rototilling — the plant
-            does not return.
+            A bumblebee queen foraging in April can tell the two colors apart and acts on it:
+            open blue flowers have accumulated nectar at the base of the tube, while pink buds
+            have not, so she bypasses the buds and works the open flowers. Ruby-throated
+            Hummingbirds arrive in the Midwest in mid-April, the same weeks Virginia Bluebell
+            peaks — for a newly arrived bird, it may be the only native flower in a woodland
+            garden with a tube short enough to reach. [1]
           </p>
         </section>
 
-        <section aria-labelledby="color-heading">
-          <h2 id="color-heading">Pink buds, blue flowers — the color shift happens inside each petal as the flower opens</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Mertensia_virginica_%28pale_blue%29%2C_2023-04-22%2C_Trillium_Trail%2C_01.jpg/1280px-Mertensia_virginica_%28pale_blue%29%2C_2023-04-22%2C_Trillium_Trail%2C_01.jpg"
+            alt="Close view of open blue Virginia Bluebell flowers"
+            width={1280}
+            height={960}
+            loading="lazy"
+          />
+          <figcaption>
+            Once a flower opens fully blue, it has nectar ready at the base of the tube — the
+            cue a foraging bumblebee queen reads at a glance.
+            <span className="photo-credit"> Photo: Cbaile19&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Mertensia_virginica_(pale_blue),_2023-04-22,_Trillium_Trail,_01.jpg" target="_blank" rel="noopener noreferrer">CC0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Virginia Bluebell flowers open pink in bud and shift to blue as they mature. The
-            change happens in the cell vacuoles inside each petal: as the flower opens, the pH
-            rises and the anthocyanin pigments shift from red wavelengths toward blue. A single
-            cluster at peak bloom shows both colors at once — older open flowers in blue-purple,
-            younger buds still pink at the tips.
-          </p>
-          <p>
-            This color difference is visible to bumblebees, which distinguish between the two
-            stages. Open blue flowers have accumulated nectar at the base of the tube. Pink buds
-            have not. Bumblebee queens foraging in April bypass the buds and work the open
-            flowers.
-          </p>
-          <p>
-            Ruby-throated Hummingbirds arrive in the Midwest in mid-April — the same weeks when
-            Virginia Bluebell is at peak bloom. The flower tubes are roughly 10 to 15 mm long,
-            a length accessible to a hummingbird's bill. Before Wild Columbine opens later in
-            April, Virginia Bluebell may be the only native flower in a woodland garden that a
-            newly arrived hummingbird can reach.
+            Virginia Bluebell pushes up in March, before deciduous trees have leafed out and
+            while the forest floor still gets most of its sunlight. Spring Azure butterflies fly
+            their first generation in these same weeks and nectar at its flowers before almost
+            anything else has bloomed. Once seeds form in May, the plant pulls its leaves'
+            energy back into the rhizome — visible as yellowing — and by June it has disappeared
+            above ground entirely, alive and waiting below the soil until the following March. [1]
           </p>
         </section>
 
-        <section aria-labelledby="spring-azures-heading">
-          <h2 id="spring-azures-heading">Spring Azures in April — the first butterfly of the woodland season nectaring before almost anything else has bloomed</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            Spring Azure butterflies (<em>Celastrina ladon</em>) fly in their first generation in
-            March and April. In woodland and riparian settings, they appear before most other
-            butterflies — small, pale blue, flickering low over the leaf litter. Virginia Bluebell
-            blooms during those same weeks and provides nectar while almost no other native
-            wildflower has opened.
-          </p>
-          <p>
-            Spring Azures lay eggs on flowering shrubs — dogwood, New Jersey Tea, viburnums, wild
-            cherry — not on Virginia Bluebell. But adults visit bluebell flowers for nectar
-            throughout April, moving between the wildflower patches on the woodland floor and
-            the shrubs where females will deposit eggs.
+            Virginia Bluebell is secure in its native woodland and floodplain range, but in
+            gardens it has one common point of failure: a homeowner who sees the May yellowing,
+            assumes the plant is dying, and digs it up. That removes the rhizome, and the plant
+            does not come back the following spring.
           </p>
         </section>
 
-        <section aria-labelledby="growing-heading">
-          <h2 id="growing-heading">Moist soil, spring sun, summer shade — and a marked spot where the plant went dormant</h2>
-          <p>
-            Virginia Bluebell grows naturally along river floodplains and moist woodland edges —
-            places where soil holds water through spring and dries somewhat in summer under
-            deciduous canopy. It tolerates temporary flooding. It does not tolerate dry
-            conditions during its March–May growth period.
-          </p>
-          <p>
-            In a yard: plant rhizomes in fall, one to two inches deep, in a spot that receives
-            dappled or full sun in April before surrounding deciduous trees leaf out, then
-            partial to full shade through summer. A north-facing slope under oaks or maples
-            often works. A spot that gets afternoon sun in late March but is shaded by June
-            is better than a spot in full sun year-round.
-          </p>
-          <p>
-            Mark the location clearly when the plant goes dormant — a labeled stake, a ring
-            of stones, a note on a garden map. Avoid placing summer annuals over the patch.
-            Avoid rototilling the area. Virginia Bluebell spreads slowly by self-seed over
-            several years; undisturbed plantings become loose colonies of a dozen or more
-            plants.
-          </p>
-        </section>
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <ol className="step-list">
+            <li>
+              Plant rhizomes in fall, 1 to 2 inches deep, in a spot with spring sun before trees
+              leaf out and shade through summer. [2]
+            </li>
+            <li>
+              Mark the spot clearly before it goes dormant — a stake, a ring of stones, or a note
+              on a garden map all work. [2]
+            </li>
+            <li>
+              Never dig or rototill the area once the leaves yellow in May; the plant is alive
+              below ground, not dying. [2]
+            </li>
+            <li>
+              Avoid planting summer annuals over a dormant patch, which risks disturbing the
+              rhizome before it sends up new growth next March. [2]
+            </li>
+          </ol>
+        </div>
 
-        <section aria-labelledby="context-heading">
-          <h2 id="context-heading">Virginia Bluebell opens in March — three to five weeks before Wild Columbine</h2>
-          <p>
-            In the eleven-native bloom sequence for a Camp Monarch garden, Virginia Bluebell
-            opens the season earliest — often by mid-March in warmer years, reliably by early
-            April. Wild Columbine follows in mid-April. New Jersey Tea blooms in May and June.
-            The sequence continues through summer and into October.
-          </p>
-          <p>
-            For a yard trying to support Ruby-throated Hummingbirds from their arrival in
-            mid-April through their departure in September, the gap before Wild Columbine opens
-            is the narrowest window. Virginia Bluebell covers those two to four weeks. It does
-            not repeat after going dormant. Whether a yard has bluebell nectar available in the
-            third week of April depends entirely on whether the rhizomes were planted the
-            previous fall and left undisturbed.
-          </p>
-          <div className="connections">
-            <h3>Plants and species connected to Virginia Bluebell</h3>
-            <ul>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('ruby-throated-hummingbird')}>
-                  Ruby-throated Hummingbird
-                </button>{' '}
-                — arrives in mid-April; Virginia Bluebell blooms in the same weeks, before most other native nectar sources have opened
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('wild-columbine')}>
-                  Wild Columbine
-                </button>{' '}
-                — blooms two to four weeks after Virginia Bluebell, carrying the early-spring nectar sequence forward for hummingbirds and Spring Azures
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('golden-alexanders')}>
-                  Golden Alexanders
-                </button>{' '}
-                — co-blooms through April and May; while Virginia Bluebell draws hummingbirds and bumblebee queens to the woodland edge, Golden Alexanders opens in sunnier spots for Black Swallowtail larvae and the specialist mining bee <em>Andrena ziziae</em> — two plants covering the same weeks in different microhabitats
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('native-bees')}>
-                  Native Bees
-                </button>{' '}
-                — bumblebee queens emerging in late March and April visit Virginia Bluebell flowers; they work the open blue flowers and bypass the still-closed pink buds
-              </li>
-            </ul>
-          </div>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('ruby-throated-hummingbird')}>
+            <span className="neighbor-name">Ruby-throated Hummingbird</span>
+            <span className="neighbor-note">Arrives in mid-April just as Virginia Bluebell peaks, often the first reachable native nectar source of the season.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('wild-columbine')}>
+            <span className="neighbor-name">Wild Columbine</span>
+            <span className="neighbor-note">Opens two to four weeks after Virginia Bluebell, carrying the early-spring nectar sequence forward.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('golden-alexanders')}>
+            <span className="neighbor-name">Golden Alexanders</span>
+            <span className="neighbor-note">Co-blooms through April and May in sunnier spots, serving Black Swallowtail larvae and a specialist mining bee.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('native-bees')}>
+            <span className="neighbor-name">Native Bees</span>
+            <span className="neighbor-note">Bumblebee queens emerging in late March work the open blue flowers and bypass the still-closed pink buds.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Mertensia_virginica" target="_blank" rel="noopener noreferrer">Wikipedia — Mertensia virginica (Virginia Bluebell)</a></li>
+            <li><a href="https://www.allaboutbirds.org/guide/Ruby-throated_Hummingbird/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: Ruby-throated Hummingbird</a></li>
+          </ol>
         </section>
       </div>
     </>

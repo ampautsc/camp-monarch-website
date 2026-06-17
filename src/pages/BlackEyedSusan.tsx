@@ -9,181 +9,132 @@ export default function BlackEyedSusan({ onNavigate }: BlackEyedSusanProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/309136118/large.jpeg"
-          alt="Black-eyed Susan in bloom — yellow ray flowers surrounding dark brown central disks in a meadow at Warren, Rhode Island, August 2023"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Rudbeckia_hirta_kz03.jpg/1280px-Rudbeckia_hirta_kz03.jpg"
+          alt="Black-eyed Susan flower with bright yellow ray petals around a dark brown domed center, with buds opening behind it"
           className="species-hero-image"
-          style={{ objectPosition: 'center 50%' }}
+          style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={914}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: tim_kirsten&nbsp;·&nbsp;
-          <a href="https://www.inaturalist.org/observations/177720136" target="_blank" rel="noopener noreferrer">iNaturalist obs. 177720136</a>
-          &nbsp;· CC0 / No Rights Reserved
+          Photo: Krzysztof Ziarnek, Kenraiz&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Rudbeckia_hirta_kz03.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Plants</div>
-        <h1>An American Goldfinch collects plant fluff for her nest lining in late July.<br />Black-eyed Susan seed heads open in August.</h1>
+        <h1>Black-eyed Susan</h1>
         <p className="hero__lead">
-          Black-eyed Susan (<em>Rudbeckia hirta</em>) blooms from late June through
-          September across eastern and central North America. The flowers have yellow ray
-          petals surrounding a domed, dark brown central disk. They open in late June, peak
-          in July and August, and produce seed heads that persist into late fall. The plant
-          grows one to three feet tall in full sun and lean, dry soil — roadsides, old
-          fields, meadows, garden beds with low fertility.
-        </p>
-        <p className="hero__lead">
-          Black-eyed Susan's bloom window runs from late June through August, filling the
-          gap that opens when New Jersey Tea finishes and before goldenrod and aster begin
-          to open. In a Camp Monarch garden, it carries the bloom sequence from the end of
-          June through September — the same months when American Goldfinches are nesting and
-          the Silvery Checkerspot butterfly is laying eggs.
+          Black-eyed Susan (<em>Rudbeckia hirta</em>) opens its yellow-rayed, dark-domed flowers
+          from late June through September, in lean, dry soil too poor for most other garden
+          plants. Each spent flower head packs 250 to 300 seeds into a tight cylinder at its
+          center — exactly the food American Goldfinches time their unusually late nesting season
+          around. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="goldfinch-heading">
-          <h2 id="goldfinch-heading">Goldfinch nests in late July — seed heads open in August</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            American Goldfinches nest later than almost every other songbird in the eastern
-            United States. The nesting season typically runs from July through early August —
-            three to four weeks after most songbirds have fledged their first brood. This
-            delay is tied to seed availability. Goldfinches feed their nestlings almost
-            entirely on regurgitated seeds, not insects; they time their nesting to overlap
-            with peak seed production from thistles and native composites.
-          </p>
-          <p>
-            Black-eyed Susan seed heads begin to mature in August. The seeds are small and
-            dry, arranged in a tight cylinder at the center of each spent flower. American
-            Goldfinches cling to the stalks and extract the seeds directly from the standing
-            heads. A single plant can carry 20 to 50 seed heads by late August. Female
-            goldfinches also collect the soft pappus fibers from composite seed heads to
-            line their nests — a behavior that requires the heads to be left standing, not
-            cut.
-          </p>
-          <p>
-            The common practice of cutting down Black-eyed Susan as the flowers fade removes
-            these seed heads during the period when goldfinches are feeding nestlings and
-            fledglings. A patch left standing through September and October carries seed into
-            the interval after goldenrod goes to fluff and before winter feeders are
-            typically restocked.
+            American Goldfinches nest later than almost any other songbird in the East — typically
+            not until July or August, three to four weeks after most species have already fledged
+            a first brood. The delay is tied to seed, not insects: goldfinches feed nestlings
+            almost entirely on regurgitated seed, so they wait for Black-eyed Susan and other
+            composites to start producing. Females also strip the soft pappus fibers from the seed
+            heads to line the nest — material only available if the heads are left standing. [1]
           </p>
         </section>
 
-        <section aria-labelledby="checkerspot-heading">
-          <h2 id="checkerspot-heading">Silvery Checkerspot lays 20 to 200 eggs in a cluster on Rudbeckia leaves</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Black_eyed_susan_20040717_110754_2.1474.jpg/1280px-Black_eyed_susan_20040717_110754_2.1474.jpg"
+            alt="Black-eyed Susan flower in a meadow with other wildflowers blurred in the background"
+            width={1280}
+            height={1087}
+            loading="lazy"
+          />
+          <figcaption>
+            The dark, domed center is a tight cluster of disc florets — and the leaf just behind
+            it is exactly where a Silvery Checkerspot female lays a cluster of up to 200 eggs.
+            <span className="photo-credit"> Photo: G. Edward Johnson&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Black_eyed_susan_20040717_110754_2.1474.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            The Silvery Checkerspot (<em>Chlosyne nycteis</em>) lays eggs in clusters on
-            the leaves of native composites — <em>Rudbeckia</em>, sunflowers, and
-            wingstems. A single female deposits 20 to 200 eggs on the upper surface of a
-            leaf in one clutch. The caterpillars hatch together and feed communally in their
-            early instars, skeletonizing leaves as a group before dispersing to individual
-            feeding sites in later stages.
-          </p>
-          <p>
-            Silvery Checkerspots fly in July and August — the same weeks Black-eyed Susan
-            peaks. Adults nectar from composites, coneflowers, and bergamot; females
-            simultaneously search for egg-laying sites on <em>Rudbeckia</em> leaves. A
-            yard with flowering Black-eyed Susan during this window provides both nectar
-            and the substrate the butterfly needs to reproduce.
-          </p>
-          <p>
-            The Silvery Checkerspot's range has contracted in the eastern United States as
-            open meadow and early-successional habitats — the places where <em>Rudbeckia</em>
-            and related composites grow — have been replaced by mowed lawn and closed-canopy
-            forest. In several eastern states, the butterfly now appears on watch lists.
+            Silvery Checkerspot caterpillars hatch together from a single clutch and feed as a
+            group on Rudbeckia leaves before dispersing individually in later stages — the same
+            July and August weeks the plant is in full bloom. Black-eyed Susan itself is
+            short-lived, typically two to four years, but reseeds freely into any open, sunny
+            patch of bare soil; seed heads left standing through fall let goldfinches feed and let
+            seed drop in place for spring. Nursery transplants often bloom in their first season,
+            making this one of the fastest natives to close a midsummer gap in a new planting. [1]
           </p>
         </section>
 
-        <section aria-labelledby="reseed-heading">
-          <h2 id="reseed-heading">Self-seeding in open patches — the seed heads do two jobs if you leave them</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            Black-eyed Susan is a short-lived perennial, biennial, or annual depending on
-            growing conditions and seed source. Individual plants typically live two to four
-            years. The plant reseeds freely in open patches with bare soil and full sun.
-            A single seed head contains 250 to 300 seeds. Seeds germinate in spring in
-            disturbed, thin soil; they do not establish well in dense turf or deep shade.
-          </p>
-          <p>
-            In a garden where seed heads are left standing through fall, Black-eyed Susan
-            self-perpetuates — seeds drop in place through winter and germinate the
-            following spring. Goldfinches extract seeds from the heads through fall and
-            early winter, carrying some seeds to perch sites and dropping others. The
-            colony spreads by both mechanisms without any active management.
-          </p>
-          <p>
-            Cutting the seed heads in August stops both processes. If seed heads must be
-            removed to keep a bed tidy, waiting until November — after goldfinches have
-            worked through the heads and after seeds have had time to fall — reduces the
-            disruption to both seed dispersal and bird foraging.
+            Black-eyed Susan itself isn't at risk, but the Silvery Checkerspot that depends on its
+            leaves has lost ground across the eastern U.S. as mowed lawn and closed-canopy forest
+            have replaced the open meadow habitat both species need — the butterfly now appears on
+            watch lists in several states.
           </p>
         </section>
 
-        <section aria-labelledby="growing-heading">
-          <h2 id="growing-heading">Full sun, lean or disturbed soil, zones 3 through 9 — blooms in the first season</h2>
-          <p>
-            Black-eyed Susan grows in full sun in lean, dry-to-medium soil. It does not
-            need rich, amended garden beds. In high-fertility soil, it tends to grow tall
-            and floppy rather than compact and upright. Roadside populations — growing in
-            gravel, compacted soil, and thin fill — often carry more flower heads than
-            transplants in heavily fertilized beds.
-          </p>
-          <p>
-            Plant it in a spot with good drainage and at least six hours of direct sun. It
-            tolerates summer drought once established. Nursery transplants from seed-grown
-            stock typically bloom in their first season. Plants grown from direct seed sown
-            in fall take longer to establish and may not flower until the second year.
-          </p>
-          <p>
-            Black-eyed Susan establishes faster than most native plants in the July–August
-            bloom window. A single transplant set out in late spring can carry a dozen
-            flower heads by August. That speed makes it one of the quickest ways to close
-            the midsummer gap in a new native planting while slower-establishing species
-            like wild bergamot and purple coneflower are getting started.
-          </p>
-        </section>
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <ol className="step-list">
+            <li>
+              Leave seed heads standing through fall and winter — goldfinches strip both the seeds
+              and the soft pappus fibers used to line July nests. [2]
+            </li>
+            <li>
+              Skip rich, fertilized beds; lean or disturbed soil with six hours of direct sun
+              produces more flowers than amended garden soil. [2]
+            </li>
+            <li>
+              If seed heads must be cut, wait until November, after goldfinches have worked
+              through them and seed has had time to drop. [2]
+            </li>
+            <li>
+              Leave Rudbeckia leaves untreated through July and August, when Silvery Checkerspot
+              caterpillars feed communally in their early instars. [2]
+            </li>
+          </ol>
+        </div>
 
-        <section aria-labelledby="context-heading">
-          <h2 id="context-heading">Late June through September — between milkweed and goldenrod</h2>
-          <p>
-            The ten-native bloom sequence for a Camp Monarch garden runs from Wild Columbine
-            in April through New England Aster in October. Black-eyed Susan opens in late
-            June, just as Common Milkweed is peaking, and continues through August and into
-            September — overlapping with wild bergamot, purple coneflower, and Joe Pye Weed
-            before goldenrod opens in late August.
-          </p>
-          <p>
-            For an American Goldfinch pair nesting in late July, a yard with Black-eyed
-            Susan carries seed heads through the fledging period and into fall. For a
-            Silvery Checkerspot female flying in August, the same plants provide nectar and
-            egg-laying sites simultaneously. For the homeowner, one decision — leave the
-            seed heads standing — addresses both the goldfinch nesting window and the
-            butterfly's reproductive needs in the same act.
-          </p>
-          <div className="connections">
-            <h3>Plants and species connected to Black-eyed Susan</h3>
-            <ul>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('american-goldfinch')}>
-                  American Goldfinch
-                </button>{' '}
-                — nests in late July and August; Black-eyed Susan seed heads mature as nestlings are fledging
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('wild-bergamot')}>
-                  Wild Bergamot
-                </button>{' '}
-                — blooms July–August, overlapping Black-eyed Susan's peak; both support the same midsummer pollinators
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
-                  Canada Goldenrod
-                </button>{' '}
-                — opens in late August as Black-eyed Susan is going to seed; carries the bloom sequence forward to October
-              </li>
-            </ul>
-          </div>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('american-goldfinch')}>
+            <span className="neighbor-name">American Goldfinch</span>
+            <span className="neighbor-note">Times its unusually late July nesting to overlap with Black-eyed Susan's seed production, feeding nestlings almost entirely on seed.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('silvery-checkerspot')}>
+            <span className="neighbor-name">Silvery Checkerspot</span>
+            <span className="neighbor-note">Lays clusters of up to 200 eggs on Rudbeckia leaves; caterpillars feed communally before dispersing in later instars.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('wild-bergamot')}>
+            <span className="neighbor-name">Wild Bergamot</span>
+            <span className="neighbor-note">Blooms July through August, overlapping Black-eyed Susan's peak; both support the same midsummer pollinators.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('canada-goldenrod')}>
+            <span className="neighbor-name">Canada Goldenrod</span>
+            <span className="neighbor-note">Opens in late August as Black-eyed Susan goes to seed, carrying the bloom sequence forward toward October.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Rudbeckia_hirta" target="_blank" rel="noopener noreferrer">Wikipedia — Rudbeckia hirta (Black-eyed Susan)</a></li>
+            <li><a href="https://www.allaboutbirds.org/guide/American_Goldfinch/lifehistory" target="_blank" rel="noopener noreferrer">Cornell Lab of Ornithology — All About Birds: American Goldfinch</a></li>
+          </ol>
         </section>
       </div>
     </>

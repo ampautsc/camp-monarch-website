@@ -9,193 +9,130 @@ export default function Buttonbush({ onNavigate }: ButtonbushProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/86076649/large.jpeg"
-          alt="Buttonbush spherical white flower heads in bloom at Indiana Dunes State Park, July 2020"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cephalanthus_occidentalis_kz1.jpg/1280px-Cephalanthus_occidentalis_kz1.jpg"
+          alt="Several Buttonbush flower spheres at different stages of opening, surrounded by glossy green leaves"
           className="species-hero-image"
-          style={{ objectPosition: 'center 50%' }}
+          style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={1481}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: mikeburdsall&nbsp;·&nbsp;
-          <a href="https://www.inaturalist.org/observations/54107538" target="_blank" rel="noopener noreferrer">iNaturalist obs. 54107538</a>
-          &nbsp;· CC0 / No Rights Reserved
+          Photo: Krzysztof Ziarnek, Kenraiz&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:Cephalanthus_occidentalis_kz1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Plants</div>
-        <h1>Buttonbush opens in July with spherical flower heads covered in protruding anthers. Its roots grow in standing water.</h1>
+        <h1>Buttonbush</h1>
         <p className="hero__lead">
-          Buttonbush (<em>Cephalanthus occidentalis</em>) is a native shrub that grows along stream
-          banks, pond edges, and wet depressions where standing water persists through spring and
-          into summer. In July and August it opens white, 1-inch flower heads — each one a tight
-          sphere of 200 or more individual florets, pollen-bearing anthers protruding from each one.
-          A single shrub in full bloom can carry 40 to 60 of these spheres at once.
-        </p>
-        <p className="hero__lead">
-          Most homeowners avoid the low corner of their yard where water collects. Buttonbush was
-          shaped by exactly that kind of site. It does not just tolerate wet soil — it grows in
-          three to four feet of standing water during flood periods and dries out over summer. A
-          wet corner that kills conventional shrubs is the right place for Buttonbush.
+          Buttonbush (<em>Cephalanthus occidentalis</em>) is a native shrub built for the wettest,
+          least plantable corner of a yard — roots that tolerate three to four feet of standing
+          water during flood periods. In July and August it opens 1-inch white spheres, each one
+          packed with 200 or more florets, pollen-bearing anthers protruding from every one. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="florets-heading">
-          <h2 id="florets-heading">200 florets per sphere, anthers protruding — pollen accessible from any angle without probing a tube</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Each Buttonbush flower head is not a single flower. It is a sphere packed with 200 or
-            more individual florets, each one a narrow tube with a single anther extending roughly
-            5 mm above the petal opening. When those anthers are arranged across the surface of a
-            1-inch ball, the result is pollen exposed in every direction — no tube to enter, no
-            deep structure to navigate.
-          </p>
-          <p>
-            This matters for short-tongued bees. Bumblebees and honeybees can reach into most
-            tubular flowers, but dozens of native bee species have tongue lengths under 4 mm and
-            cannot access nectar or pollen in flowers like bergamot, lobelia, or most mints.
-            Buttonbush florets expose their anthers above the tube. A bee with a 2 mm tongue
-            harvests Buttonbush pollen the same as a bumblebee does — by landing on the sphere's
-            surface and working across it.
-          </p>
-          <p>
-            A single flower head stays in active pollen production for three to four weeks. The
-            florets at the sphere's outer edge open first; as they finish, florets toward the center
-            are still in bud. A bee working a Buttonbush sphere in mid-July is in a different active
-            zone than one working the same sphere two weeks later. The opening sequence is visible in
-            the sphere at any given moment — some florets upright with full anthers, others spent,
-            others still sealed.
+            A native bee with a tongue under 4 millimeters can't reach nectar inside a tubular
+            flower like bergamot or mint — but a Buttonbush sphere has no tube to enter. Its
+            anthers extend roughly 5mm above each floret's opening, exposed on every side of the
+            ball. The bee lands anywhere on the sphere's surface and works across it, harvesting
+            pollen the same way a bumblebee does. [1]
           </p>
         </section>
 
-        <section aria-labelledby="wet-corner-heading">
-          <h2 id="wet-corner-heading">Roots in standing water — the low corner that drains in summer is the right site</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Cephalanthus-occidentalis-flower-head.JPG/1280px-Cephalanthus-occidentalis-flower-head.JPG"
+            alt="Close-up of a single Buttonbush flower sphere showing dozens of thread-like anthers radiating outward"
+            width={1280}
+            height={853}
+            loading="lazy"
+          />
+          <figcaption>
+            Florets at a sphere's outer edge open first while the center is still in bud — a
+            single head stays in active pollen production for three to four weeks.
+            <span className="photo-credit"> Photo: Sten Porse&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:Cephalanthus-occidentalis-flower-head.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            Buttonbush grows naturally at the water's edge. In its native habitat, root systems sit
-            in saturated soil from early spring through summer, sometimes submerged under a foot or
-            more of water during flood events. The shrub's vascular tissue is adapted to move oxygen
-            to roots in anaerobic conditions — the same mechanism that allows swamp maples and
-            willows to survive flooded sites.
-          </p>
-          <p>
-            In a yard: a low depression that holds standing water for two to six weeks after a rain
-            event and then dries down gradually through summer is a candidate. A rain garden with a
-            wet zone in the center, a downspout discharge area, a slope base that collects runoff —
-            any of these sites can support Buttonbush. It grows 6 to 10 feet tall over several
-            years and can be cut back hard in late winter to control size without killing the plant.
-          </p>
-          <p>
-            Planted in average garden soil with no seasonal wet period, Buttonbush survives but grows
-            slowly. The same shrub in a wet corner reaches full height in four to five years and
-            blooms reliably each July without irrigation.
+            Buttonbush blooms from early July through late August, the gap between spring natives
+            like New Jersey Tea and the late-August opening of Canada Goldenrod and New England
+            Aster. Migrating monarchs, sphinx moths working the spheres at dusk, and Ruby-throated
+            Hummingbirds all visit during this window. After bloom, each sphere hardens into a
+            cluster of small seeds that ripens in September and stays on the branch through
+            winter — Wood Ducks and other waterfowl pick them off the water's surface below. New
+            leaves don't emerge until late May, so the shrub looks bare into early June; that's
+            normal, not dieback. [1]
           </p>
         </section>
 
-        <section aria-labelledby="timing-heading">
-          <h2 id="timing-heading">July to late August — the seven-week window between spring bloomers and fall goldenrod</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            Wild Columbine, New Jersey Tea, and Common Milkweed all open before mid-July. Canada
-            Goldenrod and New England Aster don't open until late August at the earliest. Between
-            those two points — from early July to late August — the number of open native flowers
-            in most yards drops. Buttonbush, Swamp Milkweed, Purple Coneflower, and Wild Bergamot
-            carry the mid-summer bloom sequence.
-          </p>
-          <p>
-            Monarchs moving south in August and September pass through during Buttonbush's bloom
-            window. An adult monarch nectaring on Buttonbush works the same way bees do — landing
-            on the sphere's surface and moving across it, feeding from floret to floret. Sphinx
-            moths visit Buttonbush flowers at dusk and into the night; they hover in front of the
-            sphere and probe each floret with a long proboscis without landing.
-          </p>
-          <p>
-            Ruby-throated Hummingbirds visit Buttonbush through the same weeks they visit Swamp
-            Milkweed — July and August. The floret tube length on Buttonbush is short enough that a
-            hummingbird reaching in for nectar also contacts the anthers and picks up pollen on its
-            bill, which it carries to the next sphere.
+            Buttonbush isn't at risk, but it's rarely planted, because the spot it needs — a low
+            corner that holds standing water for weeks at a time — is the spot most yards try to
+            drain rather than plant.
           </p>
         </section>
 
-        <section aria-labelledby="seeds-heading">
-          <h2 id="seeds-heading">Ball-shaped seed clusters in September — Wood Ducks and teal work the water surface below</h2>
-          <p>
-            After flowering, each Buttonbush sphere develops into a hard, brown cluster of small
-            drupes — seeds with a thin fleshy coat. The clusters ripen in September and remain on
-            the branch tips through winter, visible as brown knobs on bare gray stems. They don't
-            drop on their own; they wait for disturbance — a bird landing, ice weight, wind.
-          </p>
-          <p>
-            Wood Ducks, teal, and other dabbling waterfowl consume Buttonbush drupes by working
-            the water surface below shrubs growing at the pond edge. Seeds that fall into the water
-            float briefly and are picked up by waterfowl before sinking. A Buttonbush growing over
-            a backyard pond or rain garden presents the same opportunity — seeds falling into the
-            water in October or November are available to any passing bird.
-          </p>
-          <p>
-            The brown seed clusters stay on the shrub through late winter. Cut them off in late
-            February before new growth begins, or leave them — both are fine. New leaves emerge
-            later than most native shrubs, in late May. The shrub looks bare into early June and
-            then leafs out quickly; this late timing is normal.
-          </p>
-        </section>
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <ol className="step-list">
+            <li>
+              Site it in the lowest, wettest corner of the yard — a spot that holds standing water
+              for two to six weeks after rain and dries down through summer is ideal. [2]
+            </li>
+            <li>
+              Skip irrigation once established; a Buttonbush in a true wet site reaches full
+              height in four to five years without supplemental water. [2]
+            </li>
+            <li>
+              Leave the seed clusters on the branches through winter — they don't drop on their
+              own, and waterfowl work them from the water below well into fall. [2]
+            </li>
+            <li>
+              Cut back hard in late winter if size needs control; it tolerates aggressive pruning
+              and regrows readily from the base. [2]
+            </li>
+          </ol>
+        </div>
 
-        <section aria-labelledby="context-heading">
-          <h2 id="context-heading">Buttonbush in the twelve-native sequence — mid-summer wet-site specialist opening in July</h2>
-          <p>
-            In a Camp Monarch garden, Buttonbush fills the July–August wet-site slot alongside
-            Swamp Milkweed. Both prefer the same low, moist conditions. Both open in the same weeks.
-            Together they extend the mid-summer bloom for bees, moths, hummingbirds, and migrating
-            monarchs through the gap between spring and fall.
-          </p>
-          <p>
-            Not every yard has a wet corner suited to Buttonbush. A yard on well-drained sandy soil
-            may not. But a yard with any persistent low spot, any area where a downspout or roof
-            run-off reaches the ground, or any slope that collects water has a candidate site —
-            and Buttonbush is one of the few native shrubs that turns that problem spot into a
-            productive bloom in the middle of summer.
-          </p>
-          <div className="connections">
-            <h3>Plants and species connected to Buttonbush</h3>
-            <ul>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('native-bees')}>
-                  Native Bees
-                </button>{' '}
-                — short-tongued native bees that cannot reach deep into tubular flowers harvest
-                pollen from Buttonbush florets; the exposed anthers are accessible from the surface
-                of the sphere without probing
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('american-bumble-bee')}>
-                  American Bumble Bee
-                </button>{' '}
-                — a declining native bumblebee species documented foraging on Buttonbush flower
-                heads in July and August; one of many bumblebee species that visits the spheres
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('swamp-milkweed')}>
-                  Swamp Milkweed
-                </button>{' '}
-                — blooms in the same July–August window and shares the wet-site preference; planting
-                both together in a low corner doubles the mid-summer nectar availability for
-                monarchs, bees, and hummingbirds
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('ruby-throated-hummingbird')}>
-                  Ruby-throated Hummingbird
-                </button>{' '}
-                — probes Buttonbush floret tubes in July and August; the short tube length allows
-                contact with the protruding anthers, transferring pollen to the bill between visits
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('american-woodcock')}>
-                  American Woodcock
-                </button>{' '}
-                — uses moist thicket edges where Buttonbush grows as daytime cover and nesting
-                habitat; the wet margins and standing-water zones that suit Buttonbush are the same
-                ground the woodcock probes at night for earthworms
-              </li>
-            </ul>
-          </div>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('native-bees')}>
+            <span className="neighbor-name">Native Bees</span>
+            <span className="neighbor-note">Short-tongued species that can't reach into tubular flowers harvest pollen freely from the exposed anthers covering each sphere.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-bumble-bee')}>
+            <span className="neighbor-name">American Bumble Bee</span>
+            <span className="neighbor-note">A declining native bumblebee documented foraging on Buttonbush spheres through July and August.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('swamp-milkweed')}>
+            <span className="neighbor-name">Swamp Milkweed</span>
+            <span className="neighbor-note">Shares the same wet-site preference and July-August bloom window; planting both doubles mid-summer nectar in a low corner.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('ruby-throated-hummingbird')}>
+            <span className="neighbor-name">Ruby-throated Hummingbird</span>
+            <span className="neighbor-note">Probes the short floret tubes for nectar in July and August, picking up pollen on its bill from the same anthers bees visit.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Cephalanthus_occidentalis" target="_blank" rel="noopener noreferrer">Wikipedia — Cephalanthus occidentalis (Buttonbush)</a></li>
+            <li><a href="https://xerces.org/bees" target="_blank" rel="noopener noreferrer">Xerces Society — Protecting Native Bees</a></li>
+          </ol>
         </section>
       </div>
     </>

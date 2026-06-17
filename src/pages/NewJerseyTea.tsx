@@ -9,179 +9,133 @@ export default function NewJerseyTea({ onNavigate }: NewJerseyTeaProps) {
     <>
       <div className="species-hero-image-wrap">
         <img
-          src="https://inaturalist-open-data.s3.amazonaws.com/photos/522976006/large.jpg"
-          alt="New Jersey Tea in bloom — dense clusters of small white flowers on arching stems along SR-63 in Perrysville, Indiana, June 2025"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/CeanothusAm1.jpg/1280px-CeanothusAm1.jpg"
+          alt="New Jersey Tea shrub with clusters of small white flowers on arching stems"
           className="species-hero-image"
-          style={{ objectPosition: 'center 55%' }}
+          style={{ objectPosition: 'center 40%' }}
+          width={1280}
+          height={857}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="species-hero-image-credit">
-          Photo: kent_ozment&nbsp;·&nbsp;
-          <a href="https://www.inaturalist.org/observations/290701996" target="_blank" rel="noopener noreferrer">iNaturalist obs. 290701996</a>
-          &nbsp;· CC0 / No Rights Reserved
+          Photo: Douglas Goldman&nbsp;·&nbsp;
+          <a href="https://commons.wikimedia.org/wiki/File:CeanothusAm1.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+          &nbsp;via Wikimedia Commons
         </div>
       </div>
 
       <section className="hero">
         <div className="hero__eyebrow">Native Plants</div>
-        <h1>The Mottled Duskywing lays her eggs on New Jersey Tea leaves.<br />Her caterpillars eat that plant and no other plant in eastern North America.</h1>
+        <h1>New Jersey Tea</h1>
         <p className="hero__lead">
           New Jersey Tea (<em>Ceanothus americanus</em>) is a native shrub that blooms May
-          through June across most of the eastern United States. The flower clusters are
-          small and white, carried on arching stems above dark green leaves. The plant
-          grows two to four feet tall in open, sunny spots with well-drained soil —
-          woodland edges, open prairies, rocky slopes.
-        </p>
-        <p className="hero__lead">
-          In eastern North America, <em>C. americanus</em> is the only native{' '}
-          <em>Ceanothus</em> species. The Mottled Duskywing skipper (<em>Erynnis martialis</em>)
-          needs <em>Ceanothus</em> foliage to complete its larval stage. Without this plant
-          in the landscape, the butterfly has no place to reproduce.
+          through June, its small white flowers carried in dense clusters on arching stems two
+          to four feet tall. It is the only <em>Ceanothus</em> species native to eastern North
+          America — and the Mottled Duskywing skipper needs <em>Ceanothus</em> leaves to
+          complete its larval stage. Without this one shrub in the landscape, the butterfly has
+          nowhere in the East to reproduce. [1]
         </p>
       </section>
 
       <div className="page">
-        <section aria-labelledby="duskywing-heading">
-          <h2 id="duskywing-heading">One egg on a New Jersey Tea leaf — no substitute plant in the eastern US</h2>
+        <section aria-labelledby="day-heading">
+          <h2 id="day-heading">A day in the life</h2>
           <p>
-            Female Mottled Duskywing skippers lay eggs on the leaves of <em>Ceanothus</em>.
-            The larvae hatch and eat the foliage through several instars, then pupate in
-            leaf litter at the base of the plant and overwinter as pupae. Adults emerge in
-            late April and May — they are among the first skippers flying in spring,
-            before most native wildflowers have opened.
-          </p>
-          <p>
-            In the West, several <em>Ceanothus</em> species grow across millions of acres
-            of open land. In the East, <em>C. americanus</em> is the only option. New
-            Jersey Tea once grew across second-growth shrublands and open woodland edges
-            that covered much of the eastern interior. As those early-successional habitats
-            matured into closed-canopy forest or were converted to mowed lawn, New Jersey
-            Tea disappeared from most of its former range. Mottled Duskywing populations
-            contracted with it. In several Midwestern and mid-Atlantic states, the butterfly
-            now appears on state lists of species requiring monitoring.
+            A female Mottled Duskywing lays her eggs on New Jersey Tea leaves and on no other
+            plant in the eastern half of the country. The caterpillars feed through several
+            instars, then pupate in the leaf litter at the base of the shrub and overwinter
+            there. Adults emerge in late April and May, among the first skippers flying each
+            spring, before most native wildflowers have opened. [1]
           </p>
         </section>
 
-        <section aria-labelledby="bloom-heading">
-          <h2 id="bloom-heading">White clusters in May and June — before common milkweed flowers open</h2>
+        <figure className="species-content-photo species-content-photo--right">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/CeanothusAm8.jpg/1280px-CeanothusAm8.jpg"
+            alt="Close view of New Jersey Tea's small white flower clusters"
+            width={1280}
+            height={1912}
+            loading="lazy"
+            style={{ objectPosition: 'center top' }}
+          />
+          <figcaption>
+            Bumblebee queens and small halictid bees work these clusters through May and June —
+            one of the few nectar sources open that early in the season.
+            <span className="photo-credit"> Photo: Douglas Goldman&nbsp;·&nbsp;<a href="https://commons.wikimedia.org/wiki/File:CeanothusAm8.jpg" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>&nbsp;via Wikimedia Commons</span>
+          </figcaption>
+        </figure>
+
+        <section aria-labelledby="year-heading">
+          <h2 id="year-heading">Through the year</h2>
           <p>
-            New Jersey Tea blooms from late May through most of June, depending on latitude.
-            This is the window between spring-blooming shrubs like serviceberry and the
-            opening of summer wildflowers. Common milkweed's flower clusters do not open
-            until mid-June; purple coneflower follows in July. New Jersey Tea fills that
-            gap when early-summer butterflies are actively foraging but few other native
-            plants are producing nectar.
-          </p>
-          <p>
-            Spring Azure butterflies (<em>Celastrina ladon</em>) — whose first generation
-            emerges in April and May — nectar from New Jersey Tea as one of their primary
-            early-summer sources. Bumblebee queens starting their forays in May, and small
-            native bees in the genera <em>Lasioglossum</em> and <em>Halictus</em>, work
-            the flower clusters through the blooming period.
+            Flowers open from late May through June, filling the gap between spring-blooming
+            shrubs and the wildflowers of midsummer — common milkweed doesn't open until
+            mid-June. Underground, root nodules fix nitrogen from the air into the soil all
+            season, enriching the ground around the plant without any fertilizer. By late
+            summer the small seed capsules dry and split, and American Goldfinches strip them
+            through August and September. [1]
           </p>
         </section>
 
-        <section aria-labelledby="nitrogen-heading">
-          <h2 id="nitrogen-heading">Root nodules pull nitrogen from the air into the soil</h2>
+        <section aria-labelledby="status-heading">
+          <h2 id="status-heading">How it's doing</h2>
           <p>
-            New Jersey Tea forms actinorhizal root nodules — small structures containing
-            symbiotic bacteria that fix atmospheric nitrogen into forms plant roots can
-            use. In the soil around a New Jersey Tea plant, nitrogen concentrations rise
-            over time. Neighboring plants in nitrogen-limited soils benefit from this
-            enrichment. The same process operates in legumes, but also in a separate
-            lineage that includes alder, bayberry, and several other native shrubs.
-          </p>
-          <p>
-            This matters in restored habitats and disturbed urban soils, where nitrogen is
-            typically depleted. A New Jersey Tea planted in a thin, sandy border will
-            gradually improve soil fertility in the surrounding area without any fertilizer
-            input.
+            New Jersey Tea once grew across the early-successional shrublands and open woodland
+            edges that covered much of the eastern interior. As that habitat matured into
+            closed-canopy forest or was converted to mowed lawn, the plant disappeared from
+            most of its former range — and the Mottled Duskywing, which depends on it
+            completely, now appears on species-of-concern lists in several states.
           </p>
         </section>
 
-        <section aria-labelledby="growing-heading">
-          <h2 id="growing-heading">Deep taproot, full sun, dry to medium soil, zones 3 through 8</h2>
-          <p>
-            New Jersey Tea develops a deep taproot in its first two or three growing
-            seasons. Once that root system is established, the plant draws moisture from
-            depths below the dry layer that affects shallow-rooted annuals and perennials
-            during summer drought. It does not tolerate consistently wet soil, but adapts
-            to clay, sand, or rocky ground in full to partial sun.
-          </p>
-          <p>
-            The plant does not transplant easily after the first year — the taproot makes
-            moving mature specimens difficult. Plant it where it will stay. It grows two
-            to four feet tall and spreads to a similar width over several years without
-            suckering aggressively. Cutting the stems back to 12 inches in late winter
-            encourages dense new growth and heavier bloom.
-          </p>
-          <p>
-            Native plant nurseries carry New Jersey Tea as plug starts or one-gallon
-            containers in spring. The first season after planting, the shrub puts most of
-            its energy into root development; above-ground growth is modest and bloom may
-            be light. By the third season, a well-established plant carries dozens of
-            flower clusters from late May through June.
-          </p>
-        </section>
+        <div className="action-panel">
+          <h2 style={{ marginTop: 0 }}>How you can help</h2>
+          <ol className="step-list">
+            <li>
+              Plant in full sun with well-drained soil — it tolerates clay, sand, or rocky
+              ground once established. [2]
+            </li>
+            <li>
+              Choose the planting spot carefully and leave it there; the deep taproot makes
+              mature plants very difficult to move. [2]
+            </li>
+            <li>
+              Cut stems back to about 12 inches in late winter to encourage denser growth and
+              heavier bloom the following spring. [2]
+            </li>
+            <li>
+              Skip insecticide near the shrub from April through summer, when Mottled Duskywing
+              caterpillars may be feeding on the leaves. [2]
+            </li>
+          </ol>
+        </div>
 
-        <section aria-labelledby="context-heading">
-          <h2 id="context-heading">New Jersey Tea in May and June, before the milkweed blooms</h2>
-          <p>
-            The five-native bloom sequence — milkweed, coneflower, Joe Pye Weed, goldenrod,
-            and aster — covers June through October. New Jersey Tea extends that sequence
-            back into May. For a yard trying to provide nectar and larval host plants from
-            spring through fall, it fills the window that begins when Mottled Duskywing
-            adults emerge in late April and runs through June, when milkweed flowers open
-            and the monarch breeding season begins in earnest.
-          </p>
-          <p>
-            For the Mottled Duskywing, the calculation is simpler: the adult butterflies
-            fly in April and May and need nectar; the females need leaves on which to lay
-            eggs. A single New Jersey Tea shrub provides both. Whether a skipper that is
-            running short of habitat finds a yard with one flowering <em>Ceanothus</em>
-            or not is a matter of proximity — but the plant has to be there first.
-          </p>
-          <div className="connections">
-            <h3>Plants and species connected to New Jersey Tea</h3>
-            <ul>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('common-milkweed')}>
-                  Common Milkweed
-                </button>{' '}
-                — blooms June–July, just after New Jersey Tea finishes
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('wild-bergamot')}>
-                  Wild Bergamot
-                </button>{' '}
-                — fills July and August, the window after New Jersey Tea and milkweed
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('canada-goldenrod')}>
-                  Canada Goldenrod
-                </button>{' '}
-                — blooms August through October, the late end of the five-plant sequence that New Jersey Tea opens in May; a goldenrod stand in September is feeding the same migrating monarchs that passed New Jersey Tea flowers in late May
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('native-bees')}>
-                  Native Bees
-                </button>{' '}
-                — bumblebee queens and small halictid bees visit the white flower clusters in May
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('monarch-life')}>
-                  Monarch Butterfly
-                </button>{' '}
-                — adults moving north in late May and early June need nectar before common milkweed flowers open; New Jersey Tea is blooming during that gap
-              </li>
-              <li>
-                <button className="link-button" onClick={() => onNavigate('american-goldfinch')}>
-                  American Goldfinch
-                </button>{' '}
-                — the small tan seed capsules ripen in late summer after the white flowers fade; goldfinches strip seeds from the dried heads in August and September
-              </li>
-            </ul>
-          </div>
+        <div className="neighbor-grid">
+          <button className="neighbor-card" onClick={() => onNavigate('common-milkweed')}>
+            <span className="neighbor-name">Common Milkweed</span>
+            <span className="neighbor-note">Opens in mid-June, just after New Jersey Tea finishes, carrying the early-summer nectar sequence forward.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('native-bees')}>
+            <span className="neighbor-name">Native Bees</span>
+            <span className="neighbor-note">Bumblebee queens and small halictid bees rely on the May and June flower clusters as an early-season nectar source.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('monarch-life')}>
+            <span className="neighbor-name">Monarch Butterfly</span>
+            <span className="neighbor-note">Adults moving north in late May need nectar before common milkweed opens; New Jersey Tea is blooming during that exact gap.</span>
+          </button>
+          <button className="neighbor-card" onClick={() => onNavigate('american-goldfinch')}>
+            <span className="neighbor-name">American Goldfinch</span>
+            <span className="neighbor-note">Strips seeds from the dried summer seed capsules in August and September.</span>
+          </button>
+        </div>
+
+        <section aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Learn more and sources</h2>
+          <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Ceanothus_americanus" target="_blank" rel="noopener noreferrer">Wikipedia — Ceanothus americanus (New Jersey Tea)</a></li>
+            <li><a href="https://www.butterfliesandmoths.org/species/Erynnis-martialis" target="_blank" rel="noopener noreferrer">Butterflies and Moths of North America — Mottled Duskywing</a></li>
+          </ol>
         </section>
       </div>
     </>
