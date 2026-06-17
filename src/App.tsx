@@ -187,6 +187,15 @@ import BlackWalnut from './pages/BlackWalnut'
 import AmericanBeech from './pages/AmericanBeech'
 import ShagbarkHickory from './pages/ShagbarkHickory'
 import RedMaple from './pages/RedMaple'
+import GrowingGuide from './pages/GrowingGuide'
+import TurfRemoval from './pages/TurfRemoval'
+import GardenBorders from './pages/GardenBorders'
+import SoilPreparation from './pages/SoilPreparation'
+import ColdStratification from './pages/ColdStratification'
+import StartSeedsIndoors from './pages/StartSeedsIndoors'
+import DirectSowSeeds from './pages/DirectSowSeeds'
+import SeedBalls from './pages/SeedBalls'
+import Mulch from './pages/Mulch'
 
 import { ALL_PAGE_SLUGS, type PageSlug } from './config/sitePages'
 
@@ -409,6 +418,15 @@ function App() {
       case 'american-beech':        return <AmericanBeech onNavigate={navigateTo} />
       case 'shagbark-hickory':      return <ShagbarkHickory onNavigate={navigateTo} />
       case 'red-maple':             return <RedMaple onNavigate={navigateTo} />
+      case 'growing-guide':         return <GrowingGuide onNavigate={navigateTo} />
+      case 'turf-removal':          return <TurfRemoval onNavigate={navigateTo} />
+      case 'garden-borders':        return <GardenBorders onNavigate={navigateTo} />
+      case 'soil-preparation':      return <SoilPreparation onNavigate={navigateTo} />
+      case 'cold-stratification':   return <ColdStratification onNavigate={navigateTo} />
+      case 'start-seeds-indoors':   return <StartSeedsIndoors onNavigate={navigateTo} />
+      case 'direct-sow-seeds':      return <DirectSowSeeds onNavigate={navigateTo} />
+      case 'seed-balls':            return <SeedBalls onNavigate={navigateTo} />
+      case 'mulch':                 return <Mulch onNavigate={navigateTo} />
       default: return <Home onNavigate={navigateTo} />
     }
   }

@@ -162,6 +162,7 @@ const groups: NavGroup[] = [
       { id: 'plant-milkweed',         label: 'Plant Milkweed' },
       { id: 'choose-a-plant',         label: 'Choose a Plant' },
       { id: 'native-plant-near-me',   label: 'Find Plants Near Me' },
+      { id: 'growing-guide',          label: 'Growing Guide (How-To)' },
       { id: 'waystation-guide',       label: 'Waystation Guide' },
       { id: 'raise-a-monarch',        label: 'Raise a Monarch' },
       { id: 'log-a-sighting',         label: 'Log a Sighting' },

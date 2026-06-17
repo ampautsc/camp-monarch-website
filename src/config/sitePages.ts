@@ -201,6 +201,15 @@ export const ALL_PAGE_SLUGS = [
   'american-beech',
   'shagbark-hickory',
   'red-maple',
+  'growing-guide',
+  'turf-removal',
+  'garden-borders',
+  'soil-preparation',
+  'cold-stratification',
+  'start-seeds-indoors',
+  'direct-sow-seeds',
+  'seed-balls',
+  'mulch',
 ] as const
 
 export type PageSlug = typeof ALL_PAGE_SLUGS[number]
