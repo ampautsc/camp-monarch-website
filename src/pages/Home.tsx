@@ -1,19 +1,19 @@
 import type { Page } from '../App'
 
-// Real monarch-on-milkweed footage (U.S. Fish & Wildlife Service, public domain),
-// hosted in /public so it isn't hotlinked. Its own first frame is the instant poster
-// (shown while the video loads, and in place of it for reduced-motion users).
-const HERO_VIDEO_URL = '/monarch-milkweed.webm'
-const HERO_POSTER_URL = '/monarch-milkweed-poster.jpg'
+// Real monarch footage (Gailhampshire, CC BY 2.0, via Wikimedia Commons), hosted in
+// /public so it isn't hotlinked. Its own first frame is the instant poster (shown
+// while the video loads, and in place of it for reduced-motion users).
+const HERO_VIDEO_URL = '/monarch-hero.webm'
+const HERO_POSTER_URL = '/monarch-hero-poster.jpg'
 const HERO_CREDIT_URL =
-  'https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_on_Swamp_Milkweed_(29066537375).webm'
+  'https://commons.wikimedia.org/wiki/File:Monarch_Butterflies._Danaus_plexippus_video.webm'
 
 interface HomeProps {
   onNavigate: (page: Page) => void
 }
 
-// The homepage is intentionally just this hero: the line, two buttons, and a real
-// monarch-on-milkweed video. Everything else lives one click deeper.
+// The homepage is intentionally just this hero: the line, two buttons, and real
+// monarch video. Everything else lives one click deeper.
 export default function Home({ onNavigate }: HomeProps) {
   return (
     <section className="home-hero">
@@ -55,7 +55,7 @@ export default function Home({ onNavigate }: HomeProps) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Video: USFWS · public domain
+        Video: Gailhampshire · CC BY 2.0
       </a>
     </section>
   )
