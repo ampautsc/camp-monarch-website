@@ -1,27 +1,34 @@
 import type { Page } from '../App'
 
-// Verified Wikimedia Commons photo (USFWS Midwest Region, CC BY 2.0). Credited in the hero corner.
-// 1920px thumb of the same file the homepage already used, for a crisp full-bleed hero.
-const HERO_PHOTO_URL =
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Monarch_butterfly_on_common_milkweed_%2848372506736%29.jpg/1920px-Monarch_butterfly_on_common_milkweed_%2848372506736%29.jpg'
-const HERO_PHOTO_CREDIT_URL =
-  'https://commons.wikimedia.org/wiki/File:Monarch_butterfly_on_common_milkweed_(48372506736).jpg'
+// Real monarch-on-milkweed footage (U.S. Fish & Wildlife Service, public domain),
+// hosted in /public so it isn't hotlinked. Its own first frame is the instant poster
+// (shown while the video loads, and in place of it for reduced-motion users).
+const HERO_VIDEO_URL = '/monarch-milkweed.webm'
+const HERO_POSTER_URL = '/monarch-milkweed-poster.jpg'
+const HERO_CREDIT_URL =
+  'https://commons.wikimedia.org/wiki/File:Monarch_Butterfly_on_Swamp_Milkweed_(29066537375).webm'
 
 interface HomeProps {
   onNavigate: (page: Page) => void
 }
 
-// The homepage is intentionally just this hero: the line, two buttons, and a
-// glorious monarch-on-milkweed photo in slow motion. Everything else lives one
-// click deeper, reached by the buttons and the nav.
+// The homepage is intentionally just this hero: the line, two buttons, and a real
+// monarch-on-milkweed video. Everything else lives one click deeper.
 export default function Home({ onNavigate }: HomeProps) {
   return (
     <section className="home-hero">
-      <div
+      <img className="home-hero__poster" src={HERO_POSTER_URL} alt="" aria-hidden="true" />
+      <video
         className="home-hero__media"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster={HERO_POSTER_URL}
         aria-hidden="true"
-        style={{ backgroundImage: `url(${HERO_PHOTO_URL})` }}
-      />
+      >
+        <source src={HERO_VIDEO_URL} type="video/webm" />
+      </video>
       <div className="home-hero__scrim" aria-hidden="true" />
 
       <div className="home-hero__panel">
@@ -44,11 +51,11 @@ export default function Home({ onNavigate }: HomeProps) {
 
       <a
         className="home-hero__credit"
-        href={HERO_PHOTO_CREDIT_URL}
+        href={HERO_CREDIT_URL}
         target="_blank"
         rel="noopener noreferrer"
       >
-        Photo: USFWS · CC BY 2.0
+        Video: USFWS · public domain
       </a>
     </section>
   )
