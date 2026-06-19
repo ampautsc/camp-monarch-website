@@ -397,6 +397,21 @@
   opacity: 0.5;
 }
 
+/* Inline text-link buttons (habitat hero hub) */
+.hub-textlink {
+  background: none;
+  border: none;
+  color: var(--monarch-orange);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+.hub-textlink:hover {
+  color: var(--monarch-green);
+}
+
 .home-wrap {
   max-width: 900px;
   margin: 0 auto;

@@ -37,7 +37,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <span className="home-hero__headline-accent">You can help.</span>
         </h1>
         <div className="home-hero__actions">
-          <button className="hero__cta" onClick={() => onNavigate('growing-guide')}>
+          <button className="hero__cta" onClick={() => onNavigate('habitat-hero')}>
             Be a habitat hero →
           </button>
           <button
