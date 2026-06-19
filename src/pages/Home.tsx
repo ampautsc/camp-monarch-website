@@ -1,12 +1,12 @@
 import type { Page } from '../App'
 
-// Real monarch footage (Gailhampshire, CC BY 2.0, via Wikimedia Commons), hosted in
-// /public so it isn't hotlinked. Its own first frame is the instant poster (shown
-// while the video loads, and in place of it for reduced-motion users).
-const HERO_VIDEO_URL = '/monarch-hero.webm'
+// Real monarch footage (Pexels, free license — no attribution required; courtesy
+// credit kept). Tripod-steady close-up of a monarch on native ironweed & goldenrod,
+// hosted in /public so it isn't hotlinked. MP4 so it autoplays everywhere incl. iOS.
+// Its own frame is the instant poster (and the reduced-motion fallback).
+const HERO_VIDEO_URL = '/monarch-hero.mp4'
 const HERO_POSTER_URL = '/monarch-hero-poster.jpg'
-const HERO_CREDIT_URL =
-  'https://commons.wikimedia.org/wiki/File:Monarch_Butterflies._Danaus_plexippus_video.webm'
+const HERO_CREDIT_URL = 'https://www.pexels.com/video/3637343/'
 
 interface HomeProps {
   onNavigate: (page: Page) => void
@@ -27,7 +27,7 @@ export default function Home({ onNavigate }: HomeProps) {
         poster={HERO_POSTER_URL}
         aria-hidden="true"
       >
-        <source src={HERO_VIDEO_URL} type="video/webm" />
+        <source src={HERO_VIDEO_URL} type="video/mp4" />
       </video>
       <div className="home-hero__scrim" aria-hidden="true" />
 
@@ -55,7 +55,7 @@ export default function Home({ onNavigate }: HomeProps) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Video: Gailhampshire · CC BY 2.0
+        Video: Pexels
       </a>
     </section>
   )
