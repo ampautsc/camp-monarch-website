@@ -4,132 +4,31 @@ interface FooterProps {
   onNavigate: (page: Page) => void
 }
 
+// A small, curated set — the full site is reachable from the nav, so the footer
+// stays clean rather than repeating every page.
+const LINKS: { page: Page; label: string }[] = [
+  { page: 'why-monarchs', label: 'Why it matters' },
+  { page: 'growing-guide', label: 'Growing guide' },
+  { page: 'species-gallery', label: 'Meet your neighbors' },
+  { page: 'take-action', label: 'Take action' },
+  { page: 'about', label: 'About' },
+  { page: 'contact', label: 'Contact' },
+]
+
 export default function Footer({ onNavigate }: FooterProps) {
   return (
     <footer className="site-footer">
-      <p style={{ lineHeight: '1.9' }}>
-        <button
-          onClick={() => onNavigate('take-action')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Take action
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('log-a-sighting')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Log a sighting
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('habitat-score')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Yard check
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('monarch-life')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          The monarch's life
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('species-gallery')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Species gallery
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('native-plant-near-me')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Find plants near me
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('choose-a-plant')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Choose a plant
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('plant-milkweed')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Plant milkweed
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('the-migration')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Track the migration
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('seasonal-calendar')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Seasonal calendar
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('spring-checklist')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Spring checklist
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('leave-the-leaves')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Leave the leaves
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('water-for-wildlife')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Water for wildlife
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('invasive-plants')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Invasive plants
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('pesticide-guide')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Pesticides guide
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('hoa-guide')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          HOA guide
-        </button>
-        {' · '}
-        <button
-          onClick={() => onNavigate('why-monarchs')}
-          style={{ background: 'none', border: 'none', color: 'var(--monarch-orange)', cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', textDecoration: 'underline' }}
-        >
-          Why it matters
-        </button>
+      <nav className="site-footer__links" aria-label="Footer">
+        {LINKS.map(link => (
+          <button key={link.page} className="site-footer__link" onClick={() => onNavigate(link.page)}>
+            {link.label}
+          </button>
+        ))}
+      </nav>
+      <p className="site-footer__tagline">
+        Connecting people with the natural world, one patch of milkweed at a time.
       </p>
-      <p style={{ marginTop: '0.75rem', opacity: 0.6 }}>
-        Camp Monarch — connecting people with the natural world, one patch of milkweed at a time.
-      </p>
+      <p className="site-footer__legal">© {new Date().getFullYear()} Camp Monarch · a 501(c)(3) nonprofit</p>
     </footer>
   )
 }
