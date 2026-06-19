@@ -5,24 +5,40 @@ interface HabitatHeroHubProps {
   onNavigate: (page: Page) => void
 }
 
-// The calm, immersive side of the door — same world as the homepage, now it's
-// your workshop. No crisis here; just the next step. A launchpad a habitat hero
-// comes back to, organized by what they need.
+// The calm, immersive side of the door. A hero builds three things: a Monarch
+// Nursery, a Monarch Way Station, and keeps it Poison-Free. Everything else
+// supports those moves and lives in the small row beneath.
 
-type Lane = { page: Page; img: string; title: string; note: string }
+type Move = { page: Page; img: string; title: string; note: string }
 
-const LANES: Lane[] = [
-  { page: 'growing-guide', img: '/hub-start.jpg', title: 'Start your first patch', note: 'Eight steps from a patch of lawn to living habitat.' },
-  { page: 'choose-a-plant', img: '/hub-find.jpg', title: 'Find your plants', note: 'For your sun, your soil, and the wildlife you want to help.' },
-  { page: 'species-gallery', img: '/hub-neighbors.jpg', title: 'Meet your neighbors', note: 'The monarchs, bees, and birds your habitat brings back.' },
-  { page: 'native-plant-near-me', img: '/hub-buy.jpg', title: 'Where to buy', note: 'Trusted native-plant nurseries and seed sources.' },
-  { page: 'seasonal-calendar', img: '/hub-season.jpg', title: 'Season by season', note: 'How to tend your habitat all year.' },
+const BIG_THREE: Move[] = [
+  {
+    page: 'plant-milkweed',
+    img: '/hub-start.jpg',
+    title: 'Plant a Monarch Nursery',
+    note: 'Milkweed is the only plant monarchs are born on. Trade a patch of lawn for a milkweed bed and you raise the next generation.',
+  },
+  {
+    page: 'waystation-guide',
+    img: '/hub-neighbors.jpg',
+    title: 'Build a Monarch Way Station',
+    note: 'Native flowers, a little water, and some cover give traveling monarchs a place to rest and refuel.',
+  },
+  {
+    page: 'pesticide-guide',
+    img: '/hub-find.jpg',
+    title: 'Keep it Poison-Free',
+    note: 'Skip the bug and weed sprays, so the caterpillars and bees you bring back survive.',
+  },
 ]
 
-const GO_FURTHER: { page: Page; label: string }[] = [
-  { page: 'log-a-sighting', label: 'Log a sighting' },
+const HELPERS: { page: Page; label: string }[] = [
+  { page: 'choose-a-plant', label: 'Find plants for your yard' },
+  { page: 'native-plant-near-me', label: 'Where to buy' },
+  { page: 'species-gallery', label: 'Meet your neighbors' },
+  { page: 'seasonal-calendar', label: 'Seasonal calendar' },
   { page: 'habitat-score', label: 'Score your yard' },
-  { page: 'raise-a-monarch', label: 'Raise a monarch' },
+  { page: 'log-a-sighting', label: 'Log a sighting' },
 ]
 
 // "Right now, this month" — the instant next step for a returning hero.
@@ -58,34 +74,35 @@ export default function HabitatHeroHub({ onNavigate }: HabitatHeroHubProps) {
         </div>
 
         <div className="hub-cards">
-          {LANES.map(lane => (
+          {BIG_THREE.map(move => (
             <button
-              key={lane.page}
+              key={move.page}
               className="hub-card"
-              style={{ backgroundImage: `url(${lane.img})` }}
-              onClick={() => onNavigate(lane.page)}
+              style={{ backgroundImage: `url(${move.img})` }}
+              onClick={() => onNavigate(move.page)}
             >
               <span className="hub-card__scrim" aria-hidden="true" />
               <span className="hub-card__body">
-                <span className="hub-card__title">{lane.title}</span>
-                <span className="hub-card__note">{lane.note}</span>
+                <span className="hub-card__title">{move.title}</span>
+                <span className="hub-card__note">{move.note}</span>
               </span>
             </button>
           ))}
         </div>
 
-        <p className="hub-gofurther">
-          Go further:{' '}
-          {GO_FURTHER.map((g, i) => (
-            <span key={g.page}>
-              <button className="hub-textlink" onClick={() => onNavigate(g.page)}>{g.label}</button>
-              {i < GO_FURTHER.length - 1 ? '  ·  ' : ''}
-            </span>
-          ))}
-        </p>
+        <div className="hub-helpers">
+          <p className="hub-helpers__label">When you need them</p>
+          <div className="hub-helpers__links">
+            {HELPERS.map(h => (
+              <button key={h.page} className="hub-textlink" onClick={() => onNavigate(h.page)}>
+                {h.label}
+              </button>
+            ))}
+          </div>
+        </div>
 
         <p className="hub-credits">
-          Photos: caterpillar by Derek Ramsey (CC BY-SA 2.5); others USFWS &amp; NPS (public domain) and Pexels.
+          Photos: caterpillar by Derek Ramsey (CC BY-SA 2.5); others USFWS (public domain) and Pexels.
         </p>
       </div>
     </div>

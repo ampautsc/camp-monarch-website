@@ -469,7 +469,7 @@
 }
 .hub-card {
   position: relative;
-  min-height: 220px;
+  min-height: 252px;
   display: flex;
   align-items: flex-end;
   text-align: left;
@@ -521,6 +521,24 @@
   font-size: 0.78rem;
   color: var(--text-secondary);
   opacity: 0.85;
+}
+.hub-helpers {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.hub-helpers__label {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.hub-helpers__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
 }
 
 .home-wrap {
