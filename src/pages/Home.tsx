@@ -44,7 +44,7 @@ export default function Home({ onNavigate }: HomeProps) {
             className="hero__cta hero__cta--ghost"
             onClick={() => onNavigate('why-monarchs')}
           >
-            Learn more about the problem
+            Why we need heroes
           </button>
         </div>
       </div>
