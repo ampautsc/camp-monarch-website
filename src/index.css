@@ -541,6 +541,27 @@
   gap: 0.5rem 1.5rem;
 }
 
+/* ── Why we need heroes (facts + charts) ──────────────────────────────────── */
+.why-chart { margin: 1.25rem 0 0.4rem; }
+.why-chart__title { font-weight: bold; color: var(--text-primary); margin: 0 0 0.5rem; font-size: 0.95rem; }
+.why-chart__svg { width: 100%; height: auto; display: block; background: #fff; border: 1px solid var(--border); border-radius: 8px; }
+.why-source { font-size: 0.8rem; color: var(--text-secondary); margin: 0.35rem 0 1.5rem; }
+.why-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+.why-photo { width: 100%; height: auto; border-radius: 10px; margin: 0; }
+.why-bars { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; }
+.why-bar { margin-bottom: 1.1rem; }
+.why-bar:last-child { margin-bottom: 0.25rem; }
+.why-bar__head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.3rem; }
+.why-bar__label { font-weight: bold; color: var(--text-primary); }
+.why-bar__pct { font-weight: bold; color: #8a5a12; white-space: nowrap; }
+.why-bar__track { background: var(--monarch-light); border-radius: 4px; height: 14px; overflow: hidden; }
+.why-bar__fill { background: var(--monarch-green); height: 100%; border-radius: 4px; }
+.why-bar__caption { font-size: 0.82rem; color: var(--text-secondary); margin-top: 0.3rem; }
+.why-media { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1rem 0 0.5rem; }
+.why-media__item { margin: 0; }
+.why-media__item img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; display: block; }
+.why-media__item figcaption { font-size: 0.82rem; color: var(--text-secondary); margin-top: 0.35rem; }
+
 .home-wrap {
   max-width: 900px;
   margin: 0 auto;
