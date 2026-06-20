@@ -161,3 +161,64 @@ export function BarChart(props: {
     </ChartFrame>
   )
 }
+
+export type ColumnDatum = { label: string | number; value: number }
+
+// Vertical bars, one per period. Use this for a year-over-year value (the
+// canonical "population by year" chart). It reads the annual change more
+// plainly than an area line and stays compact, so it earns its space.
+export function ColumnChart(props: {
+  title: string
+  subtitle?: string
+  xLabel: string
+  yLabel: string
+  data: ColumnDatum[]
+  ariaLabel: string
+  xTickEvery?: number
+  yMax?: number
+  referenceLines?: { y: number; label: string; color?: string }[]
+  source?: Source
+  height?: number
+  barColor?: string
+}) {
+  const { data, xLabel, yLabel, referenceLines = [], ariaLabel } = props
+  const VW = 720, VH = props.height ?? 260
+  const ML = 56, MR = 14, MT = 16, MB = 44
+  const PW = VW - ML - MR, PH = VH - MT - MB
+  const dataMax = Math.max(...data.map(d => d.value), ...referenceLines.map(r => r.y))
+  const yticks = niceTicks(props.yMax ?? dataMax)
+  const yMax = props.yMax ?? yticks[yticks.length - 1]
+  const n = data.length
+  const slot = PW / n
+  const bw = slot * 0.68
+  const py = (v: number) => MT + (1 - v / yMax) * PH
+  const bx = (i: number) => ML + i * slot + (slot - bw) / 2
+  const every = props.xTickEvery ?? Math.max(1, Math.ceil(n / 6))
+  const barColor = props.barColor ?? CHART_COLORS.green
+  return (
+    <ChartFrame title={props.title} subtitle={props.subtitle} source={props.source}>
+      <svg viewBox={`0 0 ${VW} ${VH}`} style={{ width: '100%', height: 'auto', display: 'block' }} role="img" aria-label={ariaLabel}>
+        {yticks.map(t => (
+          <g key={t}>
+            <line x1={ML} y1={py(t)} x2={VW - MR} y2={py(t)} stroke={CHART_COLORS.grid} strokeWidth={1} />
+            <text x={ML - 8} y={py(t) + 4} textAnchor="end" fontSize={11} fill={CHART_COLORS.muted}>{t}</text>
+          </g>
+        ))}
+        <text transform={`translate(14 ${MT + PH / 2}) rotate(-90)`} textAnchor="middle" fontSize={12} fill={CHART_COLORS.text}>{yLabel}</text>
+        {data.map((d, i) => (
+          <rect key={i} x={bx(i)} y={py(d.value)} width={bw} height={Math.max(0, py(0) - py(d.value))} fill={barColor} rx={1} />
+        ))}
+        {data.map((d, i) => (i % every === 0 ? (
+          <text key={'x' + i} x={bx(i) + bw / 2} y={VH - MB + 16} textAnchor="middle" fontSize={11} fill={CHART_COLORS.muted}>{d.label}</text>
+        ) : null))}
+        <text x={ML + PW / 2} y={VH - 4} textAnchor="middle" fontSize={12} fill={CHART_COLORS.text}>{xLabel}</text>
+        {referenceLines.map((r, i) => (
+          <g key={i}>
+            <line x1={ML} y1={py(r.y)} x2={VW - MR} y2={py(r.y)} stroke={r.color ?? CHART_COLORS.deepOrange} strokeWidth={1.5} strokeDasharray="5 4" />
+            <text x={VW - MR} y={py(r.y) - 5} textAnchor="end" fontSize={11} fill={r.color ?? CHART_COLORS.deepOrange}>{r.label}</text>
+          </g>
+        ))}
+      </svg>
+    </ChartFrame>
+  )
+}

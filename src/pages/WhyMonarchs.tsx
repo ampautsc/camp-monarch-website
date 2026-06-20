@@ -1,5 +1,5 @@
 import type { Page } from '../App'
-import { LineChart, BarChart } from '../components/ChartKit'
+import { ColumnChart, BarChart } from '../components/ChartKit'
 
 interface WhyMonarchsProps {
   onNavigate: (page: Page) => void
@@ -32,17 +32,16 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
       <div className="page">
         <section aria-labelledby="why-monarch">
           <h2 id="why-monarch">The monarch</h2>
-          <LineChart
+          <ColumnChart
             title="Monarch population in Mexico, 1994 to 2026"
-            xLabel="Year (start of winter season)"
-            yLabel="Hectares of forest occupied"
-            series={[{ name: 'Overwintering area', points: MONARCH }]}
-            xTicks={[1994, 2004, 2014, 2024]}
+            xLabel="Winter season (start year)"
+            yLabel="Hectares occupied"
+            data={MONARCH.map(([year, v]) => ({ label: year, value: v }))}
+            xTickEvery={5}
             yMax={20}
-            area
-            referenceLines={[{ y: 6, label: 'about 6 ha needed for a stable population' }]}
+            referenceLines={[{ y: 6, label: 'stable population needs about 6 ha' }]}
             source={{ text: 'WWF Mexico and CONANP annual census, via Monarch Joint Venture', href: 'https://monarchjointventure.org/blog/eastern-monarch-overwintering-population-increases-from-last-year' }}
-            ariaLabel="Eastern monarch overwintering area falls from about 18 hectares in the mid 1990s to under 1 hectare in recent years, far below the 6 hectares needed for a stable population."
+            ariaLabel="Yearly monarch overwintering area, falling from about 18 hectares in the mid 1990s to roughly 1 to 3 hectares in recent years, below the 6 hectare stable line."
           />
 
           <div className="why-facts">
