@@ -1,12 +1,13 @@
 import type { Page } from '../App'
-import { ColumnChart, BarChart } from '../components/ChartKit'
+import { ColumnChart, LineChart } from '../components/ChartKit'
 
 interface WhyMonarchsProps {
   onNavigate: (page: Page) => void
 }
 
 // Eastern monarch overwintering area in Mexico, hectares, by the year each winter
-// season began. WWF Mexico / CONANP annual census (MBBR 1993 to 2004).
+// season began. The census began in winter 1993-1994; there is no reliable
+// earlier record. WWF Mexico / CONANP, via Monarch Joint Venture.
 const MONARCH: [number, number][] = [
   [1994, 7.81], [1995, 12.61], [1996, 18.19], [1997, 5.77], [1998, 5.56], [1999, 9.05],
   [2000, 2.83], [2001, 9.36], [2002, 7.54], [2003, 11.12], [2004, 2.19], [2005, 5.91],
@@ -14,6 +15,20 @@ const MONARCH: [number, number][] = [
   [2012, 1.19], [2013, 0.67], [2014, 1.13], [2015, 4.01], [2016, 2.91], [2017, 2.48],
   [2018, 6.05], [2019, 2.83], [2020, 2.10], [2021, 2.84], [2022, 2.21], [2023, 0.90],
   [2024, 1.79], [2025, 2.93],
+]
+
+// Global Living Planet Index, average size of monitored wildlife populations,
+// 1970 = 100. WWF / ZSL, via Our World in Data.
+const LPI: [number, number][] = [
+  [1970, 100], [1971, 99.41], [1972, 98.14], [1973, 96.62], [1974, 94.81], [1975, 92.66],
+  [1976, 89.99], [1977, 86.37], [1978, 82.87], [1979, 80.26], [1980, 78.43], [1981, 77.01],
+  [1982, 74.73], [1983, 72.18], [1984, 69.71], [1985, 67.67], [1986, 66.17], [1987, 64.42],
+  [1988, 62.68], [1989, 61.36], [1990, 60.09], [1991, 58.82], [1992, 57.28], [1993, 55.24],
+  [1994, 53.25], [1995, 51.15], [1996, 50.25], [1997, 48.92], [1998, 47.50], [1999, 45.68],
+  [2000, 44.37], [2001, 43.13], [2002, 42.01], [2003, 40.93], [2004, 39.98], [2005, 38.87],
+  [2006, 37.45], [2007, 35.95], [2008, 34.36], [2009, 32.71], [2010, 31.10], [2011, 29.60],
+  [2012, 28.67], [2013, 28.41], [2014, 28.50], [2015, 28.57], [2016, 27.79], [2017, 27.37],
+  [2018, 27.10], [2019, 27.33], [2020, 27.13],
 ]
 
 export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
@@ -34,6 +49,7 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
           <h2 id="why-monarch">The monarch</h2>
           <ColumnChart
             title="Monarch population in Mexico, 1994 to 2026"
+            subtitle="Down about 80% from the mid-1990s peak"
             xLabel="Winter season (start year)"
             yLabel="Hectares occupied"
             data={MONARCH.map(([year, v]) => ({ label: year, value: v }))}
@@ -55,17 +71,23 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
 
         <section aria-labelledby="why-wildlife">
           <h2 id="why-wildlife">Other wildlife is declining too</h2>
-          <BarChart
-            title="How far some populations have fallen"
-            unit="% lost"
-            bars={[
-              { label: 'Wildlife worldwide', value: 73, caption: 'Average drop in monitored populations, 1970 to 2020' },
-              { label: 'North American birds', value: 29, caption: '3 billion birds gone since 1970' },
-              { label: 'Flying insects', value: 75, caption: 'Biomass lost over 27 years in one long study' },
-            ]}
-            source={{ text: 'WWF Living Planet Report 2024; Rosenberg et al. 2019; Hallmann et al. 2017' }}
-            ariaLabel="Wildlife worldwide down 73 percent, North American birds down 29 percent, flying insect biomass down more than 75 percent."
+          <LineChart
+            title="Wildlife worldwide, 1970 to 2020"
+            subtitle="Living Planet Index: average size of monitored populations, 1970 = 100"
+            xLabel="Year"
+            yLabel="Index (1970 = 100)"
+            series={[{ name: 'Living Planet Index', points: LPI }]}
+            xTicks={[1970, 1980, 1990, 2000, 2010, 2020]}
+            yMax={100}
+            area
+            source={{ text: 'WWF and ZSL Living Planet Index, via Our World in Data', href: 'https://ourworldindata.org/grapher/global-living-planet-index' }}
+            ariaLabel="The global Living Planet Index falls steadily from 100 in 1970 to about 27 in 2020, an average decline of 73% in monitored wildlife populations."
           />
+
+          <div className="why-facts">
+            <div className="fact-card"><div className="fact-card__number">3 billion</div><div className="fact-card__label">North American birds lost since 1970 (Rosenberg et al., 2019)</div></div>
+            <div className="fact-card"><div className="fact-card__number">over 75%</div><div className="fact-card__label">Flying-insect biomass lost over 27 years in one long study (Hallmann et al., 2017)</div></div>
+          </div>
 
           <div className="why-media">
             <figure className="why-media__item">
@@ -87,8 +109,8 @@ export default function WhyMonarchs({ onNavigate }: WhyMonarchsProps) {
         </div>
 
         <section className="cite-list" aria-label="Sources">
-          <p>Western monarch counts: <a href="https://www.xerces.org/press/western-monarch-numbers-remain-at-historic-low" target="_blank" rel="noreferrer">Xerces Society</a>. ESA proposal: <a href="https://www.fws.gov/press-release/2024-12/monarch-butterfly-proposed-endangered-species-act-protection" target="_blank" rel="noreferrer">U.S. Fish and Wildlife Service, December 2024</a>.</p>
-          <p>Birds: <a href="https://www.science.org/doi/10.1126/science.aaw1313" target="_blank" rel="noreferrer">Rosenberg et al., Science, 2019</a>. Insects: <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185809" target="_blank" rel="noreferrer">Hallmann et al., PLOS ONE, 2017</a>. Wildlife overall: <a href="https://www.worldwildlife.org/publications/2024-living-planet-report" target="_blank" rel="noreferrer">WWF Living Planet Report 2024</a>.</p>
+          <p>Monarch overwintering area: <a href="https://monarchjointventure.org/blog/eastern-monarch-overwintering-population-increases-from-last-year" target="_blank" rel="noreferrer">WWF Mexico / CONANP, via Monarch Joint Venture</a>. Western counts and ESA proposal: <a href="https://www.xerces.org/press/western-monarch-numbers-remain-at-historic-low" target="_blank" rel="noreferrer">Xerces Society</a>, <a href="https://www.fws.gov/press-release/2024-12/monarch-butterfly-proposed-endangered-species-act-protection" target="_blank" rel="noreferrer">USFWS, Dec 2024</a>.</p>
+          <p>Wildlife index: <a href="https://ourworldindata.org/grapher/global-living-planet-index" target="_blank" rel="noreferrer">WWF and ZSL Living Planet Index, via Our World in Data</a>. Birds: <a href="https://www.science.org/doi/10.1126/science.aaw1313" target="_blank" rel="noreferrer">Rosenberg et al., Science, 2019</a>. Insects: <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185809" target="_blank" rel="noreferrer">Hallmann et al., PLOS ONE, 2017</a>.</p>
           <p>Photos: meadowlark by Rhododendrites (CC BY-SA 4.0); bumblebee and monarch by USFWS (public domain); header via Pexels.</p>
         </section>
       </div>

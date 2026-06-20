@@ -23,7 +23,7 @@ const DASHES = ['', '6 4', '2 4', '8 4 2 4']
 export type Source = { text: string; href?: string }
 
 // Round an axis maximum to clean tick steps (1, 2, 5 x 10^n) so labels read at a glance.
-function niceTicks(max: number, count = 4): number[] {
+function niceTicks(max: number, count = 5): number[] {
   if (!isFinite(max) || max <= 0) return [0]
   const raw = max / count
   const mag = Math.pow(10, Math.floor(Math.log10(raw)))
